@@ -1,0 +1,2196 @@
+{
+ "url": "file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/index.html#/workspace",
+ "elements": [
+  {
+   "tag": "DIV",
+   "text": "模拟账号",
+   "href": "",
+   "class": "group/tab focus-visible:ring-ring relative flex h-full min-w",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 102,
+    "y": 5,
+    "w": 112,
+    "h": 28
+   }
+  },
+  {
+   "tag": "SPAN",
+   "text": "",
+   "href": "",
+   "class": "flex size-4 shrink-0 cursor-grab touch-none items-center jus",
+   "id": "",
+   "ariaLabel": "拖拽排序 模拟账号",
+   "layFilter": "",
+   "rect": {
+    "x": 106,
+    "y": 11,
+    "w": 16,
+    "h": 16
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "group/button inline-flex shrink-0 items-center justify-cente",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 189,
+    "y": 11,
+    "w": 21,
+    "h": 16
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "group/button inline-flex shrink-0 items-center justify-cente",
+   "id": "",
+   "ariaLabel": "新建标签",
+   "layFilter": "",
+   "rect": {
+    "x": 222,
+    "y": 7,
+    "w": 24,
+    "h": 24
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "text-muted-foreground hover:text-foreground flex h-full w-11",
+   "id": "",
+   "ariaLabel": "缩小",
+   "layFilter": "",
+   "rect": {
+    "x": 1336,
+    "y": -0.0,
+    "w": 44,
+    "h": 38
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "text-muted-foreground flex h-full w-11 items-center justify-",
+   "id": "",
+   "ariaLabel": "放大",
+   "layFilter": "",
+   "rect": {
+    "x": 1380,
+    "y": -0.0,
+    "w": 44,
+    "h": 38
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "text-muted-foreground flex h-full w-11 items-center justify-",
+   "id": "",
+   "ariaLabel": "关闭",
+   "layFilter": "",
+   "rect": {
+    "x": 1424,
+    "y": -0.0,
+    "w": 44,
+    "h": 38
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "focus-visible:ring-ring relative flex size-10 select-none it",
+   "id": "",
+   "ariaLabel": "市场",
+   "layFilter": "",
+   "rect": {
+    "x": 4,
+    "y": 50,
+    "w": 40,
+    "h": 40
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "focus-visible:ring-ring relative flex size-10 select-none it",
+   "id": "",
+   "ariaLabel": "行情",
+   "layFilter": "",
+   "rect": {
+    "x": 4,
+    "y": 98,
+    "w": 40,
+    "h": 40
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "focus-visible:ring-ring relative flex size-10 select-none it",
+   "id": "",
+   "ariaLabel": "波动率",
+   "layFilter": "",
+   "rect": {
+    "x": 4,
+    "y": 146,
+    "w": 40,
+    "h": 40
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "focus-visible:ring-ring relative flex size-10 select-none it",
+   "id": "",
+   "ariaLabel": "策略",
+   "layFilter": "",
+   "rect": {
+    "x": 4,
+    "y": 194,
+    "w": 40,
+    "h": 40
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "focus-visible:ring-ring relative flex size-10 select-none it",
+   "id": "",
+   "ariaLabel": "期货",
+   "layFilter": "",
+   "rect": {
+    "x": 4,
+    "y": 242,
+    "w": 40,
+    "h": 40
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "focus-visible:ring-ring relative flex size-10 select-none it",
+   "id": "",
+   "ariaLabel": "异动",
+   "layFilter": "",
+   "rect": {
+    "x": 4,
+    "y": 290,
+    "w": 40,
+    "h": 40
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "hover:bg-foreground/8 text-muted-foreground hover:text-foreg",
+   "id": "",
+   "ariaLabel": "打开期权到期日历",
+   "layFilter": "",
+   "rect": {
+    "x": 4,
+    "y": 716,
+    "w": 40,
+    "h": 40
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "group/button inline-flex shrink-0 items-center justify-cente",
+   "id": "",
+   "ariaLabel": "打开帮助菜单",
+   "layFilter": "",
+   "rect": {
+    "x": 4,
+    "y": 762,
+    "w": 40,
+    "h": 40
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "group/button inline-flex shrink-0 items-center justify-cente",
+   "id": "",
+   "ariaLabel": "打开用户菜单",
+   "layFilter": "",
+   "rect": {
+    "x": 4,
+    "y": 808,
+    "w": 40,
+    "h": 40
+   }
+  },
+  {
+   "tag": "DIV",
+   "text": "苯乙烯95912610主-0.80%",
+   "href": "",
+   "class": "shrink-0",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 52,
+    "y": 42,
+    "w": 128,
+    "h": 45
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "苯乙烯95912610主-0.80%",
+   "href": "",
+   "class": "group/button shrink-0 items-center justify-center rounded-lg",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 52,
+    "y": 42,
+    "w": 128,
+    "h": 45
+   }
+  },
+  {
+   "tag": "DIV",
+   "text": "纯苯84732610主-0.75%",
+   "href": "",
+   "class": "shrink-0",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 192,
+    "y": 42,
+    "w": 128,
+    "h": 45
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "纯苯84732610主-0.75%",
+   "href": "",
+   "class": "group/button shrink-0 items-center justify-center rounded-lg",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 192,
+    "y": 42,
+    "w": 128,
+    "h": 45
+   }
+  },
+  {
+   "tag": "DIV",
+   "text": "沪锡4188702610主0.00%",
+   "href": "",
+   "class": "shrink-0",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 332,
+    "y": 42,
+    "w": 128,
+    "h": 45
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "沪锡4188702610主0.00%",
+   "href": "",
+   "class": "group/button shrink-0 items-center justify-center rounded-lg",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 332,
+    "y": 42,
+    "w": 128,
+    "h": 45
+   }
+  },
+  {
+   "tag": "DIV",
+   "text": "LPG66172610主+0.46%",
+   "href": "",
+   "class": "shrink-0",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 472,
+    "y": 42,
+    "w": 128,
+    "h": 45
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "LPG66172610主+0.46%",
+   "href": "",
+   "class": "group/button shrink-0 items-center justify-center rounded-lg",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 472,
+    "y": 42,
+    "w": 128,
+    "h": 45
+   }
+  },
+  {
+   "tag": "DIV",
+   "text": "PTA62242610主+2.47%",
+   "href": "",
+   "class": "shrink-0",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 612,
+    "y": 42,
+    "w": 128,
+    "h": 45
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "PTA62242610主+2.47%",
+   "href": "",
+   "class": "group/button shrink-0 items-center justify-center rounded-lg",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 612,
+    "y": 42,
+    "w": 128,
+    "h": 45
+   }
+  },
+  {
+   "tag": "DIV",
+   "text": "PVC49542610主+0.24%",
+   "href": "",
+   "class": "shrink-0",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 752,
+    "y": 42,
+    "w": 128,
+    "h": 45
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "PVC49542610主+0.24%",
+   "href": "",
+   "class": "group/button shrink-0 items-center justify-center rounded-lg",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 752,
+    "y": 42,
+    "w": 128,
+    "h": 45
+   }
+  },
+  {
+   "tag": "DIV",
+   "text": "对二甲苯89182611主+2.32%",
+   "href": "",
+   "class": "shrink-0",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 892,
+    "y": 42,
+    "w": 128,
+    "h": 45
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "对二甲苯89182611主+2.32%",
+   "href": "",
+   "class": "group/button shrink-0 items-center justify-center rounded-lg",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 892,
+    "y": 42,
+    "w": 128,
+    "h": 45
+   }
+  },
+  {
+   "tag": "DIV",
+   "text": "甲醇32812610主+2.15%",
+   "href": "",
+   "class": "shrink-0",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 1032,
+    "y": 42,
+    "w": 128,
+    "h": 45
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "甲醇32812610主+2.15%",
+   "href": "",
+   "class": "group/button shrink-0 items-center justify-center rounded-lg",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 1032,
+    "y": 42,
+    "w": 128,
+    "h": 45
+   }
+  },
+  {
+   "tag": "DIV",
+   "text": "鸡蛋38892610主-0.18%",
+   "href": "",
+   "class": "shrink-0",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 1172,
+    "y": 42,
+    "w": 128,
+    "h": 45
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "鸡蛋38892610主-0.18%",
+   "href": "",
+   "class": "group/button shrink-0 items-center justify-center rounded-lg",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 1172,
+    "y": 42,
+    "w": 128,
+    "h": 45
+   }
+  },
+  {
+   "tag": "DIV",
+   "text": "燃油40352610主-0.44%",
+   "href": "",
+   "class": "shrink-0",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 1312,
+    "y": 42,
+    "w": 128,
+    "h": 45
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "燃油40352610主-0.44%",
+   "href": "",
+   "class": "group/button shrink-0 items-center justify-center rounded-lg",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 1312,
+    "y": 42,
+    "w": 128,
+    "h": 45
+   }
+  },
+  {
+   "tag": "DIV",
+   "text": "焦煤1629.52610主+1.56%",
+   "href": "",
+   "class": "shrink-0",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 1452,
+    "y": 42,
+    "w": 128,
+    "h": 45
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "焦煤1629.52610主+1.56%",
+   "href": "",
+   "class": "group/button shrink-0 items-center justify-center rounded-lg",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 1452,
+    "y": 42,
+    "w": 128,
+    "h": 45
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "group/button inline-flex shrink-0 items-center justify-cente",
+   "id": "",
+   "ariaLabel": "向右滚动",
+   "layFilter": "",
+   "rect": {
+    "x": 1209,
+    "y": 52,
+    "w": 24,
+    "h": 24
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "group/button inline-flex shrink-0 items-center justify-cente",
+   "id": "",
+   "ariaLabel": "添加自选",
+   "layFilter": "",
+   "rect": {
+    "x": 1237,
+    "y": 52,
+    "w": 24,
+    "h": 24
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "添加组件",
+   "href": "",
+   "class": "group/button inline-flex shrink-0 items-center justify-cente",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 1273,
+    "y": 50,
+    "w": 99,
+    "h": 28
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "街头调查师",
+   "href": "",
+   "class": "hover:bg-muted/70 bg-muted focus-visible:ring-foreground/25 ",
+   "id": "",
+   "ariaLabel": "账户摘要",
+   "layFilter": "",
+   "rect": {
+    "x": 1380,
+    "y": 52,
+    "w": 76,
+    "h": 24
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "widget-action relative flex size-5 cursor-pointer items-cent",
+   "id": "",
+   "ariaLabel": "已加入联动，点击取消联动",
+   "layFilter": "",
+   "rect": {
+    "x": 61,
+    "y": 102,
+    "w": 20,
+    "h": 20
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "group/button inline-flex shrink-0 items-center justify-cente",
+   "id": "",
+   "ariaLabel": "添加品种",
+   "layFilter": "",
+   "rect": {
+    "x": 281,
+    "y": 102,
+    "w": 20,
+    "h": 20
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "group/button inline-flex shrink-0 items-center justify-cente",
+   "id": "radix-«r22»",
+   "ariaLabel": "自选列表菜单",
+   "layFilter": "",
+   "rect": {
+    "x": 313,
+    "y": 102,
+    "w": 20,
+    "h": 20
+   }
+  },
+  {
+   "tag": "TH",
+   "text": "最新价",
+   "href": "",
+   "class": "bg-card text-muted-foreground p-2 text-sm font-semibold grou",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 165,
+    "y": 128,
+    "w": 75,
+    "h": 38
+   }
+  },
+  {
+   "tag": "TH",
+   "text": "涨幅",
+   "href": "",
+   "class": "bg-card text-muted-foreground p-2 text-sm font-semibold grou",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 240,
+    "y": 128,
+    "w": 74,
+    "h": 38
+   }
+  },
+  {
+   "tag": "TH",
+   "text": "昨收",
+   "href": "",
+   "class": "bg-card text-muted-foreground p-2 text-sm font-semibold grou",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 314,
+    "y": 128,
+    "w": 70,
+    "h": 38
+   }
+  },
+  {
+   "tag": "TR",
+   "text": "苯乙烯2610主9591-0.80%9668买卖",
+   "href": "",
+   "class": "group cursor-grab active:cursor-grabbing",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 53,
+    "y": 166,
+    "w": 331,
+    "h": 42
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "买",
+   "href": "",
+   "class": "group/button inline-flex shrink-0 items-center justify-cente",
+   "id": "",
+   "ariaLabel": "买入当前合约",
+   "layFilter": "",
+   "rect": {
+    "x": 225,
+    "y": 175,
+    "w": 29,
+    "h": 24
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "卖",
+   "href": "",
+   "class": "group/button inline-flex shrink-0 items-center justify-cente",
+   "id": "",
+   "ariaLabel": "卖出当前合约",
+   "layFilter": "",
+   "rect": {
+    "x": 259,
+    "y": 175,
+    "w": 29,
+    "h": 24
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "group/button inline-flex shrink-0 items-center justify-cente",
+   "id": "radix-«r5t»",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 292,
+    "y": 175,
+    "w": 24,
+    "h": 24
+   }
+  },
+  {
+   "tag": "TR",
+   "text": "纯苯2610主8473-0.75%8537买卖",
+   "href": "",
+   "class": "group cursor-grab active:cursor-grabbing",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 53,
+    "y": 208,
+    "w": 331,
+    "h": 42
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "买",
+   "href": "",
+   "class": "group/button inline-flex shrink-0 items-center justify-cente",
+   "id": "",
+   "ariaLabel": "买入当前合约",
+   "layFilter": "",
+   "rect": {
+    "x": 225,
+    "y": 217,
+    "w": 29,
+    "h": 24
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "卖",
+   "href": "",
+   "class": "group/button inline-flex shrink-0 items-center justify-cente",
+   "id": "",
+   "ariaLabel": "卖出当前合约",
+   "layFilter": "",
+   "rect": {
+    "x": 259,
+    "y": 217,
+    "w": 29,
+    "h": 24
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "group/button inline-flex shrink-0 items-center justify-cente",
+   "id": "radix-«r5v»",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 292,
+    "y": 217,
+    "w": 24,
+    "h": 24
+   }
+  },
+  {
+   "tag": "TR",
+   "text": "沪锡2610主4188700.00%418870买卖",
+   "href": "",
+   "class": "group cursor-grab active:cursor-grabbing",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 53,
+    "y": 250,
+    "w": 331,
+    "h": 42
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "买",
+   "href": "",
+   "class": "group/button inline-flex shrink-0 items-center justify-cente",
+   "id": "",
+   "ariaLabel": "买入当前合约",
+   "layFilter": "",
+   "rect": {
+    "x": 225,
+    "y": 259,
+    "w": 29,
+    "h": 24
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "卖",
+   "href": "",
+   "class": "group/button inline-flex shrink-0 items-center justify-cente",
+   "id": "",
+   "ariaLabel": "卖出当前合约",
+   "layFilter": "",
+   "rect": {
+    "x": 259,
+    "y": 259,
+    "w": 29,
+    "h": 24
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "group/button inline-flex shrink-0 items-center justify-cente",
+   "id": "radix-«r61»",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 292,
+    "y": 259,
+    "w": 24,
+    "h": 24
+   }
+  },
+  {
+   "tag": "TR",
+   "text": "LPG2610主6617+0.46%6587买卖",
+   "href": "",
+   "class": "group cursor-grab active:cursor-grabbing",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 53,
+    "y": 292,
+    "w": 331,
+    "h": 42
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "买",
+   "href": "",
+   "class": "group/button inline-flex shrink-0 items-center justify-cente",
+   "id": "",
+   "ariaLabel": "买入当前合约",
+   "layFilter": "",
+   "rect": {
+    "x": 225,
+    "y": 301,
+    "w": 29,
+    "h": 24
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "卖",
+   "href": "",
+   "class": "group/button inline-flex shrink-0 items-center justify-cente",
+   "id": "",
+   "ariaLabel": "卖出当前合约",
+   "layFilter": "",
+   "rect": {
+    "x": 259,
+    "y": 301,
+    "w": 29,
+    "h": 24
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "group/button inline-flex shrink-0 items-center justify-cente",
+   "id": "radix-«r63»",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 292,
+    "y": 301,
+    "w": 24,
+    "h": 24
+   }
+  },
+  {
+   "tag": "TR",
+   "text": "PTA2610主6224+2.47%6074买卖",
+   "href": "",
+   "class": "group cursor-grab active:cursor-grabbing",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 53,
+    "y": 334,
+    "w": 331,
+    "h": 42
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "买",
+   "href": "",
+   "class": "group/button inline-flex shrink-0 items-center justify-cente",
+   "id": "",
+   "ariaLabel": "买入当前合约",
+   "layFilter": "",
+   "rect": {
+    "x": 225,
+    "y": 343,
+    "w": 29,
+    "h": 24
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "卖",
+   "href": "",
+   "class": "group/button inline-flex shrink-0 items-center justify-cente",
+   "id": "",
+   "ariaLabel": "卖出当前合约",
+   "layFilter": "",
+   "rect": {
+    "x": 259,
+    "y": 343,
+    "w": 29,
+    "h": 24
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "group/button inline-flex shrink-0 items-center justify-cente",
+   "id": "radix-«r65»",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 292,
+    "y": 343,
+    "w": 24,
+    "h": 24
+   }
+  },
+  {
+   "tag": "TR",
+   "text": "PVC2610主4954+0.24%4942买卖",
+   "href": "",
+   "class": "group cursor-grab active:cursor-grabbing",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 53,
+    "y": 376,
+    "w": 331,
+    "h": 42
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "买",
+   "href": "",
+   "class": "group/button inline-flex shrink-0 items-center justify-cente",
+   "id": "",
+   "ariaLabel": "买入当前合约",
+   "layFilter": "",
+   "rect": {
+    "x": 225,
+    "y": 385,
+    "w": 29,
+    "h": 24
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "卖",
+   "href": "",
+   "class": "group/button inline-flex shrink-0 items-center justify-cente",
+   "id": "",
+   "ariaLabel": "卖出当前合约",
+   "layFilter": "",
+   "rect": {
+    "x": 259,
+    "y": 385,
+    "w": 29,
+    "h": 24
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "group/button inline-flex shrink-0 items-center justify-cente",
+   "id": "radix-«r67»",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 292,
+    "y": 385,
+    "w": 24,
+    "h": 24
+   }
+  },
+  {
+   "tag": "TR",
+   "text": "对二甲苯2611主8918+2.32%8716买卖",
+   "href": "",
+   "class": "group cursor-grab active:cursor-grabbing [&_td]:bg-primary/1",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 53,
+    "y": 418,
+    "w": 331,
+    "h": 42
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "买",
+   "href": "",
+   "class": "group/button inline-flex shrink-0 items-center justify-cente",
+   "id": "",
+   "ariaLabel": "买入当前合约",
+   "layFilter": "",
+   "rect": {
+    "x": 225,
+    "y": 427,
+    "w": 29,
+    "h": 24
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "卖",
+   "href": "",
+   "class": "group/button inline-flex shrink-0 items-center justify-cente",
+   "id": "",
+   "ariaLabel": "卖出当前合约",
+   "layFilter": "",
+   "rect": {
+    "x": 259,
+    "y": 427,
+    "w": 29,
+    "h": 24
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "group/button inline-flex shrink-0 items-center justify-cente",
+   "id": "radix-«r69»",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 292,
+    "y": 427,
+    "w": 24,
+    "h": 24
+   }
+  },
+  {
+   "tag": "TR",
+   "text": "甲醇2610主3281+2.15%3212买卖",
+   "href": "",
+   "class": "group cursor-grab active:cursor-grabbing",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 53,
+    "y": 460,
+    "w": 331,
+    "h": 42
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "买",
+   "href": "",
+   "class": "group/button inline-flex shrink-0 items-center justify-cente",
+   "id": "",
+   "ariaLabel": "买入当前合约",
+   "layFilter": "",
+   "rect": {
+    "x": 225,
+    "y": 469,
+    "w": 29,
+    "h": 24
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "卖",
+   "href": "",
+   "class": "group/button inline-flex shrink-0 items-center justify-cente",
+   "id": "",
+   "ariaLabel": "卖出当前合约",
+   "layFilter": "",
+   "rect": {
+    "x": 259,
+    "y": 469,
+    "w": 29,
+    "h": 24
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "group/button inline-flex shrink-0 items-center justify-cente",
+   "id": "radix-«r6b»",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 292,
+    "y": 469,
+    "w": 24,
+    "h": 24
+   }
+  },
+  {
+   "tag": "TR",
+   "text": "鸡蛋2610主3889-0.18%3896买卖",
+   "href": "",
+   "class": "group cursor-grab active:cursor-grabbing",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 53,
+    "y": 502,
+    "w": 331,
+    "h": 42
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "买",
+   "href": "",
+   "class": "group/button inline-flex shrink-0 items-center justify-cente",
+   "id": "",
+   "ariaLabel": "买入当前合约",
+   "layFilter": "",
+   "rect": {
+    "x": 225,
+    "y": 511,
+    "w": 29,
+    "h": 24
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "卖",
+   "href": "",
+   "class": "group/button inline-flex shrink-0 items-center justify-cente",
+   "id": "",
+   "ariaLabel": "卖出当前合约",
+   "layFilter": "",
+   "rect": {
+    "x": 259,
+    "y": 511,
+    "w": 29,
+    "h": 24
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "group/button inline-flex shrink-0 items-center justify-cente",
+   "id": "radix-«r6d»",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 292,
+    "y": 511,
+    "w": 24,
+    "h": 24
+   }
+  },
+  {
+   "tag": "TR",
+   "text": "燃油2610主4035-0.44%4053买卖",
+   "href": "",
+   "class": "group cursor-grab active:cursor-grabbing",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 53,
+    "y": 544,
+    "w": 331,
+    "h": 42
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "买",
+   "href": "",
+   "class": "group/button inline-flex shrink-0 items-center justify-cente",
+   "id": "",
+   "ariaLabel": "买入当前合约",
+   "layFilter": "",
+   "rect": {
+    "x": 225,
+    "y": 553,
+    "w": 29,
+    "h": 24
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "卖",
+   "href": "",
+   "class": "group/button inline-flex shrink-0 items-center justify-cente",
+   "id": "",
+   "ariaLabel": "卖出当前合约",
+   "layFilter": "",
+   "rect": {
+    "x": 259,
+    "y": 553,
+    "w": 29,
+    "h": 24
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "group/button inline-flex shrink-0 items-center justify-cente",
+   "id": "radix-«r6f»",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 292,
+    "y": 553,
+    "w": 24,
+    "h": 24
+   }
+  },
+  {
+   "tag": "TR",
+   "text": "焦煤2610主1629.5+1.56%1604.5买卖",
+   "href": "",
+   "class": "group cursor-grab active:cursor-grabbing",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 53,
+    "y": 586,
+    "w": 331,
+    "h": 42
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "买",
+   "href": "",
+   "class": "group/button inline-flex shrink-0 items-center justify-cente",
+   "id": "",
+   "ariaLabel": "买入当前合约",
+   "layFilter": "",
+   "rect": {
+    "x": 225,
+    "y": 595,
+    "w": 29,
+    "h": 24
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "卖",
+   "href": "",
+   "class": "group/button inline-flex shrink-0 items-center justify-cente",
+   "id": "",
+   "ariaLabel": "卖出当前合约",
+   "layFilter": "",
+   "rect": {
+    "x": 259,
+    "y": 595,
+    "w": 29,
+    "h": 24
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "group/button inline-flex shrink-0 items-center justify-cente",
+   "id": "radix-«r6h»",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 292,
+    "y": 595,
+    "w": 24,
+    "h": 24
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "widget-action relative flex size-5 cursor-pointer items-cent",
+   "id": "",
+   "ariaLabel": "已加入联动，点击取消联动",
+   "layFilter": "",
+   "rect": {
+    "x": 357,
+    "y": 102,
+    "w": 20,
+    "h": 20
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "对二甲苯PX",
+   "href": "",
+   "class": "group/button inline-flex shrink-0 items-center border bg-cli",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 673,
+    "y": 100,
+    "w": 113,
+    "h": 24
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "group/button inline-flex shrink-0 items-center justify-cente",
+   "id": "radix-«r26»",
+   "ariaLabel": "T型报价菜单",
+   "layFilter": "",
+   "rect": {
+    "x": 787,
+    "y": 102,
+    "w": 20,
+    "h": 20
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "Strike",
+   "href": "",
+   "class": "bg-card relative z-30 flex h-9 w-18 shrink-0 items-center ju",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 536,
+    "y": 164,
+    "w": 72,
+    "h": 36
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "2611主09-28剩余20天",
+   "href": "",
+   "class": "hover:bg-accent/70 focus-visible:ring-ring grid h-full w-ful",
+   "id": "",
+   "ariaLabel": "收起2611到期月",
+   "layFilter": "",
+   "rect": {
+    "x": 357,
+    "y": 200,
+    "w": 431,
+    "h": 43
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "买价8918",
+   "href": "",
+   "class": "flex cursor-pointer items-center justify-center gap-1 rounde",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 414,
+    "y": 260,
+    "w": 79,
+    "h": 21
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "对二甲苯2611",
+   "href": "",
+   "class": "border-border/60 bg-muted text-foreground hover:bg-accent/80",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 516,
+    "y": 258,
+    "w": 112,
+    "h": 25
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "卖价8922",
+   "href": "",
+   "class": "flex cursor-pointer items-center justify-center gap-1 rounde",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 652,
+    "y": 260,
+    "w": 79,
+    "h": 21
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "2612主10-28剩余50天",
+   "href": "",
+   "class": "hover:bg-accent/70 focus-visible:ring-ring grid h-full w-ful",
+   "id": "",
+   "ariaLabel": "展开2612到期月",
+   "layFilter": "",
+   "rect": {
+    "x": 357,
+    "y": 543,
+    "w": 431,
+    "h": 43
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "2701主11-26剩余79天",
+   "href": "",
+   "class": "hover:bg-accent/70 focus-visible:ring-ring grid h-full w-ful",
+   "id": "",
+   "ariaLabel": "展开2701到期月",
+   "layFilter": "",
+   "rect": {
+    "x": 357,
+    "y": 587,
+    "w": 431,
+    "h": 43
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "2702主12-29剩余112天",
+   "href": "",
+   "class": "hover:bg-accent/70 focus-visible:ring-ring grid h-full w-ful",
+   "id": "",
+   "ariaLabel": "展开2702到期月",
+   "layFilter": "",
+   "rect": {
+    "x": 357,
+    "y": 631,
+    "w": 431,
+    "h": 43
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "2703主01-27剩余141天",
+   "href": "",
+   "class": "hover:bg-accent/70 focus-visible:ring-ring grid h-full w-ful",
+   "id": "",
+   "ariaLabel": "展开2703到期月",
+   "layFilter": "",
+   "rect": {
+    "x": 357,
+    "y": 675,
+    "w": 431,
+    "h": 43
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "2704主02-24剩余169天",
+   "href": "",
+   "class": "hover:bg-accent/70 focus-visible:ring-ring grid h-full w-ful",
+   "id": "",
+   "ariaLabel": "展开2704到期月",
+   "layFilter": "",
+   "rect": {
+    "x": 357,
+    "y": 719,
+    "w": 431,
+    "h": 43
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "2705主03-29剩余202天",
+   "href": "",
+   "class": "hover:bg-accent/70 focus-visible:ring-ring grid h-full w-ful",
+   "id": "",
+   "ariaLabel": "展开2705到期月",
+   "layFilter": "",
+   "rect": {
+    "x": 357,
+    "y": 763,
+    "w": 431,
+    "h": 43
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "2706主04-28剩余232天",
+   "href": "",
+   "class": "hover:bg-accent/70 focus-visible:ring-ring grid h-full w-ful",
+   "id": "",
+   "ariaLabel": "展开2706到期月",
+   "layFilter": "",
+   "rect": {
+    "x": 357,
+    "y": 807,
+    "w": 431,
+    "h": 43
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "widget-action relative flex size-5 cursor-pointer items-cent",
+   "id": "",
+   "ariaLabel": "已加入联动，点击取消联动",
+   "layFilter": "",
+   "rect": {
+    "x": 830,
+    "y": 102,
+    "w": 20,
+    "h": 20
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "表格",
+   "href": "",
+   "class": "text-muted-foreground focus-visible:ring-ring/50 relative in",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 1082,
+    "y": 100,
+    "w": 60,
+    "h": 24
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "曲线",
+   "href": "",
+   "class": "focus-visible:ring-ring/50 relative inline-flex items-center",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 1144,
+    "y": 100,
+    "w": 60,
+    "h": 24
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "对二甲苯 2611PX",
+   "href": "",
+   "class": "group/button inline-flex shrink-0 items-center border bg-cli",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 1295,
+    "y": 100,
+    "w": 142,
+    "h": 24
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "group/button inline-flex shrink-0 items-center justify-cente",
+   "id": "radix-«r2b»",
+   "ariaLabel": "实时波动率期权链菜单",
+   "layFilter": "",
+   "rect": {
+    "x": 1437,
+    "y": 102,
+    "w": 20,
+    "h": 20
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "买价8918",
+   "href": "",
+   "class": "flex cursor-pointer items-center justify-center gap-1 rounde",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 1083,
+    "y": 181,
+    "w": 79,
+    "h": 21
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "卖价8922",
+   "href": "",
+   "class": "flex cursor-pointer items-center justify-center gap-1 rounde",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 1182,
+    "y": 181,
+    "w": 79,
+    "h": 21
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "widget-action hover:bg-destructive/10 hover:text-destructive",
+   "id": "",
+   "ariaLabel": "移除 Widget",
+   "layFilter": "",
+   "rect": {
+    "x": 307,
+    "y": 351,
+    "w": 32,
+    "h": 31
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "widget-action relative flex size-5 cursor-pointer items-cent",
+   "id": "",
+   "ariaLabel": "已加入联动，点击取消联动",
+   "layFilter": "",
+   "rect": {
+    "x": 357,
+    "y": 357,
+    "w": 20,
+    "h": 20
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "group/button inline-flex shrink-0 items-center justify-cente",
+   "id": "radix-«r2e»",
+   "ariaLabel": "订单组件菜单",
+   "layFilter": "",
+   "rect": {
+    "x": 727,
+    "y": 357,
+    "w": 20,
+    "h": 20
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "未成交单",
+   "href": "",
+   "class": "focus-visible:ring-ring/50 relative inline-flex h-6 items-ce",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 353,
+    "y": 387,
+    "w": 72,
+    "h": 24
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "所有委托单",
+   "href": "",
+   "class": "text-muted-foreground focus-visible:ring-ring/50 relative in",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 427,
+    "y": 387,
+    "w": 84,
+    "h": 24
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "条件预埋单",
+   "href": "",
+   "class": "text-muted-foreground focus-visible:ring-ring/50 relative in",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 513,
+    "y": 387,
+    "w": 84,
+    "h": 24
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "行权委托单",
+   "href": "",
+   "class": "text-muted-foreground focus-visible:ring-ring/50 relative in",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 599,
+    "y": 387,
+    "w": 84,
+    "h": 24
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "全撤",
+   "href": "",
+   "class": "group/button inline-flex shrink-0 items-center justify-cente",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 704,
+    "y": 385,
+    "w": 47,
+    "h": 28
+   }
+  },
+  {
+   "tag": "TH",
+   "text": "交易所",
+   "href": "",
+   "class": "bg-card text-muted-foreground p-2 font-semibold group py-1.5",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 437,
+    "y": 416,
+    "w": 56,
+    "h": 38
+   }
+  },
+  {
+   "tag": "TH",
+   "text": "合约",
+   "href": "",
+   "class": "bg-card text-muted-foreground p-2 font-semibold group py-1.5",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 493,
+    "y": 416,
+    "w": 100,
+    "h": 38
+   }
+  },
+  {
+   "tag": "TH",
+   "text": "方向",
+   "href": "",
+   "class": "bg-card text-muted-foreground p-2 font-semibold group py-1.5",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 593,
+    "y": 416,
+    "w": 40,
+    "h": 38
+   }
+  },
+  {
+   "tag": "TH",
+   "text": "开平",
+   "href": "",
+   "class": "bg-card text-muted-foreground p-2 font-semibold group py-1.5",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 633,
+    "y": 416,
+    "w": 56,
+    "h": 38
+   }
+  },
+  {
+   "tag": "TH",
+   "text": "投保",
+   "href": "",
+   "class": "bg-card text-muted-foreground p-2 font-semibold group py-1.5",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 689,
+    "y": 416,
+    "w": 44,
+    "h": 38
+   }
+  },
+  {
+   "tag": "TH",
+   "text": "报单价格",
+   "href": "",
+   "class": "bg-card text-muted-foreground p-2 font-semibold group py-1.5",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 733,
+    "y": 416,
+    "w": 72,
+    "h": 38
+   }
+  },
+  {
+   "tag": "TH",
+   "text": "手数",
+   "href": "",
+   "class": "bg-card text-muted-foreground p-2 font-semibold group py-1.5",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 805,
+    "y": 416,
+    "w": 44,
+    "h": 38
+   }
+  },
+  {
+   "tag": "TH",
+   "text": "已成交",
+   "href": "",
+   "class": "bg-card text-muted-foreground p-2 font-semibold group py-1.5",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 849,
+    "y": 416,
+    "w": 52,
+    "h": 38
+   }
+  },
+  {
+   "tag": "TH",
+   "text": "成交均价",
+   "href": "",
+   "class": "bg-card text-muted-foreground p-2 font-semibold group py-1.5",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 901,
+    "y": 416,
+    "w": 72,
+    "h": 38
+   }
+  },
+  {
+   "tag": "TH",
+   "text": "状态",
+   "href": "",
+   "class": "bg-card text-muted-foreground p-2 font-semibold group py-1.5",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 973,
+    "y": 416,
+    "w": 64,
+    "h": 38
+   }
+  },
+  {
+   "tag": "TH",
+   "text": "详细状态",
+   "href": "",
+   "class": "bg-card text-muted-foreground p-2 font-semibold group py-1.5",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 1037,
+    "y": 416,
+    "w": 120,
+    "h": 38
+   }
+  },
+  {
+   "tag": "TH",
+   "text": "报单时间",
+   "href": "",
+   "class": "bg-card text-muted-foreground p-2 font-semibold group py-1.5",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 1157,
+    "y": 416,
+    "w": 68,
+    "h": 38
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "widget-action relative flex size-5 cursor-pointer items-cent",
+   "id": "",
+   "ariaLabel": "已加入联动，点击取消联动",
+   "layFilter": "",
+   "rect": {
+    "x": 357,
+    "y": 548,
+    "w": 20,
+    "h": 20
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "group/button inline-flex shrink-0 items-center justify-cente",
+   "id": "radix-«r2h»",
+   "ariaLabel": "持仓列表组件菜单",
+   "layFilter": "",
+   "rect": {
+    "x": 727,
+    "y": 548,
+    "w": 20,
+    "h": 20
+   }
+  },
+  {
+   "tag": "TH",
+   "text": "方向",
+   "href": "",
+   "class": "bg-card text-muted-foreground p-2 text-sm font-semibold grou",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 449,
+    "y": 574,
+    "w": 40,
+    "h": 38
+   }
+  },
+  {
+   "tag": "TH",
+   "text": "总持仓",
+   "href": "",
+   "class": "bg-card text-muted-foreground p-2 text-sm font-semibold grou",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 489,
+    "y": 574,
+    "w": 52,
+    "h": 38
+   }
+  },
+  {
+   "tag": "TH",
+   "text": "昨仓",
+   "href": "",
+   "class": "bg-card text-muted-foreground p-2 text-sm font-semibold grou",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 541,
+    "y": 574,
+    "w": 44,
+    "h": 38
+   }
+  },
+  {
+   "tag": "TH",
+   "text": "今仓",
+   "href": "",
+   "class": "bg-card text-muted-foreground p-2 text-sm font-semibold grou",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 585,
+    "y": 574,
+    "w": 44,
+    "h": 38
+   }
+  },
+  {
+   "tag": "TH",
+   "text": "持仓均价",
+   "href": "",
+   "class": "bg-card text-muted-foreground p-2 text-sm font-semibold grou",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 629,
+    "y": 574,
+    "w": 72,
+    "h": 38
+   }
+  },
+  {
+   "tag": "TH",
+   "text": "持仓盈亏",
+   "href": "",
+   "class": "bg-card text-muted-foreground p-2 text-sm font-semibold grou",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 701,
+    "y": 574,
+    "w": 88,
+    "h": 38
+   }
+  },
+  {
+   "tag": "TH",
+   "text": "开仓均价",
+   "href": "",
+   "class": "bg-card text-muted-foreground p-2 text-sm font-semibold grou",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 789,
+    "y": 574,
+    "w": 72,
+    "h": 38
+   }
+  },
+  {
+   "tag": "TH",
+   "text": "浮动盈亏",
+   "href": "",
+   "class": "bg-card text-muted-foreground p-2 text-sm font-semibold grou",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 861,
+    "y": 574,
+    "w": 88,
+    "h": 38
+   }
+  },
+  {
+   "tag": "TH",
+   "text": "占用保证金",
+   "href": "",
+   "class": "bg-card text-muted-foreground p-2 text-sm font-semibold grou",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 949,
+    "y": 574,
+    "w": 96,
+    "h": 38
+   }
+  },
+  {
+   "tag": "TH",
+   "text": "资金占比",
+   "href": "",
+   "class": "bg-card text-muted-foreground p-2 text-sm font-semibold grou",
+   "id": "",
+   "ariaLabel": "",
+   "layFilter": "",
+   "rect": {
+    "x": 1045,
+    "y": 574,
+    "w": 72,
+    "h": 38
+   }
+  }
+ ],
+ "count": 146
+}

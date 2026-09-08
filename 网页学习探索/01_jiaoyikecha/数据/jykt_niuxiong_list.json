@@ -1,0 +1,68 @@
+{
+ "ts": "2026-09-08 10:07:44",
+ "endpoint": "niuxiong_list.php",
+ "desc": "牛熊榜",
+ "n": 10,
+ "rows": [
+  {
+   "kind": "niuxiong",
+   "name": "沪金",
+   "code": "au2702",
+   "value": 50.0
+  },
+  {
+   "kind": "niuxiong",
+   "name": "沪金",
+   "code": "au2612",
+   "value": 44.0
+  },
+  {
+   "kind": "niuxiong",
+   "name": "锰硅",
+   "code": "sm2612",
+   "value": 39.0
+  },
+  {
+   "kind": "niuxiong",
+   "name": "沪锌",
+   "code": "zn2612",
+   "value": 37.0
+  },
+  {
+   "kind": "niuxiong",
+   "name": "合成橡胶",
+   "code": "br2611",
+   "value": 34.0
+  },
+  {
+   "kind": "niuxiong",
+   "name": "沥青",
+   "code": "bu2610",
+   "value": 33.0
+  },
+  {
+   "kind": "niuxiong",
+   "name": "棕榈油",
+   "code": "p2610",
+   "value": 32.0
+  },
+  {
+   "kind": "niuxiong",
+   "name": "硅铁",
+   "code": "sf2702",
+   "value": 31.0
+  },
+  {
+   "kind": "niuxiong",
+   "name": "豆二",
+   "code": "b2612",
+   "value": 30.0
+  },
+  {
+   "kind": "niuxiong",
+   "name": "瓶片",
+   "code": "pr2612",
+   "value": 30.0
+  }
+ ]
+}

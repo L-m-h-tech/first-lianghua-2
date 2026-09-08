@@ -1,0 +1,24 @@
+{
+  "legend_cdp": {
+    "note": "Legend Electron 页面提取配置（2026-09-06 实测定型）。",
+    "extract_mode": "text5",
+    "page_url_kw": "openvlab",
+    "quote_table_pick": 0,
+    "column_map": {
+      "variety": {"name": "名称"},
+      "code": {"name": "合约"},
+      "price": {"name": "最新价"},
+      "chg_pct": {"name": "涨幅"},
+      "volume": {"name": "成交量"},
+      "open_interest": {"name": "持仓量"},
+      "bid": {"name": "买价"},
+      "ask": {"name": "卖价"}
+    }
+  },
+  "ths_ui": {
+    "note": "同花顺期货通（2026-09-06 实测：FieldGrid 自绘网格，走 OCR 表格还原）。",
+    "main_window": {"name_re": "期货通"},
+    "quote_grid": {"control_type": ["Table", "DataGrid", "Custom"], "class_re": null},
+    "menu_quote": {"name_re": "行情|=报价|Q"}
+  }
+}

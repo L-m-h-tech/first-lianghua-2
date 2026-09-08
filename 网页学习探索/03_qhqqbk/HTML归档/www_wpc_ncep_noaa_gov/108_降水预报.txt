@@ -1,0 +1,122 @@
+# 降水预报
+# URL: https://www.wpc.ncep.noaa.gov/qpf/qpf2.shtml
+# fetched: 20260908_113936
+
+weather.gov
+Site MapNewsOrganizationSearch
+DOCNOAANWSNCEP Centers:AWCCPCEMCNCONHCOPCSPCSWPCWPC
+ Search by city or zip code. Press enter or select the go button to submit requestLocal forecast by
+"City, St"
+ or Zip Code
+Search WPC
+WPC Home
+Analyses and Forecasts
+National Forecast
+ Charts
+National High & Low
+WPC Discussions
+Surface Analysis
+Days ½-2½ CONUS
+Days 3-7 CONUS
+Days 4-8 Alaska
+QPF
+PQPF
+Excessive
+ Rainfall
+Mesoscale Precip
+ Discussion
+Flood Outlook
+Winter Weather
+Storm Summaries
+Heat Index
+Tropical Products
+Daily Weather Map
+GIS Products
+Current Watches/
+Warnings
+Satellite and Radar Imagery
+GOES-East Satellite
+GOES-West Satellite
+National Radar
+Product Archive
+WPC Verification
+QPF
+Medium Range
+Model Diagnostics
+Event Reviews
+Winter Weather
+International Desks
+Development and Training
+WPC HydroMet
+ Testbed
+WPC Overview
+About the WPC
+Mission and
+ VisionWPC History
+About Our
+ ProductsOther Sites
+FAQs
+ Meteorological Calculators
+Contact Us
+About Our Site
+About Our
+ Products
+Quantitative
+Precipitation Forecasts
+Day 1Days 1-25- and
+7-day Totals
+Day 2Days 1-3
+Day 3Days 4-5 and
+Days 6-7
+Loop of All 6-hourly or 
+ 24-hourly Forecasts for Days 1-3
+View 12-Hour QPFs for Days 1-3
+WPC QPF Archive
+Extreme Precipitation Monitor
+24 Hour Precipitation Total - Day 1
+Day 1 QPF
+[contours only]
+6 Hourly Precipitation Amounts - Day 1
+Update (00-06 hr)
+[contours only]06-12 hr.
+[contours only]12-18 hr.
+[contours only]
+18-24 hr.
+[contours only]
+24-30 hr.
+[contours only]
+Scrollable Multi-Chart Series
+Excessive Rainfall Forecast + All Day 1 Forecasts
+All Day 2 Forecasts
+Excessive Rainfall + All 6-Hourly Fcsts Days 1 and 2
+24-Hourly Fcsts Days 1-3 + 48-Hour Fcst Days 4-5 and Days 6-7
+Interactive QPF Product Browser
+WPC 6-Hour Probabilistic QPFs
+Experimental Probabilistic Precipitation Portal
+Experimental Urban Rain Rate Dashboard (URRD)
+WPC QPF is also available in the following formats:
+GRIB 2
+Shapefiles
+KML
+About These Products
+Precipitation Verification
+How accurate are WPC precipitation forecasts?
+Computing precipitation forecast accuracy
+24-Hour Observed Precipitation Charts (Valid 12Z-12Z)
+ (introduced 10/1/2008)
+Latest
+24-Hour Precipitation Chart (original version)
+[printable
+version]
+NOAA/National Weather Service
+National Centers for Environmental Prediction
+ Weather Prediction Center
+ 5830 University Research Court
+ College Park, Maryland 20740
+Weather Prediction Center Web TeamDisclaimer
+Credits
+Glossary
+Privacy Policy
+About Us
+Career Opportunities
+ Page last modified: Tuesday, 16-Sep-2025 13:25:11 UTC

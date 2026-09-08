@@ -1,0 +1,1015 @@
+# 天气预测中心
+# URL: https://www.wpc.ncep.noaa.gov/
+# fetched: 20260908_113934
+
+Weather Prediction Center
+National Oceanic and Atmospheric Administration
+NCEP:
+ AWC ·
+ CPC ·
+ EMC ·
+ NCO ·
+ NHC ·
+ OPC ·
+ SPC ·
+ SWPC ·
+ WPC
+Home 
+Forecasts & Analyses ▼
+Daily Weather Map
+Day ½–2½
+Day 3–7 CONUS
+Day 3–7 Hazards
+Day 4–8 Alaska
+Excessive Rainfall
+Flood Outlook
+GIS Products
+Heat Index
+Mesoscale Precip Discussion
+National Forecast Charts
+National High & Low
+PQPF
+QPF
+Storm Summaries
+Surface Analysis
+Tropical Products
+Winter Weather
+WPC Discussions
+Archives ▼
+Daily Weather Maps
+Day 3-7
+Excessive Rainfall Outlooks
+Excessive Rainfall Outlook Climatology
+Mesoscale Precip Discussions
+National Forecast Charts
+National High & Low
+QPF
+Storm Summaries
+Surface Analysis
+Tropical Advisories
+Winter Weather
+WPC Archive Page
+Verification ▼
+Day 3–7
+Event Reviews
+Model Diagnostics
+QPF
+Winter Weather
+International ▼
+Desks
+GDI
+Desk Forecasting Tools
+Puerto Rico QPF
+Development ▼
+HydroMet Testbed
+Publications
+About ▼
+About the WPC
+FAQ
+History
+Mission&Vision
+Product Description
+Student Opportunities
+Search
+Search For
+NWSAll NOAA
+HazardSep 08Sep 09Sep 10
+Excessive RainfallMarginalSlightMarginal
+Heavy Snow (≥ 4”)No AreaNo AreaNo Area
+Ice (≥ 0.25”)No AreaNo AreaNo Area
+WPC's Medium Range Hazards Forecast
+Winter Storm Severity Index
+Experimental HeatRisk
+Overview
+Surface Analysis
+Fronts
+QPF
+Excessive Rain
+Winter Wx
+Day 3–7
+Forecast Tools
+National Forecast Chart
+Valid Mon Sep 7, 2026
+Valid Tue Sep 8, 2026
+Valid Wed Sep 9, 2026
+Day 1
+Day 2
+Day 3
+ Image Format:
+English(PDF)(PDF)(PDF)
+Español(PDF)(PDF)(PDF)
+Interactive Map
+ » Interactive National Forecast Chart
+ + Additional Links
+» Description of the National Forecast Chart
+» Product Archives
+» Download hazards in KML or shapefile format or GeoJSON format
+WPC Top Stories:
+Mesoscale Precipitation Discussion #1222 is currently in effect
+Latest Key Messages for Long-Duration Heat Wave
+We are interested in feedback about our Precipitation Object Tracking page!
+Check out the HeatRisk page to understand potential heat impacts.
+Explore WPC's experimental Probabilistic Precipitation Portal
+North American Surface Analysis Legacy Page:
+Analyzed at 00Z Mon Sep 07, 2026
+Analyzed at 03Z Mon Sep 07, 2026
+Analyzed at 06Z Mon Sep 07, 2026
+Analyzed at 09Z Mon Sep 07, 2026
+Analyzed at 12Z Mon Sep 07, 2026
+Analyzed at 15Z Mon Sep 07, 2026
+Analyzed at 18Z Mon Sep 07, 2026
+Analyzed at 21Z Mon Sep 07, 2026
+Analyzed at 00Z Tue Sep 08, 2026
+-24 hr
+-21 hr
+-18 hr
+-15 hr
+-12 hr
+-9 hr
+-6 hr
+-3 hr
+latest
+ Image Format:
+Standard
+Satellite Composite
+Radar Composite
+Black and White
+Fronts Only
+Interactive Map
+ » Interactive Surface Map
+ » NWS Unified Surface Analysis
+ + Additional Links
+» Product Archives
+» NWS Unified Surface Analysis Manual
+» Other Surface Analysis Products
+Surface Fronts and Sea-Level Pressures Legacy Page:
+Analyzed 00Z Tue Sep 08, 2026
+Valid 06Z Tue Sep 08, 2026
+Valid 12Z Tue Sep 08, 2026
+Valid 18Z Tue Sep 08, 2026
+Valid 00Z Wed Sep 09, 2026
+Valid 12Z Wed Sep 09, 2026
+Valid 00Z Thu Sep 10, 2026
+Valid 12Z Thu Sep 10, 2026
+Valid 12Z Fri Sep 11, 2026
+Valid 12Z Sat Sep 12, 2026
+Valid 12Z Sun Sep 13, 2026
+Valid 12Z Mon Sep 14, 2026
+00ZTue
+06ZTue
+12ZTue
+18ZTue
+00ZWed
+12ZWed
+00ZThu
+12ZThu
+12ZFri
+12ZSat
+12ZSun
+12ZMon
+ + Short Range Forecast Discussion (Day ½-2½)
+ Short Range Forecast Discussion
+NWS Weather Prediction Center College Park MD
+327 PM EDT Mon Sep 07 2026
+Valid 00Z Tue Sep 08 2026 - 00Z Thu Sep 10 2026
+...Severe thunderstorms and heavy rainfall expected across the Northern
+Rockies and the Northern Plains today, spreading southeastward this week...
+...Modest relief from the heat across the midsection of the country late
+Wednesday; cooler air begins to moderate across the Northeast and Western
+U.S....
+...Scattered thunderstorms linger across the Southeast...
+As a large high-pressure system brings fine and cool weather across the
+Great Lakes and the Northeast this Labor Day, a low-pressure system is
+spreading unsettled weather into the northern Rockies and the northern
+Plains. This is in response to a deep upper-level low getting ready to
+eject out of the northern Rockies toward southern Canada. Strong dynamics
+associated with this weather system will bring heavy rainfall and
+scattered severe thunderstorms across the Northern Rockies to the Northern
+Plains as today progresses. The low-pressure system is forecast to
+intensify and move into the southern prairies of Canada by tonight, but
+the potent cold front trailing from the low center will bring a round of
+strong to severe thunderstorms as the front sweeps through the northern
+Plains today, reaching into the upper Midwest tonight. By Tuesday, the
+southern portion of the front will lose some momentum, allowing showers
+and thunderstorms to develop over the north-central Plains and advance
+gradually into the Upper Midwest by Wednesday morning. A Slight Risk of
+excessive rainfall remains in effect across Iowa Tuesday to early
+Wednesday.
+As the high pressure system continues to expand southward into the Eastern
+U.S. and encounters the heat dome anchored over the country's midsection,
+the frontal boundary will eventually stall before reaching the Gulf Coast.
+This pattern will allow scattered thunderstorms to linger across the
+Southeast, including the Sunshine State, through the next few days. Behind
+the front, much of the Northeast and Mid-Atlantic will begin a gradual
+warming trend towards more seasonable temperatures as the cool airmass
+begins to moderate, with the exception of northern Maine as reinforcing
+cold air arrives Wednesday morning.
+Temperatures across the Western U.S. will follow a similar warming trend
+beginning tomorrow as mid-level heights rise with the departure of the
+lingering upper-low. East of the Rockies, some much needed relief from the
+oppressive heat is expected late Wednesday with the arrival of the
+trailing cold front from the Canadian cyclone. Until then, however,
+daytime highs in the upper-90s and triple digits combined with record warm
+temperatures will maintain dangerous heat for the next 24-48 hours over
+the Plains and Middle Mississippi Valley. 
+Asherman/Kong
+Graphics available at
+https://www.wpc.ncep.noaa.gov/basicwx/basicwx_ndfd.php
+Extreme Heat Key Messages available at:
+https://www.wpc.ncep.noaa.gov/basicwx/basicwx_ndfd.php
+ + Medium Range Forecast Discussion (Day 3-7)
+ Extended Forecast Discussion
+NWS Weather Prediction Center College Park MD
+141 PM EDT Mon Sep 7 2026
+Valid 12Z Thu Sep 10 2026 - 12Z Mon Sep 14 2026
+...Prolonged late-summer heat wave lingers for the southern Plains
+through next weekend...
+...Overview...
+An upper level trough will push across the Northeast late this
+week, accompanied by a cold front that will bring precipitation
+chances from the Northeast to the Mid-Mississippi Valley. Upper
+level troughing will also extend into the Northwest late this week
+and be reinforced by shortwave energy next weekend. This feature
+will gradually push east through early next week, resulting in
+unsettled weather from the Northwest to the Plains, with some
+winter weather potential for the northern Rockies. Meanwhile, upper
+level ridging will persist across the southern tier, maintaining
+hot conditions across the south-central U.S.
+...Guidance/Predictability Assessment...
+Model guidance remains in good agreement on the synoptic scale
+pattern through the end of the week, with relatively flat/zonal
+upper level flow leading to some minor timing differences. Model
+spread increases significantly next weekend into early next week as
+the models struggle to resolve upper level interactions between
+various lows and troughs extending from Canada into the northern
+tier of the lower 48 states. These interactions will ultimately
+determine the evolution of the upper level trough/shortwave in the
+Northwest next weekend.
+Agreement among model solutions has somewhat improved since the
+overnight forecast, now reflecting the most likely solution to be
+slower with less interaction with energy in Canada. The 06Z runs of
+the AI-GFS and EC-AIFS highlighted this trend and were even slower
+than the other deterministic solutions, though the 12Z AI-GFS
+is a bit too dramatic with this trend. The GFS runs have remained
+consistently too progressive, but the 12Z run showed a significant
+slow down and falls closer to the consensus. Ensemble means also
+showed a large spread of solutions, further highlighting the
+uncertainty surrounding the Northwestern trough evolution. 
+Given good agreement, a near even blend of the deterministic
+guidance was used as a starting point for the forecast through the
+end of this week. Ensemble means from the ECENS and GEFS were
+added in increasing amounts through the weekend to help smooth out
+model differences, and the GFS was phased out since it was too
+progressive. This blend maintained continuity with the overnight
+forecast and the National Blend of Models.
+...Weather/Hazards Highlights...
+The long duration heat wave is expected to linger over the
+Mid/Lower Mississippi Valley and southern Plains through much of
+the week with widespread Major to Extreme HeatRisk. Key Messages
+remain in effect with several record minimum and maximum
+temperatures in the forecast. The pattern becomes more uncertain
+by the weekend, but there is some trend for relief to northern
+areas, confining the greatest heat threat to the southern Plains.
+Above normal heat may also build briefly across the Southwest and
+parts of California mid-week as upper level ridging extends into
+the region.
+A low pressure system moving through eastern Canada will push a
+cold front across the Midwest and Northeast, which will trigger
+showers and thunderstorms from the Northeast and Mid-Atlantic to
+the Ohio and Mississippi Valleys Wednesday into Thursday. Locally
+heavy rainfall will be possible, especially in the Ohio Valley
+where
+the front will encounter an anomalously moist air mass and in the
+central Appalachians where terrain may enhance precipitation
+totals. This frontal boundary should move relatively quickly, which
+will help to limit flash flood potential.
+The focus for precipitation will shift to the Northwest late this
+week into next weekend as upper level troughing strengthens. This
+trough will push a cold front south across the Northwest and
+northern Plains late this week, which will bring unsettled weather
+to these regions. Early next week, the front will continue to move
+south across the Great Basin and Intermountain West while low
+pressure strengthens along the boundary over the northern/central
+Plains. Wintry weather will be possible in the northern Rockies
+next weekend as cooler air moves in behind the cold front, and
+heavy rainfall potential may develop over eastern Plains into the
+Upper Midwest ahead of the strengthening low early next week.
+Daily rounds of diurnal showers and thunderstorms are expected to
+continue in the Southeast and Southwest. A couple of weak frontal
+boundaries will move into the Southeast and dissipate, which will
+focus moisture and instability across the region. In the
+Southwest, monsoonal moisture will continue focus showers and
+thunderstorms in the Four Corners region.
+Dolan/Santorelli
+Additional 3-7 Day Hazard information can be found on the WPC
+medium range hazards outlook chart at:
+https://www.wpc.ncep.noaa.gov/threats/threats.php
+WPC medium range 500mb heights, surface systems, weather grids,
+quantitative precipitation forecast, excessive rainfall outlook,
+winter weather outlook probabilities, heat indices and Key Messages
+are at:
+https://www.wpc.ncep.noaa.gov/medr/5dayfcst500_wbg.gif
+https://www.wpc.ncep.noaa.gov/medr/5dayfcst_wbg_conus.gif
+https://www.wpc.ncep.noaa.gov/5km_grids/5km_gridsbody.html
+https://www.wpc.ncep.noaa.gov/qpf/day4-7.shtml
+https://www.wpc.ncep.noaa.gov/#page=ero
+https://www.wpc.ncep.noaa.gov/wwd/pwpf_d47/pwpf_medr.php?day=4
+https://www.wpc.ncep.noaa.gov/heat_index.shtml
+https://www.wpc.ncep.noaa.gov/#page=ovw
+ + Hawaii Forecast Discussion (Day 1-7)
+Hawaii Extended Forecast Discussion
+NWS Weather Prediction Center College Park MD
+335 AM EDT Mon Sep 7 2026
+Valid 00Z Tue 08 Sep 2026 - 00Z Tue 15 Sep 2026
+All eyes in Hawaii at the start of the period will be on Hurricane
+Lowell as it tracks west of Niihau and Kauai, but close enough to
+those islands to have hurricane and heavy rainfall concerns. The
+higher elevations of Kauai will allow for enhanced rainfall into
+the leeward/south side of the island as the outer rainbands of
+Lowell move northward and the southerly flow associated therewith
+brings heavy rainfall to the usually drier sides of those islands.
+Flash flooding will be a notable concern. Enhanced easterly flow
+as a result of the passage of the hurricane means the other
+islands also get heavier rains, but for the most part will be
+aimed at the windward and typically wetter sides of those islands.
+Once Lowell moves away into the Papahanaumokuakea Marine National
+Monument by Tuesday, a more typical trade wind weather regime will
+return to the islands. A tropical wave may impact the islands 
+late weekend/early next week, but the timing and intensity of that
+wave remains to be seen in the guidance.
+Wegman
+ + Additional Links
+» More Surface Analysis Products
+» More Short Range Products
+» More Medium Range Products
+Quantitative Precipitation Forecasts Legacy Page:
+Valid 00Z 09/08/2026 - 00Z 09/09/2026
+Valid 00Z 09/09/2026 - 00Z 09/10/2026
+Valid 00Z 09/10/2026 - 00Z 09/11/2026
+Valid 00Z 09/11/2026 - 00Z 09/12/2026
+Valid 00Z 09/12/2026 - 00Z 09/13/2026
+Valid 00Z 09/13/2026 - 00Z 09/14/2026
+Valid 00Z 09/14/2026 - 00Z 09/15/2026
+Valid 00Z 09/08/2026 - 00Z 09/10/2026
+Valid 00Z 09/08/2026 - 00Z 09/11/2026
+Valid 00Z 09/08/2026 - 00Z 09/13/2026
+Valid 00Z 09/08/2026 - 00Z 09/15/2026
+Valid 00Z 09/08/2026 - 12Z 09/08/2026
+Valid 06Z 09/08/2026 - 18Z 09/08/2026
+Valid 12Z 09/08/2026 - 00Z 09/09/2026
+Valid 18Z 09/08/2026 - 06Z 09/09/2026
+Valid 00Z 09/09/2026 - 12Z 09/09/2026
+Valid 06Z 09/09/2026 - 18Z 09/09/2026
+Valid 12Z 09/09/2026 - 00Z 09/10/2026
+Valid 18Z 09/09/2026 - 06Z 09/10/2026
+Valid 00Z 09/10/2026 - 12Z 09/10/2026
+Valid 06Z 09/10/2026 - 18Z 09/10/2026
+Valid 12Z 09/10/2026 - 00Z 09/11/2026
+Valid 00Z 09/08/2026 - 06Z 09/08/2026
+Valid 06Z 09/08/2026 - 12Z 09/08/2026
+Valid 12Z 09/08/2026 - 18Z 09/08/2026
+Valid 18Z 09/08/2026 - 00Z 09/09/2026
+Valid 00Z 09/09/2026 - 06Z 09/09/2026
+Valid 06Z 09/09/2026 - 12Z 09/09/2026
+Valid 12Z 09/09/2026 - 18Z 09/09/2026
+Valid 18Z 09/09/2026 - 00Z 09/10/2026
+Valid 00Z 09/10/2026 - 06Z 09/10/2026
+Valid 06Z 09/10/2026 - 12Z 09/10/2026
+Valid 12Z 09/10/2026 - 18Z 09/10/2026
+Valid 18Z 09/10/2026 - 00Z 09/11/2026
+Valid 00Z 09/11/2026 - 00Z 09/13/2026
+Valid 00Z 09/13/2026 - 00Z 09/15/2026
+Day 1
+Day 2
+Day 3
+Day 4
+Day 5
+Day 6
+Day 7
+Total:  Day 1-2
+Day 1-3
+Day 1-5
+Day 1-7
+00-12Z
+06-18Z
+12-00Z
+18-06Z
+00-12Z
+06-18Z
+12-00Z
+18-06Z
+00-12Z
+06-18Z
+12-00Z
+00-06Z
+06-12Z
+12-18Z
+18-00Z
+00-06Z
+06-12Z
+12-18Z
+18-00Z
+00-06Z
+06-12Z
+12-18Z
+18-00Z
+Day 4/5
+Day 6/7
+ Image Options:
+24 Hour/Multi Day QPF
+12-Hourly QPF (Day 1-3)
+6-Hourly QPF (Day 1-3)
+48-Hour QPF (Day 4-5/6-7)
+ » Probabilistic QPF (Day 1-3)
+ » Extreme Precipitation
+   Monitor
+ » Experimental Urban Rain
+   Rate Dashboard
+ » View
+ Probabilistic Precipitation Guidance (Day 1-3)
+ »
+ Extreme Precipitation Monitor
+ »
+ Experimental Urban Rain Rate Dashboard
+ + Additional Links
+» Product Verification
+» Product Archive
+» Product Info
+» Additional formats of QPF: 
+ GRIB 2 |
+ Shapefiles |
+ KML
+» Other QPF Products
+Excessive Rainfall Forecasts Interactive Page:
+Valid 01Z Tue Sep 08 2026 - 12Z Tue Sep 08 2026
+Valid 12Z Tue Sep 08 2026 - 12Z Wed Sep 09 2026
+Valid 12Z Wed Sep 09 2026 - 12Z Thu Sep 10 2026
+Valid 12Z Thu Sep 10 2026 - 12Z Fri Sep 11 2026
+Valid 12Z Fri Sep 11 2026 - 12Z Sat Sep 12 2026
+Day 1
+Day 2
+Day 3
+Day 4
+Day 5
+Soliciting feedback on 
+ proposed changes
+ to the Excessive Rainfall Outlook
+Interactive Page
+ + Forecast Discussion
+Excessive Rainfall Discussion
+NWS Weather Prediction Center College Park MD
+857 PM EDT Mon Sep 7 2026
+Day 1
+Valid 01Z Tue Sep 08 2026 - 12Z Tue Sep 08 2026
+...THERE IS A MARGINAL RISK OF EXCESSIVE RAINFALL FOR A PORTION OF
+NORTHWESTERN MONTANA, THE SOUTHWEST, AND THE UPPER MIDWEST...
+...Northwest Montana...
+The comma head/deformation precip band rotating around surface low
+pressure in Canada will continue to weaken and pull away from the
+region overnight. Recent rainfall rates have been modest, but FFG
+values remain low and rain has fallen most of the day. We have
+downgraded the Slight Risk to a Marginal for the overnight hours to
+cover the lower chance of some flood issues.
+...Upper Mississippi Valley...
+The height falls ejecting northeastward from the Northern Rockies
+into the Northern Plains will strengthen the low level southerly
+flow along and ahead of the associated warm frontal boundary moving
+through the Dakotas, raising PW values to 1.75-2.00"+. Overall
+favorable large scale conditions will support organized pre-
+frontal/frontal convection over the Upper MS Valley this
+evening/overnight. Convection should be progressive which will
+limit the excessive rainfall potential -- the Marginal risk
+suffices.
+...Southeastern Arizona into western to central New Mexico...
+Ongoing isolated convection continues at 01Z within the rather
+moist environment with PW values still above average. Cells will
+remain rather isolated and eventually wane later this evening, but
+will maintain the Marginal risk for the earlier hours.
+...Areas in the Southeast/Gulf Coast...
+Convection has diminished and we have removed the Marginal risk for
+the overnight hours.
+Fracasso/Oravec
+Day 1 threat area: www.wpc.ncep.noaa.gov/qpf/94epoints.txt
+Excessive Rainfall Discussion
+NWS Weather Prediction Center College Park MD
+857 PM EDT Mon Sep 7 2026
+Day 2
+Valid 12Z Tue Sep 08 2026 - 12Z Wed Sep 09 2026
+...THERE IS A SLIGHT RISK OF EXCESSIVE RAINFALL OVER IOWA...
+2030Z Update...
+...Florida Peninsula...
+Anomalous PWs up to 2.25" and a stalled frontal boundary will
+utilize 1,000-2,000 J/kg of MLCAPE to trigger more scattered
+thunderstorms capable of producing 2-3"/hr rainfall rates. The
+setup is not too different than the setup that is supporting the
+Marginal Risk for Day 1, but this time HREF/REFS members show
+locally heavy rainfall rates could reside along the western coast
+of FL. Slow storm motions with the aforementioned rates mentioned
+above suggest the potential for a localize flash flood threat
+Tuesday afternoon.
+...Midwest & Southwest Marginals...
+The Marginal Risks in the Midwest and the Southwest were merged to
+account for an increase in WPC QPF over eastern CO and far western
+KS. PWs are likely to surpass 1.25", which is above the 97.5
+climatological percentile per ECMWF guidance, and a nearby frontal
+boundary will help to generate thunderstorms in an environment
+containing 500-1,000 J/kg MUCAPE. The QPF also increased along the
+cold front in the Central Plains and Midwest, supporting an
+expansion of the Marginal in those areas.
+Mullinax
+---Previous Discussion---
+...Upper Mississippi Valley into the Upper Lakes...
+The surface front pushing east into the Northern Plains day 1 will
+remain very progressive day 2 into the Upper Mississippi
+Valley/Upper Lakes. The progressive nature of the front will
+continue to be a detriment to widespread runoff issues. However,
+the southwestern portion of this front will slow somewhat compared
+to the farther northern portion in the vicinity of eastern NE
+/northeast Kansas, east into Iowa. Across these regions there is a
+better chance of a period of training of cells late Tuesday/early
+hours of Wednesday. This is shown in the latest guidance that has
+consensus for a heavier axis of qpf here. A small slight risk area
+was added across portions of central to southern Iowa for this
+training potential. RRFS neighborhood probabilities are fairly high
+for 1 and 2"+ amounts across the slight risk area, with a smaller
+50%+ probability for 3"+ amounts over east central Iowa.
+Marginal risk areas
+..Eastern Arizona into western to central New Mexico...
+No significant changes day 2 to the axis of above average PW
+values extending from eastern portions of Arizona into western to
+central New Mexico. Continued low confidence with qpf details, but
+potential for another round of widespread scattered convection
+across this area. Locally heavy rain and isolated runoff issues
+again possible. Anomalous PW values also expected to push farther
+north from Southern CA into Central CA. At the moment, models are
+not showing precip developing day 2 in this anomalous axis.
+The previous marginal risk area over northeast Montana was removed
+given latest model qpf consensus. The broad marginal was also
+removed along the Gulf coast into FL given less organized precip
+than day 1
+Oravec
+Day 2 threat area: www.wpc.ncep.noaa.gov/qpf/98epoints.txt
+Excessive Rainfall Discussion
+NWS Weather Prediction Center College Park MD
+857 PM EDT Mon Sep 7 2026
+Day 3
+Valid 12Z Wed Sep 09 2026 - 12Z Thu Sep 10 2026
+...THERE IS A MARGINAL RISK OF EXCESSIVE RAINFALL FROM THE SIERRA
+INTO SOUTHEAST CALIFORNIA, THE SOUTHWEST, THE MID MISSISSIPPI
+VALLEY INTO THE OHIO VALLEY AND NORTHERN NEW YORK STATE INTO
+NORTHERN VERMONT...
+2030Z Update...
+The Marginals in the Southwest and Northeast contained minor
+adjustments to account for latest trends in guidance and changes
+in WPC QPF. No upgrades were made in those regions. While no Slight
+Risk was issued this cycle, there was a notable bump in QPF over
+parts of the Mid Mississippi and Ohio Valleys that led to some
+consideration for a Slight Risk, particularly in southern MO.
+Assessing model guidance showed the both QPF totals and the
+location of QPF maxima remained unclear, and soils in southern MO
+could use the rain given worsening drought conditions. We will
+continue to monitor model trends closely as the ingredients for
+scattered instances of flash flooding (anomalous PWs, ample
+instability, potential training) will be available to developing
+thunderstorms on Thursday.
+Mullinax
+---Previous Discussion---
+...Sierra, Southeast California, Southwest...
+A very broad area of anomalous PW values, 2 to 3+ standard
+deviations above the mean, will stretch day 3 from central to
+southern California, across the southern Great Basin and into the
+Southwest. Latest models do show scattered precip in this high PW
+axis from the Sierra into Southeast California and over the
+Southwest. The heaviest totals continue across similar areas day 1
+and 2 from eastern Arizona into western to central NM where a
+marginal risk continues day 3. The marginal risk was expanded
+northward from day 2 into the Sierra to capture any locally heavy
+precip amounts in the much above average PW axis.
+...Lower Missouri, Mid Mississippi, Ohio Valley region...
+A surface cold front expected to sink southward through the Mid
+MS, Lower MO and into the OH Valley region day 3. PW values
+expected to remain anomalous along this front with values 2"+,
+supporting potential for widespread moderate to locally heavy
+totals. The front remains very progressive to the south, which
+along with relatively high FFG values, will limit widespread runoff
+potential.
+...Northern NY State into Northern Vermont...
+The northeastern portion of the front moving south into the Mid MS
+Valley/OH Valley region will also remain very progressive to the
+east across the eastern Lakes, northern NY State and northern New
+England. PW values expected to be anomalous along this portion of
+the front also, with values 1.75-2.00"+. No changes to the
+marginal risk area for far northern NY state into northern VT where
+model consensus is for moderate to heavy precip totals. The
+expected very progressive nature of the front will be a detriment
+to widespread runoff issues, but the anomalous PW values and
+potential for a brief period of training may produce isolated
+issues.
+Oravec
+Day 3 threat area: www.wpc.ncep.noaa.gov/qpf/99epoints.txt
+Excessive Rainfall Discussion
+NWS Weather Prediction Center College Park MD
+857 PM EDT Mon Sep 7 2026
+Day 4 and Day 5
+Valid 12Z Thu Sep 10 2026 - 12Z Sat Sep 12 2026
+...THERE IS A SLIGHT RISK OF EXCESSIVE RAINFALL FOR PORTIONS OF THE
+CENTRAL APPALACHIANS AND UPPER OHIO VALLEY ON THURSDAY...
+...Central Appalachians and Upper Ohio Valley...
+A fast-moving cold front tracking east across the Midwest will
+provide the forcing, coincident with a strong upper level shortwave
+trough, for numerous showers and thunderstorms to impact the
+central Appalachians and upper Ohio Valley Thursday afternoon and
+evening. Ahead of this front, deep tropical moisture from off the
+Gulf will advect northeastward into the region. PWATs are expected
+to exceed 1.75 inches, perhaps exceeding 2 inches in spots, as the
+thunderstorms rumble through. The front itself will be aligned
+parallel to the mountains, moving southeastward/perpendicular to
+the mountains. Thus, ideal uplift will be in place as the front
+hits the mountains all at roughly the same time. The northwesterly
+flow behind the front running straight into the mountains will
+locally enhance the uplift, and thus strengthen the numerous storms
+expected Thursday afternoon. Soil moisture levels are about normal
+for this time of year and FFG values are only around 1"/hr
+(currently). Fortunately, no significant rainfall is expected in
+this area until Thursday, which should help mitigate some of the
+resultant flash flooding as the storms move through. However, with
+ideal uplift, there will likely be some training and backbuilding
+as continued uplift through the afternoon and evening allows repeat
+thunderstorms to develop on the windward sides of the mountains,
+then continue advecting southeastward.
+Given the abundant moisture and forcing present, as well as the
+flash-flood-prone nature of many of the mountain and river valleys
+of the central Appalachians, as well as any urban concerns from
+Pittsburgh south through Charleston, the Slight Risk area was
+maintained with this update. Model guidance is in good agreement
+on the position of the front during this period, with the storms
+moving through at peak heating...maximizing their rainfall output.
+...Marginal Risks...
+Across the Southeast and Florida Peninsula, rounds of afternoon
+showers and thunderstorms are expected both Thursday and Friday as
+moisture levels remain elevated and winds aloft are light. Typical
+heavy rains are expected along the Gulf Coast. While any one storm
+is unlikely to cause flash flooding, the widespread coverage of
+storms and the decently high likelihood that storms will impact
+more flood- sensitive urban areas led to the continuation of the
+Marginal Risk for these areas.
+The monsoon in the Southwest will be ongoing both Thursday and
+Friday, but its coverage and intensity should be subdued compared
+to recent days. Thus, the Marginal Risks are generally confined to
+Arizona and New Mexico.
+A strong shortwave will track along the Montana/Canada border
+Thursday night into Friday, but most of the guidance indicates that
+the heaviest rain will remain in Canada. In addition, little to no
+instability should keep rates in check despite FFG values
+0.75-1.25"/hr. Removed the Marginal risk for D5 with this update.
+Fracasso/Wegman
+Excessive Rainfall Discussion
+NWS Weather Prediction Center College Park MD
+857 PM EDT Mon Sep 7 2026
+Day 4 and Day 5
+Valid 12Z Thu Sep 10 2026 - 12Z Sat Sep 12 2026
+...THERE IS A SLIGHT RISK OF EXCESSIVE RAINFALL FOR PORTIONS OF THE
+CENTRAL APPALACHIANS AND UPPER OHIO VALLEY ON THURSDAY...
+...Central Appalachians and Upper Ohio Valley...
+A fast-moving cold front tracking east across the Midwest will
+provide the forcing, coincident with a strong upper level shortwave
+trough, for numerous showers and thunderstorms to impact the
+central Appalachians and upper Ohio Valley Thursday afternoon and
+evening. Ahead of this front, deep tropical moisture from off the
+Gulf will advect northeastward into the region. PWATs are expected
+to exceed 1.75 inches, perhaps exceeding 2 inches in spots, as the
+thunderstorms rumble through. The front itself will be aligned
+parallel to the mountains, moving southeastward/perpendicular to
+the mountains. Thus, ideal uplift will be in place as the front
+hits the mountains all at roughly the same time. The northwesterly
+flow behind the front running straight into the mountains will
+locally enhance the uplift, and thus strengthen the numerous storms
+expected Thursday afternoon. Soil moisture levels are about normal
+for this time of year and FFG values are only around 1"/hr
+(currently). Fortunately, no significant rainfall is expected in
+this area until Thursday, which should help mitigate some of the
+resultant flash flooding as the storms move through. However, with
+ideal uplift, there will likely be some training and backbuilding
+as continued uplift through the afternoon and evening allows repeat
+thunderstorms to develop on the windward sides of the mountains,
+then continue advecting southeastward.
+Given the abundant moisture and forcing present, as well as the
+flash-flood-prone nature of many of the mountain and river valleys
+of the central Appalachians, as well as any urban concerns from
+Pittsburgh south through Charleston, the Slight Risk area was
+maintained with this update. Model guidance is in good agreement
+on the position of the front during this period, with the storms
+moving through at peak heating...maximizing their rainfall output.
+...Marginal Risks...
+Across the Southeast and Florida Peninsula, rounds of afternoon
+showers and thunderstorms are expected both Thursday and Friday as
+moisture levels remain elevated and winds aloft are light. Typical
+heavy rains are expected along the Gulf Coast. While any one storm
+is unlikely to cause flash flooding, the widespread coverage of
+storms and the decently high likelihood that storms will impact
+more flood- sensitive urban areas led to the continuation of the
+Marginal Risk for these areas.
+The monsoon in the Southwest will be ongoing both Thursday and
+Friday, but its coverage and intensity should be subdued compared
+to recent days. Thus, the Marginal Risks are generally confined to
+Arizona and New Mexico.
+A strong shortwave will track along the Montana/Canada border
+Thursday night into Friday, but most of the guidance indicates that
+the heaviest rain will remain in Canada. In addition, little to no
+instability should keep rates in check despite FFG values
+0.75-1.25"/hr. Removed the Marginal risk for D5 with this update.
+Fracasso/Wegman
+ + Additional Links
+» Product Info
+» Understanding WPC Excessive Rainfall Risk Categories
+» Excessive Rainfall Outlook Climatology
+Winter Weather Forecasts Legacy Page:
+Valid 00Z 09/08/2026 - 00Z 09/09/2026
+Valid 00Z 09/09/2026 - 00Z 09/10/2026
+Valid 00Z 09/10/2026 - 00Z 09/11/2026
+Valid 00Z 09/11/2026 - 00Z 09/12/2026
+Valid 00Z 09/12/2026 - 00Z 09/13/2026
+Valid 00Z 09/13/2026 - 00Z 09/14/2026
+Valid 00Z 09/14/2026 - 00Z 09/15/2026
+Day 1
+Day 2
+Day 3
+Day 4
+Day 5
+Day 6
+Day 7
+ Day 1-3 Image Options:
+Minor Impacts
+Moderate Impacts
+Major Impacts
+Extreme Impacts
+Probabilistic Winter Storm
+Severity Index
+Winter Storm Severity Index
+Experimental Winter
+Storm Outlook
+Interactive Map (Day 1-3)
+Interactive Map (Day 4-7)
+ » Probabilistic Winter Storm Severity Index
+ » Winter Storm Severity Index
+ » Experimental 
+ Probabilistic Precipitation Portal
+ » Interactive Winter Weather Map (Day 1-3)
+ » Interactive Winter Weather Map (Day 4-7)
+ + Forecast Discussion (Day 1-3)
+Probabilistic Heavy Snow and Icing Discussion
+NWS Weather Prediction Center College Park MD
+154 PM EDT Wed May 6 2026
+Valid 00Z Thu May 07 2026 - 00Z Sun May 10 2026
+...WPC Winter Weather Desk no longer routinely staffed until
+late September, 2026...
+Pending any significant winter weather, the WPC Winter Weather Desk
+will not be staffed through the summer. The desk will resume
+continuous staffing starting in the fall.
+The WPC winter products will continue to be produced, however, and
+all products except the heavy snow discussion (HSD) will be
+available. This includes the Winter Storm Outlook (WSO), Winter
+Storm Severity Index (WSSI), and Probabilistic Winter Precipitation
+Forecasts (PWPF).
+WPC
+ + Additional Links
+» Experimental Winter Storm Outlook
+» Probabilistic Winter Storm Severity Index
+» Product Verification
+» Product Archive
+» Product Info
+» Other Winter Weather Products
+Medium Range Forecasts Legacy Page:
+Valid 12Z Thu Sep 10, 2026
+Valid 12Z Fri Sep 11, 2026
+Valid 12Z Sat Sep 12, 2026
+Valid 12Z Sun Sep 13, 2026
+Valid 12Z Mon Sep 14, 2026
+Day 3
+Day 4
+Day 5
+Day 6
+Day 7
+ Image Options:
+Fronts
+Max Temp (°F)
+Max Temp Anomaly (°F)
+Min Temp (°F)
+Min Temp Anomaly (°F)
+24-hr Pop(%)
+500mb Heights
+Day 3-7 Hazards
+Additional Products
+ + Forecast Discussion
+ Extended Forecast Discussion
+NWS Weather Prediction Center College Park MD
+141 PM EDT Mon Sep 7 2026
+Valid 12Z Thu Sep 10 2026 - 12Z Mon Sep 14 2026
+...Prolonged late-summer heat wave lingers for the southern Plains
+through next weekend...
+...Overview...
+An upper level trough will push across the Northeast late this
+week, accompanied by a cold front that will bring precipitation
+chances from the Northeast to the Mid-Mississippi Valley. Upper
+level troughing will also extend into the Northwest late this week
+and be reinforced by shortwave energy next weekend. This feature
+will gradually push east through early next week, resulting in
+unsettled weather from the Northwest to the Plains, with some
+winter weather potential for the northern Rockies. Meanwhile, upper
+level ridging will persist across the southern tier, maintaining
+hot conditions across the south-central U.S.
+...Guidance/Predictability Assessment...
+Model guidance remains in good agreement on the synoptic scale
+pattern through the end of the week, with relatively flat/zonal
+upper level flow leading to some minor timing differences. Model
+spread increases significantly next weekend into early next week as
+the models struggle to resolve upper level interactions between
+various lows and troughs extending from Canada into the northern
+tier of the lower 48 states. These interactions will ultimately
+determine the evolution of the upper level trough/shortwave in the
+Northwest next weekend.
+Agreement among model solutions has somewhat improved since the
+overnight forecast, now reflecting the most likely solution to be
+slower with less interaction with energy in Canada. The 06Z runs of
+the AI-GFS and EC-AIFS highlighted this trend and were even slower
+than the other deterministic solutions, though the 12Z AI-GFS
+is a bit too dramatic with this trend. The GFS runs have remained
+consistently too progressive, but the 12Z run showed a significant
+slow down and falls closer to the consensus. Ensemble means also
+showed a large spread of solutions, further highlighting the
+uncertainty surrounding the Northwestern trough evolution. 
+Given good agreement, a near even blend of the deterministic
+guidance was used as a starting point for the forecast through the
+end of this week. Ensemble means from the ECENS and GEFS were
+added in increasing amounts through the weekend to help smooth out
+model differences, and the GFS was phased out since it was too
+progressive. This blend maintained continuity with the overnight
+forecast and the National Blend of Models.
+...Weather/Hazards Highlights...
+The long duration heat wave is expected to linger over the
+Mid/Lower Mississippi Valley and southern Plains through much of
+the week with widespread Major to Extreme HeatRisk. Key Messages
+remain in effect with several record minimum and maximum
+temperatures in the forecast. The pattern becomes more uncertain
+by the weekend, but there is some trend for relief to northern
+areas, confining the greatest heat threat to the southern Plains.
+Above normal heat may also build briefly across the Southwest and
+parts of California mid-week as upper level ridging extends into
+the region.
+A low pressure system moving through eastern Canada will push a
+cold front across the Midwest and Northeast, which will trigger
+showers and thunderstorms from the Northeast and Mid-Atlantic to
+the Ohio and Mississippi Valleys Wednesday into Thursday. Locally
+heavy rainfall will be possible, especially in the Ohio Valley
+where
+the front will encounter an anomalously moist air mass and in the
+central Appalachians where terrain may enhance precipitation
+totals. This frontal boundary should move relatively quickly, which
+will help to limit flash flood potential.
+The focus for precipitation will shift to the Northwest late this
+week into next weekend as upper level troughing strengthens. This
+trough will push a cold front south across the Northwest and
+northern Plains late this week, which will bring unsettled weather
+to these regions. Early next week, the front will continue to move
+south across the Great Basin and Intermountain West while low
+pressure strengthens along the boundary over the northern/central
+Plains. Wintry weather will be possible in the northern Rockies
+next weekend as cooler air moves in behind the cold front, and
+heavy rainfall potential may develop over eastern Plains into the
+Upper Midwest ahead of the strengthening low early next week.
+Daily rounds of diurnal showers and thunderstorms are expected to
+continue in the Southeast and Southwest. A couple of weak frontal
+boundaries will move into the Southeast and dissipate, which will
+focus moisture and instability across the region. In the
+Southwest, monsoonal moisture will continue focus showers and
+thunderstorms in the Four Corners region.
+Dolan/Santorelli
+Additional 3-7 Day Hazard information can be found on the WPC
+medium range hazards outlook chart at:
+https://www.wpc.ncep.noaa.gov/threats/threats.php
+WPC medium range 500mb heights, surface systems, weather grids,
+quantitative precipitation forecast, excessive rainfall outlook,
+winter weather outlook probabilities, heat indices and Key Messages
+are at:
+https://www.wpc.ncep.noaa.gov/medr/5dayfcst500_wbg.gif
+https://www.wpc.ncep.noaa.gov/medr/5dayfcst_wbg_conus.gif
+https://www.wpc.ncep.noaa.gov/5km_grids/5km_gridsbody.html
+https://www.wpc.ncep.noaa.gov/qpf/day4-7.shtml
+https://www.wpc.ncep.noaa.gov/#page=ero
+https://www.wpc.ncep.noaa.gov/wwd/pwpf_d47/pwpf_medr.php?day=4
+https://www.wpc.ncep.noaa.gov/heat_index.shtml
+https://www.wpc.ncep.noaa.gov/#page=ovw
+ + Additional Links
+» Product Archive
+» Product Info
+» Day 3-7 Surface Composite
+» Other Medium Range Products
+Forecaster's Toolbox (Prototype)
+Tools Generated at WPC
+ These tools are NOT operationally supported. Data may not update regularly due to workstation failure and/or data unavailability.
+Experimental Urban Rain Rate Dashboard (URRD)
+Visualizes the probability of high rain rates that may lead to flash flooding over the next several days at over 60 major U.S. cities.
+Prototype Specialized Excessive Rainfall Maps
+Interface for specialized WPC Excessive Rainfall Outlook Maps for NWS County Warning Areas and States.
+Local Storm Reports
+Custom plots of Local Storm Reports across the Contiguous United States. Reports include rain, snow, ice, and severe weather, as well as other significant information from storm spotters.
+Extreme Precipitation Monitor
+Displays the climatological significance of precipitation forecast by WPC. The climatological significance
+ is represented by Average Recurrence Intervals (ARIs) of precipitation estimates from NOAA Atlas-14 and Atlas2.
+Ensemble Situational Awareness Table
+An interactive situational awareness table that displays anomalies, percentiles, and return intervals from the GEFS, NAEFS, and ECMWF Ensembles (login required to view ECMWF data). 
+*Please note that there is currently an issue where only users on a NOAA network can access this page. We are actively working to resolve this problem. 
+NDFD Forecast Temperature Records
+Interactive display of where temperatures could approach or exceed records within the contiguous U.S. (based on
+ NDFD temperature forecasts)
+NWS NDFD Max/Min Temperatures and Departure from Normal
+Displays Days 1-7 NDFD maximum and minimum temperatures, along with their respective departures from climatology.
+Precipitation Object Tracking
+Contains 4 different tools to track precipitation objects (heavy rain and snowfall) from short-range high-resolution deterministic and ensemble guidance. 
+Weather in Context Prototype
+Displays forecast information and its climatological context to quickly alert a forecaster when a record or neear-record breaking
+ event is possible. This tool is available for both CONUS and Alaska.
+Automated Forecast Low Clusters
+Displays 0-72 hour cyclone forecast positions from global ensemble and deterministic model guidance.
+Intense Rainfall and Flash Flood Reports
+Displays flood and flash flood reports as well as intense rainfall observations for user-selectable time ranges and customizable geographic regions. 
+ Includes ability to download reports and associated metadata in csv format. 
+Experimental HeatRisk
+The experimental National Weather Service (NWS) HeatRisk is a color-numeric-based index that provides a forecast of the potential level of risk for heat-related impacts to occur over a 24-hour period, with forecasts available out through 7 days.
+GEFS Probabilities
+Plots of GEFS probabilistic forecast of precipitation, temperature, and sea-level pressure exceeding
+ various thresholds.
+1/3/6/24-hr Changes
+Change in weather parameters (temperature, dewpoint, surface pressure, etc) over the last 1/3/6/24 hours. Data is provided from the Real-Time Mesoscale Analysis (RTMA) or the Rapid Refresh (RAP).
+Other Favorite Forecast Tools
+CIPS Guidance
+Analog guidance that uses an objective approach to find historical events that
+ are similar to the upcoming forecast.
+National Blend of Models
+Nationally consistent and skillful suite of calibrated forecast guidance based on a blend of both NWS and
+ non-NWS numerical weather prediction model data and post-processed model guidance.
+Atmospheric River Portal
+A portal for atmospheric river forecasts and diagnostics from the Center for Western Weather and Water Extremes.
+GEFS Plumes
+An interactive display of time series plots from GEFS ensemble members at a point.
+SPC Forecast Tools
+A variety of useful tools generated at The Storm Prediction Center (SPC).
+ECMWF Forecast Charts
+Output from the ECMWF Integrated Forecasting System (IFS), including medium range deterministic, 
+ ensemble, and machine learning model forecasts.
+WEATHER SAFETY
+TURN AROUND DON'T DROWN
+SOCIAL MEDIA
+ Quick Links and Additional Resources
+NWS Regional and Forecast Offices
+Eastern Region
+Southern Region
+Central Region
+Western Region
+Alaska Region
+Pacific Region
+NWS Local Offices
+River Forecast Centers
+Center Weather Service Units
+National Water Center
+Observations and Forecasts
+WPC Product Archives
+Radar
+GOES-East Satellite
+GOES-West Satellite
+Satellite and Information Service
+National Climatic Data Center
+World Forecasts
+Meteorological Calculators
+Weather Awareness
+Floods
+Winter Weather
+Heat
+Weather Safety
+Storm Ready
+Weather Ready Nation
+FEMA
+NOAA Weather Radio
+About WPC
+WPC Flyer
+Mission & Vision
+History
+Student Opportunities at WPC
+Contact Us
+Social Media
+Facebook
+X
+US Dept of Commerce
+NOAA/NWS/NCEP
+ Weather Prediction Center
+ 5830 University Research Court
+ College Park, MD 20740
+Weather Prediction Center Web Team
+Disclaimer
+Information Quality
+Help
+Glossary
+Privacy Policy
+Freedom of Information Act (FOIA)
+About Us
+Career Opportunities

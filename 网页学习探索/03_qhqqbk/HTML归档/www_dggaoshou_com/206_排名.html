@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>夺冠高手全国期货实盘大赛</title>
+  <meta name="keywords" content="夺冠高手、夺冠、实盘大赛、量化组比赛、轻量组、重量组、主观交易" />
+  <meta name="description" content="夺冠高手全国期货实盘大赛" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+  <link rel="stylesheet" type="text/css" href="plug-in/weui/weui.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/base.css" />
+  <link rel="stylesheet" type="text/css" href="css/pc.css?120003" />
+  <link rel="stylesheet" type="text/css" href="css/pc2.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/select2.min.css" />
+  <script type="text/javascript" src="plug-in/jquery/jquery.min.js"></script>
+  <script type="text/javascript" src="plug-in/jquery/select2.min.js"></script>
+  <script type="text/javascript" src="plug-in/weui/jquery-weui.min.js"></script>
+  <style>
+    .table-ranking-all tr th {
+      width: 33.3%;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app" v-cloak class="futures">
+    <div class="mainW">
+      <my-header></my-header>
+    </div>
+
+    <div class="mainW">
+      <div class="focus"><img src="images/banner_002.jpg" width="100%" /></div>
+    </div>
+
+    <div class="blank2"></div>
+
+    <div class="main-bgs-v2">
+      <div class="select-box">
+        <select class="chosen-select" style="width: 100px"></select>
+      </div>
+
+      <div class="ranking-categroy-bg">
+        <div class="ranking-categroy">
+          <div class="categroy-box">
+            <div class="categroy-item" :class="{on: item.isSelect}" v-for="item in rankingTabs" :key="item.title"
+              @click="selectRanking(item)">
+              {{item.title}}
+            </div>
+          </div>
+          <div class="input-box">
+            <input type="text" v-model="nickName" placeholder="请输入选择昵称" />
+            <img src="./images/index/search.png" alt="" @click="searchRanking()" />
+          </div>
+        </div>
+        <div class="ranking-categroy pdt15">
+          <div class="categroy-box">
+            <div class="categroy-item" :class="{on: item.isSelect}" v-for="item in listGroup" :key="item.groupCode"
+              @click="selectGroup(item)">
+              {{item.groupName}}
+            </div>
+          </div>
+        </div>
+        <div class="bisaiList">
+          <template v-if="isListGroup">
+            <table cellpadding="0" cellspacing="0">
+              <tr>
+                <th>排名</th>
+                <th>选手昵称</th>
+                <th>
+                  <div class="order-box">
+                    行业综合分值
+                    <div class="order-img">
+                      <img @click="setGroupOrder('cts', 'asc')" class="top"
+                        :src="orderFieldGroup === 'cts' && orderGroup === 'asc' ? './images/order_top_on.png' : './images/order_top.png'"
+                        alt="" />
+                      <img @click="setGroupOrder('cts', 'desc')" class="bottom"
+                        :src="orderFieldGroup === 'cts' && orderGroup === 'desc' ? './images/order_bottom_on.png' : './images/order_bottom.png'"
+                        alt="" />
+                    </div>
+                  </div>
+                </th>
+                <th>
+                  <div class="order-box">
+                    日均权益
+                    <div class="order-img">
+                      <img @click="setGroupOrder('cmds', 'asc')" class="top"
+                        :src="orderFieldGroup === 'cmds' && orderGroup === 'asc' ? './images/order_top_on.png' : './images/order_top.png'"
+                        alt="" />
+                      <img @click="setGroupOrder('cmds', 'desc')" class="bottom"
+                        :src="orderFieldGroup === 'cmds' && orderGroup === 'desc' ? './images/order_bottom_on.png' : './images/order_bottom.png'"
+                        alt="" />
+                    </div>
+                  </div>
+                </th>
+                <th>指定交易商</th>
+                <th>交易日期</th>
+              </tr>
+              <tr v-for="item in listGroupData">
+                <td>
+                  <span v-if="item.ranking==1"><img src="images/index/no1.png" /></span>
+                  <span v-if="item.ranking==2"><img src="images/index/no2.png" /></span>
+                  <span v-if="item.ranking==3"><img src="images/index/no3.png" /></span>
+                  <span v-if="item.ranking>3">{{item.ranking}}</span>
+                </td>
+                <td @click="goFutures(item)">
+                  <a>{{item.nickName}}</a>
+                </td>
+                <td>{{item.totalScore | keepDecimal(2)}}</td>
+                <td>{{unitConvert(item.meanDaySettlement)}}</td>
+                <td>
+                  <span style="cursor: pointer;" @click="goFuturesWeb(item.futuresCompanyCode)">
+                    {{item.companyName}}
+                  </span>
+                </td>
+                <td>{{item.tradingDate}}</td>
+              </tr>
+            </table>
+          </template>
+          <template v-else>
+            <table v-if="groupId === ''" cellpadding="0" cellspacing="0" class="table-ranking-all">
+              <tr>
+                <th>选手昵称</th>
+                <th>组别</th>
+                <th>交易日期</th>
+              </tr>
+              <tr v-for="item in arrRankList">
+                <td>
+                  <a target="_blank"
+                    :href="`futures_detail.html?capitalAccount=${item.capitalAccount}&stage=${stage}`">{{item.nickName}}</a>
+                </td>
+                <td>{{ item.groupName }}</td>
+                <td>{{ item.tradingDate }}</td>
+              </tr>
+            </table>
+
+            <table v-else-if="groupId === 0" cellpadding="0" cellspacing="0">
+              <tr>
+                <th>排名</th>
+                <th>选手昵称</th>
+                <th>收益</th>
+                <th>交易日期</th>
+              </tr>
+              <tr v-for="item in arrRankList">
+                <td>
+                  <span v-if="item.ranking==1"><i><img src="images/index/no1.png" /></i></span>
+                  <span v-if="item.ranking==2"><i><img src="images/index/no2.png" /></i></span>
+                  <span v-if="item.ranking==3"><i><img src="images/index/no3.png" /></i></span>
+                  <span v-if="item.ranking>3">{{item.ranking}}</span>
+                </td>
+                <td>
+                  <a target="_blank" :href="
+                  'futures_detail.html?capitalAccount='+item.capitalAccount+
+                  '&nickName='+ encodeURIComponent(encodeURIComponent(item.nickName))+
+                  '&ranking='+item.ranking +
+                  '&totalIncome='+ item.totalIncome+
+                  '&totalIncome='+ item.totalIncome+
+                  '&stage='+stage">{{item.nickName}}</a>
+                </td>
+                <td>{{ unitConvert(item.totalIncome) }}</td>
+                <td>{{ item.tradingDate }}</td>
+              </tr>
+            </table>
+
+            <table v-else cellpadding="0" cellspacing="0">
+              <tr>
+                <th>排名</th>
+                <th>选手昵称</th>
+                <th>
+                  <div class="order-box">
+                    综合积分
+                    <div class="order-img">
+                      <img @click="setOrder('cs', 'asc')" class="top"
+                        :src="orderField === 'cs' && order === 'asc' ? './images/order_top_on.png' : './images/order_top.png'"
+                        alt="" />
+                      <img @click="setOrder('cs', 'desc')" class="bottom"
+                        :src="orderField === 'cs' && order === 'desc' ? './images/order_bottom_on.png' : './images/order_bottom.png'"
+                        alt="" />
+                    </div>
+                  </div>
+                </th>
+                <th>
+                  <div class="order-box">
+                    累计收益额
+                    <div class="order-img">
+                      <img @click="setOrder('cti', 'asc')" class="top"
+                        :src="orderField === 'cti' && order === 'asc' ? './images/order_top_on.png' : './images/order_top.png'"
+                        alt="" />
+                      <img @click="setOrder('cti', 'desc')" class="bottom"
+                        :src="orderField === 'cti' && order === 'desc' ? './images/order_bottom_on.png' : './images/order_bottom.png'"
+                        alt="" />
+                    </div>
+                  </div>
+                </th>
+                <th>
+                  <div class="order-box">
+                    累计收益率
+                    <div class="order-img">
+                      <img @click="setOrder('ctir', 'asc')" class="top"
+                        :src="orderField === 'ctir' && order === 'asc' ? './images/order_top_on.png' : './images/order_top.png'"
+                        alt="" />
+                      <img @click="setOrder('ctir', 'desc')" class="bottom"
+                        :src="orderField === 'ctir' && order === 'desc' ? './images/order_bottom_on.png' : './images/order_bottom.png'"
+                        alt="" />
+                    </div>
+                  </div>
+                </th>
+                <th>
+                  <div class="order-box">
+                    最大回撤率
+                    <div class="order-img">
+                      <img @click="setOrder('cmrr', 'asc')" class="top"
+                        :src="orderField === 'cmrr' && order === 'asc' ? './images/order_top_on.png' : './images/order_top.png'"
+                        alt="" />
+                      <img @click="setOrder('cmrr', 'desc')" class="bottom"
+                        :src="orderField === 'cmrr' && order === 'desc' ? './images/order_bottom_on.png' : './images/order_bottom.png'"
+                        alt="" />
+                    </div>
+                  </div>
+                </th>
+                <th>指定交易商</th>
+                <th>期初权益</th>
+                <th>交易日期</th>
+              </tr>
+              <tr v-for="item in arrRankList">
+                <td>
+                  <span v-if="item.ranking==1"><img src="images/index/no1.png" /></span>
+                  <span v-if="item.ranking==2"><img src="images/index/no2.png" /></span>
+                  <span v-if="item.ranking==3"><img src="images/index/no3.png" /></span>
+                  <span v-if="item.ranking>3">{{item.ranking}}</span>
+                </td>
+                <td>
+                  <a target="_blank" :href="
+                  'futures_detail.html?capitalAccount='+item.capitalAccount+
+                  '&nickName='+ encodeURIComponent(encodeURIComponent(item.nickName))+
+                  '&ranking='+item.ranking+
+                  '&groupId='+item.groupId+
+                  '&score='+item.score+
+                  '&stage='+stage">
+                    {{item.nickName}}
+                  </a>
+                </td>
+                <td>{{item.score | keepDecimal(4)}}</td>
+                <td>{{unitConvert(item.totalIncome)}}</td>
+                <td :class="{'red':item.totalIncomeRate>0,'green':item.totalIncomeRate<0}">
+                  {{item.totalIncomeRate | toPercent}}
+                </td>
+                <td class="green">{{item.maxRetracementRate | toPercent}}</td>
+                <td>
+                  <span style="cursor: pointer;" @click="goFuturesWeb(item.futuresCompanyCode)">
+                    {{item.futuresCompanyName}}
+                  </span>
+                </td>
+                <td>{{item.preDaySettlement}}</td>
+                <td>{{item.tradingDate}}</td>
+              </tr>
+            </table>
+          </template>
+        </div>
+
+        <div class="paihangContent">
+          <div id="paging">
+            <span class="first" v-on:click="switchPage(1)">首页</span>
+            <span class="prev" v-on:click="switchPage(current_page - 1)">上一页</span>
+            <span class="next" v-on:click="switchPage(current_page + 1)">下一页</span>
+            <span class="first" v-on:click="switchPage(pageCount)">尾页</span>
+            <div class="go">
+              <input type="text" placeholder="Goto" />
+              <button v-on:click="switchPage(current_page - 1)">跳转</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <my-footer></my-footer>
+  </div>
+  <script type="text/javascript" src="js/formatMoney.js"></script>
+  <script type="text/javascript" src="js/formatDate.js"></script>
+  <script type="text/javascript" src="js/dataformat.js"></script>
+  <script type="text/javascript" src="js/common.js?v=20260107"></script>
+  <script type="text/javascript" src="js/paging.js"></script>
+  <script type="text/javascript" src="plug-in/layer-v3.1.1/layer/layer.js"></script>
+  <script type="text/javascript" src="plug-in/vue/Vue.js"></script>
+  <script type="text/javascript" src="js/storageUtil.js"></script>
+  <script src="./module/components/header.js?v=20260306"></script>
+  <script src="./module/components/footer.js"></script>
+  <script src="/js/request.js"></script>
+  <script type="text/javascript">
+    $(function () {
+      var app = new Vue({
+        el: '#app',
+        data: function () {
+          return {
+            stage: mainStage,
+            groupId: 15,
+            rankingTabs: [
+              { title: '专业组', groupId: 15, isSelect: true },
+              { title: '重量组', groupId: 14, isSelect: false },
+              { title: '轻量组', groupId: 13, isSelect: false },
+              { title: '期权组', groupId: 0, isSelect: false },
+              // { title: '全部', groupId: '', isSelect: false },
+            ],
+            nickName: '',
+            arrRankList: [],
+            order: '', //正序asc 倒序desc
+            orderField: '', //积分 sc 累计收益额 cti 累计收益率 ctir 最大回撤率 cmrr
+            current_page: 1, //当前页码
+            numPerPage: 20, //每页条数
+            pageCount: 1, //总页数
+            listFuturesCompany: [],
+
+            // 排行榜
+            listGroup: [],
+            listGroupData: [],
+            isListGroup: false,
+            groupCode: '',
+            orderFieldGroup: '',
+            orderGroup: '',
+          }
+        },
+        filters: {
+          formatDate(time) {
+            var date = new Date(time * 1000)
+            return formatDate(date, 'yyyy-MM-dd hh:mm')
+          },
+          toPercent(num) {
+            // 百分比，保留小数点后两位
+            return Math.round(num * 10000) / 100 + '%'
+          },
+          keepDecimal(numstr, num) {
+            //保留num位小数
+            var result = parseFloat(numstr)
+            if (isNaN(result)) {
+              return
+            }
+            return result.toFixed(num)
+          },
+        },
+
+        created() {
+          if (getQueryString('nickName')) {
+            this.nickName = decodeURIComponent(getQueryString('nickName'))
+          }
+
+          const groupId = getQueryString('groupId')
+          this.groupId = groupId === '' ? 15 : Number(groupId)
+          this.rankingTabs.forEach((tab) => {
+            tab.isSelect = tab.groupId === this.groupId
+          });
+
+          this.getfuturesCompany()
+          this.getGroupList()
+        },
+        mounted() {
+          this.initSelectOptions()
+        },
+        methods: {
+          /****** start 排行榜 产业组 分组列表   ******/
+          goFutures(item) {
+            const url = `/futures_detail.html?capitalAccount=${item.capitalAccountAes}&stage=${this.stage}`
+            window.open(url, '_blank')
+          },
+          selectGroup({ groupCode }) {
+            this.isListGroup = true
+            this.listGroup.forEach(item => {
+              item.isSelect = item.groupCode === groupCode
+            })
+            this.rankingTabs.forEach((tab) => {
+              tab.isSelect = false
+            });
+            this.nickName = ''
+            this.groupCode = groupCode
+            this.current_page = 1
+            this.getGroupPage()
+          },
+          getGroupList() {
+            requestGet(`/api/groupRanking/groupList`, {}, (res) => {
+              if (res.code === 0) {
+                res.data.forEach(item => item.isSelect = false)
+                this.listGroup = res.data
+              }
+            })
+          },
+          setGroupOrder(orderField, order) {
+            this.current_page = 1
+            this.orderFieldGroup = orderField;
+            this.orderGroup = order;
+            this.getGroupPage()
+          },
+          getGroupPage() {
+            const params = {
+              page: this.current_page,
+              limit: this.numPerPage,
+              groupCode: this.groupCode,
+              stageValue: this.stage,
+              nickName: this.nickName,
+              orderField: this.orderFieldGroup,
+              order: this.orderGroup,
+            }
+            requestGet(`/api/groupRanking/page`, params, (res) => {
+              if (res.code === 0) {
+                this.listGroupData = res.data.list
+                this.pageCount = Math.ceil(res.data.total / this.numPerPage) //总页数
+              }
+            })
+          },
+          /****** end 排行榜 产业组 分组列表   ******/
+
+          // 获取合作期货公司
+          getfuturesCompany() {
+            var url = apiCms + 'japi/getContentList.cmd?classId=37&pageSize=20&order=default-down'
+            _queryCms(url, (res) => {
+              for (var i = 0; i < res.allContent.length; i++) {
+                var v = {
+                  id: res.allContent[i].jt_menu_futures_brokerId,
+                  text: res.allContent[i].jt_menu_futures_name + ' - ' + res.allContent[i].jt_menu_futures_brokerId,
+                  urlPc: res.allContent[i].jt_menu_futures_pc || ''
+                }
+                this.listFuturesCompany.push(v)
+              }
+
+              this.getRankList()
+            })
+          },
+
+          goFuturesWeb(futuresCompanyCode) {
+            const item = this.listFuturesCompany.find(target => target.id === futuresCompanyCode)
+            if (item && item.urlPc) window.open(item.urlPc, "_blank");
+          },
+
+          initSelectOptions() {
+            const data = [
+              { id: 9, text: '第九届' },
+              { id: 8, text: '第八届' },
+              { id: 7, text: '第七届' },
+              { id: 6, text: '第六届' },
+              // { id: 100, text: '总榜' },
+            ]
+            $('.chosen-select').select2({ data, minimumResultsForSearch: -1 })
+            const _this = this
+            $(".chosen-select").on("change", function (e) {
+              _this.stage = $('.chosen-select').select2('val')
+              if (_this.isListGroup) {
+                _this.selectGroup(_this.listGroup[0])
+              } else {
+                _this.rankingTabs.forEach(item => {
+                  item.groupId = _this.handleGroupId(item.title)
+                })
+                _this.selectRanking(_this.rankingTabs[0])
+              }
+            });
+          },
+          handleGroupId(title) {
+            if (this.stage == 9) {
+              if (title === '轻量组') return 13
+              else if (title === '重量组') return 14
+              else if (title === '专业组') return 15
+              return 0
+            } else if (this.stage == 6) {
+              if (title === '轻量组') return 1
+              else if (title === '重量组') return 2
+              else if (title === '专业组') return 3
+              return 0
+            } else if (this.stage == 100) {
+              if (title === '轻量组') return 4
+              else if (title === '重量组') return 5
+              else if (title === '专业组') return 6
+              return 0
+            } else if (this.stage == 7) {
+              if (title === '轻量组') return 7
+              else if (title === '重量组') return 8
+              else if (title === '专业组') return 9
+              return 0
+            } else if (this.stage == 8) {
+              if (title === '轻量组') return 10
+              else if (title === '重量组') return 11
+              else if (title === '专业组') return 12
+              return 0
+            }
+          },
+          selectRanking(item) {
+            this.isListGroup = false
+            this.rankingTabs.forEach(tab => {
+              if (tab.groupId === item.groupId) {
+                tab.isSelect = true
+                this.groupId = tab.groupId
+                this.getRankList()
+              }
+              else tab.isSelect = false
+            })
+            this.listGroup.forEach(item => item.isSelect = false)
+          },
+
+          switchPage(page) {
+            var vm = this
+            if (page < 1) {
+              page = 1
+            } else if (page > this.pageCount) {
+              page = this.pageCount
+            }
+            if (page < this.current_page || page > this.current_page) {
+              this.current_page = page
+              if (this.isListGroup) this.getGroupPage()
+              else this.getRankList()
+            }
+          },
+
+          setOrder(orderField, order) {
+            this.orderField = orderField;
+            this.order = order;
+            this.getRankList()
+          },
+
+          getRankList() {
+            // 全部
+            if (this.groupId === '') {
+              const params = {
+                stage: this.stage,
+                page: this.current_page,
+                limit: this.numPerPage,
+                nickName: this.nickName,
+              }
+              requestGet(`/api/ranking/nickNameSearch`, params, (res) => {
+                if (res.code === 0) {
+                  this.arrRankList = res.data.list;
+                  this.pageCount = Math.ceil(res.data.total / this.numPerPage) //总页数
+                }
+              })
+              return
+            }
+
+            var url = ''
+            let paras = {}
+            if (this.groupId == 0) {
+              //期权比赛
+              paras = {
+                stage: this.stage,
+                page: this.current_page,
+                limit: this.numPerPage,
+                nickName: this.nickName,
+              }
+              url = apiDg + 'ranking/opt/page'
+            } else {
+              paras = {
+                stage: this.stage,
+                page: this.current_page,
+                limit: this.numPerPage,
+                nickName: this.nickName,
+                groupId: this.groupId,
+                orderField: this.orderField,
+                order: this.order,
+              }
+              url = apiDg + 'ranking/page'
+            }
+            _queryGet(url, paras, true, '', (res) => {
+              if (res.code == 0) {
+                res.data.list.forEach(item => {
+                  const index = this.listFuturesCompany.findIndex(target => target.id === item.futuresCompanyCode)
+                  if (index === -1) item.futuresCompanyName = ''
+                })
+
+                this.arrRankList = res.data.list
+                this.pageCount = Math.ceil(res.data.total / this.numPerPage) //总页数
+              } else {
+                this.arrRankList = []
+              }
+            })
+          },
+          searchRanking() {
+            if (this.nickName == '') return layer.msg('请输入选手昵称')
+
+            this.current_page = 1
+            if (this.isListGroup) {
+              this.listGroupData = []
+              this.getGroupPage()
+            } else {
+              this.arrRankList = []
+              this.getRankList()
+            }
+          },
+        },
+      })
+    })
+  </script>
+</body>
+
+</html>

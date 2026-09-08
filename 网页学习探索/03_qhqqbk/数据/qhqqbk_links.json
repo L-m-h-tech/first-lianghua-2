@@ -1,0 +1,1909 @@
+[
+ {
+  "kind": "site",
+  "name": "中国金融期货交易所",
+  "url": "http://www.cffex.com.cn/cn/index.html",
+  "description": "股指期货、股指期权和国债期货官方入口。",
+  "category": "交易所官方",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "官网",
+  "url": "http://www.cffex.com.cn/cn/index.html",
+  "description": null,
+  "category": "交易所官方",
+  "parent": "中国金融期货交易所",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "持仓排名",
+  "url": "http://www.cffex.com.cn/cn/ccpm.html",
+  "description": null,
+  "category": "交易所官方",
+  "parent": "中国金融期货交易所",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "公告",
+  "url": "http://www.cffex.com.cn/cn/jysgg.html",
+  "description": null,
+  "category": "交易所官方",
+  "parent": "中国金融期货交易所",
+  "domestic": true
+ },
+ {
+  "kind": "site",
+  "name": "上海期货交易所",
+  "url": "https://www.shfe.com.cn/",
+  "description": "有色、贵金属、黑色和能源化工期货官方入口。",
+  "category": "交易所官方",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "官网",
+  "url": "https://www.shfe.com.cn/",
+  "description": null,
+  "category": "交易所官方",
+  "parent": "上海期货交易所",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "持仓排名",
+  "url": "https://www.shfe.com.cn/reports/tradedata/dailyandweeklydata/?query_params=pm",
+  "description": null,
+  "category": "交易所官方",
+  "parent": "上海期货交易所",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "公告",
+  "url": "https://www.shfe.com.cn/publicnotice/notice/",
+  "description": null,
+  "category": "交易所官方",
+  "parent": "上海期货交易所",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "仓单",
+  "url": "https://www.shfe.com.cn/reports/tradedata/dailyandweeklydata/?query_params=dailystock",
+  "description": null,
+  "category": "交易所官方",
+  "parent": "上海期货交易所",
+  "domestic": true
+ },
+ {
+  "kind": "site",
+  "name": "上海国际能源交易中心",
+  "url": "https://www.ine.cn/",
+  "description": "原油、低硫燃料油、国际铜等国际化期货和期权品种官方入口。",
+  "category": "交易所官方",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "官网",
+  "url": "https://www.ine.cn/",
+  "description": null,
+  "category": "交易所官方",
+  "parent": "上海国际能源交易中心",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "交易排名",
+  "url": "https://www.ine.cn/reports/tradedata/dailyandweeklydata/?query_params=pm",
+  "description": null,
+  "category": "交易所官方",
+  "parent": "上海国际能源交易中心",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "公告",
+  "url": "https://www.ine.cn/publicnotice/notice/",
+  "description": null,
+  "category": "交易所官方",
+  "parent": "上海国际能源交易中心",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "仓单",
+  "url": "https://www.ine.cn/reports/tradedata/dailyandweeklydata/?query_params=dailystock",
+  "description": null,
+  "category": "交易所官方",
+  "parent": "上海国际能源交易中心",
+  "domestic": true
+ },
+ {
+  "kind": "site",
+  "name": "郑州商品交易所",
+  "url": "https://www.czce.com.cn/",
+  "description": "农产品、能源化工及期权品种官方入口。",
+  "category": "交易所官方",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "官网",
+  "url": "https://www.czce.com.cn/",
+  "description": null,
+  "category": "交易所官方",
+  "parent": "郑州商品交易所",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "持仓排名",
+  "url": "https://www.czce.com.cn/cn/jysj/ccpm/H077003004index_1.htm",
+  "description": null,
+  "category": "交易所官方",
+  "parent": "郑州商品交易所",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "公告",
+  "url": "https://www.czce.com.cn/cn/gyjys/jysdt/ggytz/H077001003001index_1.htm",
+  "description": null,
+  "category": "交易所官方",
+  "parent": "郑州商品交易所",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "仓单",
+  "url": "https://www.czce.com.cn/cn/jysj/cdrb/H077003010index_1.htm",
+  "description": null,
+  "category": "交易所官方",
+  "parent": "郑州商品交易所",
+  "domestic": true
+ },
+ {
+  "kind": "site",
+  "name": "大连商品交易所",
+  "url": "http://www.dce.com.cn/dce/",
+  "description": "农产品、黑色、化工及期权品种官方入口。",
+  "category": "交易所官方",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "官网",
+  "url": "http://www.dce.com.cn/dce/",
+  "description": null,
+  "category": "交易所官方",
+  "parent": "大连商品交易所",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "持仓排名",
+  "url": "http://www.dce.com.cn/dce/channel/list/176.html",
+  "description": null,
+  "category": "交易所官方",
+  "parent": "大连商品交易所",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "公告",
+  "url": "http://www.dce.com.cn/dce/channel/list/244.html",
+  "description": null,
+  "category": "交易所官方",
+  "parent": "大连商品交易所",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "仓单",
+  "url": "http://www.dce.com.cn/dce/channel/list/187.html",
+  "description": null,
+  "category": "交易所官方",
+  "parent": "大连商品交易所",
+  "domestic": true
+ },
+ {
+  "kind": "site",
+  "name": "广州期货交易所",
+  "url": "http://www.gfex.com.cn/",
+  "description": "工业硅、碳酸锂等新兴品种官方入口。",
+  "category": "交易所官方",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "官网",
+  "url": "http://www.gfex.com.cn/",
+  "description": null,
+  "category": "交易所官方",
+  "parent": "广州期货交易所",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "持仓排名",
+  "url": "http://www.gfex.com.cn/gfex/rcjccpm/hqsj_tjsj.shtml",
+  "description": null,
+  "category": "交易所官方",
+  "parent": "广州期货交易所",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "公告",
+  "url": "http://www.gfex.com.cn/gfex/tzts/list_yw.shtml",
+  "description": null,
+  "category": "交易所官方",
+  "parent": "广州期货交易所",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "仓单",
+  "url": "http://www.gfex.com.cn/gfex/cdrb/hqsj_tjsj.shtml",
+  "description": null,
+  "category": "交易所官方",
+  "parent": "广州期货交易所",
+  "domestic": true
+ },
+ {
+  "kind": "site",
+  "name": "中国证监会",
+  "url": "https://www.csrc.gov.cn/csrc/index.shtml",
+  "description": "资本市场监管政策和法规公告入口。",
+  "category": "交易所官方",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "官网",
+  "url": "https://www.csrc.gov.cn/csrc/index.shtml",
+  "description": null,
+  "category": "交易所官方",
+  "parent": "中国证监会",
+  "domestic": true
+ },
+ {
+  "kind": "site",
+  "name": "中国期货业协会",
+  "url": "https://www.cfachina.org/",
+  "description": "期货行业自律、从业考试和投资者教育入口。",
+  "category": "交易所官方",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "官网",
+  "url": "https://www.cfachina.org/",
+  "description": null,
+  "category": "交易所官方",
+  "parent": "中国期货业协会",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "期货公司app查询",
+  "url": "https://neris.csrc.gov.cn/pubrecord-front/#/cfachina",
+  "description": null,
+  "category": "交易所官方",
+  "parent": "中国期货业协会",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "品种手册",
+  "url": "https://www.cfachina.org/servicesupport/sspz/",
+  "description": null,
+  "category": "交易所官方",
+  "parent": "中国期货业协会",
+  "domestic": true
+ },
+ {
+  "kind": "site",
+  "name": "金十期货",
+  "url": "https://qihuo.jin10.com/",
+  "description": "期货快讯、行情和日历入口。",
+  "category": "新闻资讯",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "官网",
+  "url": "https://qihuo.jin10.com/",
+  "description": null,
+  "category": "新闻资讯",
+  "parent": "金十期货",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "期货日历",
+  "url": "https://qihuo.jin10.com/calendar.html#/",
+  "description": null,
+  "category": "新闻资讯",
+  "parent": "金十期货",
+  "domestic": true
+ },
+ {
+  "kind": "site",
+  "name": "新浪期货",
+  "url": "https://finance.sina.com.cn/futuremarket/",
+  "description": "国内外期货新闻和行情频道。",
+  "category": "新闻资讯",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "官网",
+  "url": "https://finance.sina.com.cn/futuremarket/",
+  "description": null,
+  "category": "新闻资讯",
+  "parent": "新浪期货",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "外盘期货",
+  "url": "https://finance.sina.com.cn/money/future/hf.html",
+  "description": null,
+  "category": "新闻资讯",
+  "parent": "新浪期货",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "现货",
+  "url": "https://finance.sina.com.cn/futuremarket/spotprice.shtml#titlePos_1",
+  "description": null,
+  "category": "新闻资讯",
+  "parent": "新浪期货",
+  "domestic": true
+ },
+ {
+  "kind": "site",
+  "name": "东方财富期货",
+  "url": "https://futures.eastmoney.com/",
+  "description": "期货行情、资讯和报价入口。",
+  "category": "新闻资讯",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "官网",
+  "url": "https://futures.eastmoney.com/",
+  "description": null,
+  "category": "新闻资讯",
+  "parent": "东方财富期货",
+  "domestic": true
+ },
+ {
+  "kind": "site",
+  "name": "华尔街见闻",
+  "url": "https://wallstreetcn.com/",
+  "description": "宏观市场资讯和全球资产快讯入口。",
+  "category": "新闻资讯",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "官网",
+  "url": "https://wallstreetcn.com/",
+  "description": null,
+  "category": "新闻资讯",
+  "parent": "华尔街见闻",
+  "domestic": true
+ },
+ {
+  "kind": "site",
+  "name": "彭博 Bloomberg",
+  "url": "https://www.bloomberg.com/",
+  "description": "全球市场、宏观和大宗商品新闻与行情入口；国内无法直连",
+  "category": "海外资讯",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "官网",
+  "url": "https://www.bloomberg.com/",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "彭博 Bloomberg",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "全球市场",
+  "url": "https://www.bloomberg.com/markets",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "彭博 Bloomberg",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "大宗商品",
+  "url": "https://www.bloomberg.com/markets/commodities",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "彭博 Bloomberg",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "经济日历",
+  "url": "https://www.bloomberg.com/markets/economic-calendar",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "彭博 Bloomberg",
+  "domestic": false
+ },
+ {
+  "kind": "site",
+  "name": "路透 Reuters",
+  "url": "https://www.reuters.com/",
+  "description": "全球突发、市场和大宗商品新闻入口；部分地区限量阅读。",
+  "category": "海外资讯",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "官网",
+  "url": "https://www.reuters.com/",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "路透 Reuters",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "全球市场",
+  "url": "https://www.reuters.com/markets/",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "路透 Reuters",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "大宗商品",
+  "url": "https://www.reuters.com/markets/commodities/",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "路透 Reuters",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "环球新闻",
+  "url": "https://www.reuters.com/world/",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "路透 Reuters",
+  "domestic": false
+ },
+ {
+  "kind": "site",
+  "name": "美国劳工统计局 BLS",
+  "url": "https://www.bls.gov/",
+  "description": "美国非农就业、通胀和劳动力数据的一手发布机构。国内无法直连",
+  "category": "海外资讯",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "官网",
+  "url": "https://www.bls.gov/",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "美国劳工统计局 BLS",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "非农就业",
+  "url": "https://www.bls.gov/news.release/empsit.htm",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "美国劳工统计局 BLS",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "CPI",
+  "url": "https://www.bls.gov/news.release/cpi.htm",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "美国劳工统计局 BLS",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "发布日程",
+  "url": "https://www.bls.gov/schedule/news_release/empsit.htm",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "美国劳工统计局 BLS",
+  "domestic": false
+ },
+ {
+  "kind": "site",
+  "name": "美国经济分析局 BEA",
+  "url": "https://www.bea.gov/",
+  "description": "美国 GDP、PCE 通胀与国民经济账户的一手数据。",
+  "category": "海外资讯",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "官网",
+  "url": "https://www.bea.gov/",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "美国经济分析局 BEA",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "GDP",
+  "url": "https://www.bea.gov/data/gdp/gross-domestic-product",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "美国经济分析局 BEA",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "PCE",
+  "url": "https://www.bea.gov/data/personal-consumption-expenditures-price-index",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "美国经济分析局 BEA",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "发布日程",
+  "url": "https://www.bea.gov/news/schedule",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "美国经济分析局 BEA",
+  "domestic": false
+ },
+ {
+  "kind": "site",
+  "name": "美联储 Federal Reserve",
+  "url": "https://www.federalreserve.gov/",
+  "description": "美国货币政策、利率决议和经济状况的一手来源。",
+  "category": "海外资讯",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "官网",
+  "url": "https://www.federalreserve.gov/",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "美联储 Federal Reserve",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "FOMC 日程",
+  "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "美联储 Federal Reserve",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "新闻发布",
+  "url": "https://www.federalreserve.gov/newsevents/pressreleases.htm",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "美联储 Federal Reserve",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "褐皮书",
+  "url": "https://www.federalreserve.gov/monetarypolicy/publications/beige-book-default.htm",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "美联储 Federal Reserve",
+  "domestic": false
+ },
+ {
+  "kind": "site",
+  "name": "美国商品期货交易委员会 CFTC",
+  "url": "https://www.cftc.gov/",
+  "description": "美国期货监管、分类持仓与大户仓位的一手数据。",
+  "category": "海外资讯",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "官网",
+  "url": "https://www.cftc.gov/",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "美国商品期货交易委员会 CFTC",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "COT 持仓",
+  "url": "https://www.cftc.gov/MarketReports/CommitmentsofTraders/index.htm",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "美国商品期货交易委员会 CFTC",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "COT 查询",
+  "url": "https://publicreporting.cftc.gov/stories/s/r4w3-av2u",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "美国商品期货交易委员会 CFTC",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "新闻发布",
+  "url": "https://www.cftc.gov/PressRoom/PressReleases",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "美国商品期货交易委员会 CFTC",
+  "domestic": false
+ },
+ {
+  "kind": "site",
+  "name": "欧洲中央银行 ECB",
+  "url": "https://www.ecb.europa.eu/",
+  "description": "欧元区利率决议、政策发布和会议日历的一手来源。",
+  "category": "海外资讯",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "官网",
+  "url": "https://www.ecb.europa.eu/",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "欧洲中央银行 ECB",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "货币政策决议",
+  "url": "https://www.ecb.europa.eu/press/govcdec/mopo/html/index.en.html",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "欧洲中央银行 ECB",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "新闻发布会",
+  "url": "https://www.ecb.europa.eu/press/press_conference/html/index.en.html",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "欧洲中央银行 ECB",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "会议日历",
+  "url": "https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "欧洲中央银行 ECB",
+  "domestic": false
+ },
+ {
+  "kind": "site",
+  "name": "美国能源信息署 EIA",
+  "url": "https://www.eia.gov/",
+  "description": "美国原油、成品油、天然气库存与能源供需预测的一手数据。",
+  "category": "海外资讯",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "官网",
+  "url": "https://www.eia.gov/",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "美国能源信息署 EIA",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "原油库存",
+  "url": "https://www.eia.gov/petroleum/supply/weekly/",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "美国能源信息署 EIA",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "天然气库存",
+  "url": "https://www.eia.gov/naturalgas/storage/",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "美国能源信息署 EIA",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "能源展望",
+  "url": "https://www.eia.gov/outlooks/steo/",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "美国能源信息署 EIA",
+  "domestic": false
+ },
+ {
+  "kind": "site",
+  "name": "美国农业部 USDA",
+  "url": "https://www.usda.gov/",
+  "description": "全球农产品供需、美国作物进度、库存与出口销售的一手报告。",
+  "category": "海外资讯",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "官网",
+  "url": "https://www.usda.gov/",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "美国农业部 USDA",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "WASDE",
+  "url": "https://www.usda.gov/about-usda/general-information/staff-offices/office-chief-economist/commodity-markets/wasde-report",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "美国农业部 USDA",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "作物进度",
+  "url": "https://data.nass.usda.gov/Publications/National_Crop_Progress/index.php",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "美国农业部 USDA",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "出口销售",
+  "url": "https://apps.fas.usda.gov/esrqs/",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "美国农业部 USDA",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "全球供需",
+  "url": "https://apps.fas.usda.gov/psdonline/app/index.html#/app/home",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "美国农业部 USDA",
+  "domestic": false
+ },
+ {
+  "kind": "site",
+  "name": "石油输出国组织 OPEC",
+  "url": "https://www.opec.org/",
+  "description": "全球石油需求、供应、产量、库存与炼厂运行官方报告。",
+  "category": "海外资讯",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "官网",
+  "url": "https://www.opec.org/",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "石油输出国组织 OPEC",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "石油月报",
+  "url": "https://publications.opec.org/momr",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "石油输出国组织 OPEC",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "统计年报",
+  "url": "https://publications.opec.org/asb",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "石油输出国组织 OPEC",
+  "domestic": false
+ },
+ {
+  "kind": "site",
+  "name": "国际能源署 IEA",
+  "url": "https://www.iea.org/",
+  "description": "全球能源供需、库存、炼厂与中长期趋势研究。",
+  "category": "海外资讯",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "官网",
+  "url": "https://www.iea.org/",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "国际能源署 IEA",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "原油月报",
+  "url": "https://www.iea.org/data-and-statistics/data-product/oil-market-report-omr",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "国际能源署 IEA",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "能源数据",
+  "url": "https://www.iea.org/data-and-statistics",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "国际能源署 IEA",
+  "domestic": false
+ },
+ {
+  "kind": "site",
+  "name": "贝克休斯钻机数",
+  "url": "https://rigcount.bakerhughes.com/",
+  "description": "全球油气活跃钻机数量与历史数据官方来源。",
+  "category": "海外资讯",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "官网",
+  "url": "https://rigcount.bakerhughes.com/",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "贝克休斯钻机数",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "北美钻机",
+  "url": "https://rigcount.bakerhughes.com/na-rig-count",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "贝克休斯钻机数",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "全球钻机",
+  "url": "https://rigcount.bakerhughes.com/intl-rig-count/",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "贝克休斯钻机数",
+  "domestic": false
+ },
+ {
+  "kind": "site",
+  "name": "NOAA 美国国家气象局",
+  "url": "https://www.weather.gov/",
+  "description": "美国官方短中期天气、降水、灾害与热带气旋入口。",
+  "category": "海外资讯",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "官网",
+  "url": "https://www.weather.gov/",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "NOAA 美国国家气象局",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "天气预测中心",
+  "url": "https://www.wpc.ncep.noaa.gov/",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "NOAA 美国国家气象局",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "降水预报",
+  "url": "https://www.wpc.ncep.noaa.gov/qpf/qpf2.shtml",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "NOAA 美国国家气象局",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "飓风展望",
+  "url": "https://www.nhc.noaa.gov/gtwo.php",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "NOAA 美国国家气象局",
+  "domestic": false
+ },
+ {
+  "kind": "site",
+  "name": "ECMWF 欧洲中期天气预报中心",
+  "url": "https://charts.ecmwf.int/",
+  "description": "全球集合、中期、次季节与季节预测图表。",
+  "category": "海外资讯",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "预测图表",
+  "url": "https://charts.ecmwf.int/",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "ECMWF 欧洲中期天气预报中心",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "预报总览",
+  "url": "https://www.ecmwf.int/en/forecasts",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "ECMWF 欧洲中期天气预报中心",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "季节预报",
+  "url": "https://www.ecmwf.int/en/forecasts/documentation-and-support/seasonal",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "ECMWF 欧洲中期天气预报中心",
+  "domestic": false
+ },
+ {
+  "kind": "site",
+  "name": "世界气象组织 WMO",
+  "url": "https://wmo.int/",
+  "description": "联合国体系的全球天气、气候与 ENSO 权威评估。",
+  "category": "海外资讯",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "官网",
+  "url": "https://wmo.int/",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "世界气象组织 WMO",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "全球季节气候",
+  "url": "https://wmo.int/publication-series/global-seasonal-climate-update",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "世界气象组织 WMO",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "ENSO 更新",
+  "url": "https://wmo.int/publication-series/el-ninola-nina-updates",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "世界气象组织 WMO",
+  "domestic": false
+ },
+ {
+  "kind": "site",
+  "name": "美国干旱监测 USDM",
+  "url": "https://droughtmonitor.unl.edu/",
+  "description": "NOAA、USDA 与国家干旱减灾中心联合发布的周度干旱图。",
+  "category": "海外资讯",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "官网",
+  "url": "https://droughtmonitor.unl.edu/",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "美国干旱监测 USDM",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "当前地图",
+  "url": "https://droughtmonitor.unl.edu/CurrentMap.aspx",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "美国干旱监测 USDM",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "数据下载",
+  "url": "https://droughtmonitor.unl.edu/Data.aspx",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "美国干旱监测 USDM",
+  "domestic": false
+ },
+ {
+  "kind": "site",
+  "name": "芝商所 CME Group",
+  "url": "https://www.cmegroup.com/",
+  "description": "CME、CBOT、NYMEX 与 COMEX 期货期权官方市场数据。",
+  "category": "海外资讯",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "官网",
+  "url": "https://www.cmegroup.com/",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "芝商所 CME Group",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "农产品",
+  "url": "https://www.cmegroup.com/markets/agriculture.html",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "芝商所 CME Group",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "交易日报",
+  "url": "https://www.cmegroup.com/market-data/daily-bulletin.html",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "芝商所 CME Group",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "成交持仓",
+  "url": "https://www.cmegroup.com/market-data/volume-open-interest.html",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "芝商所 CME Group",
+  "domestic": false
+ },
+ {
+  "kind": "site",
+  "name": "洲际交易所 ICE",
+  "url": "https://www.ice.com/",
+  "description": "布伦特原油、天然气与软商品期货官方市场入口。",
+  "category": "海外资讯",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "官网",
+  "url": "https://www.ice.com/",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "洲际交易所 ICE",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "报告中心",
+  "url": "https://www.ice.com/report-center",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "洲际交易所 ICE",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "美国期货",
+  "url": "https://www.ice.com/futures-us",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "洲际交易所 ICE",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "欧洲期货",
+  "url": "https://www.ice.com/futures-europe",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "洲际交易所 ICE",
+  "domestic": false
+ },
+ {
+  "kind": "site",
+  "name": "伦敦金属交易所 LME",
+  "url": "https://www.lme.com/",
+  "description": "铜铝锌镍铅锡等工业金属价格与仓库库存官方来源。",
+  "category": "海外资讯",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "官网",
+  "url": "https://www.lme.com/",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "伦敦金属交易所 LME",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "官方价格",
+  "url": "https://www.lme.com/market-data/reports-and-data/lme-official-prices",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "伦敦金属交易所 LME",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "库存仓单",
+  "url": "https://www.lme.com/market-data/reports-and-data/warehouse-and-stocks-reports",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "伦敦金属交易所 LME",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "市场数据",
+  "url": "https://www.lme.com/market-data/reports-and-data",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "伦敦金属交易所 LME",
+  "domestic": false
+ },
+ {
+  "kind": "site",
+  "name": "新加坡交易所 SGX",
+  "url": "https://www.sgx.com/",
+  "description": "铁矿石、炼焦煤、橡胶与航运等亚洲商品衍生品入口。",
+  "category": "海外资讯",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "官网",
+  "url": "https://www.sgx.com/",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "新加坡交易所 SGX",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "铁矿石",
+  "url": "https://www.sgx.com/zh-hans/derivatives/products/iron-ore?cc=FE",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "新加坡交易所 SGX",
+  "domestic": false
+ },
+ {
+  "kind": "child",
+  "name": "橡胶",
+  "url": "https://www.sgx.com/derivatives/products/sicom-rubber?cc=TF",
+  "description": null,
+  "category": "海外资讯",
+  "parent": "新加坡交易所 SGX",
+  "domestic": false
+ },
+ {
+  "kind": "site",
+  "name": "文华财经",
+  "url": "https://wh6.wenhua.com.cn/",
+  "description": "期货行情、交易和程序化工具入口。",
+  "category": "交易软件",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "官网",
+  "url": "https://wh6.wenhua.com.cn/",
+  "description": null,
+  "category": "交易软件",
+  "parent": "文华财经",
+  "domestic": true
+ },
+ {
+  "kind": "site",
+  "name": "博易大师",
+  "url": "https://www.boyidashi.com/",
+  "description": "期货行情交易终端和下载入口。",
+  "category": "交易软件",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "官网",
+  "url": "https://www.boyidashi.com/",
+  "description": null,
+  "category": "交易软件",
+  "parent": "博易大师",
+  "domestic": true
+ },
+ {
+  "kind": "site",
+  "name": "同花顺期货通",
+  "url": "https://download.10jqka.com.cn/index/list?id=1",
+  "description": "期货行情、交易、资讯与移动端工具。",
+  "category": "交易软件",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "官网",
+  "url": "https://download.10jqka.com.cn/index/list?id=1",
+  "description": null,
+  "category": "交易软件",
+  "parent": "同花顺期货通",
+  "domestic": true
+ },
+ {
+  "kind": "site",
+  "name": "易信快期",
+  "url": "https://www.shinnytech.com/products/q73",
+  "description": "快期系列期货交易终端入口。",
+  "category": "交易软件",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "官网",
+  "url": "https://www.shinnytech.com/products/q73",
+  "description": null,
+  "category": "交易软件",
+  "parent": "易信快期",
+  "domestic": true
+ },
+ {
+  "kind": "site",
+  "name": "无限易",
+  "url": "https://infinitrader.quantdo.com.cn/",
+  "description": "期货交易和期权策略终端入口。",
+  "category": "交易软件",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "官网",
+  "url": "https://infinitrader.quantdo.com.cn/",
+  "description": null,
+  "category": "交易软件",
+  "parent": "无限易",
+  "domestic": true
+ },
+ {
+  "kind": "site",
+  "name": "交易开拓者",
+  "url": "https://tbq.tbquant.net/",
+  "description": "程序化交易、策略开发和交易终端入口。",
+  "category": "交易软件",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "官网",
+  "url": "https://tbq.tbquant.net/",
+  "description": null,
+  "category": "交易软件",
+  "parent": "交易开拓者",
+  "domestic": true
+ },
+ {
+  "kind": "site",
+  "name": "极星",
+  "url": "https://epolestar.esunny.com.cn/download",
+  "description": "易盛期货行情交易终端下载入口。",
+  "category": "交易软件",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "官网",
+  "url": "https://epolestar.esunny.com.cn/download",
+  "description": null,
+  "category": "交易软件",
+  "parent": "极星",
+  "domestic": true
+ },
+ {
+  "kind": "site",
+  "name": "AKShare",
+  "url": "https://akshare.akfamily.xyz/",
+  "description": "开源金融数据接口库。",
+  "category": "数据渠道",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "文档",
+  "url": "https://akshare.akfamily.xyz/",
+  "description": null,
+  "category": "数据渠道",
+  "parent": "AKShare",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "GitHub",
+  "url": "https://github.com/akfamily/akshare",
+  "description": null,
+  "category": "数据渠道",
+  "parent": "AKShare",
+  "domestic": true
+ },
+ {
+  "kind": "site",
+  "name": "Tushare",
+  "url": "https://tushare.pro/",
+  "description": "金融数据开放社区和数据接口。",
+  "category": "数据渠道",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "官网",
+  "url": "https://tushare.pro/",
+  "description": null,
+  "category": "数据渠道",
+  "parent": "Tushare",
+  "domestic": true
+ },
+ {
+  "kind": "site",
+  "name": "天勤量化",
+  "url": "https://www.shinnytech.com/tianqin/",
+  "description": "期货程序化交易和 Python 量化工具。",
+  "category": "数据渠道",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "官网",
+  "url": "https://www.shinnytech.com/tianqin/",
+  "description": null,
+  "category": "数据渠道",
+  "parent": "天勤量化",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "文档",
+  "url": "https://doc.shinnytech.com/tqsdk/latest/",
+  "description": null,
+  "category": "数据渠道",
+  "parent": "天勤量化",
+  "domestic": true
+ },
+ {
+  "kind": "site",
+  "name": "Wind",
+  "url": "https://www.wind.com.cn/",
+  "description": "金融数据、资讯和终端系统。",
+  "category": "期货金融终端",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "终端",
+  "url": "https://www.wind.com.cn/portal/zh/WFT/index.html",
+  "description": null,
+  "category": "期货金融终端",
+  "parent": "Wind",
+  "domestic": true
+ },
+ {
+  "kind": "site",
+  "name": "同花顺 iFinD",
+  "url": "https://www.51ifind.com/",
+  "description": "金融数据终端与投研系统。",
+  "category": "期货金融终端",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "终端",
+  "url": "https://www.51ifind.com/index.php?c=index&amp;a=iFinDPC",
+  "description": null,
+  "category": "期货金融终端",
+  "parent": "同花顺 iFinD",
+  "domestic": true
+ },
+ {
+  "kind": "site",
+  "name": "上海钢联终端",
+  "url": "https://www.mysteel.com/",
+  "description": "黑色、有色、能源化工等产业数据终端。",
+  "category": "期货金融终端",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "终端",
+  "url": "https://data.mysteel.com/mysteeldata/?from=https://mri.mysteel.com/",
+  "description": null,
+  "category": "期货金融终端",
+  "parent": "上海钢联终端",
+  "domestic": true
+ },
+ {
+  "kind": "site",
+  "name": "上海钢联",
+  "url": "https://www.mysteel.com/",
+  "description": "钢材、铁矿、焦煤焦炭等黑色产业链入口。",
+  "category": "分板块专业机构",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "官网",
+  "url": "https://www.mysteel.com/",
+  "description": null,
+  "category": "分板块专业机构",
+  "parent": "上海钢联",
+  "domestic": true
+ },
+ {
+  "kind": "site",
+  "name": "兰格钢铁",
+  "url": "https://www.lgmi.com/",
+  "description": "钢铁行业价格、库存和资讯入口。",
+  "category": "分板块专业机构",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "官网",
+  "url": "https://www.lgmi.com/",
+  "description": null,
+  "category": "分板块专业机构",
+  "parent": "兰格钢铁",
+  "domestic": true
+ },
+ {
+  "kind": "site",
+  "name": "隆众资讯",
+  "url": "https://www.oilchem.net/",
+  "description": "能源化工产业数据和资讯入口。",
+  "category": "分板块专业机构",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "官网",
+  "url": "https://www.oilchem.net/",
+  "description": null,
+  "category": "分板块专业机构",
+  "parent": "隆众资讯",
+  "domestic": true
+ },
+ {
+  "kind": "site",
+  "name": "卓创资讯",
+  "url": "https://www.sci99.com/",
+  "description": "大宗商品价格、数据和产业资讯入口。",
+  "category": "分板块专业机构",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "官网",
+  "url": "https://www.sci99.com/",
+  "description": null,
+  "category": "分板块专业机构",
+  "parent": "卓创资讯",
+  "domestic": true
+ },
+ {
+  "kind": "site",
+  "name": "涌益资讯",
+  "url": "https://www.yongyizixun.com/",
+  "description": "农产品和养殖产业链资讯入口。",
+  "category": "分板块专业机构",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "数据终端",
+  "url": "https://data.yongyizixun888.com/",
+  "description": null,
+  "category": "分板块专业机构",
+  "parent": "涌益资讯",
+  "domestic": true
+ },
+ {
+  "kind": "site",
+  "name": "中国粮油信息网",
+  "url": "https://www.chinagrain.cn/",
+  "description": "粮油市场资讯、价格和供需数据入口。",
+  "category": "分板块专业机构",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "官网",
+  "url": "https://www.chinagrain.cn/",
+  "description": null,
+  "category": "分板块专业机构",
+  "parent": "中国粮油信息网",
+  "domestic": true
+ },
+ {
+  "kind": "site",
+  "name": "上海有色网",
+  "url": "https://www.smm.cn/",
+  "description": "有色金属、贵金属和新能源金属入口。",
+  "category": "分板块专业机构",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "官网",
+  "url": "https://www.smm.cn/",
+  "description": null,
+  "category": "分板块专业机构",
+  "parent": "上海有色网",
+  "domestic": true
+ },
+ {
+  "kind": "site",
+  "name": "长江有色金属网",
+  "url": "https://www.ccmn.cn/",
+  "description": "有色金属现货价格和资讯入口。",
+  "category": "分板块专业机构",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "官网",
+  "url": "https://www.ccmn.cn/",
+  "description": null,
+  "category": "分板块专业机构",
+  "parent": "长江有色金属网",
+  "domestic": true
+ },
+ {
+  "kind": "site",
+  "name": "百川盈孚",
+  "url": "https://www.baiinfo.com/",
+  "description": "能源化工、有色和新能源产业数据入口。",
+  "category": "分板块专业机构",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "官网",
+  "url": "https://www.baiinfo.com/",
+  "description": null,
+  "category": "分板块专业机构",
+  "parent": "百川盈孚",
+  "domestic": true
+ },
+ {
+  "kind": "site",
+  "name": "金联创",
+  "url": "https://www.315i.com/",
+  "description": "能源、化工和大宗商品产业资讯入口。",
+  "category": "分板块专业机构",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "官网",
+  "url": "https://www.315i.com/",
+  "description": null,
+  "category": "分板块专业机构",
+  "parent": "金联创",
+  "domestic": true
+ },
+ {
+  "kind": "site",
+  "name": "生意社",
+  "url": "https://www.100ppi.com/",
+  "description": "大宗商品现货价格和走势入口。",
+  "category": "分板块专业机构",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "官网",
+  "url": "https://www.100ppi.com/",
+  "description": null,
+  "category": "分板块专业机构",
+  "parent": "生意社",
+  "domestic": true
+ },
+ {
+  "kind": "site",
+  "name": "钢之家",
+  "url": "https://www.steelhome.com/",
+  "description": "钢铁行业价格、库存和资讯入口。",
+  "category": "分板块专业机构",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "官网",
+  "url": "https://www.steelhome.com/",
+  "description": null,
+  "category": "分板块专业机构",
+  "parent": "钢之家",
+  "domestic": true
+ },
+ {
+  "kind": "site",
+  "name": "openvlab",
+  "url": "https://www.openvlab.cn/",
+  "description": "期权专业网站",
+  "category": "分板块专业机构",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "官网",
+  "url": "https://www.openvlab.cn/",
+  "description": null,
+  "category": "分板块专业机构",
+  "parent": "openvlab",
+  "domestic": true
+ },
+ {
+  "kind": "site",
+  "name": "第二十届全国期货（期权）实盘交易大赛",
+  "url": "https://ds.qhrb.com.cn/",
+  "description": "主办单位：期货日报、证券时报。类型：实盘。比赛时间：2026-03-27至2026-09-30。",
+  "category": "期货比赛",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "官网",
+  "url": "https://ds.qhrb.com.cn/",
+  "description": null,
+  "category": "期货比赛",
+  "parent": "第二十届全国期货（期权）实盘交易大赛",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "报名",
+  "url": "https://spsbm.qhrb.com.cn/",
+  "description": null,
+  "category": "期货比赛",
+  "parent": "第二十届全国期货（期权）实盘交易大赛",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "排名",
+  "url": "https://spdspc.qhrb.com.cn/#/",
+  "description": null,
+  "category": "期货比赛",
+  "parent": "第二十届全国期货（期权）实盘交易大赛",
+  "domestic": true
+ },
+ {
+  "kind": "site",
+  "name": "大盘手网全国期货实盘争霸赛",
+  "url": "https://www.dpswang.com/futures",
+  "description": "主办方：大盘手网。类型：实盘。报名开始：2026-05-10；比赛时间：2026-06-01至2027-05-31。",
+  "category": "期货比赛",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "官网",
+  "url": "https://www.dpswang.com/futures",
+  "description": null,
+  "category": "期货比赛",
+  "parent": "大盘手网全国期货实盘争霸赛",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "报名",
+  "url": "https://www.dpswang.com/login",
+  "description": null,
+  "category": "期货比赛",
+  "parent": "大盘手网全国期货实盘争霸赛",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "排名",
+  "url": "https://www.dpswang.com/futures/rank",
+  "description": null,
+  "category": "期货比赛",
+  "parent": "大盘手网全国期货实盘争霸赛",
+  "domestic": true
+ },
+ {
+  "kind": "site",
+  "name": "夺冠高手第九届全国期货实盘大赛",
+  "url": "https://www.dggaoshou.com/",
+  "description": "赛事平台：夺冠高手。类型：实盘。比赛时间：2025-12-29至2026-10-31。",
+  "category": "期货比赛",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "官网",
+  "url": "https://www.dggaoshou.com/",
+  "description": null,
+  "category": "期货比赛",
+  "parent": "夺冠高手第九届全国期货实盘大赛",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "报名",
+  "url": "https://www.dggaoshou.com/login.html",
+  "description": null,
+  "category": "期货比赛",
+  "parent": "夺冠高手第九届全国期货实盘大赛",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "排名",
+  "url": "https://www.dggaoshou.com/futures.html",
+  "description": null,
+  "category": "期货比赛",
+  "parent": "夺冠高手第九届全国期货实盘大赛",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "规则",
+  "url": "https://www.dggaoshou.com/futures_rules.html",
+  "description": null,
+  "category": "期货比赛",
+  "parent": "夺冠高手第九届全国期货实盘大赛",
+  "domestic": true
+ },
+ {
+  "kind": "site",
+  "name": "首届“金牛至赢”期货大赛",
+  "url": "https://ifutures.cs.com.cn/",
+  "description": "主办方：中国证券报；协办方：北京至易赢教育科技有限公司。类型：实盘/模拟盘。报名时间：2026-05-07至2026-09-30；比赛时间：2026-05-18至2026-10-31。",
+  "category": "期货比赛",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "官网",
+  "url": "https://ifutures.cs.com.cn/",
+  "description": null,
+  "category": "期货比赛",
+  "parent": "首届“金牛至赢”期货大赛",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "报名",
+  "url": "https://ifutures.cs.com.cn/trader/apply/contest",
+  "description": null,
+  "category": "期货比赛",
+  "parent": "首届“金牛至赢”期货大赛",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "排名",
+  "url": "https://ifutures.cs.com.cn/trader/contestList",
+  "description": null,
+  "category": "期货比赛",
+  "parent": "首届“金牛至赢”期货大赛",
+  "domestic": true
+ },
+ {
+  "kind": "site",
+  "name": "“期航杯”粤港澳大湾区高校期货模拟交易大赛",
+  "url": "https://www.cfachina.org/inv/index/mtkqs2/202606/t20260623_88874.html",
+  "description": "指导单位：中共广州市委金融委员会办公室；主办方：广州金融人才协会、广东证券期货业协会；承办方：广州期货、期货日报；特邀支持：广州期货交易所。类型：模拟盘。报名时间：2026-06-03至2026-10-23；比赛时间：2026-09-07至2026-11-06。",
+  "category": "期货比赛",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "介绍",
+  "url": "https://www.cfachina.org/inv/index/mtkqs2/202606/t20260623_88874.html",
+  "description": null,
+  "category": "期货比赛",
+  "parent": "“期航杯”粤港澳大湾区高校期货模拟交易大赛",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "报名说明",
+  "url": "https://www.cfachina.org/inv/index/mtkqs2/202606/t20260623_88874.html",
+  "description": null,
+  "category": "期货比赛",
+  "parent": "“期航杯”粤港澳大湾区高校期货模拟交易大赛",
+  "domestic": true
+ },
+ {
+  "kind": "site",
+  "name": "“期货寻星”投顾选拔赛",
+  "url": "https://www.touguwang.cn/",
+  "description": "举办方：投顾网；支持方：期货日报。类型：实盘。当前赛季：2025-11-01至2026-10-31。",
+  "category": "期货比赛",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "官网",
+  "url": "https://www.touguwang.cn/",
+  "description": null,
+  "category": "期货比赛",
+  "parent": "“期货寻星”投顾选拔赛",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "报名",
+  "url": "https://www.touguwang.cn/goJoinRace",
+  "description": null,
+  "category": "期货比赛",
+  "parent": "“期货寻星”投顾选拔赛",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "排名",
+  "url": "https://www.touguwang.cn/match_rank",
+  "description": null,
+  "category": "期货比赛",
+  "parent": "“期货寻星”投顾选拔赛",
+  "domestic": true
+ },
+ {
+  "kind": "child",
+  "name": "规则",
+  "url": "https://www.touguwang.cn/futures_rule",
+  "description": null,
+  "category": "期货比赛",
+  "parent": "“期货寻星”投顾选拔赛",
+  "domestic": true
+ }
+]

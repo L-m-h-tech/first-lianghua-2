@@ -1,0 +1,858 @@
+
+<!DOCTYPE html>
+
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+<head><meta name="viewport" content="width=device-width, initial-scale=1" /><title>
+	Current Map | U.S. Drought Monitor
+</title>
+
+        <!-- Universal Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-43766126-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-43766126-1');
+    </script>
+
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BQ463012SY"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-BQ463012SY');
+    </script>
+
+    <!-- UA Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WLD574');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- GA4 Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5FTMQ27');</script>
+    <!-- End Google Tag Manager -->
+
+    <!--Site Icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" /><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" /><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" /><link rel="manifest" href="/site.webmanifest" /><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#da3910" /><meta name="msapplication-TileColor" content="#da3910" /><meta name="theme-color" content="#da3910" />
+    <!--End Site Icons-->
+
+    <script type="text/javascript" src='/webfiles/js/jquery/3.4.1/jquery.min.js'></script>
+    <script type="text/javascript" src='/webfiles/js/jqueryui/1.12.1/jquery-ui.min.js'></script>
+    <script type="text/javascript" src='/webfiles/js/mobile-nav.js'></script> 
+    <script type="text/javascript" src='/webfiles/js/ndmc-buttons.js'></script>
+    <script type="text/javascript" src='/webfiles/js/menu-highlight-2.0.js'></script>
+    <script type="text/javascript" src="https://kit.fontawesome.com/9a3dfcb2aa.js"></script>
+    <link rel="stylesheet" href="/webfiles/fonts/GoogleFonts.css" crossorigin="anonymous" />
+    <script type="text/javascript" src="/webfiles/js/bootstrap/5.2/bootstrap.bundle.min.js"></script>
+    <link href="/webfiles/css/bootstrap/5.2/bootstrap.min.css" rel="stylesheet" /><link href="/webfiles/css/bootstrap/5.2/themes/bootstrap-usdm.css" rel="stylesheet" />
+    <link href="/styles/site.css?v=20260907104004" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" crossorigin="anonymous" />
+    
+    <link rel="stylesheet" type="text/css" href="/webfiles/js/svg/0.0.0/jquery.svg.css" /> 
+    <script type="text/javascript" src="/webfiles/js/svg/0.0.0/jquery.svg.es5.min.js"></script>
+    <style type="text/css">
+
+#title{font-size:14pt!important;}
+
+.legend-list, .author-list{list-style:none!important;margin-left:0px!important;padding-left:0;}
+.legend-list li span{border:1px solid #ccc;padding:1px 12px;}
+
+#legend{float:right;width:40%;}
+.half{width:50%;float:left;}
+
+.area-list{font-size:18px;font-weight:bold;}
+.area-list li{list-style:none!important;}
+
+.inline{display:inline;vertical-align:top;}
+label.inline{margin-right:10px;}
+.inline tr td input{margin-right:5px;}
+.inline tr td label{margin-right:15px;}
+
+.bttn:hover{cursor:pointer;}
+
+
+
+@media (max-width:1000px){
+    #legend{width:30%;}
+    .half{width:100%;}
+    .legend-list{margin-bottom:0;}
+    .dwnld span{display:block;}
+}
+@media (max-width:500px){
+    #legend{width:100%;margin-bottom:10px;}
+    .half{width:50%;}
+    .dateheading{font-size:18px!important}
+    .dateheading2{font-size:12px!important}
+    .data-cutoff{font-size:14px;}
+}
+
+@media (max-width:400px){
+    .half{width:100%;}
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  object[data$=".svg"] {
+    width: 100%; 
+  }
+
+ path#CA{}
+
+}
+        .menu-box {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .menu-box .icon {
+            font-size: 50px;
+        }
+    </style>
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        $("#navmenu > li > a").each(function () {
+            if ($(this).attr('title') == 'Current Map') {
+                $(this).parent().addClass('menu-current');
+            }
+        });
+
+        $('#gray-chk').click(function () {
+
+            var g = $(this).prop('checked');
+            
+            if (g) {
+                setGray();
+            }
+            else {
+                removeGray();
+            }
+
+        });
+
+    });
+
+    function setGray() {
+
+        var map = $('#svgObject').css("background-image");
+        map = map.replace('.png', '-bw.png');
+
+        $('#svgObject').css("background-image", map);
+
+        $('span.usdm-d0').each(function () {
+
+            $(this).toggleClass('usdm-d0').toggleClass('usdm-g-d0');
+
+        });
+
+        $('span.usdm-d1').each(function () {
+
+            $(this).toggleClass('usdm-d1').toggleClass('usdm-g-d1');
+
+        });
+
+        $('span.usdm-d2').each(function () {
+
+            $(this).toggleClass('usdm-d2').toggleClass('usdm-g-d2');
+
+        });
+
+        $('span.usdm-d3').each(function () {
+
+            $(this).toggleClass('usdm-d3').toggleClass('usdm-g-d3');
+
+        });
+
+        $('span.usdm-d4').each(function () {
+
+            $(this).toggleClass('usdm-d4').toggleClass('usdm-g-d4');
+
+        });
+
+        $('span.usdm-nodata').each(function () {
+
+            $(this).toggleClass('usdm-nodata').toggleClass('usdm-g-nodata');
+
+        });
+
+    }
+
+    function removeGray() {
+
+        var map = $('#svgObject').css("background-image");
+        map = map.replace('-bw.png', '.png');
+
+        $('#svgObject').css("background-image", map);
+
+        $('span.usdm-g-d0').each(function () {
+
+            $(this).toggleClass('usdm-d0').toggleClass('usdm-g-d0');
+
+        });
+
+        $('span.usdm-g-d1').each(function () {
+
+            $(this).toggleClass('usdm-d1').toggleClass('usdm-g-d1');
+
+        });
+
+        $('span.usdm-g-d2').each(function () {
+
+            $(this).toggleClass('usdm-d2').toggleClass('usdm-g-d2');
+
+        });
+
+        $('span.usdm-g-d3').each(function () {
+
+            $(this).toggleClass('usdm-d3').toggleClass('usdm-g-d3');
+
+        });
+
+        $('span.usdm-g-d4').each(function () {
+
+            $(this).toggleClass('usdm-d4').toggleClass('usdm-g-d4');
+
+        });
+
+        $('span.usdm-g-nodata').each(function () {
+
+            $(this).toggleClass('usdm-nodata').toggleClass('usdm-g-nodata');
+
+        });
+
+    }
+
+    window.onload = function () {
+
+        var svg = $("#svgObject").getSVG();
+
+        svg.find('path').each(function () {
+            if ($(this).attr('rels') != 0) {
+                id = $(this).attr('alt');
+                $(this).attr('onclick', 'window.top.location.href="/CurrentMap/StateDroughtMonitor.aspx?' + id.replace(" ", "_") + '"')
+                $(this).attr('cursor', 'pointer');
+            }
+
+        });
+
+        svg.find('path').mouseenter(function () {
+            var reg = $(this).attr('alt');
+            svg.find('[alt="' + reg + '"]').each(function () {
+                if ($(this).attr('rels') != 0) {
+                    $(this).attr('fill', '#00ff00');
+                    $(this).attr('fill-opacity', '0.25');
+                    $(this).attr('stroke', '#00ff00')
+                }
+            });
+
+        });
+
+        svg.find('path').mouseleave(function () {
+            var reg = $(this).attr('alt');
+            svg.find('[alt="' + reg + '"]').each(function () {
+                if ($(this).attr('rels') != 0 && $(this).attr('rels') != 1) {
+                    $(this).attr('fill', '#ffffff');
+                    $(this).attr('fill-opacity', '0');
+                    $(this).attr('stroke', '#666');
+                }
+                else if ($(this).attr('rels') == 1)
+                {
+                    $(this).attr('fill', '#ffffff');
+                    $(this).attr('fill-opacity', '0');
+                    $(this).attr('stroke', 'none');
+                }
+            });
+        });
+
+    };
+
+</script>
+</head>
+<body>
+
+    <form method="post" action="./CurrentMap.aspx" id="frm">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="627D2E56" />
+</div>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WLD574"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5FTMQ27"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+
+        <div id="pg-container">
+            <header class="sticky-top">
+                <!--<div id="message bar" class="alert-info-bright py-1">
+                    <div class="container-xxl">
+                        <div class="row py-2">
+
+                        </div>
+                    </div>
+                </div>-->
+                <div id="title-bar">
+                    <div id="title-bar-inner" class="container-xl container-lg">
+                        
+<span id="title-txt"><a href="/CurrentMap.aspx" style="color:white!important;">U.S. Drought Monitor</a></span>
+                    </div>
+                </div>
+                <div style="clear:both;"></div>
+                <nav id="navigationbar" class="navbar navbar-expand-xl navbar-expand-lg bg-primary">
+                    <div class="container-fluid">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                        
+<ul id="navmenu" class="navbar-nav container-xl container-lg">
+    <li class="nav-item"><a href="/CurrentMap.aspx" class="nav-link">Current</a></li>
+    <li class="nav-item"><a href="/Maps.aspx" class="nav-link">Maps</a>
+        <ul class="dropdown-menu">
+            <li class="dropdown-item"><a class="nav-link" href="/Maps/CompareTwoWeeks.aspx">Compare Two Weeks</a></li>
+            <li class="dropdown-item"><a class="nav-link" href="/Maps/ComparisonSlider.aspx">Comparison Slider</a></li>
+            <li class="dropdown-item"><a class="nav-link" href="/Maps/MapArchive.aspx">Map Archive</a>
+                <ul>
+                    <li class="hide-elem"><a href="/Maps/MapArchive/MapAreas.aspx">Map Areas</a></li>
+                    <li class="hide-elem"><a href="/Maps/MapArchive/MapTypes.aspx">Map Types</a></li>
+                </ul>
+            </li>
+            <li class="dropdown-item"><a class="nav-link" href="/Maps/MapViewer.aspx">Map Viewer</a></li>
+            <li class="dropdown-item"><a class="nav-link" href="/Maps/ChangeMaps.aspx">Change Maps</a></li>
+            <li class="dropdown-item"><a class="nav-link" href="/Maps/Animations.aspx">Animations</a>
+                <ul>
+                    <li class="hide-elem"><a href="/Maps/Animations/ExportGif.aspx">Export Animated GIF</a></li>
+                </ul>
+            </li>
+            <li class="dropdown-item"><a class="nav-link" href="/Maps/CustomMapRequest.aspx">Custom Map Request</a></li>
+            <li class="hide-elem"><a href="/Maps/MapExport.aspx">Map Export Tool</a></li>
+        </ul>
+    </li>
+    <li class="nav-item"><a href="/Data.aspx" class="nav-link">Data</a>
+        <ul class="dropdown-menu">
+            <li class="dropdown-item"><a class="nav-link" href="/DmData/TimeSeries.aspx">Time Series</a></li>
+            <li class="hide-elem"><a href="/DmData/OCONUSTimeSeries.aspx">OCONUS Time Series</a></li>
+            <li class="dropdown-item"><a class="nav-link" href="/DmData/DataTables.aspx">Data Tables</a></li>
+            <li class="dropdown-item"><a class="nav-link" href="/DmData/DataGraphs.aspx">Data Graphs</a></li>
+            <li class="hide-elem"><a href="/DmData/OCONUSDroughtStatus.aspx">OCONUS Drought Status</a></li>
+            <li class="dropdown-item"><a class="nav-link" href="/DmData/BarChart.aspx">Bar Chart</a></li>
+            <li class="dropdown-item"><a class="nav-link" href="/DmData/DataDownload.aspx">Data Download</a>
+                <ul>
+                    <li class="hide-elem"><a href="/DmData/DataDownload/DSCI.aspx">Drought Severity and Coverage Index</a></li>
+                    <li class="hide-elem"><a href="/DmData/DataDownload/ComprehensiveStatistics.aspx">Comprehensive Statistics</a></li>
+                    <li class="hide-elem"><a href="/DmData/DataDownload/StatisticsbyThreshold.aspx">Statistics by Threshold</a></li>
+                    <li class="hide-elem"><a href="/DmData/DataDownload/WeeksInDrought.aspx">Weeks in Drought</a></li>
+                    <li class="hide-elem"><a href="/DmData/DataDownload/WebServiceInfo.aspx">Web Service Info</a></li>
+                    <li class="hide-elem"><a href="/DmData/DataDownload/AoiValues.aspx">AOI Values</a></li>
+                </ul>
+            </li>
+            <li class="dropdown-item"><a class="nav-link" href="/DmData/GISData.aspx">GIS Data</a></li>
+            <li class="dropdown-item"><a class="nav-link" href="/DmData/Metadata.aspx">Metadata</a></li>
+            <li class="dropdown-item"><a class="nav-link" href="/FSA/Home.aspx">FSA Eligibility Tool</a></li>
+            <li class="dropdown-item"><a class="nav-link" href="/DmData/StateImpacts.aspx">State Impacts</a>
+                <ul>
+                    <li class="hide-elem"><a href="/DmData/StateImpacts/About.aspx">About</a></li>
+                </ul>
+            </li>
+            <li class="hide-elem"><a href="/DmData/DataArchive.aspx">Data Archive</a></li>
+        </ul>
+    </li>
+    <li class="nav-item"><a href="/Summary.aspx" class="nav-link">Summary</a></li>
+    <li class="nav-item"><a href="/About.aspx" class="nav-link">About</a>
+        <ul class="dropdown-menu">
+            <li class="dropdown-item"><a class="nav-link" href="/About/WhatistheUSDM.aspx">What is the USDM?</a></li>
+            <li class="dropdown-item"><a class="nav-link" href="/About/Permission.aspx">Permission</a></li>
+            <li class="dropdown-item"><a class="nav-link" href="/About/ContactUs.aspx">Contact Us</a></li>
+            <li class="dropdown-item"><a class="nav-link" href="/About/AbouttheData.aspx">About the Data</a>
+                <ul>
+                    <li class="hide-elem"><a href="/About/AbouttheData/DroughtClassification.aspx">Drought Classification</a></li>
+                    <li class="hide-elem"><a href="/About/AbouttheData/DSCI.aspx">Drought Severity and Coverage Index</a></li>
+                    <li class="hide-elem"><a href="/About/AbouttheData/StatisticsExplanation.aspx">Statistics Explanation</a></li>
+                    <li class="hide-elem"><a href="/About/AbouttheData/PopulationStatistics.aspx">Population Statistics</a></li>
+                    <li class="hide-elem"><a href="/About/AbouttheData/AlertRequest.aspx">Drought Alert Request</a></li>
+                </ul>
+            </li>
+            <li class="dropdown-item"><a class="nav-link" href="https://drought.unl.edu/Education/Tutorials.aspx">Tutorials</a></li>
+            <li class="dropdown-item"><a class="nav-link" href="/About/OtherResources.aspx">Other Resources</a></li>
+            <li class="dropdown-item"><a class="nav-link" href="/About/MediaKit.aspx">Media Kit</a></li>
+        </ul>
+    </li>
+    <li class="nav-item"><a href="/ConditionsOutlooks.aspx" class="nav-link">Conditions &amp; Outlooks</a>
+        <ul class="dropdown-menu">
+            <li class="dropdown-item"><a class="nav-link" href="/ConditionsOutlooks/CurrentConditions.aspx">Current Conditions</a></li>
+            <li class="dropdown-item"><a class="nav-link" href="/ConditionsOutlooks/Outlooks.aspx">Outlooks</a></li>
+            <li class="dropdown-item"><a class="nav-link" href="/ConditionsOutlooks/Indices.aspx" target="_blank">Weekly Drought Indices</a></li>
+            <li class="dropdown-item"><a class="nav-link" href="/ConditionsOutlooks/Inputs.aspx">USDM Inputs</a></li>
+        </ul>
+    </li>
+    <li class="nav-item"><a href="https://agindrought.unl.edu/" target="_blank">Ag in Drought</a></li>
+    <li class="nav-item"><a href="/ES/MapaActual.aspx" class="nav-link">En Espa&ntilde;ol</a></li>
+    <li class="nav-item"><a href="/NADM/Home.aspx" class="nav-link">NADM</a></li>
+</ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <main>
+                <div id="content">
+                    
+    <div class="container-xl container-lg">
+        <div class="row mt-3">
+            <div class="col-md-6">
+                <div id="ContentPlaceHolder1_dateinfo"><h2>Map released: September 3, 2026</h2><h3 style="color:#9B9392!important;">Data valid: September 1, 2026</h3></div>                
+            </div>
+            <div class="col-md-6 align-self-end">
+                    <p><div class="form-check form-check-inline"><input id="gray-chk" class="form-check-input" type="checkbox" /><label class="form-check-label" for="gray-chk">View grayscale version of the map</label></div></p>
+            </div>
+            <div class="col-sm-12">
+                <div id="ContentPlaceHolder1_currentdm" class="currdm"><object aria-label="U.S. Drought Monitor" type="image/svg+xml" data="/images/base/Total_WebOnly3.svg" id="svgObject" style="background-image:url('/data/png/20260901/20260901_usdm_web_all.png');background-size:contain;background-repeat:no-repeat;"></object></div>
+            </div>
+        </div>
+        <div id="ContentPlaceHolder1_authorinfo" class="row"><div class="col-md-6 mt-3"><em><b>United States and Puerto Rico Author(s):</b><br /><a class="text-decoration-underline" href="/About/ContactUs.aspx"><strong>Curtis Riganti</strong></a>, National Drought Mitigation Center</em></div><div class="col-md-6 mt-3"><em><b>Pacific Islands and Virgin Islands Author(s):</b><br /><a class="text-decoration-underline" href="/About/ContactUs.aspx"><strong>Tsegaye Tadesse</strong></a>, National Drought Mitigation Center</em></div></div>
+        <div class="row mt-3">
+            <div class="col-lg-6">
+                <p>More maps and statistics:</p>
+                <a href="/CurrentMap/StateDroughtMonitor.aspx?total" class="btn btn-primary mb-3">U.S. States and Puerto Rico</a>
+                <a href="/CurrentMap/StateDroughtMonitor.aspx?conus" class="btn btn-primary mb-3">Continental U.S.</a>
+                <a href="#" id="regions" class="btn btn-primary dropdown-toggle mb-3" role="button" data-bs-toggle="dropdown" aria-expanded="false">Regions</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="/CurrentMap/StateDroughtMonitor.aspx?high_plains">High Plains</a></li>
+                    <li><a class="dropdown-item" href="/CurrentMap/StateDroughtMonitor.aspx?midwest">Midwest</a></li>
+                    <li><a class="dropdown-item" href="/CurrentMap/StateDroughtMonitor.aspx?northeast">Northeast</a></li>
+                    <li><a class="dropdown-item" href="/CurrentMap/StateDroughtMonitor.aspx?south">South</a></li>
+                    <li><a class="dropdown-item" href="/CurrentMap/StateDroughtMonitor.aspx?southeast">Southeast</a></li>
+                    <li><a class="dropdown-item" href="/CurrentMap/StateDroughtMonitor.aspx?west">West</a></li>
+                    <li><a class="dropdown-item" href="/CurrentMap/StateDroughtMonitor.aspx?caribbean">Caribbean</a></li>
+                    <li><a class="dropdown-item" href="/CurrentMap/StateDroughtMonitor.aspx?pacific">Pacific</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-6">
+                
+
+                <div class="alert alert-info mb-3">
+                    <span class="data-cutoff">The data cutoff for Drought Monitor maps is each Tuesday at <span id="ContentPlaceHolder1_rel" style="font-weight:600;">8 a.m. EDT</span>. The maps, which are based on analysis of the data, are released each Thursday at <b>8:30 a.m. Eastern Time</b>.</span>
+                </div>        
+            </div> 
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <h2>Intensity and Impacts</h2>
+ 
+            <div class="row">
+                            <div class="col-sm-6">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <ul class="legend-list">
+                                <li><span class="usdm-dnone"></span> <strong>None</strong></li>
+                                <li><span class="usdm-d0"></span> <strong>D0</strong> (Abnormally Dry)</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <ul class="legend-list">
+                            <li><span class="usdm-d1"></span> <strong>D1</strong> (Moderate Drought)</li>
+                            <li><span class="usdm-d2"></span> <strong>D2</strong> (Severe Drought)</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-sm-6">
+                <div class="row">
+                <div class="col-lg-6">
+                    <ul class="legend-list">        
+                        <li><span class="usdm-d3"></span> <strong>D3</strong> (Extreme Drought)</li>
+                        <li><span class="usdm-d4"></span> <strong>D4</strong> (Exceptional Drought)</li>
+                     </ul>
+                </div>
+                <div class="col-lg-6">
+                    <ul class="legend-list">        
+                        <li><span class="usdm-nodata"></span> <strong>No Data</strong></li>
+                     </ul>
+                </div>
+                    </div>
+            </div>
+            </div>
+
+            <div class="row mt-3">
+                    <div class="col-sm-6">
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <p><img src="/images/impact_line.svg" style="height:16px;" alt="Drought Impacts"/> - Delineates dominant impacts</p>
+                            </div>
+                            <div class="col-xl-6">
+                                <p><strong style="font-size:16px;">S</strong> - Short-term impacts, typically less than 6 months (agriculture, grasslands)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <p><strong style="font-size:16px;">L</strong> - Long-term impacts, typically greater than 6 months (hydrology, ecology)</p>
+                            </div>
+                            <div class="col-xl-6">
+                                <p><strong style="font-size:16px;">SL</strong> - Short- and long-term impacts</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+                    <p>For local details and impacts, please contact your <a class="text-decoration-underline" href="https://www.stateclimate.org/" target="_blank" rel="noopener noreferrer" title="American Association of State Climatologists">State Climatologist</a> or <a class="text-decoration-underline" href="https://www.ncdc.noaa.gov/customer-support/partnerships/regional-climate-centers" target="_blank" rel="noopener noreferrer" title="Regional Climate Centers">Regional Climate Center</a>.</p>
+
+                <h2>Map Download</h2>
+            </div>
+        </div>
+        <div id="ContentPlaceHolder1_dwnld" class="dwnld"><div class="row mb-5"><div class="col-sm-6"><div><b>United States and Puerto Rico (Page 1)</b></div><div class="btn-group me-2 mt-2"><a href="#" class="btn btn-primary dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Current Map</a><ul class="dropdown-menu"><li><a class="dropdown-item" href="/data/png/20260901/20260901_usdm.png">PNG</a></li><li><a class="dropdown-item" href="/data/pdf/20260901/20260901_usdm.pdf">PDF</a></li><li><a class="dropdown-item" href="/data/tif/20260901/20260901_usdm.tif">TIF</a></li><li><a class="dropdown-item" href="/data/ai/20260901/20260901_usdm.ai">AI</a></li></ul></div><div class="btn-group mt-2"><a href="#" class="btn btn-primary dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Previous Map</a><ul class="dropdown-menu"><li><a class="dropdown-item" href="/data/png/20260825/20260825_usdm.png">PNG</a></li><li><a class="dropdown-item" href="/data/pdf/20260825/20260825_usdm.pdf">PDF</a></li><li><a class="dropdown-item" href="/data/tif/20260825/20260825_usdm.tif">TIF</a></li><li><a class="dropdown-item" href="/data/ai/20260825/20260825_usdm.ai">AI</a></li></ul></div></div><div class="col-sm-6"><div><b>U.S. Affiliated Pacific Islands and Virgin Islands (Page 2)</b></div><div class="btn-group me-2 mt-2"><a href="#" class="btn btn-primary dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Current Map</a><ul class="dropdown-menu"><li><a class="dropdown-item" href="/data/png/20260901/20260901_usdm_pg2.png">PNG</a></li><li><a class="dropdown-item" href="/data/pdf/20260901/20260901_usdm_pg2.pdf">PDF</a></li></ul></div><div class="btn-group mt-2"><a href="#" class="btn btn-primary dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Previous Map</a><ul class="dropdown-menu"><li><a class="dropdown-item" href="/data/png/20260825/20260825_usdm_pg2.png">PNG</a></li><li><a class="dropdown-item" href="/data/pdf/20260825/20260825_usdm_pg2.pdf">PDF</a></li></ul></div></div></div></div>
+
+    </div>
+    <div class="container-lg-max usdm-main-color">
+        <div class="row py-5">
+            <div class="col-sm-12">
+                <h2 style="color: white !important;">How is drought affecting you?</h2>
+
+                <p style="color: white !important;">You can submit a Condition Monitoring Observer Report (CMOR), including photos. Reporting regularly can help people see what normal, wet and dry conditions look like in your part of the country.</p>
+
+                <p><a class="btn btn-white-primary" href="https://droughtimpacts.unl.edu/Tools/ConditionMonitoringObservations.aspx">Submit report</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="container-lg-max webtool-gray-200">
+        <div class="row py-5">
+            <div class="col-sm-12">
+                <h2 style="margin-bottom:25px;">This Week's Drought Summary</h2>
+                <div id="ContentPlaceHolder1_contents" class="narrow-content"><p class="summarytext">Dry weather continued this week across much of the central U.S., especially from the southern Great Plains to the Mississippi River Valley and Corn Belt. Flash drought conditions were occurring across a large area spanning from Texas northeastward to Oklahoma and southern Kansas, southern Missouri, Arkansas, northern Mississippi and portions of far western Tennessee. Due to the drier- and warmer-than-normal weather in most of these areas, drought and abnormal dryness expanded and intensified in many areas, as widespread adverse impacts to agriculture continued and fire danger continued to grow in some areas. Widespread showers and thunderstorms, some locally heavy, dotted parts of the Northeast and Southeast regions, leading to localized improvements to ongoing drought or abnormal dryness. Some areas that missed out on the rains saw conditions worsen. Hot and dry weather continued near the borders of the Dakotas with Minnesota, leading to worsening drought conditions. Widespread improvements occurred in some areas from Wyoming and the plains of eastern Colorado northeast into the Nebraska Sandhills and southern South Dakota, where either heavy rainfall this week improved conditions or conditions were reassessed following recent heavier rains. Recent hot and dry weather, combined with a lack of winter snowpack, led to the expansion of moderate drought in northern California. Heavy rainfall associated with the remnants of Tropical Storm Dolly in eastern Puerto Rico led to a few improvements there, though widespread severe and extreme drought continued across much of Puerto Rico. Recent rainfall led to the removal of short-term moderate drought from Alaska’s Central Interior.</p><h3 class="mt-2"><a href="/CurrentMap/StateDroughtMonitor.aspx?Northeast" title="See conditions for the Northeast"> Northeast</a></h3><p class="summarytext">Weather this week was largely drier in the Northeast, except for parts of New Jersey and southeast Pennsylvania (in the Lehigh Valley and Philadelphia area), where heavy rain amounts (locally over 2 inches) boosted streamflows and alleviated long-term precipitation deficits. Recent rainfall also led to a few localized improvements in southern New England, though groundwater shortages and long-term precipitation deficits kept some of the lingering drought and abnormal dryness going. In northern New England, drier weather prevailed, leading to growth and worsening of drought areas amidst very low streamflows. Despite temperatures of 2-4 degrees below normal in central New York, abnormal dryness expanded there as short-term precipitation deficits grew and soil moisture and streamflow declined. Temperatures across the rest of the region were mostly within 2-4 degrees of normal.</p><h3 class="mt-2"><a href="/CurrentMap/StateDroughtMonitor.aspx?Southeast" title="See conditions for the Southeast"> Southeast</a></h3><p class="summarytext">Scattered heavy rains, locally 2-5 inches, fell from parts of southern North Carolina through the Florida Peninsula. Scattered improvements to ongoing long-term drought occurred in the Florida Peninsula, southeast Georgia, coastal South Carolina and southern North Carolina, where lingering long-term precipitation deficits were balanced against short-term gains and improving soil moisture and streamflow. Localized short-term dryness enveloped parts of northeast North Carolina, leading to locally worsening drought conditions where long-term precipitation deficits are still hefty. Drought and abnormal dryness expanded across much of southern Alabama and a few portions of central Georgia, as soil moisture declined and streamflows lowered with ongoing short-term rainfall deficits. Temperatures in Alabama and northwest Georgia were generally warmer than normal, with some areas finishing the week 2-4 degrees above normal. Elsewhere, with local exceptions, temperatures remained within a couple degrees of normal.</p><h3 class="mt-2"><a href="/CurrentMap/StateDroughtMonitor.aspx?South" title="See conditions for the South"> South</a></h3><p class="summarytext">Widespread expansion or worsening of ongoing drought or abnormal dryness occurred across the South, especially in parts of Mississippi, Texas, eastern Oklahoma and portions of Arkansas. Heavier rains, locally over 2 inches, fell in southeast Louisiana and southwest Mississippi. Otherwise, weather conditions were mostly drier, with many areas receiving less than a half inch of rainfall and some receiving none at all. Temperatures were warmer than normal across most of the region, especially in Oklahoma and the northern half of Texas, where temperatures were 6-10 degrees hotter than normal. This continued a very hot August across much of Oklahoma. Degradations in drought conditions were especially prevalent in southwestern and northern Texas, deep south Texas, northern Mississippi and eastern Oklahoma, as ongoing hot and dry weather worsened conditions in areas already suffering a myriad of drought impacts. Burn bans were enacted across much of western Oklahoma, while Oxford, Miss., residents were asked to conserve water due to high water demand and recent extreme heat. Streamflow across much of central and western Oklahoma and northern Texas was quite low, along with low soil moisture and intense short-term precipitation deficits.</p><h3 class="mt-2"><a href="/CurrentMap/StateDroughtMonitor.aspx?Midwest" title="See conditions for the Midwest"> Midwest</a></h3><p class="summarytext">Dry weather occurred across much of the southern half of the Midwest region this week. This led to localized development or expansion of abnormal dryness in Illinois and Kentucky, and widespread degradation of conditions in Missouri, especially in south-central and southwest Missouri. Fire danger and drought impacts to agriculture and other vegetation continued to worsen in southwest Missouri and neighboring Arkansas, leading to degrading conditions across much of this area. Drought conditions also worsened in west-central Minnesota, where short- and long-term precipitation deficits mounted. Temperatures in the eastern half of the region were generally within 2-4 degrees of normal, while much of Minnesota, Iowa and western Missouri were 2-6 degrees warmer than normal. Scattered rains fell across parts of the Upper Midwest, locally exceeding 2 inches but mostly depositing a half inch or less of rain.</p><h3 class="mt-2"><a href="/CurrentMap/StateDroughtMonitor.aspx?High_Plains" title="See conditions for the High Plains"> High Plains</a></h3><p class="summarytext">A swath of 0.5-2 inches of rain fell from parts of western Nebraska and western Kansas into portions of Colorado and Wyoming. Scattered similar rain amounts also fell in portions of east-central and northern South Dakota, as well as in parts of central and western North Dakota. The impacts of recent rainfall in southern South Dakota and the Nebraska Sandhills were re-evaluated this week, and widespread improvements were made as soil moisture and streamflow locally improved, while short-term rainfall deficits were alleviated. Long-term precipitation deficits and their impacts continued across much of this region, and abnormal dryness and long-term moderate drought remained. Scattered improvements to drought also occurred from southern and eastern Wyoming into the western Dakotas and much of eastern Colorado. Short-term precipitation deficits improved in these areas, with some improvement in soil moisture and streamflow, leading to improvements in drought conditions. Streamflow still remains low across portions of the western High Plains region given the poor high elevation snows and warm temperatures during the water year. Temperatures across the region were hotter than normal, especially in Kansas, where temperatures ranged mostly from 6-10 degrees above normal, resulting in high atmospheric demand for moisture in southeast Kansas.</p><h3 class="mt-2"><a href="/CurrentMap/StateDroughtMonitor.aspx?West" title="See conditions for the West"> West</a></h3><p class="summarytext">Locally heavy rains from the North American Monsoon fell in parts of Arizona, Utah and the Rocky Mountains in Colorado. Parts of Colorado to the west of the Front Range saw conditions improve given recent rainfall, though widespread short- and long-term drought remained across central and western Colorado. In a few areas in south-central and southwest Colorado that missed out on heavier rains, long-term precipitation deficits grew even worse. Temperatures from 4–6 degrees above normal also kept atmospheric thirst high, and extreme and exceptional drought locally expanded. Short-term precipitation deficits and poor streamflow in some areas led to drought degradation in parts of the Idaho Panhandle, the Spokane, Wash., area, and nearby northwest Montana. Short-term dryness and warmth in northern California led to the expansion of moderate drought there. Moderate drought locally expanded in north-central Montana where short-term rainfall deficits grew and soil moisture declined in a few areas. Recent precipitation in southwest Montana led to improvements in mid- to long-term precipitation deficits and overall conditions, and moderate drought coverage decreased. Recent precipitation in western Utah helped to lessen long-term precipitation deficits, and extreme drought coverage lessened slightly. Temperatures were warmer than normal across much of the West, excluding areas from western Nevada and far northern California through Oregon and Washington. In the rest of the region, temperatures were mostly at least 2-4 degrees above normal, with many areas 4-10 degrees warmer than normal.</p><h3 class="mt-2"><a href="/CurrentMap/StateDroughtMonitor.aspx?Caribbean" title="See conditions for the Caribbean"> Caribbean</a></h3><p class="summarytext">This week, over 6 inches of rain fell in parts of southeast Puerto Rico as the remnants of former Tropical Storm Dolly passed through the area. At least 2-3 inches of rain fell across much of eastern Puerto Rico. Extreme short-term drought improved to severe short-term drought in parts of northeast and southeast Puerto Rico, while a small area of southeast Puerto Rico saw conditions improve from severe to moderate short-term drought.</p><p class="summarytext">This week, increased tropical moisture from the remnants of Dolly created conditions conducive to showers across some areas of the U.S. Virgin Islands (USVI). However, local factors and island-scale variability significantly influenced the resulting precipitation. As a result, while the overall weather pattern brought beneficial rainfall, it was not uniform across the islands—St. Croix received considerably more rain, whereas St. Thomas and parts of St. John remained relatively dry. Despite these recent rainfall amounts, groundwater levels on all three islands are still much lower than they were a year ago, indicating that the recent precipitation has not yet led to significant recovery of groundwater supplies.</p><p class="summarytext">St. Croix experienced the highest and most widespread rainfall among the three islands this week. East Hill recorded 1.45 inches, while the CoCoRaHS stations reported various amounts: 1.61 inches at VI-SC-10 (Christiansted 1.6 E), 1.96 inches at VI-SC-20 (Frederiksted 1.7 ESE), 1.61 inches at VI-SC-23 (Christiansted 6.5 W), 1.30 inches at VI-SC-30 (Christiansted 1.7 SW), 1.92 inches at VI-SC-34 (Frederiksted 1.9 NE), and 1.94 inches at VI-SC-35 (Frederiksted 1.3 ENE). Overall, the rainfall across St. Croix was moderate and fairly widespread, with amounts ranging from 1.30 to 1.96 inches among the CoCoRaHS stations. However, despite this recent rainfall, groundwater remains severely depleted. The Adventure 28 Well measured a depth of 24.64 feet below the land surface on September 1, compared to 18.38 feet on the same date in 2025. This indicates that groundwater levels are substantially lower than they were a year ago. As a result, St. Croix continues to experience extreme drought conditions.</p><p class="summarytext">This week, St. John received significantly less rainfall compared to St. Croix. Rafe Boulon (VI-SJ-3, Windswept Beach) recorded 0.48 inches, while the CoCoRaHS VI-SJ-5 station (Cruz Bay 1.6 E) recorded only 0.03 inches. These observations indicate limited and uneven rainfall, with no evidence of widespread substantial precipitation across the island. Groundwater conditions remain very dry. At the Susannaberg DPW 3 Well, the water level was measured at 18.50 feet below the land surface on September 1. This level has increased in depth from the previous week and is significantly deeper than the 12.67 feet recorded on September 1, 2025. The combination of minimal rainfall and declining groundwater levels indicates that St. John is currently experiencing extreme drought conditions.</p><p class="summarytext">St. Thomas observed the least rainfall of the three islands this week. Cyril E. King Airport recorded just 0.01 inches. CoCoRaHS stations reported varying amounts: 0.34 inches at VI-ST-5 (Charlotte Amalie West 4.2 WNW), 0.06 inches at VI-ST-14 (Nadir 0.3 E/Tropical Marine), and 0.29 inches at VI-ST-15 (Charlotte Amalie West 1.3 N). The VI-ST-13 station (Charlotte Amalie 1.2 NNW) reported missing data instead of an observed rainfall amount. As a result, recorded rainfall ranged from 0.01 to 0.34 inches, indicating generally light rainfall that varied across St. Thomas. In addition, groundwater conditions remain very poor. The Grade School 3 Well reached a depth of 9.88 feet below the land surface on September 1, compared to 7.38 feet on the same date in 2025. Furthermore, groundwater depth has been increasing since April 20, 2026. These conditions suggest that St. Thomas continues to experience extreme drought conditions despite some recent rainfall.</p><h3 class="mt-2"><a href="/CurrentMap/StateDroughtMonitor.aspx?Pacific" title="See conditions for the Pacific"> Pacific</a></h3><p class="summarytext">Above-normal rain amounts fell in much of central and northern portions of Alaska, along with temperatures that were near-normal or 3-9 degrees below normal in these areas. A small area of short-term moderate drought in the Central Interior was removed, while abnormal dryness locally expanded in the Eastern Interior, where locally dry recent weather continued.</p><p class="summarytext">Precipitation amounts in Hawaii this week were mostly below normal, with the highest amounts of 1-2 inches falling in parts of Kauai, Maui, Oahu and the Big Island. Temperatures were mostly within a couple degrees of normal this week. Hawaii remained free of drought, though abnormal dryness remained in parts of Kauai, Oahu, Molokai, central Maui and the western reaches of the Big Island.</p><p class="summarytext">The Marshall Islands have been affected by the western Pacific monsoon trough, bringing scattered showers and thunderstorms to Majuro. By September 1, the National Weather Service noted that monsoon activity was weakening, and a drier pattern was expected around Majuro. Rainfall this week was adequate, with all reporting stations free from drought conditions. Weekly totals included 3.31 inches at Ailinglapalap, 0.40 inches at Jaluit, 1.83 inches at Kwajalein, 1.90 inches at Majuro, 2.45 inches at Mili, 0.54 inches at Utirik, and 1.04 inches at Wotje. Jaluit was the driest location but had received 1.9 inches on August 24, providing some moisture to remain drought-free. Overall, the Marshall Islands are currently drought-free.</p><p class="summarytext">This week, an active monsoon trough and surge affected eastern and central Federated States of Micronesia (FSM), especially Pohnpei, where a weak tropical disturbance, Invest 95W, was located. The National Weather Service reported that while the surge enhanced convection around Pohnpei, it was expected to weaken as the disturbance moved north-northwest. Western FSM, including Yap and Chuuk, also experienced the effects of a monsoonal convergence zone. Rainfall varied across FSM, with most stations receiving at least 1 inch. Notable weekly totals included 2.84 inches at Chuuk Lagoon, 0.00 inches at Kapingamarangi, 1.12 inches at Kosrae, 1.46 inches at Lukunor, 0.86 inches at Nukuoro, 1.58 inches at Ulithi, 6.28 inches at Pohnpei, 1.59 inches at Woleai, and 1.73 inches at Yap. Pohnpei recorded particularly heavy rainfall, reaching 6.28 inches, including 4.16 inches on August 30. In contrast, Kapingamarangi remained dry with no rainfall and continued to maintain a D0-S (abnormally dry) status. Overall, recent rainfall has kept drought-free conditions across most of FSM, except for Kapingamarangi.</p><p class="summarytext">American Samoa continues to experience persistent short-term dryness among the USAPI regions. This week, Pago Pago recorded 0.29 inches of rain, while Siufaga Ridge received 0.76 inches, and Toa Ridge received 0.57 inches. Despite these amounts, all three locations remain in moderate drought conditions (D1-S), as the localized rainfall was insufficient to provide meaningful relief from the dryness. The limited rainfall is due to a synoptic pattern in which the main western Pacific monsoon trough and associated tropical disturbances are positioned well north of American Samoa. This situation has left the territory outside the core area of enhanced Micronesian convection. As a result, rainfall this week has been intermittent and localized, rather than widespread enough to improve the moderate drought conditions significantly.</p><p class="summarytext">Palau experienced no rainfall this week, recording 0.00 inches at Koror and only 0.10 inches at WSO Palau/Airai. Both weather stations remain in abnormally dry conditions (D0-S) due to ongoing dryness, raising the risk of deteriorating into moderate drought if these conditions persist. Weather patterns have been less favorable for rainfall than in central and eastern Micronesia. Palau has been situated beneath or near a relatively dry tropical ridge, while the main monsoonal convergence and convective activity have shifted towards Yap and the Marianas. The National Weather Service (NWS) indicated that this ridge would continue to promote mostly dry conditions over Palau. Consequently, the lack of significant rainfall this week, combined with the prevailing dry weather patterns, supports the continuation of abnormally dry conditions (D0-S). Drought conditions may worsen to moderate drought next week if the dry spell continues.</p><p class="summarytext">This week, the Mariana Islands experienced locally heavy and highly variable rainfall. The totals of rainfall were as follows: Guam received 4.64 inches, Rota had 2.32 inches, Saipan recorded 0.82 inches (with two days of data missing), and Tinian observed 1.44 inches (with five days of data missing). As a result, all stations remained drought-free. This rainfall pattern was linked to an active monsoon trough and the nearby tropical disturbance, Invest 95W, which increased moisture and convection in the region. Overall, the rainfall was sufficient to maintain drought-free conditions throughout the Mariana Islands.</p><h3 class="pt-10">Looking Ahead</h3><p class="summarytext">Through the evening of Monday, Sept. 7, the National Weather Service Weather Prediction Center is forecasting dry weather to continue across much of the central and south-central U.S., especially from southeast Nebraska through Oklahoma, Arkansas and western north Texas into southwest Texas and eastern New Mexico and Colorado. Heavier precipitation amounts through Monday evening will likely be confined to parts of the southeastern and northern Lower 48. Heavy rain is forecasted, or occurring on Wednesday afternoon, in east-central and southeast Texas, while the remnants of Tropical Storm Edouard pass through. Heavier rain is also forecast across the central and eastern Gulf Coast and Florida Peninsula. Rain amounts from southern Louisiana to near Panama City may approach 1-2 inches, while heavier rain amounts, locally 2-3 inches or more, are forecast in the Florida Peninsula. Heavier precipitation amounts, mostly in the 0.75-2 inch range, are also forecast in parts of the Pacific Northwest, northern Idaho, northern parts of Montana and North Dakota, and from Minnesota southeastward across Wisconsin and the lower Great Lakes into Pennsylvania and New York.</p><p class="summarytext">The National Weather Service Climate Prediction Center’s 6-10 day outlooks, covering Sept. 8-12, favors warmer-than-normal temperatures across much of the central and eastern U.S. The highest confidence for above-normal temperatures is centered around Kansas City and the mid-lower Missouri River Valley southward to the central and western Gulf Coast. Near-normal temperatures are favored in the western half of the West, with below-normal temperatures slightly favored in western Nevada and adjacent parts of California and Oregon. Near- or below-normal temperatures are also favored in central and northern New England. Above-normal precipitation is favored across much of the Great Plains and western U.S., especially from the Continental Divide into the Great Basin and in northern Minnesota and environs. Above-normal precipitation is also slightly favored in east-central Florida. The forecast favors drier-than-normal weather in the Tennessee and Ohio River Valleys and from Lake Erie to southern parts of the Northeast.</p><p class="summarytext">In Hawaii, both precipitation and temperatures are expected to be above normal for Sept. 8–12. Above-normal precipitation is also favored across large parts of Alaska, except for the northwest portion of the state and the central Aleutian Islands. Above-normal temperatures are favored in southeast and central Alaska and in the central Aleutian Islands, while near-normal temperatures are favored in northeast and southwest Alaska and the eastern Aleutian Islands.</p></div>
+                <hr />
+                <div id="ContentPlaceHolder1_nar_dwnld"><span class="btn btn-primary dropdown-toggle" role="button" data-bs-toggle="dropdown">Download</span><ul class="dropdown-menu"><li><a class="dropdown-item" href='/data/narrativepdf/20260901_nar_usdm.pdf' target="_blank" title="Download the summary as a pdf">PDF</a></li><li><a class="dropdown-item" href='/services/data/summary/xml/usdm_summary_20260901.xml' target="_blank" title="Download the summary in xml format">XML</a></li><li><a class="dropdown-item" href='/services/data/summary/html/usdm_summary_20260901.html' target="_blank" title="Download the summary in html format">HTML</a></li></ul></div>
+            </div>
+        </div>
+    </div>
+    <div class="container-xl container-lg">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="menu-box">
+                    <a href="/Maps.aspx"><div class="icon"><span class="bi bi-image"></span></div></a>
+                    <h2><a href="/Maps.aspx">Maps</a></h2>
+                    <p>Download maps for selected areas, compare maps from two different weeks, and request a custom map and more.</p> 
+                </div> 
+            </div>
+            <div class="col-sm-4">
+                <div class="menu-box">
+                <a href="/Data.aspx"><div class="icon"><span class="bi bi-pencil"></span></div></a>
+                <h2><a href="/Data.aspx">Data</a></h2>
+                <p>View tabular data, see a time series, download datasets, and get data in GIS formats.</p>
+            </div>
+                </div>
+            <div class="col-sm-4">
+                <div class="menu-box">
+                    <a href="/Summary.aspx"><div class="icon"><span class="bi bi-justify"></span></div></a>
+                    <h2><a href="/Summary.aspx">Drought Summary</a></h2>
+                    <p>Read the drought summary for the current week or revisit a summary from a prior week.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="menu-box">
+                    <a href="/About.aspx"><div class="icon"><span class="bi bi-info-circle-fill"></span></div></a>
+                    <h2><a href="/About.aspx">About USDM</a></h2>
+                    <p>Get contact information for the authors, read the history of the U.S. Drought Monitor, and learn about how drought is classified.</p>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="menu-box">
+                    <a href="/ConditionsOutlooks.aspx"><div class="icon"><span class="bi bi-laptop"></span></div></a>
+                    <h2><a href="/ConditionsOutlooks.aspx">Current Conditions and Outlooks</a></h2>
+                    <p>See some of the products and tools that are used as part of weekly process.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-lg-max bg-dark">
+        <div class="row py-5">
+            <div class="col-sm-12">
+                <h2 style="color: white !important;">Drought Classification</h2>
+                <p style="color: white !important;">The Drought Monitor summary map identifies general areas of drought and labels them by intensity. D1 is the least intense level and D4 the most intense. Drought is defined as a moisture deficit bad enough to have social, environmental or economic effects.</p>
+                <p style="color: white !important;">D0 areas are not in drought, but are experiencing abnormally dry conditions that could turn into drought or are recovering from drought but are not yet back to normal.</p>
+                <p style="color: white !important;">We generally include a description on the map of what the primary physical effects are for short- and long-term drought.</p>
+                <ul style="list-style:none;padding-left:0;">
+                    <li style="color: white !important;"><b>S</b> = Short-term, typically less than 6 months (agriculture, grasslands)</li>
+                    <li style="color: white !important;"><b>L</b> = Long-term, typically more than 6 months (hydrology, ecology)</li>
+                    <li style="color: white !important;"><b>SL</b> = Area contains both short- and long-term impacts</li>
+                </ul>
+                <p><a class="btn btn-white-dark" href="/About/AbouttheData/DroughtClassification.aspx">Learn more</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-xl container-lg">
+        <div class="row py-5">
+            <div class="col-sm-12 mb-3">
+                <h2>Climate Literacy and Energy Awareness Network (CLEAN)</h2>
+            </div>
+            <div class="col-sm-3">
+                <a href="https://cleanet.org/clean/about/selected_by_CLEAN" target="_blank" rel="noopener noreferrer"><img src="https://serc.carleton.edu/download/images/27473/selected-logo.v4.jpg" width="100%" alt="CLEAN logo" /></a>
+            </div>
+            <div class="col-sm-9">
+                <p>The U.S. Drought Monitor website has been selected for inclusion in the CLEAN collection.</p>
+                <p><a class="btn btn-primary" href="/About.aspx#CLEAN">Learn more</a></p>
+            </div>
+        </div>
+    </div>
+
+                </div>
+            </main>
+            
+   <style>
+       .footerimg{    
+                    margin: 15px 0!important;
+                    vertical-align: middle;
+                    }
+   </style>        
+        <footer>
+            <div id="footer-top" class="bg-dark py-5">
+                <div class="container-md-max">
+                    <div class="row text-center mb-5">
+                        <div class="col-12">
+
+                            <a href="#" title="United States Department of Agriculture" data-bs-toggle="modal" data-bs-target="#modalUSDA" class="mx-3">
+                                <img class="footerimg USDA" src="/webfiles/logos/USDA/svg/USDA-logo-white.svg" alt="USDA Logo" />
+                            </a>
+                            
+                            <a href="#" title="National Drought Mitigation Center" data-bs-toggle="modal" data-bs-target="#modalNDMC" class="mx-3">
+                                <img class="footerimg NDMC" src="/webfiles/logos/NDMC/svg/NDMC-logo-white.svg" alt="NDMC Logo" />
+                            </a>
+
+                            <a href="#" title="United States Department of Commerce" data-bs-toggle="modal" data-bs-target="#modalDOC" class="mx-3">
+                                <img class="footerimg DOC" src="/webfiles/logos/DOC/svg/DOC-logo-white.svg" alt="DOC Logo" />
+                            </a>
+
+                            <a href="#" title="National Oceanic and Atmospheric Administration" data-bs-toggle="modal" data-bs-target="#modalNOAA" class="mx-3">
+                                <img src="/webfiles/logos/NOAA/svg/NOAA-logo-white.svg" class="footerimg NOAA" alt="NOAA Logo" />
+                            </a>
+
+                            <a href="#" title="NASA" data-bs-toggle="modal" data-bs-target="#modalNASA" class="mx-3">
+                                <img src="/webfiles/logos/NASA/svg/NASA-logo-white.svg" class="footerimg NASA" alt="NASA Logo" />
+                            </a>
+
+
+                            <div class="text-start">
+                                <p style="font-size:0.75rem">The U.S. Drought Monitor is produced through a partnership between the National Drought Mitigation Center at the University of Nebraska-Lincoln, the United States Department of Agriculture, the National Oceanic and Atmospheric Administration and the National Aeronautics and Space Administration.</p>
+                            </div>                        
+                        </div> 
+                    </div>
+                </div>
+                <div class="container-address-max">
+                    <div class="row text-start">
+                        <div class="text-center">
+                            <div class="text-start">
+                                <p class="h4 mb-4">Contact Us</p>
+                                <hr />
+                                
+    <address>
+        <p><b>National Drought Mitigation Center</b><br />
+        University of Nebraska-Lincoln</p>
+        <p><i class="bi bi-geo-alt-fill"></i> 3310 Holdrege Street<br />
+        <i class="bi bi-envelope-fill"></i> P.O. Box 830988<br />
+        Lincoln, NE 68583–0988</p>
+        <p><i class="bi bi-envelope-at-fill"></i> <a class="text-decoration-underline" href="mailto:DroughtMonitor@unl.edu">DroughtMonitor@unl.edu</a></p>
+        <p><i class="bi bi-telephone-fill"></i> <a class="text-decoration-underline" href="tel:4024726707">(402) 472–6707</a></p>
+        <p><i class="bi bi-printer-fill"></i> (402) 472–2946</p>
+    </address>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div id="footer-bottom" class="bg-primary">
+                <span>&copy;2026 - National Drought Mitigation Center</span>
+                <a rel="me" class="d-none" href="https://mastodon.world/@droughtcenter">Mastodon</a>
+            </div>
+            
+        </footer>
+
+
+<div class="modal fade" id="modalNDMC" tabindex="-1" aria-labelledby="modalLabelNDMC" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalLabelNDMC">National Drought Mitigation Center</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <div class="row">
+              <div class="col-lg-4">
+                  <figure class="center-100">
+                      <a href="https://drought.unl.edu/" title="National Drought Mitigation Center" target="_blank">
+                          <img style="width:100%;" src="/webfiles/logos/NDMC/svg/NDMC-logo-color-round.svg" alt="NDMC Logo" />
+                      </a>
+                  </figure>                  
+              </div>
+              <div class="col-lg-8">
+                    <p>The National Drought Mitigation Center’s mission is to reduce the effects of drought on people, the environment and the economy by researching the science of drought monitoring and the practice of drought planning. We collaborate with and learn from decision-makers at all levels – individual ranchers, communities, regions, watersheds, tribes, states, countries – across the US and around the world. We organize and present workshops, writeshops and other capacity-building activities, in close cooperation with local partners.</p>
+                    <a href="https://drought.unl.edu/" title="National Drought Mitigation Center" target="_blank" class="btn btn-primary">Go to the NDMC</a>
+              </div>
+          </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalUSDA" tabindex="-1" aria-labelledby="modalLabelUSDA" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalLabelUSDA">United States Department of Agriculture</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <div class="row">
+              <div class="col-lg-4">
+                  <figure class="center-100">
+                      <a href="https://www.usda.gov/wps/portal/usdahome" title="United States Department of Agriculture" target="_blank">
+                          <img style="width:100%;" src="/webfiles/logos/USDA/svg/usda-logo-color.svg" alt="USDA Logo" />
+                      </a>
+                  </figure>                  
+              </div>
+              <div class="col-lg-8">
+                    <p>The United States Department of Agriculture (USDA) provides leadership on food, agriculture, natural resources, rural development, nutrition, and related issues based on public policy, the best available science, and effective management.</p>
+                    <a href="https://www.usda.gov/wps/portal/usdahome" title="United States Department of Agriculture" target="_blank" class="btn btn-primary">Go to the USDA</a>
+              </div>
+          </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalDOC" tabindex="-1" aria-labelledby="modalLabelDOC" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalLabelDOC">U.S. Department of Commerce</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <div class="row">
+              <div class="col-lg-4">
+                  <figure class="center-100">
+                      <a href="https://www.commerce.gov/" title="U.S. Department of Commerce" target="_blank">
+                          <img style="width:100%;" src="/webfiles/logos/DOC/svg/doc-logo-color.svg" alt="DOC Logo" />
+                      </a>
+                  </figure>                  
+              </div>
+              <div class="col-lg-8">
+                    <p>The Department of Commerce’s mission is to create the conditions for economic growth and opportunity for all communities. Through its 13 bureaus, the Department works to drive U.S. economic competitiveness, strengthen domestic industry, and spur the growth of quality jobs in all communities across the country. </p>
+                    <a href="https://www.commerce.gov/" title="U.S. Department of Commerce" target="_blank" class="btn btn-primary">Go to the U.S. Department of Commerce</a>
+              </div>
+          </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalNOAA" tabindex="-1" aria-labelledby="modalLabelNOAA" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalLabelNOAA">National Oceanic and Atmospheric Administration</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <div class="row">
+              <div class="col-lg-4">
+                  <figure class="center-100">
+                      <a href="https://www.noaa.gov/" title="National Oceanic and Atmospheric Administration" target="_blank">
+                          <img style="width:100%;" src="/webfiles/logos/NOAA/svg/noaa-logo-color.svg" alt="NOAA Logo" />
+
+                      </a>
+                  </figure>                  
+              </div>
+              <div class="col-lg-8">
+                    <p>NOAA is an agency that enriches life through science. Our reach goes from the surface of the sun to the depths of the ocean floor as we work to keep the public informed of the changing environment around them.</p>
+                    <a href="https://www.noaa.gov/" title="National Oceanic and Atmospheric Administration" target="_blank" class="btn btn-primary">Go to NOAA</a>
+              </div>
+          </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="modalNASA" tabindex="-1" aria-labelledby="modalLabelNASA" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalLabelNASA">National Aeronautics and Space Administration</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <div class="row">
+              <div class="col-lg-4">
+                  <figure class="center-100">
+                      <a href="https://www.nasa.gov/" title="National Aeronautics and Space Administration" target="_blank">
+                          <img style="width:100%;" src="/webfiles/logos/NASA/svg/nasa-logo-color.svg" alt="NASA Logo" />
+                      </a>
+                  </figure>                  
+              </div>
+              <div class="col-lg-8">
+                    <p>The National Aeronautics and Space Administration (NASA) is America’s civil space program and the global leader in space exploration. The agency has a diverse workforce of just under 18,000 civil servants, and works with many more U.S. contractors, academia, and international and commercial partners to explore, discover, and expand knowledge for the benefit of humanity. With an annual budget of $23.2 billion in Fiscal Year 2021, which is less than 0.5% of the overall U.S. federal budget, NASA supports more than 312,000 jobs across the United States, generating more than $64.3 billion in total economic output (Fiscal Year 2019).</p>
+                    <a href="https://www.nasa.gov/" title="National Aeronautics and Space Administration" target="_blank" class="btn btn-primary">Go to NASA</a>
+              </div>
+          </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+        </div>
+    </form>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            //generateBreadcrumbs();
+
+            $('.fixed-table-toolbar .export button').each(function () {
+
+                $(this).addClass('btn-primary').removeClass('btn-secondary');
+
+            });
+
+            $('.page-list button').each(function () {
+
+                $(this).addClass('btn-primary').removeClass('btn-secondary');
+
+            });
+
+        });
+
+    </script>
+</body>
+</html>

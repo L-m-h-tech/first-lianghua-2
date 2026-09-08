@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>夺冠高手全国期货实盘大赛</title>
+  <meta name="keywords" content="夺冠高手、夺冠、实盘大赛、量化组比赛、轻量组、重量组、主观交易" />
+  <meta name="description" content="夺冠高手全国期货实盘大赛" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+  <link rel="stylesheet" type="text/css" href="plug-in/fonts/iconfont.css" />
+  <link rel="stylesheet" type="text/css" href="css/base.css" />
+  <link rel="stylesheet" type="text/css" href="css/pc.css?120001" />
+  <link rel="stylesheet" type="text/css" href="css/pc2.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/element-ui.css">
+  <link rel="stylesheet" type="text/css" href="plug-in/weui/weui.min.css" />
+  <link rel="stylesheet" type="text/css" href="plug-in/weui/jquery-weui.min.css" />
+  <style>
+    .other-login {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 20px;
+    }
+
+    .other-login .btn {
+      cursor: pointer;
+    }
+
+    .other-login .btn:hover {
+      color: #3366cc;
+    }
+
+    .login-form .input-text {
+      position: relative;
+    }
+
+    .login-form .input-text input {
+      padding-left: 10px;
+      box-sizing: border-box;
+    }
+
+    .login-form .input-text .icon-p {
+      position: absolute;
+      right: 10px;
+      bottom: 10px;
+      width: 20px;
+      object-fit: contain;
+      cursor: pointer;
+    }
+
+    .login-form .input-text .getcode {
+      height: 20px;
+      line-height: 20px;
+      padding: 9px;
+    }
+
+    .bind-box .login-page {
+      width: 90%;
+      max-width: 440px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app" v-cloak class="login">
+    <div class="mainW">
+      <my-header></my-header>
+    </div>
+    <div class="mbox1">
+      <div class="mbox2">
+        <div class="mbox">
+          <div style="height: 50px"></div>
+          <div class="login-page">
+            <div class="title">
+              <h3>登录</h3>
+              <div>登录账号来使用<span class="f-blue">夺冠高手</span>提供的各种服务。</div>
+            </div>
+
+            <div class="login-form">
+              <template v-if="isOtherLogin">
+                <div class="input-text">
+                  <label>账号</label>
+                  <input name="phone" type="text" v-model="accountParams.account" type="text" placeholder="填写账号" />
+                </div>
+
+                <div class="input-text">
+                  <label>密码</label>
+                  <input name="password" :type="isEye ? 'text' : 'password'" v-model="accountParams.password"
+                    type="text" placeholder="填写密码" />
+                  <img @click="isEye = !isEye" class="icon-p"
+                    :src="isEye ? './images/password.png' : './images/password_off.png'" alt="">
+                </div>
+              </template>
+              <template v-else>
+                <div class="input-text">
+                  <label>手机号码</label>
+                  <input name="phone" type="tel" v-model="phone" v-bind:disabled="phoneTxtDisabled" type="text"
+                    placeholder="填写手机号码" />
+                </div>
+
+                <div class="input-text">
+                  <label>验证码</label>
+                  <input class="verificationCode" type="tel" maxlength="6" name="verificationCode"
+                    v-model="verificationCode" placeholder="请输入验证码" />
+                  <span class="getcode" @click="getVerificationCode()">{{codeText}}</span>
+                </div>
+              </template>
+              <div class="input-button">
+                <button class="login-button2 round" @click="login()">登录</button>
+              </div>
+              <div class="other-login">
+                <div class="btn" v-if="!isOtherLogin" @click="isOtherLogin=true">账户密码登录</div>
+                <div class="btn" v-else @click="isOtherLogin=false">验证码登录</div>
+              </div>
+            </div>
+            <div class="errors-info red"></div>
+            <div class="msg">
+              温馨提示：<br />未注册的手机号，登录时将自动注册。<br />
+              <span class="red">过往参赛选手自动参加本届比赛。</span>
+            </div>
+          </div>
+          <div class="errors-info"></div>
+          <div style="height: 50px"></div>
+        </div>
+      </div>
+    </div>
+
+    <my-footer></my-footer>
+
+    <el-dialog title="交易账号绑定手机号" :visible.sync="isShowPopup" :close-on-click-modal="false" class="bind-box">
+      <div class="login-page">
+        <div class="login-form">
+          <div class="input-text">
+            <label>手机号码</label>
+            <input v-model="bindParams.phone" name="phone" type="tel" type="text" placeholder="填写手机号码" />
+          </div>
+
+          <div class="input-text">
+            <label>验证码</label>
+            <input v-model="bindParams.verifyCode" class="verificationCode" type="tel" maxlength="6"
+              name="verificationCode" placeholder="请输入验证码" />
+            <span class="getcode" @click="getBindCode()">{{bindText}}</span>
+          </div>
+        </div>
+      </div>
+      <div slot="footer" class="dialog-footer">
+        <el-button type="primary" @click="handleBind()">绑定</el-button>
+      </div>
+    </el-dialog>
+  </div>
+  <script type="text/javascript" src="plug-in/jquery/jquery.min.js"></script>
+  <script type="text/javascript" src="plug-in/weui/jquery-weui.min.js"></script>
+  <script type="text/javascript" src="js/formatDate.js"></script>
+  <script type="text/javascript" src="js/dataformat.js"></script>
+  <script type="text/javascript" src="js/jsencrypt.js"></script>
+  <script type="text/javascript" src="js/common.js"></script>
+  <script type="text/javascript" src="plug-in/jquery-md5/jquery.md5.js"></script>
+  <script type="text/javascript" src="plug-in/vue/Vue.js"></script>
+  <script type="text/javascript" src="plug-in/vue/vee-validate.min.js"></script>
+  <script type="text/javascript" src="js/myValidate.js"></script>
+  <script type="text/javascript" src="js/storageUtil.js"></script>
+  <script src="./module/components/header.js?v=20260306"></script>
+  <script src="./module/components/footer.js"></script>
+  <script src="js/element-ui.js"></script>
+  <script src="js/request.js"></script>
+  <script type="text/javascript">
+    var app = new Vue({
+      el: '#app',
+      data: function () {
+        return {
+          phone: '',
+          verificationCode: '',
+          codeText: '获取验证码',
+          phoneTxtDisabled: false,
+          sendingVerificationCodeTimerProcessing: false,
+          loginBtnDisabled: false,
+          regBtnDisabled: false,
+          isOtherLogin: false,
+          accountParams: {
+            account: '',
+            password: '',
+          },
+          isEye: false,
+          isShowPopup: false,
+          bindParams: {
+            phone: '',
+            verifyCode: '',
+          },
+          bindText: '获取验证码',
+          countDown: 60,
+          isGetCoding: false,
+          isBinding: false,
+          isLoginAccounting: false,
+        }
+      },
+      beforeCreate: function () { },
+      created() { },
+      methods: {
+        getVerificationCode() {
+          //发送验证码
+          if (this.sendingVerificationCodeTimerProcessing) return
+
+          if (!checkMobile(this.phone)) {
+            this.$message.warning('请填写正确的手机号');
+            return
+          }
+
+          var wait = 50
+
+          //电话不可编辑
+          this.phoneTxtDisabled = true
+          //发送验证码定时器正在运行
+          this.sendingVerificationCodeTimerProcessing = true
+
+          //发送验证码
+          var encryptedPhone = rsaEncry(this.phone) //手机号加密
+          var paras = JSON.stringify({
+            phone: encryptedPhone,
+          })
+          var url = apiDg + 'sms/sendValidate'
+
+          _queryPost(url, paras, true, '', (res) => {
+            if (res.code == 0) {
+              this.verificationCodeTimer(wait)
+            } else {
+              //电话不可编辑
+              this.phoneTxtDisabled = false
+              //发送验证码定时器正在运行
+              this.sendingVerificationCodeTimerProcessing = false
+              setTimeout(() => {
+                this.$message.warning(res.msg);
+              }, 500)
+            }
+          })
+        },
+
+        verificationCodeTimer(wait) {
+          //验证码跳秒重发
+          if (wait === 0) {
+            this.phoneTxtDisabled = false
+            this.sendingVerificationCodeTimerProcessing = false
+            this.codeText = '获取验证码'
+          } else {
+            this.codeText = `(${wait})秒 重发`
+            wait--
+            setTimeout(() => {
+              this.verificationCodeTimer(wait)
+            }, 1000)
+          }
+        },
+
+        handleBind() {
+          if (!checkMobile(this.bindParams.phone)) {
+            this.$message.warning('请填写正确的手机号');
+            return
+          }
+          if (!check6Code(this.bindParams.verifyCode)) {
+            this.$message.warning('请填写正确的验证码');
+            return
+          }
+
+          if (this.isBinding) return
+          this.isBinding = true
+
+          const url = '/api/bind-phone'
+          const parmas = {
+            phone: rsaEncry(this.bindParams.phone),
+            verifyCode: this.bindParams.verifyCode,
+          }
+          requestPost(url, parmas, (res) => {
+            this.isBinding = false
+            if (res.code == 0) {
+              this.$message.success('绑定成功');
+              saveStorage('token', res.data)
+              setTimeout(() => {
+                this.go()
+              })
+              return
+            }
+
+            if (res.code == 10021) {
+              this.isShowPopup = false
+              this.$message.success('已绑定超时，请重新登录账号密码');
+              return
+            }
+
+            this.$message.error(res.msg);
+          })
+        },
+
+        getBindCode() {
+          if (!checkMobile(this.bindParams.phone)) {
+            this.$message.warning('请填写正确的手机号');
+            return
+          }
+
+          if (this.isGetCoding || this.countDown < 60) return;
+          this.isGetCoding = true;
+
+          const url = '/api/sms/sendValidate'
+          const parmas = {
+            phone: rsaEncry(this.bindParams.phone),
+          }
+          requestPost(url, parmas, (res) => {
+            this.isGetCoding = false;
+            if (res.code == 0) {
+              this.$message.success('发送短信成功');
+              this.handleCountDown()
+              return
+            }
+            this.$message.error(res.msg);
+          })
+        },
+
+        handleCountDown() {
+          this.countDown--
+          this.bindText = `(${this.countDown})秒后重发`
+          if (this.countDown === 0) {
+            this.countDown = 60
+            this.bindText = '获取验证码'
+            return
+          }
+          setTimeout(() => {
+            this.handleCountDown()
+          }, 1000)
+        },
+
+        loginAccount() {
+          if (this.accountParams.account == '') {
+            this.$message.warning('请填写账号');
+            return
+          }
+
+          if (this.accountParams.password == '') {
+            this.$message.warning('请填写密码');
+            return
+          }
+
+          if (this.isLoginAccounting) return;
+          this.isLoginAccounting = true;
+
+          const url = '/api/password-login'
+          const params = {
+            account: rsaEncry(this.accountParams.account),
+            password: rsaEncry(this.accountParams.password),
+          }
+          requestPost(url, params, (res) => {
+            this.isLoginAccounting = false;
+
+            // 登录成功
+            if (res.code == 0) {
+              this.$message.success('登录成功');
+              saveStorage('token', res.data)
+              setTimeout(() => {
+                this.go()
+              }, 1000)
+              return
+            }
+            // 登录成功 去绑定手机号
+            if (res.code == 10030) {
+              saveStorage('token', res.data)
+              this.isShowPopup = true
+              return
+            }
+            // 登录失败
+            if (res.code == 10004) {
+              this.$message.warning('账号或密码错误');
+              return
+            }
+            this.$message.error(res.msg);
+          })
+        },
+
+        login() {
+          if (this.isOtherLogin) {
+            return this.loginAccount()
+          }
+          //登录验证
+          if (!checkMobile(this.phone)) {
+            this.$message.warning('请填写正确的手机号');
+            return
+          }
+          if (!check6Code(this.verificationCode)) {
+            this.$message.warning('请填写正确的验证码');
+            return
+          }
+          this.loginBtnDisabled = true
+          var encryptedPhone = rsaEncry(this.phone) //手机号加密
+          var verificationCode = this.verificationCode
+          var paras = JSON.stringify({
+            phone: encryptedPhone,
+            verifyCode: verificationCode,
+          })
+          var url = apiDg + 'login'
+          _queryPost(url, paras, true, '', (res) => {
+            if (res.code == 0) {
+              saveStorage('token', res.data)
+              setTimeout(() => {
+                this.go()
+              }, 1000)
+            } else {
+              this.$message.error(res.msg);
+            }
+            this.loginBtnDisabled = false //按钮可用
+          })
+        },
+        go() {
+          // //画面跳转
+          backurl = getQueryString('backurl')
+          if (backurl != '') {
+            windowReplace(backurl, '')
+          } else {
+            windowReplace('my.html', '')
+          }
+        },
+      },
+    })
+  </script>
+</body>
+
+</html>

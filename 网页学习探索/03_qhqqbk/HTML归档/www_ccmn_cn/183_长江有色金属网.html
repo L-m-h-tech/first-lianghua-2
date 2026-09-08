@@ -1,0 +1,2678 @@
+<!DOCTYPE html>
+<html>
+
+    <head lang="en">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="Expires" content="0">
+        <meta http-equiv="Pragma" content="no-cache">
+        <meta http-equiv="Cache-control" content="no-cache">
+        <meta http-equiv="Cache" content="no-cache">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <meta name="renderer" content="webkit"/>
+        <meta name="Keywords"
+              content="长江有色网,长江有色金属网,长江有色金属,长江有色金属价格,有色金属,有色金属价格,金属价格,有色金属价格行情,上海有色金属,全球金属网,中国有色金属网,广东南储,铜价格,铜价格走势图,铝价格,铝锭价格,铝锭价格走势图,锌价,镍价,铅价,锡价,贵金属价格,金价,白银价格,炉料价格,LME,上海期货,废旧金属,铁合金价格,不锈钢,有色金属采购,批发,电子商务">
+        <meta name="Description"
+              content="长江有色网原长江有色金属网提供今日铜,铝,铅,锌,锡,镍,黄金,白银,小金属,贵金属,废旧金属,炉料,不锈钢,铁合金,稀土等有色金属最新价格行情，包括lme,上海期货,长江现货,长江有色金属,广东南储等市场期货现货交易价格和历史金属价格走势图；有色金属企业品牌宣传、发布和获取商机的重要途径，有色金属企业采购批发首选网站">
+        <title>长江有色网_长江有色金属网-有色金属采购批发平台</title>
+        <link rel="stylesheet" type="text/css" href="https://static.ccmn.cn/css/??Reset.css,home.css,font-awesome.min.css,home_head.css,ft-carousel.css?v=2026090301">
+        <script defer type="text/javascript" src="https://static.ccmn.cn/js/jquery-1.11.1.min.js"></script>
+        <script defer type="text/javascript" src="https://static.ccmn.cn/js/??main.js,jquery.hover3d.min.js,jquery.validate.js,home.js,indexDataCount.js"></script>
+        <script defer src="https://static.ccmn.cn/js/crypto-js-3.0.min.js"></script>
+        <script defer src="https://static.ccmn.cn/js/ccmn-index.js?v=20260827"></script>
+        <style>
+            .oppor-text td.area-name {
+                white-space: normal;
+                overflow: hidden;
+                height: 50px;
+            }
+
+            .container {
+                width: 700px;
+                height: 400px;
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                margin-top: -200px;
+                margin-left: -350px;
+                background: #fff;
+                border: 1px solid #ccc;
+                z-index: 99999;
+            }
+
+            .con_top {
+                text-align: center;
+                width: 100%;
+                line-height: 75px;
+                font-size: 25px;
+            }
+
+            .con_mid {
+                font-size: 18px;
+                text-align: center;
+                line-height: 30px;
+            }
+
+            .con_mid label {
+                font-size: 16px;
+            }
+
+            .con_mid img {
+                width: 25px;
+                height: auto;
+                vertical-align: text-bottom;
+            }
+
+            .con_foot {
+                margin-top: 50px;
+            }
+
+            .con_foot img {
+                width: 80px;
+                height: 80px;
+                vertical-align: top;
+            }
+
+            .con_foot ul {
+                margin: 0 auto;
+            }
+
+            .con_foot li {
+                width: 33.33%;
+                float: left;
+                text-align: center;
+            }
+
+            .hlist p {
+                font-size: 14px;
+                margin: 10px 0;
+                color: #000;
+            }
+
+            .browser {
+                height: 118px;
+            }
+
+            .browser, .qrcode {
+                width: 150px;
+                text-align: center;
+                display: block;
+                margin: 0 auto;
+            }
+
+            .btn {
+                display: inline-block;
+                padding: 7px 10px;
+                background: #ff3141;
+                font-size: 14px;
+                color: #fff;
+            }
+
+            .close {
+                position: absolute;
+                right: 10px;
+                top: 10px;
+                cursor: pointer;
+            }
+
+            .close img {
+                width: 20px;
+                height: 20px;
+
+            }
+
+            .activity img {
+                width: 100%;
+            }
+            .other_detial img {
+                white: auto!important;
+            }
+
+            .lazy-img {
+                opacity: 0;
+                transition: opacity 0.3s ease-in;
+            }
+
+            .lazy-img.loaded {
+                opacity: 1;
+            }
+
+            /* 占位符样式 */
+            .img-placeholder {
+                background-color: #f0f0f0;
+                background-image: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+                background-size: 200% 100%;
+                animation: loading 1.5s infinite;
+            }
+
+            @keyframes loading {
+                0% { background-position: 200% 0; }
+                100% { background-position: -200% 0; }
+            }
+            .oppor-text td.area-name {
+                white-space: normal;
+                overflow: hidden;
+                height: 50px;
+            }
+
+            /* 表格样式 */
+            #quoPrice_menu {
+                display: flex;
+                width: 100%;
+                height: 40px;
+                justify-content: space-between;
+                align-items: center;
+                box-sizing: border-box;
+            }
+
+            .quoPrice_menu_left li,
+            .quoPrice_menu_right li {
+                display: inline-block;
+            }
+
+            .quoPrice_menu_left a{
+                color: #000;
+            }
+
+            .quoPrice_menu_left {
+                width: 45%;
+                display: flex;
+                justify-content: space-around;
+            }
+
+            .quoPrice_menu_left li{
+                font-size: 17px;
+                font-weight: bold;
+            }
+
+            .quoPrice_menu_right {
+                width: 45%;
+                font-size: 13px;
+                display: flex;
+                justify-content: space-around;
+            }
+
+            .quoPrice_menu_right li{
+                padding-top:7px;
+            }
+
+            .ahover1 {
+                color: #FF7300 !important;
+                border-bottom: 2px solid #FF7300;
+                padding-bottom: 7px;
+            }
+
+            .price_quo1 tbody{
+                display: block;
+                width: 550px;
+                height: 255px;
+                overflow: hidden;
+                /* padding-right: 20px; */
+            }
+
+            .price_quo1 tbody:hover{
+                overflow-y: auto;
+            }
+
+            .price_quo1 tbody td:last-child{
+                padding-right: 18px;
+            }
+
+            .price_quo1 thead, tbody tr{
+                display: table;
+                width: 570px;
+                table-layout: fixed;
+            }
+
+            .price_quo1 thead {
+                width: calc(100% - 1.5em)
+            }
+
+            .price_quo1 thead th{
+                background:#EDEDED;
+            }
+
+            .price_quo1 thead th:nth-of-type(n+3),
+            .price_quo1 tbody td:nth-of-type(n+3){
+                width: 66px;
+                height: 36px;
+                text-align: center;
+                font-size: 13px;
+            }
+
+            .price_quo1 thead th:nth-of-type(1),
+            .price_quo1 tbody td:nth-of-type(1){
+                width: 98px;
+                height: 36px;
+                text-align: center;
+                font-size: 13px;
+                padding-left: 5px;
+            }
+
+            .price_quo1 thead th:nth-of-type(2),
+            .price_quo1 tbody td:nth-of-type(2){
+                height: 36px;
+                text-align: center;
+                font-size: 13px;
+            }
+
+            .price_quo1{
+                position: relative;
+            }
+            .price_quo1 tbody tr {
+                background-color: rgba(255, 255, 255, 0.1);
+                position: relative;
+            }
+            .price_quo1 tbody::before {
+                content: '';
+                position: absolute;
+                width: 94%;
+                height: 88%;
+                top: 18px;
+                background-image: url('https://static.ccmn.cn/icon/shuiyin2.png');
+                background-repeat: repeat;
+                background-attachment: local;
+                pointer-events: none;
+            }
+        </style>
+        <!--[if IE]>
+        <style>
+            .menu li {
+                padding: 0 18px !important;
+            }
+        </style>
+        <![endif]-->
+        <style>
+            /* IE10 和 IE11 专用 */
+            @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+                .menu li {
+                    padding: 0 18px !important;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+    <div class="activity">
+    </div>
+    <div class="headerBar">
+        <div id="page_head"></div>
+        <div id="page_right"></div>
+        <div class="logoBar">
+            <div class="comWidth clearfloat">
+
+                <div class="logoLeft left">
+                    <div class="logoLeft_box left">
+                        <h1>
+                            <a href="/">长江有色金属网</a>
+                        </h1>
+                    </div>
+
+
+                    <div class="logo-mall right">
+                                        <a href="//ad.ccmn.cn/ad?url=https://mp.weixin.qq.com/s/g8rhk7ZN0tYf9ceb7AS7Rw&adInfoId=81d949a920d04d739ebc172a23d24bf3" target="_blank">
+                                            <img class="lazy-img img-placeholder"
+                                                 data-src="https://img.cjys.cn/UPLOAD/BACKGROUND/ad/3c835148eb314e289d1d8f5455c2c309/2026-09-03/20260903154008_230-45长江价格官方平台JPG.jpg.webp"
+                                                 width="230"
+                                                 height="45"
+                                                 style="margin-right: 2px;margin-bottom: 10px">
+                                        </a>
+                    </div>
+
+                </div>
+                <div class="logoRight right">
+                    <div class="logoRight_box">
+                        <div class="logoRight_input left">
+                            <select class="logoRight_select">
+                                <option value="provide">供应</option>
+                                <option value="provide">供应</option>
+                                <option value="provide">供应</option>
+                            </select>
+                            <input class="logoRight_text" type="text" name="logoRight_text"/>
+                            <input class="logoRight_search" type="button" name="logoRight_search" value="搜索"/>
+                        </div>
+                        <div style="float: left;" id="_buyerInquiry">
+                            <a href="https://vip.ccmn.cn/back/centerWeb/personal/personalCenter?page=buyerInquiry">
+                                <input class="logoRight_release right" type="button" name="logoRight_release"
+                                       value="发布询价单"/>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menuBar" style="border-bottom: 2px solid #B7810D" ;>
+            <div class="comWidth">
+                <div class="menu">
+                    <li class="current">
+                        <a href="/">首页</a>
+                    </li>
+                    <li>
+                        <a href="//mall.ccmn.cn" target="_blank">商城</a>
+                    </li>
+                    <li>
+                        <a href="/priceinfo/" target="_blank">行情</a>
+                    </li>
+                    <li>
+                        <a href="//www.ccmn.cn/news/" target="_blank">资讯</a>
+                    </li>
+                    <li>
+                        <a href="/data/" target="_blank">数据</a>
+                    </li>
+                    <li>
+                        <a href="/historyprice/" target="_blank">历史</a>
+                    </li>
+                    <li>
+                        <a href="/metalquote/" target="_blank">走势</a>
+                    </li>
+                    <li>
+                        <a href="https://mall.ccmn.cn/mallpurchas/" target="_blank">采购大厅</a>
+                    </li>
+                    <li>
+                        <a href="https://www.ccmn.cn/cjsd/" target="_blank">长江视点</a>
+                    </li>
+                    <li>
+                        <a href="https://huodong.ccmn.cn/" target="_blank">活动</a>
+                    </li>
+                    <li>
+                        <a href="//futures.ccmn.cn" target="_blank">期货</a>
+                    </li>
+                    <li>
+                        <a href="/park" target="_blank">有色园区</a>
+                    </li>
+                    <li>
+                        <a href="https://www.ccmn.cn/download/" target="_blank">下载</a>
+                    </li>
+
+                </div>
+            </div>
+        </div>
+        <div class="inforBar">
+            <div class="comWidth">
+                <div class="inforcon clearfloat" style="padding-left: 2px;">
+                    <ul class="copper">
+                        <li><a href="https://copper.ccmn.cn/" target="_blank" style="color: #FF7300;">铜</a>
+                            <a href="https://copper.ccmn.cn/copperprice/" target="_blank"
+                               style="padding-left: 2px;">铜价</a>
+                            <a href="https://copper.ccmn.cn/feitong/" target="_blank" style="padding-left: 2px;">废铜</a>
+                        </li>
+                        <li><a href="https://copper.ccmn.cn/tongjiagong/" target="_blank">铜加工</a>
+                            <a href="https://mall.ccmn.cn/mallstocks/" target="_blank">铜买卖</a>
+                        </li>
+                    </ul>
+                    <div class="spite"></div>
+                    <ul class="alu">
+                        <li><a href="https://alu.ccmn.cn/" target="_blank" style="color: #FF7300;">铝</a>
+                            <a href="https://alu.ccmn.cn/aluprice/" target="_blank" style="padding-left: 2px;">铝价</a>
+                            <a href="https://alu.ccmn.cn/feilv/" style="padding-left: 2px;">废铝</a>
+                        </li>
+                        <li><a href="https://alu.ccmn.cn/lvhejin/" target="_blank">铝材</a>
+                            <a href="https://mall.ccmn.cn/mallstocks/" target="_blank">铝买卖</a>
+                        </li>
+                    </ul>
+                    <div class="spite"></div>
+                    <ul class="zn">
+                        <li><a href="https://zn.ccmn.cn/" target="_blank" style="color: #FF7300;">锌</a>
+                            <a href="https://zn.ccmn.cn/znprice/" target="_blank" style="padding-left: 2px;">锌价</a>
+                            <a href="https://zn.ccmn.cn/feixin/" target="_blank" style="padding-left: 2px;">废锌</a>
+                        </li>
+                        <li><a href="https://zn.ccmn.cn/" target="_blank">锌合金</a>
+                            <a href="https://mall.ccmn.cn/mallstocks/" target="_blank">锌买卖</a>
+                        </li>
+                    </ul>
+                    <div class="spite"></div>
+                    <ul class="pb">
+                        <li style="padding-left: 2px;"><a href="https://pb.ccmn.cn/" target="_blank"
+                                                          style="color: #FF7300;">铅</a>
+                            <a href="https://pb.ccmn.cn/pbprice/" target="_blank" style="padding-left: 2px;">铅价</a>
+                            <a href="https://pb.ccmn.cn/feiqian/" target="_blank">废铅</a>
+                        </li>
+                        <li><a href="https://pb.ccmn.cn/" target="_blank">还原铅</a>
+                            <a href="https://mall.ccmn.cn/mallstocks/" target="_blank">铅买卖</a>
+                        </li>
+                    </ul>
+                    <div class="spite"></div>
+                    <ul class="sn">
+                        <li><a href="https://sn.ccmn.cn/" target="_blank" style="color: #FF7300;">锡</a>
+                            <a href="https://sn.ccmn.cn/snprice/" target="_blank" style="padding-left: 2px;">锡价</a>
+                            <a href="https://sn.ccmn.cn/feixi/" target="_blank" style="padding-left: 2px;">废锡</a>
+                        </li>
+                        <li><a href="https://sn.ccmn.cn/" target="_blank">锡加工</a>
+                            <a href="https://mall.ccmn.cn/mallstocks/" target="_blank">锡买卖</a>
+                        </li>
+                    </ul>
+                    <div class="spite"></div>
+                    <ul class="ni">
+                        <li><a href="https://ni.ccmn.cn/" target="_blank" style="color: #FF7300;">镍</a>
+                            <a href="https://ni.ccmn.cn/niprice/" target="_blank" style="padding-left: 2px;">镍价</a>
+                            <a href="https://ni.ccmn.cn/feinie/" target="_blank" style="padding-left: 2px;">废镍</a>
+                        </li>
+                        <li><a href="https://ni.ccmn.cn/" target="_blank">镍合金</a>
+                            <a href="https://mall.ccmn.cn/mallstocks/" target="_blank">镍买卖</a>
+                        </li>
+                    </ul>
+
+                    <div class="spite"></div>
+                    <ul class="gsj">
+                        <li>
+                            <a href="/bxg/" target="_blank" style="color: #FF7300;">不锈钢</a>
+                            <a href="/bxg/201/" target="_blank">201</a>
+                        </li>
+                        <li>
+                            <a href="/bxg/202/" target="_blank">202</a>
+                            <a href="/bxg/304/" target="_blank">304</a>
+                            <a href="/bxg/316/" target="_blank">316</a>
+                        </li>
+                    </ul>
+
+
+                    <div class="spite"></div>
+                    <ul class="xjs">
+                        <li><a href="/xiaojinshu/" target="_blank" style="color: #FF7300;">小金属</a>
+                            <a href="/xiaojinshu/cobalt/" target="_blank">钴 </a>
+                            <a href="/xiaojinshu/magnesium/" target="_blank">镁 </a>
+                        </li>
+                        <li><a href="/xiaojinshu/antimony/" target="_blank">锑 </a>
+                            <!--<a href="#">锰 </a>-->
+                            <a href="/xiaojinshu/silicon/" target="_blank">硅 </a>
+                            <a href="/xiaojinshu/chromium/" target="_blank"
+                               style="padding-left: 4px;">铬 </a>
+                            <a href="/xiaojinshu/manganese/" target="_blank">锰 </a>
+                        </li>
+                    </ul>
+                    <div class="spite"></div>
+                    <ul class="others">
+                        <li>
+                            <a href="/luliao/" target="_blank">炉料</a>
+                            <a href="/tiehejin/" target="_blank">铁合金</a>
+                        </li>
+                        <li>
+                            <a href="/jskc/">矿产</a>
+                            <a href="/xny/">新能源</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="contentBar"
+         style="background-color: #f2f2f2;box-shadow: inset 0 2px 8px 0 rgba(0,0,0,.06);padding: 30px 0 20px;">
+        <div class="comWidth">
+            <div class="content1" style="overflow: hidden;width:  1200px;margin:  auto;">
+                <div class="headline left" style="margin-right: 16px;width: 385px;margin-bottom:  10px;height:330px">
+                    <div class="more">
+                        <p class="left">有色头条</p>
+                        <a class="right" href="https://www.ccmn.cn/news/" target="_blank"
+                           style="width: 284px;border-bottom: 1px solid #b5b5b6;padding-right: 10px;">更多</a>
+                    </div>
+                    <div class="line">
+                        <p class="linetitle1 cut">
+                                <a href="https://www.ccmn.cn/news/ZX018/202609/562ea97fef9e4d38a02489939d911db9.html"
+                                   title="9月8日长江有色金属现货行情"
+                                   target="_blank">9月8日长江有色金属现货行情</a>
+                        </p>
+                        <p class="linetitle2 cut">
+                                <a href="https://www.ccmn.cn/news/ZX003/202609/4f7d7ffd4bf44ba2a06244f45bafc15d.html"
+                                   title="锡石、焊料全链涨价！HBM芯片需求爆发    锡价冲高需警惕回调风险"
+                                   target="_blank">【锡石、焊料全链涨价！HBM芯片需求爆发    锡价冲高需警惕回调风险】</a>
+                        </p>
+                        <ul class="linecontent ">
+                                    <li>
+                                            <a target="_blank" href="https://www.ccmn.cn/news/ZX003/202609/100cd25e90514df4ade989a66cc5373c.html"
+                                               title="● 深度追踪｜大宗商品修复&ldquo;暖意&rdquo;铜锡领涨有色           但加息利剑悬顶后市如何？">
+                                                ● 深度追踪｜大宗商品修复&ldquo;暖意&rdquo;铜锡领涨有色           但加息利剑悬顶后市如何？</a>
+                                    </li>
+                                    <li>
+                                            <a target="_blank" href="https://www.ccmn.cn/news/ZX003/202609/e48452e3602142c98cb550cd008413cd.html"
+                                               title="● 【金属锂】供需博弈加剧 海外供给扰动">
+                                                ● 【金属锂】供需博弈加剧 海外供给扰动</a>
+                                    </li>
+                                    <li>
+                                            <a target="_blank" href="https://www.ccmn.cn/news/ZX003/202609/d419f272a7d2492a93568f5a50b4a006.html"
+                                               title="● 长江有色：美元走弱锡供给收缩下游AI需求释放         8日锡价或上涨">
+                                                ● 长江有色：美元走弱锡供给收缩下游AI需求释放         8日锡价或上涨</a>
+                                    </li>
+                                    <li>
+                                            <a target="_blank" href="https://www.ccmn.cn/news/ZX003/202609/7662a0d6185d46a597d10c609115f154.html"
+                                               title="● 长江有色：美联储政策预期反复利多兑现后资金离场            8日镍价或小跌">
+                                                ● 长江有色：美联储政策预期反复利多兑现后资金离场            8日镍价或小跌</a>
+                                    </li>
+                                    <li>
+                                            <a target="_blank" href="https://www.ccmn.cn/news/ZX003/202609/5ee535609ddf448caf3d812fad975eca.html"
+                                               title="● 长江有色：宏观压制与供需博弈      8日铅价或小跌">
+                                                ● 长江有色：宏观压制与供需博弈      8日铅价或小跌</a>
+                                    </li>
+                                    <li>
+                                            <a target="_blank" href="https://www.ccmn.cn/news/ZX003/202609/6643b2b353814602a1cea5e3fb228d0b.html"
+                                               title="● 地缘风暴叠加加息预期 伦铜击穿历史新高 金属原油全线飘红">
+                                                ● 地缘风暴叠加加息预期 伦铜击穿历史新高 金属原油全线飘红</a>
+                                    </li>
+                                    <li>
+                                            <a target="_blank" href="https://www.ccmn.cn/news/ZX003/202609/90f858f68620446e852395eea983ed3d.html"
+                                               title="● LME金属期货涨跌不一 伦锌领涨">
+                                                ● LME金属期货涨跌不一 伦锌领涨</a>
+                                    </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="quoPrice">
+                    <div class="quoPrice left" style="background: #fff;box-shadow: 0 2px 6px 0 #a1a1a1;height:330px">
+                        <div class="quoPrice_content">
+                            <ul class="quoPrice_menu" id="quoPrice_menu">
+                                <div class="quoPrice_menu_left" id="quoPrice_menu_left">
+                                	<li>
+                                		<a href="/cjxh.shtml" target="_blank" class="ahover1" data-type="cjxh">长江现货</a>
+                                	</li>
+                                	<li>
+                                		<a href="/cjysw.shtml" target="_blank" class="" data-type="cjysw">长江综合</a>
+                                	</li>
+                                </div>
+                                <div class="quoPrice_menu_right">
+                                    <li style="font-weight: normal">
+                                        <a href="https://www.ccmn.cn/service/joinprices.html" target="_blank">加入采标</a>
+                                    </li>
+                                    <li>
+                                        <a href="/helpCenter/open_platform.html" target="_blank">接口申请</a>
+                                    </li>
+                                    <li>
+                                        <a href="/helpCenter/long_river_price.html" target="_blank">关于报价</a>
+                                    </li>
+                                </div>
+                            </ul>
+                            <div class="quoPrice_box" id="quoPrice_box">
+                                <div class="price-table-wrap" id="quoPrice_table_cjxh" style="display: block;">
+                                    <div class="loading"></div>
+                                </div>
+                                <div class="price-table-wrap" id="quoPrice_table_cjysw" style="display: none;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right right-small"
+                     style="width: 234px;background: white;box-shadow: 0 2px 6px 0 #a1a1a1;height:330px">
+                    <div class="clearfloat right-small-button">
+
+                        <a target="_blank" href="https://vip.ccmn.cn/a/login/" title="登录"><img src="https://static.ccmn.cn/icon/key.png"/>登录</a>
+                        <a target="_blank" href="//reg.ccmn.cn/join/" title="注册"><img src="https://static.ccmn.cn/icon/pen.png"/>注册</a>
+
+                    </div>
+                    <div style="border: 1px solid #CCCCCC;border-bottom: none;height: 292px;">
+                        <div class="more_rule">
+                            <ul class="more_menu">
+                                <li id="rule-btn1" class="more_active">买家入门</li>
+                                <li id="rule-btn2">卖家入门</li>
+                            </ul>
+                            <div class="more_menu-content1">
+                                <a target="_blank" href="/data/">
+                                    <div class="more_content-div">
+                                        查看数据
+                                    </div>
+                                </a>
+                                <a  href="javascript:void(0);"
+                                   onclick="isBuyAuthority('https://mall.ccmn.cn/authority/isBuyAuthority','https://vip.ccmn.cn/back/centerWeb/personal/personalCenter?page=buyerInquiry')">
+                                    <div class="more_content-div">
+                                        发询价单
+                                    </div>
+                                </a>
+                                <a href="javascript:void(0);"
+                                   onclick="isBuyAuthority('https://mall.ccmn.cn/authority/isBuyAuthority','https://vip.ccmn.cn/back/centerWeb/personal/personalCenter?page=buyerInquiry')">
+                                    <div class="more_content-div">
+                                        发意向单
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="more_menu-content2" style="display: none;">
+                                <a href="javascript:void(0);"
+                                   onclick="isBuyAuthority('https://mall.ccmn.cn/authority/isSellAuthority','https://vip.ccmn.cn/back/centerWeb/personal/personalCenter?type=seller&page=sellerStore')">
+                                    <div class="more_content-div">
+                                        店铺管理
+                                    </div>
+                                </a>
+                                <a href="javascript:void(0);"
+                                   onclick="isBuyAuthority('https://mall.ccmn.cn/authority/isSellAuthority','https://vip.ccmn.cn/back/centerWeb/personal/personalCenter?type=seller&page=sellerInsale')">
+                                    <div class="more_content-div">
+                                        商品管理
+                                    </div>
+                                </a>
+                                <a href="javascript:void(0);"
+                                   onclick="isBuyAuthority('https://mall.ccmn.cn/authority/isSellAuthority','https://vip.ccmn.cn/back/centerWeb/personal/personalCenter?type=seller&page=sellerMyorder')">
+                                    <div class="more_content-div">
+                                        订单管理
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="other_release clearfloat">
+                            <ul class="clearfloat" style="margin-top: 3px;">
+                                <a href="/data/" target="_blank">
+                                    <li>
+                                        <dl>
+                                            <dt><i class="fa fa-fw fa-calendar"></i></dt>
+                                            <dd class="other_release-href">查数据</dd>
+                                        </dl>
+                                    </li>
+                                </a>
+
+                                <a href="/metalquote/" target="_blank">
+                                    <li>
+                                        <dl>
+                                            <dt><i class="fa fa-fw fa-line-chart"></i></dt>
+                                            <dd class="other_release-href">查走势</dd>
+                                        </dl>
+                                    </li>
+                                </a>
+
+                                <a href="https://www.ccmn.cn/service/service_generalize.html" target="_blank">
+                                    <li>
+                                        <dl>
+                                            <dt><i class="fa fa-fw fa-globe"></i></dt>
+                                            <dd class="other_release-href">做推广</dd>
+                                        </dl>
+                                    </li>
+                                </a>
+
+                                <a href="https://www.ccmn.cn/service/service_colorvip.html" target="_blank">
+                                    <li>
+                                        <dl>
+                                            <dt><i class="fa fa-fw fa-university"></i></dt>
+                                            <dd class="other_release-href">建旺铺</dd>
+                                        </dl>
+                                    </li>
+                                </a>
+
+                                <a href="/opport/" target="_blank">
+                                    <li>
+                                        <dl>
+                                            <dt><i class="fa fa-fw fa-pencil-square-o"></i></dt>
+                                            <dd class="other_release-href">发商机</dd>
+                                        </dl>
+                                    </li>
+                                </a>
+
+                                <a href="javascript:void(0);" onclick="isLogin('https://mall.ccmn.cn/authority/isSellAuthority','https://vip.ccmn.cn/back/centerWeb/personal/personalCenter?type=sellerRecruitHome')">
+                                    <li>
+                                        <dl>
+                                            <dt><i class="fa fa-fw  fa-user-plus"></i></dt>
+                                            <dd class="other_release-href">发招聘</dd>
+                                        </dl>
+                                    </li>
+                                </a>
+
+                                <a href="javascript:void(0);">
+                                    <li>
+                                        <dl>
+                                            <dt><i class="fa fa-fw fa-comments-o"></i></dt>
+                                            <dd class="other_release-href">进社区</dd>
+                                        </dl>
+                                    </li>
+                                </a>
+
+                                <a href="https://vip.ccmn.cn/back/centerWeb/personal/personalCenter?type=account" target="_blank">
+                                    <li>
+                                        <dl>
+                                            <dt><i class="fa fa-fw fa-handshake-o"></i></dt>
+                                            <dd class="other_release-href">做买卖</dd>
+                                        </dl>
+                                    </li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contentBar">
+        <div class="comWidth">
+            <div class="content1" style="overflow: hidden;padding-top:10px">
+                <div class="ads">
+                            <a target="_blank" href="//ad.ccmn.cn/ad?url=https://jxjnty.ccmn.cn&adInfoId=26399caac75e41c48f72f932d4e77793">
+                                <div class="adbar1">
+                                    <div class="ad1"></div>
+                                    <img class="lazy-img img-placeholder"
+                                         data-src="https://img.cjys.cn/UPLOAD/BACKGROUND/ad/3c835148eb314e289d1d8f5455c2c309/2023-08-29/20230829125613_jinna299-119.gif.webp"
+                                         width="299"
+                                         height="119"
+                                         alt="广告图片">
+                                </div>
+                            </a>
+                            <a target="_blank" href="//ad.ccmn.cn/ad?url=http://www.longalloy.com&adInfoId=83a9baf187c84623a42718931c4cd3ad">
+                                <div class="adbar1">
+                                    <div class="ad1"></div>
+                                    <img class="lazy-img img-placeholder"
+                                         data-src="https://img.cjys.cn/UPLOAD/BACKGROUND/ad/3c835148eb314e289d1d8f5455c2c309/2026-08-03/20260803152402_longxing299-119-2026.gif.webp"
+                                         width="299"
+                                         height="119"
+                                         alt="广告图片">
+                                </div>
+                            </a>
+                            <a target="_blank" href="//ad.ccmn.cn/ad?url=http://www.dgjinshengfa.net&adInfoId=b0cfa5f893b94f9291a55ea330b6d2a0">
+                                <div class="adbar1">
+                                    <div class="ad1"></div>
+                                    <img class="lazy-img img-placeholder"
+                                         data-src="https://img.cjys.cn/UPLOAD/BACKGROUND/ad/3c835148eb314e289d1d8f5455c2c309/2025-03-24/20250324085903_jinshenfa2025.png.webp"
+                                         width="299"
+                                         height="119"
+                                         alt="广告图片">
+                                </div>
+                            </a>
+                            <a target="_blank" href="//ad.ccmn.cn/ad?url=https://www.lanxunxun.com/?comingType=1&adInfoId=17fa0820ca59477a8b803b27beb29686">
+                                <div class="adbar1">
+                                    <div class="ad1"></div>
+                                    <img class="lazy-img img-placeholder"
+                                         data-src="https://img.cjys.cn/UPLOAD/BACKGROUND/ad/3c835148eb314e289d1d8f5455c2c309/2026-03-27/20260327114758_电缆现货299-119首页广告2026-3-27修改.gif.webp"
+                                         width="299"
+                                         height="119"
+                                         alt="广告图片">
+                                </div>
+                            </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="urgent comWidth">
+        <p class="urgent_title"><label>商城推荐</label>
+            <span class="tjdt">Mall recommendation</span>
+        </p>
+        <div class="products clearfloat">
+            <ul class="left">
+                        <li>
+                            <a target="_blank" href="https://mall.ccmn.cn/products/84a24c728dd74161af6957d4d470fe38.html">
+                                <div class="products_item">
+                                    <img class="lazy-img img-placeholder"
+                                         data-src="https://img.cjys.cn/UPLOAD/seller/2026/05/ShiyanTC/images/SellerPubadd2/b00897036f744ed2aa65920dea867d1b.png.webp"
+                                         width="199"
+                                         height="199"
+                                         alt="供应优质黄铜棒/六角棒/黄铜方板" /></div>
+                                <p style="width: 199px"
+                                   title="供应优质黄铜棒/六角棒/黄铜方板">供应优质黄铜棒/六角棒/黄铜方板</p>
+                                <label>
+                                        <span> 网上协商价格</span>
+                                </label>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://mall.ccmn.cn/products/f0b8cc0cd4944bcc80777a258179147c.html">
+                                <div class="products_item">
+                                    <img class="lazy-img img-placeholder"
+                                         data-src="https://img.cjys.cn/UPLOAD/seller/2018/11/jnhdly/images/SellerPubadd2/6412878140728812140_弘达280-280产品.jpg"
+                                         width="199"
+                                         height="199"
+                                         alt="铝及铝合金卷材" /></div>
+                                <p style="width: 199px"
+                                   title="铝及铝合金卷材">铝及铝合金卷材</p>
+                                <label>
+                                        <span> 网上协商价格</span>
+                                </label>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://mall.ccmn.cn/products/7250424082ca4dfaa66703956e2b1e58.html">
+                                <div class="products_item">
+                                    <img class="lazy-img img-placeholder"
+                                         data-src="https://img.cjys.cn/UPLOAD/seller/2018/12/lianrongtongye/images/SellerPubadd2/5921480702543107341_1544501858(1).png"
+                                         width="199"
+                                         height="199"
+                                         alt="磷铜丝 磷铜棒管QSn6.5-0.1 7-0.2 8-0.3" /></div>
+                                <p style="width: 199px"
+                                   title="磷铜丝 磷铜棒管QSn6.5-0.1 7-0.2 8-0.3">磷铜丝 磷铜棒管QSn6.5-0.1 7-0.2 8-0.3</p>
+                                <label>
+                                        <span> 网上协商价格</span>
+                                </label>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://mall.ccmn.cn/products/180ab128e4864fce8131f173efa213ad.html">
+                                <div class="products_item">
+                                    <img class="lazy-img img-placeholder"
+                                         data-src="https://img.cjys.cn/UPLOAD/seller/2025/12/nbdchg/images/SellerPubadd2/5cb7efe5214840c8a2e795d176eddab3.jpg.webp"
+                                         width="199"
+                                         height="199"
+                                         alt="铜钛 铜钛合金 铜钛中间合金" /></div>
+                                <p style="width: 199px"
+                                   title="铜钛 铜钛合金 铜钛中间合金">铜钛 铜钛合金 铜钛中间合金</p>
+                                <label>
+                                        <span> 网上协商价格</span>
+                                </label>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://mall.ccmn.cn/products/00303159acee43539fce72686539be8e.html">
+                                <div class="products_item">
+                                    <img class="lazy-img img-placeholder"
+                                         data-src="https://img.cjys.cn/UPLOAD/seller/2020/11/jxjnty/images/SellerPubadd2/3bc5f526d8134c26bf70e43436ec7f2c.jpg.webp"
+                                         width="199"
+                                         height="199"
+                                         alt="金拉  电缆铜带  0.05-0.8MM" /></div>
+                                <p style="width: 199px"
+                                   title="金拉  电缆铜带  0.05-0.8MM">金拉  电缆铜带  0.05-0.8MM</p>
+                                <label>
+                                        <span> 网上协商价格</span>
+                                </label>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://mall.ccmn.cn/products/95c28ca165784b8787b96f0cfa52a89c.html">
+                                <div class="products_item">
+                                    <img class="lazy-img img-placeholder"
+                                         data-src="https://img.cjys.cn/UPLOAD/seller/2026/06/gxjd2005/images/SellerPubadd2/b8d9b45c042f4918be29707ed24cba8f.png.webp"
+                                         width="199"
+                                         height="199"
+                                         alt="供应各类紫铜异型材" /></div>
+                                <p style="width: 199px"
+                                   title="供应各类紫铜异型材">供应各类紫铜异型材</p>
+                                <label>
+                                        <span> 网上协商价格</span>
+                                </label>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://mall.ccmn.cn/products/877de04b18fb4979b98a380026aa42ad.html">
+                                <div class="products_item">
+                                    <img class="lazy-img img-placeholder"
+                                         data-src="https://img.cjys.cn/UPLOAD/seller/2019/03/dongjinshengfa/images/SellerPubadd2/883020734608101639_黄铜棒5.jpg"
+                                         width="199"
+                                         height="199"
+                                         alt="H62黄铜棒 六角棒 现货供应" /></div>
+                                <p style="width: 199px"
+                                   title="H62黄铜棒 六角棒 现货供应">H62黄铜棒 六角棒 现货供应</p>
+                                <label>
+                                        <i>¥</i>
+                                        <span>50</span>
+                                        <i>元/公斤</i>
+                                </label>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://mall.ccmn.cn/products/54c94c8775c649cb8a68428197c97754.html">
+                                <div class="products_item">
+                                    <img class="lazy-img img-placeholder"
+                                         data-src="https://img.cjys.cn/UPLOAD/seller/2019/09/longalloy/images/SellerPubadd2/1567672636382906077.png"
+                                         width="199"
+                                         height="199"
+                                         alt="锡青铜自润滑轴承" /></div>
+                                <p style="width: 199px"
+                                   title="锡青铜自润滑轴承">锡青铜自润滑轴承</p>
+                                <label>
+                                        <span> 网上协商价格</span>
+                                </label>
+                            </a>
+                        </li>
+
+            </ul>
+        </div>
+        <div class="companys clearfloat right">
+            <div class="companys_item left">
+                        <a target="_blank" href="//hengyangys.ccmn.cn">
+                            <div class="other_detial left">
+                                <img class="lazy-img img-placeholder"
+                                     data-src="//img.cjys.cn/UPLOAD/seller/2019/02/HENGYANGYS/companyLogo/6485924014318488651_logo.png"
+                                     width="140"
+                                     height="115"
+                                     alt="电解镍" />
+                                <p class="other_p1">电解镍</p>
+                                <p class="other_p1_p2">锡锭</p>
+                            </div>
+                        </a>
+                        <a target="_blank" href="//nbdchg.ccmn.cn">
+                            <div class="other_detial left">
+                                <img class="lazy-img img-placeholder"
+                                     data-src="//img.cjys.cn/UPLOAD/seller/2025/10/nbdchg/companyLogo/5462b5c695c541f79393c398f6c4906a.png.webp"
+                                     width="140"
+                                     height="115"
+                                     alt="有色金属" />
+                                <p class="other_p1">有色金属</p>
+                                <p class="other_p1_p2">稀土合金</p>
+                            </div>
+                        </a>
+                        <a target="_blank" href="//lianrongtongye.ccmn.cn">
+                            <div class="other_detial left">
+                                <img class="lazy-img img-placeholder"
+                                     data-src="//img.cjys.cn/UPLOAD/seller/2019/12/lianrongtongye/companyLogo/1576642016043830868.PNG"
+                                     width="140"
+                                     height="115"
+                                     alt="磷铜丝" />
+                                <p class="other_p1">磷铜丝</p>
+                                <p class="other_p1_p2">铜棒</p>
+                            </div>
+                        </a>
+                        <a target="_blank" href="//gxjd2005.ccmn.cn">
+                            <div class="other_detial left">
+                                <img class="lazy-img img-placeholder"
+                                     data-src="//img.cjys.cn/UPLOAD/seller/2020/12/gxjd2005/companyLogo/954d35b5731040a2811462048ed4af79.jpg.webp"
+                                     width="140"
+                                     height="115"
+                                     alt="紫铜异型材" />
+                                <p class="other_p1">紫铜异型材</p>
+                                <p class="other_p1_p2">铝青铜</p>
+                            </div>
+                        </a>
+                        <a target="_blank" href="//jxjnty.ccmn.cn">
+                            <div class="other_detial left">
+                                <img class="lazy-img img-placeholder"
+                                     data-src="//img.cjys.cn/UPLOAD/seller/2020/12/jxjnty/companyLogo/e4e7fe55a058415e8237e157cb21511f.jpg.webp"
+                                     width="140"
+                                     height="115"
+                                     alt="软连接铜带" />
+                                <p class="other_p1">软连接铜带</p>
+                                <p class="other_p1_p2">冲压铜带</p>
+                            </div>
+                        </a>
+                        <a target="_blank" href="//ShiyanTC.ccmn.cn">
+                            <div class="other_detial left">
+                                <img class="lazy-img img-placeholder"
+                                     data-src="//img.cjys.cn/UPLOAD/seller/2025/12/ShiyanTC/companyLogo/082827de68884318aae67cc6a4b7336c.jpg.webp"
+                                     width="140"
+                                     height="115"
+                                     alt="配油盘" />
+                                <p class="other_p1">配油盘</p>
+                                <p class="other_p1_p2">拨块</p>
+                            </div>
+                        </a>
+                        <a target="_blank" href="//longalloy.ccmn.cn">
+                            <div class="other_detial left">
+                                <img class="lazy-img img-placeholder"
+                                     data-src="//img.cjys.cn/UPLOAD/seller/2019/09/longalloy/companyLogo/1567499842014230877.png"
+                                     width="140"
+                                     height="115"
+                                     alt="锡青铜管" />
+                                <p class="other_p1">锡青铜管</p>
+                                <p class="other_p1_p2">锌合金棒</p>
+                            </div>
+                        </a>
+                        <a target="_blank" href="//dongjinshengfa.ccmn.cn">
+                            <div class="other_detial left">
+                                <img class="lazy-img img-placeholder"
+                                     data-src="//img.cjys.cn/UPLOAD/seller/2020/12/dongjinshengfa/companyLogo/565a25101129492e9c906d8f0e26e626.png.webp"
+                                     width="140"
+                                     height="115"
+                                     alt="铜板" />
+                                <p class="other_p1">铜板</p>
+                                <p class="other_p1_p2">铜线</p>
+                            </div>
+                        </a>
+            </div>
+        </div>
+
+    </div>
+    <!--我要卖-->
+    <div class="indexcon" style="margin-top: 1px;background-color:#f0f2f5;">
+        <div class="comWidth">
+            <div class="index_initial">
+                <p class="indexcon_left clearfloat"><label>我要卖</label>
+                    <span>Selling</span>
+                    <a target="_blank" class="right b_more" href="https://mall.ccmn.cn/mallstocks/">更多</a>
+                </p>
+            </div>
+
+            <div class="content-oppor">
+                <table style="width: 100%;">
+                    <tbody>
+                        <tr class="oppor-title clearfloat">
+                            <th class="title-name left">产品标题</th>
+                            <th class="title-gui left">规格</th>
+                            <th class="title-chai left">材质</th>
+                            <th class="title-di left">所在地</th>
+                            <th class="title-zui left">最小起订量</th>
+                            <th class="title-kcunl left">库存量</th>
+                            <th class="title-gong left">供应商</th>
+                            <th class="title-price left">价格</th>
+                            <th class="title-cao right">操作</th>
+                        </tr>
+                                    <tr class="oppor-text clearfloat">
+                                        <td class="text-name left area-name">
+                                            <a target="_blank" href="https://mall.ccmn.cn/products/4a5a37f6d4ab42c8b5e0fe04b6946372.html"
+                                               title="QSn6.5-0.1C5440QSn4-3锡磷青铜">
+                                                    <span class="word-hot">荐</span>
+                                                QSn6.5-0.1C5440QSn4-3锡磷青铜
+                                            </a>
+                                        </td>
+                                        <td class="text-gui left">7*2500</td>
+                                        <td class="text-chai left">锡青铜磷青铜铸造青铜白铜</td>
+                                        <td title="江西  东莞 上海"
+                                            class="text-di left area-name">江西  东莞 上海</td>
+                                        <td class="text-zui left">1千克
+                                            起
+                                        </td>
+                                        <td class="text-kcunl left">5,000千克</td>
+                                        <td class="text-gong left">
+                                            <a href="//lianrongtongye.ccmn.cn" target="_blank"
+                                               title="江西联荣铜业有限公司">江西联荣铜业有限公司</a>
+                                        </td>
+                                        <td class="text-price left">
+                                                网上协商价格
+                                        </td>
+                                        <td class="text-cao right">
+                                            <a href="javascript:void(0);">
+                                            <button onclick="lijixunjia('4a5a37f6d4ab42c8b5e0fe04b6946372')">立即询价</button>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr class="oppor-text clearfloat">
+                                        <td class="text-name left area-name">
+                                            <a target="_blank" href="https://mall.ccmn.cn/products/5dce118ebd75471889e802074851095b.html"
+                                               title="铝青铜QAL9-4-4-2铜管铜棒铜套">
+                                                    <span class="word-hot">荐</span>
+                                                铝青铜QAL9-4-4-2铜管铜棒铜套
+                                            </a>
+                                        </td>
+                                        <td class="text-gui left">100*30</td>
+                                        <td class="text-chai left">QAL9-4-4-2</td>
+                                        <td title="江西省贵溪市工业园区"
+                                            class="text-di left area-name">江西省贵溪市工业园区</td>
+                                        <td class="text-zui left">1千克
+                                            起
+                                        </td>
+                                        <td class="text-kcunl left">100,000千克</td>
+                                        <td class="text-gong left">
+                                            <a href="//gxjd2005.ccmn.cn" target="_blank"
+                                               title="贵溪骏达特种铜材有限公司">贵溪骏达特种铜材有限公司</a>
+                                        </td>
+                                        <td class="text-price left">
+                                                网上协商价格
+                                        </td>
+                                        <td class="text-cao right">
+                                            <a href="javascript:void(0);">
+                                            <button onclick="lijixunjia('5dce118ebd75471889e802074851095b')">立即询价</button>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr class="oppor-text clearfloat">
+                                        <td class="text-name left area-name">
+                                            <a target="_blank" href="https://mall.ccmn.cn/products/48ef4c5498ba4356938e3c140788a9b8.html"
+                                               title="锡青铜棒批发、厂家供货">
+                                                    <span class="word-hot">荐</span>
+                                                锡青铜棒批发、厂家供货
+                                            </a>
+                                        </td>
+                                        <td class="text-gui left">50-2000</td>
+                                        <td class="text-chai left">ZCuSn6Zn6Pb3</td>
+                                        <td title="安徽省芜湖市三山开发区荷形路"
+                                            class="text-di left area-name">安徽省芜湖市三山开发区荷形路</td>
+                                        <td class="text-zui left">100吨
+                                            起
+                                        </td>
+                                        <td class="text-kcunl left">1,000,000吨</td>
+                                        <td class="text-gong left">
+                                            <a href="//longalloy.ccmn.cn" target="_blank"
+                                               title="芜湖龙兴合金股份有限公司">芜湖龙兴合金股份有限公司</a>
+                                        </td>
+                                        <td class="text-price left">
+                                                网上协商价格
+                                        </td>
+                                        <td class="text-cao right">
+                                            <a href="javascript:void(0);">
+                                            <button onclick="lijixunjia('48ef4c5498ba4356938e3c140788a9b8')">立即询价</button>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr class="oppor-text clearfloat">
+                                        <td class="text-name left area-name">
+                                            <a target="_blank" href="https://mall.ccmn.cn/products/29fcd21cdf674926870b6f8bf28c77cc.html"
+                                               title="高精密耐磨铜轴瓦">
+                                                高精密耐磨铜轴瓦
+                                            </a>
+                                        </td>
+                                        <td class="text-gui left">1-300</td>
+                                        <td class="text-chai left">耐磨铜合金（具体牌号支持定制）</td>
+                                        <td title="湖北十堰"
+                                            class="text-di left area-name">湖北十堰</td>
+                                        <td class="text-zui left">1个
+                                            起
+                                        </td>
+                                        <td class="text-kcunl left">1,000个</td>
+                                        <td class="text-gong left">
+                                            <a href="//ShiyanTC.ccmn.cn" target="_blank"
+                                               title="十堰同创传动技术有限公司">十堰同创传动技术有限公司</a>
+                                        </td>
+                                        <td class="text-price left">
+                                                网上协商价格
+                                        </td>
+                                        <td class="text-cao right">
+                                            <a href="javascript:void(0);">
+                                            <button onclick="lijixunjia('29fcd21cdf674926870b6f8bf28c77cc')">立即询价</button>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr class="oppor-text clearfloat">
+                                        <td class="text-name left area-name">
+                                            <a target="_blank" href="https://mall.ccmn.cn/products/067b724ef07546df907e52a3ee284cea.html"
+                                               title="QAL9-4铝青铜 C18150铬锆铜棒铜管铜板">
+                                                QAL9-4铝青铜 C18150铬锆铜棒铜管铜板
+                                            </a>
+                                        </td>
+                                        <td class="text-gui left">17370171211</td>
+                                        <td class="text-chai left">铝青铜 铬锆铜  镍白铜</td>
+                                        <td title="江西鹰潭市贵溪市铜产业循环经济基地"
+                                            class="text-di left area-name">江西鹰潭市贵溪市铜产业循环经济基地</td>
+                                        <td class="text-zui left">1千克
+                                            起
+                                        </td>
+                                        <td class="text-kcunl left">500千克</td>
+                                        <td class="text-gong left">
+                                            <a href="//2151002260.ccmn.cn" target="_blank"
+                                               title="江西金达铜业有限公司">江西金达铜业有限公司</a>
+                                        </td>
+                                        <td class="text-price left">
+                                                103元/千克
+                                        </td>
+                                        <td class="text-cao right">
+                                            <a href="javascript:void(0);">
+                                            <button onclick="lijixunjia('067b724ef07546df907e52a3ee284cea')">立即询价</button>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr class="oppor-text clearfloat">
+                                        <td class="text-name left area-name">
+                                            <a target="_blank" href="https://mall.ccmn.cn/products/08a8e1dcd8fc4baf9c5ea7605bc8e7e2.html"
+                                               title="出售1#电解铜，好铜，平水铜">
+                                                出售1#电解铜，好铜，平水铜
+                                            </a>
+                                        </td>
+                                        <td class="text-gui left">1020*1020*2500</td>
+                                        <td class="text-chai left">1#</td>
+                                        <td title="上海，常州"
+                                            class="text-di left area-name">上海，常州</td>
+                                        <td class="text-zui left">1吨
+                                            起
+                                        </td>
+                                        <td class="text-kcunl left">1,000吨</td>
+                                        <td class="text-gong left">
+                                            <a href="//hengyangys.ccmn.cn" target="_blank"
+                                               title="江苏恒洋物产集团有限公司">江苏恒洋物产集团有限公司</a>
+                                        </td>
+                                        <td class="text-price left">
+                                                110,000元/吨
+                                        </td>
+                                        <td class="text-cao right">
+                                            <a href="javascript:void(0);">
+                                            <button onclick="lijixunjia('08a8e1dcd8fc4baf9c5ea7605bc8e7e2')">立即询价</button>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr class="oppor-text clearfloat">
+                                        <td class="text-name left area-name">
+                                            <a target="_blank" href="https://mall.ccmn.cn/products/27f3b502c2bb4c6b89b42e9f35a52022.html"
+                                               title="供应锌锭（金属镓.铟锭、锗锭）">
+                                                供应锌锭（金属镓.铟锭、锗锭）
+                                            </a>
+                                        </td>
+                                        <td class="text-gui left">490*200*50</td>
+                                        <td class="text-chai left">Zn99.995</td>
+                                        <td title="内蒙古包头"
+                                            class="text-di left area-name">内蒙古包头</td>
+                                        <td class="text-zui left">5吨
+                                            起
+                                        </td>
+                                        <td class="text-kcunl left">100吨</td>
+                                        <td class="text-gong left">
+                                            <a href="//m18547202999.ccmn.cn" target="_blank"
+                                               title="包头市洪德鑫贸易有限公司">包头市洪德鑫贸易有限公司</a>
+                                        </td>
+                                        <td class="text-price left">
+                                                网上协商价格
+                                        </td>
+                                        <td class="text-cao right">
+                                            <a href="javascript:void(0);">
+                                            <button onclick="lijixunjia('27f3b502c2bb4c6b89b42e9f35a52022')">立即询价</button>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr class="oppor-text clearfloat">
+                                        <td class="text-name left area-name">
+                                            <a target="_blank" href="https://mall.ccmn.cn/products/00ecbd89a1694966a847b85ededd893f.html"
+                                               title="供应纯铝板}合金铝板">
+                                                供应纯铝板}合金铝板
+                                            </a>
+                                        </td>
+                                        <td class="text-gui left">0.7*1500*2500</td>
+                                        <td class="text-chai left">1060,1100,3003,3004,3105,5052,50</td>
+                                        <td title="山东省济南市平阴县"
+                                            class="text-di left area-name">山东省济南市平阴县</td>
+                                        <td class="text-zui left">12吨
+                                            起
+                                        </td>
+                                        <td class="text-kcunl left">100吨</td>
+                                        <td class="text-gong left">
+                                            <a href="//jnhdly.ccmn.cn" target="_blank"
+                                               title="济南弘达铝业有限公司">济南弘达铝业有限公司</a>
+                                        </td>
+                                        <td class="text-price left">
+                                                16,500元/吨
+                                        </td>
+                                        <td class="text-cao right">
+                                            <a href="javascript:void(0);">
+                                            <button onclick="lijixunjia('00ecbd89a1694966a847b85ededd893f')">立即询价</button>
+                                            </a>
+                                        </td>
+                                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="contentBar" style="background: #f0f2f5;padding-bottom: 20px;">
+        <div class="content2 comWidth clearfloat">
+            <div>
+                <!--我要买-->
+                <div class="indexcon">
+                    <div class="index_initial">
+                        <p class="indexcon_left left"><label>我要买</label>
+                            <span>Buying</span>
+                            <a class="right b_more" href="https://mall.ccmn.cn/mallpurchas/">更多></a>
+                        </p>
+                    </div>
+
+                    <div class="content-oppor">
+                        <table style="width: 100%;">
+                            <tbody>
+                                <tr class="oppor-title clearfloat">
+                                    <th class="title-name2 left">产品标题</th>
+                                    <th class="title-gui2 left">规格</th>
+                                    <th class="title-chai2 left">材质</th>
+                                    <th class="title-di2 left">所在地</th>
+                                    <th class="title-cai2 left">采购量</th>
+                                    <th class="title-zhuang2 left">状态</th>
+                                    <th class="title-bao2 left">报价截止</th>
+                                    <th class="title-jhq2 left">交货期</th>
+                                    <th class="title-cao2 right">操作</th>
+                                </tr>
+                                        <tr class="oppor-text clearfloat">
+                                            <td class="text-name2 left">
+                                                <a href="javascript:void(0);"
+                                                   title="不锈钢板">
+                                                    不锈钢板
+                                                </a>
+                                            </td>
+                                            <td class="text-gui2 left"
+                                                title="6mm">6mm</td>
+                                            <td class="text-chai2 left"
+                                                title="316L">316L</td>
+                                            <td class="text-di2 left">江苏省</td>
+                                            <td class="text-cai2 left">1</td>
+                                            <td class="text-zhuang2 left">-</td>
+                                            <td class="text-bao2 left">2049-01-01</td>
+                                            <td class="text-jhq2 left">7天</td>
+                                            <td class="text-cao2 right">
+                                                <a  target="_blank" href="https://mall.ccmn.cn/inquiry/a5fa2f398d1b41788e4e42c2965ad8e2.html">
+                                                <button>立即报价</button>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="oppor-text clearfloat">
+                                            <td class="text-name2 left">
+                                                <a href="javascript:void(0);"
+                                                   title="精铟4n5">
+                                                    精铟4n5
+                                                </a>
+                                            </td>
+                                            <td class="text-gui2 left"
+                                                title="4n5活以上">4n5活以上</td>
+                                            <td class="text-chai2 left"
+                                                title="铟">铟</td>
+                                            <td class="text-di2 left">广东省</td>
+                                            <td class="text-cai2 left">0</td>
+                                            <td class="text-zhuang2 left">-</td>
+                                            <td class="text-bao2 left">2049-01-01</td>
+                                            <td class="text-jhq2 left">3天</td>
+                                            <td class="text-cao2 right">
+                                                <a  target="_blank" href="https://mall.ccmn.cn/inquiry/b6b9cf4864ca424da753ab076ca78018.html">
+                                                <button>立即报价</button>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="oppor-text clearfloat">
+                                            <td class="text-name2 left">
+                                                <a href="javascript:void(0);"
+                                                   title="铜">
+                                                    铜
+                                                </a>
+                                            </td>
+                                            <td class="text-gui2 left"
+                                                title="2.6">2.6</td>
+                                            <td class="text-chai2 left"
+                                                title="无氧铜">无氧铜</td>
+                                            <td class="text-di2 left">江苏省</td>
+                                            <td class="text-cai2 left">1</td>
+                                            <td class="text-zhuang2 left">-</td>
+                                            <td class="text-bao2 left">2049-01-01</td>
+                                            <td class="text-jhq2 left">7天</td>
+                                            <td class="text-cao2 right">
+                                                <a  target="_blank" href="https://mall.ccmn.cn/inquiry/57dbce4fda0e4248b49d7886beb7b45a.html">
+                                                <button>立即报价</button>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="oppor-text clearfloat">
+                                            <td class="text-name2 left">
+                                                <a href="javascript:void(0);"
+                                                   title="紫铜板T2">
+                                                    紫铜板T2
+                                                </a>
+                                            </td>
+                                            <td class="text-gui2 left"
+                                                title="2000x1000x5">2000x1000x5</td>
+                                            <td class="text-chai2 left"
+                                                title="T2">T2</td>
+                                            <td class="text-di2 left">四川省</td>
+                                            <td class="text-cai2 left">2</td>
+                                            <td class="text-zhuang2 left">-</td>
+                                            <td class="text-bao2 left">2049-01-01</td>
+                                            <td class="text-jhq2 left">7天</td>
+                                            <td class="text-cao2 right">
+                                                <a  target="_blank" href="https://mall.ccmn.cn/inquiry/b5a9f3990ea34ffe8ca761ac2db28ba1.html">
+                                                <button>立即报价</button>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="oppor-text clearfloat">
+                                            <td class="text-name2 left">
+                                                <a href="javascript:void(0);"
+                                                   title="铝锭">
+                                                    铝锭
+                                                </a>
+                                            </td>
+                                            <td class="text-gui2 left"
+                                                title="型材">型材</td>
+                                            <td class="text-chai2 left"
+                                                title="铝材">铝材</td>
+                                            <td class="text-di2 left">江苏省</td>
+                                            <td class="text-cai2 left">1</td>
+                                            <td class="text-zhuang2 left">-</td>
+                                            <td class="text-bao2 left">2049-01-01</td>
+                                            <td class="text-jhq2 left">7天</td>
+                                            <td class="text-cao2 right">
+                                                <a  target="_blank" href="https://mall.ccmn.cn/inquiry/ef60e1abf7f4474697d14bcbe0ce7774.html">
+                                                <button>立即报价</button>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="oppor-text clearfloat">
+                                            <td class="text-name2 left">
+                                                <a href="javascript:void(0);"
+                                                   title="铝锭">
+                                                    铝锭
+                                                </a>
+                                            </td>
+                                            <td class="text-gui2 left"
+                                                title="**">**</td>
+                                            <td class="text-chai2 left"
+                                                title="铝锭">铝锭</td>
+                                            <td class="text-di2 left">上海市</td>
+                                            <td class="text-cai2 left">500</td>
+                                            <td class="text-zhuang2 left">颗粒</td>
+                                            <td class="text-bao2 left">2026-09-30</td>
+                                            <td class="text-jhq2 left">30天</td>
+                                            <td class="text-cao2 right">
+                                                <a  target="_blank" href="https://mall.ccmn.cn/inquiry/e09f240018894c13a5c6864d72ca9492.html">
+                                                <button>立即报价</button>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr class="oppor-text clearfloat">
+                                            <td class="text-name2 left">
+                                                <a href="javascript:void(0);"
+                                                   title="1060铝板采购">
+                                                    1060铝板采购
+                                                </a>
+                                            </td>
+                                            <td class="text-gui2 left"
+                                                title="2400*1200*1.9">2400*1200*1.9</td>
+                                            <td class="text-chai2 left"
+                                                title="1060">1060</td>
+                                            <td class="text-di2 left">江苏省</td>
+                                            <td class="text-cai2 left">1,827</td>
+                                            <td class="text-zhuang2 left">-</td>
+                                            <td class="text-bao2 left">2049-01-01</td>
+                                            <td class="text-jhq2 left">7天</td>
+                                            <td class="text-cao2 right">
+                                                <a  target="_blank" href="https://mall.ccmn.cn/inquiry/e70aab08fc26491dba2a4b98448724ae.html">
+                                                <button>立即报价</button>
+                                                </a>
+                                            </td>
+                                        </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div style="width: 100%;height: 40px;background-color: #f0f2f5;" class="content-ad">
+        <div class="fluctuat_title comWidth clearfloat" style="background: #F7F7F7;width: 1200px;">
+            <!--<label>今日长江有色网涨跌</label>-->
+            <label>实时：</label>
+            <span class="time-now">00:00</span>
+            <div class="fluctuat_broadcast">
+                <ul>
+                    <li>
+                                <p>
+                                    <a target="_blank" href="https://www.ccmn.cn/zbkx/"
+                                       style="text-decoration:none;">国内多家品牌金饰价格再次大幅下调，老庙黄金足金饰品报1303元/克，单日大跌37元；周生生足金饰品报1302元/克，单日大跌36元；老凤祥足金饰品报1307元/克，单日大跌35元。记者梳理发现，相较8月25日各品牌足金饰品最高点，周生生、老庙黄金、老凤祥足金饰品克价一周内分别累计下跌106元、104元和99元。</a>
+                                    <span>国内多家品牌金饰价格再次大幅下调，老庙黄金足金饰品报1303元/克，单日大跌37元；周生生足金饰品报1302元/克，单日大跌36元；老凤祥足金饰品报1307元/克，单日大跌35元。记者梳理发现，相较8月25日各品牌足金饰品最高点，周生生、老庙黄金、老凤祥足金饰品克价一周内分别累计下跌106元、104元和99元。 </span>
+                                </p>
+                                <p>
+                                    <a target="_blank" href="https://www.ccmn.cn/zbkx/"
+                                       style="text-decoration:none;">伊朗西南部胡齐斯坦省负责安全事务的副省长说，美军前一晚对该省发动的袭击造成7人死亡，8人受伤。伊朗媒体1日报道，美国当天夜间对伊朗南部多地发动袭击，波及霍尔木兹甘省库赫斯塔克一场婚礼活动现场，已造成4人死亡、50人受伤。</a>
+                                    <span>伊朗西南部胡齐斯坦省负责安全事务的副省长说，美军前一晚对该省发动的袭击造成7人死亡，8人受伤。伊朗媒体1日报道，美国当天夜间对伊朗南部多地发动袭击，波及霍尔木兹甘省库赫斯塔克一场婚礼活动现场，已造成4人死亡、50人受伤。 </span>
+                                </p>
+                    </li>
+
+                    <li>
+                                <p>
+                                    <a href="https://www.ccmn.cn/zbkx/" target="_blank"
+                                       style="text-decoration:none;">纽约期金失守4330美元/盎司，日内跌1.52%。</a>
+                                    <span>纽约期金失守4330美元/盎司，日内跌1.52%。 </span>
+                                </p>
+                                <p>
+                                    <a href="https://www.ccmn.cn/zbkx/" target="_blank"
+                                       style="text-decoration:none;">现货黄金日内跌1%，现报4283.74美元/盎司。</a>
+                                    <span>现货黄金日内跌1%，现报4283.74美元/盎司。 </span>
+                                </p>
+                    </li>
+                </ul>
+
+            </div>
+            <a href="#" style="float: right;"><span>>></span></a>
+        </div>
+    </div>
+    <style>
+        .infoNewsContent {
+            font-size: 14px;
+            color: #696969;
+            margin-bottom: 18px;
+            line-height: 24px;
+            height: 48px;
+            overflow: hidden;
+            white-space: normal;
+        }
+        .tttt li{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+        .tttt li div {
+            display: flex;
+             flex-wrap: wrap;
+             align-items: center;
+        }
+
+        .tttt li div span {
+            margin-left:3px;
+            padding-left: 5px;
+            padding-right: 5px;
+            height: 17px;
+            background: rgb(255, 235, 229);
+
+            color: rgb(105, 105, 105);
+            font-family: Source Han Serif CN;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 17px;
+            text-align: center;
+        }
+        .yyyyy{
+            width: 197px;
+            height: 2px;
+            background: #ff7700;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 1;
+        }
+        .vip-tag{
+            width: 54px!important;
+            height: 18px!important;
+        }
+    </style>
+    <!--第三部分-->
+    <div class="content3 clearfloat">
+        <div class="comWidth">
+            <div style="width: 584px;background: white;margin-top: 10px;border-radius: 5px;box-shadow:0 2px 4px 0 rgb(0 0 0 / 10%); padding-right: 5px;" class="left content3-left">
+                <div class="clearfloat title" style="border-bottom: 1px solid #CCC;padding: 0px 0;position:relative;">
+                    <div class="yyyyy"></div>
+                    <label style="font-weight: 600">最新文章</label>
+                    <span class="Latest news">latest articles</span>
+                    <span class="right" style="padding-right:10px;color:#1B55A9;"><a
+                                href="https://www.ccmn.cn/news/">更多</a></span></div>
+
+                <ul class="linecontent tttt">
+                            <li>
+                                    <a style="
+                                        display: flex;
+                                        align-items: center;
+                                        font-weight: bold;
+                                        width: 65%;
+                                        text-decoration: none;
+                                        color: inherit;
+                                    " target="_blank" href="https://www.ccmn.cn/news/ZX018/202609/562ea97fef9e4d38a02489939d911db9.html" title="● 9月8日长江有色金属现货行情">
+                                        <span style="
+                                            white-space: nowrap;
+                                            overflow: hidden;
+                                            text-overflow: ellipsis;
+                                            flex: 1;
+                                        ">● 9月8日长江有色金属现货行情</span>
+                                    </a>
+                                <div>
+                                            <span ><a href="https://www.ccmn.cn/news_长江现货行情.html">长江现货行情</a></span>
+                                </div>
+                            </li>
+                            <li>
+                                    <a style="
+                                        display: flex;
+                                        align-items: center;
+                                        font-weight: bold;
+                                        width: 65%;
+                                        text-decoration: none;
+                                        color: inherit;
+                                    " target="_blank" href="https://www.ccmn.cn/news/ZX018/202609/33f4bd2754024d45bd83dcb7fc1af34e.html" title="● 价涨量跌！智利 8 月铜出口创一年多新低，风暴扰动加剧全球铜供应紧张">
+                                        <span style="
+                                            white-space: nowrap;
+                                            overflow: hidden;
+                                            text-overflow: ellipsis;
+                                            flex: 1;
+                                        ">● 价涨量跌！智利 8 月铜出口创一年多新低，风暴扰动加剧全球铜供应紧张</span>
+                                    </a>
+                                <div>
+                                            <span ><a href="https://www.ccmn.cn/news_铜价.html">铜价</a></span>
+                                </div>
+                            </li>
+                            <li>
+                                    <a style="
+                                        display: flex;
+                                        align-items: center;
+                                        font-weight: bold;
+                                        width: 65%;
+                                        text-decoration: none;
+                                        color: inherit;
+                                    " target="_blank" href="https://www.ccmn.cn/news/ZX018/202609/16a9bd11b1554addbfc8fcf1b7bae1f6.html" title="● 涨价潮蔓延！头部带头上调电芯价格，涨价落地分化开启行业压力测试">
+                                        <span style="
+                                            white-space: nowrap;
+                                            overflow: hidden;
+                                            text-overflow: ellipsis;
+                                            flex: 1;
+                                        ">● 涨价潮蔓延！头部带头上调电芯价格，涨价落地分化开启行业压力测试</span>
+                                    </a>
+                                <div>
+                                            <span ><a href="https://www.ccmn.cn/news_锂电池.html">锂电池</a></span>
+                                            <span ><a href="https://www.ccmn.cn/news_电芯.html">电芯</a></span>
+                                </div>
+                            </li>
+                            <li>
+                                    <a style="
+                                        display: flex;
+                                        align-items: center;
+                                        font-weight: bold;
+                                        width: 65%;
+                                        text-decoration: none;
+                                        color: inherit;
+                                    " target="_blank" href="https://www.ccmn.cn/news/ZX006/202609/bd81634372ae480aa071a19b7057a233.html" title="● 总预算 890 万欧元！欧盟 CIRCUIT4EU 项目启动，从电子废料回收 9 类关键战略金属">
+                                        <span style="
+                                            white-space: nowrap;
+                                            overflow: hidden;
+                                            text-overflow: ellipsis;
+                                            flex: 1;
+                                        ">● 总预算 890 万欧元！欧盟 CIRCUIT4EU 项目启动，从电子废料回收 9 类关键战略金属</span>
+                                    </a>
+                                <div>
+                                            <span ><a href="https://www.ccmn.cn/news_废料回收.html">废料回收</a></span>
+                                </div>
+                            </li>
+                            <li>
+                                    <a style="
+                                        display: flex;
+                                        align-items: center;
+                                        font-weight: bold;
+                                        width: 65%;
+                                        text-decoration: none;
+                                        color: inherit;
+                                    " target="_blank" href="https://www.ccmn.cn/news/ZX003/202609/39d78f4f19fe41129dd2314a9341df18.html" title="● 【锰铁早评】锰矿松动钢招偏弱，今日锰铁或下行">
+                                        <span style="
+                                            white-space: nowrap;
+                                            overflow: hidden;
+                                            text-overflow: ellipsis;
+                                            flex: 1;
+                                        ">● 【锰铁早评】锰矿松动钢招偏弱，今日锰铁或下行</span>
+                                    </a>
+                                <div>
+                                            <span ><a href="https://www.ccmn.cn/news_锰铁.html">锰铁</a></span>
+                                            <span ><a href="https://www.ccmn.cn/news_锰矿松动.html">锰矿松动</a></span>
+                                </div>
+                            </li>
+                            <li>
+                                    <a style="
+                                        display: flex;
+                                        align-items: center;
+                                        font-weight: bold;
+                                        width: 65%;
+                                        text-decoration: none;
+                                        color: inherit;
+                                    " target="_blank" href="https://www.ccmn.cn/news/ZX003/202609/72f25819b5514812896dc300f5814a96.html" title="● 【多晶硅早评】硅片减产预期强，今日多晶硅或持弱">
+                                        <span style="
+                                            white-space: nowrap;
+                                            overflow: hidden;
+                                            text-overflow: ellipsis;
+                                            flex: 1;
+                                        ">● 【多晶硅早评】硅片减产预期强，今日多晶硅或持弱</span>
+                                    </a>
+                                <div>
+                                            <span ><a href="https://www.ccmn.cn/news_多晶硅.html">多晶硅</a></span>
+                                            <span ><a href="https://www.ccmn.cn/news_硅片减产.html">硅片减产</a></span>
+                                </div>
+                            </li>
+                            <li>
+                                    <a style="
+                                        display: flex;
+                                        align-items: center;
+                                        font-weight: bold;
+                                        width: 65%;
+                                        text-decoration: none;
+                                        color: inherit;
+                                    " target="_blank" href="https://www.ccmn.cn/news/ZX003/202609/912561ec3e0f47969175105b36d4b837.html" title="● 【工业硅早评】反内卷预期博弈高库存，今日硅价或维稳">
+                                        <span style="
+                                            white-space: nowrap;
+                                            overflow: hidden;
+                                            text-overflow: ellipsis;
+                                            flex: 1;
+                                        ">● 【工业硅早评】反内卷预期博弈高库存，今日硅价或维稳</span>
+                                    </a>
+                                <div>
+                                            <span ><a href="https://www.ccmn.cn/news_工业硅.html">工业硅</a></span>
+                                            <span ><a href="https://www.ccmn.cn/news_反内卷.html">反内卷</a></span>
+                                </div>
+                            </li>
+                            <li>
+                                    <a style="
+                                        display: flex;
+                                        align-items: center;
+                                        font-weight: bold;
+                                        width: 65%;
+                                        text-decoration: none;
+                                        color: inherit;
+                                    " target="_blank" href="https://www.ccmn.cn/news/ZX003/202609/eb56a489c1db4a1db2d342aae13869f6.html" title="● 【硅铁早评】钢招平淡电费承压，今日硅铁或偏弱">
+                                        <span style="
+                                            white-space: nowrap;
+                                            overflow: hidden;
+                                            text-overflow: ellipsis;
+                                            flex: 1;
+                                        ">● 【硅铁早评】钢招平淡电费承压，今日硅铁或偏弱</span>
+                                    </a>
+                                <div>
+                                            <span ><a href="https://www.ccmn.cn/news_硅铁.html">硅铁</a></span>
+                                            <span ><a href="https://www.ccmn.cn/news_钢招平淡.html">钢招平淡</a></span>
+                                </div>
+                            </li>
+                            <li>
+                                    <a style="
+                                        display: flex;
+                                        align-items: center;
+                                        font-weight: bold;
+                                        width: 65%;
+                                        text-decoration: none;
+                                        color: inherit;
+                                    " target="_blank" href="https://www.ccmn.cn/news/ZX003/202609/bb6508ab556c4024bf9fe7a41261a447.html" title="● 【碳酸锂早评】期货小弹难改累库，今日碳酸锂或下跌">
+                                        <span style="
+                                            white-space: nowrap;
+                                            overflow: hidden;
+                                            text-overflow: ellipsis;
+                                            flex: 1;
+                                        ">● 【碳酸锂早评】期货小弹难改累库，今日碳酸锂或下跌</span>
+                                    </a>
+                                <div>
+                                            <span ><a href="https://www.ccmn.cn/news_碳酸锂.html">碳酸锂</a></span>
+                                            <span ><a href="https://www.ccmn.cn/news_累库.html">累库</a></span>
+                                </div>
+                            </li>
+                            <li>
+                                    <a style="
+                                        display: flex;
+                                        align-items: center;
+                                        font-weight: bold;
+                                        width: 65%;
+                                        text-decoration: none;
+                                        color: inherit;
+                                    " target="_blank" href="https://www.ccmn.cn/news/ZX003/202609/6c53f95f48334822a6a609ebc143513a.html" title="● 【铝合金早评】伦铝沪铝联袂走强，预计今铝合金价持稳">
+                                        <span style="
+                                            white-space: nowrap;
+                                            overflow: hidden;
+                                            text-overflow: ellipsis;
+                                            flex: 1;
+                                        ">● 【铝合金早评】伦铝沪铝联袂走强，预计今铝合金价持稳</span>
+                                    </a>
+                                <div>
+                                            <span ><a href="https://www.ccmn.cn/news_铝合金.html">铝合金</a></span>
+                                            <span ><a href="https://www.ccmn.cn/news_伦铝走高.html">伦铝走高</a></span>
+                                </div>
+                            </li>
+                            <li>
+                                    <a style="
+                                        display: flex;
+                                        align-items: center;
+                                        font-weight: bold;
+                                        width: 65%;
+                                        text-decoration: none;
+                                        color: inherit;
+                                    " target="_blank" href="https://www.ccmn.cn/news/ZX003/202609/c89e9dcc48704eedaa19fc0991191451.html" title="● 【氧化铝早评】供给端产能释放，今日现货氧化铝价偏弱">
+                                        <span style="
+                                            white-space: nowrap;
+                                            overflow: hidden;
+                                            text-overflow: ellipsis;
+                                            flex: 1;
+                                        ">● 【氧化铝早评】供给端产能释放，今日现货氧化铝价偏弱</span>
+                                    </a>
+                                <div>
+                                            <span ><a href="https://www.ccmn.cn/news_氧化铝.html">氧化铝</a></span>
+                                            <span ><a href="https://www.ccmn.cn/news_供给宽松.html">供给宽松</a></span>
+                                </div>
+                            </li>
+                            <li>
+                                    <a style="
+                                        display: flex;
+                                        align-items: center;
+                                        font-weight: bold;
+                                        width: 65%;
+                                        text-decoration: none;
+                                        color: inherit;
+                                    " target="_blank" href="https://www.ccmn.cn/news/ZX003/202609/fc06d14e237e458389e4200a0b08dd41.html" title="● 【不锈钢早评】伦镍回落成本支撑减弱，今日现货不锈钢价或下跌">
+                                        <span style="
+                                            white-space: nowrap;
+                                            overflow: hidden;
+                                            text-overflow: ellipsis;
+                                            flex: 1;
+                                        ">● 【不锈钢早评】伦镍回落成本支撑减弱，今日现货不锈钢价或下跌</span>
+                                    </a>
+                                <div>
+                                            <span ><a href="https://www.ccmn.cn/news_不锈钢.html">不锈钢</a></span>
+                                            <span ><a href="https://www.ccmn.cn/news_伦镍回落.html">伦镍回落</a></span>
+                                </div>
+                            </li>
+                            <li>
+                                    <a style="
+                                        display: flex;
+                                        align-items: center;
+                                        font-weight: bold;
+                                        width: 65%;
+                                        text-decoration: none;
+                                        color: inherit;
+                                    " target="_blank" href="https://www.ccmn.cn/news/ZX003/202609/245b178a17a240e9a2bf0437b7a14a9c.html" title="● 【白银早评】美元回落工业属性加持，今日现货银价看涨">
+                                        <span style="
+                                            white-space: nowrap;
+                                            overflow: hidden;
+                                            text-overflow: ellipsis;
+                                            flex: 1;
+                                        ">● 【白银早评】美元回落工业属性加持，今日现货银价看涨</span>
+                                    </a>
+                                <div>
+                                            <span ><a href="https://www.ccmn.cn/news_白银.html">白银</a></span>
+                                            <span ><a href="https://www.ccmn.cn/news_美元回落.html">美元回落</a></span>
+                                </div>
+                            </li>
+                            <li>
+                                    <a style="
+                                        display: flex;
+                                        align-items: center;
+                                        font-weight: bold;
+                                        width: 65%;
+                                        text-decoration: none;
+                                        color: inherit;
+                                    " target="_blank" href="https://www.ccmn.cn/news/ZX003/202609/ead1468dd4ae4b13aa01ea2bf1c9b471.html" title="● 【黄金早评】美元走弱避险升温，今日现货金价看涨">
+                                        <span style="
+                                            white-space: nowrap;
+                                            overflow: hidden;
+                                            text-overflow: ellipsis;
+                                            flex: 1;
+                                        ">● 【黄金早评】美元走弱避险升温，今日现货金价看涨</span>
+                                    </a>
+                                <div>
+                                            <span ><a href="https://www.ccmn.cn/news_黄金.html">黄金</a></span>
+                                            <span ><a href="https://www.ccmn.cn/news_美元走弱.html">美元走弱</a></span>
+                                </div>
+                            </li>
+                            <li>
+                                    <a style="
+                                        display: flex;
+                                        align-items: center;
+                                        font-weight: bold;
+                                        width: 65%;
+                                        text-decoration: none;
+                                        color: inherit;
+                                    " target="_blank" href="https://www.ccmn.cn/news/ZX003/202609/90f858f68620446e852395eea983ed3d.html" title="● LME金属期货涨跌不一 伦锌领涨">
+                                        <span style="
+                                            white-space: nowrap;
+                                            overflow: hidden;
+                                            text-overflow: ellipsis;
+                                            flex: 1;
+                                        ">● LME金属期货涨跌不一 伦锌领涨</span>
+                                    </a>
+                                <div>
+                                            <span ><a href="https://www.ccmn.cn/news_铜铝锌铅锡镍.html">铜铝锌铅锡镍</a></span>
+                                </div>
+                            </li>
+                            <li>
+                                    <a style="
+                                        display: flex;
+                                        align-items: center;
+                                        font-weight: bold;
+                                        width: 65%;
+                                        text-decoration: none;
+                                        color: inherit;
+                                    " target="_blank" href="https://www.ccmn.cn/news/ZX017/202609/4aea26e34d64448699851d42a11917aa.html" title="● 9月7日，美元指数下跌">
+                                        <span style="
+                                            white-space: nowrap;
+                                            overflow: hidden;
+                                            text-overflow: ellipsis;
+                                            flex: 1;
+                                        ">● 9月7日，美元指数下跌</span>
+                                    </a>
+                                <div>
+                                </div>
+                            </li>
+                            <li>
+                                    <a style="
+                                        display: flex;
+                                        align-items: center;
+                                        font-weight: bold;
+                                        width: 65%;
+                                        text-decoration: none;
+                                        color: inherit;
+                                    " target="_blank" href="https://www.ccmn.cn/news/ZX018/202609/f1e611359ea74c178587444cfd8b6b24.html" title="● 再度延期！澳洲 Aurukun 铝土矿审批推迟至明年 2 月，1500 万吨项目命运未定">
+                                        <span style="
+                                            white-space: nowrap;
+                                            overflow: hidden;
+                                            text-overflow: ellipsis;
+                                            flex: 1;
+                                        ">● 再度延期！澳洲 Aurukun 铝土矿审批推迟至明年 2 月，1500 万吨项目命运未定</span>
+                                    </a>
+                                <div>
+                                            <span ><a href="https://www.ccmn.cn/news_铝土矿.html">铝土矿</a></span>
+                                </div>
+                            </li>
+                            <li>
+                                    <a style="
+                                        display: flex;
+                                        align-items: center;
+                                        font-weight: bold;
+                                        width: 65%;
+                                        text-decoration: none;
+                                        color: inherit;
+                                    " target="_blank" href="https://www.ccmn.cn/news/ZX018/202609/d8fa9b0e0d9940a99228c8415209a260.html" title="● 从 90% 跌至 67%！MHP 钴计价大幅回落，电池企业压价，印尼 HPAL 厂商利润承压">
+                                        <span style="
+                                            white-space: nowrap;
+                                            overflow: hidden;
+                                            text-overflow: ellipsis;
+                                            flex: 1;
+                                        ">● 从 90% 跌至 67%！MHP 钴计价大幅回落，电池企业压价，印尼 HPAL 厂商利润承压</span>
+                                    </a>
+                                <div>
+                                            <span ><a href="https://www.ccmn.cn/news_钴.html">钴</a></span>
+                                            <span ><a href="https://www.ccmn.cn/news_电池.html">电池</a></span>
+                                </div>
+                            </li>
+                            <li>
+                                    <a style="
+                                        display: flex;
+                                        align-items: center;
+                                        font-weight: bold;
+                                        width: 65%;
+                                        text-decoration: none;
+                                        color: inherit;
+                                    " target="_blank" href="https://www.ccmn.cn/news/ZX003/202609/2b7f26a91b4547a289dd4f7e2e26c31d.html" title="● 9 月 7 日动力型磷酸铁锂跌 600 元，金九旺季预期迎来现实考验">
+                                        <span style="
+                                            white-space: nowrap;
+                                            overflow: hidden;
+                                            text-overflow: ellipsis;
+                                            flex: 1;
+                                        ">● 9 月 7 日动力型磷酸铁锂跌 600 元，金九旺季预期迎来现实考验</span>
+                                    </a>
+                                <div>
+                                            <span ><a href="https://www.ccmn.cn/news_磷酸铁锂.html">磷酸铁锂</a></span>
+                                </div>
+                            </li>
+                            <li>
+                                    <a style="
+                                        display: flex;
+                                        align-items: center;
+                                        font-weight: bold;
+                                        width: 65%;
+                                        text-decoration: none;
+                                        color: inherit;
+                                    " target="_blank" href="https://www.ccmn.cn/news/ZX003/202609/1ff8e40380684847a4d8593085fd307d.html" title="● 非农数据引爆加息预期！国内贵金属大幅回调，美伊局势搅乱通胀预期">
+                                        <span style="
+                                            white-space: nowrap;
+                                            overflow: hidden;
+                                            text-overflow: ellipsis;
+                                            flex: 1;
+                                        ">● 非农数据引爆加息预期！国内贵金属大幅回调，美伊局势搅乱通胀预期</span>
+                                    </a>
+                                <div>
+                                            <span ><a href="https://www.ccmn.cn/news_贵金属.html">贵金属</a></span>
+                                </div>
+                            </li>
+                            <li>
+                                    <a style="
+                                        display: flex;
+                                        align-items: center;
+                                        font-weight: bold;
+                                        width: 65%;
+                                        text-decoration: none;
+                                        color: inherit;
+                                    " target="_blank" href="https://www.ccmn.cn/news/ZX003/202609/9761bdb8395649ac9af40c6db07ecf84.html" title="● 旺季预期遇挫！碳酸锂下5500元，供给过剩忧虑压制锂价盘面">
+                                        <span style="
+                                            white-space: nowrap;
+                                            overflow: hidden;
+                                            text-overflow: ellipsis;
+                                            flex: 1;
+                                        ">● 旺季预期遇挫！碳酸锂下5500元，供给过剩忧虑压制锂价盘面</span>
+                                    </a>
+                                <div>
+                                            <span ><a href="https://www.ccmn.cn/news_碳酸锂.html">碳酸锂</a></span>
+                                            <span ><a href="https://www.ccmn.cn/news_锂.html">锂</a></span>
+                                </div>
+                            </li>
+                            <li>
+                                    <a style="
+                                        display: flex;
+                                        align-items: center;
+                                        font-weight: bold;
+                                        width: 65%;
+                                        text-decoration: none;
+                                        color: inherit;
+                                    " target="_blank" href="https://www.ccmn.cn/news/ZX003/202609/09d67c846662413abb6955e31dc414c0.html" title="● 【锰铁日报】锰铁现货持稳，贸易商让利出货，市场信心不足">
+                                        <span style="
+                                            white-space: nowrap;
+                                            overflow: hidden;
+                                            text-overflow: ellipsis;
+                                            flex: 1;
+                                        ">● 【锰铁日报】锰铁现货持稳，贸易商让利出货，市场信心不足</span>
+                                    </a>
+                                <div>
+                                            <span ><a href="https://www.ccmn.cn/news_锰铁.html">锰铁</a></span>
+                                            <span ><a href="https://www.ccmn.cn/news_锰硅走弱.html">锰硅走弱</a></span>
+                                </div>
+                            </li>
+                            <li>
+                                    <a style="
+                                        display: flex;
+                                        align-items: center;
+                                        font-weight: bold;
+                                        width: 65%;
+                                        text-decoration: none;
+                                        color: inherit;
+                                    " target="_blank" href="https://www.ccmn.cn/news/ZX003/202609/16bd483fca014d2b93ff9e729998caab.html" title="● 【黄金日报】现货均价跌13元！美元与避险降温，黄金高位回调">
+                                        <span style="
+                                            white-space: nowrap;
+                                            overflow: hidden;
+                                            text-overflow: ellipsis;
+                                            flex: 1;
+                                        ">● 【黄金日报】现货均价跌13元！美元与避险降温，黄金高位回调</span>
+                                    </a>
+                                <div>
+                                            <span ><a href="https://www.ccmn.cn/news_黄金.html">黄金</a></span>
+                                            <span ><a href="https://www.ccmn.cn/news_高位回调.html">高位回调</a></span>
+                                </div>
+                            </li>
+                            <li>
+                                    <a style="
+                                        display: flex;
+                                        align-items: center;
+                                        font-weight: bold;
+                                        width: 65%;
+                                        text-decoration: none;
+                                        color: inherit;
+                                    " target="_blank" href="https://www.ccmn.cn/news/ZX003/202609/3b4a986c1f8a41a380f9efa8176d7924.html" title="● 【硅铁日报】硅铁报价普遍下调，钢厂压价采购">
+                                        <span style="
+                                            white-space: nowrap;
+                                            overflow: hidden;
+                                            text-overflow: ellipsis;
+                                            flex: 1;
+                                        ">● 【硅铁日报】硅铁报价普遍下调，钢厂压价采购</span>
+                                    </a>
+                                <div>
+                                            <span ><a href="https://www.ccmn.cn/news_硅铁.html">硅铁</a></span>
+                                            <span ><a href="https://www.ccmn.cn/news_供应回升.html">供应回升</a></span>
+                                </div>
+                            </li>
+                            <li>
+                                    <a style="
+                                        display: flex;
+                                        align-items: center;
+                                        font-weight: bold;
+                                        width: 65%;
+                                        text-decoration: none;
+                                        color: inherit;
+                                    " target="_blank" href="https://www.ccmn.cn/news/ZX003/202609/5b79f924c8b94f2881c09480348f9ed7.html" title="● 【不锈钢日报】铬铁价格坚挺成本中性，304/2B小涨50元">
+                                        <span style="
+                                            white-space: nowrap;
+                                            overflow: hidden;
+                                            text-overflow: ellipsis;
+                                            flex: 1;
+                                        ">● 【不锈钢日报】铬铁价格坚挺成本中性，304/2B小涨50元</span>
+                                    </a>
+                                <div>
+                                            <span ><a href="https://www.ccmn.cn/news_不锈钢.html">不锈钢</a></span>
+                                            <span ><a href="https://www.ccmn.cn/news_成本中性.html">成本中性</a></span>
+                                </div>
+                            </li>
+                </ul>
+
+            </div>
+            <div style="width: 595px;" class="right clearfloat">
+                <!--1-->
+                <div class="news_wrap right" style="margin-top: 10px;">
+                    <div class="news-title clearfloat">
+                        <span><a href="javascript:void(0);">稀有金属</a></span>
+                        <span><a target="_blank" href="//www.ccmn.cn/xiaojinshu/">小金属</a></span>
+                    </div>
+                    <div class="tagContent" id="tagContent">
+                        <div class="news_box">
+                            <ul class="news_content">
+                                        <li>
+                                            <a target="_blank"
+                                               href="//www.ccmn.cn/xiaojinshu/xiaojinshuprice/2026-09-08/776c30c7cf8e4d278c505e233aaa7c3d.html"
+                                               title="09月08日长江综合铟价格行情参考">09月08日长江综合铟价格行情参考</a>
+                                            <small class="right">10:56</small>
+                                        </li>
+                                        <li>
+                                            <a target="_blank"
+                                               href="//www.ccmn.cn/xiaojinshu/xiaojinshuprice/2026-09-08/bb9b1bf9440248edb19fde58879f9562.html"
+                                               title="09月08日长江综合镓价格行情参考">09月08日长江综合镓价格行情参考</a>
+                                            <small class="right">10:56</small>
+                                        </li>
+                                        <li>
+                                            <a target="_blank"
+                                               href="//www.ccmn.cn/xiaojinshu/xiaojinshuprice/2026-09-08/f461d56af8db4fe99f4e90d993c3be0a.html"
+                                               title="09月08日长江综合1#铋价格行情参考">09月08日长江综合1#铋价格行情参考</a>
+                                            <small class="right">10:56</small>
+                                        </li>
+                                        <li>
+                                            <a target="_blank"
+                                               href="//www.ccmn.cn/xiaojinshu/xiaojinshuprice/2026-09-08/275e4c121c504d3c80e9326a8202ec2a.html"
+                                               title="09月08日长江综合碲价格行情参考">09月08日长江综合碲价格行情参考</a>
+                                            <small class="right">10:56</small>
+                                        </li>
+                                        <li>
+                                            <a target="_blank"
+                                               href="//www.ccmn.cn/xiaojinshu/xiaojinshuprice/2026-09-08/5275947ca6634393a1b369724a77e2d1.html"
+                                               title="09月08日长江综合1#钴价格行情参考">09月08日长江综合1#钴价格行情参考</a>
+                                            <small class="right">10:56</small>
+                                        </li>
+                                        <li>
+                                            <a target="_blank"
+                                               href="//www.ccmn.cn/xiaojinshu/xiaojinshuprice/2026-09-08/207cf28006624ebbb81c68b5c389a687.html"
+                                               title="09月08日长江综合锗价格行情参考">09月08日长江综合锗价格行情参考</a>
+                                            <small class="right">10:56</small>
+                                        </li>
+                                        <li>
+                                            <a target="_blank"
+                                               href="//www.ccmn.cn/xiaojinshu/xiaojinshuprice/2026-09-08/9f1e4a51385f41369b3e63d73adef88d.html"
+                                               title="09月08日长江综合电解锰(99.7%袋装)价格行情参考">09月08日长江综合电解锰(99.7%袋装)价格行情参考</a>
+                                            <small class="right">10:56</small>
+                                        </li>
+                                        <li>
+                                            <a target="_blank"
+                                               href="//www.ccmn.cn/xiaojinshu/xiaojinshuprice/2026-09-08/f983578d963644af994cc68cb88362a2.html"
+                                               title="09月08日长江综合1#镁价格行情参考">09月08日长江综合1#镁价格行情参考</a>
+                                            <small class="right">10:56</small>
+                                        </li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!--2-->
+                <div class="news_wrap left" style="margin-top: 10px;">
+                    <div class="news-title clearfloat">
+                        <span><a href="javascript:void(0);">有色金属</a></span>
+                        <span><a target="_blank" href="//copper.ccmn.cn/copperprice/">铜</a></span>
+                        <span><a target="_blank" href="//alu.ccmn.cn/aluprice/">铝</a></span>
+                        <span><a target="_blank" href="//zn.ccmn.cn/znprice/">锌</a></span>
+                        <span><a target="_blank" href="//pb.ccmn.cn/pbprice/">铅</a></span>
+                        <span><a target="_blank" href="//sn.ccmn.cn/snprice/">锡</a></span>
+                        <span><a target="_blank" href="//ni.ccmn.cn/niprice/">镍</a></span>
+                    </div>
+                    <div class="tagContent" id="tagContent1">
+
+                        <div class="news_box">
+                            <ul class="news_content">
+                                    <li>
+                                        <a target="_blank" href="//pb.ccmn.cn/pbprice/2026-09-08/246675c280a040f085ee53d345864b88.html"
+                                           title="09月08日佛山铅价格行情参考">09月08日佛山铅价格行情参考</a>
+                                        <small class="right">11:21</small>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="//copper.ccmn.cn/copperprice/2026-09-08/2cc21fc4d4f34dfd9503656ee26f8836.html"
+                                           title="09月08日佛山铜价格行情参考">09月08日佛山铜价格行情参考</a>
+                                        <small class="right">11:21</small>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="//ni.ccmn.cn/niprice/2026-09-08/cebe32c04e744a31b7f80ac166d2ff59.html"
+                                           title="09月08日长江综合镍价格行情参考">09月08日长江综合镍价格行情参考</a>
+                                        <small class="right">10:56</small>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="//pb.ccmn.cn/pbprice/2026-09-08/844ca1c9bdf14c00af097dac0b508d94.html"
+                                           title="09月08日长江综合铅价格行情参考">09月08日长江综合铅价格行情参考</a>
+                                        <small class="right">10:56</small>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="//sn.ccmn.cn/snprice/2026-09-08/16c12dd9778241da96396eb5f1e8d112.html"
+                                           title="09月08日长江综合锡价格行情参考">09月08日长江综合锡价格行情参考</a>
+                                        <small class="right">10:56</small>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="//zn.ccmn.cn/znprice/2026-09-08/17852252a82e47d89e1a4822d54ef4e2.html"
+                                           title="09月08日长江综合锌价格行情参考">09月08日长江综合锌价格行情参考</a>
+                                        <small class="right">10:56</small>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="//alu.ccmn.cn/aluprice/2026-09-08/4420624eb3964569beba2cde47d0ffb2.html"
+                                           title="09月08日长江综合铝锭价格行情参考">09月08日长江综合铝锭价格行情参考</a>
+                                        <small class="right">10:56</small>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="//copper.ccmn.cn/copperprice/2026-09-08/fcc611458662415e9a54e11177f450e2.html"
+                                           title="09月08日长江综合铜价格行情参考">09月08日长江综合铜价格行情参考</a>
+                                        <small class="right">10:56</small>
+                                    </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--3-->
+                <div class="news_wrap right" style="margin-left:5px;">
+                    <div class="news-title clearfloat">
+                        <span><a target="_blank" href="/priceinfo/jskc">金属矿产</a></span>
+                    </div>
+                    <div class="tagContent" id="tagContent2">
+                        <div class="news_box">
+                            <ul class="news_content">
+                                        <li>
+                                            <a target="_blank" href="//www.ccmn.cn/jskc/jskcprice/2026-09-08/57fe147335b046908c2ef201ca8242d4.html"
+                                               title="09月08日西安铜精矿(35%)价格行情参考">09月08日西安铜精矿(35%)价格行情参考</a>
+                                            <small class="right">10:41</small>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" href="//www.ccmn.cn/jskc/jskcprice/2026-09-08/e30ee2a6ebde4050b3257e32959a3215.html"
+                                               title="09月08日西安锌精矿(51%)价格行情参考">09月08日西安锌精矿(51%)价格行情参考</a>
+                                            <small class="right">10:41</small>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" href="//www.ccmn.cn/jskc/jskcprice/2026-09-08/fe448ce8f7d544789bd9cc4ae8eeb5f8.html"
+                                               title="09月08日昆明铜精矿(18-25%)价格行情参考">09月08日昆明铜精矿(18-25%)价格行情参考</a>
+                                            <small class="right">10:41</small>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" href="//www.ccmn.cn/jskc/jskcprice/2026-09-08/e568307b560a4e7fbffcaf0dc297f882.html"
+                                               title="09月08日昆明粗锌(98.5%)价格行情参考">09月08日昆明粗锌(98.5%)价格行情参考</a>
+                                            <small class="right">10:41</small>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" href="//www.ccmn.cn/jskc/jskcprice/2026-09-08/d765ac4ce1144378bce56cabc63b9ecc.html"
+                                               title="09月08日昆明锌精矿(45%)价格行情参考">09月08日昆明锌精矿(45%)价格行情参考</a>
+                                            <small class="right">10:41</small>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" href="//www.ccmn.cn/jskc/jskcprice/2026-09-08/fba9472e4afe4b738ed132a1181637e8.html"
+                                               title="09月08日昆明锌精矿(49%)价格行情参考">09月08日昆明锌精矿(49%)价格行情参考</a>
+                                            <small class="right">10:41</small>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" href="//www.ccmn.cn/jskc/jskcprice/2026-09-08/f9ed61b6d1fd4cc88e4151956fd1286c.html"
+                                               title="09月08日昆明铅精矿(65%)价格行情参考">09月08日昆明铅精矿(65%)价格行情参考</a>
+                                            <small class="right">10:41</small>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" href="//www.ccmn.cn/jskc/jskcprice/2026-09-08/015c12e2a9534c558dbf6eb30dfd0783.html"
+                                               title="09月08日昆明锌精矿(55%)价格行情参考">09月08日昆明锌精矿(55%)价格行情参考</a>
+                                            <small class="right">10:41</small>
+                                        </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--4-->
+                <div class="news_wrap left">
+                    <div class="news-title clearfloat">
+                        <span><a target="_blank" href="https://www.ccmn.cn/priceinfo/fjjs">废旧金属</a></span>
+                        <span><a target="_blank" href="//copper.ccmn.cn/feitong/">废铜</a></span>
+                        <span><a target="_blank" href="//alu.ccmn.cn/feilv/">废铝</a></span>
+                        <span><a target="_blank" href="//zn.ccmn.cn/feixin/">废锌</a></span>
+                        <span><a target="_blank" href="//pb.ccmn.cn/feiqian/">废铅</a></span>
+                        <span><a target="_blank" href="//sn.ccmn.cn/feixi/">废锡</a></span>
+                        <span><a target="_blank" href="//ni.ccmn.cn/feinie/">废镍</a></span>
+                    </div>
+                    <div class="tagContent" id="tagContent3">
+
+                        <div class="news_box">
+                            <ul class="news_content">
+
+                                    <li>
+                                        <a target="_blank" href="//alu.ccmn.cn/feilv/2026-09-08/76779359e6354b04aa8fd213e141fdc7.html"
+                                           title="09月08日湖北废铝价格行情参考">09月08日湖北废铝价格行情参考</a>
+                                        <small class="right">11:24</small>
+                                    </li>
+
+                                    <li>
+                                        <a target="_blank" href="/2026-09-08/42aaa7213ec244ec834958f882fb999d.html"
+                                           title="09月08日湖北废铁价格行情参考">09月08日湖北废铁价格行情参考</a>
+                                        <small class="right">11:24</small>
+                                    </li>
+
+                                    <li>
+                                        <a target="_blank" href="//www.ccmn.cn/bxg/feibxg/2026-09-08/8a870cc4d433482d9b6404985ee9e464.html"
+                                           title="09月08日安徽废不锈钢价格行情参考">09月08日安徽废不锈钢价格行情参考</a>
+                                        <small class="right">11:24</small>
+                                    </li>
+
+                                    <li>
+                                        <a target="_blank" href="//copper.ccmn.cn/feitong/2026-09-08/eb62340abe45470690366655ecc6ad8e.html"
+                                           title="09月08日湖北废铜价格行情参考">09月08日湖北废铜价格行情参考</a>
+                                        <small class="right">11:24</small>
+                                    </li>
+
+                                    <li>
+                                        <a target="_blank" href="//pb.ccmn.cn/feiqian/2026-09-08/21a3c58822944f50a975c50a6073f739.html"
+                                           title="09月08日安徽废铅价格行情参考">09月08日安徽废铅价格行情参考</a>
+                                        <small class="right">11:24</small>
+                                    </li>
+
+                                    <li>
+                                        <a target="_blank" href="/2026-09-08/a99c7823fedd4305952a75175356de02.html"
+                                           title="09月08日安徽废铁价格行情参考">09月08日安徽废铁价格行情参考</a>
+                                        <small class="right">11:24</small>
+                                    </li>
+
+                                    <li>
+                                        <a target="_blank" href="//ni.ccmn.cn/feinie/2026-09-08/edfabfcc589a4b128db6b5578ca4f492.html"
+                                           title="09月08日河南废镍价格行情参考">09月08日河南废镍价格行情参考</a>
+                                        <small class="right">11:24</small>
+                                    </li>
+
+                                    <li>
+                                        <a target="_blank" href="//alu.ccmn.cn/feilv/2026-09-08/81688111694b4c2db124e4c780898f56.html"
+                                           title="09月08日河南废铝价格行情参考">09月08日河南废铝价格行情参考</a>
+                                        <small class="right">11:24</small>
+                                    </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--5-->
+                <div class="news_wrap right" style="margin-left:5px;">
+                    <div class="news-title clearfloat">
+                        <span><a target="_blank" href="/priceinfo/jshhw/">金属化合物</a></span>
+                        <span><a target="_blank" href="https://www.ccmn.cn/priceinfo/jsfm">金属粉末</a></span>
+                    </div>
+                    <div class="tagContent" id="tagContent4">
+                        <div class="news_box">
+                            <ul class="news_content">
+                                    <li>
+                                        <a target="_blank" href="//www.ccmn.cn/jshhw/jshhwprice/2026-09-08/0f94fefea3de4e3ea24818aa4ed6c788.html"
+                                           title="09月08日长江综合金属化合物价格行情参考">09月08日长江综合金属化合物价格行情参考</a>
+                                        <small class="right">10:56</small>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="//www.ccmn.cn/jshhw/jshhwprice/2026-09-08/04b19335225446c48c5944c80f9a7647.html"
+                                           title="09月08日广州金属化合物价格行情参考">09月08日广州金属化合物价格行情参考</a>
+                                        <small class="right">10:41</small>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="//www.ccmn.cn/jshhw/jshhwprice/2026-09-08/26cd8b177f0f4f00be95896090f33c32.html"
+                                           title="09月08日长江金属化合物价格行情参考">09月08日长江金属化合物价格行情参考</a>
+                                        <small class="right">10:16</small>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="//www.ccmn.cn/jshhw/jshhwprice/2026-09-07/750da38dab06492fbde70102a493757c.html"
+                                           title="09月07日上海地区金属化合物价格行情参考">09月07日上海地区金属化合物价格行情参考</a>
+                                        <small class="right">13:49</small>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="//www.ccmn.cn/jshhw/jshhwprice/2026-09-07/3ba4d205219b4b8aa3d91cf296067df5.html"
+                                           title="09月07日陕西有色金属化合物价格行情参考">09月07日陕西有色金属化合物价格行情参考</a>
+                                        <small class="right">13:49</small>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="//www.ccmn.cn/jshhw/jshhwprice/2026-09-07/5dd124ad0ebf4aed9541608dc9f47b1b.html"
+                                           title="09月07日安徽有色金属化合物价格行情参考">09月07日安徽有色金属化合物价格行情参考</a>
+                                        <small class="right">13:49</small>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="//www.ccmn.cn/jshhw/jshhwprice/2026-09-07/fe9b29aa6eb54a94b9d126a0f30fd634.html"
+                                           title="09月07日山东有色金属化合物价格行情参考">09月07日山东有色金属化合物价格行情参考</a>
+                                        <small class="right">13:49</small>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" href="//www.ccmn.cn/jshhw/jshhwprice/2026-09-07/c788679de69f4eebb35621ab2de1d8cb.html"
+                                           title="09月07日湖南有色金属化合物价格行情参考">09月07日湖南有色金属化合物价格行情参考</a>
+                                        <small class="right">13:49</small>
+                                    </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--6-->
+                <div class="news_wrap left">
+                    <div class="news-title clearfloat">
+                        <span><a target="_blank" href="/tiehejin/">铁合金</a></span>
+                        <span><a target="_blank" href="/bxg/">不锈钢</a></span>
+                        <span><a target="_blank" href="/luliao/">炉料</a></span>
+                    </div>
+                    <div class="tagContent" id="tagContent5">
+                        <div class="news_box">
+                            <ul class="news_content">
+                                    <li>
+                                        <a target="_blank"
+                                           href="/tiehejin/tiehejinprice/2026-09-07/a559e0bf1d674a18bb153c70a0a932f0.html"
+                                           title="09月07日无锡铁合金钼铁价格行情参考">09月07日无锡铁合金钼铁价格行情参考</a>
+                                        <small class="right">12:46</small>
+                                    </li>
+                                    <li>
+                                        <a target="_blank"
+                                           href="/tiehejin/tiehejinprice/2026-09-07/95af4deb6b684407909a1a9fe197ee83.html"
+                                           title="09月07日无锡铁合金铬铁价格行情参考">09月07日无锡铁合金铬铁价格行情参考</a>
+                                        <small class="right">12:46</small>
+                                    </li>
+                                    <li>
+                                        <a target="_blank"
+                                           href="/tiehejin/tiehejinprice/2026-09-07/75360ee4a7464ac99f442b3916f3bff4.html"
+                                           title="09月07日无锡铁合金硅铁价格行情参考">09月07日无锡铁合金硅铁价格行情参考</a>
+                                        <small class="right">12:46</small>
+                                    </li>
+                                    <li>
+                                        <a target="_blank"
+                                           href="/tiehejin/tiehejinprice/2026-09-07/6b81fe3948ab4119afff939ad328835c.html"
+                                           title="09月07日太原铁合金钛铁价格行情参考">09月07日太原铁合金钛铁价格行情参考</a>
+                                        <small class="right">12:46</small>
+                                    </li>
+                                    <li>
+                                        <a target="_blank"
+                                           href="/bxg/bxgprice/2026-09-07/fbe2eaf2203c47eabd52036c6abc54f0.html"
+                                           title="09月07日太原太钢不锈钢304/NO1平板价格行情参考">09月07日太原太钢不锈钢304/NO1平板价格行情参考</a>
+                                        <small class="right">12:46</small>
+                                    </li>
+                                    <li>
+                                        <a target="_blank"
+                                           href="/bxg/bxgprice/2026-09-07/fa3b06fee23248999dacb67e304e9d3b.html"
+                                           title="09月07日佛山张浦不锈钢304/NO1卷板价格行情参考">09月07日佛山张浦不锈钢304/NO1卷板价格行情参考</a>
+                                        <small class="right">12:46</small>
+                                    </li>
+                                    <li>
+                                        <a target="_blank"
+                                           href="/bxg/bxgprice/2026-09-07/f3b3fb0ea4fc4674b8d27f237d533541.html"
+                                           title="09月07日无锡联众不锈钢316L/2B卷板价格行情参考">09月07日无锡联众不锈钢316L/2B卷板价格行情参考</a>
+                                        <small class="right">12:46</small>
+                                    </li>
+                                    <li>
+                                        <a target="_blank"
+                                           href="/bxg/bxgprice/2026-09-07/e9467e96d0ef4bd190d1115854e396b8.html"
+                                           title="09月07日无锡宝新不锈钢304/2B平板价格行情参考">09月07日无锡宝新不锈钢304/2B平板价格行情参考</a>
+                                        <small class="right">12:46</small>
+                                    </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content4">
+        <div class="comWidth" style="position: relative;">
+        </div>
+    </div>
+    <div class="content5">
+        <div class="comWidth">
+
+            <div class="content5-foot">
+                <label>各地行情</label>
+                <div>
+                    <div class="content5-foot-map" style="border-top: 2px solid #e5e5e5;">
+                        <a target="_blank" href="https://copper.ccmn.cn/copperprice/"
+                           style="border-right: none;font-weight: bold;">今日铜价格：</a>
+                        <a target="_blank" href="https://copper.ccmn.cn/copperprice/cjxh/">长江铜价格</a>
+                        <a target="_blank" href="https://copper.ccmn.cn/copperprice/gdxh/">广东铜价格</a>
+                        <a target="_blank" href="https://copper.ccmn.cn/copperprice/fsxh/">佛山铜价格</a>
+                        <a target="_blank" href="https://copper.ccmn.cn/copperprice/kmxh/">昆明铜价格 </a>
+                        <a target="_blank" href="https://copper.ccmn.cn/copperprice/syxh/">沈阳铜价格</a>
+                        <a target="_blank" href="https://copper.ccmn.cn/copperprice/cqxh/">重庆铜价格</a>
+                        <a target="_blank" href="https://copper.ccmn.cn/copperprice/xnxh/">西安铜价格</a>
+                        <a target="_blank" href="https://copper.ccmn.cn/copperprice/whxh/">武汉铜价格 </a>
+                        <a target="_blank" href="https://copper.ccmn.cn/copperprice/tjxh/" style="border-right: none;">天津铜价格</a>
+                    </div>
+                    <div class="content5-foot-map go-out">
+                        <a></a>
+                        <a target="_blank" href="https://copper.ccmn.cn/copperprice/wxxh/">无锡铜价格 </a>
+                        <a target="_blank" href="https://copper.ccmn.cn/copperprice/bjxh/">北京铜价格</a>
+                        <a target="_blank" href="https://copper.ccmn.cn/copperprice/cjysw/">长江有色网铜价格</a>
+                        <a target="_blank" href="https://copper.ccmn.cn/copperprice/shdc/">上海地区铜价格</a>
+                        <a target="_blank" href="https://copper.ccmn.cn/copperprice/gzxh/">广州铜价格</a>
+                        <a target="_blank" href="https://copper.ccmn.cn/copperprice/jnxh/">济南铜价格 </a>
+                        <a target="_blank" href="https://copper.ccmn.cn/copperprice/gjsc/">国际铜价格</a>
+                        <a target="_blank" href="https://copper.ccmn.cn/copperprice/jcgs/">金川铜价格</a>
+                        <a target="_blank" style="border-right: none;" href="https://copper.ccmn.cn/tongjiagong/shdc/">上海加工材价格</a>
+                    </div>
+                    <div class="content5-foot-map go-out">
+                        <a></a>
+                        <a target="_blank" href="https://copper.ccmn.cn/tongjiagong/tjxh/">天津加工材价格</a>
+                        <a target="_blank" href="https://copper.ccmn.cn/tongjiagong/cjxh/">长江铜材价格</a>
+                        <a target="_blank" href="https://copper.ccmn.cn/tongjiagong/fsxh/">佛山铜材价格</a>
+                        <a target="_blank" href="https://copper.ccmn.cn/tongjiagong/hebfl/">河北铜材价格</a>
+                        <a target="_blank" href="https://copper.ccmn.cn/tongjiagong/shfl/">上海铜材价格 </a>
+                        <a target="_blank" href="https://copper.ccmn.cn/tongjiagong/tzfl/">台州铜材价格</a>
+                        <a target="_blank" href="https://copper.ccmn.cn/tongjiagong/whxh/">武汉铜材价格</a>
+                        <a target="_blank" href="https://copper.ccmn.cn/tongjiagong/tjfl/">天津铜材价格 </a>
+                        <a target="_blank" style="border-right: none;" href="https://copper.ccmn.cn/tongjiagong/jnxh/">济南铜材价格 </a>
+                    </div>
+                    <div class="content5-foot-map">
+                        <a></a>
+                        <a target="_blank" href="https://copper.ccmn.cn/tongjiagong/syxh/">沈阳铜材价格</a>
+                        <a target="_blank" href="https://copper.ccmn.cn/tongjingkuang/shdc/">上海铜精矿价格</a>
+                        <a target="_blank" href="https://copper.ccmn.cn/tongjingkuang/gdkc/">各地矿产铜精矿价格</a>
+                        <a target="_blank" href="https://copper.ccmn.cn/tongjingkuang/xnxh/">西安铜精矿价格</a>
+                        <a style="border-right: none;color:#ff7700;" class="go-out-btn">展示全部>></a></div>
+                </div>
+
+                <div>
+                    <div class="content5-foot-map" style="border-top: 2px solid #e5e5e5;">
+                        <a target="_blank" style="border-right: none;font-weight: bold;"
+                           href="https://alu.ccmn.cn/aluprice/">今日铝价格：</a>
+                        <a target="_blank" href="https://alu.ccmn.cn/aluprice/cjxh/">长江铝锭价格</a>
+                        <a target="_blank" href="https://alu.ccmn.cn/aluprice/zlgs/">中铝铝锭价格</a>
+                        <a target="_blank" href="https://alu.ccmn.cn/aluprice/fsxh/">佛山铝锭价格</a>
+                        <a target="_blank" href="https://alu.ccmn.cn/aluprice/gdxh/">广东铝锭价格</a>
+                        <a target="_blank" href="/data/">广州铝锭价格</a>
+                        <a target="_blank" href="https://alu.ccmn.cn/aluprice/shdc/">上海地区铝锭价格</a>
+                        <a target="_blank" href="https://alu.ccmn.cn/aluprice/tjxh/">天津铝锭价格</a>
+                        <a target="_blank" href="https://alu.ccmn.cn/aluprice/syxh/">沈阳铝锭价格</a>
+                        <a target="_blank" style="border-right: none;" href="https://alu.ccmn.cn/aluprice/cjysw/">长江有色网铝锭价格</a>
+                    </div>
+                    <div class="content5-foot-map go-out">
+                        <a></a>
+                    </div>
+                    <div class="content5-foot-map" style="border-bottom: 1px solid #e5e5e5;">
+                        <a></a>
+                        <a target="_blank" href="https://alu.ccmn.cn/aluprice/cqxh/">重庆铝锭价格</a>
+                        <a target="_blank" href="https://alu.ccmn.cn/aluprice/xnxh/">西安铝锭价格</a>
+                        <a target="_blank" href="https://alu.ccmn.cn/aluprice/bjxh/">北京铝锭价格</a>
+                        <a target="_blank" href="https://alu.ccmn.cn/aluprice/jnxh/">济南铝锭价格</a>
+                        <a target="_blank" href="https://alu.ccmn.cn/aluprice/wxxh/">无锡铝锭价格</a>
+                        <a target="_blank" href="https://alu.ccmn.cn/lvhejin/cjxh/">长江铝锭合金价格</a>
+                        <a target="_blank" href="https://alu.ccmn.cn/lvhejin/fsxh/">佛山铝锭合金价格</a>
+                        <a target="_blank" href="https://alu.ccmn.cn/lvhejin/tzfl/">台州铝锭合金价格</a>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="content5-foot-map" style="border-top: 2px solid #e5e5e5;">
+                        <a style="border-right: none;font-weight: bold;" href="/data/">今日锌价格：</a>
+                        <a target="_blank" href="https://zn.ccmn.cn/znprice/cjxh/">长江锌价格</a>
+                        <a target="_blank" href="https://zn.ccmn.cn/znprice/fsxh/">佛山锌价格</a>
+                        <a target="_blank" href="https://zn.ccmn.cn/znprice/gdxh/">广东锌价格</a>
+                        <a target="_blank" href="/data/">广州锌价格</a>
+                        <a target="_blank" href="https://zn.ccmn.cn/znprice/shdc/">上海地区锌价格</a>
+                        <a target="_blank" href="https://zn.ccmn.cn/znprice/tjxh/">天津锌价格</a>
+                        <a target="_blank" href="https://zn.ccmn.cn/znprice/syxh/">沈阳锌价格</a>
+                        <a target="_blank" href="https://zn.ccmn.cn/znprice/cqxh/">重庆锌价格</a>
+                        <a target="_blank" style="border-right: none;" href="https://zn.ccmn.cn/znprice/cjysw/">长江有色网锌价格</a>
+                    </div>
+                    <div class="content5-foot-map">
+                        <a></a>
+                        <a target="_blank" href="https://zn.ccmn.cn/znprice/xnxh/">西安锌价格</a>
+                        <a target="_blank" href="https://zn.ccmn.cn/znprice/bjxh/">北京锌价格</a>
+                        <a target="_blank" href="https://zn.ccmn.cn/znprice/whxh/">武汉锌价格</a>
+                        <a target="_blank" href="https://zn.ccmn.cn/znprice/jnxh/">济南锌价格</a>
+                        <a target="_blank" style="border-right: none;" href="https://zn.ccmn.cn/znprice/wxxh/">无锡锌价格</a>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="content5-foot-map" style="border-top: 2px solid #e5e5e5;">
+                        <a target="_blank" style="border-right: none;font-weight: bold;" href="https://pb.ccmn.cn/pbprice/">今日铅价格：</a>
+                        <a target="_blank" href="https://pb.ccmn.cn/pbprice/cjxh/">长江铅价格</a>
+                        <a target="_blank" href="https://pb.ccmn.cn/pbprice/fsxh/">佛山铅价格</a>
+                        <a target="_blank" href="https://pb.ccmn.cn/pbprice/gdxh/">广东铅价格</a>
+                        <a target="_blank" href="/data/">广州铅价格</a>
+                        <a target="_blank" href="https://pb.ccmn.cn/pbprice/shdc/">上海地区铅价格</a>
+                        <a target="_blank" href="https://pb.ccmn.cn/pbprice/tjxh/">天津铅价格</a>
+                        <a target="_blank" href="https://pb.ccmn.cn/pbprice/syxh/">沈阳铅价格</a>
+                        <a target="_blank" href="https://pb.ccmn.cn/pbprice/cqxh/">重庆铅价格</a>
+                        <a target="_blank" style="border-right: none;" href="https://pb.ccmn.cn/pbprice/cjysw/">长江有色网铅价格</a>
+                    </div>
+                    <div class="content5-foot-map">
+                        <a></a>
+                        <a target="_blank" href="https://pb.ccmn.cn/pbprice/xnxh/">西安铅价格</a>
+                        <a target="_blank" href="https://pb.ccmn.cn/pbprice/bjxh/">北京铅价格</a>
+                        <a target="_blank" href="https://pb.ccmn.cn/pbprice/whxh/">武汉铅价格</a>
+                        <a target="_blank" href="https://pb.ccmn.cn/pbprice/jnxh/">济南铅价格</a>
+                        <a target="_blank" style="border-right: none;" href="https://pb.ccmn.cn/pbprice/wxxh/">无锡铅价格</a>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="content5-foot-map" style="border-top: 2px solid #e5e5e5;">
+                        <a target="_blank" style="border-right: none;font-weight: bold;" href="https://sn.ccmn.cn/snprice/">今日锡价格：</a>
+                        <a target="_blank" href="https://sn.ccmn.cn/snprice/cjxh/">长江锡价格</a>
+                        <a target="_blank" href="https://sn.ccmn.cn/snprice/mlxa/">马来西亚锡价格</a>
+                        <a target="_blank" href="https://sn.ccmn.cn/snprice/gdxh/">广东锡价格</a>
+                        <a target="_blank" href="https://sn.ccmn.cn/snprice/shdc/">上海地区锡价格</a>
+                        <a target="_blank" href="https://sn.ccmn.cn/snprice/tjxh/">天津锡价格</a>
+                        <a target="_blank" href="https://sn.ccmn.cn/snprice/syxh/">沈阳锡价格</a>
+                        <a target="_blank" href="https://sn.ccmn.cn/snprice/bjxh/">北京锡价格</a>
+                        <a target="_blank" href="https://sn.ccmn.cn/snprice/whxh/">武汉锡价格</a>
+                        <a target="_blank" style="border-right: none;" href="https://sn.ccmn.cn/snprice/cjysw/">长江有色网锡价格</a>
+                    </div>
+                    <div class="content5-foot-map">
+                        <a></a>
+                        <a target="_blank" style="border-right: none;" href="https://sn.ccmn.cn/snprice/wxxh/">无锡锡价格</a>
+                        <a target="_blank" href="https://sn.ccmn.cn/snprice/gzxh/">广州锡价格</a>
+                        <a target="_blank" href="https://sn.ccmn.cn/snprice/jnxh/">济南锡价格</a>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="content5-foot-map" style="border-top: 2px solid #e5e5e5;">
+                        <a target="_blank" style="border-right: none;font-weight: bold;" href="https://ni.ccmn.cn/niprice/">今日镍价格：</a>
+                        <a target="_blank" href="https://ni.ccmn.cn/niprice/cjxh/">长江镍价格</a>
+                        <a target="_blank" href="https://ni.ccmn.cn/niprice/jcgs/">金川镍价格</a>
+                        <a target="_blank" href="https://ni.ccmn.cn/niprice/gdxh/">广东镍价格</a>
+                        <a target="_blank" href="https://ni.ccmn.cn/niprice/gzxh/">广州镍价格</a>
+                        <a target="_blank" href="https://ni.ccmn.cn/niprice/shdc/">上海地区镍价格</a>
+                        <a target="_blank" href="https://ni.ccmn.cn/niprice/tjxh/">天津镍价格</a>
+                        <a target="_blank" href="https://ni.ccmn.cn/niprice/syxh/">沈阳镍价格</a>
+                        <a target="_blank" href="https://ni.ccmn.cn/niprice/cwxh/">重庆镍价格</a>
+                        <a target="_blank" style="border-right: none;" href="https://ni.ccmn.cn/niprice/cjysw/">长江有色网镍价格</a>
+                    </div>
+                    <div class="content5-foot-map">
+                        <a></a>
+                        <a target="_blank" href="https://ni.ccmn.cn/niprice/xnxh/">西安镍价格</a>
+                        <a target="_blank" href="https://ni.ccmn.cn/niprice/bjxh/">北京镍价格</a>
+                        <a target="_blank" href="https://ni.ccmn.cn/niprice/whxh/">武汉镍价格</a>
+                        <a target="_blank" href="https://ni.ccmn.cn/niprice/jnxh/">济南镍价格</a>
+                        <a target="_blank" style="border-right: none;" href="https://ni.ccmn.cn/niprice/wxxh/">无锡镍价格</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="bottomBar">
+        <div id="page_foot"></div>
+    </div>
+    <div class="bottom_ad">
+        <div class="fluctuat_title1 comWidth clearfloat">
+            <label>友情链接：</label>
+            <div class="fluctuat_broadcast1">
+                <ul>
+                            <li style="margin-top: 0px;">
+                                    <a href="https://finance.sina.com.cn/futuremarket/" target="_blank"
+                                       order-index="6">新浪期货</a>
+                                    <a href="http://www.zhijinwang.com/" target="_blank"
+                                       order-index="6">中国纸金网</a>
+                                    <a href="https://alu.ccmn.cn" target="_blank"
+                                       order-index="6">铝锭价格</a>
+                                    <a href="https://www.shmet.com/" target="_blank"
+                                       order-index="5">上海金属网</a>
+                                    <a href="http://www.jc001.cn/" target="_blank"
+                                       order-index="5">九正建材网</a>
+                                    <a href="https://www.ccmn.cn" target="_blank"
+                                       order-index="4">中国有色网</a>
+                                    <a href="https://www.fx678.com/" target="_blank"
+                                       order-index="2">汇通网</a>
+                                    <a href="http://copper.ccmn.cn" target="_blank"
+                                       order-index="-">今日铜价</a>
+                            </li>
+                </ul>
+            </div>
+            <a class="right more_link" href="/helpCenter/friend_link.html" target="_blank">更多>></a>
+        </div>
+    </div>
+    <div class="container" id="contain" style="display: none;">
+        <div class="con_top">
+            <p>你使用的浏览器版本过低</p>
+        </div>
+        <div class="con_mid">
+            <p>为保障你的浏览体验，建议你立即升级你的浏览器！</p>
+            <label><img src="//static.ccmn.cn/images/warn.png">微软已经停止对IE6~8的安全更新，你的浏览器可能存在安全危险</label>
+        </div>
+        <div class="con_foot">
+            <ul class="hlist">
+                <li>
+                    <a href="https://www.google.cn/intl/zh-CN/chrome/" title="谷歌浏览器" class="browser">
+                        <img src="//static.ccmn.cn/images/geogle.jpg" alt="chrome">
+                        <p>Google Chrome</p>
+                    </a>
+                    <a href="https://www.google.cn/intl/zh-CN/chrome/" title="下载" class="btn">下载更新</a>
+                </li>
+                <li>
+                    <a href="https://www.firefox.com.cn/" title="火狐浏览器" class="browser" o2tag="34">
+                        <img src="//static.ccmn.cn/images/huohu.png" alt="火狐浏览器">
+                        <p>火狐浏览器</p>
+                    </a>
+                    <a href="https://www.firefox.com.cn/" title="下载" class="btn btn-primary" o2tag="35">下载更新</a>
+                </li>
+                <li>
+                    <a href="https://browser.360.cn/ee/" title="360极速浏览器" class="browser" o2tag="36">
+                        <img src="//static.ccmn.cn/images/360.jpg" alt="ie">
+                        <p>360极速浏览器</p>
+                    </a>
+                    <a href="https://browser.360.cn/ee/" title="下载" class="btn btn-primary" o2tag="37">下载更新</a>
+                </li>
+            </ul>
+        </div>
+        <div class="close" id="close">
+            <img src="//static.ccmn.cn/images/close.png">
+        </div>
+    </div>
+    </body>
+</html>

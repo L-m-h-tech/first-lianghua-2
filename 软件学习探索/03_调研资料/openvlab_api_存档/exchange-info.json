@@ -1,0 +1,38 @@
+{
+ "code": 0,
+ "result": [
+  {
+   "exchange": "CFFEX",
+   "exchange_name": "中金所"
+  },
+  {
+   "exchange": "SHSE",
+   "exchange_name": "上交所"
+  },
+  {
+   "exchange": "SZSE",
+   "exchange_name": "深交所"
+  },
+  {
+   "exchange": "SHFE",
+   "exchange_name": "上期所"
+  },
+  {
+   "exchange": "DCE",
+   "exchange_name": "大商所"
+  },
+  {
+   "exchange": "CZCE",
+   "exchange_name": "郑商所"
+  },
+  {
+   "exchange": "INE",
+   "exchange_name": "能源中心"
+  },
+  {
+   "exchange": "GFEX",
+   "exchange_name": "广期所"
+  }
+ ],
+ "message": "ok"
+}

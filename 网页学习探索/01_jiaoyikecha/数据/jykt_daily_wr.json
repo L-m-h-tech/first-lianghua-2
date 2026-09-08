@@ -1,0 +1,616 @@
+{
+ "ts": "2026-09-08 10:07:44",
+ "endpoint": "daily_wr.php",
+ "desc": "仓单日报",
+ "n": 76,
+ "rows": [
+  {
+   "sym": "螺纹钢",
+   "name": "螺纹钢",
+   "trade_date": "2026-09-08",
+   "total_vol": 134546.0,
+   "wr_unit": 0.1,
+   "wr_pct": null
+  },
+  {
+   "sym": "铁矿石",
+   "name": "铁矿石",
+   "trade_date": "2026-09-08",
+   "total_vol": 6250.0,
+   "wr_unit": 1.0,
+   "wr_pct": null
+  },
+  {
+   "sym": "焦煤",
+   "name": "焦煤",
+   "trade_date": "2026-09-08",
+   "total_vol": 500.0,
+   "wr_unit": 1.0,
+   "wr_pct": null
+  },
+  {
+   "sym": "焦炭",
+   "name": "焦炭",
+   "trade_date": "2026-09-08",
+   "total_vol": 1625.0,
+   "wr_unit": 1.0,
+   "wr_pct": null
+  },
+  {
+   "sym": "棉纱",
+   "name": "棉纱",
+   "trade_date": "2026-09-08",
+   "total_vol": 10.0,
+   "wr_unit": 4.0,
+   "wr_pct": null
+  },
+  {
+   "sym": "热卷",
+   "name": "热卷",
+   "trade_date": "2026-09-08",
+   "total_vol": 214485.0,
+   "wr_unit": 0.1,
+   "wr_pct": null
+  },
+  {
+   "sym": "苹果",
+   "name": "苹果",
+   "trade_date": "2026-09-08",
+   "total_vol": 0.0,
+   "wr_unit": 1.0,
+   "wr_pct": null
+  },
+  {
+   "sym": "棉花",
+   "name": "棉花",
+   "trade_date": "2026-09-08",
+   "total_vol": 8664.0,
+   "wr_unit": 8.0,
+   "wr_pct": null
+  },
+  {
+   "sym": "玻璃",
+   "name": "玻璃",
+   "trade_date": "2026-09-08",
+   "total_vol": 1268.0,
+   "wr_unit": 1.0,
+   "wr_pct": null
+  },
+  {
+   "sym": "甲醇",
+   "name": "甲醇",
+   "trade_date": "2026-09-08",
+   "total_vol": 6820.0,
+   "wr_unit": 1.0,
+   "wr_pct": null
+  },
+  {
+   "sym": "菜油",
+   "name": "菜油",
+   "trade_date": "2026-09-08",
+   "total_vol": 894.0,
+   "wr_unit": 1.0,
+   "wr_pct": null
+  },
+  {
+   "sym": "菜粕",
+   "name": "菜粕",
+   "trade_date": "2026-09-08",
+   "total_vol": 6806.0,
+   "wr_unit": 1.0,
+   "wr_pct": null
+  },
+  {
+   "sym": "硅铁",
+   "name": "硅铁",
+   "trade_date": "2026-09-08",
+   "total_vol": 6260.0,
+   "wr_unit": 1.0,
+   "wr_pct": null
+  },
+  {
+   "sym": "锰硅",
+   "name": "锰硅",
+   "trade_date": "2026-09-08",
+   "total_vol": 54088.0,
+   "wr_unit": 1.0,
+   "wr_pct": null
+  },
+  {
+   "sym": "白糖",
+   "name": "白糖",
+   "trade_date": "2026-09-08",
+   "total_vol": 24396.0,
+   "wr_unit": 1.0,
+   "wr_pct": null
+  },
+  {
+   "sym": "PTA",
+   "name": "PTA",
+   "trade_date": "2026-09-08",
+   "total_vol": 1471.0,
+   "wr_unit": 1.0,
+   "wr_pct": null
+  },
+  {
+   "sym": "动力煤",
+   "name": "动力煤",
+   "trade_date": "2026-09-08",
+   "total_vol": 0.0,
+   "wr_unit": 200.0,
+   "wr_pct": null
+  },
+  {
+   "sym": "沪铜",
+   "name": "沪铜",
+   "trade_date": "2026-09-08",
+   "total_vol": 23315.0,
+   "wr_unit": 0.2,
+   "wr_pct": null
+  },
+  {
+   "sym": "沪铝",
+   "name": "沪铝",
+   "trade_date": "2026-09-08",
+   "total_vol": 219874.0,
+   "wr_unit": 0.2,
+   "wr_pct": null
+  },
+  {
+   "sym": "沪锌",
+   "name": "沪锌",
+   "trade_date": "2026-09-08",
+   "total_vol": 91622.0,
+   "wr_unit": 0.2,
+   "wr_pct": null
+  },
+  {
+   "sym": "沪铅",
+   "name": "沪铅",
+   "trade_date": "2026-09-08",
+   "total_vol": 57742.0,
+   "wr_unit": 0.2,
+   "wr_pct": null
+  },
+  {
+   "sym": "沪镍",
+   "name": "沪镍",
+   "trade_date": "2026-09-08",
+   "total_vol": 99447.0,
+   "wr_unit": 1.0,
+   "wr_pct": null
+  },
+  {
+   "sym": "沪锡",
+   "name": "沪锡",
+   "trade_date": "2026-09-08",
+   "total_vol": 5120.0,
+   "wr_unit": 1.0,
+   "wr_pct": null
+  },
+  {
+   "sym": "沪金",
+   "name": "沪金",
+   "trade_date": "2026-09-08",
+   "total_vol": 114858.0,
+   "wr_unit": 1.0,
+   "wr_pct": null
+  },
+  {
+   "sym": "沪银",
+   "name": "沪银",
+   "trade_date": "2026-09-08",
+   "total_vol": 1405940.0,
+   "wr_unit": 0.067,
+   "wr_pct": null
+  },
+  {
+   "sym": "燃料油",
+   "name": "燃料油",
+   "trade_date": "2026-09-08",
+   "total_vol": 12320.0,
+   "wr_unit": 0.1,
+   "wr_pct": null
+  },
+  {
+   "sym": "沥青",
+   "name": "沥青",
+   "trade_date": "2026-09-08",
+   "total_vol": 20220.0,
+   "wr_unit": 0.1,
+   "wr_pct": null
+  },
+  {
+   "sym": "天然橡胶",
+   "name": "天然橡胶",
+   "trade_date": "2026-09-08",
+   "total_vol": 143800.0,
+   "wr_unit": 0.1,
+   "wr_pct": null
+  },
+  {
+   "sym": "豆一",
+   "name": "豆一",
+   "trade_date": "2026-09-08",
+   "total_vol": 62897.0,
+   "wr_unit": 1.0,
+   "wr_pct": null
+  },
+  {
+   "sym": "豆二",
+   "name": "豆二",
+   "trade_date": "2026-09-08",
+   "total_vol": 800.0,
+   "wr_unit": 1.0,
+   "wr_pct": null
+  },
+  {
+   "sym": "玉米",
+   "name": "玉米",
+   "trade_date": "2026-09-08",
+   "total_vol": 79560.0,
+   "wr_unit": 1.0,
+   "wr_pct": null
+  },
+  {
+   "sym": "淀粉",
+   "name": "淀粉",
+   "trade_date": "2026-09-08",
+   "total_vol": 7500.0,
+   "wr_unit": 1.0,
+   "wr_pct": null
+  },
+  {
+   "sym": "塑料",
+   "name": "塑料",
+   "trade_date": "2026-09-08",
+   "total_vol": 4243.0,
+   "wr_unit": 1.0,
+   "wr_pct": null
+  },
+  {
+   "sym": "豆粕",
+   "name": "豆粕",
+   "trade_date": "2026-09-08",
+   "total_vol": 37520.0,
+   "wr_unit": 1.0,
+   "wr_pct": null
+  },
+  {
+   "sym": "棕榈油",
+   "name": "棕榈油",
+   "trade_date": "2026-09-08",
+   "total_vol": 3227.0,
+   "wr_unit": 1.0,
+   "wr_pct": null
+  },
+  {
+   "sym": "PP",
+   "name": "PP",
+   "trade_date": "2026-09-08",
+   "total_vol": 27793.0,
+   "wr_unit": 1.0,
+   "wr_pct": null
+  },
+  {
+   "sym": "PVC",
+   "name": "PVC",
+   "trade_date": "2026-09-08",
+   "total_vol": 119321.0,
+   "wr_unit": 1.0,
+   "wr_pct": null
+  },
+  {
+   "sym": "豆油",
+   "name": "豆油",
+   "trade_date": "2026-09-08",
+   "total_vol": 22869.0,
+   "wr_unit": 1.0,
+   "wr_pct": null
+  },
+  {
+   "sym": "纤维板",
+   "name": "纤维板",
+   "trade_date": "2026-09-08",
+   "total_vol": 110.0,
+   "wr_unit": 1.0,
+   "wr_pct": null
+  },
+  {
+   "sym": "早籼稻",
+   "name": "早籼稻",
+   "trade_date": "2026-09-08",
+   "total_vol": 0.0,
+   "wr_unit": 1.0,
+   "wr_pct": null
+  },
+  {
+   "sym": "油菜籽",
+   "name": "油菜籽",
+   "trade_date": "2026-09-08",
+   "total_vol": 27.0,
+   "wr_unit": 1.0,
+   "wr_pct": null
+  },
+  {
+   "sym": "晚籼稻",
+   "name": "晚籼稻",
+   "trade_date": "2026-09-08",
+   "total_vol": 0.0,
+   "wr_unit": 1.0,
+   "wr_pct": null
+  },
+  {
+   "sym": "线材",
+   "name": "线材",
+   "trade_date": "2026-09-08",
+   "total_vol": 0.0,
+   "wr_unit": 0.1,
+   "wr_pct": null
+  },
+  {
+   "sym": "原油",
+   "name": "原油",
+   "trade_date": "2026-09-08",
+   "total_vol": 2961000.0,
+   "wr_unit": 0.001,
+   "wr_pct": null
+  },
+  {
+   "sym": "普麦",
+   "name": "普麦",
+   "trade_date": "2026-09-08",
+   "total_vol": 0.0,
+   "wr_unit": 1.0,
+   "wr_pct": null
+  },
+  {
+   "sym": "纸浆",
+   "name": "纸浆",
+   "trade_date": "2026-09-08",
+   "total_vol": 423636.0,
+   "wr_unit": 0.1,
+   "wr_pct": null
+  },
+  {
+   "sym": "乙二醇",
+   "name": "乙二醇",
+   "trade_date": "2026-09-08",
+   "total_vol": 1706.0,
+   "wr_unit": 1.0,
+   "wr_pct": null
+  },
+  {
+   "sym": "红枣",
+   "name": "红枣",
+   "trade_date": "2026-09-08",
+   "total_vol": 7176.0,
+   "wr_unit": 1.0,
+   "wr_pct": null
+  },
+  {
+   "sym": "尿素",
+   "name": "尿素",
+   "trade_date": "2026-09-08",
+   "total_vol": 9100.0,
+   "wr_unit": 1.0,
+   "wr_pct": null
+  },
+  {
+   "sym": "粳米",
+   "name": "粳米",
+   "trade_date": "2026-09-08",
+   "total_vol": 0.0,
+   "wr_unit": 1.0,
+   "wr_pct": null
+  },
+  {
+   "sym": "不锈钢",
+   "name": "不锈钢",
+   "trade_date": "2026-09-08",
+   "total_vol": 72509.0,
+   "wr_unit": 0.2,
+   "wr_pct": null
+  },
+  {
+   "sym": "纯碱",
+   "name": "纯碱",
+   "trade_date": "2026-09-08",
+   "total_vol": 5210.0,
+   "wr_unit": 1.0,
+   "wr_pct": null
+  },
+  {
+   "sym": "液化气",
+   "name": "液化气",
+   "trade_date": "2026-09-08",
+   "total_vol": 5150.0,
+   "wr_unit": 1.0,
+   "wr_pct": null
+  },
+  {
+   "sym": "低硫油",
+   "name": "低硫油",
+   "trade_date": "2026-09-08",
+   "total_vol": 5490.0,
+   "wr_unit": 0.1,
+   "wr_pct": null
+  },
+  {
+   "sym": "短纤",
+   "name": "短纤",
+   "trade_date": "2026-09-08",
+   "total_vol": 2054.0,
+   "wr_unit": 1.0,
+   "wr_pct": null
+  },
+  {
+   "sym": "国际铜",
+   "name": "国际铜",
+   "trade_date": "2026-09-08",
+   "total_vol": 8102.0,
+   "wr_unit": 0.2,
+   "wr_pct": null
+  },
+  {
+   "sym": "生猪",
+   "name": "生猪",
+   "trade_date": "2026-09-08",
+   "total_vol": 452.0,
+   "wr_unit": 1.0,
+   "wr_pct": null
+  },
+  {
+   "sym": "花生",
+   "name": "花生",
+   "trade_date": "2026-09-08",
+   "total_vol": 0.0,
+   "wr_unit": 1.0,
+   "wr_pct": null
+  },
+  {
+   "sym": "工业硅",
+   "name": "工业硅",
+   "trade_date": "2026-09-08",
+   "total_vol": 33494.0,
+   "wr_unit": 1.0,
+   "wr_pct": null
+  },
+  {
+   "sym": "氧化铝",
+   "name": "氧化铝",
+   "trade_date": "2026-09-08",
+   "total_vol": 258579.0,
+   "wr_unit": 0.05,
+   "wr_pct": null
+  },
+  {
+   "sym": "碳酸锂",
+   "name": "碳酸锂",
+   "trade_date": "2026-09-08",
+   "total_vol": 47988.0,
+   "wr_unit": 1.0,
+   "wr_pct": null
+  },
+  {
+   "sym": "合成橡胶",
+   "name": "合成橡胶",
+   "trade_date": "2026-09-08",
+   "total_vol": 25080.0,
+   "wr_unit": 0.2,
+   "wr_pct": null
+  },
+  {
+   "sym": "对二甲苯",
+   "name": "对二甲苯",
+   "trade_date": "2026-09-08",
+   "total_vol": 1000.0,
+   "wr_unit": 1.0,
+   "wr_pct": null
+  },
+  {
+   "sym": "烧碱",
+   "name": "烧碱",
+   "trade_date": "2026-09-08",
+   "total_vol": 192.0,
+   "wr_unit": 1.0,
+   "wr_pct": null
+  },
+  {
+   "sym": "瓶片",
+   "name": "瓶片",
+   "trade_date": "2026-09-08",
+   "total_vol": 858.0,
+   "wr_unit": 1.0,
+   "wr_pct": null
+  },
+  {
+   "sym": "原木",
+   "name": "原木",
+   "trade_date": "2026-09-08",
+   "total_vol": 200.0,
+   "wr_unit": 1.0,
+   "wr_pct": null
+  },
+  {
+   "sym": "多晶硅",
+   "name": "多晶硅",
+   "trade_date": "2026-09-08",
+   "total_vol": 24270.0,
+   "wr_unit": 1.0,
+   "wr_pct": null
+  },
+  {
+   "sym": "铝合金",
+   "name": "铝合金",
+   "trade_date": "2026-09-08",
+   "total_vol": 22889.0,
+   "wr_unit": 0.05,
+   "wr_pct": null
+  },
+  {
+   "sym": "双胶纸",
+   "name": "双胶纸",
+   "trade_date": "2026-09-08",
+   "total_vol": 10158.0,
+   "wr_unit": 0.1,
+   "wr_pct": null
+  },
+  {
+   "sym": "钯",
+   "name": "钯",
+   "trade_date": "2026-09-08",
+   "total_vol": 5431.0,
+   "wr_unit": 1.0,
+   "wr_pct": null
+  },
+  {
+   "sym": "铂",
+   "name": "铂",
+   "trade_date": "2026-09-08",
+   "total_vol": 3850.0,
+   "wr_unit": 1.0,
+   "wr_pct": null
+  },
+  {
+   "sym": "20号胶",
+   "name": "20号胶",
+   "trade_date": "2026-09-08",
+   "total_vol": 0.0,
+   "wr_unit": 0.0,
+   "wr_pct": null
+  },
+  {
+   "sym": "纯苯",
+   "name": "纯苯",
+   "trade_date": "2026-09-08",
+   "total_vol": 0.0,
+   "wr_unit": 0.0,
+   "wr_pct": null
+  },
+  {
+   "sym": "胶合板",
+   "name": "胶合板",
+   "trade_date": "2026-09-08",
+   "total_vol": 0.0,
+   "wr_unit": 0.0,
+   "wr_pct": null
+  },
+  {
+   "sym": "苯乙烯",
+   "name": "苯乙烯",
+   "trade_date": "2026-09-08",
+   "total_vol": 0.0,
+   "wr_unit": 0.0,
+   "wr_pct": null
+  },
+  {
+   "sym": "鸡蛋",
+   "name": "鸡蛋",
+   "trade_date": "2026-09-08",
+   "total_vol": 0.0,
+   "wr_unit": 0.0,
+   "wr_pct": null
+  }
+ ]
+}

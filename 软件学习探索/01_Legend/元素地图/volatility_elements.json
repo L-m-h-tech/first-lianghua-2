@@ -1,0 +1,1071 @@
+{
+ "url": "file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/index.html#/volatility",
+ "label": "波动率",
+ "elements": [
+  {
+   "tag": "DIV",
+   "text": "模拟账号",
+   "href": "",
+   "class": "group/tab focus-visible:ring-ring relative flex h-full min-w",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 102,
+    "y": 5,
+    "w": 112,
+    "h": 28
+   }
+  },
+  {
+   "tag": "SPAN",
+   "text": "",
+   "href": "",
+   "class": "flex size-4 shrink-0 cursor-grab touch-none items-center jus",
+   "id": "",
+   "ariaLabel": "拖拽排序 模拟账号",
+   "rect": {
+    "x": 106,
+    "y": 11,
+    "w": 16,
+    "h": 16
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "group/button inline-flex shrink-0 items-center justify-cente",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 189,
+    "y": 11,
+    "w": 21,
+    "h": 16
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "group/button inline-flex shrink-0 items-center justify-cente",
+   "id": "",
+   "ariaLabel": "新建标签",
+   "rect": {
+    "x": 222,
+    "y": 7,
+    "w": 24,
+    "h": 24
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "text-muted-foreground hover:text-foreground flex h-full w-11",
+   "id": "",
+   "ariaLabel": "缩小",
+   "rect": {
+    "x": 1336,
+    "y": -0.0,
+    "w": 44,
+    "h": 38
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "text-muted-foreground flex h-full w-11 items-center justify-",
+   "id": "",
+   "ariaLabel": "放大",
+   "rect": {
+    "x": 1380,
+    "y": -0.0,
+    "w": 44,
+    "h": 38
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "text-muted-foreground flex h-full w-11 items-center justify-",
+   "id": "",
+   "ariaLabel": "关闭",
+   "rect": {
+    "x": 1424,
+    "y": -0.0,
+    "w": 44,
+    "h": 38
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "focus-visible:ring-ring relative flex size-10 select-none it",
+   "id": "",
+   "ariaLabel": "市场",
+   "rect": {
+    "x": 4,
+    "y": 50,
+    "w": 40,
+    "h": 40
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "focus-visible:ring-ring relative flex size-10 select-none it",
+   "id": "",
+   "ariaLabel": "行情",
+   "rect": {
+    "x": 4,
+    "y": 98,
+    "w": 40,
+    "h": 40
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "focus-visible:ring-ring relative flex size-10 select-none it",
+   "id": "",
+   "ariaLabel": "波动率",
+   "rect": {
+    "x": 4,
+    "y": 146,
+    "w": 40,
+    "h": 40
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "focus-visible:ring-ring relative flex size-10 select-none it",
+   "id": "",
+   "ariaLabel": "策略",
+   "rect": {
+    "x": 4,
+    "y": 194,
+    "w": 40,
+    "h": 40
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "focus-visible:ring-ring relative flex size-10 select-none it",
+   "id": "",
+   "ariaLabel": "期货",
+   "rect": {
+    "x": 4,
+    "y": 242,
+    "w": 40,
+    "h": 40
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "focus-visible:ring-ring relative flex size-10 select-none it",
+   "id": "",
+   "ariaLabel": "异动",
+   "rect": {
+    "x": 4,
+    "y": 290,
+    "w": 40,
+    "h": 40
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "hover:bg-foreground/8 text-muted-foreground hover:text-foreg",
+   "id": "",
+   "ariaLabel": "打开期权到期日历",
+   "rect": {
+    "x": 4,
+    "y": 716,
+    "w": 40,
+    "h": 40
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "group/button inline-flex shrink-0 items-center justify-cente",
+   "id": "",
+   "ariaLabel": "打开帮助菜单",
+   "rect": {
+    "x": 4,
+    "y": 762,
+    "w": 40,
+    "h": 40
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "group/button inline-flex shrink-0 items-center justify-cente",
+   "id": "",
+   "ariaLabel": "打开用户菜单",
+   "rect": {
+    "x": 4,
+    "y": 808,
+    "w": 40,
+    "h": 40
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "group relative flex h-[44px] w-[44px] cursor-pointer items-c",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 48,
+    "y": 44,
+    "w": 44,
+    "h": 44
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "2D",
+   "href": "",
+   "class": "focus-visible:ring-ring/50 relative inline-flex items-center",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 747,
+    "y": 55,
+    "w": 63,
+    "h": 24
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "3D",
+   "href": "",
+   "class": "relative inline-flex items-center gap-1.5 text-sm font-mediu",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 812,
+    "y": 55,
+    "w": 64,
+    "h": 24
+   }
+  },
+  {
+   "tag": "A",
+   "text": "波动率曲面文档",
+   "href": "file:///E:/teaching?section=doc-2",
+   "class": "border-border bg-background text-foreground hover:border-pri",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 1212,
+    "y": 51,
+    "w": 125,
+    "h": 32
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "叠加历史隐波历史叠加",
+   "href": "",
+   "class": "group/button inline-flex shrink-0 items-center justify-cente",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 1348,
+    "y": 53,
+    "w": 109,
+    "h": 28
+   }
+  },
+  {
+   "tag": "TH",
+   "text": "指标",
+   "href": "",
+   "class": "text-muted-foreground p-2 font-semibold bg-card px-1 py-1 te",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 109,
+    "y": 128,
+    "w": 50,
+    "h": 30
+   }
+  },
+  {
+   "tag": "TH",
+   "text": "2609",
+   "href": "",
+   "class": "bg-card text-muted-foreground p-2 font-semibold px-1 py-1 te",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 159,
+    "y": 128,
+    "w": 60,
+    "h": 30
+   }
+  },
+  {
+   "tag": "TH",
+   "text": "2610",
+   "href": "",
+   "class": "bg-card text-muted-foreground p-2 font-semibold px-1 py-1 te",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 219,
+    "y": 128,
+    "w": 60,
+    "h": 30
+   }
+  },
+  {
+   "tag": "TH",
+   "text": "2611",
+   "href": "",
+   "class": "bg-card text-muted-foreground p-2 font-semibold px-1 py-1 te",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 279,
+    "y": 128,
+    "w": 60,
+    "h": 30
+   }
+  },
+  {
+   "tag": "TH",
+   "text": "2612",
+   "href": "",
+   "class": "bg-card text-muted-foreground p-2 font-semibold px-1 py-1 te",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 339,
+    "y": 128,
+    "w": 60,
+    "h": 30
+   }
+  },
+  {
+   "tag": "TH",
+   "text": "2701",
+   "href": "",
+   "class": "bg-card text-muted-foreground p-2 font-semibold px-1 py-1 te",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 399,
+    "y": 128,
+    "w": 60,
+    "h": 30
+   }
+  },
+  {
+   "tag": "TH",
+   "text": "2702",
+   "href": "",
+   "class": "bg-card text-muted-foreground p-2 font-semibold px-1 py-1 te",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 459,
+    "y": 128,
+    "w": 60,
+    "h": 30
+   }
+  },
+  {
+   "tag": "TH",
+   "text": "2703",
+   "href": "",
+   "class": "bg-card text-muted-foreground p-2 font-semibold px-1 py-1 te",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 519,
+    "y": 128,
+    "w": 60,
+    "h": 30
+   }
+  },
+  {
+   "tag": "TH",
+   "text": "2704",
+   "href": "",
+   "class": "bg-card text-muted-foreground p-2 font-semibold px-1 py-1 te",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 579,
+    "y": 128,
+    "w": 60,
+    "h": 30
+   }
+  },
+  {
+   "tag": "TH",
+   "text": "2705",
+   "href": "",
+   "class": "bg-card text-muted-foreground p-2 font-semibold px-1 py-1 te",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 639,
+    "y": 128,
+    "w": 60,
+    "h": 30
+   }
+  },
+  {
+   "tag": "TH",
+   "text": "2706",
+   "href": "",
+   "class": "bg-card text-muted-foreground p-2 font-semibold px-1 py-1 te",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 699,
+    "y": 128,
+    "w": 60,
+    "h": 30
+   }
+  },
+  {
+   "tag": "TD",
+   "text": "现值",
+   "href": "",
+   "class": "p-2 transition-colors duration-150 ease-out motion-reduce:tr",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 109,
+    "y": 158,
+    "w": 50,
+    "h": 24
+   }
+  },
+  {
+   "tag": "TD",
+   "text": "16022.5",
+   "href": "",
+   "class": "p-2 transition-colors duration-150 ease-out motion-reduce:tr",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 159,
+    "y": 158,
+    "w": 60,
+    "h": 24
+   }
+  },
+  {
+   "tag": "TD",
+   "text": "15570",
+   "href": "",
+   "class": "p-2 transition-colors duration-150 ease-out motion-reduce:tr",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 219,
+    "y": 158,
+    "w": 60,
+    "h": 24
+   }
+  },
+  {
+   "tag": "TD",
+   "text": "15442.5",
+   "href": "",
+   "class": "p-2 transition-colors duration-150 ease-out motion-reduce:tr",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 279,
+    "y": 158,
+    "w": 60,
+    "h": 24
+   }
+  },
+  {
+   "tag": "TD",
+   "text": "15257.5",
+   "href": "",
+   "class": "p-2 transition-colors duration-150 ease-out motion-reduce:tr",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 339,
+    "y": 158,
+    "w": 60,
+    "h": 24
+   }
+  },
+  {
+   "tag": "TD",
+   "text": "15140",
+   "href": "",
+   "class": "p-2 transition-colors duration-150 ease-out motion-reduce:tr",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 399,
+    "y": 158,
+    "w": 60,
+    "h": 24
+   }
+  },
+  {
+   "tag": "TD",
+   "text": "15035",
+   "href": "",
+   "class": "p-2 transition-colors duration-150 ease-out motion-reduce:tr",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 459,
+    "y": 158,
+    "w": 60,
+    "h": 24
+   }
+  },
+  {
+   "tag": "TD",
+   "text": "14845",
+   "href": "",
+   "class": "p-2 transition-colors duration-150 ease-out motion-reduce:tr",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 519,
+    "y": 158,
+    "w": 60,
+    "h": 24
+   }
+  },
+  {
+   "tag": "TD",
+   "text": "14717.5",
+   "href": "",
+   "class": "p-2 transition-colors duration-150 ease-out motion-reduce:tr",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 579,
+    "y": 158,
+    "w": 60,
+    "h": 24
+   }
+  },
+  {
+   "tag": "TD",
+   "text": "14922.5",
+   "href": "",
+   "class": "p-2 transition-colors duration-150 ease-out motion-reduce:tr",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 639,
+    "y": 158,
+    "w": 60,
+    "h": 24
+   }
+  },
+  {
+   "tag": "TD",
+   "text": "14652.5",
+   "href": "",
+   "class": "p-2 transition-colors duration-150 ease-out motion-reduce:tr",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 699,
+    "y": 158,
+    "w": 60,
+    "h": 24
+   }
+  },
+  {
+   "tag": "TD",
+   "text": "涨幅",
+   "href": "",
+   "class": "p-2 transition-colors duration-150 ease-out motion-reduce:tr",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 109,
+    "y": 182,
+    "w": 50,
+    "h": 24
+   }
+  },
+  {
+   "tag": "TD",
+   "text": "+1.41%",
+   "href": "",
+   "class": "p-2 transition-colors duration-150 ease-out motion-reduce:tr",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 159,
+    "y": 182,
+    "w": 60,
+    "h": 24
+   }
+  },
+  {
+   "tag": "TD",
+   "text": "-0.22%",
+   "href": "",
+   "class": "p-2 transition-colors duration-150 ease-out motion-reduce:tr",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 219,
+    "y": 182,
+    "w": 60,
+    "h": 24
+   }
+  },
+  {
+   "tag": "TD",
+   "text": "-0.08%",
+   "href": "",
+   "class": "p-2 transition-colors duration-150 ease-out motion-reduce:tr",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 279,
+    "y": 182,
+    "w": 60,
+    "h": 24
+   }
+  },
+  {
+   "tag": "TD",
+   "text": "+0.18%",
+   "href": "",
+   "class": "p-2 transition-colors duration-150 ease-out motion-reduce:tr",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 339,
+    "y": 182,
+    "w": 60,
+    "h": 24
+   }
+  },
+  {
+   "tag": "TD",
+   "text": "+0.17%",
+   "href": "",
+   "class": "p-2 transition-colors duration-150 ease-out motion-reduce:tr",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 399,
+    "y": 182,
+    "w": 60,
+    "h": 24
+   }
+  },
+  {
+   "tag": "TD",
+   "text": "+0.43%",
+   "href": "",
+   "class": "p-2 transition-colors duration-150 ease-out motion-reduce:tr",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 459,
+    "y": 182,
+    "w": 60,
+    "h": 24
+   }
+  },
+  {
+   "tag": "TD",
+   "text": "+0.41%",
+   "href": "",
+   "class": "p-2 transition-colors duration-150 ease-out motion-reduce:tr",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 519,
+    "y": 182,
+    "w": 60,
+    "h": 24
+   }
+  },
+  {
+   "tag": "TD",
+   "text": "-0.56%",
+   "href": "",
+   "class": "p-2 transition-colors duration-150 ease-out motion-reduce:tr",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 579,
+    "y": 182,
+    "w": 60,
+    "h": 24
+   }
+  },
+  {
+   "tag": "TD",
+   "text": "+1.34%",
+   "href": "",
+   "class": "p-2 transition-colors duration-150 ease-out motion-reduce:tr",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 639,
+    "y": 182,
+    "w": 60,
+    "h": 24
+   }
+  },
+  {
+   "tag": "TD",
+   "text": "-0.22%",
+   "href": "",
+   "class": "p-2 transition-colors duration-150 ease-out motion-reduce:tr",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 699,
+    "y": 182,
+    "w": 60,
+    "h": 24
+   }
+  },
+  {
+   "tag": "TH",
+   "text": "指标",
+   "href": "",
+   "class": "text-muted-foreground p-2 font-semibold bg-card px-1 py-1 te",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 109,
+    "y": 421,
+    "w": 104,
+    "h": 30
+   }
+  },
+  {
+   "tag": "TH",
+   "text": "2610",
+   "href": "",
+   "class": "bg-card text-muted-foreground p-2 font-semibold px-1 py-1 te",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 213,
+    "y": 421,
+    "w": 109,
+    "h": 30
+   }
+  },
+  {
+   "tag": "TH",
+   "text": "2611",
+   "href": "",
+   "class": "bg-card text-muted-foreground p-2 font-semibold px-1 py-1 te",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 321,
+    "y": 421,
+    "w": 109,
+    "h": 30
+   }
+  },
+  {
+   "tag": "TD",
+   "text": "现值",
+   "href": "",
+   "class": "p-2 transition-colors duration-150 ease-out motion-reduce:tr",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 109,
+    "y": 451,
+    "w": 104,
+    "h": 24
+   }
+  },
+  {
+   "tag": "TD",
+   "text": "44.91",
+   "href": "",
+   "class": "p-2 transition-colors duration-150 ease-out motion-reduce:tr",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 213,
+    "y": 451,
+    "w": 109,
+    "h": 24
+   }
+  },
+  {
+   "tag": "TD",
+   "text": "40.72",
+   "href": "",
+   "class": "p-2 transition-colors duration-150 ease-out motion-reduce:tr",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 321,
+    "y": 451,
+    "w": 109,
+    "h": 24
+   }
+  },
+  {
+   "tag": "TD",
+   "text": "日差",
+   "href": "",
+   "class": "p-2 transition-colors duration-150 ease-out motion-reduce:tr",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 109,
+    "y": 475,
+    "w": 104,
+    "h": 24
+   }
+  },
+  {
+   "tag": "TD",
+   "text": "-3.19",
+   "href": "",
+   "class": "p-2 transition-colors duration-150 ease-out motion-reduce:tr",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 213,
+    "y": 475,
+    "w": 109,
+    "h": 24
+   }
+  },
+  {
+   "tag": "TD",
+   "text": "-1.7",
+   "href": "",
+   "class": "p-2 transition-colors duration-150 ease-out motion-reduce:tr",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 321,
+    "y": 475,
+    "w": 109,
+    "h": 24
+   }
+  },
+  {
+   "tag": "TH",
+   "text": "指标",
+   "href": "",
+   "class": "text-muted-foreground p-2 font-semibold bg-card px-1 py-1 te",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 109,
+    "y": 702,
+    "w": 104,
+    "h": 30
+   }
+  },
+  {
+   "tag": "TH",
+   "text": "2610",
+   "href": "",
+   "class": "bg-card text-muted-foreground p-2 font-semibold px-1 py-1 te",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 213,
+    "y": 702,
+    "w": 109,
+    "h": 30
+   }
+  },
+  {
+   "tag": "TH",
+   "text": "2611",
+   "href": "",
+   "class": "bg-card text-muted-foreground p-2 font-semibold px-1 py-1 te",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 321,
+    "y": 702,
+    "w": 109,
+    "h": 30
+   }
+  },
+  {
+   "tag": "TD",
+   "text": "现值",
+   "href": "",
+   "class": "p-2 transition-colors duration-150 ease-out motion-reduce:tr",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 109,
+    "y": 732,
+    "w": 104,
+    "h": 24
+   }
+  },
+  {
+   "tag": "TD",
+   "text": "2.22",
+   "href": "",
+   "class": "p-2 transition-colors duration-150 ease-out motion-reduce:tr",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 213,
+    "y": 732,
+    "w": 109,
+    "h": 24
+   }
+  },
+  {
+   "tag": "TD",
+   "text": "0.35",
+   "href": "",
+   "class": "p-2 transition-colors duration-150 ease-out motion-reduce:tr",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 321,
+    "y": 732,
+    "w": 109,
+    "h": 24
+   }
+  },
+  {
+   "tag": "TD",
+   "text": "日差",
+   "href": "",
+   "class": "p-2 transition-colors duration-150 ease-out motion-reduce:tr",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 109,
+    "y": 756,
+    "w": 104,
+    "h": 24
+   }
+  },
+  {
+   "tag": "TD",
+   "text": "0.77",
+   "href": "",
+   "class": "p-2 transition-colors duration-150 ease-out motion-reduce:tr",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 213,
+    "y": 756,
+    "w": 109,
+    "h": 24
+   }
+  },
+  {
+   "tag": "TD",
+   "text": "-0.16",
+   "href": "",
+   "class": "p-2 transition-colors duration-150 ease-out motion-reduce:tr",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 321,
+    "y": 756,
+    "w": 109,
+    "h": 24
+   }
+  },
+  {
+   "tag": "A",
+   "text": "2610",
+   "href": "file:///E:/chart/light/BR202610",
+   "class": "",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 475,
+    "y": 112,
+    "w": 28,
+    "h": 16
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "group/button inline-flex shrink-0 items-center justify-cente",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 914,
+    "y": 116,
+    "w": 24,
+    "h": 24
+   }
+  },
+  {
+   "tag": "A",
+   "text": "2611",
+   "href": "file:///E:/chart/light/BR202611",
+   "class": "",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 1003,
+    "y": 114,
+    "w": 28,
+    "h": 16
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "group/button shrink-0 bg-clip-padding font-medium whitespace",
+   "id": "",
+   "ariaLabel": "Pro 功能：完整期限图表，查看说明",
+   "rect": {
+    "x": 1418,
+    "y": 105,
+    "w": 32,
+    "h": 32
+   }
+  }
+ ],
+ "count": 76
+}

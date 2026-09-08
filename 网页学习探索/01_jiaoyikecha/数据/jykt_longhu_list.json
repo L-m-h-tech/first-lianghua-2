@@ -1,0 +1,68 @@
+{
+ "ts": "2026-09-08 10:07:44",
+ "endpoint": "longhu_list.php",
+ "desc": "龙虎榜",
+ "n": 10,
+ "rows": [
+  {
+   "kind": "longhu",
+   "name": "沪金",
+   "code": "au2612",
+   "value": 82.81466271334432
+  },
+  {
+   "kind": "longhu",
+   "name": "沪金",
+   "code": "au2704",
+   "value": 61.391934286204645
+  },
+  {
+   "kind": "longhu",
+   "name": "沪金",
+   "code": "au2702",
+   "value": 46.404753778442334
+  },
+  {
+   "kind": "longhu",
+   "name": "沪锌",
+   "code": "zn2612",
+   "value": 34.770337672936556
+  },
+  {
+   "kind": "longhu",
+   "name": "天然橡胶",
+   "code": "ru2705",
+   "value": 20.877229036996034
+  },
+  {
+   "kind": "longhu",
+   "name": "豆一",
+   "code": "a2705",
+   "value": 15.901094895201792
+  },
+  {
+   "kind": "longhu",
+   "name": "PTA",
+   "code": "ta2610",
+   "value": 14.881692873214272
+  },
+  {
+   "kind": "longhu",
+   "name": "沪锌",
+   "code": "zn2611",
+   "value": 12.180916268717393
+  },
+  {
+   "kind": "longhu",
+   "name": "豆一",
+   "code": "a2707",
+   "value": 12.168896604941985
+  },
+  {
+   "kind": "longhu",
+   "name": "PTA",
+   "code": "ta2705",
+   "value": 12.143233295804242
+  }
+ ]
+}

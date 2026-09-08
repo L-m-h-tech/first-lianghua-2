@@ -1,0 +1,38 @@
+# 贝克休斯钻机数
+# URL: https://rigcount.bakerhughes.com/
+# fetched: 20260908_113922
+
+Skip to main navigation
+Rig Count
+Menu
+Home
+Rig Count Overview
+North America Rig Count
+Worldwide Rig Count
+US Rig Count iPhone/iPad App
+FAQs
+Email Alerts
+ Rig Count Overview & Summary Count
+ Rig Count Overview & Summary Count
+Rig Count Methodology Change - Read More
+Questions? Connect with the rig count team.Oilfield Knowledge Center
+AreaLast CountCountChange from Prior CountDate of Prior CountChange from Last YearDate of Last Year's Count
+U.S.04 Sept
+2026588028 Aug
+2026+5105 Sept
+2025
+Canada04 Sept
+2026204-728 Aug
+2026+2305 Sept
+2025
+International August
+20261102+6August
+2026+26August
+2025
+Notice of Rig Count Methodology Update
+Effective January 2024, the methodology for calculating rig counts in the Kingdom of Saudi Arabia has been updated. From this date forward, only operating rigs within the country are included in the reported figures. This adjustment results in an increase in both the Saudi Arabia and Worldwide Rig Counts. Please note that rig count methodologies for all other countries remain unchanged. If using historical data, please download again prior periods to avoid errors.
+For further details, please refer to our FAQs here.
+Baker Hughes has issued rig counts as a service to the petroleum industry since 1944, when Baker Hughes Tool Company began weekly counts of U.S. and Canadian drilling activity. Baker Hughes initiated the monthly international rig count in 1975. The North American rig count is released weekly at noon Central Time on the last day of the work week. Starting in February 2020, the international rig count is released on the last working day of the first week of the month.
+The Baker Hughes Rig Counts are an important business barometer for the drilling industry and its suppliers. When drilling rigs are active, they consume products and services produced by the oil service industry. The active rig count acts as a leading indicator of demand for products used in drilling, completing, producing, and processing hydrocarbons.
+Baker Hughes Rig Counts are published by major newspapers and trade publications, are frequently referenced by journalists, economists, security analysts, and government officials, and are included in many industry statistical reports. Because they have been compiled consistently for over 70 years, Baker Hughes Rig Counts are also useful in historical analysis of the industry.
+The working rig location information is provided in part by Enverus.

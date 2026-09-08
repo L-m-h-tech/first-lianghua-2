@@ -1,0 +1,81 @@
+<!doctype html><html lang="zh-CN"><head><title>正在确认你是不是机器人！</title><link rel="stylesheet" href="/.within.website/x/xess/xess.min.css?cachebuster=v1.26.2"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="robots" content="noindex,nofollow"><style>
+        body,
+        html {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .centered-div {
+            text-align: center;
+        }
+
+        #status {
+            font-variant-numeric: tabular-nums;
+        }
+
+        #progress {
+            display: none;
+            width: 90%;
+            width: min(20rem, 90%);
+            height: 2rem;
+            border-radius: 1rem;
+            overflow: hidden;
+            margin: 1rem 0 2rem;
+            outline-offset: 2px;
+            outline: #b16286 solid 4px;
+        }
+
+        .bar-inner {
+            background-color: #b16286;
+            height: 100%;
+            width: 0;
+            transition: width 0.25s ease-in;
+        }
+    	</style><script id="anubis_version" type="application/json">"v1.26.2"
+</script><script id="anubis_challenge" type="application/json">{"rules":{"algorithm":"fast","difficulty":2},"challenge":{"issuedAt":"2026-09-08T03:39:42.387742094Z","metadata":{"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36","X-Real-Ip":"123.147.241.124"},"id":"01a07f19-a5b3-7b31-9b78-23f4525f631a","method":"fast","randomData":"4ff9165eb7047930b7f3d5d55d1f076cc2934cdcb80102054fa9c928cc826855a15c3475d63adee22ddc8bd99a375fc45f5fa9651e8c089a6729121e347eb300","policyRuleHash":"ac980f49c4d35fab","difficulty":2,"spent":false}}
+</script><script id="anubis_base_prefix" type="application/json">""
+</script><script id="anubis_public_url" type="application/json">""
+</script></head><body id="top"><script type="ignore"><a href="/.within.website/x/cmd/anubis/api/honeypot/dac2fd4b-8580-4b0c-909a-64851ad69917/init">Don't click me</a></script><main><h1 id="title" class="centered-div">正在确认你是不是机器人！</h1><div class="centered-div"><img id="image" style="width:100%;max-width:256px;" src="/.within.website/x/cmd/anubis/static/img/pensive.webp?cacheBuster=v1.26.2"> <img style="display:none;" style="width:100%;max-width:256px;" src="/.within.website/x/cmd/anubis/static/img/happy.webp?cacheBuster=v1.26.2"><p id="status">加载中...</p><p id="anubis-script-error" style="display:none;">Anubis 无法载入所需的 JavaScript。服务器可能负载过高。请重新加载页面再试一次。</p><script id="anubis-main" async type="module" src="/.within.website/x/cmd/anubis/static/js/main.mjs?cacheBuster=v1.26.2"></script><script>/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this page.
+
+Copyright (c) 2026 Xe Iaso <xe.iaso@techaro.lol>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+@licend  The above is the entire license notice
+for the JavaScript code in this page.
+
+## Rationale
+
+This script catches `main.mjs` failing to load and re-injects it with
+jittered exponential backoff.
+
+Without this any failures loading `main.mjs` leaves the challenge page
+sitting on the "Loading..." message forever with no error messaging
+outside of the browser console, which is unavailable on mobile browsers.
+
+Disable loading this script at your peril. You have been warned.
+*/
+(()=>{var f=(e,t=750,n=1e4)=>Math.random()*Math.min(n,t*Math.pow(e,2));var d=(e,t={},n=[])=>{let s=typeof e=="function"?e(t):Object.assign(document.createElement(e),t);return Array.isArray(n)||(n=[n]),s.append(...n),s};var i=e=>document.getElementById(e);var _=e=>e.map(i);(()=>{let e=i("anubis-main");if(!e){console.debug("can't find anubis main.mjs element via ID `anubis-main`, bailing");return}let t=e.getAttribute("src");if(!t){console.debug("can't find src attribute of script element `anubis-main`, bailing");return}let n=t.indexOf("?")===-1?"?":"&",s=4,E=750,A=1e4,c=1e4,a=0,l=0,u=()=>window.__anubisBooted===!0,p=()=>{let r=_(["anubis-script-error","status","progress"]);if(r.filter(D=>D==null).length!==0){console.debug("missing one of the following elements: anubis-script-error, status, progress. cannot proceed, bailing.");return}let[o,M,T]=r;o.style.display="block",M.style.display="none",T.style.display="none"},m=r=>()=>{if(u()||r!==l)return;if(l++,a++,a>s){p();return}let o=f(a,E,A);setTimeout(y,o)},y=()=>{if(u())return;let r=m(l),o=d("script",{async:!0,type:"module",src:t+n+"anubisRetry="+a,onerror:r});document.head.appendChild(o),setTimeout(r,c)},b=m(0);e.onerror=b,setTimeout(b,c)})();})();
+</script><div id="progress" role="progressbar" aria-labelledby="status"><div class="bar-inner"></div></div><details><p>您会看到这个画面，是因为网站管理员启用了 Anubis 来保护服务器，避免 AI 公司大量爬取网站内容。这类行为会导致网站崩溃，让所有用户都无法正常访问资源。</p><p>Anubis 是一种折中做法。它采用了类似 Hashcash 的工作量证明机制（Proof-of-Work），该机制最初是为了减少垃圾邮件而提出。其核心概念是：对个别用户而言，额外的计算负担可以忽略，但对大规模爬虫来说，累积起来的成本将大幅增加，从而让爬取行为变得更困难。</p><p>最终，这是一个占位符解决方案，以便将更多时间用于指纹识别和识别无头浏览器（例如：通过它们如何进行字体渲染），从而无需向更可能是合法用户的用户呈现挑战工作量证明页面。</p><p>请注意，Anubis 需要使用现代 JavaScript 功能，而像 JShelter 这类插件可能会阻挡这些功能。请为此域名停用 JShelter 或类似的插件。</p></details><noscript><p>很遗憾，您必须启用 JavaScript 才能通过这项验证。这是因为 AI 公司已经改变了网站托管的社会契约，因此我们必须采取这样的保护机制。无需 JavaScript 的解决方案仍在开发中。</p></noscript><div id="testarea"></div></div><footer><div class="centered-div"><p>本网站由 <a href="https://github.com/TecharoHQ/anubis">Anubis</a> 保护，来自 <a href="https://techaro.lol">Techaro</a>. 在 🇨🇦 用 ❤️ 制作.</p><p>吉祥物由 <a href="https://bsky.app/profile/celphase.bsky.social">CELPHASE 设计</a>.</p><p>这个网站正在运行的 Anubis 版本为 <code>v1.26.2</code>.</p></div></footer></main></body></html>

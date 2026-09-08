@@ -1,0 +1,819 @@
+{
+ "url": "file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/index.html#/market",
+ "label": "市场",
+ "elements": [
+  {
+   "tag": "DIV",
+   "text": "模拟账号",
+   "href": "",
+   "class": "group/tab focus-visible:ring-ring relative flex h-full min-w",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 102,
+    "y": 5,
+    "w": 112,
+    "h": 28
+   }
+  },
+  {
+   "tag": "SPAN",
+   "text": "",
+   "href": "",
+   "class": "flex size-4 shrink-0 cursor-grab touch-none items-center jus",
+   "id": "",
+   "ariaLabel": "拖拽排序 模拟账号",
+   "rect": {
+    "x": 106,
+    "y": 11,
+    "w": 16,
+    "h": 16
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "group/button inline-flex shrink-0 items-center justify-cente",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 189,
+    "y": 11,
+    "w": 21,
+    "h": 16
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "group/button inline-flex shrink-0 items-center justify-cente",
+   "id": "",
+   "ariaLabel": "新建标签",
+   "rect": {
+    "x": 222,
+    "y": 7,
+    "w": 24,
+    "h": 24
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "text-muted-foreground hover:text-foreground flex h-full w-11",
+   "id": "",
+   "ariaLabel": "缩小",
+   "rect": {
+    "x": 1336,
+    "y": -0.0,
+    "w": 44,
+    "h": 38
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "text-muted-foreground flex h-full w-11 items-center justify-",
+   "id": "",
+   "ariaLabel": "放大",
+   "rect": {
+    "x": 1380,
+    "y": -0.0,
+    "w": 44,
+    "h": 38
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "text-muted-foreground flex h-full w-11 items-center justify-",
+   "id": "",
+   "ariaLabel": "关闭",
+   "rect": {
+    "x": 1424,
+    "y": -0.0,
+    "w": 44,
+    "h": 38
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "focus-visible:ring-ring relative flex size-10 select-none it",
+   "id": "",
+   "ariaLabel": "市场",
+   "rect": {
+    "x": 4,
+    "y": 50,
+    "w": 40,
+    "h": 40
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "focus-visible:ring-ring relative flex size-10 select-none it",
+   "id": "",
+   "ariaLabel": "行情",
+   "rect": {
+    "x": 4,
+    "y": 98,
+    "w": 40,
+    "h": 40
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "focus-visible:ring-ring relative flex size-10 select-none it",
+   "id": "",
+   "ariaLabel": "波动率",
+   "rect": {
+    "x": 4,
+    "y": 146,
+    "w": 40,
+    "h": 40
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "focus-visible:ring-ring relative flex size-10 select-none it",
+   "id": "",
+   "ariaLabel": "策略",
+   "rect": {
+    "x": 4,
+    "y": 194,
+    "w": 40,
+    "h": 40
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "focus-visible:ring-ring relative flex size-10 select-none it",
+   "id": "",
+   "ariaLabel": "期货",
+   "rect": {
+    "x": 4,
+    "y": 242,
+    "w": 40,
+    "h": 40
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "focus-visible:ring-ring relative flex size-10 select-none it",
+   "id": "",
+   "ariaLabel": "异动",
+   "rect": {
+    "x": 4,
+    "y": 290,
+    "w": 40,
+    "h": 40
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "hover:bg-foreground/8 text-muted-foreground hover:text-foreg",
+   "id": "",
+   "ariaLabel": "打开期权到期日历",
+   "rect": {
+    "x": 4,
+    "y": 716,
+    "w": 40,
+    "h": 40
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "group/button inline-flex shrink-0 items-center justify-cente",
+   "id": "",
+   "ariaLabel": "打开帮助菜单",
+   "rect": {
+    "x": 4,
+    "y": 762,
+    "w": 40,
+    "h": 40
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "group/button inline-flex shrink-0 items-center justify-cente",
+   "id": "",
+   "ariaLabel": "打开用户菜单",
+   "rect": {
+    "x": 4,
+    "y": 808,
+    "w": 40,
+    "h": 40
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "板块",
+   "href": "",
+   "class": "text-muted-foreground focus-visible:ring-ring/50 relative in",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 59,
+    "y": 50,
+    "w": 74,
+    "h": 24
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "交易所",
+   "href": "",
+   "class": "text-muted-foreground focus-visible:ring-ring/50 relative in",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 135,
+    "y": 50,
+    "w": 88,
+    "h": 24
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "自选",
+   "href": "",
+   "class": "focus-visible:ring-ring/50 relative inline-flex h-6 items-ce",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 225,
+    "y": 50,
+    "w": 74,
+    "h": 24
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "data-[state=unchecked]:bg-input focus-visible:border-ring fo",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 0,
+    "y": 0,
+    "w": 0,
+    "h": 0
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "data-[state=checked]:bg-primary data-[state=unchecked]:bg-in",
+   "id": "«r74»",
+   "ariaLabel": "",
+   "rect": {
+    "x": 0,
+    "y": 0,
+    "w": 0,
+    "h": 0
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "全部",
+   "href": "",
+   "class": "inline-flex h-7 items-center rounded-md px-2.5 text-sm leadi",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 313,
+    "y": 45,
+    "w": 49,
+    "h": 28
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "苯乙烯",
+   "href": "",
+   "class": "inline-flex h-7 items-center rounded-md px-2.5 text-sm leadi",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 375,
+    "y": 48,
+    "w": 63,
+    "h": 28
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "纯苯",
+   "href": "",
+   "class": "inline-flex h-7 items-center rounded-md px-2.5 text-sm leadi",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 450,
+    "y": 48,
+    "w": 49,
+    "h": 28
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "对二甲苯",
+   "href": "",
+   "class": "inline-flex h-7 items-center rounded-md px-2.5 text-sm leadi",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 511,
+    "y": 48,
+    "w": 77,
+    "h": 28
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "沪锡",
+   "href": "",
+   "class": "inline-flex h-7 items-center rounded-md px-2.5 text-sm leadi",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 601,
+    "y": 48,
+    "w": 49,
+    "h": 28
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "鸡蛋",
+   "href": "",
+   "class": "inline-flex h-7 items-center rounded-md px-2.5 text-sm leadi",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 662,
+    "y": 48,
+    "w": 49,
+    "h": 28
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "甲醇",
+   "href": "",
+   "class": "inline-flex h-7 items-center rounded-md px-2.5 text-sm leadi",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 723,
+    "y": 48,
+    "w": 49,
+    "h": 28
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "更多(+5)",
+   "href": "",
+   "class": "inline-flex h-7 items-center rounded-md px-2.5 text-sm leadi",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 785,
+    "y": 48,
+    "w": 77,
+    "h": 28
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "data-[state=unchecked]:bg-input focus-visible:border-ring fo",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 1250,
+    "y": 54,
+    "w": 29,
+    "h": 17
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "",
+   "href": "",
+   "class": "data-[state=checked]:bg-primary data-[state=unchecked]:bg-in",
+   "id": "«r79»",
+   "ariaLabel": "",
+   "rect": {
+    "x": 1374,
+    "y": 54,
+    "w": 29,
+    "h": 17
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "对二甲苯",
+   "href": "",
+   "class": "flex cursor-pointer items-center font-medium hover:underline",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 81,
+    "y": 192,
+    "w": 76,
+    "h": 20
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "沪锡",
+   "href": "",
+   "class": "flex cursor-pointer items-center font-medium hover:underline",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 81,
+    "y": 237,
+    "w": 48,
+    "h": 20
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "LPG",
+   "href": "",
+   "class": "flex cursor-pointer items-center font-medium hover:underline",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 81,
+    "y": 283,
+    "w": 46,
+    "h": 20
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "PVC",
+   "href": "",
+   "class": "flex cursor-pointer items-center font-medium hover:underline",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 81,
+    "y": 328,
+    "w": 47,
+    "h": 20
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "PTA",
+   "href": "",
+   "class": "flex cursor-pointer items-center font-medium hover:underline",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 81,
+    "y": 373,
+    "w": 45,
+    "h": 20
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "纯苯",
+   "href": "",
+   "class": "flex cursor-pointer items-center font-medium hover:underline",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 430,
+    "y": 192,
+    "w": 48,
+    "h": 20
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "苯乙烯",
+   "href": "",
+   "class": "flex cursor-pointer items-center font-medium hover:underline",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 430,
+    "y": 237,
+    "w": 62,
+    "h": 20
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "燃油",
+   "href": "",
+   "class": "flex cursor-pointer items-center font-medium hover:underline",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 430,
+    "y": 283,
+    "w": 48,
+    "h": 20
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "焦煤",
+   "href": "",
+   "class": "flex cursor-pointer items-center font-medium hover:underline",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 430,
+    "y": 328,
+    "w": 48,
+    "h": 20
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "甲醇",
+   "href": "",
+   "class": "flex cursor-pointer items-center font-medium hover:underline",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 430,
+    "y": 373,
+    "w": 48,
+    "h": 20
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "焦煤",
+   "href": "",
+   "class": "flex cursor-pointer items-center font-medium hover:underline",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 778,
+    "y": 192,
+    "w": 48,
+    "h": 20
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "燃油",
+   "href": "",
+   "class": "flex cursor-pointer items-center font-medium hover:underline",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 778,
+    "y": 237,
+    "w": 48,
+    "h": 20
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "沪锡",
+   "href": "",
+   "class": "flex cursor-pointer items-center font-medium hover:underline",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 778,
+    "y": 283,
+    "w": 48,
+    "h": 20
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "甲醇",
+   "href": "",
+   "class": "flex cursor-pointer items-center font-medium hover:underline",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 778,
+    "y": 328,
+    "w": 48,
+    "h": 20
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "对二甲苯",
+   "href": "",
+   "class": "flex cursor-pointer items-center font-medium hover:underline",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 778,
+    "y": 373,
+    "w": 76,
+    "h": 20
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "PVC",
+   "href": "",
+   "class": "flex cursor-pointer items-center font-medium hover:underline",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 1126,
+    "y": 192,
+    "w": 47,
+    "h": 20
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "纯苯",
+   "href": "",
+   "class": "flex cursor-pointer items-center font-medium hover:underline",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 1126,
+    "y": 237,
+    "w": 48,
+    "h": 20
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "PTA",
+   "href": "",
+   "class": "flex cursor-pointer items-center font-medium hover:underline",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 1126,
+    "y": 283,
+    "w": 45,
+    "h": 20
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "苯乙烯",
+   "href": "",
+   "class": "flex cursor-pointer items-center font-medium hover:underline",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 1126,
+    "y": 328,
+    "w": 62,
+    "h": 20
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "LPG",
+   "href": "",
+   "class": "flex cursor-pointer items-center font-medium hover:underline",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 1126,
+    "y": 373,
+    "w": 46,
+    "h": 20
+   }
+  },
+  {
+   "tag": "DIV",
+   "text": "选择品种",
+   "href": "",
+   "class": "inline-flex h-8 max-w-full items-center gap-0.5 px-1.5 trans",
+   "id": "",
+   "ariaLabel": "选择品种",
+   "rect": {
+    "x": 71,
+    "y": 423,
+    "w": 142,
+    "h": 32
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "PTA主TA2610",
+   "href": "",
+   "class": "flex min-w-0 cursor-pointer items-center text-left",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 68,
+    "y": 512,
+    "w": 87,
+    "h": 52
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "对二甲苯主PX2611",
+   "href": "",
+   "class": "flex min-w-0 cursor-pointer items-center text-left",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 68,
+    "y": 585,
+    "w": 110,
+    "h": 52
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "甲醇主MA2610",
+   "href": "",
+   "class": "flex min-w-0 cursor-pointer items-center text-left",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 68,
+    "y": 658,
+    "w": 94,
+    "h": 52
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "焦煤主JM2610",
+   "href": "",
+   "class": "flex min-w-0 cursor-pointer items-center text-left",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 68,
+    "y": 731,
+    "w": 90,
+    "h": 52
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "LPG主PG2610",
+   "href": "",
+   "class": "flex min-w-0 cursor-pointer items-center text-left",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 68,
+    "y": 804,
+    "w": 89,
+    "h": 52
+   }
+  },
+  {
+   "tag": "BUTTON",
+   "text": "PVC主V2610",
+   "href": "",
+   "class": "flex min-w-0 cursor-pointer items-center text-left",
+   "id": "",
+   "ariaLabel": "",
+   "rect": {
+    "x": 68,
+    "y": 877,
+    "w": 81,
+    "h": 52
+   }
+  }
+ ],
+ "count": 58
+}

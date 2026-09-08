@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,IE=9,IE=10,IE=11" >
+    <!--title>赢顺云端交易 - 主流期货交易软件，云端条件单、画线下单</title-->
+    <title></title>
+    <link rel="stylesheet" href="/static/css/global.css?v=0.22" />
+	<script type="text/javascript" src="/static/js/jquery-1.11.0.min.js"></script>
+	<!--<script src="/static/js/global.js"></script>-->
+    <script type="module" src="/static/js/fetchCommonData.js"></script>
+    
+</head>
+<body>
+<script type="text/javascript" src="../debug.js?v=0.2"></script>
+<div class="top">
+    <div class="inner">
+<!--logo和导航-->
+<i class="logo" style="width:400px;margin-right:0"></i>
+<div class="nav">
+ 	<!--<span style="width: 14%; height: 60px; float: left;"></span>--> 
+    <div class="active">
+    	<a href="/Home/Index">首页</a>
+    </div>
+    <div class="">
+    	<a href="/Solution/index">功能特色</a>
+    </div>
+    <div class="">
+    	<a href="/Download/index">软件下载</a>
+    	<!--<ul class="navList" style="width: 155px;">
+    		<li class="download"><a href="/Download/index?flag=0">下载实盘通用版</a></li>
+    		<li class="download"><a href="/Download/index?flag=1">下载五档行情版</a></li>
+    		<li class="download"><a href="/Download/index?flag=2">下载模拟交易试用版</a></li>
+    	</ul>-->
+    </div>
+    <div class="">
+    	<a href="/Order/Index">交易通道</a>
+    	<!--<ul class="navList">
+			<li class="ev-menu-item"><a href="/Order/index?flag=0">国内期货交易</a></li>
+			<li class="ev-menu-item"><a href="/Order/index?flag=1">境外期货交易</a></li>
+			<li class="ev-menu-item"><a href="/Order/index?flag=2">股票交易</a></li>
+    	</ul>-->
+    </div>
+    <div class="">
+    	<a href="/Service/index">服务</a>
+    	<!--<ul class="navList">
+    		<li class="VIP"><a href="/Service/FeedbackSoftPro">VIP服务渠道</a></li>
+    		<li class="VIP"><a href="/Service/WwtService">文文通即时服务</a></li>
+    		<li class="VIP"><a href="/Service/MyFinEng">我的金融工程师</a></li>
+    	</ul>-->
+    </div>
+    <div class="">
+    	<a href="/About/Index">关于<span class="appShortName_10"></span><!--<img src="../static/img/AmyQuant.png" style="vertical-align: middle;border: 0;" />--></a>
+    	<!--<ul class="navList">
+    		<li><a href="/About/ProTransConcept">程序化交易概念</a></li>
+    	</ul>-->
+    </div>
+</div>
+<script type="text/javascript">
+	navEvent();
+	function navEvent() {
+        var nav = $(".nav").find("div").not(".active");
+        nav.mouseover(function() {
+            $(this).addClass("active");
+        }).mouseout(function() {
+            $(this).removeClass("active");
+        });
+    }
+</script>
+<script type="module">
+	_fetchCommonData({
+		url: 'https://wh6.wenhua.com.cn/',
+		title: 'wh6期货行情交易软件'
+	}).then((res) => {
+		let obj = {};
+		res.forEach(item => {
+			obj[item.keyname] = item.value;
+		});
+		generalData('appShortName_10',obj)
+		generalData('countFutures',obj)
+		generalData('appShortName_26',obj)
+		generalData('appShortName_12',obj)
+		generalData('appShortName_11',obj)
+		generalData('appShortName_17',obj)
+		generalData('appShortName_37',obj)
+		generalData('appShortName_29',obj)
+		generalData('appFullName_10',obj)
+		generalData('countInvestor',obj)
+		generalData('countBBSUser',obj)
+		generalData('serviceTel',obj)
+		generalData('serviceTime',obj)
+	})
+	function generalData(keyName,obj){
+		$('.'+keyName).after(obj[keyName]).remove()
+	}
+</script>
+
+
+    </div>
+</div>
+<div id="all">
+    <div class="allinner"><style>
+	.home_banner{
+		height: 814px;
+		width: 100%;
+		background: url(https://wh-api.wenhua.com.cn/api/WhBanner/GetWhBannerUrl?id=20) no-repeat center;
+		padding: 1px 0 0 0;
+	}
+
+	.banner_inner{
+		height: 406px;
+		width: 100%;
+		
+		background: url(https://wh-api.wenhua.com.cn/api/WhBanner/GetWhBannerUrl?id=118) no-repeat center;
+		margin: 410px 0 0 0;
+	}
+</style>
+<input type="hidden" class="proJson" />
+<div class="contenter home_back">
+	<div class="home_banner">
+		<div class="banner_inner"></div>
+	</div>
+	<!-- <div class="home_content"></div>
+	<div class="home_footer"></div> -->
+	<div class="content" style="padding: 50px 0;">
+		<div class="content_type piao1">
+			<img src="/static/img/a.png"/>
+			<div class="home-title1">
+				<div class="home-title-t"></div>
+				<div class="home-title-b">
+					在k线图上画一根线，就可以开仓/平仓，画线存储在云端，本机断电、断网、关机都不受影响。
+				</div>
+			</div>
+		</div>
+		<div class="content_type piao2">
+			<img src="/static/img/b.png"/>
+			<div class="home-title2">
+				<div class="home-title-t"></div>
+				<div class="home-title-b">
+					控制风险，达到设定的止损价自动发出平仓委托，早早关机睡个好觉。
+				</div>
+			</div>
+		</div>
+		<div class="content_type piao3">
+			<img src="/static/img/c.png"/>
+			<div class="home-title3">
+				<div class="home-title-t"></div>
+				<div class="home-title-b">
+					盯夜盘的苦差事交给云端去做，设定价格、时间等条件，达到指定的条件自动发送委托。
+				</div>
+			</div>
+		</div>
+		<div class="content_type piao4">
+			<img src="/static/img/d.png"/>
+			<div class="home-title4">
+				<div class="home-title-t"></div>
+				<div class="home-title-b">
+					个性化设置一键云备份，异机漫游下载启动你的个性化设置。
+				</div>
+			</div>
+		</div>
+		<div class="cloud1"></div>
+		<div class="cloud2"></div>
+		<div class="cloud3"></div>
+		<div class="cloud4"></div>
+	</div>
+</div>
+<script type="module">
+	_fetchCommonData({
+		url: 'https://wh6.wenhua.com.cn/',
+		title: 'wh6期货行情交易软件'
+	}).then((res) => {
+		let obj = {};
+		res.forEach(item => {
+			obj[item.keyname] = item.value;
+		});
+		document.title = obj['appShortName_10'] + obj['appFullName_10'] + ' - 主流期货交易软件';
+	})
+</script></div>
+    <!--页尾-->
+    <div class="bottom">
+    	<div class="botCont">
+    		<div class="botout">
+    			<div class="botin">
+	    			<div class="botdiv1"><a href="https://www.wenhua.com.cn" target="_blank">文华财经官网</a></div>
+	    			<!-- <div class="botdiv3"><span>金融工程师支持：400-811-3366（工作日8:00～18:00）</span></div> -->
+		    		<div class="botdiv2">
+		    			<span>© 上海文华财经资讯股份有限公司&nbsp;&nbsp;&nbsp;ICP证号：沪B2-20110035</span>
+		    		</div>
+	    		</div>
+	    		<a class="botpic1" href="https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011502008976" target="_blank"></a>
+	    		
+    		</div>
+    	</div>
+    </div>
+</div>
+
+</body>
+</html>

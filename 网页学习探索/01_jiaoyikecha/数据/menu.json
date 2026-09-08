@@ -1,0 +1,428 @@
+{
+ "code": 0,
+ "msg": "",
+ "data": [
+  {
+   "name": "user",
+   "title": "个人中心",
+   "icon": "layui-icon-friends",
+   "list": [
+    {
+     "name": "home",
+     "title": "我的主页",
+     "jump": "user/home"
+    }
+   ]
+  },
+  {
+   "name": "vip",
+   "title": "VIP服务",
+   "icon": "layui-icon-diamond",
+   "jump": "vip"
+  },
+  {
+   "name": "indexes",
+   "title": "指数",
+   "icon": "layui-icon-chart",
+   "list": [
+    {
+     "name": "value",
+     "title": "指数详情",
+     "jump": "indexes/show"
+    },
+    {
+     "name": "prices_stat",
+     "title": "指数涨跌统计",
+     "jump": "indexes/prices_stat"
+    },
+    {
+     "name": "money",
+     "title": "指数持仓市值",
+     "jump": "indexes/money"
+    },
+    {
+     "name": "trend",
+     "title": "指数资金动向",
+     "jump": "indexes/trend"
+    },
+    {
+     "name": "structure",
+     "title": "指数持仓结构",
+     "jump": "indexes/structure"
+    },
+    {
+     "name": "profit_loss",
+     "title": "指数盈亏详情",
+     "jump": "indexes/profit_loss"
+    },
+    {
+     "name": "compare",
+     "title": "多指数分析",
+     "jump": "indexes/compare"
+    }
+   ]
+  },
+  {
+   "name": "variety",
+   "title": "商品",
+   "icon": "layui-icon-app",
+   "list": [
+    {
+     "name": "position",
+     "title": "持仓详情",
+     "jump": "variety/position"
+    },
+    {
+     "name": "prices_stat",
+     "title": "商品涨跌统计",
+     "jump": "variety/prices_stat"
+    },
+    {
+     "name": "net_position",
+     "title": "净持仓数据",
+     "jump": "variety/net_position"
+    },
+    {
+     "name": "trend",
+     "title": "商品持仓市值",
+     "jump": "variety/trend"
+    },
+    {
+     "name": "structure",
+     "title": "持仓结构",
+     "jump": "variety/structure"
+    },
+    {
+     "name": "profit_loss",
+     "title": "盈亏席位",
+     "jump": "variety/profit_loss"
+    }
+   ]
+  },
+  {
+   "name": "broker",
+   "title": "席位",
+   "icon": "layui-icon-component",
+   "list": [
+    {
+     "name": "position",
+     "title": "持仓列表",
+     "jump": "broker/position"
+    },
+    {
+     "name": "calendar",
+     "title": "盈亏日历",
+     "jump": "broker/calendar"
+    },
+    {
+     "name": "trend",
+     "title": "大资金动向",
+     "jump": "broker/trend"
+    },
+    {
+     "name": "structure",
+     "title": "持仓结构",
+     "jump": "broker/structure"
+    },
+    {
+     "name": "profit_loss",
+     "title": "盈亏商品",
+     "jump": "broker/profit_loss"
+    },
+    {
+     "name": "operation",
+     "title": "建仓过程",
+     "jump": "broker/operation"
+    },
+    {
+     "name": "pk",
+     "title": "席位对对碰",
+     "jump": "broker/pk"
+    },
+    {
+     "name": "table",
+     "title": "席位大全",
+     "jump": "broker/table"
+    }
+   ]
+  },
+  {
+   "name": "deepview",
+   "title": "实时深度分析<span class='layui-badge-dot layui-hide'></span>",
+   "icon": "layui-icon-engine",
+   "list": [
+    {
+     "name": "market_temp_line",
+     "title": "多空领先指标",
+     "jump": "deepview/market_temp_line"
+    },
+    {
+     "name": "bulldozer",
+     "title": "日内推土机",
+     "jump": "deepview/bulldozer"
+    },
+    {
+     "name": "hg",
+     "title": "支撑压力位",
+     "jump": "deepview/hg"
+    },
+    {
+     "name": "qk",
+     "title": "乾坤归一<span class='layui-badge layui-hide'>火</span>",
+     "jump": "deepview/qk"
+    },
+    {
+     "name": "speculation",
+     "title": "商品投机度",
+     "jump": "deepview/speculation"
+    },
+    {
+     "name": "prices_map",
+     "title": "热度图",
+     "jump": "deepview/prices_map"
+    },
+    {
+     "name": "correlation",
+     "title": "相关性分析",
+     "jump": "deepview/correlation"
+    },
+    {
+     "name": "foreign",
+     "title": "盘后外盘涨跌",
+     "jump": "deepview/foreign"
+    },
+    {
+     "name": "lhnx",
+     "title": "龙虎牛熊一览",
+     "jump": "deepview/lhnx"
+    },
+    {
+     "name": "strategies",
+     "title": "龙虎牛熊分析",
+     "jump": "deepview/strategies"
+    },
+    {
+     "name": "brokers",
+     "title": "席位四象图",
+     "jump": "deepview/brokers"
+    }
+   ]
+  },
+  {
+   "name": "fundamental",
+   "title": "基本面<span class='layui-badge-dot layui-hide'></span>",
+   "icon": "layui-icon-template-1",
+   "list": [
+    {
+     "name": "db",
+     "title": "数据库<span class='layui-badge layui-bg-red layui-hide'>新</span>",
+     "jump": "fundamental/db"
+    },
+    {
+     "name": "list",
+     "title": "现货报价",
+     "jump": "fundamental/spots_list"
+    },
+    {
+     "name": "futurespot",
+     "title": "期现分析",
+     "jump": "",
+     "list": [
+      {
+       "name": "basis_all",
+       "title": "基差一览",
+       "jump": "fundamental/futurespot/basis_all"
+      },
+      {
+       "name": "basis",
+       "title": "基差分析",
+       "jump": "fundamental/futurespot/basis"
+      },
+      {
+       "name": "fut_spot_structure_all",
+       "title": "期限一览",
+       "jump": "fundamental/futurespot/fut_spot_structure_all"
+      },
+      {
+       "name": "fut_spot_structure",
+       "title": "期限结构",
+       "jump": "fundamental/futurespot/fut_spot_structure"
+      },
+      {
+       "name": "inventory",
+       "title": "库存数据",
+       "jump": "fundamental/futurespot/spots_inventory"
+      },
+      {
+       "name": "profit",
+       "title": "利润数据",
+       "jump": "fundamental/futurespot/spots_profit"
+      }
+     ]
+    },
+    {
+     "name": "arbitrage",
+     "title": "套利分析",
+     "jump": "",
+     "list": [
+      {
+       "name": "period",
+       "title": "跨期价差",
+       "jump": "fundamental/arbitrage/periods"
+      },
+      {
+       "name": "varieties",
+       "title": "自由价差",
+       "jump": "fundamental/arbitrage/varieties"
+      },
+      {
+       "name": "varieties2",
+       "title": "自由价比",
+       "jump": "fundamental/arbitrage/varieties2"
+      },
+      {
+       "name": "legs",
+       "title": "多腿组合",
+       "jump": "fundamental/arbitrage/legs"
+      }
+     ]
+    },
+    {
+     "name": "warehouse_receipt",
+     "title": "仓单分析",
+     "jump": "",
+     "list": [
+      {
+       "name": "daily_wr",
+       "title": "仓单日报",
+       "jump": "fundamental/warehouse_receipt/daily_wr"
+      },
+      {
+       "name": "warehouse",
+       "title": "仓单查询",
+       "jump": "fundamental/warehouse_receipt/warehouse"
+      },
+      {
+       "name": "virtual_real",
+       "title": "虚实盘比",
+       "jump": "fundamental/warehouse_receipt/virtual_real"
+      }
+     ]
+    },
+    {
+     "name": "models",
+     "title": "模型分析",
+     "jump": "",
+     "list": [
+      {
+       "name": "model",
+       "title": "库存基差利润模型",
+       "jump": "fundamental/models/model"
+      }
+     ]
+    },
+    {
+     "name": "years",
+     "title": "季节分析",
+     "jump": "",
+     "list": [
+      {
+       "name": "spot_year",
+       "title": "现货季节图",
+       "jump": "fundamental/years/spot_year"
+      },
+      {
+       "name": "compare",
+       "title": "期货季节图",
+       "jump": "fundamental/years/compare"
+      }
+     ]
+    },
+    {
+     "name": "gdp",
+     "title": "各地区经济数据",
+     "jump": "fundamental/gdp"
+    }
+   ]
+  },
+  {
+   "name": "reports",
+   "title": "AI研报资讯<span class='layui-badge-dot layui-hide'></span>",
+   "icon": "layui-icon-form",
+   "list": [
+    {
+     "name": "ai",
+     "title": "AI研报<span class='layui-badge layui-bg-red layui-hide'>新</span>",
+     "jump": "reports/ai"
+    },
+    {
+     "name": "list",
+     "title": "精选研报",
+     "jump": "reports/list"
+    }
+   ]
+  },
+  {
+   "name": "fund",
+   "title": "资金",
+   "icon": "layui-icon-rmb",
+   "list": [
+    {
+     "name": "compare",
+     "title": "市值对比",
+     "jump": "fund/compare"
+    },
+    {
+     "name": "deal_pie",
+     "title": "成交额分布",
+     "jump": "fund/deal_pie"
+    },
+    {
+     "name": "bs_pie",
+     "title": "净持仓分布",
+     "jump": "fund/bs_pie"
+    },
+    {
+     "name": "position_change",
+     "title": "机构动向",
+     "jump": "fund/big_chge"
+    },
+    {
+     "name": "fund_all",
+     "title": "持仓全景图",
+     "jump": "fund/all"
+    }
+   ]
+  },
+  {
+   "name": "download",
+   "title": "下载APP<span class='layui-badge layui-bg-red layui-hide'>新</span>",
+   "icon": "layui-icon-download-circle",
+   "jump": "download"
+  },
+  {
+   "name": "help",
+   "title": "帮助视频",
+   "icon": "layui-icon-video",
+   "jump": "help"
+  },
+  {
+   "name": "app",
+   "title": "期货开户",
+   "icon": "layui-icon-cellphone-fine",
+   "jump": "qihuokaihu"
+  },
+  {
+   "name": "disclaimer",
+   "title": "关于我们",
+   "icon": "layui-icon-file",
+   "jump": "disclaimer"
+  },
+  {
+   "name": "beian",
+   "title": "<div style='font-size: 12px;'>粤ICP备2023067465号</div>",
+   "icon": "layui-icon-vercode",
+   "link": "https://beian.miit.gov.cn"
+  }
+ ]
+}

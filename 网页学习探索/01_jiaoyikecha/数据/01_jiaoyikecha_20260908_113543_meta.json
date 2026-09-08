@@ -1,0 +1,17 @@
+{
+ "url": "https://www.jiaoyikecha.com/www.jiaoyikecha.com",
+ "ts": "20260908_113543",
+ "status": 200,
+ "encoding": "UTF-8",
+ "final_url": "https://www.jiaoyikecha.com/www.jiaoyikecha.com",
+ "bytes": 2313,
+ "text_chars": 0,
+ "headers_ok": {},
+ "n_links": 3,
+ "links": [
+  "https://static.jiaoyikecha.com/start/layui/css/layui.css?v=5f6760cc",
+  "https://static.jiaoyikecha.com/dist/style/share.css?v=5f6760cc",
+  "https://static.qhkch.com/dist/lib/extend/echarts.js?v=--><!--"
+ ],
+ "cookies": {}
+}

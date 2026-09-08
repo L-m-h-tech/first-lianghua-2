@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# IDE / 编辑器
+.idea/
+.vscode/
+*.swp
+.zcode/
+
+# 运行时数据（可再生，重新采集即可生成）
+data/
+@AutomationLog.txt
+
+# venv（已重建，不入库）
+网页学习探索/工具/venv/
+
+# 本地备份文件
+*.bak
+
+# 系统
+.DS_Store
+Thumbs.db

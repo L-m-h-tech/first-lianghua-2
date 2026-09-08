@@ -1,0 +1,233 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9SPL7ERCMF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-9SPL7ERCMF');
+    </script>
+    
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TqSdk 使用指南 &mdash; TqSdk 文档</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="_static/tqsdk-docs.css?v=474b91a4" />
+
+  
+    <link rel="canonical" href="https://doc.shinnytech.com/tqsdk/latest/index.html" />
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=9080cc91"></script>
+      <script src="_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script src="_static/baidu.js?v=17d25fb3"></script>
+      <script src="_static/translations.js?v=540d3cec"></script>
+      <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+      <script src="_static/tqsdk-docs.js?v=cb8cbefe"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" />
+    <link rel="next" title="TqSdk 介绍" href="intro.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+  <a class="tq-skip-link" href="#tq-main">跳转到正文</a>
+  <header class="tq-topbar">
+    <a class="tq-wordmark" href="#">TqSdk <span>天勤量化</span></a>
+    <nav aria-label="快捷导航">
+      <a href="quickstart.html">快速入门</a>
+      <a href="reference/index.html">API 参考</a>
+      <a href="demo/index.html">示例</a>
+      <a href="ai_editor/tqsdk_skills.html">AI Skills</a>
+      <a href="https://github.com/shinnytech/tqsdk-python">GitHub <span aria-hidden="true">↗</span></a>
+    </nav>
+    <a class="tq-version" href="version.html">v3.10.2</a>
+  </header>
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+  <a class="tq-doc-label" href="#">开发者文档 <span>简体中文</span></a>
+  
+<div role="search">
+  <form id="rtd-search-form" class="wy-form tq-search" action="search.html" method="get">
+    <label class="tq-sr-only" for="tq-search-input">搜索文档</label>
+    <input id="tq-search-input" type="search" name="q" placeholder="搜索文档或 API…" autocomplete="off" aria-keyshortcuts="/" />
+    <button type="submit" aria-label="搜索"><span class="fa fa-search" aria-hidden="true"></span></button>
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+  <p class="tq-search-hint">在正文按 <kbd>/</kbd> 聚焦搜索框</p>
+</div>
+
+
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">入门</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="intro.html">TqSdk 介绍</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">十分钟快速入门</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">使用与示例</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="usage/index.html">使用 TqSdk</a></li>
+<li class="toctree-l1"><a class="reference internal" href="demo/index.html">示例程序</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">API 参考</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="reference/index.html">TqSdk API 参考</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">进阶专题</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="advanced/index.html">进阶主题</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">AI 工具</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="ai_editor/index.html">通过 AI 工具使用 TqSdk</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">开发、产品与支持</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="dev_general.html">原则与规范</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dev_framework.html">TqSdk整体结构</a></li>
+<li class="toctree-l1"><a class="reference internal" href="profession.html">TqSdk 专业版</a></li>
+<li class="toctree-l1"><a class="reference internal" href="enterprise.html">TqSdk 企业版</a></li>
+<li class="toctree-l1"><a class="reference internal" href="qa.html">常见问题与支持</a></li>
+<li class="toctree-l1"><a class="reference internal" href="version.html">版本变更</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+  <button type="button" data-toggle="wy-nav-top" class="tq-menu-toggle" aria-label="打开文档导航" aria-expanded="false">
+    <span class="fa fa-bars" aria-hidden="true"></span><span>目录</span>
+  </button>
+  <a href="#">TqSdk 文档</a>
+
+      </nav>
+
+      <div class="wy-nav-content">
+  <div class="tq-reading-layout tq-home-layout">
+    <div class="rst-content">
+      <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="#" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">TqSdk 使用指南</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/index.rst.txt" rel="nofollow"> 查看页面源码</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+      
+      <main id="tq-main" class="document" role="main" tabindex="-1" itemscope itemtype="https://schema.org/Article">
+        <div itemprop="articleBody">
+  <section id="tqsdk">
+<span id="tianqin-python-sdk-user-guide"></span><span id="pysdk"></span><h1>TqSdk 使用指南<a class="headerlink" href="#tqsdk" title="链接到此标题。"></a></h1>
+<div class="tq-home-hero">
+  <p class="tq-eyebrow">PYTHON · 行情 · 交易 · 回测</p>
+  <p class="tq-lead">TqSdk 是开源的 Python 量化交易开发包。<br>使用统一的 API 获取行情与历史数据，编写策略，进行回测、模拟和实盘交易。</p>
+</div><p>本文档按“快速上手 → 常用功能与模块参考 → 进阶专题 → 产品与支持”的路径组织，方便按学习阶段和使用场景查阅。</p>
+<div class="tq-actions">
+  <a class="tq-button" href="quickstart.html">十分钟快速入门 →</a>
+  <a class="tq-button tq-button-secondary" href="reference/index.html">查阅 API 参考</a>
+</div>
+<div class="tq-home-meta"><span>Python 3.9+</span><span>开源 Python SDK</span><span>从本地模拟开始</span></div><section id="id1">
+<h2>选择你的起点<a class="headerlink" href="#id1" title="链接到此标题。"></a></h2>
+<p>第一次接触 TqSdk，可以先了解它的能力，再运行第一个程序，之后按需查阅常用功能。</p>
+<div class="tq-path-grid">
+  <a class="tq-path" href="intro.html">
+    <span class="tq-path-number">01 / INTRO</span>
+    <strong>了解 TqSdk</strong>
+    <p>了解开发包的主要能力、程序结构，以及行情、回测和交易如何配合。</p>
+    <span class="tq-path-cta">阅读 TqSdk 介绍 →</span>
+  </a>
+  <a class="tq-path" href="quickstart.html">
+    <span class="tq-path-number">02 / LEARN</span>
+    <strong>跟着教程动手</strong>
+    <p>运行第一个行情程序，理解更新循环，再尝试模拟交易和历史回测。</p>
+    <span class="tq-path-cta">十分钟快速入门 →</span>
+  </a>
+  <a class="tq-path" href="usage/index.html">
+    <span class="tq-path-number">03 / BUILD</span>
+    <strong>使用常用功能</strong>
+    <p>按任务学习行情、K 线、委托、目标持仓和回测，逐步构建自己的策略。</p>
+    <span class="tq-path-cta">浏览使用指南 →</span>
+  </a>
+</div><p>运行第一个程序后，建议继续阅读 <a class="reference internal" href="usage/framework.html#framework"><span class="std std-ref">策略程序结构</span></a> 和 <a class="reference internal" href="usage/shinny_account.html#shinny-account"><span class="std std-ref">快期账户</span></a>，再学习 <a class="reference internal" href="usage/mddatas.html#mddatas"><span class="std std-ref">合约, 行情和历史数据</span></a>、<a class="reference internal" href="usage/trade.html#trade"><span class="std std-ref">账户与交易</span></a> 与 <a class="reference internal" href="usage/targetpostask.html#targetpostask"><span class="std std-ref">交易辅助工具</span></a>，最后按需进入进阶主题。</p>
+<p><strong>配合 AI 开发：</strong> 如果你使用 AI 编码工具，建议先给它加载 <a class="reference internal" href="ai_editor/tqsdk_skills.html#tqsdk-skills"><span class="std std-ref">TqSdk Skills 压缩包与使用说明</span></a>，再让它协助写代码或排错。使用说明页提供可直接复制的提示词和完整技能包。</p>
+</section>
+<section id="id2">
+<h2>按任务查找<a class="headerlink" href="#id2" title="链接到此标题。"></a></h2>
+<div class="tq-topic-grid">
+  <a class="tq-topic" href="usage/mddatas.html"><strong>获取行情与历史数据 →</strong><span>合约代码、实时行情、K 线与 Tick 数据。</span></a>
+  <a class="tq-topic" href="usage/targetpostask.html"><strong>下单与管理目标持仓 →</strong><span>委托状态、撤单、自动调仓与持仓管理。</span></a>
+  <a class="tq-topic" href="usage/backtest.html"><strong>运行策略回测 →</strong><span>选择历史区间、处理回测结束、查看回测结果。</span></a>
+  <a class="tq-topic" href="demo/index.html"><strong>寻找完整示例 →</strong><span>从基础功能到交易策略，按场景选择示例程序。</span></a>
+  <a class="tq-topic" href="ai_editor/index.html"><strong>与 AI 一起开发 →</strong><span>给 AI 提供 TqSdk 技能包与项目上下文。</span></a>
+  <a class="tq-topic" href="qa.html"><strong>排查使用问题 →</strong><span>安装、登录、行情更新与模拟账户的常见疑问。</span></a>
+</div></section>
+<section id="id3">
+<h2>先理解这三个概念<a class="headerlink" href="#id3" title="链接到此标题。"></a></h2>
+<ul class="simple">
+<li><p><strong>TqApi</strong> 负责连接服务、维护数据并驱动策略。</p></li>
+<li><p><strong>数据引用</strong> 会持续更新；先订阅，再在循环里读取，无需反复创建订阅。</p></li>
+<li><p><strong>wait_update()</strong> 推进数据、请求和后台任务；用 <code class="docutils literal notranslate"><span class="pre">is_changing()</span></code> 判断关心的数据是否变化。</p></li>
+</ul>
+<p>继续阅读 <a class="reference internal" href="usage/framework.html#framework"><span class="std std-ref">策略程序结构</span></a>，或先了解 <a class="reference internal" href="intro.html#intro"><span class="std std-ref">TqSdk 介绍</span></a>。</p>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+</section>
+
+</div>
+      </main>
+      <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="intro.html" class="btn btn-neutral float-right" title="TqSdk 介绍" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 2018-2026, TianQin。</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+    </div>
+    
+  </div>
+
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(false);
+      });
+  </script> 
+
+</body>
+</html>

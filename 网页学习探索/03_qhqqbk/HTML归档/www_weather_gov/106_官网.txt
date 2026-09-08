@@ -1,0 +1,125 @@
+# 官网
+# URL: https://www.weather.gov/
+# fetched: 20260908_113932
+
+HOME
+FORECAST
+Local
+Graphical
+Aviation
+Marine
+Rivers and Lakes
+Hurricanes
+Severe Weather
+Fire Weather
+Sunrise/Sunset
+Long Range Forecasts
+Climate Prediction
+Space Weather
+PAST WEATHER
+Past Weather
+Astronomical Data
+Certified Weather Data
+SAFETY
+INFORMATION
+Wireless Emergency Alerts
+Weather-Ready Nation
+Brochures
+Cooperative Observers
+Daily Briefing
+Damage/Fatality/Injury Statistics
+Forecast Models
+GIS Data Portal
+NOAA Weather Radio
+Publications
+SKYWARN Storm Spotters
+StormReady
+TsunamiReady
+Service Change Notices
+EDUCATION
+NEWS
+SEARCH
+Search For
+NWSAll NOAA
+ABOUT
+About NWS
+Organization
+For NWS Employees
+National Centers
+Careers
+Contact Us
+Glossary
+Social Media
+NWS Transformation
+Local forecast by 
+"City, St" or ZIP code
+Sorry, the location you searched for was not found. Please try another search.
+Multiple locations were found. Please select one of the following:
+Location Help
+Lowell to Impact Hawaii; Heat Persists in the South-Central U.S.
+ Hurricane Lowell is forecast to pass west of Kauai`s coastal waters tonight. Impacts such as high surf and heavy rain could impact all of the islands. Sweltering heat remains across the South-Central Plains and Lower/Middle Mississippi Valley into this week with limited nighttime relief. Periods of moderate to heavy rainfall will be possible through Tuesday morning in the northern Rockies.
+ Read More >
+Customize Your Weather.gov
+Enter Your City, ST or ZIP Code
+Remember Me
+Privacy Policy
+LOADING...
+ACTIVE ALERTS
+FORECAST MAPS
+RADAR
+ Standard Radar (Low Bandwidth)
+ Enhanced Radar
+RIVERS, LAKES, RAINFALL
+AIR QUALITY
+SATELLITE
+CURRENT
+American SamoaGuamPuerto Rico/Virgin Islands
+ Click on the map above for detailed alerts
+Public Alerts in XML/CAP v1.2 and ATOM Formats
+Severe Thunderstorm Warning
+Flash Flood Warning
+Hurricane Warning
+High Wind Warning
+Tropical Storm Warning
+Flood Warning
+High Surf Warning
+Extreme Heat Warning
+Tornado Watch
+Severe Thunderstorm Watch
+Gale Warning
+Heat Advisory
+Flood Advisory
+Coastal Flood Advisory
+High Surf Advisory
+Small Craft Advisory
+Lake Wind Advisory
+Wind Advisory
+Frost Advisory
+Rip Current Statement
+Beach Hazards Statement
+Gale Watch
+Flood Watch
+High Wind Watch
+Coastal Flood Statement
+Special Weather Statement
+Air Quality Alert
+Hydrologic Outlook
+Safety
+  Follow us on X
+  Follow us on Facebook
+  Follow us on YouTube
+  NWS RSS Feed
+US Dept of Commerce
+National Oceanic and Atmospheric Administration
+National Weather Service
+ 1325 East West Highway
+ Silver Spring, MD 20910
+Comments? Questions? Please Contact Us.
+Disclaimer
+Information Quality
+Help
+Glossary
+Privacy Policy
+Freedom of Information Act (FOIA)
+About Us
+Career Opportunities

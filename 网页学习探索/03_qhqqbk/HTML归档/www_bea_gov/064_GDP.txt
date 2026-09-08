@@ -1,0 +1,148 @@
+# GDP
+# URL: https://www.bea.gov/data/gdp/gross-domestic-product
+# fetched: 20260908_113729
+
+Skip to main content
+An official website of the United States government
+Toggle navigation
+ Main navigation
+ Data
+by Topic
+by Place
+by Economic Account
+ Tools
+Interactive Data
+Application Programming Interface (API)
+Global Value Chain Analyzer
+Income Distribution Analysis Tool (IDAT)
+Country Facts
+BEARFACTS
+Industry Facts
+GDP & Personal Income Mapping
+RIMS II
+eFile
+ News
+Economy at a Glance
+News Releases
+Release Schedule
+The BEA Wire | BEA's Official Blog
+Survey of Current Business
+Archive
+For Journalists
+ Research
+Offices of Research
+Meet the Researchers
+Papers
+Special Sworn Researcher Program
+Research Using Company-Level Data
+Fellowship Program
+ Resources
+Learning Center
+Methodologies
+Multimedia
+Article Collections
+For Congressional Users
+For Developers
+For Students
+ About
+Who We Are
+BEA Leadership
+Innovation at BEA
+Advisory Committees
+Budget and Performance
+Policies and Information
+Working at BEA
+ Help
+Contact Us
+Ask an Expert
+For Survey Respondents
+Frequently Asked Questions (FAQ)
+Glossary
+Guidelines for Citing BEA
+Home
+BEA Data
+GDP
+ Gross Domestic Product
+Gross Domestic Product
+GDP (Second Estimate) and Corporate Profits, 2nd Quarter 2026
+Q2 2026 (2nd)
++1.5%
+Q1 2026
++2.1%
+ Real gross domestic product (GDP) increased at an annual rate of 1.5 percent in the second quarter of 2026 (April, May, and June), according to the second estimate released today by the U.S. Bureau of Economic Analysis (BEA). In the first quarter, real GDP increased 2.1 percent. The contributors to the increase in real GDP in the second quarter were increases in consumer spending, exports, and investment that were partly offset by a decrease in government spending. Imports, which are a subtraction in the calculation of GDP, increased.
+ Current Release
+Current Release: August 26, 2026
+Next Release: September 30, 2026
+ Real GDP: Percent Change from Preceding Quarter, Q2'26 (2nd) - HP
+×
+Real GDP: Percent Change from Preceding Quarter, Q2'26 (2nd) - HP
+Close
+ Current Release
+GDP (Second Estimate) and Corporate Profits, 2nd Quarter 2026
+Full ReleasePDF
+Historical ComparisonsXLSX
+Vintage HistoryXLSX
+Key source data and assumptionsXLSX
+Revision Information
+Additional Information
+ Interactive Data
+GDP and the National Income and Product Account (NIPA) Historical Tables
+ Supplemental Information & Additional Data
+Percent Change in Real GDP: Years, Since 1930
+Percent Change in Real GDP: Quarters, Since 1947
+Real GDP (Inflation-Adjusted Dollars): Years, Since 1929
+Real GDP (Inflation-Adjusted Dollars): Quarters, Since 1947
+Current-Dollar GDP: Years, Since 1929
+Current-Dollar GDP: Quarters, Since 1947
+Underlying Detail Tables*_GA_J4698JNNFT*MTCYODQWNDK1MC4XNTAUMS4XNZI4NDA2MDU2LJQ3LJAUMA
+Motor vehiclesXLSXSeptember 2, 2026
+Prices and Output for Information and Communication Technologies
+Estimates prepared for international comparisons based on the System of National Accounts
+Additional Tables
+ Documentation
+NIPA Handbook: Concepts and Methods of the U.S. National Income and Product Accounts
+Measuring the Economy: A Primer on GDP and the National Income and Product Accounts
+Browse additional methodology papers
+ Information on Updates
+Latest Update
+Information on previous updates
+ Previously Published Estimates
+Data ArchiveHTML?HMI=2Previously published estimates contain historical data and have since been revised.
+News Release Archive
+Vintage History of Quarterly Gross Domestic Product (GDP) and Gross Domestic Income (GDI) EstimatesXLSX
+What is Gross Domestic Product?
+A comprehensive measure of U.S. economic activity. GDP measures the value of the final goods and services produced in the United States (without double counting the intermediate goods and services used up to produce them). Changes in GDP are the most popular indicator of the nation's overall economic health.
+Learn More
+ Contact Personnel
+ GDP
+ Lisa Mataloni 
+301-278-9083
+ gdpniwd@bea.gov
+ Corporate Profits
+ Kate Pinard
+301-278-9417
+ cpniwd@bea.gov
+ Media
+ Connie O’Connell
+301-278-9003
+ Connie.OConnell@bea.gov
+Download Acrobat Reader
+Page last modified on 9/2/26
+Bureau of Economic Analysis 4600 Silver Hill Road • Suitland, MD 20746 
+Contact Us
+Working at BEA
+Frequently Asked Questions
+Our Policies
+Privacy
+Commitment to Scientific Integrity
+Data Dissemination Practices
+Open Data
+USA.gov
+Business USA
+No FEAR Act
+FOIA
+U.S. Department of Commerce
+Emergency Status 
+The BEA Wire | BEA's Official Blog
+News Release Feed (RSS)
+Sign up for Email Notifications

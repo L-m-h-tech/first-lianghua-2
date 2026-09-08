@@ -1,0 +1,5316 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>上海期货交易所</title>
+  <!-- START Public CSS -->
+  <script type="text/javascript" charset="utf-8" src="/images/ydui.flexible.js"></script>
+<link rel="stylesheet" type="text/css" href="/images/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="/images/global.css">
+<link rel="stylesheet" type="text/css" href="/images/share.min.css">
+<link rel="stylesheet" type="text/css" href="/images/m_common.css" media="screen and ( max-device-width:750px )" />
+<link rel="stylesheet" type="text/css" href="/images/hc-demo.css" media="screen and ( max-device-width:750px )" />
+<link rel="stylesheet" type="text/css" href="/images/isMobile.css" media="screen and ( max-device-width:750px )" />
+<script>
+  var pathjs = "/"
+</script>
+  <!-- END Public CSS -->
+  <!-- START Plugin CSS -->
+  <link rel="stylesheet" type="text/css" href="/images/element-ui/theme-chalk/index.css" />
+  <link rel="stylesheet" type="text/css" href="/images/home_page_2.css" />
+  <link rel="stylesheet" type="text/css" href="/images/m_home_index.css" media="screen and ( max-device-width:750px )" />
+  <link rel="stylesheet" type="text/css" href="/images/swiper-3.4.2.min.css" />
+  <link rel="stylesheet" type="text/css" href="/images/calendar1.css" />
+  <!-- END Plugin CSS -->
+
+  <style>
+	 [v-cloak]{display: none;}
+    .message_img_item {
+      height: 1.775rem;
+    }
+
+    .message_img_item_img {
+      display: none;
+    }
+
+    .title_btn .red {
+      display: none;
+    }
+
+    .banner {
+      height: 3.37rem !important;
+    }
+
+    .tag_list .more {
+      margin: 0.0313rem;
+      width: auto;
+      padding: 0 0.1rem;
+      height: 0.2rem;
+      line-height: 0.2000rem;
+      text-align: center;
+      color: #ffffff;
+      border-radius: 0.0063rem;
+      display: flex;
+      color: #ffffff;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      width: 0.3rem;
+      display: none;
+    }
+
+    .tag_list .more1 {
+      margin: 0.0313rem;
+      text-align: center;
+      color: #ffffff;
+      display: flex;
+      height: 0.2rem;
+      line-height: normal;
+      flex-wrap: wrap;
+      padding: 0;
+      align-items: center;
+      position: absolute;
+      bottom: 0.1875rem;
+      right: 0.13rem;
+      width: auto;
+      display: none;
+      text-decoration: none;
+    }
+
+    .cate_market .cate_content .main_content .img_item .more1 img {
+      width: auto;
+      height: auto;
+    }
+
+    .tag_list.active .tag_item {
+      display: block !important;
+    }
+
+    .tag_list.active .more1 img {
+      transform: rotate(180deg);
+    }
+
+    .block_item a {
+      color: gray;
+    }
+
+    .active_cate_tab a {
+      color: white;
+    }
+
+    .bottom_title a {
+      color: white;
+    }
+
+    .cate_market .cate_content .content_left .tag_list {
+      left: 0.07rem;
+    }
+
+    .cate_market .cate_content .content_left .img_item:nth-child(2) .tag_item:nth-child(2) {
+      padding: 0 0.187rem;
+    }
+
+    .cate_market .cate_content .content_left .img_item:nth-child(3) .tag_item:nth-child(4) {
+      padding: 0 0.21rem;
+    }
+
+    .cate_market .cate_content .content_left .img_item:nth-child(3) .tag_item:nth-child(5) {
+      padding: 0 0.216rem;
+    }
+
+    .cate_market .cate_content .content_left .img_item:nth-child(3) .tag_item:nth-child(8) {
+      padding: 0 0.136rem;
+    }
+
+    .cate_market .cate_content .content_left .img_item:nth-child(4) .tag_item:nth-child(1) {
+      padding: 0 0.68rem;
+    }
+
+    .cate_market .cate_content .content_left .img_item:nth-child(4) .tag_list {
+      left: 14%;
+    }
+
+    .content .cate_market .cate_content .content_left .img_item .tag_list .item_3 {
+      padding: 0 0.38rem;
+    }
+
+    .m_font_thin_color {
+      color: #fff;
+    }
+
+    .m_text_aicon {
+      transform: scale(1,1.6);
+      font-size: 0.08rem;
+      position: relative;
+      top: 0rem;
+      color: #333;
+    }
+    .m_mobile_box .swiper-slide >a {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+    }
+    .m_mobile_box .swiper-slide >a img {
+      width: 100%;
+      height: 1.38rem;
+    }
+  </style>
+
+  
+  
+
+
+  <!-- START head CSS -->
+  <!--
+ * @Description: content
+ * @Author: fu.qiang
+ * @Date: 2023-07-07 15:55:16
+ * @LastEditors: xwzhou xwzhou1@163.com
+ * @LastEditTime: 2023-07-21 17:02:50
+-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+
+<!-- <link rel="shortcut icon" href="favicon.ico"> -->
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta name="format-detection" content="telephone=yes" />
+<!-- rem -->
+<script type="text/javascript" charset="utf-8" src="/images/ydui.flexible.js"></script>
+<!--[if lt IE 9]>
+		<scriptignoreapd="1" src="/images/html5shiv.min.js"></script>
+		<scriptignoreapd="1" src="/images/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+  
+  <!-- START body -->
+  <div class="control" id="js_index">
+    <!-- START header -->
+    <style>
+.inc-header .input-box{
+	width: 1.5688rem;	
+}
+  .contentNew {
+    width: 1.5688rem !important;
+    height: 0.25rem !important;
+    margin-top: 0 !important;
+  }
+  .contentNew .search-block {
+    width: 1.5688rem !important;
+    height: 0.25rem !important;
+    top: 0 !important;
+  }
+  .contentNew .search-block .inline-input {
+    height: 0.25rem !important;
+    width: 1.5688rem !important;
+  }
+  .contentNew .el-input {
+    height: 0.25rem !important;
+  }
+  .contentNew .el-input__inner {
+    border: none !important;
+  }
+
+  .inc-header img {
+    width: 82%;
+    height: auto;
+  }
+
+  /* PC端 */
+  .m_pc_box {
+    display: block;
+  }
+  .m_mobile_box {
+    display: none;
+  }
+
+  .hc-offcanvas-nav {
+    display: none;
+  }
+  .hc-offcanvas-nav.hc-nav-1 {
+    display: none;
+  }
+  .home_top_investor{ 
+	  color: #003e8e;
+  }
+  .home_top_edu{
+	  margin-right: 0.15rem;
+	  color: #003e8e;
+  }
+  .home_investor_edu_gap{
+	color: #003e8e; 
+	 position: relative;
+	 top:-0.0015rem;
+	 padding:0 0.02rem;
+
+  }
+
+  /* 移动端 */
+  @media screen and (max-width: 750px) {
+    .m_pc_box {
+      display: none;
+    }
+    .hc-offcanvas-nav {
+      display: block;
+    }
+    .m_mobile_box {
+      display: block;
+    }
+    .control {
+      min-width: unset;
+    }
+    .hc-offcanvas-nav {
+      display: block;
+    }
+    .hc-offcanvas-nav.hc-nav-1 {
+      display: block;
+    }
+
+    .m_img {
+      position: relative;
+      width: 100%;
+      height: 0.73rem;
+    }
+    .m_des_text {
+      position: absolute;
+      top: 0.3rem;
+      left: 0.3rem;
+      font-size: 0.12rem;
+      color: #fff;
+      font-weight: bold;
+    }
+    /* .isMobile .sqs_search, .sqs_search>img */
+    .sqs_searchAndLogin .sqs_eng {
+      width: 0.24rem;
+    }
+    .sqs_eng > img {
+      width: 0.24rem;
+      height: 0.23rem;
+      position: relative;
+      top: -0.025rem;
+    }
+  }
+</style>
+
+<!-- pc端 -->
+<div class="m_pc_box">
+  <div class="inc-header">
+    <div class="header-box flex-row">
+      <div class="logo">
+        <a href="/" style="display: block"><img src="/images/index_icon.jpg" alt="" /> </a>
+      </div>
+      <div class="top-right flex-row align-center" id="search_idNew">
+        <div class="input-box">
+          <div class="contentNew content_select">
+            <div class="search-block">
+              <el-autocomplete class="inline-input" v-model="inputStr" id="searchText" :fetch-suggestions="getFullKey" value-key="word" placeholder="请输入内容" :trigger-on-focus="false" @select="handleSelect" @keyup.enter.native="searchTextNew">
+                <i slot="suffix">
+                  <a class="search-icon cur" id="searchHeaderBtn" @click="searchHeaderBtnNew"></a>
+                </i>
+              </el-autocomplete>
+            </div>
+          </div>
+        </div>
+        <a id="height_btn" @click="height_btnNew">高级搜索</a>
+		<span  id="home_top_investor" style="display: none;">
+		<a class="home_top_investor"  href="/specialtopic/investor/" >
+		我是投资者
+		</a><i class="home_investor_edu_gap">|</i>
+		<a class="home_top_edu" href="https://edu.shfe.com.cn">投资者教育网站</a>
+		 </span>
+        <div class="language flex-row align-center">
+          <a href="/eng/">EN</a>
+          <span class="bor"></span>
+          <span id="StranLink">繁</span>
+          <span id="StranLink1">简</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header-nav">
+    <div class="header-nav-box">
+      <ul class="flex-row align-center">
+        <li>
+          <a href="/">首页</a>
+        </li>
+        <li class="header-link-tit">
+          <a href="/products/">
+            产品
+            <span class="nav-arrow"></span>
+          </a>
+        </li>
+        <li class="header-link-tit">
+          <a href="/reports/">
+            数据
+            <span class="nav-arrow"></span>
+          </a>
+        </li>
+        <li class="header-link-tit">
+          <a href="/services/">
+            服务
+            <span class="nav-arrow"></span>
+          </a>
+        </li>
+        <li class="header-link-tit">
+          <a href="/regulation/">
+            规则
+            <span class="nav-arrow"></span>
+          </a>
+        </li>
+        <li class="header-link-tit">
+          <a href="/publicnotice/">
+            公告
+            <span class="nav-arrow"></span>
+          </a>
+        </li>
+        <li class="header-link-tit">
+          <a href="/about/">
+            关于
+            <span class="nav-arrow"></span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- 二级导航折叠 -->
+  <div class="header-subs">
+    <div class="header-sub">
+      <!-- 产品 -->
+      <div class="subContent sub">
+        <div class="subItem">
+          期货
+          <div class="subItemContent">
+            <ul class="itemContent">
+              <li class="left">金属</li>
+              
+                
+                  <li class="isActive">
+                    <a href="/products/futures/metal/nonferrousmetal/cu_f/">铜</a>
+                  </li>
+                
+                  <li class="isActive">
+                    <a href="/products/futures/metal/nonferrousmetal/bc_f/">铜(BC)</a>
+                  </li>
+                
+                  <li class="isActive">
+                    <a href="/products/futures/metal/nonferrousmetal/al_f/">铝</a>
+                  </li>
+                
+                  <li class="isActive">
+                    <a href="/products/futures/metal/nonferrousmetal/zn_f/">锌</a>
+                  </li>
+                
+                  <li class="isActive">
+                    <a href="/products/futures/metal/nonferrousmetal/pb_f/">铅</a>
+                  </li>
+                
+                  <li class="isActive">
+                    <a href="/products/futures/metal/nonferrousmetal/ni_f/">镍</a>
+                  </li>
+                
+                  <li class="isActive">
+                    <a href="/products/futures/metal/nonferrousmetal/sn_f/">锡</a>
+                  </li>
+                
+                  <li class="isActive">
+                    <a href="/products/futures/metal/nonferrousmetal/ao_f/">氧化铝</a>
+                  </li>
+                
+                  <li class="isActive">
+                    <a href="/products/futures/metal/nonferrousmetal/ad_f/">铸造铝合金</a>
+                  </li>
+                
+              
+                
+                  <li class="isActive">
+                    <a href="/products/futures/metal/ferrousandpreciousmetal/au_f/">黄金</a>
+                  </li>
+                
+                  <li class="isActive">
+                    <a href="/products/futures/metal/ferrousandpreciousmetal/ag_f/">白银</a>
+                  </li>
+                
+                  <li class="isActive">
+                    <a href="/products/futures/metal/ferrousandpreciousmetal/rb_f/">螺纹钢</a>
+                  </li>
+                
+                  <li class="isActive">
+                    <a href="/products/futures/metal/ferrousandpreciousmetal/wr_f/">线材</a>
+                  </li>
+                
+                  <li class="isActive">
+                    <a href="/products/futures/metal/ferrousandpreciousmetal/hc_f/">热轧卷板</a>
+                  </li>
+                
+                  <li class="isActive">
+                    <a href="/products/futures/metal/ferrousandpreciousmetal/ss_f/">不锈钢</a>
+                  </li>
+                
+              
+            </ul>
+
+            <ul class="itemContent">
+              <li class="left">能源化工</li>
+              
+                <li class="isActive">
+                  <a href="/products/futures/energyandchemical/sc_f/">原油</a>
+                </li>
+              
+                <li class="isActive">
+                  <a href="/products/futures/energyandchemical/lu_f/">低硫燃料油</a>
+                </li>
+              
+                <li class="isActive">
+                  <a href="/products/futures/energyandchemical/fu_f/">燃料油</a>
+                </li>
+              
+                <li class="isActive">
+                  <a href="/products/futures/energyandchemical/bu_f/">石油沥青</a>
+                </li>
+              
+                <li class="isActive">
+                  <a href="/products/futures/energyandchemical/br_f/">合成橡胶</a>
+                </li>
+              
+                <li class="isActive">
+                  <a href="/products/futures/energyandchemical/ru_f/">天然橡胶</a>
+                </li>
+              
+                <li class="isActive">
+                  <a href="/products/futures/energyandchemical/nr_f/">20号胶</a>
+                </li>
+              
+                <li class="isActive">
+                  <a href="/products/futures/energyandchemical/sp_f/">纸浆</a>
+                </li>
+              
+                <li class="isActive">
+                  <a href="/products/futures/energyandchemical/op_f/">胶版印刷纸</a>
+                </li>
+              
+            </ul>
+
+            <ul class="itemContent">
+              <li class="left">指数</li>
+              
+                <li class="isActive">
+                  <a href="/products/futures/index_f/ec_f/">SCFIS欧线</a>
+                </li>
+              
+            </ul>
+          </div>
+        </div>
+        <div class="subItem">
+          期权
+          <div class="subItemContent">
+            <ul class="itemContent">
+              
+                
+                  <li class="isActive">
+                    <a href="/products/option/nonferrousmetal/cu_o/">铜</a>
+                  </li>
+                
+                  <li class="isActive">
+                    <a href="/products/option/nonferrousmetal/bc_o/">铜(BC)</a>
+                  </li>
+                
+                  <li class="isActive">
+                    <a href="/products/option/nonferrousmetal/al_o/">铝</a>
+                  </li>
+                
+                  <li class="isActive">
+                    <a href="/products/option/nonferrousmetal/zn_o/">锌</a>
+                  </li>
+                
+                  <li class="isActive">
+                    <a href="/products/option/nonferrousmetal/pb_o/">铅</a>
+                  </li>
+                
+                  <li class="isActive">
+                    <a href="/products/option/nonferrousmetal/ni_o/">镍</a>
+                  </li>
+                
+                  <li class="isActive">
+                    <a href="/products/option/nonferrousmetal/sn_o/">锡</a>
+                  </li>
+                
+                  <li class="isActive">
+                    <a href="/products/option/nonferrousmetal/ao_o/">氧化铝</a>
+                  </li>
+                
+                  <li class="isActive">
+                    <a href="/products/option/nonferrousmetal/ad_o/">铸造铝合金</a>
+                  </li>
+                
+              
+                
+                  <li class="isActive">
+                    <a href="/products/option/ferrousandpreciousmetal/au_o/">黄金</a>
+                  </li>
+                
+                  <li class="isActive">
+                    <a href="/products/option/ferrousandpreciousmetal/ag_o/">白银</a>
+                  </li>
+                
+                  <li class="isActive">
+                    <a href="/products/option/ferrousandpreciousmetal/rb_o/">螺纹钢</a>
+                  </li>
+                
+                  <li class="isActive">
+                    <a href="/products/option/ferrousandpreciousmetal/hc_o/">热轧卷板</a>
+                  </li>
+                
+                  <li class="isActive">
+                    <a href="/products/option/ferrousandpreciousmetal/ss_o/">不锈钢</a>
+                  </li>
+                
+              
+                
+                  <li class="isActive">
+                    <a href="/products/option/energyandchemical/sc_o/">原油</a>
+                  </li>
+                
+                  <li class="isActive">
+                    <a href="/products/option/energyandchemical/lu_o/">低硫燃料油</a>
+                  </li>
+                
+                  <li class="isActive">
+                    <a href="/products/option/energyandchemical/fu_o/">燃料油</a>
+                  </li>
+                
+                  <li class="isActive">
+                    <a href="/products/option/energyandchemical/bu_o/">石油沥青</a>
+                  </li>
+                
+                  <li class="isActive">
+                    <a href="/products/option/energyandchemical/br_o/">合成橡胶</a>
+                  </li>
+                
+                  <li class="isActive">
+                    <a href="/products/option/energyandchemical/ru_o/">天然橡胶</a>
+                  </li>
+                
+                  <li class="isActive">
+                    <a href="/products/option/energyandchemical/nr_o/">20号胶</a>
+                  </li>
+                
+                  <li class="isActive">
+                    <a href="/products/option/energyandchemical/sp_o/">纸浆</a>
+                  </li>
+                
+                  <li class="isActive">
+                    <a href="/products/option/energyandchemical/op_o/">胶版印刷纸</a>
+                  </li>
+                
+              
+            </ul>
+          </div>
+        </div>
+        <div class="leftLine"></div>
+        <div class="subItem">
+          <a class="btn_lv" href="/products/isin/">ISIN编码</a>
+          <div class="subItemContent"></div>
+        </div>
+      </div>
+    </div>
+    <!-- 数据 -->
+    <div class="header-sub">
+      <div class="subContent sub">
+        <div class="subItem">
+          <div class="subItemContent">
+            <ul class="itemContent">
+              <li class="left">业务数据</li>
+
+              
+                <li class="isActive">
+                  <a href="/reports/businessdata/prmsummary/">业务参数汇总查询</a>
+                </li>
+              
+                <li class="isActive">
+                  <a href="/reports/businessdata/adjtomonthlysettlementprm/">月度结算参数调整表</a>
+                </li>
+              
+                <li class="isActive">
+                  <a href="/reports/businessdata/feeandcharges/">收费标准</a>
+                </li>
+              
+            </ul>
+            <ul class="itemContent">
+              <li class="left">市场数据</li>
+              
+                
+                  <li class="isActive">
+                    <a href="/reports/marketdata/delayedquotes/">延时行情</a>
+                  </li>
+                
+              
+            </ul>
+            <ul class="itemContent">
+              <li class="left">统计数据</li>
+              
+                
+                  <li class="isActive">
+                    <a href="/reports/tradedata/dailyandweeklydata/">日周数据</a>
+                  </li>
+                
+              
+                
+                  <li class="isActive">
+                    <a href="/reports/tradedata/monthlyandyearlydata/">月年数据</a>
+                  </li>
+                
+              
+                
+                  <li class="isActive">
+                    <a href="/reports/tradedata/datadownload/">数据下载</a>
+                  </li>
+                
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 服务 -->
+    <div class="header-sub">
+      <div class="subContent sub">
+        <div class="subItem serve_title_id">
+          
+            <div class="subItemContent">
+              <ul class="itemContent">
+                
+                  <li class="left">
+                    <span class="title_lv">交易日历</span>
+                    <ul class="left_content special_lv">
+                      
+                        
+                      
+                        
+                      
+                        
+                      
+                      
+                        <li class="left_content_item isActive1">
+                          <a href="/services/calenderandholidays/tradingcalendar/">交易日历</a>
+                        </li>
+                      
+                        <li class="left_content_item isActive1">
+                          <a href="/services/calenderandholidays/holiday/">休市安排</a>
+                        </li>
+                      
+                        <li class="left_content_item isActive1">
+                          <a href="/services/calenderandholidays/tradinghours/">交易时间</a>
+                        </li>
+                      
+                    </ul>
+                  </li>
+                
+                  <li class="left">
+                    <span class="title_lv">交易</span>
+                    <ul class="left_content special_lv">
+                      
+                        
+                      
+                        
+                      
+                        
+                      
+                        
+                      
+                        
+                      
+                        
+                      
+                        
+                      
+                        
+                      
+                        
+                      
+                        
+                      
+                        
+                      
+                      
+                        <li class="left_content_item isActive1">
+                          <a href="/services/trading/business/">交易业务指引</a>
+                        </li>
+                      
+                        <li class="left_content_item isActive1">
+                          <a href="/services/trading/floortrader/">入场入会业务指引</a>
+                        </li>
+                      
+                        <li class="left_content_item isActive1">
+                          <a href="/services/trading/representatives/">出市代表管理指引</a>
+                        </li>
+                      
+                        <li class="left_content_item isActive1">
+                          <a href="/services/trading/accoutopening/">统一开户业务指引</a>
+                        </li>
+                      
+                        <li class="left_content_item isActive1">
+                          <a href="/services/trading/appropriate_system/">适当性制度操作指引</a>
+                        </li>
+                      
+                        <li class="left_content_item isActive1">
+                          <a href="/services/trading/seatmanagement/">远程席位管理业务指引</a>
+                        </li>
+                      
+                        <li class="left_content_item isActive1">
+                          <a href="/services/trading/programtrading/">程序化交易报备指引</a>
+                        </li>
+                      
+                        <li class="left_content_item isActive1">
+                          <a href="/services/trading/hedgingoperation/">套期保值业务指引</a>
+                        </li>
+                      
+                        <li class="left_content_item isActive1">
+                          <a href="/services/trading/tas/">交易指令业务指引</a>
+                        </li>
+                      
+                        <li class="left_content_item isActive1">
+                          <a href="/services/trading/download/">下载资料</a>
+                        </li>
+                      
+                        <li class="left_content_item isActive1">
+                          <a href="/services/trading/marketmaker/">做市商专题</a>
+                        </li>
+                      
+                    </ul>
+                  </li>
+                
+                  <li class="left">
+                    <span class="title_lv">结算</span>
+                    <ul class="left_content special_lv">
+                      
+                        
+                      
+                        
+                      
+                        
+                      
+                        
+                      
+                        
+                      
+                      
+                        <li class="left_content_item isActive1">
+                          <a href="/services/settlement/guideline_set/">交割结算服务指引</a>
+                        </li>
+                      
+                        <li class="left_content_item isActive1">
+                          <a href="/services/settlement/service/">结算服务指引</a>
+                        </li>
+                      
+                        <li class="left_content_item isActive1">
+                          <a href="/services/settlement/portfoliomargin/">组合保证金服务指引</a>
+                        </li>
+                      
+                        <li class="left_content_item isActive1">
+                          <a href="/services/settlement/bank/">存管银行</a>
+                        </li>
+                      
+                        <li class="left_content_item isActive1">
+                          <a href="/services/settlement/download/">下载资料</a>
+                        </li>
+                      
+                    </ul>
+                  </li>
+                
+                  <li class="left">
+                    <span class="title_lv">交割</span>
+                    <ul class="left_content special_lv">
+                      
+                        
+                      
+                        
+                      
+                        
+                      
+                        
+                      
+                        
+                      
+                        
+                      
+                        
+                      
+                        
+                      
+                        
+                      
+                        
+                      
+                        
+                      
+                      
+                        <li class="left_content_item isActive1">
+                          <a href="/services/delivery/businessregulations/">业务规定</a>
+                        </li>
+                      
+                        <li class="left_content_item isActive1">
+                          <a href="/services/delivery/accountmanagement/">标准仓单帐户管理指引</a>
+                        </li>
+                      
+                        <li class="left_content_item isActive1">
+                          <a href="/services/delivery/bondeddelivery/">保税交割指引</a>
+                        </li>
+                      
+                        <li class="left_content_item isActive1">
+                          <a href="/services/delivery/warehousewarrant1/">标准仓单指引</a>
+                        </li>
+                      
+                        <li class="left_content_item isActive1">
+                          <a href="/services/delivery/brandregistration/">品牌注册指引</a>
+                        </li>
+                      
+                        <li class="left_content_item isActive1">
+                          <a href="/services/delivery/certifieddeliverywarehouse/">指定交割库指引</a>
+                        </li>
+                      
+                        <li class="left_content_item isActive1">
+                          <a href="/services/delivery/warehouseandassayer/">交割仓库与质检机构</a>
+                        </li>
+                      
+                        <li class="left_content_item isActive1">
+                          <a href="/services/delivery/warehousedisplay/">交割仓库展示</a>
+                        </li>
+                      
+                        <li class="left_content_item isActive1">
+                          <a href="/services/delivery/standardwarrantms/">标准仓单管理系统</a>
+                        </li>
+                      
+                        <li class="left_content_item isActive1">
+                          <a href="/services/delivery/opinion/">意见征集和举报投诉</a>
+                        </li>
+                      
+                        <li class="left_content_item isActive1">
+                          <a href="/services/delivery/download/">下载资料</a>
+                        </li>
+                      
+                    </ul>
+                  </li>
+                
+                  <li class="left">
+                    <span class="title_lv">技术</span>
+                    <ul class="left_content special_lv">
+                      
+                        
+                      
+                        
+                      
+                        
+                      
+                      
+                        <li class="left_content_item isActive1">
+                          <a href="/services/technology/service_technical/">技术服务指引</a>
+                        </li>
+                      
+                        <li class="left_content_item isActive1">
+                          <a href="/services/technology/business_notification/">业务通知</a>
+                        </li>
+                      
+                        <li class="left_content_item isActive1">
+                          <a href="/services/technology/technical_download/">技术规范及下载</a>
+                        </li>
+                      
+                    </ul>
+                  </li>
+                
+                  <li class="left">
+                    <span class="title_lv">信息</span>
+                    <ul class="left_content special_lv">
+                      
+                        
+                      
+                        
+                      
+                        
+                      
+                      
+                        <li class="left_content_item isActive1">
+                          <a href="/services/information/sale/">行情销售业务指引</a>
+                        </li>
+                      
+                        <li class="left_content_item isActive1">
+                          <a href="/services/information/namelist/">行情转发商名单</a>
+                        </li>
+                      
+                        <li class="left_content_item isActive1">
+                          <a href="/services/information/forwarder/">相关技术文档</a>
+                        </li>
+                      
+                    </ul>
+                  </li>
+                
+                  <li class="left">
+                    <span class="title_lv">法律</span>
+                    <ul class="left_content special_lv">
+                      
+                        
+                      
+                      
+                        <li class="left_content_item isActive1">
+                          <a href="/services/law/guideline_legal/">法律相关事务工作指引</a>
+                        </li>
+                      
+                    </ul>
+                  </li>
+                
+              </ul>
+            </div>
+          
+            <div class="subItemContent">
+              <ul class="itemContent">
+                
+                  <li class="left">
+                    <span class="title_lv">监查</span>
+                    <ul class="left_content special_lv">
+                      
+                        
+                      
+                        
+                      
+                      
+                        <li class="left_content_item isActive1">
+                          <a href="/services/supervise/guideline_report/">大户报告业务指引</a>
+                        </li>
+                      
+                        <li class="left_content_item isActive1">
+                          <a href="/services/supervise/controlaccount/">实际控制关系帐户日常管理业务指引</a>
+                        </li>
+                      
+                    </ul>
+                  </li>
+                
+                  <li class="left">
+                    <span class="title_lv">投教与活动</span>
+                    <ul class="left_content special_lv">
+                      
+                        
+                      
+                        
+                      
+                        
+                      
+                        
+                      
+                        
+                      
+                      
+                        <li class="left_content_item isActive1">
+                          <a href="/services/activity/lecture/">期货大讲堂</a>
+                        </li>
+                      
+                        <li class="left_content_item isActive1">
+                          <a href="/services/activity/shforums/">上海衍生品市场论坛</a>
+                        </li>
+                      
+                        <li class="left_content_item isActive1">
+                          <a href="https://edu.shfe.com.cn">投资者教育基地</a>
+                        </li>
+                      
+                        <li class="left_content_item isActive1">
+                          <a href="/services/activity/examination/">结算交割员考试</a>
+                        </li>
+                      
+                        <li class="left_content_item isActive1">
+                          <a href="/services/activity/industry/">产业服务</a>
+                        </li>
+                      
+                    </ul>
+                  </li>
+                
+                  <li class="left">
+                    <span class="title_lv">市场研究</span>
+                    <ul class="left_content special_lv">
+                      
+                        
+                      
+                        
+                      
+                        
+                      
+                        
+                      
+                      
+                        <li class="left_content_item isActive1">
+                          <a href="/services/marketresearch/magazine/">期货与金融衍生品杂志</a>
+                        </li>
+                      
+                        <li class="left_content_item isActive1">
+                          <a href="/services/marketresearch/report/">研究报告</a>
+                        </li>
+                      
+                        <li class="left_content_item isActive1">
+                          <a href="/services/marketresearch/scientificresearch/">科研管理</a>
+                        </li>
+                      
+                        <li class="left_content_item isActive1">
+                          <a href="/services/marketresearch/links/">友情链接</a>
+                        </li>
+                      
+                    </ul>
+                  </li>
+                
+                  <li class="left">
+                    <span class="title_lv">指数与期权</span>
+                    <ul class="left_content special_lv">
+                      
+                        
+                      
+                        
+                      
+                        
+                      
+                        
+                      
+                        
+                      
+                        
+                      
+                        
+                      
+                      
+                        <li class="left_content_item isActive1">
+                          <a href="/services/indexopt/notification/">公告与通知</a>
+                        </li>
+                      
+                        <li class="left_content_item isActive1">
+                          <a href="/services/indexopt/contractrules/">合约规则</a>
+                        </li>
+                      
+                        <li class="left_content_item isActive1">
+                          <a href="/services/indexopt/guideline/">业务指引</a>
+                        </li>
+                      
+                        <li class="left_content_item isActive1">
+                          <a href="/services/indexopt/marketmakingservice/">做市业务</a>
+                        </li>
+                      
+                        <li class="left_content_item isActive1">
+                          <a href="/services/indexopt/indexcompile/">指数编制</a>
+                        </li>
+                      
+                        <li class="left_content_item isActive1">
+                          <a href="/services/indexopt/market/">指数行情</a>
+                        </li>
+                      
+                        <li class="left_content_item isActive1">
+                          <a href="/services/indexopt/promotion/">市场推广</a>
+                        </li>
+                      
+                    </ul>
+                  </li>
+                
+                  <li class="left">
+                    <span class="title_lv">现货指数</span>
+                    <ul class="left_content special_lv">
+                      
+                        
+                      
+                        
+                      
+                        
+                      
+                      
+                        <li class="left_content_item isActive1">
+                          <a href="https://www.shpgx.com/html/zgshrlybscgbj.html">上海保税船供报价</a>
+                        </li>
+                      
+                        <li class="left_content_item isActive1">
+                          <a href="https://www.zme.com.cn/zsjg/index.htm">舟山保税船供报价</a>
+                        </li>
+                      
+                        <li class="left_content_item isActive1">
+                          <a href="https://www.cneeex.com/dtfw/lsjr/lszq/zgqjzs/zgqjzstxjgfb/">中国氢价指数</a>
+                        </li>
+                      
+                    </ul>
+                  </li>
+                
+                  <li class="left">
+                    <span class="title_lv">PFMI</span>
+                    <ul class="left_content special_lv">
+                      
+                          <li class="left_content_item isActive1">
+                            <a href="/services/pfmi/">PFMI</a>
+                          </li>
+                        
+                      
+                    </ul>
+                  </li>
+                
+              </ul>
+            </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- 规则 -->
+    <div class="header-sub">
+      <div class="subContent sub">
+        
+          <div class="subItem">
+            
+                交易所规则
+                <div class="subItemContent">
+                  
+                    <ul class="itemContent">
+                      <li class="left">
+                        <a href="/regulation/exchangerules/rules/">章程与交易规则、结算规则</a>
+                      </li>
+                    </ul>
+                  
+                    <ul class="itemContent">
+                      <li class="left">
+                        <a href="/regulation/exchangerules/otherrules/">管理办法</a>
+                      </li>
+                    </ul>
+                  
+                    <ul class="itemContent">
+                      <li class="left">
+                        <a href="/regulation/exchangerules/productrules/">品种细则</a>
+                      </li>
+                    </ul>
+                  
+                    <ul class="itemContent">
+                      <li class="left">
+                        <a href="/regulation/exchangerules/historicalversion/">历史版本</a>
+                      </li>
+                    </ul>
+                  
+                </div>
+              
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+          </div>
+        
+          <div class="subItem">
+            
+                能源中心规则
+                <div class="subItemContent">
+                  
+                    <ul class="itemContent">
+                      <li class="left">
+                        <a href="/regulation/ineregulation/rules/">章程与交易规则、结算规则</a>
+                      </li>
+                    </ul>
+                  
+                    <ul class="itemContent">
+                      <li class="left">
+                        <a href="/regulation/ineregulation/businessmethods/">业务办法</a>
+                      </li>
+                    </ul>
+                  
+                </div>
+              
+              
+              
+            
+              
+              
+            
+          </div>
+        
+          <div class="subItem">
+            
+                <a class="btn_lv" href="/regulation/futureslaw/">期货法规</a>
+                <div class="subItemContent"></div>
+              
+          </div>
+        
+          <div class="subItem">
+            
+                合规监管
+                <div class="subItemContent">
+                  
+                    <ul class="itemContent">
+                      <li class="left">
+                        <a href="/regulation/marketregulation/regulatory/">监管信息通报</a>
+                      </li>
+                    </ul>
+                  
+                    <ul class="itemContent">
+                      <li class="left">
+                        <a href="/regulation/marketregulation/penalties/">合规宣传教育</a>
+                      </li>
+                    </ul>
+                  
+                    <ul class="itemContent">
+                      <li class="left">
+                        <a href="/regulation/marketregulation/regulationfile/">监管业务文件</a>
+                      </li>
+                    </ul>
+                  
+                </div>
+              
+              
+              
+            
+              
+              
+            
+              
+              
+            
+          </div>
+        
+      </div>
+    </div>
+    <div class="header-sub">
+      <div class="subContent sub">
+        
+          <div class="subItem">
+            <a href="/publicnotice/notice/">公告通知</a>
+            <div class="subItemContent"></div>
+          </div>
+        
+          <div class="subItem">
+            <a href="/publicnotice/newsrelease/">新闻发布</a>
+            <div class="subItemContent"></div>
+          </div>
+        
+          <div class="subItem">
+            <a href="/publicnotice/spotlight/">聚焦交易所</a>
+            <div class="subItemContent"></div>
+          </div>
+        
+          <div class="subItem">
+            <a href="/publicnotice/medium/">媒体报道</a>
+            <div class="subItemContent"></div>
+          </div>
+        
+          <div class="subItem">
+            <a href="/publicnotice/collection/">集采业务公告</a>
+            <div class="subItemContent"></div>
+          </div>
+        
+          <div class="subItem">
+            <a href="/publicnotice/specialcolumn/">专题</a>
+            <div class="subItemContent"></div>
+          </div>
+        
+      </div>
+    </div>
+    <!-- 关于 -->
+    <div class="header-sub">
+      <div class="subContent sub">
+        
+          <div class="subItem">
+            
+                交易所介绍
+                <div class="subItemContent">
+                  <ul class="itemContent">
+                    
+                      <li class="left">
+                        <a href="/about/introduce/simintro/">简介</a>
+                      </li>
+                    
+                      <li class="left">
+                        <a href="/about/introduce/organization/">组织机构</a>
+                      </li>
+                    
+                      <li class="left">
+                        <a href="/about/introduce/strategic/">战略规划</a>
+                      </li>
+                    
+                      <li class="left">
+                        <a href="/about/introduce/events/">大事记</a>
+                      </li>
+                    
+                      <li class="left">
+                        <a href="/about/introduce/reports_annual/">年报</a>
+                      </li>
+                    
+                      <li class="left">
+                        <a href="/about/introduce/job/">人才招聘</a>
+                      </li>
+                    
+                      <li class="left">
+                        <a href="/about/introduce/impeachment/">廉洁从业监督</a>
+                      </li>
+                    
+                      <li class="left">
+                        <a href="/about/introduce/informaton/">信息公开</a>
+                      </li>
+                    
+                      <li class="left">
+                        <a href="/about/introduce/contact/">联系方式</a>
+                      </li>
+                    
+                  </ul>
+                </div>
+              
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+          </div>
+        
+          <div class="subItem">
+            
+                会员及境外特殊参与者
+                <div class="subItemContent">
+                  <ul class="itemContent">
+                    
+                      <li class="left">
+                        <a href="/about/member_shfe/memberlist/">会员及境外特殊参与者名单</a>
+                      </li>
+                    
+                      <li class="left">
+                        <a href="/about/member_shfe/shfe_excellentanalyst/">境外中介机构名单</a>
+                      </li>
+                    
+                      <li class="left">
+                        <a href="/about/member_shfe/shfe_recognition/">如何成为会员或境外特殊参与者</a>
+                      </li>
+                    
+                      <li class="left">
+                        <a href="/about/member_shfe/recognition/">历年表彰</a>
+                      </li>
+                    
+                  </ul>
+                </div>
+              
+              
+              
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+          </div>
+        
+          <div class="subItem">
+            
+                博士后工作站
+                <div class="subItemContent">
+                  <ul class="itemContent">
+                    
+                      <li class="left">
+                        <a href="/about/postdocworkstation/introduction/">工作站简介</a>
+                      </li>
+                    
+                      <li class="left">
+                        <a href="/about/postdocworkstation/form_download/">表格下载</a>
+                      </li>
+                    
+                      <li class="left">
+                        <a href="/about/postdocworkstation/recruit/">招收信息</a>
+                      </li>
+                    
+                  </ul>
+                </div>
+              
+              
+              
+            
+              
+              
+            
+              
+              
+            
+          </div>
+        
+        <div class="last_title_info">
+          
+            <div class="subItem">
+              <a class="btn_lv" href="/about/socialresponsibility/">社会责任</a>
+              <div class="subItemContent"></div>
+            </div>
+          
+            <div class="subItem">
+              <a class="btn_lv" href="/about/branch/">交易所子公司</a>
+              <div class="subItemContent"></div>
+            </div>
+          
+            <div class="subItem">
+              <a class="btn_lv" href="/about/personalpolicy/">个人信息保护政策</a>
+              <div class="subItemContent"></div>
+            </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- mobile端 -->
+<div class="isMobile m_mobile_box">
+  <body class="theme-default">
+    <div id="container">
+      <header>
+        <div class="wrapper cf">
+          <nav id="main-nav">
+            <ul class="first-nav">
+              <!-- 首页 -->
+              <li class="">
+                <span><a href="/">首页</a></span>
+              </li>
+              <!--产品-->
+              <li class="">
+                <span>产品</span>
+                <ul>
+                  <li class="">
+                    <a href="/products/futures/">期货</a>
+                    <ul>
+                      <li>
+                        <div class="m_varieties">
+                          <div class="m_content">
+                            
+								  
+                              <div class="m_item_title"><a href="/products/futures/metal/nonferrousmetal/">有色金属</a></div>
+                              <div class="m_item">
+                                  
+                                    <div class="m_item_it"><a href="/products/futures/metal/nonferrousmetal/cu_f/">铜</a></div>
+                                  
+                                    <div class="m_item_it"><a href="/products/futures/metal/nonferrousmetal/bc_f/">铜(BC)</a></div>
+                                  
+                                    <div class="m_item_it"><a href="/products/futures/metal/nonferrousmetal/al_f/">铝</a></div>
+                                  
+                                    <div class="m_item_it"><a href="/products/futures/metal/nonferrousmetal/zn_f/">锌</a></div>
+                                  
+                                    <div class="m_item_it"><a href="/products/futures/metal/nonferrousmetal/pb_f/">铅</a></div>
+                                  
+                                    <div class="m_item_it"><a href="/products/futures/metal/nonferrousmetal/ni_f/">镍</a></div>
+                                  
+                                    <div class="m_item_it"><a href="/products/futures/metal/nonferrousmetal/sn_f/">锡</a></div>
+                                  
+                                    <div class="m_item_it"><a href="/products/futures/metal/nonferrousmetal/ao_f/">氧化铝</a></div>
+                                  
+                                    <div class="m_item_it"><a href="/products/futures/metal/nonferrousmetal/ad_f/">铸造铝合金</a></div>
+                                   
+                              </div>
+							   
+                              <div class="m_item_title"><a href="/products/futures/metal/ferrousandpreciousmetal/">贵金属与黑色金属</a></div>
+                              <div class="m_item">
+                                  
+                                    <div class="m_item_it"><a href="/products/futures/metal/ferrousandpreciousmetal/au_f/">黄金</a></div>
+                                  
+                                    <div class="m_item_it"><a href="/products/futures/metal/ferrousandpreciousmetal/ag_f/">白银</a></div>
+                                  
+                                    <div class="m_item_it"><a href="/products/futures/metal/ferrousandpreciousmetal/rb_f/">螺纹钢</a></div>
+                                  
+                                    <div class="m_item_it"><a href="/products/futures/metal/ferrousandpreciousmetal/wr_f/">线材</a></div>
+                                  
+                                    <div class="m_item_it"><a href="/products/futures/metal/ferrousandpreciousmetal/hc_f/">热轧卷板</a></div>
+                                  
+                                    <div class="m_item_it"><a href="/products/futures/metal/ferrousandpreciousmetal/ss_f/">不锈钢</a></div>
+                                   
+                              </div>
+							   
+                            
+								
+                            
+                              <div class="m_item_title"><a href="/products/futures/energyandchemical/">能源化工</a></div>
+							  <div class="m_item">
+							    
+							      <div class="m_item_it"><a href="/products/futures/energyandchemical/sc_f/">原油</a></div>
+							    
+							      <div class="m_item_it"><a href="/products/futures/energyandchemical/lu_f/">低硫燃料油</a></div>
+							    
+							      <div class="m_item_it"><a href="/products/futures/energyandchemical/fu_f/">燃料油</a></div>
+							    
+							      <div class="m_item_it"><a href="/products/futures/energyandchemical/bu_f/">石油沥青</a></div>
+							    
+							      <div class="m_item_it"><a href="/products/futures/energyandchemical/br_f/">合成橡胶</a></div>
+							    
+							      <div class="m_item_it"><a href="/products/futures/energyandchemical/ru_f/">天然橡胶</a></div>
+							    
+							      <div class="m_item_it"><a href="/products/futures/energyandchemical/nr_f/">20号胶</a></div>
+							    
+							      <div class="m_item_it"><a href="/products/futures/energyandchemical/sp_f/">纸浆</a></div>
+							    
+							      <div class="m_item_it"><a href="/products/futures/energyandchemical/op_f/">胶版印刷纸</a></div>
+							    
+							  </div>
+                              
+                            
+                            
+                              <div class="m_item_title"><a href="/products/futures/index_f/">指数</a></div>
+                              <div class="m_item">
+                                
+                                  <div class="m_item_it"><a href="/products/futures/index_f/ec_f/">SCFIS欧线</a></div>
+                                
+                              </div>
+                            
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="">
+                    <a href="/products/option/">期权</a>
+                    <ul>
+                      <li>
+                        <div class="m_varieties">
+                          <div class="m_content">
+                            
+                              <div class="m_item_title"><a href="/products/option/nonferrousmetal/">有色金属</a></div>
+                              <div class="m_item">
+                                
+                                  <div class="m_item_it"><a href="/products/option/nonferrousmetal/cu_o/">铜</a></div>
+                                
+                                  <div class="m_item_it"><a href="/products/option/nonferrousmetal/bc_o/">铜(BC)</a></div>
+                                
+                                  <div class="m_item_it"><a href="/products/option/nonferrousmetal/al_o/">铝</a></div>
+                                
+                                  <div class="m_item_it"><a href="/products/option/nonferrousmetal/zn_o/">锌</a></div>
+                                
+                                  <div class="m_item_it"><a href="/products/option/nonferrousmetal/pb_o/">铅</a></div>
+                                
+                                  <div class="m_item_it"><a href="/products/option/nonferrousmetal/ni_o/">镍</a></div>
+                                
+                                  <div class="m_item_it"><a href="/products/option/nonferrousmetal/sn_o/">锡</a></div>
+                                
+                                  <div class="m_item_it"><a href="/products/option/nonferrousmetal/ao_o/">氧化铝</a></div>
+                                
+                                  <div class="m_item_it"><a href="/products/option/nonferrousmetal/ad_o/">铸造铝合金</a></div>
+                                
+                              </div>
+                            
+                              <div class="m_item_title"><a href="/products/option/ferrousandpreciousmetal/">贵金属与黑色金属</a></div>
+                              <div class="m_item">
+                                
+                                  <div class="m_item_it"><a href="/products/option/ferrousandpreciousmetal/au_o/">黄金</a></div>
+                                
+                                  <div class="m_item_it"><a href="/products/option/ferrousandpreciousmetal/ag_o/">白银</a></div>
+                                
+                                  <div class="m_item_it"><a href="/products/option/ferrousandpreciousmetal/rb_o/">螺纹钢</a></div>
+                                
+                                  <div class="m_item_it"><a href="/products/option/ferrousandpreciousmetal/hc_o/">热轧卷板</a></div>
+                                
+                                  <div class="m_item_it"><a href="/products/option/ferrousandpreciousmetal/ss_o/">不锈钢</a></div>
+                                
+                              </div>
+                            
+                              <div class="m_item_title"><a href="/products/option/energyandchemical/">能源化工</a></div>
+                              <div class="m_item">
+                                
+                                  <div class="m_item_it"><a href="/products/option/energyandchemical/sc_o/">原油</a></div>
+                                
+                                  <div class="m_item_it"><a href="/products/option/energyandchemical/lu_o/">低硫燃料油</a></div>
+                                
+                                  <div class="m_item_it"><a href="/products/option/energyandchemical/fu_o/">燃料油</a></div>
+                                
+                                  <div class="m_item_it"><a href="/products/option/energyandchemical/bu_o/">石油沥青</a></div>
+                                
+                                  <div class="m_item_it"><a href="/products/option/energyandchemical/br_o/">合成橡胶</a></div>
+                                
+                                  <div class="m_item_it"><a href="/products/option/energyandchemical/ru_o/">天然橡胶</a></div>
+                                
+                                  <div class="m_item_it"><a href="/products/option/energyandchemical/nr_o/">20号胶</a></div>
+                                
+                                  <div class="m_item_it"><a href="/products/option/energyandchemical/sp_o/">纸浆</a></div>
+                                
+                                  <div class="m_item_it"><a href="/products/option/energyandchemical/op_o/">胶版印刷纸</a></div>
+                                
+                              </div>
+                            
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="">
+                    <a href="/products/isin/">ISIN编码</a>
+                  </li>
+                </ul>
+              </li>
+              <!--数据-->
+              <li class="">
+                <span>数据</span>
+                <ul>
+                  
+                    <li class="">
+                      业务数据
+                      <ul>
+                        
+                          <li>
+                            <a href="/reports/businessdata/prmsummary/">业务参数汇总查询</a>
+                          </li>
+                        
+                          <li>
+                            <a href="/reports/businessdata/adjtomonthlysettlementprm/">月度结算参数调整表</a>
+                          </li>
+                        
+                          <li>
+                            <a href="/reports/businessdata/feeandcharges/">收费标准</a>
+                          </li>
+                        
+                      </ul>
+                    </li>
+                  
+                    <li class="">
+                      市场数据
+                      <ul>
+                        
+                          <li>
+                            <a href="/reports/marketdata/delayedquotes/">延时行情</a>
+                          </li>
+                        
+                      </ul>
+                    </li>
+                  
+                    <li class="">
+                      统计数据
+                      <ul>
+                        
+                          <li>
+                            <a href="/reports/tradedata/dailyandweeklydata/">日周数据</a>
+                          </li>
+                        
+                          <li>
+                            <a href="/reports/tradedata/monthlyandyearlydata/">月年数据</a>
+                          </li>
+                        
+                          <li>
+                            <a href="/reports/tradedata/datadownload/">数据下载</a>
+                          </li>
+                        
+                      </ul>
+                    </li>
+                  
+                </ul>
+              </li>
+              <!--服务-->
+              <li class="">
+                <span>服务</span>
+                <ul>
+                  
+                    <li class="">
+                      
+                        交易日历
+                        <ul>
+                          
+                            <li>
+                              <a href="/services/calenderandholidays/tradingcalendar/">交易日历</a>
+                            </li>
+                          
+                            <li>
+                              <a href="/services/calenderandholidays/holiday/">休市安排</a>
+                            </li>
+                          
+                            <li>
+                              <a href="/services/calenderandholidays/tradinghours/">交易时间</a>
+                            </li>
+                          
+                        </ul>
+                      
+                      
+                    </li>
+                  
+                    <li class="">
+                      
+                        交易
+                        <ul>
+                          
+                            <li>
+                              <a href="/services/trading/business/">交易业务指引</a>
+                            </li>
+                          
+                            <li>
+                              <a href="/services/trading/floortrader/">入场入会业务指引</a>
+                            </li>
+                          
+                            <li>
+                              <a href="/services/trading/representatives/">出市代表管理指引</a>
+                            </li>
+                          
+                            <li>
+                              <a href="/services/trading/accoutopening/">统一开户业务指引</a>
+                            </li>
+                          
+                            <li>
+                              <a href="/services/trading/appropriate_system/">适当性制度操作指引</a>
+                            </li>
+                          
+                            <li>
+                              <a href="/services/trading/seatmanagement/">远程席位管理业务指引</a>
+                            </li>
+                          
+                            <li>
+                              <a href="/services/trading/programtrading/">程序化交易报备指引</a>
+                            </li>
+                          
+                            <li>
+                              <a href="/services/trading/hedgingoperation/">套期保值业务指引</a>
+                            </li>
+                          
+                            <li>
+                              <a href="/services/trading/tas/">交易指令业务指引</a>
+                            </li>
+                          
+                            <li>
+                              <a href="/services/trading/download/">下载资料</a>
+                            </li>
+                          
+                            <li>
+                              <a href="/services/trading/marketmaker/">做市商专题</a>
+                            </li>
+                          
+                        </ul>
+                      
+                      
+                    </li>
+                  
+                    <li class="">
+                      
+                        结算
+                        <ul>
+                          
+                            <li>
+                              <a href="/services/settlement/guideline_set/">交割结算服务指引</a>
+                            </li>
+                          
+                            <li>
+                              <a href="/services/settlement/service/">结算服务指引</a>
+                            </li>
+                          
+                            <li>
+                              <a href="/services/settlement/portfoliomargin/">组合保证金服务指引</a>
+                            </li>
+                          
+                            <li>
+                              <a href="/services/settlement/bank/">存管银行</a>
+                            </li>
+                          
+                            <li>
+                              <a href="/services/settlement/download/">下载资料</a>
+                            </li>
+                          
+                        </ul>
+                      
+                      
+                    </li>
+                  
+                    <li class="">
+                      
+                        交割
+                        <ul>
+                          
+                            <li>
+                              <a href="/services/delivery/businessregulations/">业务规定</a>
+                            </li>
+                          
+                            <li>
+                              <a href="/services/delivery/accountmanagement/">标准仓单帐户管理指引</a>
+                            </li>
+                          
+                            <li>
+                              <a href="/services/delivery/bondeddelivery/">保税交割指引</a>
+                            </li>
+                          
+                            <li>
+                              <a href="/services/delivery/warehousewarrant1/">标准仓单指引</a>
+                            </li>
+                          
+                            <li>
+                              <a href="/services/delivery/brandregistration/">品牌注册指引</a>
+                            </li>
+                          
+                            <li>
+                              <a href="/services/delivery/certifieddeliverywarehouse/">指定交割库指引</a>
+                            </li>
+                          
+                            <li>
+                              <a href="/services/delivery/warehouseandassayer/">交割仓库与质检机构</a>
+                            </li>
+                          
+                            <li>
+                              <a href="/services/delivery/warehousedisplay/">交割仓库展示</a>
+                            </li>
+                          
+                            <li>
+                              <a href="/services/delivery/standardwarrantms/">标准仓单管理系统</a>
+                            </li>
+                          
+                            <li>
+                              <a href="/services/delivery/opinion/">意见征集和举报投诉</a>
+                            </li>
+                          
+                            <li>
+                              <a href="/services/delivery/download/">下载资料</a>
+                            </li>
+                          
+                        </ul>
+                      
+                      
+                    </li>
+                  
+                    <li class="">
+                      
+                        技术
+                        <ul>
+                          
+                            <li>
+                              <a href="/services/technology/service_technical/">技术服务指引</a>
+                            </li>
+                          
+                            <li>
+                              <a href="/services/technology/business_notification/">业务通知</a>
+                            </li>
+                          
+                            <li>
+                              <a href="/services/technology/technical_download/">技术规范及下载</a>
+                            </li>
+                          
+                        </ul>
+                      
+                      
+                    </li>
+                  
+                    <li class="">
+                      
+                        信息
+                        <ul>
+                          
+                            <li>
+                              <a href="/services/information/sale/">行情销售业务指引</a>
+                            </li>
+                          
+                            <li>
+                              <a href="/services/information/namelist/">行情转发商名单</a>
+                            </li>
+                          
+                            <li>
+                              <a href="/services/information/forwarder/">相关技术文档</a>
+                            </li>
+                          
+                        </ul>
+                      
+                      
+                    </li>
+                  
+                    <li class="">
+                      
+                        法律
+                        <ul>
+                          
+                            <li>
+                              <a href="/services/law/guideline_legal/">法律相关事务工作指引</a>
+                            </li>
+                          
+                        </ul>
+                      
+                      
+                    </li>
+                  
+                    <li class="">
+                      
+                        监查
+                        <ul>
+                          
+                            <li>
+                              <a href="/services/supervise/guideline_report/">大户报告业务指引</a>
+                            </li>
+                          
+                            <li>
+                              <a href="/services/supervise/controlaccount/">实际控制关系帐户日常管理业务指引</a>
+                            </li>
+                          
+                        </ul>
+                      
+                      
+                    </li>
+                  
+                    <li class="">
+                      
+                        投教与活动
+                        <ul>
+                          
+                            <li>
+                              <a href="/services/activity/lecture/">期货大讲堂</a>
+                            </li>
+                          
+                            <li>
+                              <a href="/services/activity/shforums/">上海衍生品市场论坛</a>
+                            </li>
+                          
+                            <li>
+                              <a href="https://edu.shfe.com.cn">投资者教育基地</a>
+                            </li>
+                          
+                            <li>
+                              <a href="/services/activity/examination/">结算交割员考试</a>
+                            </li>
+                          
+                            <li>
+                              <a href="/services/activity/industry/">产业服务</a>
+                            </li>
+                          
+                        </ul>
+                      
+                      
+                    </li>
+                  
+                    <li class="">
+                      
+                        市场研究
+                        <ul>
+                          
+                            <li>
+                              <a href="/services/marketresearch/magazine/">期货与金融衍生品杂志</a>
+                            </li>
+                          
+                            <li>
+                              <a href="/services/marketresearch/report/">研究报告</a>
+                            </li>
+                          
+                            <li>
+                              <a href="/services/marketresearch/scientificresearch/">科研管理</a>
+                            </li>
+                          
+                            <li>
+                              <a href="/services/marketresearch/links/">友情链接</a>
+                            </li>
+                          
+                        </ul>
+                      
+                      
+                    </li>
+                  
+                    <li class="">
+                      
+                        指数与期权
+                        <ul>
+                          
+                            <li>
+                              <a href="/services/indexopt/notification/">公告与通知</a>
+                            </li>
+                          
+                            <li>
+                              <a href="/services/indexopt/contractrules/">合约规则</a>
+                            </li>
+                          
+                            <li>
+                              <a href="/services/indexopt/guideline/">业务指引</a>
+                            </li>
+                          
+                            <li>
+                              <a href="/services/indexopt/marketmakingservice/">做市业务</a>
+                            </li>
+                          
+                            <li>
+                              <a href="/services/indexopt/indexcompile/">指数编制</a>
+                            </li>
+                          
+                            <li>
+                              <a href="/services/indexopt/market/">指数行情</a>
+                            </li>
+                          
+                            <li>
+                              <a href="/services/indexopt/promotion/">市场推广</a>
+                            </li>
+                          
+                        </ul>
+                      
+                      
+                    </li>
+                  
+                    <li class="">
+                      
+                        现货指数
+                        <ul>
+                          
+                            <li>
+                              <a href="https://www.shpgx.com/html/zgshrlybscgbj.html">上海保税船供报价</a>
+                            </li>
+                          
+                            <li>
+                              <a href="https://www.zme.com.cn/zsjg/index.htm">舟山保税船供报价</a>
+                            </li>
+                          
+                            <li>
+                              <a href="https://www.cneeex.com/dtfw/lsjr/lszq/zgqjzs/zgqjzstxjgfb/">中国氢价指数</a>
+                            </li>
+                          
+                        </ul>
+                      
+                      
+                    </li>
+                  
+                    <li class="">
+                      
+                      
+                        <a href="/services/pfmi/">PFMI</a>
+                      
+                    </li>
+                  
+                </ul>
+              </li>
+              <!--规则-->
+              <li class="">
+                <span>规则</span>
+                  <ul>
+					   
+						   <li>
+							   
+							交易所规则
+							<ul>
+							  
+								<li>
+								  <a href="/regulation/exchangerules/rules/">章程与交易规则、结算规则</a>
+								</li>
+							  
+								<li>
+								  <a href="/regulation/exchangerules/otherrules/">管理办法</a>
+								</li>
+							  
+								<li>
+								  <a href="/regulation/exchangerules/productrules/">品种细则</a>
+								</li>
+							  
+								<li>
+								  <a href="/regulation/exchangerules/historicalversion/">历史版本</a>
+								</li>
+							  
+							</ul>
+						 
+						  
+						  
+						   
+					   
+						  
+						   
+					   
+						  
+						   
+					   
+						  
+						   
+					   
+					   </li>
+					   
+						   <li>
+							   
+							能源中心规则
+							<ul>
+							  
+								<li>
+								  <a href="/regulation/ineregulation/rules/">章程与交易规则、结算规则</a>
+								</li>
+							  
+								<li>
+								  <a href="/regulation/ineregulation/businessmethods/">业务办法</a>
+								</li>
+							  
+							</ul>
+						 
+						  
+						  
+						   
+					   
+						  
+						   
+					   
+					   </li>
+					   
+						   <li>
+							   
+							  <a href="/regulation/futureslaw/">期货法规</a>
+						  
+					   </li>
+					   
+						   <li>
+							   
+							合规监管
+							<ul>
+							  
+								<li>
+								  <a href="/regulation/marketregulation/regulatory/">监管信息通报</a>
+								</li>
+							  
+								<li>
+								  <a href="/regulation/marketregulation/penalties/">合规宣传教育</a>
+								</li>
+							  
+								<li>
+								  <a href="/regulation/marketregulation/regulationfile/">监管业务文件</a>
+								</li>
+							  
+							</ul>
+						 
+						  
+						  
+						   
+					   
+						  
+						   
+					   
+						  
+						   
+					   
+					   </li>
+					   
+                   </ul>
+
+               
+              </li>
+
+              <!--公告-->
+              <li class="">
+                <span>公告</span>
+                
+                  <ul>
+                    <li>
+                      <a href="/publicnotice/notice/">公告通知</a>
+                    </li>
+                  </ul>
+                
+                  <ul>
+                    <li>
+                      <a href="/publicnotice/newsrelease/">新闻发布</a>
+                    </li>
+                  </ul>
+                
+                  <ul>
+                    <li>
+                      <a href="/publicnotice/spotlight/">聚焦交易所</a>
+                    </li>
+                  </ul>
+                
+                  <ul>
+                    <li>
+                      <a href="/publicnotice/medium/">媒体报道</a>
+                    </li>
+                  </ul>
+                
+                  <ul>
+                    <li>
+                      <a href="/publicnotice/collection/">集采业务公告</a>
+                    </li>
+                  </ul>
+                
+                  <ul>
+                    <li>
+                      <a href="/publicnotice/specialcolumn/">专题</a>
+                    </li>
+                  </ul>
+                
+              </li>
+
+              <!--关于-->
+              <li class="">
+                <span>关于</span>
+                  <ul>
+                   
+					   <li>
+						   
+						交易所介绍
+						<ul>
+						  
+							<li>
+							  <a href="/about/introduce/simintro/">简介</a>
+							</li>
+						  
+							<li>
+							  <a href="/about/introduce/organization/">组织机构</a>
+							</li>
+						  
+							<li>
+							  <a href="/about/introduce/strategic/">战略规划</a>
+							</li>
+						  
+							<li>
+							  <a href="/about/introduce/events/">大事记</a>
+							</li>
+						  
+							<li>
+							  <a href="/about/introduce/reports_annual/">年报</a>
+							</li>
+						  
+							<li>
+							  <a href="/about/introduce/job/">人才招聘</a>
+							</li>
+						  
+							<li>
+							  <a href="/about/introduce/impeachment/">廉洁从业监督</a>
+							</li>
+						  
+							<li>
+							  <a href="/about/introduce/informaton/">信息公开</a>
+							</li>
+						  
+							<li>
+							  <a href="/about/introduce/contact/">联系方式</a>
+							</li>
+						  
+						</ul>
+					 
+					  
+					  
+					   
+                   
+					  
+					   
+                   
+					  
+					   
+                   
+					  
+					   
+                   
+					  
+					   
+                   
+					  
+					   
+                   
+					  
+					   
+                   
+					  
+					   
+                   
+					  
+					   
+                   
+                   </li>
+                   
+					   <li>
+						   
+						会员及境外特殊参与者
+						<ul>
+						  
+							<li>
+							  <a href="/about/member_shfe/memberlist/">会员及境外特殊参与者名单</a>
+							</li>
+						  
+							<li>
+							  <a href="/about/member_shfe/shfe_excellentanalyst/">境外中介机构名单</a>
+							</li>
+						  
+							<li>
+							  <a href="/about/member_shfe/shfe_recognition/">如何成为会员或境外特殊参与者</a>
+							</li>
+						  
+							<li>
+							  <a href="/about/member_shfe/recognition/">历年表彰</a>
+							</li>
+						  
+						</ul>
+					 
+					  
+					  
+					   
+                   
+					  
+					   
+                   
+					  
+					   
+                   
+					  
+					   
+                   
+                   </li>
+                   
+					   <li>
+						   
+						博士后工作站
+						<ul>
+						  
+							<li>
+							  <a href="/about/postdocworkstation/introduction/">工作站简介</a>
+							</li>
+						  
+							<li>
+							  <a href="/about/postdocworkstation/form_download/">表格下载</a>
+							</li>
+						  
+							<li>
+							  <a href="/about/postdocworkstation/recruit/">招收信息</a>
+							</li>
+						  
+						</ul>
+					 
+					  
+					  
+					   
+                   
+					  
+					   
+                   
+					  
+					   
+                   
+                   </li>
+                   
+					   <li>
+						   
+						社会责任
+						<ul>
+						  
+							<li>
+							  <a href="/about/socialresponsibility/ocialresponsibilityreports/">社会责任报告</a>
+							</li>
+						  
+							<li>
+							  <a href="/about/socialresponsibility/supportfarmersreports/">支农专项报告</a>
+							</li>
+						  
+						</ul>
+					 
+					  
+					  
+					   
+                   
+					  
+					   
+                   
+                   </li>
+                   
+					   <li>
+						   
+						交易所子公司
+						<ul>
+						  
+							<li>
+							  <a href="/about/branch/commercialaffairs/">上海上期商务服务有限公司</a>
+							</li>
+						  
+							<li>
+							  <a href="https://www.shfe.com.cn/sfit/">上海期货信息技术有限公司</a>
+							</li>
+						  
+							<li>
+							  <a href="https://www.shfe.com.cn/ifd/">上海期货与衍生品研究院</a>
+							</li>
+						  
+							<li>
+							  <a href="https://www.ine.cn/">上海国际能源交易中心</a>
+							</li>
+						  
+						</ul>
+					 
+					  
+					  
+					   
+                   
+					  
+					   
+                   
+					  
+					   
+                   
+					  
+					   
+                   
+                   </li>
+                   
+					   <li>
+						   
+						  <a href="/about/personalpolicy/">个人信息保护政策</a>
+					  
+                   </li>
+                   
+                  </ul>
+               
+              </li>
+            </ul>
+          </nav>
+
+          <div class="sqs_top_line" id="top_nav_mobile">
+            <!-- logo -->
+            <a href="/" class="sqs_top_logo">
+              <img src="/images/index_icon.png" />
+            </a>
+            <!-- 头部搜索和登录 -->
+            <div class="sqs_top_fr_box">
+              <div class="sqs_searchAndLogin">
+                <a href="/pubilc/server/" class="sqs_search">
+                  <img src="/images/m_nav_search.svg" />
+                </a>
+
+                <a  href="/eng/" class="sqs_search sqs_eng">
+                  <img src="/images/m_nav_en.svg" />
+                </a>
+
+                <a class="toggle_menu" href="#">
+                  <img src="/images/m_nav_menu.svg" />
+                </a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+  </body>
+</div>
+
+<script src="/images/jquery.min.js"></script>
+
+<!-- Monitor Start -->
+<script type="text/javascript">
+  var serverUrl = "http://" + window.location.host + "/";
+  if(location.pathname=='/'||location.pathname=='/shfe/' ){$('#home_top_investor').show()}
+</script>
+<script language="JavaScript" charset="utf-8" src="/images/count.js"></script>
+<script type="text/javascript">
+
+
+  params.siteId='13';
+
+  params.siteName='上期所';
+</script>
+<script language="JavaScript" charset="utf-8" src="/images/submit.js"></script>
+
+<!-- Monitor End -->
+
+<!-- <link rel="stylesheet" href="/images/element-ui/theme-chalk/index.css" /> -->
+<link rel="stylesheet" type="text/css" href="/images/search_header.css" />
+
+<script type="text/javascript" charset="utf-8" src="/images/vue.min.js"></script>
+
+<script src="/images/element-ui/index.js"></script>
+
+<script>
+    (function () {
+    new Vue({
+      el: "#search_idNew",
+      data() {
+        return {
+          baseUrl: '/api/search/',
+          showHistory: false,
+          currentPage: 1,
+          pageSize: 10,
+          searchHistoryList: [],
+          selectValue: " or ",
+          timeradioVal: 1,
+          timeRange: [],
+          keyWordRadio: "1",
+          showMoreSearch: false,
+          pageTotal: 0,
+          inputStr: "",
+          searchParams: {
+            chlid: 1003,
+            cutsize: 150,
+            dynexpr: [],
+            dynidx: 1,
+            extopt: [],
+            orderby: "",
+            page: 1,
+            searchword: "",
+            size: 20,
+  		  siteId: 'shfe'
+          },
+          hotTagsList: [],
+          loading: false,
+          listData: [], // 列表数据
+          timeStr: "",
+          sourceObj: {
+            products: "产品",
+            reports: "数据",
+            services: "服务",
+            regulation: "规则",
+            publicnotice: "公告",
+            about: "关于",
+          },
+          classifyObj: {
+            allNum: 0,
+            productsNum: 0,
+            reportsNum: 0,
+            servicesNum: 0,
+            regulationNum: 0,
+            publicnoticeNum: 0,
+            aboutNum: 0,
+            othersNum: 0,
+          },
+          allData: [], // 全量数据--用于分类
+          hootKeyParams: {
+            chlid: 1005,
+            cutsize: 150,
+            dynexpr: [],
+            dynidx: 1,
+            extopt: [],
+            orderby: "-searchcnt",
+            page: 1,
+            searchword: "siteid=shfe",
+            size: 20,
+  		      siteId: 'shfe'
+          },
+          fullKeyParams: {
+            chlid: 1006,
+            cutsize: 150,
+            dynexpr: [],
+            dynidx: 1,
+            extopt: [],
+            orderby: "-cnt",
+            page: 1,
+            searchword: "word=铜%",
+            size: 10,
+  		      siteId: 'shfe'
+          },
+          fullSourceDic: [],
+          fullSourceParams: {
+            chlid: 1010,
+            cutsize: 1000,
+            dynexpr: [],
+            dynidx: 1,
+            extopt: [],
+            orderby: "",
+            page: 1,
+            searchword: "",
+            size: 1000,
+            siteId: 'shfe'
+          },
+          selectedType: "all",
+          typeSearchStr: "",
+          loading: false,
+        };
+      },
+      mounted() {
+        let arr = JSON.parse(localStorage.getItem("searchHistoryList"));
+        if (arr && arr.length > 0) {
+          this.searchHistoryList = arr;
+        } else {
+          this.searchHistoryList = [];
+        }
+      },
+      methods: {
+        height_btnNew(){
+          let recordSearchWord = $('#searchText').val()
+          if( recordSearchWord != "" ) {
+            let recordParamsWord_str = recordSearchWord.trim();
+            if( recordParamsWord_str != "" && recordParamsWord_str.length > 50 ) {
+              this.$message({
+                message: '搜索词的最大长度为50，请调整后再重新输入！' ,
+                type: "warning"
+              });
+              return false
+            }
+          }
+          let searchheadertext=  ''
+          searchheadertext= $('#searchText').val().trim() ? encodeURI( $('#searchText').val().trim()) : '' ;
+          let str = '/pubilc/server/'
+          let str1 = str + '?searchText='+ searchheadertext + '&high=1';
+          $('#height_btn').attr('href',  str1)
+        },
+        searchHeaderBtnNew(){
+          let recordSearchWord = $('#searchText').val()
+          if( recordSearchWord != "" ) {
+            let recordParamsWord_str = recordSearchWord.trim();
+            if( recordParamsWord_str != "" && recordParamsWord_str.length > 50 ) {
+              this.$message({
+                message: '搜索词的最大长度为50，请调整后再重新输入！' ,
+                type: "warning"
+              });
+              return false
+            }
+          }
+          let searchheadertext=  ''
+          searchheadertext= $('#searchText').val().trim() ? encodeURI( $('#searchText').val().trim()) : '' ;
+          let str = '/pubilc/server/'
+          let str1 = str + '?searchText='+ searchheadertext+ '&high=0';
+          $('#searchHeaderBtn').attr('href',  str1)
+        },
+        searchTextNew(e){
+          let searchheadertext=  ''
+          if (e.which=== 13) {
+          e.preventDefault()
+            searchheadertext= $('#searchText').val().trim() ? encodeURI( $('#searchText').val().trim()) : '' ;
+            let str = '/pubilc/server/'
+            let str1 = str + '?searchText='+ searchheadertext+ '&high=0';
+            window.open(str1)
+          }
+        },
+        // 获取热词
+        getHootKeys() {
+          let _this = this;
+          let obj = JSON.stringify(_this.hootKeyParams);
+          $.ajax({
+            url: _this.baseUrl,
+            //调用servlet方法
+            // data:"action=jQueryAjax",
+            data: obj,
+            type: "POST",
+            contentType: "application/json",
+            success: function (res) {
+              if (res.data?.content?.length > 0) {
+                _this.hotTagsList = [];
+                res.data.content.map((item) => {
+                  _this.hotTagsList.push(item.hotkey);
+                });
+              }
+            },
+            //返回数据的格式
+            dataType: "json",
+          });
+        },
+        // 获取联想词
+        getFullKey(queryString, cb) {
+          let _this = this;
+          let strInfo = queryString ? queryString.trim() : queryString;
+          _this.fullKeyParams.searchword = "word=" + "%" + strInfo + "%" + " and siteid=shfe" ;
+          let obj = JSON.stringify(_this.fullKeyParams);
+          $.ajax({
+            url: _this.baseUrl,
+            //调用servlet方法
+            // data:"action=jQueryAjax",
+            data: obj,
+            type: "POST",
+            contentType: "application/json",
+            success: function (res) {
+              let arr = [];
+              if (res.data && res.data.content.length > 0) {
+                arr = res.data.content;
+              }
+              cb(arr);
+            },
+            //返回数据的格式
+            dataType: "json",
+          });
+        },
+        handleSelect(item) {
+          this.inputStr = item.word;
+          this.search();
+        },
+        handleSearch() {
+          this.searchParams.page = 1;
+          this.search();
+        },
+        chooseOrderType(val) {
+          this.searchParams.orderby = val;
+          this.search(true);
+        },
+        chooseType(val) {
+          this.selectedType = val;
+          if (val === "all") {
+            this.typeSearchStr = "";
+          } else if (val === "others") {
+            this.typeSearchStr =
+              "chnldesc!=products and chnldesc!=reports and chnldesc!=services and chnldesc!=regulation and chnldesc!=publicnotice and chnldesc!=about";
+          } else {
+            this.typeSearchStr = "chnldesc=" + val;
+          }
+          this.searchParams.page = 1;
+          this.search(true);
+        },
+        search(val) {
+          let _this = this;
+          _this.loading = true
+          // if (_this.searchParams.page === 1) {
+          //   _this.classifyObj = {
+          //     products: [],
+          //     reports: [],
+          //     services: [],
+          //     regulation: [],
+          //     publicnotice: [],
+          //     about: [],
+          //     others: [],
+          //   };
+          //   _this.allData = [];
+          // }
+          _this.listData = [];
+          // _this.pageTotal = 0;
+          _this.showHistory = false;
+          _this.showMoreSearch = false;
+          _this.searchParams.searchword = "";
+          if (_this.inputStr != "") {
+            _this.searchHistoryList.unshift(_this.inputStr);
+            _this.searchHistoryList = Array.from(
+              new Set(_this.searchHistoryList)
+            );
+            let str = JSON.stringify(_this.searchHistoryList);
+            localStorage.setItem("searchHistoryList", str);
+          }
+          if (_this.inputStr != "") {
+            let arr = _this.inputStr.split(" ").filter((e) => {
+              return e !== "";
+            });
+            let wordArr = [];
+            arr.map((item) => {
+              let symbolsRegex = /[（）()-_=+/?<>,.<=>=%$#*@]/;
+              if (symbolsRegex.test(item)) {
+                wordArr.push("'" + item + "'");
+              } else {
+                wordArr.push("%" + item + "%");
+              }
+            });
+            if (_this.keyWordRadio == "1") {
+              _this.searchParams.searchword = wordArr.join(_this.selectValue);
+            } else {
+              let tArr = [];
+              wordArr.map((item) => {
+                tArr.push(_this.keyWordRadio + item);
+              });
+              _this.searchParams.searchword = tArr.join(_this.selectValue);
+            }
+          }
+          if (_this.timeStr !== "") {
+            if (_this.searchParams.searchword !== "") {
+              _this.searchParams.searchword =
+                _this.searchParams.searchword + " and " + _this.timeStr;
+            } else {
+              _this.searchParams.searchword = _this.timeStr;
+            }
+          }
+          let tempsearchword = this.searchParams.searchword
+          if (_this.searchParams.searchword.length > 0) {
+            if (_this.typeSearchStr != "") {
+              _this.searchParams.searchword =
+                _this.searchParams.searchword + " and " + _this.typeSearchStr;
+            }
+          } else {
+            if (_this.typeSearchStr != "") {
+              _this.searchParams.searchword = _this.typeSearchStr;
+            }
+          }
+          let obj = JSON.stringify(_this.searchParams);
+          // let forAllObj = JSON.parse(JSON.stringify(_this.searchParams));
+          $.ajax({
+            url: _this.baseUrl,
+            //调用servlet方法
+            // data:"action=jQueryAjax",
+            data: obj,
+            type: "POST",
+            contentType: "application/json",
+            success: function (res) {
+              if (res.data?.content?.length > 0) {
+                _this.listData = res.data.content;
+                _this.pageTotal = res.data.totalElements;
+                _this.addUbas()
+                // if (_this.searchParams.page === 1) {
+                //   forAllObj.size = res.data.totalElements;
+                //   forAllObj = JSON.stringify(forAllObj);
+                //   $.ajax({
+                //     url: _this.baseUrl,
+                //     //调用servlet方法
+                //     // data:"action=jQueryAjax",
+                //     data: forAllObj,
+                //     type: "POST",
+                //     contentType: "application/json",
+                //     success: function (value) {
+                //       if (value.data?.content?.length > 0) {
+                //         _this.allData = value.data.content;
+                //         _this.getClassify();
+                //       } else {
+                //         _this.allData = [];
+                //       }
+                //     },
+                //     //返回数据的格式
+                //     dataType: "json",
+                //   });
+                // }
+              } else {
+                _this.listData = [];
+                _this.pageTotal = 0;
+              }
+              _this.loading = false
+              if (!val) {
+                _this.getAllTypesCounts(tempsearchword);
+              }
+            },
+            //返回数据的格式
+            dataType: "json",
+          });
+        },
+        // 选择时间
+        timeRadioChange(val) {
+          this.timeRange = [];
+          if (val === 1) {
+            this.timeStr = "";
+          } else if (val === 2) {
+            let s = moment(new Date(new Date() - 6 * 24 * 3600 * 1000)).format(
+              "YYYY.MM.DD"
+            );
+            let e = moment(new Date()).format("YYYY.MM.DD");
+            this.timeStr = "docreltime>=" + s + " and docreltime<=" + e;
+          } else if (val === 3) {
+            let s = moment(new Date(new Date() - 30 * 24 * 3600 * 1000)).format(
+              "YYYY.MM.DD"
+            );
+            let e = moment(new Date()).format("YYYY.MM.DD");
+            this.timeStr = "docreltime>=" + s + " and docreltime<=" + e;
+          } else if (val === 4) {
+            let s = moment(new Date(new Date() - 365 * 24 * 3600 * 1000)).format(
+              "YYYY.MM.DD"
+            );
+            let e = moment(new Date()).format("YYYY.MM.DD");
+            this.timeStr = "docreltime>=" + s + " and docreltime<=" + e;
+          } else if (val === 5) {
+            this.timeStr = "";
+          }
+        },
+        selectTimeRange() {
+          let s = moment(this.timeRange[0]).format("YYYY.MM.DD");
+          let e = moment(this.timeRange[1]).format("YYYY.MM.DD");
+          this.timeStr = "docreltime>=" + s + " and docreltime<=" + e;
+        },
+        handleClose(tag) {
+          this.searchHistoryList.splice(this.searchHistoryList.indexOf(tag), 1);
+          let str = JSON.stringify(this.searchHistoryList);
+          localStorage.setItem("searchHistoryList", str);
+        },
+        handleTagClick(val) {
+          // let reg = /[\t\r\f\n\s]*/g;
+          // this.inputStr = val.target.innerText.replace(reg, "");
+          this.inputStr = val.target.innerText.replace(/(^\s*)|(\s*$)/g, "");
+        },
+        // 分页
+        handleCurrentChange(val) {
+          this.searchParams.page = val;
+          this.search(true);
+        },
+        handleSizeChange(val) {
+          this.searchParams.page = 1;
+          this.searchParams.size = val;
+          this.search(true);
+        },
+        openUrl(val) {
+          window.open(val);
+        },
+        reset() {
+          this.inputStr = "";
+          this.selectValue = " or ";
+          this.timeRange = [];
+          this.timeradioVal = 1;
+          this.keyWordRadio = "1";
+          this.timeStr = "";
+          this.search();
+        },
+        // 分类
+        getClassify() {
+          this.allData.map((item) => {
+            let key = item.chnldesc;
+            if (!!this.classifyObj[key]) {
+              this.classifyObj[key].push(item.id);
+            } else {
+              this.classifyObj.others.push(item.id);
+            }
+          });
+        },
+        getAllTypesCounts(val) {
+          let _this = this
+          let arr = [
+            {
+              num: 'allNum',
+              str: ''
+            }, {
+              num: 'productsNum',
+              str: 'chnldesc=products'
+            }, {
+              num: 'reportsNum',
+              str: 'chnldesc=reports'
+            }, {
+              num: 'servicesNum',
+              str: 'chnldesc=services'
+            }, {
+              num: 'regulationNum',
+              str: 'chnldesc=regulation'
+            }, {
+              num: 'publicnoticeNum',
+              str: 'chnldesc=publicnotice'
+            }, {
+              num: 'aboutNum',
+              str: 'chnldesc=about'
+            }, {
+              num: 'othersNum',
+              str: 'chnldesc!=products and chnldesc!=reports and chnldesc!=services and chnldesc!=regulation and chnldesc!=publicnotice and chnldesc!=about'
+            }
+          ]
+          arr.map(item => {
+            let searchword = ''
+            if (val.length > 0) {
+              if (item.str != "") {
+                searchword =
+                  val + " and " + item.str;
+              } else {
+                searchword = val
+              }
+            } else {
+              if (item.str != "") {
+                searchword = item.str;
+              }
+            }
+            let obj = {
+              chlid: 1003,
+              page: 1,
+              searchword: searchword,
+              size: 10,
+  			siteId: 'shfe'
+            }
+            $.ajax({
+              url: _this.baseUrl,
+              //调用servlet方法
+              // data:"action=jQueryAjax",
+              data: JSON.stringify(obj),
+              type: "POST",
+              contentType: "application/json",
+              success: function (res) {
+                  _this.classifyObj[item.num] =  res.data ?  res.data.totalElements : 0
+              },
+              //返回数据的格式
+              dataType: "json",
+            });
+          })
+        },
+        // 获取来源的字典
+        getFullSourceDic() {
+          let _this = this;
+          let obj = JSON.stringify(_this.fullSourceParams);
+          $.ajax({
+            url: _this.baseUrl,
+            //调用servlet方法
+            // data:"action=jQueryAjax",
+            data: obj,
+            type: "POST",
+            contentType: "application/json",
+            success: function (res) {
+              if (res.data?.content?.length > 0) {
+                _this.fullSourceDic = res.data.content
+              }
+              _this.search();
+            },
+            //返回数据的格式
+            dataType: "json",
+          });
+        },
+        // 获取来源的完整路径
+        getFullSource(val) {
+          if (val.length > 0) {
+            let arr = val.split(',')
+            let str = ''
+            arr.map(item => {
+              let a = this.fullSourceDic.find(obj => obj.datapath === item)
+              str += a ? (a.chnldesc + '-') : ''
+            })
+            if (str.endsWith('-')) {
+              str = str.slice(0, -1)
+            }
+            return str
+          } else {
+            return '其他'
+          }
+        },
+        // ubas关键词统计
+        addUbas() {
+          createParams();
+          params.referrer = window.location.origin + '/pubilc/server/?searchText=' + this.inputStr
+          var strParam = "";
+          for(var key in params){
+              strParam += key+"="+params[key]+"&";
+          }
+          console.log('=======', params, strParam)
+          strParam = strParam.substring(0,strParam.length-1);
+          var trsImg =  document.createElement("img");
+          trsImg.src = encodeURI(encodeURI(addUrl+"?"+strParam));
+          trsImg.style.display = "none";
+          document.body.appendChild(trsImg);
+      }
+
+      },
+    });
+  })();
+</script>
+    <!-- END header -->
+    <!-- 20240417 -->
+
+    <!-- pc端页面-->
+    <!-- vue 作用域 calendar_Id -->
+    <div class="page m_pc_box" class="page" id="calendar_Id">
+      <div class="banner">
+
+        <div class="swiper-container" style="height:100%">
+          <div class="swiper-wrapper">
+            
+              <div class="swiper-slide">
+                <a href="/index/othercontents/2026_Options/"
+                  TARGET='_blank'><img src="/index/content/202608/W020260831527726125725.jpg" alt="" /></a>
+              </div>
+            
+              <div class="swiper-slide">
+                <a href="https://edu.shfe.com.cn/IndustrialService/DeepPlowProgram/"
+                  TARGET='_blank'><img src="/index/content/202607/W020260715585817268381.png" alt="" /></a>
+              </div>
+            
+              <div class="swiper-slide">
+                <a href="/index/othercontents/2026_Futures-Options/"
+                  TARGET='_blank'><img src="/index/content/202604/W020260417545492593489.jpg" alt="" /></a>
+              </div>
+            
+              <div class="swiper-slide">
+                <a href="/index/content/202510/t20251028_829366.html"
+                  TARGET='_blank'><img src="/index/content/202510/W020251028555286870743.jpg" alt="" /></a>
+              </div>
+            
+              <div class="swiper-slide">
+                <a href="/index/othercontents/FUTURES-OPTIONS/"
+                  TARGET='_blank'><img src="/index/content/202508/W020250827568367885484.jpg" alt="" /></a>
+              </div>
+            
+              <div class="swiper-slide">
+                <a href="/index/othercontents/2025_SDMF/"
+                  TARGET='_blank'><img src="/index/content/202505/W020250514391520559025.jpg" alt="" /></a>
+              </div>
+            
+              <div class="swiper-slide">
+                <a href="/index/othercontents/Report/"
+                  TARGET='_blank'><img src="/index/content/202403/W020240327364495570191.png" alt="" /></a>
+              </div>
+            
+          </div>
+          <!--<div class="swiper-button-prev swiper-button-white"></div>-->
+          <div class="swiper-button-prev" style="display: none;"></div>
+          <div class="swiper-button-next"  style="display: none;"></div>
+          <div class="swiper-pagination"  style="display: none;"></div>
+        </div>
+
+      </div>
+      <div class="content">
+       
+        <div class="pos-box">
+          <div class="data_report pos-inner">
+            <div class="report_text">
+              <div class="report_text_info">
+                <div class="text_title">数据报表</div>
+                <a class="text_btn"
+                  href="/reports/businessdata/prmsummary/">
+                  查看更多
+                  <img src="/images/home_report_arrow.png" />
+                </a>
+              </div>
+            </div>
+            <div class="report_select">
+              <div class="select_content">
+                <div class="select_item">
+                  <img class="img_item" src="/images/home_icon1.png" alt="" />
+                  <a class="text_item"
+                    href="/reports/tradedata/dailyandweeklydata/?query_params=kx">日交易快讯</a>
+                  <img class="img_arrow" src="/images/select_icon.png" alt="" />
+                </div>
+                <div class="select_item">
+                  <img class="img_item" src="/images/home_icon2.png" alt="" />
+                  <a class="text_item"
+                    href="/reports/tradedata/dailyandweeklydata/?query_params=pm">日交易排名</a>
+                  <img class="img_arrow" src="/images/select_icon.png" alt="" />
+                </div>
+                <div class="select_item">
+                  <img class="img_item" src="/images/home_icon3.png" alt="" />
+                  <a class="text_item"
+                    href="/reports/tradedata/dailyandweeklydata/?query_params=js_f">每日结算参数</a>
+                  <img class="img_arrow" src="/images/select_icon.png" alt="" />
+                </div>
+                <div class="select_item">
+                  <img class="img_item" src="/images/home_icon4.png" alt="" />
+                  <a class="text_item"
+                    href="/reports/tradedata/dailyandweeklydata/?query_params=dailystock">仓单日报</a>
+                  <img class="img_arrow" src="/images/select_icon.png" alt="" />
+                </div>
+                <div class="select_item">
+                  <img class="img_item" src="/images/home_icon5.png" alt="" />
+                  <a class="text_item"
+                    href="/reports/tradedata/dailyandweeklydata/?query_params=timeprice">日间均价</a>
+                  <img class="img_arrow" src="/images/select_icon.png" alt="" />
+                </div>
+                <div class="select_item">
+                  <img class="img_item" src="/images/home_icon6.png" alt="" />
+                  <a class="text_item"
+                    href="/reports/tradedata/dailyandweeklydata/?query_params=dailyDlvPlacePremium">厂库提货地升贴水</a>
+                  <img class="img_arrow" src="/images/select_icon.png" alt="" />
+                </div>
+                <div class="select_item">
+                  <img class="img_item" src="/images/home_icon7.png" alt="" />
+                  <a class="text_item"
+                    href="/reports/tradedata/monthlyandyearlydata/?query_params=mosprice_f">月均结算价</a>
+                  <img class="img_arrow" src="/images/select_icon.png" alt="" />
+                </div>
+                <div class="select_item">
+                  <img class="img_item" src="/images/home_icon8.png" alt="" />
+                  <a class="text_item"
+                    href="/reports/tradedata/dailyandweeklydata/?query_params=weeklystock">库存周报</a>
+                  <img class="img_arrow" src="/images/select_icon.png" alt="" />
+                </div>
+
+
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 日历、公告通知 -->
+        <div class="cas_info">
+          <div class="calendar_info">
+            <div class="info_title">交易日历</div>
+            <div class="calendar_content" v-cloak>
+
+              <!-- 日历 --><!-- 20240417 -->
+              
+              <div class="table_cascader">
+                <el-calendar v-model="calendarDate" id="home_calendar_cont">
+                  <template slot="dateCell" slot-scope="{data}">
+                    <p class="calendar_p">{{data.day.split('-').slice(2).join()}}
+                    <div v-for="(i, index) in dayTime" :key="index">
+                      <div class="point_cont" v-if="data.day==i.day">
+                        <div v-if="i.flag_Trade" class="point_purple"></div>
+                        <div v-if="i.flag_settlement" class="point_yellow"></div>
+                        <div v-if="i.flag_delivery" class="point_blue"></div>
+                        <div v-if="i.flag_history" class="point_red"></div>
+                      </div>
+                    </div>
+                    </p>
+                  </template>
+                </el-calendar>
+                <el-date-picker class="home_calendar_i" size="mini" v-model="value4" type="month" placeholder="选择月"
+                  @change="timeChange" align="center" ref="datapicker"></el-date-picker>
+              </div>
+              <!-- 20240417 -->
+              <div class="calendar_detail calendar_item">
+                <div class="text_content">
+                  <div class="text_content_item">
+                    <div class="text_detail_title">当前日期为：</div>
+                    <div class="text_detail_content">
+                      {{ currentDate.substring(0,4) + '-' + currentDate.substring(4,6) + '-' + currentDate.substring(6,8) }}
+                    </div>
+                  </div>
+                  <template v-if="!item">
+                    <div class="text_detail_content">暂无数据</div>
+                  </template>
+                  <template v-else>
+                    <div class="text_content_item" v-if="currentDate == item.tradeDate">
+
+                      <template v-if=" year > 2021 ">
+                        <div class="text_detail_title" v-if="item.tradeExit || item.tradeAdjust || item.tradeLastDate ||
+                              item.tradeOnBoard || item.tradeQLastDate || item.tradeLimit ||
+                              item.tradeSellingPositions || item.tradeOpeningRestriction || item.tradePositionLimit
+                              ">
+                          <div class="point_purple text_detail_mr5"></div>交易提示:
+                        </div>
+                        <div class="text_detail_content">
+                          <div v-if="item.tradeExit" v-html="item.tradeExit"></div><!-- 个人客户退出 -->
+                          <div v-if="item.tradeLastDate" v-html="item.tradeLastDate"></div><!-- 合约最后交易日 -->
+                          <div v-if="item.tradeOnBoard" v-html="item.tradeOnBoard"></div><!-- 新合约上市 -->
+                          <div v-if="item.tradeQLastDate" v-html="item.tradeQLastDate"></div><!-- 期权最后交易日 -->
+                          <div v-if="item.tradeAdjust" v-html="item.tradeAdjust"></div><!-- 非整数倍持仓调整 -->
+                          <div v-if="item.tradeLimit" v-html="item.tradeLimit"></div><!-- 涨跌停板信息 -->
+                          <div v-if="item.tradePositionLimit" v-html="item.tradePositionLimit"></div><!-- 合约限仓 -->
+                          <div v-if="item.tradeOpeningRestriction" v-html="item.tradeOpeningRestriction"></div>
+                          <!-- 交易限额 -->
+                          <div v-if="item.tradeSellingPositions" v-html="item.tradeSellingPositions"></div>
+                          <!-- 持仓与仓单匹配 -->
+
+
+                        </div>
+                        <div class="text_detail_title"
+                          v-if="item.settleDepositAj || item.settleADepositAj || item.settleTradeFeeAj ||
+                              item.settlePledgeFee || item.settleExitDiscount ||item.settleDeliveryFee || item.settleOther">
+                          <div class="point_yellow text_detail_mr5"></div>结算提示：
+                        </div>
+                        <div class="text_detail_content">
+                          <div v-if="item.settleDepositAj" v-html="item.settleDepositAj"></div><!-- 合约保证金率调整 -->
+                          <div v-if="item.settleTradeFeeAj" v-html="item.settleTradeFeeAj"></div><!-- 合约交易手续费调整 -->
+                          <div v-if="item.settlePledgeFee" v-html="item.settlePledgeFee"></div><!-- 收取会员质押手续费 -->
+                          <div v-if="item.settleExitDiscount" v-html="item.settleExitDiscount"></div>
+                          <!-- 合约退出单向大边保证金优惠 -->
+                          <div v-if="item.settleADepositAj" v-html="item.settleADepositAj"></div><!-- 品种保证金率调整 -->
+                          <div v-if="item.settleDeliveryFee" v-html="item.settleDeliveryFee"></div><!-- 收取交割手续费 -->
+                          <div v-if="item.settleOther" v-html="item.settleOther"></div><!-- 其它 -->
+
+                        </div>
+                        <div class="text_detail_title" v-if="item.delivery">
+                          <div class="point_blue text_detail_mr5"></div>交割提示：
+                        </div>
+                        <div class="text_detail_content">
+                          <div v-if="item.delivery" v-html="item.delivery"></div>
+                        </div>
+                      </template>
+
+                      <template v-else>
+                        <div class="text_detail_content text_detail_history">
+                          <div v-if="item.historyContent" v-html="item.historyContent"></div>
+                        </div>
+                      </template>
+
+                    </div>
+                  </template>
+                </div>
+                <a class="text_btn_look" id="lookMoreId">查看更多</a>
+              </div>
+
+            </div>
+          </div>
+          <div class="message_info">
+            <div class="info_title">
+              公告通知
+              <a class="title_btn lookMoreInfoBtn"
+                href="/publicnotice/notice/"
+                TARGET='_blank'>
+                查看更多
+                <img src="/images/select_icon.png" alt="" />
+                <img class="red" src="/images/select_icon.png" alt="" />
+              </a>
+            </div>
+            <div class="message_content">
+              
+                <a class="message_item" href="/publicnotice/notice/202609/t20260902_833213.html"
+                  TARGET='_blank'>
+                  <div class="info_title_item">
+                    关于对部分客户采取限制开仓监管措施的公告
+                  </div>
+                  <div class="info_data">
+                    <span class="data_info">
+                      2026-09-02
+                    </span>
+                    <span><img src="/images/home_new.png" alt="" /></span>
+                  </div>
+                </a>
+              
+                <a class="message_item" href="/publicnotice/notice/202609/t20260902_833203.html"
+                  TARGET='_blank'>
+                  <div class="info_title_item">
+                    关于同意上海裕强供应链管理有限公司调整铜、铝、锌期货库容的公告
+                  </div>
+                  <div class="info_data">
+                    <span class="data_info">
+                      2026-09-02
+                    </span>
+                    <span><img src="/images/home_new.png" alt="" /></span>
+                  </div>
+                </a>
+              
+                <a class="message_item" href="/publicnotice/notice/202609/t20260901_833192.html"
+                  TARGET='_blank'>
+                  <div class="info_title_item">
+                    违规处理决定公告
+                  </div>
+                  <div class="info_data">
+                    <span class="data_info">
+                      2026-09-01
+                    </span>
+                    <span><img src="/images/home_new.png" alt="" /></span>
+                  </div>
+                </a>
+              
+                <a class="message_item" href="/publicnotice/notice/202609/t20260901_833191.html"
+                  TARGET='_blank'>
+                  <div class="info_title_item">
+                    违规处理决定公告
+                  </div>
+                  <div class="info_data">
+                    <span class="data_info">
+                      2026-09-01
+                    </span>
+                    <span><img src="/images/home_new.png" alt="" /></span>
+                  </div>
+                </a>
+              
+                <a class="message_item" href="/publicnotice/notice/202609/t20260901_833189.html"
+                  TARGET='_blank'>
+                  <div class="info_title_item">
+                    上海国际能源交易中心发布关于公布低硫燃料油期权及部分期货、期权品种做市商名单的公告
+                  </div>
+                  <div class="info_data">
+                    <span class="data_info">
+                      2026-09-01
+                    </span>
+                    <span><img src="/images/home_new.png" alt="" /></span>
+                  </div>
+                </a>
+              
+                <a class="message_item" href="/publicnotice/notice/202609/t20260901_833187.html"
+                  TARGET='_blank'>
+                  <div class="info_title_item">
+                    关于公布不锈钢、热轧卷板期权及部分期货、期权品种做市商名单的公告
+                  </div>
+                  <div class="info_data">
+                    <span class="data_info">
+                      2026-09-01
+                    </span>
+                    <span><img src="/images/home_new.png" alt="" /></span>
+                  </div>
+                </a>
+              
+            </div>
+          </div>
+        </div>
+
+        <!-- 上市品种 -->
+        <div class="cate_market">
+          <div class="cate_title">
+            <div class="title_text">
+              上市品种
+              <div class="bgc_position"></div>
+            </div>
+            <!--  <a class="title_btn" href="/products/">
+                查看更多
+                <img src="/images/select_icon.png" alt="" />
+              </a>-->
+          </div>
+          <div class="cate_content">
+            <div class="content_info">
+              <div class="cate_content_title active_cate_tab left_tab">
+                <span class="item active_item">期货</span>
+                <span class="item">
+                  有色金属
+                </span>
+                <span class="item">
+                  贵金属与黑色金属
+                </span>
+                <span class="item">
+                  能源化工
+                </span>
+                <span class="item">
+                  指数
+                </span>
+              </div>
+              <div class="cate_content_title block_item right_tab">
+                <span class="item active_item">期权</span>
+                <span class="item">
+                  有色金属
+                </span>
+                <span class="item">
+                  贵金属与黑色金属
+                </span>
+                <span class="item">
+                  能源化工
+                </span>
+
+              </div>
+            </div>
+
+            <div class="main_content content_left">
+              <div class="img_item">
+                <img src="/products/futures/metal/nonferrousmetal/images/P020231114671267075166.png" alt="" />
+                <div class="tag_list">
+                  
+                    <a class="tag_item"
+                      href="/products/futures/metal/nonferrousmetal/cu_f/">
+                      铜
+                    </a>
+                  
+                    <a class="tag_item"
+                      href="/products/futures/metal/nonferrousmetal/bc_f/">
+                      铜(BC)
+                    </a>
+                  
+                    <a class="tag_item"
+                      href="/products/futures/metal/nonferrousmetal/al_f/">
+                      铝
+                    </a>
+                  
+                    <a class="tag_item"
+                      href="/products/futures/metal/nonferrousmetal/zn_f/">
+                      锌
+                    </a>
+                  
+                    <a class="tag_item"
+                      href="/products/futures/metal/nonferrousmetal/pb_f/">
+                      铅
+                    </a>
+                  
+                    <a class="tag_item"
+                      href="/products/futures/metal/nonferrousmetal/ni_f/">
+                      镍
+                    </a>
+                  
+                    <a class="tag_item"
+                      href="/products/futures/metal/nonferrousmetal/sn_f/">
+                      锡
+                    </a>
+                  
+                    <a class="tag_item"
+                      href="/products/futures/metal/nonferrousmetal/ao_f/">
+                      氧化铝
+                    </a>
+                  
+                    <a class="tag_item"
+                      href="/products/futures/metal/nonferrousmetal/ad_f/">
+                      铸造铝合金
+                    </a>
+                  
+                  <a class="more" href="javascript:;"></a>
+                  <a class="more more1 " href="javascript:;">更多<img src="/images/bottom_white.png" /></a>
+                </div>
+                <div class="bottom_title">
+                  有色金属
+                </div>
+              </div>
+              <div class="img_item">
+                <img src="/products/futures/metal/ferrousandpreciousmetal/images/P020231114671494563675.png" alt="" />
+                <div class="tag_list">
+                  
+                    <a class="tag_item item_2"
+                      href="/products/futures/metal/ferrousandpreciousmetal/au_f/">
+                      黄金
+                    </a>
+                  
+                    <a class="tag_item item_2"
+                      href="/products/futures/metal/ferrousandpreciousmetal/ag_f/">
+                      白银
+                    </a>
+                  
+                    <a class="tag_item item_2"
+                      href="/products/futures/metal/ferrousandpreciousmetal/rb_f/">
+                      螺纹钢
+                    </a>
+                  
+                    <a class="tag_item item_2"
+                      href="/products/futures/metal/ferrousandpreciousmetal/wr_f/">
+                      线材
+                    </a>
+                  
+                    <a class="tag_item item_2"
+                      href="/products/futures/metal/ferrousandpreciousmetal/hc_f/">
+                      热轧卷板
+                    </a>
+                  
+                    <a class="tag_item item_2"
+                      href="/products/futures/metal/ferrousandpreciousmetal/ss_f/">
+                      不锈钢
+                    </a>
+                  
+                  <a class="more" href="javascript:;"></a>
+                  <a class="more more1 " href="javascript:;">更多<img src="/images/bottom_white.png" /></a>
+                </div>
+                <div class="bottom_title">
+                  贵金属与黑色金属
+                </div>
+              </div>
+              <div class="img_item">
+                <img src="/products/futures/energyandchemical/images/P020231114671596476770.png" alt="" />
+                <div class="tag_list">
+                  
+                    <a class="tag_item item_2 item_4"
+                      href="/products/futures/energyandchemical/sc_f/">
+                      原油
+                    </a>
+                  
+                    <a class="tag_item item_2 item_4"
+                      href="/products/futures/energyandchemical/lu_f/">
+                      低硫燃料油
+                    </a>
+                  
+                    <a class="tag_item item_2 item_4"
+                      href="/products/futures/energyandchemical/fu_f/">
+                      燃料油
+                    </a>
+                  
+                    <a class="tag_item item_2 item_4"
+                      href="/products/futures/energyandchemical/bu_f/">
+                      石油沥青
+                    </a>
+                  
+                    <a class="tag_item item_2 item_4"
+                      href="/products/futures/energyandchemical/br_f/">
+                      合成橡胶
+                    </a>
+                  
+                    <a class="tag_item item_2 item_4"
+                      href="/products/futures/energyandchemical/ru_f/">
+                      天然橡胶
+                    </a>
+                  
+                    <a class="tag_item item_2 item_4"
+                      href="/products/futures/energyandchemical/nr_f/">
+                      20号胶
+                    </a>
+                  
+                    <a class="tag_item item_2 item_4"
+                      href="/products/futures/energyandchemical/sp_f/">
+                      纸浆
+                    </a>
+                  
+                    <a class="tag_item item_2 item_4"
+                      href="/products/futures/energyandchemical/op_f/">
+                      胶版印刷纸
+                    </a>
+                  
+                  <a class="more" href="javascript:;"></a>
+                  <a class="more more1 " href="javascript:;">更多<img src="/images/bottom_white.png" /></a>
+                </div>
+                <div class="bottom_title">
+                  能源化工
+                </div>
+              </div>
+              <div class="img_item">
+                <img src="/products/futures/index_f/images/P020231114671697647335.png" alt="" />
+                <div class="tag_list">
+                  
+                    <a class="tag_item item_3"
+                      href="/products/futures/index_f/ec_f/">
+                      SCFIS欧线
+                    </a>
+                  
+                  <a class="more" href="javascript:;"></a>
+                  <a class="more more1 " href="javascript:;">更多<img src="/images/bottom_white.png" /></a>
+                </div>
+                <div class="bottom_title">
+                  指数
+                </div>
+              </div>
+            </div>
+            <div class="main_content content_right hidden_content">
+              <div class="img_item">
+                <img src="/products/option/nonferrousmetal/images/P020231114671839512184.png" alt="" />
+                <div class="tag_list">
+                  
+                    <a class="tag_item"
+                      href="/products/option/nonferrousmetal/cu_o/">
+                      铜
+                    </a>
+                  
+                    <a class="tag_item"
+                      href="/products/option/nonferrousmetal/bc_o/">
+                      铜(BC)
+                    </a>
+                  
+                    <a class="tag_item"
+                      href="/products/option/nonferrousmetal/al_o/">
+                      铝
+                    </a>
+                  
+                    <a class="tag_item"
+                      href="/products/option/nonferrousmetal/zn_o/">
+                      锌
+                    </a>
+                  
+                    <a class="tag_item"
+                      href="/products/option/nonferrousmetal/pb_o/">
+                      铅
+                    </a>
+                  
+                    <a class="tag_item"
+                      href="/products/option/nonferrousmetal/ni_o/">
+                      镍
+                    </a>
+                  
+                    <a class="tag_item"
+                      href="/products/option/nonferrousmetal/sn_o/">
+                      锡
+                    </a>
+                  
+                    <a class="tag_item"
+                      href="/products/option/nonferrousmetal/ao_o/">
+                      氧化铝
+                    </a>
+                  
+                    <a class="tag_item"
+                      href="/products/option/nonferrousmetal/ad_o/">
+                      铸造铝合金
+                    </a>
+                  
+                  <a class="more" href="javascript:;"></a>
+                  <a class="more more1 " href="javascript:;">更多<img src="/images/bottom_white.png" /></a>
+                </div>
+
+
+                <div class="bottom_title">
+                  有色金属
+                </div>
+              </div>
+
+              <div class="img_item">
+                <img src="/products/option/ferrousandpreciousmetal/images/P020231114671907655841.png" alt="" />
+                <div class="tag_list">
+                  
+                    <a class="tag_item item_2"
+                      href="/products/option/ferrousandpreciousmetal/au_o/">
+                      黄金
+                    </a>
+                  
+                    <a class="tag_item item_2"
+                      href="/products/option/ferrousandpreciousmetal/ag_o/">
+                      白银
+                    </a>
+                  
+                    <a class="tag_item item_2"
+                      href="/products/option/ferrousandpreciousmetal/rb_o/">
+                      螺纹钢
+                    </a>
+                  
+                    <a class="tag_item item_2"
+                      href="/products/option/ferrousandpreciousmetal/hc_o/">
+                      热轧卷板
+                    </a>
+                  
+                    <a class="tag_item item_2"
+                      href="/products/option/ferrousandpreciousmetal/ss_o/">
+                      不锈钢
+                    </a>
+                  
+                  <a class="more" href="javascript:;"></a>
+                  <a class="more more1 " href="javascript:;">更多<img src="/images/bottom_white.png" /></a>
+                </div>
+
+
+                <div class="bottom_title">
+                  贵金属与黑色金属
+                </div>
+              </div>
+              <div class="img_item">
+                <img src="/products/option/energyandchemical/images/P020231114672004348180.png" alt="" />
+                <div class="tag_list">
+                  
+                    <a class="tag_item item_2 item_4"
+                      href="/products/option/energyandchemical/sc_o/">
+                      原油
+                    </a>
+                  
+                    <a class="tag_item item_2 item_4"
+                      href="/products/option/energyandchemical/lu_o/">
+                      低硫燃料油
+                    </a>
+                  
+                    <a class="tag_item item_2 item_4"
+                      href="/products/option/energyandchemical/fu_o/">
+                      燃料油
+                    </a>
+                  
+                    <a class="tag_item item_2 item_4"
+                      href="/products/option/energyandchemical/bu_o/">
+                      石油沥青
+                    </a>
+                  
+                    <a class="tag_item item_2 item_4"
+                      href="/products/option/energyandchemical/br_o/">
+                      合成橡胶
+                    </a>
+                  
+                    <a class="tag_item item_2 item_4"
+                      href="/products/option/energyandchemical/ru_o/">
+                      天然橡胶
+                    </a>
+                  
+                    <a class="tag_item item_2 item_4"
+                      href="/products/option/energyandchemical/nr_o/">
+                      20号胶
+                    </a>
+                  
+                    <a class="tag_item item_2 item_4"
+                      href="/products/option/energyandchemical/sp_o/">
+                      纸浆
+                    </a>
+                  
+                    <a class="tag_item item_2 item_4"
+                      href="/products/option/energyandchemical/op_o/">
+                      胶版印刷纸
+                    </a>
+                  
+                  <a class="more" href="javascript:;"></a>
+                  <a class="more more1 " href="javascript:;">更多<img src="/images/bottom_white.png" /></a>
+                </div>
+                <div class="bottom_title">
+                  能源化工
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 市场服务 -->
+        <div class="market_ser">
+          <div class="title_info">
+            <div class="report_text">
+              <div class="report_text_info">
+                <div class="text_title">市场服务</div>
+              </div>
+            </div>
+            <div class="report_text">
+              <div class="report_text_info"></div>
+            </div>
+            <div class="report_text item_net">
+              <div class="report_text_info">
+                <a class="text_btn"
+                  href="https://edu.shfe.com.cn">
+                  投资者教育网站
+                  <img src="/images/home_report_arrow.png" />
+                </a>
+              </div>
+            </div>
+            <div class="report_text item_net">
+              <div class="report_text_info">
+                <a class="text_btn"
+                  href="/services/delivery/standardwarrantms/">
+                  电子仓单系统
+                  <img src="/images/home_report_arrow.png" />
+                </a>
+              </div>
+            </div>
+            <div class="report_text item_net">
+              <div class="report_text_info">
+                <a class="text_btn"
+                  href="https://otc.shfe.com.cn">
+                  上期综合业务平台
+                  <img src="/images/home_report_arrow.png" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="bottom_list">
+            
+              <a class="bottom_list_item" href="/specialtopic/indexopt/">
+                <img src="/index/markeservices/202311/W020231205834118255468.png" alt="" />
+                <span class="bottom_item_text">
+                  指数与期权
+                </span>
+              </a>
+            
+              <a class="bottom_list_item" href="/regulation/marketregulation/">
+                <img src="/index/markeservices/202311/W020231205834117753181.png" alt="" />
+                <span class="bottom_item_text">
+                  合规监管
+                </span>
+              </a>
+            
+              <a class="bottom_list_item" href="/specialtopic/member/">
+                <img src="/index/markeservices/202311/W020231205834117038023.png" alt="" />
+                <span class="bottom_item_text">
+                  我是会员
+                </span>
+              </a>
+            
+              <a class="bottom_list_item" href="/specialtopic/investor/">
+                <img src="/index/markeservices/202311/W020231205834116355472.png" alt="" />
+                <span class="bottom_item_text">
+                  我是投资者
+                </span>
+              </a>
+            
+              <a class="bottom_list_item" href="/specialtopic/informationQuotient/">
+                <img src="/index/markeservices/202311/W020231205834115485705.png" alt="" />
+                <span class="bottom_item_text">
+                  我是信息商
+                </span>
+              </a>
+            
+          </div>
+        </div>
+
+        <!-- 新闻发布、聚焦交易所 -->
+        <div class="network_pub">
+          <div class="network_pub_content">
+            <div class="network_pub_item">
+              <div class="title_network">新闻发布</div>
+              <div class="message_content">
+                
+                  <a class="message_item" href="/publicnotice/newsrelease/202608/t20260824_833082.html"
+                    TARGET='_blank'>
+                    <div class="info_title_item">
+                      上海期货交易所新闻发布会（2026年9月）
+                    </div>
+                    <div class="info_data">
+                      <span class="data_info">
+                        2026-08-24
+                      </span>
+                    </div>
+                  </a>
+                
+                  <a class="message_item" href="/publicnotice/newsrelease/202607/t20260723_832713.html"
+                    TARGET='_blank'>
+                    <div class="info_title_item">
+                      上海期货交易所新闻发布会（2026年8月）
+                    </div>
+                    <div class="info_data">
+                      <span class="data_info">
+                        2026-07-23
+                      </span>
+                    </div>
+                  </a>
+                
+                  <a class="message_item" href="/publicnotice/newsrelease/202606/t20260624_832273.html"
+                    TARGET='_blank'>
+                    <div class="info_title_item">
+                      上海期货交易所新闻发布会（2026年7月）
+                    </div>
+                    <div class="info_data">
+                      <span class="data_info">
+                        2026-06-24
+                      </span>
+                    </div>
+                  </a>
+                
+                  <a class="message_item" href="/publicnotice/newsrelease/202605/t20260522_831772.html"
+                    TARGET='_blank'>
+                    <div class="info_title_item">
+                      上海期货交易所新闻发布会（2026年6月）
+                    </div>
+                    <div class="info_data">
+                      <span class="data_info">
+                        2026-05-22
+                      </span>
+                    </div>
+                  </a>
+                
+                  <a class="message_item" href="/publicnotice/newsrelease/202604/t20260423_831487.html"
+                    TARGET='_blank'>
+                    <div class="info_title_item">
+                      上海期货交易所新闻发布会（2026年5月）
+                    </div>
+                    <div class="info_data">
+                      <span class="data_info">
+                        2026-04-23
+                      </span>
+                    </div>
+                  </a>
+                
+              </div>
+            </div>
+            <div class="network_pub_item">
+              <div class="title_network">聚焦交易所</div>
+              <div class="message_content">
+                
+                  <a href="/publicnotice/spotlight/202311/t20231129_801033.html" TARGET='_blank'>
+                    <div class="message_img_item">
+                      <img class="message_img_item_img1 message_img_item_img" src="/images/spotlight_guding.png" />
+                      <img class="message_img_item_img2 message_img_item_img" src="/index/spotlight_index/202312/W020240124594030818077.png" alt="" />
+                    </div>
+                  </a>
+                
+                
+                  <a class="message_item" href="/publicnotice/spotlight/202608/t20260827_833114.html"
+                    TARGET='_blank'>
+                    <div class="info_title_item" >
+                      深耕产融协同 助力高端制造——上期所举办招商局船舶工业集团大宗原材料套期保值专题培训
+                    </div>
+                    <div class="info_data">
+                      <span class="data_info">
+                        2026-08-27
+                      </span>
+                    </div>
+                  </a>
+                
+                  <a class="message_item" href="/publicnotice/spotlight/202608/t20260821_833043.html"
+                    TARGET='_blank'>
+                    <div class="info_title_item" >
+                      20号胶期货首次跨境交割顺利完成
+                    </div>
+                    <div class="info_data">
+                      <span class="data_info">
+                        2026-08-21
+                      </span>
+                    </div>
+                  </a>
+                
+              </div>
+            </div>
+            <div class="network_pub_item">
+              <div class="title_network">媒体报道</div>
+              <div class="message_content">
+                
+                  <a class="message_item" href="/publicnotice/medium/202609/t20260904_833238.html"
+                    TARGET='_blank'>
+                    <div class="info_title_item" >
+                      期货日报：补库遇行情拉锯 期权助力轮胎企业增收
+                    </div>
+                    <div class="info_data">
+                      <span class="data_info">
+                        2026-09-04
+                      </span>
+                    </div>
+                  </a>
+                
+                  <a class="message_item" href="/publicnotice/medium/202609/t20260904_833237.html"
+                    TARGET='_blank'>
+                    <div class="info_title_item" >
+                      中国冶金报：3款期权集中挂牌 上期所衍生品矩阵再扩容
+                    </div>
+                    <div class="info_data">
+                      <span class="data_info">
+                        2026-09-04
+                      </span>
+                    </div>
+                  </a>
+                
+                  <a class="message_item" href="/publicnotice/medium/202609/t20260902_833204.html"
+                    TARGET='_blank'>
+                    <div class="info_title_item" >
+                      中国网财经：集运指数（欧线）期货上市三周年：一家跨境电商的套保账本
+                    </div>
+                    <div class="info_data">
+                      <span class="data_info">
+                        2026-09-02
+                      </span>
+                    </div>
+                  </a>
+                
+                  <a class="message_item" href="/publicnotice/medium/202608/t20260831_833169.html"
+                    TARGET='_blank'>
+                    <div class="info_title_item" >
+                      中国冶金报：巧用期货工具降低采购成本——玖锢五金“期货+期权”组合套保实践
+                    </div>
+                    <div class="info_data">
+                      <span class="data_info">
+                        2026-08-31
+                      </span>
+                    </div>
+                  </a>
+                
+                  <a class="message_item" href="/publicnotice/medium/202608/t20260828_833154.html"
+                    TARGET='_blank'>
+                    <div class="info_title_item" >
+                      上海证券报：期货工具融入有色产业链全环节——“有色金属之乡”企业风险管理观察
+                    </div>
+                    <div class="info_data">
+                      <span class="data_info">
+                        2026-08-28
+                      </span>
+                    </div>
+                  </a>
+                
+              </div>
+            </div>
+          </div>
+          <a class="look_btn_more"
+            href="/publicnotice/medium/"
+            TARGET='_blank'>查看更多</a>
+        </div>
+
+        <!-- 上海期货交易所战略规划 -->
+        <div class="shanghai_info">
+          <div class="shanghai_left shanghai_info_item">
+            <img src="/index/strategy/images/P020231201584984822747.png" alt="" />
+            
+              <a class="text_item" href="https://www.shfe.com.cn/about/socialresponsibility/ocialresponsibilityreports/">
+                <div class="item_text">
+                  </br>社会责任报告
+                </div>
+                <div class="item_text">
+                  
+                </div>
+              </a>
+            
+          </div>
+
+          <div class="shanghai_right shanghai_info_item">
+            <img src="/index/responsibility/images/P020260807610855962318.png" alt="" />
+            
+              <a class="text_item" href="https://www.shfe.com.cn/about/introduce/simintro/">
+                <div class="item_text">
+                  </br>上海期货交易所简介
+                </div>
+                <div class="item_text">
+                  
+                </div>
+              </a>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- mobile端页面-->
+
+    <div class="m_mobile_box">
+		<div  class="m_invesotr_box">
+			<a class="m_home_top_investor" id="m_home_top_investor" href="/specialtopic/investor/" >
+			我是投资者<i class="el-icon el-icon-arrow-right"></i>
+			</a>
+		</div>
+		
+      <!-- 轮播图 -->
+      <div class="swiper_mobile">
+        <div class="swiper-wrapper">
+          
+            <div class="swiper-slide">
+              <a href="/index/othercontents/2026_Options/" TARGET='_blank'>
+                <img src="/index/content/202608/W020260831527726125725.jpg" alt="" />
+              </a>
+            </div>
+          
+            <div class="swiper-slide">
+              <a href="https://edu.shfe.com.cn/IndustrialService/DeepPlowProgram/" TARGET='_blank'>
+                <img src="/index/content/202607/W020260715585817268381.png" alt="" />
+              </a>
+            </div>
+          
+            <div class="swiper-slide">
+              <a href="/index/othercontents/2026_Futures-Options/" TARGET='_blank'>
+                <img src="/index/content/202604/W020260417545492593489.jpg" alt="" />
+              </a>
+            </div>
+          
+            <div class="swiper-slide">
+              <a href="/index/content/202510/t20251028_829366.html" TARGET='_blank'>
+                <img src="/index/content/202510/W020251028555286870743.jpg" alt="" />
+              </a>
+            </div>
+          
+            <div class="swiper-slide">
+              <a href="/index/othercontents/FUTURES-OPTIONS/" TARGET='_blank'>
+                <img src="/index/content/202508/W020250827568367885484.jpg" alt="" />
+              </a>
+            </div>
+          
+            <div class="swiper-slide">
+              <a href="/index/othercontents/2025_SDMF/" TARGET='_blank'>
+                <img src="/index/content/202505/W020250514391520559025.jpg" alt="" />
+              </a>
+            </div>
+          
+            <div class="swiper-slide">
+              <a href="/index/othercontents/Report/" TARGET='_blank'>
+                <img src="/index/content/202403/W020240327364495570191.png" alt="" />
+              </a>
+            </div>
+          
+        </div>
+        <!-- 如果需要分页器 -->
+        <!-- <div class="swiper-pagination-mobile"></div> -->
+
+        <!-- 如果需要导航按钮 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <!-- 如果需要滚动条 -->
+        <!-- <div class="swiper-scrollbar"></div> -->
+      </div>
+
+      <!-- 中心公告 中心新闻 -->
+      <div class="m_analysis_box">
+        <div class="m_analysis_title">
+          <div class="m_analysis_item m_analysis_item_active">公告通知</div>
+          <div class="m_analysis_item">聚焦交易所</div>
+          <div class="m_analysis_item">媒体报道</div>
+        </div>
+        <div class="m_content_show m_content_show2">
+          
+            <a class="m_analysis_tit" href="/publicnotice/notice/202609/t20260902_833213.html">
+              <div class="m_cirtextline">
+                <div class="m_analysis_cirtext">
+                  关于对部分客户采取限制开仓监管措施的公告
+                </div>
+                <div class="m_analysis_tit_data">
+                  09-02
+                </div>
+              </div>
+            </a>
+          
+            <a class="m_analysis_tit" href="/publicnotice/notice/202609/t20260902_833203.html">
+              <div class="m_cirtextline">
+                <div class="m_analysis_cirtext">
+                  关于同意上海裕强供应链管理有限公司调整铜、铝、锌期货库容的公告
+                </div>
+                <div class="m_analysis_tit_data">
+                  09-02
+                </div>
+              </div>
+            </a>
+          
+            <a class="m_analysis_tit" href="/publicnotice/notice/202609/t20260901_833192.html">
+              <div class="m_cirtextline">
+                <div class="m_analysis_cirtext">
+                  违规处理决定公告
+                </div>
+                <div class="m_analysis_tit_data">
+                  09-01
+                </div>
+              </div>
+            </a>
+          
+            <a class="m_analysis_tit" href="/publicnotice/notice/202609/t20260901_833191.html">
+              <div class="m_cirtextline">
+                <div class="m_analysis_cirtext">
+                  违规处理决定公告
+                </div>
+                <div class="m_analysis_tit_data">
+                  09-01
+                </div>
+              </div>
+            </a>
+          
+            <a class="m_analysis_tit" href="/publicnotice/notice/202609/t20260901_833189.html">
+              <div class="m_cirtextline">
+                <div class="m_analysis_cirtext">
+                  上海国际能源交易中心发布关于公布低硫燃料油期权及部分期货、期权品种做市商名单的公告
+                </div>
+                <div class="m_analysis_tit_data">
+                  09-01
+                </div>
+              </div>
+            </a>
+          
+          <div class="m_view_more">
+            <a href="/publicnotice/notice/">查看更多<i class="el-icon el-icon-arrow-right m_font_thin"></i></a>
+          </div>
+        </div>
+        <div class="m_content_show">
+          
+            <a class="m_analysis_tit" href="/publicnotice/spotlight/202608/t20260827_833114.html">
+              <div class="m_cirtextline">
+                <div class="m_analysis_cirtext">
+                  深耕产融协同 助力高端制造——上期所举办招商局船舶工业集团大宗原材料套期保值专题培训
+                </div>
+                <div class="m_analysis_tit_data">
+                  08-27
+                </div>
+              </div>
+            </a>
+          
+            <a class="m_analysis_tit" href="/publicnotice/spotlight/202608/t20260821_833043.html">
+              <div class="m_cirtextline">
+                <div class="m_analysis_cirtext">
+                  20号胶期货首次跨境交割顺利完成
+                </div>
+                <div class="m_analysis_tit_data">
+                  08-21
+                </div>
+              </div>
+            </a>
+          
+            <a class="m_analysis_tit" href="/publicnotice/spotlight/202608/t20260821_833042.html">
+              <div class="m_cirtextline">
+                <div class="m_analysis_cirtext">
+                  热轧卷板、不锈钢、低硫燃料油期权将于9月10日上市——上期所就新期权上市答记者问
+                </div>
+                <div class="m_analysis_tit_data">
+                  08-21
+                </div>
+              </div>
+            </a>
+          
+            <a class="m_analysis_tit" href="/publicnotice/spotlight/202608/t20260812_832950.html">
+              <div class="m_cirtextline">
+                <div class="m_analysis_cirtext">
+                  深耕产融协同 服务央企风险管理需求——上期所举办2026年中央企业金融衍生业务培训班
+                </div>
+                <div class="m_analysis_tit_data">
+                  08-11
+                </div>
+              </div>
+            </a>
+          
+            <a class="m_analysis_tit" href="/publicnotice/spotlight/202608/t20260804_832862.html">
+              <div class="m_cirtextline">
+                <div class="m_analysis_cirtext">
+                  上期所携手有色协会举办紫金矿业专场培训　深化服务产业体系现代化
+                </div>
+                <div class="m_analysis_tit_data">
+                  08-03
+                </div>
+              </div>
+            </a>
+          
+          <div class="m_view_more">
+            <a href="/publicnotice/spotlight/">查看更多 <i class="el-icon el-icon-arrow-right m_font_thin"></i></a>
+          </div>
+        </div>
+        <div class="m_content_show">
+          
+            <a class="m_analysis_tit" href="/publicnotice/medium/202609/t20260904_833238.html">
+              <div class="m_cirtextline">
+                <div class="m_analysis_cirtext">
+                  期货日报：补库遇行情拉锯 期权助力轮胎企业增收
+                </div>
+                <div class="m_analysis_tit_data">
+                  09-04
+                </div>
+              </div>
+            </a>
+          
+            <a class="m_analysis_tit" href="/publicnotice/medium/202609/t20260904_833237.html">
+              <div class="m_cirtextline">
+                <div class="m_analysis_cirtext">
+                  中国冶金报：3款期权集中挂牌 上期所衍生品矩阵再扩容
+                </div>
+                <div class="m_analysis_tit_data">
+                  09-04
+                </div>
+              </div>
+            </a>
+          
+            <a class="m_analysis_tit" href="/publicnotice/medium/202609/t20260902_833204.html">
+              <div class="m_cirtextline">
+                <div class="m_analysis_cirtext">
+                  中国网财经：集运指数（欧线）期货上市三周年：一家跨境电商的套保账本
+                </div>
+                <div class="m_analysis_tit_data">
+                  09-02
+                </div>
+              </div>
+            </a>
+          
+            <a class="m_analysis_tit" href="/publicnotice/medium/202608/t20260831_833169.html">
+              <div class="m_cirtextline">
+                <div class="m_analysis_cirtext">
+                  中国冶金报：巧用期货工具降低采购成本——玖锢五金“期货+期权”组合套保实践
+                </div>
+                <div class="m_analysis_tit_data">
+                  08-31
+                </div>
+              </div>
+            </a>
+          
+            <a class="m_analysis_tit" href="/publicnotice/medium/202608/t20260828_833154.html">
+              <div class="m_cirtextline">
+                <div class="m_analysis_cirtext">
+                  上海证券报：期货工具融入有色产业链全环节——“有色金属之乡”企业风险管理观察
+                </div>
+                <div class="m_analysis_tit_data">
+                  08-28
+                </div>
+              </div>
+            </a>
+          
+          <div class="m_view_more">
+            <a href="/publicnotice/medium/">查看更多 <i class="el-icon el-icon-arrow-right m_font_thin"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- 上市品种 -->
+      <div class="m_varieties">
+        <div class="m_top">
+          <div class="m_titile">上市品种</div>
+          <div class="m_title_right">
+            
+            <div class="m_tit m_title_pro_item m_tit_hover m_normal_icon">
+              <img src="/images/m_f_blue_active.png" class="m_img" />
+              <img src="/images/m_f_notactive.png" class="m_img" style="display: none;" />期货
+            </div>
+            <div class="m_tit1 m_title_pro_item m_normal_icon">
+              <img src="/images/m_o_notactive.png" class="m_img" />
+              <img src="/images/m_o_blue_active.png" class="m_img" style="display: none;" />期权
+            </div>
+          </div>
+        </div>
+        <div class="m_content m_futures_box">
+      			
+          
+      			  
+      				<div class="m_item_title ">
+      				  <a href="/products/futures/metal/nonferrousmetal/">有色金属</a>
+      				</div>
+      				<div class="m_item m_futures_box_item">
+      					  
+      						<div class="m_item_it">
+      						  <a href="/products/futures/metal/nonferrousmetal/cu_f/">铜</a>
+      						</div>
+      					  
+      						<div class="m_item_it">
+      						  <a href="/products/futures/metal/nonferrousmetal/bc_f/">铜(BC)</a>
+      						</div>
+      					  
+      						<div class="m_item_it">
+      						  <a href="/products/futures/metal/nonferrousmetal/al_f/">铝</a>
+      						</div>
+      					  
+      						<div class="m_item_it">
+      						  <a href="/products/futures/metal/nonferrousmetal/zn_f/">锌</a>
+      						</div>
+      					  
+      						<div class="m_item_it">
+      						  <a href="/products/futures/metal/nonferrousmetal/pb_f/">铅</a>
+      						</div>
+      					  
+      						<div class="m_item_it">
+      						  <a href="/products/futures/metal/nonferrousmetal/ni_f/">镍</a>
+      						</div>
+      					  
+      						<div class="m_item_it">
+      						  <a href="/products/futures/metal/nonferrousmetal/sn_f/">锡</a>
+      						</div>
+      					  
+      						<div class="m_item_it">
+      						  <a href="/products/futures/metal/nonferrousmetal/ao_f/">氧化铝</a>
+      						</div>
+      					  
+      						<div class="m_item_it">
+      						  <a href="/products/futures/metal/nonferrousmetal/ad_f/">铸造铝合金</a>
+      						</div>
+      					   
+      				</div>
+      			 
+      				<div class="m_item_title ">
+      				  <a href="/products/futures/metal/ferrousandpreciousmetal/">贵金属与黑色金属</a>
+      				</div>
+      				<div class="m_item m_futures_box_item">
+      					  
+      						<div class="m_item_it">
+      						  <a href="/products/futures/metal/ferrousandpreciousmetal/au_f/">黄金</a>
+      						</div>
+      					  
+      						<div class="m_item_it">
+      						  <a href="/products/futures/metal/ferrousandpreciousmetal/ag_f/">白银</a>
+      						</div>
+      					  
+      						<div class="m_item_it">
+      						  <a href="/products/futures/metal/ferrousandpreciousmetal/rb_f/">螺纹钢</a>
+      						</div>
+      					  
+      						<div class="m_item_it">
+      						  <a href="/products/futures/metal/ferrousandpreciousmetal/wr_f/">线材</a>
+      						</div>
+      					  
+      						<div class="m_item_it">
+      						  <a href="/products/futures/metal/ferrousandpreciousmetal/hc_f/">热轧卷板</a>
+      						</div>
+      					  
+      						<div class="m_item_it">
+      						  <a href="/products/futures/metal/ferrousandpreciousmetal/ss_f/">不锈钢</a>
+      						</div>
+      					   
+      				</div>
+      			
+          
+      			  
+          
+            <div class="m_item_title ">
+              <a href="/products/futures/energyandchemical/">能源化工</a>
+            </div>
+            <div class="m_item m_futures_box_item">
+              
+                <div class="m_item_it">
+                  <a href="/products/futures/energyandchemical/sc_f/">原油</a>
+                </div>
+              
+                <div class="m_item_it">
+                  <a href="/products/futures/energyandchemical/lu_f/">低硫燃料油</a>
+                </div>
+              
+                <div class="m_item_it">
+                  <a href="/products/futures/energyandchemical/fu_f/">燃料油</a>
+                </div>
+              
+                <div class="m_item_it">
+                  <a href="/products/futures/energyandchemical/bu_f/">石油沥青</a>
+                </div>
+              
+                <div class="m_item_it">
+                  <a href="/products/futures/energyandchemical/br_f/">合成橡胶</a>
+                </div>
+              
+                <div class="m_item_it">
+                  <a href="/products/futures/energyandchemical/ru_f/">天然橡胶</a>
+                </div>
+              
+                <div class="m_item_it">
+                  <a href="/products/futures/energyandchemical/nr_f/">20号胶</a>
+                </div>
+              
+                <div class="m_item_it">
+                  <a href="/products/futures/energyandchemical/sp_f/">纸浆</a>
+                </div>
+              
+                <div class="m_item_it">
+                  <a href="/products/futures/energyandchemical/op_f/">胶版印刷纸</a>
+                </div>
+              
+            </div>
+          
+          
+            <div class="m_item_title ">
+              <a href="/products/futures/index_f/">指数</a>
+            </div>
+            <div class="m_item m_futures_box_item">
+              
+                <div class="m_item_it">
+                  <a href="/products/futures/index_f/ec_f/">SCFIS欧线</a>
+                </div>
+              
+            </div>
+          
+        </div>
+        <div class="m_content m_futures_box" style="display: none;">
+          
+            <div class="m_item_title ">
+              <a href="/products/option/nonferrousmetal/">有色金属</a>
+            </div>
+            <div class="m_item m_option_box_item">
+              
+                <div class="m_item_it">
+                  <a href="/products/option/nonferrousmetal/cu_o/">铜</a>
+                </div>
+              
+                <div class="m_item_it">
+                  <a href="/products/option/nonferrousmetal/bc_o/">铜(BC)</a>
+                </div>
+              
+                <div class="m_item_it">
+                  <a href="/products/option/nonferrousmetal/al_o/">铝</a>
+                </div>
+              
+                <div class="m_item_it">
+                  <a href="/products/option/nonferrousmetal/zn_o/">锌</a>
+                </div>
+              
+                <div class="m_item_it">
+                  <a href="/products/option/nonferrousmetal/pb_o/">铅</a>
+                </div>
+              
+                <div class="m_item_it">
+                  <a href="/products/option/nonferrousmetal/ni_o/">镍</a>
+                </div>
+              
+                <div class="m_item_it">
+                  <a href="/products/option/nonferrousmetal/sn_o/">锡</a>
+                </div>
+              
+                <div class="m_item_it">
+                  <a href="/products/option/nonferrousmetal/ao_o/">氧化铝</a>
+                </div>
+              
+                <div class="m_item_it">
+                  <a href="/products/option/nonferrousmetal/ad_o/">铸造铝合金</a>
+                </div>
+              
+            </div>
+          
+            <div class="m_item_title ">
+              <a href="/products/option/ferrousandpreciousmetal/">贵金属与黑色金属</a>
+            </div>
+            <div class="m_item m_option_box_item">
+              
+                <div class="m_item_it">
+                  <a href="/products/option/ferrousandpreciousmetal/au_o/">黄金</a>
+                </div>
+              
+                <div class="m_item_it">
+                  <a href="/products/option/ferrousandpreciousmetal/ag_o/">白银</a>
+                </div>
+              
+                <div class="m_item_it">
+                  <a href="/products/option/ferrousandpreciousmetal/rb_o/">螺纹钢</a>
+                </div>
+              
+                <div class="m_item_it">
+                  <a href="/products/option/ferrousandpreciousmetal/hc_o/">热轧卷板</a>
+                </div>
+              
+                <div class="m_item_it">
+                  <a href="/products/option/ferrousandpreciousmetal/ss_o/">不锈钢</a>
+                </div>
+              
+            </div>
+          
+            <div class="m_item_title ">
+              <a href="/products/option/energyandchemical/">能源化工</a>
+            </div>
+            <div class="m_item m_option_box_item">
+              
+                <div class="m_item_it">
+                  <a href="/products/option/energyandchemical/sc_o/">原油</a>
+                </div>
+              
+                <div class="m_item_it">
+                  <a href="/products/option/energyandchemical/lu_o/">低硫燃料油</a>
+                </div>
+              
+                <div class="m_item_it">
+                  <a href="/products/option/energyandchemical/fu_o/">燃料油</a>
+                </div>
+              
+                <div class="m_item_it">
+                  <a href="/products/option/energyandchemical/bu_o/">石油沥青</a>
+                </div>
+              
+                <div class="m_item_it">
+                  <a href="/products/option/energyandchemical/br_o/">合成橡胶</a>
+                </div>
+              
+                <div class="m_item_it">
+                  <a href="/products/option/energyandchemical/ru_o/">天然橡胶</a>
+                </div>
+              
+                <div class="m_item_it">
+                  <a href="/products/option/energyandchemical/nr_o/">20号胶</a>
+                </div>
+              
+                <div class="m_item_it">
+                  <a href="/products/option/energyandchemical/sp_o/">纸浆</a>
+                </div>
+              
+                <div class="m_item_it">
+                  <a href="/products/option/energyandchemical/op_o/">胶版印刷纸</a>
+                </div>
+              
+            </div>
+          
+        </div>
+      </div>
+      
+      <!-- 报表与信息 -->
+      <div class="m_report">
+        <div class="m_title">
+          <div>数据报表</div>
+          <a class="m_text_aicon_head"
+            href="/reports/businessdata/prmsummary/"><i class="el-icon el-icon-arrow-right"></i></a>
+        </div>
+        <div class="m_boxs">
+          <div class="m_box_item">
+            <div class="m_text">
+              <a
+                href="/reports/tradedata/dailyandweeklydata/?query_params=kx">
+                <img src="/images/home_icon1.png" class="m_img" />
+                日交易快讯</a>
+            </div>
+            <a class="m_text_aicon"
+              href="/reports/tradedata/dailyandweeklydata/?query_params=kx"><i class="el-icon el-icon-arrow-right"></i></a>
+          </div>
+
+          <div class="m_box_item">
+            <div class="m_text">
+              <a
+                href="/reports/tradedata/dailyandweeklydata/?query_params=pm"><img src="/images/home_icon2.png" class="m_img" />日交易排名</a>
+            </div>
+            <a class="m_text_aicon"
+              href="/reports/tradedata/dailyandweeklydata/?query_params=pm"><i class="el-icon el-icon-arrow-right"></i></a>
+          </div>
+
+          <div class="m_box_item">
+            <div class="m_text">
+              <a
+                href="/reports/tradedata/dailyandweeklydata/?query_params=js_f"><img src="/images/home_icon3.png" class="m_img" />每日结算参数</a>
+            </div>
+            <a class="m_text_aicon"
+              href="/reports/tradedata/dailyandweeklydata/?query_params=js_f"><i class="el-icon el-icon-arrow-right"></i></a>
+          </div>
+
+          <div class="m_box_item">
+            <div class="m_text">
+              <a
+                href="/reports/tradedata/dailyandweeklydata/?query_params=dailystock"><img src="/images/home_icon4.png" class="m_img" />仓单日报</a>
+            </div>
+            <a class="m_text_aicon"
+              href="/reports/tradedata/dailyandweeklydata/?query_params=dailystock"><i class="el-icon el-icon-arrow-right"></i></a>
+          </div>
+
+          <div class="m_box_item">
+            <div class="m_text">
+              <a
+                href="/reports/tradedata/dailyandweeklydata/?query_params=timeprice">
+                <img src="/images/home_icon5.png" class="m_img" />日间均价</a>
+            </div>
+            <a class="m_text_aicon"
+              href="/reports/tradedata/dailyandweeklydata/?query_params=timeprice"><i class="el-icon el-icon-arrow-right"></i></a>
+          </div>
+
+
+          <div class="m_box_item">
+            <div class="m_text">
+              <a
+                href="/reports/tradedata/dailyandweeklydata/?query_params=dailyDlvPlacePremium">
+                <img src="/images/home_icon6.png" class="m_img" />厂库提货地升贴水</a>
+            </div>
+            <a class="m_text_aicon"
+              href="/reports/tradedata/dailyandweeklydata/?query_params=dailyDlvPlacePremium"><i class="el-icon el-icon-arrow-right"></i></a>
+          </div>
+
+
+          <div class="m_box_item">
+            <div class="m_text">
+              <a
+                href="/reports/tradedata/monthlyandyearlydata/?query_params=mosprice_f"><img src="/images/home_icon7.png" class="m_img" />月均结算价</a>
+            </div>
+            <a class="m_text_aicon"
+              href="/reports/tradedata/monthlyandyearlydata/?query_params=mosprice_f"><i class="el-icon el-icon-arrow-right"></i></a>
+          </div>
+
+          <div class="m_box_item">
+            <div class="m_text">
+              <a
+                href="/reports/tradedata/dailyandweeklydata/?query_params=weeklystock"><img src="/images/home_icon8.png" class="m_img" />库存周报</a>
+            </div>
+            <a class="m_text_aicon"
+              href="/reports/tradedata/dailyandweeklydata/?query_params=weeklystock"><i class="el-icon el-icon-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- 交易日历 -->
+      <div class="m_calendar" id="m_calendar_id">
+        <div class="m_calendar_top">交易日历</div>
+        <div class="m_calendar_content" v-cloak>
+          <div class="m_calendar_text">
+			  <template>
+			  当前日期为：{{ currentDate.substring(0,4) + '-' + currentDate.substring(4,6) + '-' + currentDate.substring(6,8) }}
+			  </template>
+			  </div>
+          <template v-if="!item">
+            <div class="m_calendar_text" style="margin-top:0.1rem ">
+              暂无数据
+            </div>
+          </template>
+          <template v-else>
+            <div v-if="currentDate == item.tradeDate">
+              <template>
+                <div v-if=" year > 2021 ">
+                  <div v-if="item.tradeExit || item.tradeAdjust || item.tradeLastDate ||
+                  item.tradeOnBoard || item.tradeQLastDate || item.tradeLimit ||
+                  item.tradeSellingPositions || item.tradeOpeningRestriction || item.tradePositionLimit"
+                    class="m_calendar_text" style="margin-top:0.1rem  ">
+                    交易提示：
+                  </div>
+                  <div class="m_calendar_text" style="margin-top:0.15rem; lihe-height: 0.14rem;  ">
+
+                    <div v-if="item.tradeExit" v-html="item.tradeExit"></div><!-- 个人客户退出 -->
+                    <div v-if="item.tradeLastDate" v-html="item.tradeLastDate"></div><!-- 合约最后交易日 -->
+                    <div v-if="item.tradeOnBoard" v-html="item.tradeOnBoard"></div><!-- 新合约上市 -->
+                    <div v-if="item.tradeQLastDate" v-html="item.tradeQLastDate"></div><!-- 期权最后交易日 -->
+                    <div v-if="item.tradeAdjust" v-html="item.tradeAdjust"></div><!-- 非整数倍持仓调整 -->
+                    <div v-if="item.tradeLimit" v-html="item.tradeLimit"></div><!-- 涨跌停板信息 -->
+                    <div v-if="item.tradePositionLimit" v-html="item.tradePositionLimit"></div><!-- 合约限仓 -->
+                    <div v-if="item.tradeOpeningRestriction" v-html="item.tradeOpeningRestriction"></div><!-- 交易限额 -->
+                    <div v-if="item.tradeSellingPositions" v-html="item.tradeSellingPositions"></div><!-- 持仓与仓单匹配 -->
+
+                  </div>
+
+                  <div v-if="item.settleDepositAj || item.settleADepositAj || item.settleTradeFeeAj ||
+                    item.settlePledgeFee || item.settleExitDiscount ||item.settleDeliveryFee || item.settleOther"
+                    class="m_calendar_text" style="margin-top:0.1rem  ">
+                    结算提示：
+                  </div>
+                  <div class="m_calendar_text" style="margin-top:0.15rem; lihe-height: 0.14rem;  ">
+
+                    <div v-if="item.settleDepositAj" v-html="item.settleDepositAj"></div><!-- 合约保证金率调整 -->
+                    <div v-if="item.settleTradeFeeAj" v-html="item.settleTradeFeeAj"></div><!-- 合约交易手续费调整 -->
+                    <div v-if="item.settlePledgeFee" v-html="item.settlePledgeFee"></div><!-- 收取会员质押手续费 -->
+                    <div v-if="item.settleExitDiscount" v-html="item.settleExitDiscount"></div><!-- 合约退出单向大边保证金优惠 -->
+                    <div v-if="item.settleADepositAj" v-html="item.settleADepositAj"></div><!-- 品种保证金率调整 -->
+                    <div v-if="item.settleDeliveryFee" v-html="item.settleDeliveryFee"></div><!-- 收取交割手续费 -->
+                    <div v-if="item.settleOther" v-html="item.settleOther"></div><!-- 其它 -->
+
+                  </div>
+                  <div v-if="item.delivery" class="m_calendar_text" style="margin-top:0.1rem ">
+                    交割提示：
+                  </div>
+                  <div class="m_calendar_text" style="margin-top:0.15rem; lihe-height: 0.14rem;  ">
+                    <div v-if="item.delivery" v-html="item.delivery"></div>
+                  </div>
+                </div>
+                <template v-else>
+                  <div class="m_calendar_text" style="margin-top:0.15rem; lihe-height: 0.14rem;  ">
+                    <div v-if="item.historyContent" v-html="item.historyContent"></div>
+                  </div>
+                </template>
+              </template>
+            </div>
+           
+          </template>
+
+          <div class="m_more">
+            <a href="/services/calenderandholidays/tradingcalendar/">查看更多<i class="el-icon el-icon-arrow-right m_font_thin m_font_thin_color"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- 市场服务 -->
+      <div class="m_market">
+        <div class="m_market_top">市场服务</div>
+        <div class="m_market_content">
+
+          <div class="m_market_content_l">
+            
+              <div class="m_market_item">
+                <img src="/index/markeservices/202311/W020250107583041952641.png" class="m_img" />
+                <a href="/specialtopic/indexopt/" target="_blank">
+                  指数与期权
+                </a>
+              </div>
+            
+              <div class="m_market_item">
+                <img src="/index/markeservices/202311/W020250107583331709210.png" class="m_img" />
+                <a href="/regulation/marketregulation/" target="_blank">
+                  合规监管
+                </a>
+              </div>
+            
+              <div class="m_market_item">
+                <img src="/index/markeservices/202311/W020250107583461617860.png" class="m_img" />
+                <a href="/specialtopic/member/" target="_blank">
+                  我是会员
+                </a>
+              </div>
+            
+              <div class="m_market_item">
+                <img src="/index/markeservices/202311/W020250107583612900464.png" class="m_img" />
+                <a href="/specialtopic/investor/" target="_blank">
+                  我是投资者
+                </a>
+              </div>
+            
+              <div class="m_market_item">
+                <img src="/index/markeservices/202311/W020250107583731510617.png" class="m_img" />
+                <a href="/specialtopic/informationQuotient/" target="_blank">
+                  我是信息商
+                </a>
+              </div>
+            
+          </div>
+
+          <div class="m_market_content_r">
+            <a class="m_mkt_text_btn"
+                href="https://edu.shfe.com.cn">
+                投资者教育网站
+                <img src="/images/home_report_arrow.png" />
+            </a>
+            <a class="m_mkt_text_btn"
+                href="/services/delivery/standardwarrantms/">
+                电子仓单系统
+                <img src="/images/home_report_arrow.png" />
+            </a>
+            <a class="m_mkt_text_btn"
+                href="https://otc.shfe.com.cn">
+                上期综合业务平台
+                <img src="/images/home_report_arrow.png" />
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- 底部图片 -->
+      <div class="m_bottomImg">
+         
+            <div class="m_img_box">
+              <img src='/index/strategy/images/P020231201584984822747.png'/>
+              <a class="m_text" href="https://www.shfe.com.cn/about/socialresponsibility/ocialresponsibilityreports/" target="_blank">
+                </br>社会责任报告
+				<br/>
+				
+              </a>
+            </div>
+        
+        
+          <div class="m_img_box1">
+            <img src='/index/responsibility/images/P020260807610855962318.png'/>
+            <a class="m_text1" href="https://www.shfe.com.cn/about/introduce/simintro/" target="_blank">
+              </br>上海期货交易所简介
+			  <br/>
+			  
+            </a>
+          </div>
+        
+      </div>
+    </div>
+    <!-- END body -->
+    <!-- START footer -->
+    <!-- pc端底部 -->
+<div class="m_pc_box">
+  <div class="inc-top-footer">
+    <div class="inc-footer-box top_bottom_info">
+      <div class="inc-footer-top">
+        <div class="footer-cot-last flex-row">
+          <div class="footer_title_info">
+            <div class="footer_title">产品</div>
+            <div class="footer_title_content">
+              
+                <a class="footer_title_item" href="/products/futures/metal/">金属</a>
+              
+                <a class="footer_title_item" href="/products/futures/energyandchemical/">能源化工</a>
+              
+                <a class="footer_title_item" href="/products/futures/index_f/">指数</a>
+              
+              <a class="footer_title_item" href="/products/option/">期权</a>
+              <a class="footer_title_item" href="/products/isin/">ISIN编码</a>
+            </div>
+          </div>
+
+          <div class="footer_title_info">
+            <div class="footer_title">数据</div>
+            <div class="footer_title_content">
+              
+                <a class="footer_title_item" href="/reports/businessdata/">业务数据</a>
+              
+                <a class="footer_title_item" href="/reports/marketdata/">市场数据</a>
+              
+                <a class="footer_title_item" href="/reports/tradedata/">统计数据</a>
+              
+            </div>
+          </div>
+          <div class="footer_title_info">
+            <div class="footer_title foot_item_up">
+              服务
+              <span class="triangle triangle_down"></span>
+            </div>
+            <div class="footer_title_content footer_title_content_normal">
+              
+                <a class="footer_title_item" href="/services/calenderandholidays/">交易日历</a>
+              
+                <a class="footer_title_item" href="/services/trading/">交易</a>
+              
+                <a class="footer_title_item" href="/services/settlement/">结算</a>
+              
+                <a class="footer_title_item" href="/services/delivery/">交割</a>
+              
+                <a class="footer_title_item" href="/services/technology/">技术</a>
+              
+                <a class="footer_title_item" href="/services/information/">信息</a>
+              
+                <a class="footer_title_item" href="/services/law/">法律</a>
+              
+                <a class="footer_title_item" href="/services/supervise/">监查</a>
+              
+                <a class="footer_title_item" href="/services/activity/">投教与活动</a>
+              
+                <a class="footer_title_item" href="/services/marketresearch/">市场研究</a>
+              
+                <a class="footer_title_item" href="/services/indexopt/">指数与期权</a>
+              
+                <a class="footer_title_item" href="/services/spotindex/">现货指数</a>
+              
+                <a class="footer_title_item" href="/services/pfmi/">PFMI</a>
+              
+            </div>
+          </div>
+          <div class="footer_title_info">
+            <div class="footer_title">规则</div>
+            <div class="footer_title_content">
+              
+                <a class="footer_title_item" href="/regulation/exchangerules/">交易所规则</a>
+              
+                <a class="footer_title_item" href="/regulation/ineregulation/">能源中心规则</a>
+              
+                <a class="footer_title_item" href="/regulation/futureslaw/">期货法规</a>
+              
+                <a class="footer_title_item" href="/regulation/marketregulation/">合规监管</a>
+              
+            </div>
+          </div>
+          <div class="footer_title_info">
+            <div class="footer_title">公告</div>
+            <div class="footer_title_content">
+              
+                <a class="footer_title_item" href="/publicnotice/notice/">公告通知</a>
+              
+                <a class="footer_title_item" href="/publicnotice/newsrelease/">新闻发布</a>
+              
+                <a class="footer_title_item" href="/publicnotice/spotlight/">聚焦交易所</a>
+              
+                <a class="footer_title_item" href="/publicnotice/medium/">媒体报道</a>
+              
+                <a class="footer_title_item" href="/publicnotice/collection/">集采业务公告</a>
+              
+                <a class="footer_title_item" href="/publicnotice/specialcolumn/">专题</a>
+              
+            </div>
+          </div>
+
+          <div class="footer_title_info">
+            <div class="footer_title">关于</div>
+            <div class="footer_title_content">
+              
+                <a class="footer_title_item" href="/about/introduce/">交易所介绍</a>
+              
+                <a class="footer_title_item" href="/about/member_shfe/">会员及境外特殊参与者</a>
+              
+                <a class="footer_title_item" href="/about/postdocworkstation/">博士后工作站</a>
+              
+                <a class="footer_title_item" href="/about/socialresponsibility/">社会责任</a>
+              
+                <a class="footer_title_item" href="/about/branch/">交易所子公司</a>
+              
+                <a class="footer_title_item" href="/about/personalpolicy/">个人信息保护政策</a>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="inc-footer-right">
+        <div class="footer-cot-last">
+          <div class="footer-cot-last-first">
+            <div class="footer-tit">市场服务中心</div>
+            <a class="footer-tel" href="javascript:;">4008666099</a>
+          </div>
+          <div>
+            <div class="footer-tit">联系我们</div>
+            <div class="footer-email">
+              公共邮箱：
+              <span class="cur">
+                <a href="mailto:msc@shfe.com.cn" class="gray">msc@shfe.com.cn</a>
+              </span>
+            </div>
+            <div class="footer-address">
+              办公地址：
+              <span class="cur">上海市浦东新区浦电路500号</span>
+            </div>
+          </div>
+          <div class="footer-cot-last-contract">
+            <div class="footer-tit footer-focus">关注我们</div>
+            <div class="footer-social flex-row">
+              <div class="footer-social-icon wechat1">
+                <a>
+                  <img src="/images/footer-wechat.png" />
+                </a>
+                <div class="click_top_info">
+                  <img src="/images/weixin.png" />
+                </div>
+              </div>
+              <div class="footer-social-icon weibo1">
+                <a title="新浪微博" href="https://www.shfe.com.cn/weibo/sina/" target="_blank">
+                  <img src="/images/footer-weibo.png" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-txt-box">
+      <div class="inc-footer-box flex-row">
+        <div class="left-link align-center">
+          <a href="/disclaimer/">版权声明</a>
+          <span class="footer-bor"></span>
+          <a href="/about/personalpolicy/">个人信息保护政策</a>
+          <span class="footer-bor"></span>
+          <a href="/sitemap/">网站地图</a>
+          <span class="footer-bor"></span>
+          <a href="/services/marketresearch/links/">友情链接</a>
+        </div>
+        <div class="right-desc align-center">
+          <p class="top_item_browser">本网站支持IPV6访问 上海期货交易所 版权所有 SHFE.COM.CN <div class="bottom_item_browser">建议使用谷歌浏览器、Microsoft Edge浏览器的最新版本</div>　
+            <a target="_blank" href="http://beian.miit.gov.cn" style="color:#ffffff99" >沪ICP备11031067号-1</a>
+          </p>
+          <span class="footer-bor"></span>
+          <p><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011502008304" style="color:#ffffff99" >沪公网安备 31011502008304号</a></p>
+          <span class="footer-bor"></span>
+          <p style="line-height: 1.5;">
+             <a href="https://bszs.conac.cn/sitename?method=show&id=230151C803D27D32E06310291AAC87D8" target="_blank" >
+                 <img id="imgConac" vspace="0" hspace="0" border="0" src="/images/footer-icon-blue.png" />
+             </a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-guide">
+      <a class="guide-icon" target="_blank" href="/services/calenderandholidays/tradingcalendar/">
+        <img src="/images/guide-calendar.png" alt="" />
+      </a>
+      <a class="guide-icon" target="_blank" href="/about/introduce/contact/">
+        <img src="/images/guide-service.png" alt="" />
+      </a>
+      <div class="guide-icon" id="commonTop">
+        <img src="/images/guide-top.png" alt="" />
+      </div>
+    </div>
+  </div>
+</div>
+<!-- mobile端底部 -->
+<div class="m_mobile_box">
+  <div class="mobile_footer" style="height:3.42rem">
+    <div class="mobile_footer_top">
+      <div class="mobile_logo">
+        <div class="mobile_logo_left">
+          <div class="m_hot_info">
+            <div class="m_hot_logo_title">市场服务中心</div>
+            <div class="m_hot_logo_tel">4008666099</div>
+          </div>
+        </div>
+        <div class="mobile_logo_right">
+          <div class="m_attention_us">关注我们</div>
+          <div class="sqs_footer_middle_icon">
+            <div class="tc_QRBox" style="display: none">
+              <div class="tc_QR">
+                <img src="/images/weixin.png" />
+              </div>
+              <div class="tc_QRafter"></div>
+            </div>
+            <a href="javascript:;" id="wx_mobile">
+              <img src="/images/m_weixin.png" />
+            </a>
+            <a href="https://www.shfe.com.cn/weibo/sina/" target="_blank">
+              <img src="/images/m_weibo.png" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="mobile_desc">
+        <div class="mobile_left">
+          <div class="m_left_desc">联系我们</div>
+          <div class="mobile_left_item" href="javascript:;">
+            <span class="m_footer_item_info">公共邮箱：</span>
+            <a href="mailto:msc@shfe.com.cn" >msc@shfe.com.cn</a>
+          </div>
+          <div class="mobile_left_item" href="javascript:;">
+            <span class="m_footer_item_info">办公地址：</span>
+            上海市浦东新区浦电路500号
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mobile_footer_bottom">
+      <div class="mobile_footer_bottom_link">
+
+        <a class="link_dtail" href="/disclaimer/">版权声明</a>
+        <span class="link_line_item">|</span>
+        <a class="link_dtail" href="/sitemap/">网站地图</a>
+        <span class="link_line_item">|</span>
+        <a class="link_dtail" href="/services/marketresearch/links/">友情链接</a>
+
+      </div>
+      <div class="mobile_footer_bottom_address" >
+        <div class="m_footer_bottom_item">
+          <span class="copy_left">建议使用谷歌浏览器、火狐浏览器的最新版本</span>
+        </div>
+        <div class="m_footer_bottom_item">
+          <span class="copy_left">本网站支持IPV6访问</span>
+          <span class="copy_right">上海期货交易所 版权所有 SHFE.COM.CN</span>
+         <a href="https://bszs.conac.cn/sitename?method=show&id=230151C803D27D32E06310291AAC87D8" target="_blank" style=" margin-left: 0.15rem;">
+             <img id="imgConac" vspace="0" hspace="0" border="0" src="/images/footer-icon-blue.png" style=" width: 0.19rem;height: auto;" />
+         </a>
+        </div>
+        <div class="m_footer_bottom_item">
+          <a class="copy_left" href="http://beian.miit.gov.cn"
+            >沪ICP备11031067号-1</a
+          >
+          <span class="link_line_item" style="vertical-align: baseline;">|</span>
+          <a
+            class="copy_right"
+            href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011502008304"
+            >沪公网安备 31011502008304号
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- END footer -->
+  </div>
+  <!-- START Public JS -->
+  <script src="/images/jquery.min.js"></script>
+<script type="text/javascript" src="/images/modernizr.custom.js"></script>
+<script type="text/javascript" src="/images/jquery.dlmenu.js"></script>
+<script type="text/javascript" src="/images/moment.min.js"></script>
+<script type="text/javascript" src="/images/select.js"></script>
+<script type="text/javascript" src="/images/side_menu.js"></script>
+<script type="text/javascript" src="/images/enum.js"></script>
+<script type="text/javascript" src="/images/api.js"></script>
+<script type="text/javascript" src="/images/print2.js"></script>
+<script type="text/javascript" src="/images/common_utils.js"></script>
+<script type="text/javascript" src="/images/jquery.share.min.js"></script>
+<script type="text/javascript" src="/images/Std_StranJF.js"></script>
+<script type="text/javascript" src="/images/global.js"></script>
+
+<script type="text/javascript" src="/images/hc-offcanvas-nav.js"></script>
+<script>
+    var Nav = new hcOffcanvasNav("#main-nav", {
+      width: '250',
+      position: "right",
+      levelSpacing: 44,
+      customToggle: ".toggle_menu",
+      levelTitles: true,
+      labelClose: "关闭",
+      labelBack: "返回",
+    });
+    Nav.on( 'open.level', ( e, settings ) => {
+      sessionStorage.setItem('NavLevel', e.data.currentLevel);
+      sessionStorage.setItem('NavIndex', e.data.currentIndex);
+    });
+    Nav.on( 'close.level', ( e, settings ) => {
+      sessionStorage.setItem('NavLevel', e.data.currentLevel);
+      sessionStorage.setItem('NavIndex', e.data.currentIndex);
+    });
+    Nav.on( 'toggle', ( e, settings ) => {
+      if( e.data.action == 'open' ) {
+        Nav.open(  sessionStorage.getItem('NavLevel'), sessionStorage.getItem('NavIndex') )
+      }
+    });
+</script>
+<!-- 导航 -->
+<script type="text/javascript" src="/images/sqs_nav.js"></script>
+  <script type="text/javascript" src="/images/vue.min.js"></script>
+  <script type="text/javascript" src="/images/swiper-3.4.2.min.js"></script>
+  <script type="text/javascript" src="/images/jquery.slider.js"></script>
+  <script type="text/javascript" src="/images/moment.min.js"></script>
+  <script type="text/javascript" src="/images/jquery_calendar.js"></script>
+  <script type="text/javascript" src="/images/jquery.ui.datepicker.js"></script>
+  <script type="text/javascript" src="/images/jquery.ui.datepicker-zh-CN.js"></script>
+  <script type="text/javascript" src="/images/element-ui/index.js"></script>
+  <script type="text/javascript" src="/images/home_page_2.js"></script>
+  <!-- END Public JS -->
+
+  <script>
+    let contentNum = 7
+    if (contentNum == '1') {
+      var mySwiper = new Swiper('.swiper-container', {
+		   loop: false
+	  })
+
+	  //轮播图_mobile
+	  var mySwiper_mobile = new Swiper(".swiper_mobile", {
+	    loop: false, // 循环模式选项
+	  });
+    } else {
+		$(".swiper-pagination").show();
+		$('.swiper-button-prev').show();
+		$('.swiper-button-next').show();
+      var mySwiper = new Swiper('.swiper-container', {
+        autoplay: 3000,
+        prevButton: '.swiper-button-prev',
+        nextButton: '.swiper-button-next',
+        pagination: '.swiper-pagination',
+        loop: true
+      })
+
+	  
+	  //轮播图_mobile
+	      var mySwiper_mobile = new Swiper(".swiper_mobile", {
+	        autoplay: 3000,
+	        loop: true, // 循环模式选项
+	      });
+    }
+
+
+    var tag_list = $(".tag_list");
+    var k = 0;
+    for (var i = 0; i < tag_list.length; i++) {
+      var aheight = (tag_list.eq(i).children('a').height() + 4) / 2 * 2.626;
+      if (tag_list.eq(i).height() > aheight * 3) {
+        tag_list.eq(i).children('.more').show();
+        tag_list.eq(i).children('.more1').css("display", "flex");
+        var tag_item = tag_list.eq(i).children('.tag_item');
+        for (var j = 0; j < tag_item.length; j++) {
+          if (tag_item.eq(j).offset().top - tag_list.eq(i).offset().top >= aheight * 3 - 10) {
+            k = j - 1;
+            break;
+          }
+        }
+
+        for (var l = k; l < tag_item.length; l++) {
+          tag_item.eq(l).hide();
+        }
+      }
+
+    }
+
+    $(".more1").click(function () {
+      if ($(this).parent(".tag_list").attr("class").indexOf("active") != -1) {
+        $(this).parent(".tag_list").removeClass("active");
+      } else {
+        $(this).parent(".tag_list").addClass("active");
+      }
+    })
+
+
+
+    if ($('.message_img_item_img2').attr('src') == '' || $('.message_img_item_img2').attr('src') == null || $('.message_img_item_img2').attr('src') == undefined) {
+      $('.message_img_item_img1').show();
+      $('.message_img_item_img2').hide();
+    } else {
+      $('.message_img_item_img1').hide();
+      $('.message_img_item_img2').show();
+    }
+
+    $(function () {
+      $('#lookMoreId').click(function () {
+        let currentTime_id = click_data;
+        let str_look_more = '/services/calenderandholidays/tradingcalendar/'
+        let str1_look_more = str_look_more + '?current=' + currentTime_id;
+        $('#lookMoreId').attr('href', str1_look_more)
+      })
+
+
+      let m_red_page = $('.m_red_icon')
+      if (m_red_page && m_red_page.length > 0) {
+        $('.m_red_icon').show();
+        $('.m_normal_icon').hide();
+      } else {
+        $('.m_normal_icon').show();
+      }
+      let box_index_m = 0;
+      $('.m_title_pro_item').click(function () {
+        box_index_m = $(this).index();
+        $('.m_futures_box').hide();
+        $('.m_futures_box').eq(box_index_m).show()
+        $('.m_title_pro_item').removeClass('m_tit_hover');
+        $('.m_title_pro_item').eq(box_index_m).addClass('m_tit_hover')
+
+        if (box_index_m === 0) {
+          $(this).find('img')[0].style.display = "inline-block";
+          $(this).find('img')[1].style.display = "none";
+
+          $(this).siblings().find('img')[0].style.display = "inline-block";
+          $(this).siblings().find('img')[1].style.display = "none";
+
+        } else {
+          $(this).find('img')[0].style.display = "none";
+          $(this).find('img')[1].style.display = "inline-block";
+
+          $(this).siblings().find('img')[0].style.display = "none";
+          $(this).siblings().find('img')[1].style.display = "inline-block";
+        }
+      })
+
+      $('#lookMoreId').click(function () {
+        let currentTime_id = click_data;
+        let str_look_more = '/services/calenderandholidays/tradingcalendar/'
+        let str1_look_more = str_look_more + '?current=' + currentTime_id;
+        $('#lookMoreId').attr('href', str1_look_more)
+      })
+
+      $(".home_lp_col1_list>.product_li").on("click", function () {
+        $(".product_li").removeClass("pro_active");
+        $(this).addClass("pro_active");
+        $(".home_lp_col2 .product_box").removeClass("product_box_active");
+        let index1 = $(this).parent(".home_lp_col1_list").index();
+        let index2 = $(this).index() - 1;
+        $(".home_pro_list").eq(index1).children(".product_box").eq(index2).addClass("product_box_active");
+      });
+    })
+  </script>
+
+  <script>
+    
+    // 选项卡右边切换
+    let m_analysis_item = document.querySelectorAll(".m_analysis_item");
+    let m_content_show = document.querySelectorAll(".m_content_show");
+    for (let i = 0; i < m_analysis_item.length; i++) {
+      m_analysis_item[i].addEventListener("click", function () {
+        for (let k = 0; k < m_analysis_item.length; k++) {
+          m_analysis_item[k].classList.remove("m_analysis_item_active");
+          m_content_show[k].classList.remove("m_content_show2");
+        }
+        this.classList.add("m_analysis_item_active");
+        m_content_show[i].classList.add("m_content_show2");
+      });
+    }
+  </script>
+  <!-- Monitor Start -->
+  <script type='text/javascript'>
+    params.docId = '';
+    params.doctitle = '';
+    params.channelId = '2127';
+    params.channelName = '';
+    params.siteId = '13';
+    params.siteName = '上期所';
+  </script>
+  <!-- Monitor End -->
+</body>
+
+</html>

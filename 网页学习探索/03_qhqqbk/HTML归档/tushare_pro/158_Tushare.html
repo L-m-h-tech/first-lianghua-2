@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en" style="height:100%">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tushare数据</title>
+<meta content="免费股票数据,开源股票数据接口,股票数据,股票数据接口,python股票数据,财经数据,金融数据,行业大数据,区块链数据,量化投资,知识图谱" name="keywords"/>
+<meta name="description" content="Tushare为金融数据分析提供便捷、快速的接口，与投研和量化策略无缝对接"/>
+<meta content="index,follow" name="robots"/>
+<meta name="application-name" content="Tushare"/>
+<link rel="icon" type="image/png" href="/static/frontend/images/favicon-192x192.png?v=811d9139fa2ea47f5595907da1f3c34d" sizes="192x192">
+<link rel="icon" type="image/png" href="/static/frontend/images/favicon-160x160.png" sizes="160x160">
+<link rel="icon" type="image/png" href="/static/frontend/images/favicon-96x96.png?v=4960eb8103c873c586ad41ef3f53db84" sizes="96x96">
+<link rel="icon" type="image/png" href="/static/frontend/images/favicon-16x16.png?v=f7299bbce2cff4db7e3dfa6fb8c6a73c" sizes="16x16">
+<link rel="icon" type="image/png" href="/static/frontend/images/favicon-32x32.png?v=a5df4bdd9f96de59f57bb9a7a50d8f96" sizes="32x32">
+<link href="/static/vendors/bootstrap/dist/css/bootstrap.min.css?v=d7ac98c842e4ec59d2c21fef89fce09c" rel="stylesheet">
+<link href="/static/vendors/jstree/themes/default/style.min.css?v=779fc4b400d1748ec2fb99685ad80550" rel="stylesheet">
+<link href="/static/frontend/css/custom.css?v=3da9697fe21140712084437726c503e3" rel="stylesheet">
+
+
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+<script type="text/javascript" src="/static/vendors/requirejs/require.js?v=6da8be361b9ee26c5e721e76c6d4afce"></script>
+<script type="text/javascript" src="/static/frontend/js/config.js?v=85f0040a930464e1c6dbc61026f79de8"></script>
+</head>
+<body style="height:100%">
+<div id="page" style="height:100%;">
+<header id="header" class="site-header">
+<nav id="navbar" class="site-navbar navbar navbar-static-top" role="navigation">
+<div class="container">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+<span class="sr-only">Toggle navigation</span>
+<i class="fa fa-bars" style="font-size: 1.5em; padding: 15px 0;"></i>
+</button>
+<h1 class="navbar-brand">
+<a href="/"><img src="/static/frontend/images/logo.png?v=39c50795cb540b4463114d1bf3135d6e" alt="tushare"></a>
+</h1>
+</div>
+<div class="collapse navbar-collapse" id="navbar-collapse-1">
+<ul id="navigation" class="nav navbar-nav navbar-right">
+<li><a href="/">首页</a></li>
+<li><a href="/document/1">平台介绍</a></li>
+<li><a href="/document/2">数据接口</a></li>
+<!-- <li><a href="/document/41">另类数据</a></li>-->
+<li><a href="/news/sina">资讯数据</a></li>
+<li><a href="/webclient">数据工具</a></li>
+<li><a href="/weborder/#/permission">权限中心</a></li>
+<li><a href="/weborder/#/combo">活动套餐</a></li>
+
+<li class="navbar-tail"><a href="/weborder/#/login" class="nav-login">登录/注册</a></li>
+
+</ul>
+</div>
+</div>
+</nav>
+</header>
+
+
+<section id="home-header" class="section section-center section-cta blackgrad">
+<div class="containe">
+<h3 class="section-title">
+<span class="h1 text-white" style="background: none">Tushare大数据开放社区</span>
+</h3>
+<div class="row">
+<div class="col-md-12">
+<!-- <p class="h3 text-white">免费提供各类数据 , 助力智能投资与创新型投资。</p>-->
+<p class="h3 text-white">提供各类数据，助力量化研究与AI落地</p>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12">
+
+<a href="/weborder/#/login" class="main-btn-plain">注册社区用户</a>
+
+</div>
+</div>
+</div>
+</section>
+<section id="features" class="section section-center section-features loaded">
+<div class="container">
+<h2 class="section-title"><span>特点</span></h2>
+<div class="row section-content">
+<div class="col-md-4 col-sm-6">
+<div class="icon-wrap">
+<img src="/static/frontend/images/features_api.png?v=75e325d70f3ff819b108f298457b174b" alt="数据">
+</div>
+<h3>数据丰富</h3>
+<p>汇聚多元产业数据，覆盖全品类市场信息、主体财报、产业链等内容，依托多模态数据架构整合时序与基本面档案，数据维度完备、类目丰富</p>
+</div>
+<div class="col-md-4 col-sm-6">
+<div class="icon-wrap">
+<img src="/static/frontend/images/features_cloud.png?v=68f8232393f641b8ddb544b28775be83" alt="Cloud Infrastructure">
+</div>
+<h3>应用简单</h3>
+<p>支持Python等多语言SDK，辅以Restful HTTP调用，另搭载 Skills、MCP 等 AI 对接能力，原生适配 AI 生态接入，适配多元化开发场景</p>
+</div>
+<div class="col-md-4 col-sm-6">
+<div class="icon-wrap">
+<img src="/static/frontend/images/features_datacenters.png?v=b58113d2344ac2dc1f9e6da852e4c5dc"
+alt="Managing Multiple Data Centers">
+</div>
+<h3>落地方便</h3>
+<p>支持数据本地落库落盘、私有化存数；无缝对接OpenClaw龙虾全系产品，全链路互通；全兼容Vibe Coding 各类 IDE，开发接入零门槛</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 查备案信息，去掉金融敏感字符
+<div class="ln-dashed"></div>
+<section id="data_type" class="section section-center section-data-type loaded">
+<div class="container">
+<h2 class="section-title"><span>数据</span></h2>
+<div class="row section-content">
+<div class="col-md-3 col-sm-6 col-xs-12">
+<div class="icon-wrap">
+<a href="/document/2">
+<img src="/static/frontend/images/type_stock.png?v=87f2df6499267446b543bebb260a5af9" alt="数据">
+</a>
+</div>
+</div>
+<div class="col-md-3 col-sm-6 col-xs-12">
+<div class="icon-wrap">
+<a href="/document/2?doc_id=134">
+<img src="/static/frontend/images/type_futures.png?v=271e1bc3e58c63e23871f7f4fd33f594" alt="Cloud Infrastructure">
+</a>
+</div>
+</div>
+<div class="col-md-3 col-sm-6 col-xs-12">
+<div class="icon-wrap">
+<a href="/document/2?doc_id=18">
+<img src="/static/frontend/images/type_fund.png?v=614ad3b83f3050ad435cbf5e2d7387e3"
+alt="Managing Multiple Data Centers">
+</a>
+</div>
+</div>
+<div class="col-md-3 col-sm-6 col-xs-12">
+<div class="icon-wrap">
+<img src="/static/frontend/images/type_bond.png?v=84a32d4d9dea4779b418dd1cc7018942" alt="Robust Data Stores">
+</div>
+</div>
+<div class="col-md-3 col-sm-6 col-xs-12">
+<div class="icon-wrap">
+<img src="/static/frontend/images/type_foreign.png?v=c7116a461a9616d01c1f35a49bd3a50d" alt="Robust Data Stores">
+</div>
+</div>
+// <div class="col-md-3 col-sm-6 col-xs-6">
+// <div class="icon-wrap">
+// <img src="/static/frontend/images/type_hkstock.png?v=0361ece5c729ef1b129d4fc2e671efc3" alt="Robust Data Stores">
+// </div>
+// </div>
+<div class="col-md-3 col-sm-6 col-xs-12">
+<div class="icon-wrap">
+<a href="/document/2?doc_id=82">
+<img src="/static/frontend/images/type_industry.png?v=c4da77f9502c03dd9e36951aa38a1032" alt="Robust Data Stores">
+</a>
+</div>
+</div>
+<div class="col-md-3 col-sm-6 col-xs-12">
+<div class="icon-wrap">
+<img src="/static/frontend/images/type_bigdata.png?v=434d3562910319501e5dd0efd1934355" alt="Robust Data Stores">
+</div>
+</div>
+<div class="col-md-3 col-sm-6 col-xs-12">
+<div class="icon-wrap">
+<a href="/document/41">
+<img src="/static/frontend/images/type_blockchain.png?v=b301c8babae33060c3c7ac1037aeb77a">
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+-->
+<div class="ln-dashed"></div>
+<section id="typical-user" class="section section-center section-typical-user loaded">
+<div class="container">
+<h2 class="section-title"><span>Tushare发展历程</span></h2>
+<div class="row section-content">
+<div class="col-md-12 col-sm-12">
+<div style="margin: 0 auto">
+<img src="/static/frontend/images/tushare_milestone.png?v=cbe3bfca0e6a6c5fec43075390254229">
+</div>
+</div>
+</div>
+</div>
+</section>
+<!--
+<div class="ln-dashed"></div>
+<section id="typical-user" class="section section-center section-typical-user loaded">
+<div class="container">
+<h2 class="section-title"><span>社区核心成员</span></h2>
+<div class="row section-content">
+<div class="col-md-3 col-sm-3 col-xs-12">
+<div class='section-team'>
+<img src="/static/frontend/images/mg_h.png?v=0628fd037a676f0dd804fe9ff97708e3">
+<h5>米哥</h5>
+<hr>
+<h5>Tushare创始人，超过12年技术和数据从业经验，曾任职通联数据中心负责人和国内顶尖机构数据团队负责人，是国内最早一批量化投资开源项目发起者和推动者。</h5>
+</div>
+</div>
+<div class="col-md-3 col-sm-3 col-xs-12">
+<div class='section-team'>
+<img src="/static/frontend/images/bc_h.png?v=3a0fca6fc1230286a308c1099e1d4215">
+<h5>Booo</h5>
+<hr>
+<h5>超过6年金融数据和行业大数据经验，曾任职东方财富、大智慧、通联数据管理岗，熟悉各类金融数据的管理和维护，具备多年的数据分析和应用实战经验。</h5>
+</div>
+</div>
+<div class="col-md-3 col-sm-3 col-xs-12">
+<div class='section-team'>
+<img src="/static/frontend/images/polo_h.png?v=78eca9fbbad36fcbc0ce734d300d5716">
+<h5>Polo</h5>
+<hr>
+<h5>技术极客，全栈工程师，多年金融行业从业经验，熟悉数据与量化平台的开发和应用，同时有较好的投资能力，自己研发的策略长期保持稳定收益。</h5>
+</div>
+</div>
+<div class="col-md-3 col-sm-3 col-xs-12">
+<div class='section-team'>
+<img src="/static/frontend/images/zb_h.png?v=b5f21dec9245990093814addf46e4368">
+<h5>Binger</h5>
+<hr>
+<h5>高级算法工程师，两年以上金融数据和建模从业经验。精通各类机器学习算法，致力于用算法和模型发掘数据中不为人知的价值。</h5>
+</div>
+</div>
+</div>
+<span>欢迎更多有能力有兴趣的小伙伴加入，联系方式：waditu@163.com </span>
+</div>
+</section>
+-->
+<div class="ln-dashed"></div>
+<section id="typical-user" class="section section-center section-typical-user loaded">
+<div class="container">
+<h2 class="section-title"><span>合作伙伴</span></h2>
+<div class="row section-content">
+<div class="col-md-3 col-sm-3 col-xs-12">
+<div class="icon-wrap">
+<img class="gray" src="/static/frontend/images/partner_wenyin.png?v=251fdd9d5150fdce084aac3619f5c5e2">
+</div>
+</div>
+<div class="col-md-3 col-sm-3 col-xs-12">
+<div class="icon-wrap">
+<img class="gray" src="/static/frontend/images/partner_fxcm.png?v=e9cc6f334f6f30219a407c124af35b48">
+</div>
+</div>
+<div class="col-md-3 col-sm-3 col-xs-12">
+<div class="icon-wrap">
+<img class="gray" src="/static/frontend/images/partner_focus.png?v=bc0dabe896fd46cc157a0ca385e49140">
+</div>
+</div>
+<div class="col-md-3 col-sm-3 col-xs-12">
+<div class="icon-wrap">
+<img class="gray" src="/static/frontend/images/partner_zhindex.png?v=6702b28fa8aa92b0faf678f901f05129">
+</div>
+</div>
+<div class="col-md-3 col-sm-3 col-xs-12">
+<div class="icon-wrap">
+<img class="gray" src="/static/frontend/images/ucloud.png?v=035cf3d917490aa37eeb293614a7aa1a">
+</div>
+</div>
+<div class="col-md-3 col-sm-3 col-xs-12">
+<div class="icon-wrap">
+<img class="gray" src="/static/frontend/images/partner_uqer.png?v=9b20a3d9149800c191ae27f7d2a75aa6">
+</div>
+</div>
+<div class="col-md-3 col-sm-3 col-xs-12">
+<div class="icon-wrap">
+<img class="gray" src="/static/frontend/images/partner_jq.png?v=e7e76334badd3dbf286f67e914038bdc">
+</div>
+</div>
+<div class="col-md-3 col-sm-3 col-xs-12">
+<div class="icon-wrap">
+<img class="gray" src="/static/frontend/images/partner_mindgo.png?v=7a41d39ffa09f53e279969cd661fbe2c">
+</div>
+</div>
+</div>
+</div>
+</section>
+<!--<div class="ln-dashed"></div>-->
+<!--<section id="typical-user" class="section section-center section-typical-user loaded">-->
+<!-- <div class="container">-->
+<!-- <h2 class="section-title"><span>特别鸣谢</span></h2>-->
+<!-- <div class="row section-content">-->
+<!-- <div class="col-md-6 col-sm-6 col-xs-12">-->
+<!-- <div class="icon-wrap" style="margin: 0 auto">-->
+<!-- <a href="https://www.hunheyun.com/" target="_blank">-->
+<!-- <img src="/static/frontend/images/huliangw.png?v=e9fd04d5bf01fa2350675f00fdc84360" class="s_img">-->
+<!-- </a>-->
+<!-- <span>行业领先的混合云服务提供商</span>-->
+<!-- </div>-->
+<!-- </div>-->
+<!-- <div class="col-md-6 col-sm-6 col-xs-12">-->
+<!-- <div class="icon-wrap" style="margin: 0 auto">-->
+<!-- <a href="https://www.ucloud.cn/?ytag=tushareweb" target="_blank">-->
+<!-- <img src="/static/frontend/images/ucloud.png?v=035cf3d917490aa37eeb293614a7aa1a" class="s_img">-->
+<!-- </a>-->
+<!-- <span>中立，安全，可信赖的云服务</span>-->
+<!-- </div>-->
+<!-- </div>-->
+<!-- </div>-->
+<!-- </div>-->
+<!--</section>-->
+
+<footer id="footer" class="site-footer">
+<div class="container">
+<div class="row footer-panel">
+<div class="col-md-4">
+<div class=""><img src="/static/frontend/images/wechat_public.png?v=847e8d705d3a409d000dce413ab5c257" alt=""></div>
+</div>
+<div class="col-md-4">
+<div class="title">使用文档</div>
+<div class="content">
+<ul>
+<li><a href="/document/1">平台介绍</a></li>
+<li><a href="/document/2">数据接口</a></li>
+</ul>
+</div>
+</div>
+<div class="col-md-4">
+<div class="title">关注我们</div>
+<div class="content">
+<ul>
+<li>公众号：waditu</li>
+<li>Github：<a href="https://github.com/waditu" target="_blank">https://github.com/waditu</a></li>
+<li>微 博：<a href="https://weibo.com/u/1304687120" target="_blank">https://weibo.com/u/1304687120</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="row footer-footer">
+<div class="copyright">
+<p>
+&copy; 2026 Tushare &nbsp; &nbsp;&nbsp;
+ICP许可证: 京B2-20262336
+<a href='https://beian.miit.gov.cn' target="_blank">京ICP备2026021642号-2</a>
+<img src="https://beian.mps.gov.cn/img/logo01.dd7ff50e.png" style="height:16px;margin-left:8px;vertical-align:text-bottom;" alt=""/>
+<a href='http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11011202101917' target="_blank">京公网安备11011202101917号</a>
+</p></div>
+</div>
+</div>
+</footer>
+
+</div>
+<div class="scroll-to-top" data-spy="affix" data-offset-top="200">
+<a href="#page" class="smooth-scroll">置顶</a>
+</div>
+</body>
+<script type="text/javascript">
+require(['custom']);
+</script>
+
+
+</html>

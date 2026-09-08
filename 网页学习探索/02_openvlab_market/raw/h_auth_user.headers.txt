@@ -1,0 +1,1 @@
+{"code":0,"result":{"authenticated":false,"user":null},"message":"ok"}

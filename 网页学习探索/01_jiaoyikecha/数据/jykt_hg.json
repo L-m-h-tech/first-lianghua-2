@@ -1,0 +1,624 @@
+{
+ "ts": "2026-09-08 10:07:44",
+ "endpoint": "hg.php",
+ "desc": "支撑压力位",
+ "n": 77,
+ "rows": [
+  {
+   "sym": "20号胶",
+   "name": "20号胶",
+   "code": "nr2611",
+   "current_price": 16760.0,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "纯苯",
+   "name": "纯苯",
+   "code": "bz2610",
+   "current_price": 8415.0,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "焦炭",
+   "name": "焦炭",
+   "code": "j2701",
+   "current_price": 2165.5,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "对二甲苯",
+   "name": "对二甲苯",
+   "code": "px2611",
+   "current_price": 8734.0,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "液化气",
+   "name": "液化气",
+   "code": "pg2610",
+   "current_price": 6622.0,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "粳米",
+   "name": "粳米",
+   "code": "rr2610",
+   "current_price": 3594.0,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "菜油",
+   "name": "菜油",
+   "code": "oi2611",
+   "current_price": 10497.0,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "乙二醇",
+   "name": "乙二醇",
+   "code": "eg2610",
+   "current_price": 5801.0,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "PP",
+   "name": "PP",
+   "code": "pp2701",
+   "current_price": 8621.0,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "红枣",
+   "name": "红枣",
+   "code": "cj2701",
+   "current_price": 7945.0,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "50上证",
+   "name": "50上证",
+   "code": "ih2609",
+   "current_price": 2907.8,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "500中证",
+   "name": "500中证",
+   "code": "ic2609",
+   "current_price": 7769.0,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "尿素",
+   "name": "尿素",
+   "code": "ur2701",
+   "current_price": 1824.0,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "丙烯",
+   "name": "丙烯",
+   "code": "pl2611",
+   "current_price": 8720.0,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "苯乙烯",
+   "name": "苯乙烯",
+   "code": "eb2610",
+   "current_price": 9550.0,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "甲醇",
+   "name": "甲醇",
+   "code": "ma2610",
+   "current_price": 3251.0,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "氧化铝",
+   "name": "氧化铝",
+   "code": "ao2610",
+   "current_price": 2722.0,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "苹果",
+   "name": "苹果",
+   "code": "ap2701",
+   "current_price": 7447.0,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "焦煤",
+   "name": "焦煤",
+   "code": "jm2701",
+   "current_price": 1648.5,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "低硫油",
+   "name": "低硫油",
+   "code": "lu2611",
+   "current_price": 5056.0,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "燃料油",
+   "name": "燃料油",
+   "code": "fu2611",
+   "current_price": 3842.0,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "沥青",
+   "name": "沥青",
+   "code": "bu2610",
+   "current_price": 5094.0,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "菜粕",
+   "name": "菜粕",
+   "code": "rm2611",
+   "current_price": 2357.0,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "淀粉",
+   "name": "淀粉",
+   "code": "cs2611",
+   "current_price": 2557.0,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "沪银",
+   "name": "沪银",
+   "code": "ag2610",
+   "current_price": 16291.0,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "PVC",
+   "name": "PVC",
+   "code": "v2701",
+   "current_price": 5040.0,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "国际铜",
+   "name": "国际铜",
+   "code": "bc2610",
+   "current_price": 99050.0,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "短纤",
+   "name": "短纤",
+   "code": "pf2611",
+   "current_price": 7912.0,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "玉米",
+   "name": "玉米",
+   "code": "c2611",
+   "current_price": 2295.0,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "棉纱",
+   "name": "棉纱",
+   "code": "cy2611",
+   "current_price": 22855.0,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "十债",
+   "name": "十债",
+   "code": "t2612",
+   "current_price": 109.435,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "纤维板",
+   "name": "纤维板",
+   "code": "fb2611",
+   "current_price": 1268.5,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "硅铁",
+   "name": "硅铁",
+   "code": "sf2611",
+   "current_price": 6288.0,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "不锈钢",
+   "name": "不锈钢",
+   "code": "ss2610",
+   "current_price": 13820.0,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "锰硅",
+   "name": "锰硅",
+   "code": "sm2611",
+   "current_price": 5874.0,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "豆粕",
+   "name": "豆粕",
+   "code": "m2701",
+   "current_price": 3412.0,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "PTA",
+   "name": "PTA",
+   "code": "ta2701",
+   "current_price": 5968.0,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "纯碱",
+   "name": "纯碱",
+   "code": "sa2701",
+   "current_price": 1074.0,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "棕榈油",
+   "name": "棕榈油",
+   "code": "p2701",
+   "current_price": 10486.0,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "螺纹钢",
+   "name": "螺纹钢",
+   "code": "rb2701",
+   "current_price": 3163.0,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "玻璃",
+   "name": "玻璃",
+   "code": "fg2701",
+   "current_price": 969.0,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "多晶硅",
+   "name": "多晶硅",
+   "code": "ps2611",
+   "current_price": 37300.0,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "300沪深",
+   "name": "300沪深",
+   "code": "if2609",
+   "current_price": 4564.0,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "瓶片",
+   "name": "瓶片",
+   "code": "pr2611",
+   "current_price": 7766.0,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "沪锡",
+   "name": "沪锡",
+   "code": "sn2610",
+   "current_price": 419900.0,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "铝合金",
+   "name": "铝合金",
+   "code": "ad2611",
+   "current_price": 23670.0,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "三十债",
+   "name": "三十债",
+   "code": "tl2612",
+   "current_price": 116.48,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "沪镍",
+   "name": "沪镍",
+   "code": "ni2610",
+   "current_price": 127060.0,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "热卷",
+   "name": "热卷",
+   "code": "hc2701",
+   "current_price": 3379.0,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "豆油",
+   "name": "豆油",
+   "code": "y2701",
+   "current_price": 9240.0,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "棉花",
+   "name": "棉花",
+   "code": "cf2701",
+   "current_price": 16820.0,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "碳酸锂",
+   "name": "碳酸锂",
+   "code": "lc2701",
+   "current_price": 142260.0,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "双胶纸",
+   "name": "双胶纸",
+   "code": "op2611",
+   "current_price": 3864.0,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "生猪",
+   "name": "生猪",
+   "code": "lh2611",
+   "current_price": 11720.0,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "工业硅",
+   "name": "工业硅",
+   "code": "si2611",
+   "current_price": 8755.0,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "1000中证",
+   "name": "1000中证",
+   "code": "im2609",
+   "current_price": 7658.4,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "五债",
+   "name": "五债",
+   "code": "tf2612",
+   "current_price": 106.46,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "合成橡胶",
+   "name": "合成橡胶",
+   "code": "br2610",
+   "current_price": 15585.0,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "沪铝",
+   "name": "沪铝",
+   "code": "al2610",
+   "current_price": 24490.0,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "鸡蛋",
+   "name": "鸡蛋",
+   "code": "jd2610",
+   "current_price": 3885.0,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "沪铜",
+   "name": "沪铜",
+   "code": "cu2610",
+   "current_price": 110750.0,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "塑料",
+   "name": "塑料",
+   "code": "l2701",
+   "current_price": 8352.0,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "集运欧线",
+   "name": "集运欧线",
+   "code": "ec2610",
+   "current_price": 1886.0,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "原油",
+   "name": "原油",
+   "code": "sc2610",
+   "current_price": 699.3,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "纸浆",
+   "name": "纸浆",
+   "code": "sp2611",
+   "current_price": 4852.0,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "天然橡胶",
+   "name": "天然橡胶",
+   "code": "ru2701",
+   "current_price": 19570.0,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "白糖",
+   "name": "白糖",
+   "code": "sr2701",
+   "current_price": 5494.0,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "铁矿石",
+   "name": "铁矿石",
+   "code": "i2701",
+   "current_price": 738.5,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "二债",
+   "name": "二债",
+   "code": "ts2612",
+   "current_price": 102.58,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "花生",
+   "name": "花生",
+   "code": "pk2611",
+   "current_price": 8042.0,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "沪锌",
+   "name": "沪锌",
+   "code": "zn2610",
+   "current_price": 27590.0,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "沪金",
+   "name": "沪金",
+   "code": "au2610",
+   "current_price": 959.42,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "豆一",
+   "name": "豆一",
+   "code": "a2611",
+   "current_price": 5141.0,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "烧碱",
+   "name": "烧碱",
+   "code": "sh2611",
+   "current_price": 1940.0,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "豆二",
+   "name": "豆二",
+   "code": "b2611",
+   "current_price": 4185.0,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "原木",
+   "name": "原木",
+   "code": "lg2611",
+   "current_price": 839.5,
+   "support": null,
+   "resistance": null
+  },
+  {
+   "sym": "沪铅",
+   "name": "沪铅",
+   "code": "pb2610",
+   "current_price": 16050.0,
+   "support": null,
+   "resistance": null
+  }
+ ]
+}

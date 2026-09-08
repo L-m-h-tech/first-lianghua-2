@@ -1,0 +1,182 @@
+# 官网
+# URL: https://www.bea.gov/
+# fetched: 20260908_113727
+
+Skip to main content
+An official website of the United States government
+Toggle navigation
+ Main navigation
+ Data
+by Topic
+by Place
+by Economic Account
+ Tools
+Interactive Data
+Application Programming Interface (API)
+Global Value Chain Analyzer
+Income Distribution Analysis Tool (IDAT)
+Country Facts
+BEARFACTS
+Industry Facts
+GDP & Personal Income Mapping
+RIMS II
+eFile
+ News
+Economy at a Glance
+News Releases
+Release Schedule
+The BEA Wire | BEA's Official Blog
+Survey of Current Business
+Archive
+For Journalists
+ Research
+Offices of Research
+Meet the Researchers
+Papers
+Special Sworn Researcher Program
+Research Using Company-Level Data
+Fellowship Program
+ Resources
+Learning Center
+Methodologies
+Multimedia
+Article Collections
+For Congressional Users
+For Developers
+For Students
+ About
+Who We Are
+BEA Leadership
+Innovation at BEA
+Advisory Committees
+Budget and Performance
+Policies and Information
+Working at BEA
+ Help
+Contact Us
+Ask an Expert
+For Survey Respondents
+Frequently Asked Questions (FAQ)
+Glossary
+Guidelines for Citing BEA
+Bureau of Economic Analysis
+ September 03, 2026
+U.S. International Trade in Goods and Services, July 2026
+The U.S. goods and services trade deficit increased in July 2026 according to the U.S. Bureau of Economic Analysis and the U.S. Census Bureau. The deficit increased from $71.2 billion in June (revised) to $88.6 billion in July, as imports increased and exports decreased. The goods deficit increased $17.6 billion in July to $119.6 billion. The services surplus increased $0.2 billion in July to $31.0 billion.
+ Current Release
+ Goods and Services Trade Deficit: Seasonally adjusted, July '26
+×
+Goods and Services Trade Deficit: Seasonally adjusted, July '26
+Close
+Principal Federal Economic Indicators
+View
+Gross Domestic Product
+Q2 2026 (2nd)
++1.5%
+View
+Personal Income
+July 2026
++0.4%
+View
+International Trade in Goods and Services
+July 2026
+-$88.6 B
+View
+International Transactions
+Q1 2026
+-$226.8 B
+Explore Data by Topic
+U.S. Economy at a Glance
+View Current Releases
+Noteworthy
+2026 News Release Schedule
+Innovation at BEA
+2026 Annual Update 
+Distribution of State Personal IncomeUpdated
+Data Tool: Income Distribution Analysis ToolNew
+Household productionUpdated
+Data Tool: Global Value Chain Analyzer
+New RIMS II Multipliers
+R&D Economic Activity
+Quick Guide: Price Indexes
+Help for Survey Respondents
+News for Journalists
+Resources for Congressional Users
+Resources for Developers
+Information For
+Survey Respondents
+Journalists
+Congressional Users
+ Developers
+The Latest
+U.S. International Trade in Goods and Services, July 2026
+September 3, 2026
+ | News Release
+The U.S. goods and services trade deficit increased in July 2026 according to the U.S. Bureau of Economic Analysis and the U.S. Census Bureau. The deficit increased from $71.2 billion in June (revised) to $88.6 billion in July, as imports increased and exports decreased. The goods deficit increased $17.6 billion in July to $119.6 billion. The services surplus increased $0.2 billion in July to $31.0 billion.
+Read More 
+GDP (Second Estimate) and Corporate Profits, 2nd Quarter 2026
+August 26, 2026
+ | News Release
+Real gross domestic product (GDP) increased at an annual rate of 1.5 percent in the second quarter of 2026 (April, May, and June), according to the second estimate released today by the U.S. Bureau of Economic Analysis (BEA). In the first quarter, real GDP increased 2.1 percent. The contributors to the increase in real GDP in the second quarter were increases in consumer spending, exports, and investment that were partly offset by a decrease in…
+Read More 
+Personal Income and Outlays, July 2026
+August 26, 2026
+ | News Release
+Personal income increased $115.1 billion (0.4 percent at a monthly rate) in July, according to estimates released today by the U.S. Bureau of Economic Analysis (BEA). Disposable personal income (DPI)—personal income less personal current taxes—increased $125.9 billion (0.5 percent), and personal consumption expenditures (PCE) increased $36.3 billion (0.2 percent). Personal outlays—the sum of PCE, personal interest payments, and personal current…
+Read More 
+Annual Update of GDP, Industry, and State Stats Publicly Available Starting Sept. 30
+August 17, 2026
+ | The BEA Wire
+BEA will release this year’s annual update of gross domestic product and related statistics beginning Sept. 30, part of our regular effort to better measure the U.S. economy. For the first time, updated state and county statistics will also start to flow to the public on the same day as the national and industry numbers. 
+Read More 
+U.S. International Trade in Goods and Services, June 2026
+August 4, 2026
+ | News Release
+The U.S. goods and services trade deficit decreased in June 2026 according to the U.S. Bureau of Economic Analysis and the U.S. Census Bureau. The deficit decreased from $77.6 billion in May (revised) to $73.3 billion in June, as imports decreased more than exports. The goods deficit decreased $3.9 billion in June to $102.1 billion. The services surplus increased $0.5 billion in June to $28.8 billion.
+Read More 
+GDP (Advance Estimate), 2nd Quarter 2026
+July 30, 2026
+ | News Release
+Real gross domestic product (GDP) increased at an annual rate of 1.5 percent in the second quarter of 2026 (April, May, and June), according to the advance estimate released today by the U.S. Bureau of Economic Analysis (BEA). In the first quarter, real GDP increased 2.1 percent. The contributors to the increase in real GDP in the second quarter were increases in consumer spending, investment, and exports that were partly offset by a decrease in…
+Read More 
+Personal Income and Outlays, June 2026
+July 30, 2026
+ | News Release
+Personal income increased $54.9 billion (0.2 percent at a monthly rate) in June, according to estimates released today by the U.S. Bureau of Economic Analysis (BEA). Disposable personal income (DPI)—personal income less personal current taxes—increased $48.3 billion (0.2 percent), and personal consumption expenditures (PCE) increased $65.2 billion (0.3 percent). Personal outlays—the sum of PCE, personal interest payments, and personal current…
+Read More 
+Direct Investment by Country and Industry, 2025
+July 21, 2026
+ | News Release
+The U.S. direct investment abroad position, or cumulative level of investment, increased $438.1 billion to $7.14 trillion at the end of 2025, according to statistics released today by the U.S. Bureau of Economic Analysis. The increase was led by a $350.2 billion increase in the position in Europe, primarily in the United Kingdom and Luxembourg. By industry, manufacturing had the largest increase, led by chemical manufacturing.
+The foreign…
+Read More 
+Activities of U.S. Affiliates of Foreign Multinational Enterprises, 2024
+July 10, 2026
+ | News Release
+Majority-owned U.S. affiliates of foreign multinational enterprises employed 8.57 million workers in the United States in 2024, a 0.2 percent increase from 8.56 million workers in 2023, according to statistics on U.S. affiliate operations and finances released today by the U.S. Bureau of Economic Analysis.
+Read More 
+U.S. International Trade in Goods and Services, May 2026
+July 7, 2026
+ | News Release
+The U.S. goods and services trade deficit increased in May 2026 according to the U.S. Bureau of Economic Analysis and the U.S. Census Bureau. The deficit increased from $54.6 billion in April (revised) to $77.6 billion in May, as exports decreased and imports increased. The goods deficit increased $23.6 billion in May to $106.5 billion. The services surplus increased $0.6 billion in May to $28.9 billion.
+Read More 
+Download Acrobat Reader
+Page last modified on 9/7/26
+Bureau of Economic Analysis 4600 Silver Hill Road • Suitland, MD 20746 
+Contact Us
+Working at BEA
+Frequently Asked Questions
+Our Policies
+Privacy
+Commitment to Scientific Integrity
+Data Dissemination Practices
+Open Data
+USA.gov
+Business USA
+No FEAR Act
+FOIA
+U.S. Department of Commerce
+Emergency Status 
+The BEA Wire | BEA's Official Blog
+News Release Feed (RSS)
+Sign up for Email Notifications

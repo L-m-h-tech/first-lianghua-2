@@ -1,0 +1,45 @@
+{
+  "quant_dir": "E:\\LHsystem\\量化\\futures_monitor",
+  "legend": {
+    "exe": "E:\\OpendVlab Legend\\openvlab-legend\\openvlab-legend.exe",
+    "cdp_port": 9225,
+    "data_dir": "E:\\OpendVlab Legend\\openvlab-legend\\openvlab-legend-data",
+    "appdata_dir": "C:\\Users\\Lenovo\\AppData\\Roaming\\openvlab-legend"
+  },
+  "ths": {
+    "exe": "E:\\同花顺期货通\\bin\\happ.exe",
+    "notice_xml": "E:\\同花顺期货通\\bin\\FutureData\\Notice.xml"
+  },
+  "openvlab": {
+    "enabled": true,
+    "base_url": "https://www.openvlab.cn",
+    "timeout": 15,
+    "sleep": 0.3,
+    "surface_limit": 12,
+    "dto_limit": 30
+  },
+  "jiaoyikecha": {
+    "enabled": true,
+    "base_url": "https://www.jiaoyikecha.com",
+    "timeout": 20,
+    "sleep": 0.5,
+    "version": "5f6760cc"
+  },
+  "ctp_accounts": [],
+  "intervals": {
+    "probe": 3.0,
+    "collect": 30.0,
+    "offline": 120.0,
+    "status_write": 10.0
+  },
+  "quality": {
+    "max_price_jump_pct": 4.0,
+    "max_staleness_sec": 300,
+    "conflict_diff_pct": 1.0,
+    "pcr_lookback_days": 90
+  },
+  "http": {
+    "serve_host": "127.0.0.1",
+    "serve_port": 8790
+  }
+}

@@ -1,0 +1,19 @@
+{
+ "total": 219,
+ "domestic": 125,
+ "overseas": 94,
+ "categories": 8,
+ "by_category": {
+  "交易所官方": 35,
+  "新闻资讯": 11,
+  "海外资讯": 94,
+  "交易软件": 14,
+  "数据渠道": 8,
+  "期货金融终端": 6,
+  "分板块专业机构": 26,
+  "期货比赛": 25
+ },
+ "unique_domains": 75,
+ "archived_domestic": 125,
+ "missing_domestic": 0
+}

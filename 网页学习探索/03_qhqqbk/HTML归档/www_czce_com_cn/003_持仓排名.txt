@@ -1,0 +1,1510 @@
+# 持仓排名
+# URL: https://www.czce.com.cn/cn/jysj/ccpm/H077003004index_1.htm
+
+郑州商品交易所Close menu
+郑州商品交易所
+12Open submenu (关于交易所)关于交易所
+27Open submenu (上市品种)上市品种
+26Open submenu (交易数据)交易数据
+3Open submenu (交易所服务)交易所服务
+6Open submenu (法律及规则)法律及规则
+4Open submenu (网站信息)网站信息
+0Open submenu (我是会员)我是会员
+1Open submenu (我是投资者)我是投资者
+0Open submenu (我是求职者)我是求职者
+22Open submenu (专题栏目)专题栏目
+0Open submenu (衍生品学苑)衍生品学苑
+0Open submenu (综合业务平台)综合业务平台
+0Open submenu (新版首页banner图片)新版首页banner图片
+0Open submenu (首页上传视频)首页上传视频
+0Open submenu (个人信息保护告知书)个人信息保护告知书
+0Open submenu (个人信息保护告知书(历史版本))个人信息保护告知书(历史版本)
+Close submenu (关于交易所)关于交易所
+2Open submenu (本所介绍)本所介绍
+2Open submenu (企业文化)企业文化
+9Open submenu (组织机构)组织机构
+0Open submenu (党的建设)党的建设
+4Open submenu (交易所动态)交易所动态
+0Open submenu (大事记)大事记
+0Open submenu (历年年报)历年年报
+2Open submenu (招贤纳士)招贤纳士
+2Open submenu (期货市场研究丛书)期货市场研究丛书
+1Open submenu (博士后工作站)博士后工作站
+0Open submenu (采购信息)采购信息
+34Open submenu (交易所会员)交易所会员
+Close submenu (本所介绍)本所介绍
+0Open submenu (本所简介)本所简介
+0Open submenu (信息公开)信息公开
+Close submenu (本所简介)本所简介
+Close submenu (信息公开)信息公开
+Close submenu (企业文化)企业文化
+0Open submenu (核心理念)核心理念
+0Open submenu (文化活动)文化活动
+Close submenu (核心理念)核心理念
+Close submenu (文化活动)文化活动
+Close submenu (组织机构)组织机构
+0Open submenu (概述)概述
+0Open submenu (领导成员)领导成员
+0Open submenu (理事会)理事会
+0Open submenu (监事会)监事会
+0Open submenu (内设机构)内设机构
+0Open submenu (分支机构)分支机构
+0Open submenu (驻国（境）外机构)驻国（境）外机构
+0Open submenu (下属机构)下属机构
+20Open submenu (联系我们)联系我们
+Close submenu (概述)概述
+Close submenu (领导成员)领导成员
+Close submenu (理事会)理事会
+Close submenu (监事会)监事会
+Close submenu (内设机构)内设机构
+Close submenu (分支机构)分支机构
+Close submenu (驻国（境）外机构)驻国（境）外机构
+Close submenu (下属机构)下属机构
+Close submenu (联系我们)联系我们
+0Open submenu (商品一部)商品一部
+0Open submenu (办公室（党委办公室）)办公室（党委办公室）
+0Open submenu (商品二部)商品二部
+0Open submenu (商品三部)商品三部
+0Open submenu (期货衍生品部)期货衍生品部
+0Open submenu (市场发展部)市场发展部
+0Open submenu (会员管理部)会员管理部
+0Open submenu (交易部)交易部
+0Open submenu (结算部)结算部
+0Open submenu (交割部)交割部
+0Open submenu (市场监查部)市场监查部
+0Open submenu (信息科技一部)信息科技一部
+0Open submenu (信息科技二部)信息科技二部
+0Open submenu (风险管理部)风险管理部
+0Open submenu (法律事务部)法律事务部
+0Open submenu (党务工作部)党务工作部
+0Open submenu (纪检办公室)纪检办公室
+0Open submenu (人力资源部(党委组织部))人力资源部(党委组织部)
+0Open submenu (财务部)财务部
+0Open submenu (审计部)审计部
+Close submenu (商品一部)商品一部
+Close submenu (办公室（党委办公室）)办公室（党委办公室）
+Close submenu (商品二部)商品二部
+Close submenu (商品三部)商品三部
+Close submenu (期货衍生品部)期货衍生品部
+Close submenu (市场发展部)市场发展部
+Close submenu (会员管理部)会员管理部
+Close submenu (交易部)交易部
+Close submenu (结算部)结算部
+Close submenu (交割部)交割部
+Close submenu (市场监查部)市场监查部
+Close submenu (信息科技一部)信息科技一部
+Close submenu (信息科技二部)信息科技二部
+Close submenu (风险管理部)风险管理部
+Close submenu (法律事务部)法律事务部
+Close submenu (党务工作部)党务工作部
+Close submenu (纪检办公室)纪检办公室
+Close submenu (人力资源部(党委组织部))人力资源部(党委组织部)
+Close submenu (财务部)财务部
+Close submenu (审计部)审计部
+Close submenu (党的建设)党的建设
+Close submenu (交易所动态)交易所动态
+0Open submenu (公告通知)公告通知
+0Open submenu (媒体要闻)媒体要闻
+0Open submenu (新闻发布)新闻发布
+0Open submenu (媒体看郑商所)媒体看郑商所
+Close submenu (公告通知)公告通知
+Close submenu (媒体要闻)媒体要闻
+Close submenu (新闻发布)新闻发布
+Close submenu (媒体看郑商所)媒体看郑商所
+Close submenu (大事记)大事记
+Close submenu (历年年报)历年年报
+Close submenu (招贤纳士)招贤纳士
+0Open submenu (人才招聘)人才招聘
+0Open submenu (实习生招收)实习生招收
+Close submenu (人才招聘)人才招聘
+Close submenu (实习生招收)实习生招收
+Close submenu (期货市场研究丛书)期货市场研究丛书
+0Open submenu (丛书征稿)丛书征稿
+0Open submenu (成果宣传)成果宣传
+Close submenu (丛书征稿)丛书征稿
+Close submenu (成果宣传)成果宣传
+Close submenu (博士后工作站)博士后工作站
+0Open submenu (招收信息)招收信息
+Close submenu (招收信息)招收信息
+Close submenu (采购信息)采购信息
+Close submenu (交易所会员)交易所会员
+0Open submenu (黑龙江)黑龙江
+0Open submenu (内蒙古)内蒙古
+0Open submenu (吉林)吉林
+0Open submenu (北京)北京
+0Open submenu (辽宁)辽宁
+0Open submenu (新疆)新疆
+0Open submenu (宁夏)宁夏
+0Open submenu (河北)河北
+0Open submenu (天津)天津
+0Open submenu (青海)青海
+0Open submenu (甘肃)甘肃
+0Open submenu (山西)山西
+0Open submenu (山东)山东
+0Open submenu (陕西)陕西
+0Open submenu (河南)河南
+0Open submenu (江苏)江苏
+0Open submenu (四川)四川
+0Open submenu (湖北)湖北
+0Open submenu (安徽)安徽
+0Open submenu (上海)上海
+0Open submenu (重庆)重庆
+0Open submenu (湖南)湖南
+0Open submenu (江西)江西
+0Open submenu (浙江)浙江
+0Open submenu (云南)云南
+0Open submenu (贵州)贵州
+0Open submenu (广西)广西
+0Open submenu (广东)广东
+0Open submenu (福建)福建
+0Open submenu (海南)海南
+0Open submenu (西藏)西藏
+0Open submenu (澳门)澳门
+0Open submenu (香港)香港
+0Open submenu (台湾)台湾
+Close submenu (黑龙江)黑龙江
+Close submenu (内蒙古)内蒙古
+Close submenu (吉林)吉林
+Close submenu (北京)北京
+Close submenu (辽宁)辽宁
+Close submenu (新疆)新疆
+Close submenu (宁夏)宁夏
+Close submenu (河北)河北
+Close submenu (天津)天津
+Close submenu (青海)青海
+Close submenu (甘肃)甘肃
+Close submenu (山西)山西
+Close submenu (山东)山东
+Close submenu (陕西)陕西
+Close submenu (河南)河南
+Close submenu (江苏)江苏
+Close submenu (四川)四川
+Close submenu (湖北)湖北
+Close submenu (安徽)安徽
+Close submenu (上海)上海
+Close submenu (重庆)重庆
+Close submenu (湖南)湖南
+Close submenu (江西)江西
+Close submenu (浙江)浙江
+Close submenu (云南)云南
+Close submenu (贵州)贵州
+Close submenu (广西)广西
+Close submenu (广东)广东
+Close submenu (福建)福建
+Close submenu (海南)海南
+Close submenu (西藏)西藏
+Close submenu (澳门)澳门
+Close submenu (香港)香港
+Close submenu (台湾)台湾
+Close submenu (上市品种)上市品种
+5Open submenu (苹果期货/期权)苹果期货/期权
+5Open submenu (强麦期货)强麦期货
+5Open submenu (普麦期货)普麦期货
+5Open submenu (棉花期货/期权)棉花期货/期权
+5Open submenu (白糖期货/期权)白糖期货/期权
+5Open submenu (PTA期货/期权)PTA期货/期权
+5Open submenu (菜籽油期货/期权)菜籽油期货/期权
+5Open submenu (早籼稻期货)早籼稻期货
+5Open submenu (甲醇期货/期权)甲醇期货/期权
+5Open submenu (玻璃期货/期权)玻璃期货/期权
+5Open submenu (油菜籽期货)油菜籽期货
+5Open submenu (菜籽粕期货/期权)菜籽粕期货/期权
+5Open submenu (动力煤期货/期权)动力煤期货/期权
+5Open submenu (粳稻期货)粳稻期货
+5Open submenu (晚籼稻期货)晚籼稻期货
+5Open submenu (硅铁期货/期权)硅铁期货/期权
+5Open submenu (锰硅期货/期权)锰硅期货/期权
+5Open submenu (棉纱期货)棉纱期货
+5Open submenu (红枣期货/期权)红枣期货/期权
+5Open submenu (尿素期货/期权)尿素期货/期权
+5Open submenu (纯碱期货/期权)纯碱期货/期权
+5Open submenu (短纤期货/期权)短纤期货/期权
+5Open submenu (花生期货/期权)花生期货/期权
+5Open submenu (对二甲苯期货/期权)对二甲苯期货/期权
+5Open submenu (烧碱期货/期权)烧碱期货/期权
+5Open submenu (瓶片期货/期权)瓶片期货/期权
+5Open submenu (丙烯期货/期权)丙烯期货/期权
+Close submenu (苹果期货/期权)苹果期货/期权
+1Open submenu (品种介绍)品种介绍
+2Open submenu (标准合约)标准合约
+0Open submenu (品种公告)品种公告
+0Open submenu (品种新闻)品种新闻
+0Open submenu (仓储名录)仓储名录
+Close submenu (品种介绍)品种介绍
+0Open submenu (期货)期货
+Close submenu (期货)期货
+Close submenu (标准合约)标准合约
+0Open submenu (期货合约)期货合约
+0Open submenu (期权合约)期权合约
+Close submenu (期货合约)期货合约
+Close submenu (期权合约)期权合约
+Close submenu (品种公告)品种公告
+Close submenu (品种新闻)品种新闻
+Close submenu (仓储名录)仓储名录
+Close submenu (强麦期货)强麦期货
+0Open submenu (品种新闻)品种新闻
+1Open submenu (标准合约)标准合约
+0Open submenu (品种公告)品种公告
+1Open submenu (品种介绍)品种介绍
+0Open submenu (仓储名录)仓储名录
+Close submenu (品种新闻)品种新闻
+Close submenu (标准合约)标准合约
+0Open submenu (期货合约)期货合约
+Close submenu (期货合约)期货合约
+Close submenu (品种公告)品种公告
+Close submenu (品种介绍)品种介绍
+0Open submenu (期货)期货
+Close submenu (期货)期货
+Close submenu (仓储名录)仓储名录
+Close submenu (普麦期货)普麦期货
+0Open submenu (品种新闻)品种新闻
+1Open submenu (标准合约)标准合约
+0Open submenu (品种公告)品种公告
+1Open submenu (品种介绍)品种介绍
+0Open submenu (仓储名录)仓储名录
+Close submenu (品种新闻)品种新闻
+Close submenu (标准合约)标准合约
+0Open submenu (期货合约)期货合约
+Close submenu (期货合约)期货合约
+Close submenu (品种公告)品种公告
+Close submenu (品种介绍)品种介绍
+0Open submenu (期货)期货
+Close submenu (期货)期货
+Close submenu (仓储名录)仓储名录
+Close submenu (棉花期货/期权)棉花期货/期权
+0Open submenu (品种新闻)品种新闻
+2Open submenu (标准合约)标准合约
+0Open submenu (品种公告)品种公告
+2Open submenu (品种介绍)品种介绍
+0Open submenu (仓储名录)仓储名录
+Close submenu (品种新闻)品种新闻
+Close submenu (标准合约)标准合约
+0Open submenu (期货合约)期货合约
+0Open submenu (期权合约)期权合约
+Close submenu (期货合约)期货合约
+Close submenu (期权合约)期权合约
+Close submenu (品种公告)品种公告
+Close submenu (品种介绍)品种介绍
+0Open submenu (期货)期货
+0Open submenu (期权)期权
+Close submenu (期货)期货
+Close submenu (期权)期权
+Close submenu (仓储名录)仓储名录
+Close submenu (白糖期货/期权)白糖期货/期权
+0Open submenu (品种新闻)品种新闻
+2Open submenu (标准合约)标准合约
+0Open submenu (品种公告)品种公告
+2Open submenu (品种介绍)品种介绍
+0Open submenu (仓储名录)仓储名录
+Close submenu (品种新闻)品种新闻
+Close submenu (标准合约)标准合约
+0Open submenu (期货合约)期货合约
+0Open submenu (期权合约)期权合约
+Close submenu (期货合约)期货合约
+Close submenu (期权合约)期权合约
+Close submenu (品种公告)品种公告
+Close submenu (品种介绍)品种介绍
+0Open submenu (期货)期货
+0Open submenu (期权)期权
+Close submenu (期货)期货
+Close submenu (期权)期权
+Close submenu (仓储名录)仓储名录
+Close submenu (PTA期货/期权)PTA期货/期权
+0Open submenu (品种新闻)品种新闻
+2Open submenu (标准合约)标准合约
+0Open submenu (品种公告)品种公告
+2Open submenu (品种介绍)品种介绍
+0Open submenu (仓储名录)仓储名录
+Close submenu (品种新闻)品种新闻
+Close submenu (标准合约)标准合约
+0Open submenu (期货合约)期货合约
+0Open submenu (期权合约)期权合约
+Close submenu (期货合约)期货合约
+Close submenu (期权合约)期权合约
+Close submenu (品种公告)品种公告
+Close submenu (品种介绍)品种介绍
+0Open submenu (期货)期货
+0Open submenu (期权)期权
+Close submenu (期货)期货
+Close submenu (期权)期权
+Close submenu (仓储名录)仓储名录
+Close submenu (菜籽油期货/期权)菜籽油期货/期权
+0Open submenu (品种新闻)品种新闻
+2Open submenu (标准合约)标准合约
+0Open submenu (品种公告)品种公告
+2Open submenu (品种介绍)品种介绍
+0Open submenu (仓储名录)仓储名录
+Close submenu (品种新闻)品种新闻
+Close submenu (标准合约)标准合约
+0Open submenu (期货合约)期货合约
+0Open submenu (期权合约)期权合约
+Close submenu (期货合约)期货合约
+Close submenu (期权合约)期权合约
+Close submenu (品种公告)品种公告
+Close submenu (品种介绍)品种介绍
+0Open submenu (期货)期货
+0Open submenu (期权)期权
+Close submenu (期货)期货
+Close submenu (期权)期权
+Close submenu (仓储名录)仓储名录
+Close submenu (早籼稻期货)早籼稻期货
+0Open submenu (品种新闻)品种新闻
+1Open submenu (标准合约)标准合约
+0Open submenu (品种公告)品种公告
+1Open submenu (品种介绍)品种介绍
+0Open submenu (仓储名录)仓储名录
+Close submenu (品种新闻)品种新闻
+Close submenu (标准合约)标准合约
+0Open submenu (期货合约)期货合约
+Close submenu (期货合约)期货合约
+Close submenu (品种公告)品种公告
+Close submenu (品种介绍)品种介绍
+0Open submenu (期货)期货
+Close submenu (期货)期货
+Close submenu (仓储名录)仓储名录
+Close submenu (甲醇期货/期权)甲醇期货/期权
+0Open submenu (品种新闻)品种新闻
+2Open submenu (标准合约)标准合约
+0Open submenu (品种公告)品种公告
+2Open submenu (品种介绍)品种介绍
+0Open submenu (仓储名录)仓储名录
+Close submenu (品种新闻)品种新闻
+Close submenu (标准合约)标准合约
+0Open submenu (期货合约)期货合约
+0Open submenu (期权合约)期权合约
+Close submenu (期货合约)期货合约
+Close submenu (期权合约)期权合约
+Close submenu (品种公告)品种公告
+Close submenu (品种介绍)品种介绍
+0Open submenu (期货)期货
+0Open submenu (期权)期权
+Close submenu (期货)期货
+Close submenu (期权)期权
+Close submenu (仓储名录)仓储名录
+Close submenu (玻璃期货/期权)玻璃期货/期权
+0Open submenu (品种新闻)品种新闻
+2Open submenu (标准合约)标准合约
+0Open submenu (品种公告)品种公告
+2Open submenu (品种介绍)品种介绍
+0Open submenu (仓储名录)仓储名录
+Close submenu (品种新闻)品种新闻
+Close submenu (标准合约)标准合约
+0Open submenu (期货合约)期货合约
+0Open submenu (期权合约)期权合约
+Close submenu (期货合约)期货合约
+Close submenu (期权合约)期权合约
+Close submenu (品种公告)品种公告
+Close submenu (品种介绍)品种介绍
+0Open submenu (期货)期货
+0Open submenu (期权)期权
+Close submenu (期货)期货
+Close submenu (期权)期权
+Close submenu (仓储名录)仓储名录
+Close submenu (油菜籽期货)油菜籽期货
+0Open submenu (品种新闻)品种新闻
+1Open submenu (标准合约)标准合约
+0Open submenu (品种公告)品种公告
+1Open submenu (品种介绍)品种介绍
+0Open submenu (仓储名录)仓储名录
+Close submenu (品种新闻)品种新闻
+Close submenu (标准合约)标准合约
+0Open submenu (期货合约)期货合约
+Close submenu (期货合约)期货合约
+Close submenu (品种公告)品种公告
+Close submenu (品种介绍)品种介绍
+0Open submenu (期货)期货
+Close submenu (期货)期货
+Close submenu (仓储名录)仓储名录
+Close submenu (菜籽粕期货/期权)菜籽粕期货/期权
+0Open submenu (品种新闻)品种新闻
+2Open submenu (标准合约)标准合约
+0Open submenu (品种公告)品种公告
+2Open submenu (品种介绍)品种介绍
+0Open submenu (仓储名录)仓储名录
+Close submenu (品种新闻)品种新闻
+Close submenu (标准合约)标准合约
+0Open submenu (期货合约)期货合约
+0Open submenu (期权合约)期权合约
+Close submenu (期货合约)期货合约
+Close submenu (期权合约)期权合约
+Close submenu (品种公告)品种公告
+Close submenu (品种介绍)品种介绍
+0Open submenu (期货)期货
+0Open submenu (期权)期权
+Close submenu (期货)期货
+Close submenu (期权)期权
+Close submenu (仓储名录)仓储名录
+Close submenu (动力煤期货/期权)动力煤期货/期权
+0Open submenu (品种新闻)品种新闻
+2Open submenu (标准合约)标准合约
+0Open submenu (品种公告)品种公告
+2Open submenu (品种介绍)品种介绍
+0Open submenu (仓储名录)仓储名录
+Close submenu (品种新闻)品种新闻
+Close submenu (标准合约)标准合约
+0Open submenu (期货合约)期货合约
+0Open submenu (期权合约)期权合约
+Close submenu (期货合约)期货合约
+Close submenu (期权合约)期权合约
+Close submenu (品种公告)品种公告
+Close submenu (品种介绍)品种介绍
+0Open submenu (期货)期货
+0Open submenu (期权)期权
+Close submenu (期货)期货
+Close submenu (期权)期权
+Close submenu (仓储名录)仓储名录
+Close submenu (粳稻期货)粳稻期货
+0Open submenu (品种新闻)品种新闻
+1Open submenu (标准合约)标准合约
+0Open submenu (品种公告)品种公告
+1Open submenu (品种介绍)品种介绍
+0Open submenu (仓储名录)仓储名录
+Close submenu (品种新闻)品种新闻
+Close submenu (标准合约)标准合约
+0Open submenu (期货合约)期货合约
+Close submenu (期货合约)期货合约
+Close submenu (品种公告)品种公告
+Close submenu (品种介绍)品种介绍
+0Open submenu (期货)期货
+Close submenu (期货)期货
+Close submenu (仓储名录)仓储名录
+Close submenu (晚籼稻期货)晚籼稻期货
+0Open submenu (品种新闻)品种新闻
+1Open submenu (标准合约)标准合约
+0Open submenu (品种公告)品种公告
+1Open submenu (品种介绍)品种介绍
+0Open submenu (仓储名录)仓储名录
+Close submenu (品种新闻)品种新闻
+Close submenu (标准合约)标准合约
+0Open submenu (期货合约)期货合约
+Close submenu (期货合约)期货合约
+Close submenu (品种公告)品种公告
+Close submenu (品种介绍)品种介绍
+0Open submenu (期货)期货
+Close submenu (期货)期货
+Close submenu (仓储名录)仓储名录
+Close submenu (硅铁期货/期权)硅铁期货/期权
+0Open submenu (品种新闻)品种新闻
+2Open submenu (标准合约)标准合约
+0Open submenu (品种公告)品种公告
+1Open submenu (品种介绍)品种介绍
+0Open submenu (仓储名录)仓储名录
+Close submenu (品种新闻)品种新闻
+Close submenu (标准合约)标准合约
+0Open submenu (期货合约)期货合约
+0Open submenu (期权合约)期权合约
+Close submenu (期货合约)期货合约
+Close submenu (期权合约)期权合约
+Close submenu (品种公告)品种公告
+Close submenu (品种介绍)品种介绍
+0Open submenu (期货)期货
+Close submenu (期货)期货
+Close submenu (仓储名录)仓储名录
+Close submenu (锰硅期货/期权)锰硅期货/期权
+0Open submenu (品种新闻)品种新闻
+1Open submenu (品种介绍)品种介绍
+0Open submenu (品种公告)品种公告
+2Open submenu (标准合约)标准合约
+0Open submenu (仓储名录)仓储名录
+Close submenu (品种新闻)品种新闻
+Close submenu (品种介绍)品种介绍
+0Open submenu (期货)期货
+Close submenu (期货)期货
+Close submenu (品种公告)品种公告
+Close submenu (标准合约)标准合约
+0Open submenu (期货合约)期货合约
+0Open submenu (期权合约)期权合约
+Close submenu (期货合约)期货合约
+Close submenu (期权合约)期权合约
+Close submenu (仓储名录)仓储名录
+Close submenu (棉纱期货)棉纱期货
+0Open submenu (品种新闻)品种新闻
+1Open submenu (标准合约)标准合约
+0Open submenu (品种公告)品种公告
+1Open submenu (品种介绍)品种介绍
+0Open submenu (仓储名录)仓储名录
+Close submenu (品种新闻)品种新闻
+Close submenu (标准合约)标准合约
+0Open submenu (期货合约)期货合约
+Close submenu (期货合约)期货合约
+Close submenu (品种公告)品种公告
+Close submenu (品种介绍)品种介绍
+0Open submenu (期货)期货
+Close submenu (期货)期货
+Close submenu (仓储名录)仓储名录
+Close submenu (红枣期货/期权)红枣期货/期权
+0Open submenu (品种新闻)品种新闻
+2Open submenu (标准合约)标准合约
+1Open submenu (品种公告)品种公告
+2Open submenu (品种介绍)品种介绍
+0Open submenu (仓储名录)仓储名录
+Close submenu (品种新闻)品种新闻
+Close submenu (标准合约)标准合约
+0Open submenu (期货合约)期货合约
+0Open submenu (期权合约)期权合约
+Close submenu (期货合约)期货合约
+Close submenu (期权合约)期权合约
+Close submenu (品种公告)品种公告
+0Open submenu (期货)期货
+Close submenu (期货)期货
+Close submenu (品种介绍)品种介绍
+0Open submenu (期货)期货
+0Open submenu (期权)期权
+Close submenu (期货)期货
+Close submenu (期权)期权
+Close submenu (仓储名录)仓储名录
+Close submenu (尿素期货/期权)尿素期货/期权
+0Open submenu (品种新闻)品种新闻
+2Open submenu (标准合约)标准合约
+0Open submenu (品种公告)品种公告
+1Open submenu (品种介绍)品种介绍
+0Open submenu (仓储名录)仓储名录
+Close submenu (品种新闻)品种新闻
+Close submenu (标准合约)标准合约
+0Open submenu (期货合约)期货合约
+0Open submenu (期权合约)期权合约
+Close submenu (期货合约)期货合约
+Close submenu (期权合约)期权合约
+Close submenu (品种公告)品种公告
+Close submenu (品种介绍)品种介绍
+0Open submenu (期货)期货
+Close submenu (期货)期货
+Close submenu (仓储名录)仓储名录
+Close submenu (纯碱期货/期权)纯碱期货/期权
+0Open submenu (品种新闻)品种新闻
+2Open submenu (标准合约)标准合约
+0Open submenu (品种公告)品种公告
+1Open submenu (品种介绍)品种介绍
+0Open submenu (仓库名录)仓库名录
+Close submenu (品种新闻)品种新闻
+Close submenu (标准合约)标准合约
+0Open submenu (期货合约)期货合约
+0Open submenu (期权合约)期权合约
+Close submenu (期货合约)期货合约
+Close submenu (期权合约)期权合约
+Close submenu (品种公告)品种公告
+Close submenu (品种介绍)品种介绍
+0Open submenu (期货)期货
+Close submenu (期货)期货
+Close submenu (仓库名录)仓库名录
+Close submenu (短纤期货/期权)短纤期货/期权
+0Open submenu (品种新闻)品种新闻
+2Open submenu (标准合约)标准合约
+0Open submenu (品种公告)品种公告
+1Open submenu (品种介绍)品种介绍
+0Open submenu (仓库名录)仓库名录
+Close submenu (品种新闻)品种新闻
+Close submenu (标准合约)标准合约
+0Open submenu (期货合约)期货合约
+0Open submenu (期权合约)期权合约
+Close submenu (期货合约)期货合约
+Close submenu (期权合约)期权合约
+Close submenu (品种公告)品种公告
+Close submenu (品种介绍)品种介绍
+0Open submenu (期货)期货
+Close submenu (期货)期货
+Close submenu (仓库名录)仓库名录
+Close submenu (花生期货/期权)花生期货/期权
+0Open submenu (品种新闻)品种新闻
+2Open submenu (标准合约)标准合约
+0Open submenu (品种公告)品种公告
+2Open submenu (品种介绍)品种介绍
+0Open submenu (仓库名录)仓库名录
+Close submenu (品种新闻)品种新闻
+Close submenu (标准合约)标准合约
+0Open submenu (期货合约)期货合约
+0Open submenu (期权合约)期权合约
+Close submenu (期货合约)期货合约
+Close submenu (期权合约)期权合约
+Close submenu (品种公告)品种公告
+Close submenu (品种介绍)品种介绍
+0Open submenu (期货)期货
+0Open submenu (期权)期权
+Close submenu (期货)期货
+Close submenu (期权)期权
+Close submenu (仓库名录)仓库名录
+Close submenu (对二甲苯期货/期权)对二甲苯期货/期权
+0Open submenu (品种新闻)品种新闻
+2Open submenu (标准合约)标准合约
+0Open submenu (品种公告)品种公告
+2Open submenu (品种介绍)品种介绍
+0Open submenu (仓库名录)仓库名录
+Close submenu (品种新闻)品种新闻
+Close submenu (标准合约)标准合约
+0Open submenu (期货合约)期货合约
+0Open submenu (期权合约)期权合约
+Close submenu (期货合约)期货合约
+Close submenu (期权合约)期权合约
+Close submenu (品种公告)品种公告
+Close submenu (品种介绍)品种介绍
+0Open submenu (期货)期货
+0Open submenu (期权)期权
+Close submenu (期货)期货
+Close submenu (期权)期权
+Close submenu (仓库名录)仓库名录
+Close submenu (烧碱期货/期权)烧碱期货/期权
+0Open submenu (品种新闻)品种新闻
+2Open submenu (标准合约)标准合约
+0Open submenu (品种公告)品种公告
+2Open submenu (品种介绍)品种介绍
+0Open submenu (仓库名录)仓库名录
+Close submenu (品种新闻)品种新闻
+Close submenu (标准合约)标准合约
+0Open submenu (期货合约)期货合约
+0Open submenu (期权合约)期权合约
+Close submenu (期货合约)期货合约
+Close submenu (期权合约)期权合约
+Close submenu (品种公告)品种公告
+Close submenu (品种介绍)品种介绍
+0Open submenu (期货)期货
+0Open submenu (期权)期权
+Close submenu (期货)期货
+Close submenu (期权)期权
+Close submenu (仓库名录)仓库名录
+Close submenu (瓶片期货/期权)瓶片期货/期权
+0Open submenu (品种新闻)品种新闻
+2Open submenu (标准合约)标准合约
+0Open submenu (品种公告)品种公告
+2Open submenu (品种介绍)品种介绍
+0Open submenu (仓库名录)仓库名录
+Close submenu (品种新闻)品种新闻
+Close submenu (标准合约)标准合约
+0Open submenu (期货合约)期货合约
+0Open submenu (期权合约)期权合约
+Close submenu (期货合约)期货合约
+Close submenu (期权合约)期权合约
+Close submenu (品种公告)品种公告
+Close submenu (品种介绍)品种介绍
+0Open submenu (期货)期货
+0Open submenu (期权)期权
+Close submenu (期货)期货
+Close submenu (期权)期权
+Close submenu (仓库名录)仓库名录
+Close submenu (丙烯期货/期权)丙烯期货/期权
+0Open submenu (品种新闻)品种新闻
+2Open submenu (标准合约)标准合约
+0Open submenu (品种公告)品种公告
+2Open submenu (品种介绍)品种介绍
+0Open submenu (仓库名录)仓库名录
+Close submenu (品种新闻)品种新闻
+Close submenu (标准合约)标准合约
+0Open submenu (期货合约)期货合约
+0Open submenu (期权合约)期权合约
+Close submenu (期货合约)期货合约
+Close submenu (期权合约)期权合约
+Close submenu (品种公告)品种公告
+Close submenu (品种介绍)品种介绍
+0Open submenu (期货)期货
+0Open submenu (期权)期权
+Close submenu (期货)期货
+Close submenu (期权)期权
+Close submenu (仓库名录)仓库名录
+Close submenu (交易数据)交易数据
+0Open submenu (每日行情)每日行情
+0Open submenu (合约基准价)合约基准价
+0Open submenu (结算参数)结算参数
+0Open submenu (盘中期权结算价发布)盘中期权结算价发布
+0Open submenu (参考数据)参考数据
+0Open submenu (持仓排名)持仓排名
+0Open submenu (成交排名)成交排名
+0Open submenu (阶段成交排名)阶段成交排名
+0Open submenu (交割升贴水)交割升贴水
+0Open submenu (交割配对)交割配对
+0Open submenu (保税交割结算价)保税交割结算价
+0Open submenu (仓单日报)仓单日报
+0Open submenu (期转现统计)期转现统计
+0Open submenu (每周行情)每周行情
+0Open submenu (交易月历)交易月历
+0Open submenu (每月行情)每月行情
+0Open submenu (月度交易汇总)月度交易汇总
+0Open submenu (月度交割查询)月度交割查询
+0Open submenu (月度行权查询)月度行权查询
+0Open submenu (月度市场报告)月度市场报告
+0Open submenu (历史行情下载)历史行情下载
+0Open submenu (行情转发商)行情转发商
+0Open submenu (行情信息授权)行情信息授权
+0Open submenu (月均结算价)月均结算价
+0Open submenu (动态升贴水)动态升贴水
+0Open submenu (交易参数)交易参数
+Close submenu (每日行情)每日行情
+Close submenu (合约基准价)合约基准价
+Close submenu (结算参数)结算参数
+Close submenu (盘中期权结算价发布)盘中期权结算价发布
+Close submenu (参考数据)参考数据
+Close submenu (持仓排名)持仓排名
+Close submenu (成交排名)成交排名
+Close submenu (阶段成交排名)阶段成交排名
+Close submenu (交割升贴水)交割升贴水
+Close submenu (交割配对)交割配对
+Close submenu (保税交割结算价)保税交割结算价
+Close submenu (仓单日报)仓单日报
+Close submenu (期转现统计)期转现统计
+Close submenu (每周行情)每周行情
+Close submenu (交易月历)交易月历
+Close submenu (每月行情)每月行情
+Close submenu (月度交易汇总)月度交易汇总
+Close submenu (月度交割查询)月度交割查询
+Close submenu (月度行权查询)月度行权查询
+Close submenu (月度市场报告)月度市场报告
+Close submenu (历史行情下载)历史行情下载
+Close submenu (行情转发商)行情转发商
+Close submenu (行情信息授权)行情信息授权
+Close submenu (月均结算价)月均结算价
+Close submenu (动态升贴水)动态升贴水
+Close submenu (交易参数)交易参数
+Close submenu (交易所服务)交易所服务
+7Open submenu (市场服务)市场服务
+0Open submenu (PFMI)PFMI
+17Open submenu (会员服务)会员服务
+Close submenu (市场服务)市场服务
+0Open submenu (报名系统)报名系统
+6Open submenu (三业活动)三业活动
+5Open submenu (投教专项工作)投教专项工作
+2Open submenu (产融基地)产融基地
+0Open submenu (专题栏目)专题栏目
+3Open submenu (做市商专栏)做市商专栏
+0Open submenu (“保险+期货”视频展)“保险+期货”视频展
+Close submenu (报名系统)报名系统
+Close submenu (三业活动)三业活动
+0Open submenu (活动申请)活动申请
+0Open submenu (交易所导向)交易所导向
+0Open submenu (合作单位)合作单位
+0Open submenu (活动公布)活动公布
+0Open submenu (资料下载)资料下载
+0Open submenu (监督举报)监督举报
+Close submenu (活动申请)活动申请
+Close submenu (交易所导向)交易所导向
+Close submenu (合作单位)合作单位
+Close submenu (活动公布)活动公布
+Close submenu (资料下载)资料下载
+Close submenu (监督举报)监督举报
+Close submenu (投教专项工作)投教专项工作
+0Open submenu (活动申请)活动申请
+0Open submenu (主题活动)主题活动
+0Open submenu (合作单位)合作单位
+0Open submenu (活动公布)活动公布
+0Open submenu (监督举报)监督举报
+Close submenu (活动申请)活动申请
+Close submenu (主题活动)主题活动
+Close submenu (合作单位)合作单位
+Close submenu (活动公布)活动公布
+Close submenu (监督举报)监督举报
+Close submenu (产融基地)产融基地
+0Open submenu (征集公告)征集公告
+0Open submenu (合作单位)合作单位
+Close submenu (征集公告)征集公告
+Close submenu (合作单位)合作单位
+Close submenu (专题栏目)专题栏目
+Close submenu (做市商专栏)做市商专栏
+0Open submenu (做市公告与通知)做市公告与通知
+0Open submenu (做市商名单)做市商名单
+0Open submenu (常用表格)常用表格
+Close submenu (做市公告与通知)做市公告与通知
+Close submenu (做市商名单)做市商名单
+Close submenu (常用表格)常用表格
+Close submenu (“保险+期货”视频展)“保险+期货”视频展
+Close submenu (PFMI)PFMI
+Close submenu (会员服务)会员服务
+2Open submenu (会籍管理)会籍管理
+0Open submenu (数字证书)数字证书
+5Open submenu (交易业务指引)交易业务指引
+10Open submenu (交割业务指引)交割业务指引
+2Open submenu (结算业务指引)结算业务指引
+5Open submenu (套期保值业务指引)套期保值业务指引
+0Open submenu (套利业务指引)套利业务指引
+0Open submenu (实际控制关系报备)实际控制关系报备
+0Open submenu (提示信息)提示信息
+5Open submenu (会员常用表格)会员常用表格
+0Open submenu (收费标准)收费标准
+0Open submenu (存管银行信息)存管银行信息
+0Open submenu (境外经纪机构名单)境外经纪机构名单
+3Open submenu (技术专栏)技术专栏
+0Open submenu (标准仓单信息查询)标准仓单信息查询
+0Open submenu (电子函证平台)电子函证平台
+3Open submenu (SPBM组合保证金)SPBM组合保证金
+Close submenu (会籍管理)会籍管理
+0Open submenu (业务流程)业务流程
+0Open submenu (业务咨询)业务咨询
+Close submenu (业务流程)业务流程
+Close submenu (业务咨询)业务咨询
+Close submenu (数字证书)数字证书
+Close submenu (交易业务指引)交易业务指引
+0Open submenu (业务术语)业务术语
+0Open submenu (应急交易终端业务)应急交易终端业务
+0Open submenu (开户业务指引)开户业务指引
+0Open submenu (业务资料)业务资料
+0Open submenu (开户业务联系方式)开户业务联系方式
+Close submenu (业务术语)业务术语
+Close submenu (应急交易终端业务)应急交易终端业务
+Close submenu (开户业务指引)开户业务指引
+Close submenu (业务资料)业务资料
+Close submenu (开户业务联系方式)开户业务联系方式
+Close submenu (交割业务指引)交割业务指引
+0Open submenu (交割规则)交割规则
+0Open submenu (交割业务公告)交割业务公告
+0Open submenu (业务流程)业务流程
+0Open submenu (仓单保费计算)仓单保费计算
+0Open submenu (仓库名录)仓库名录
+0Open submenu (质检机构)质检机构
+0Open submenu (仓库申请)仓库申请
+0Open submenu (交割及免检品牌)交割及免检品牌
+0Open submenu (交割费用)交割费用
+0Open submenu (纯度鉴定)纯度鉴定
+Close submenu (交割规则)交割规则
+Close submenu (交割业务公告)交割业务公告
+Close submenu (业务流程)业务流程
+Close submenu (仓单保费计算)仓单保费计算
+Close submenu (仓库名录)仓库名录
+Close submenu (质检机构)质检机构
+Close submenu (仓库申请)仓库申请
+Close submenu (交割及免检品牌)交割及免检品牌
+Close submenu (交割费用)交割费用
+Close submenu (纯度鉴定)纯度鉴定
+Close submenu (结算业务指引)结算业务指引
+0Open submenu (业务指引)业务指引
+0Open submenu (业务流程)业务流程
+Close submenu (业务指引)业务指引
+Close submenu (业务流程)业务流程
+Close submenu (套期保值业务指引)套期保值业务指引
+0Open submenu (业务流程)业务流程
+0Open submenu (业务操作指南)业务操作指南
+0Open submenu (套保参数)套保参数
+0Open submenu (套保业务相关通知)套保业务相关通知
+0Open submenu (联系方式)联系方式
+Close submenu (业务流程)业务流程
+Close submenu (业务操作指南)业务操作指南
+Close submenu (套保参数)套保参数
+Close submenu (套保业务相关通知)套保业务相关通知
+Close submenu (联系方式)联系方式
+Close submenu (套利业务指引)套利业务指引
+Close submenu (实际控制关系报备)实际控制关系报备
+Close submenu (提示信息)提示信息
+Close submenu (会员常用表格)会员常用表格
+0Open submenu (资产作为保证金业务)资产作为保证金业务
+0Open submenu (交割结算业务)交割结算业务
+0Open submenu (仓单入库报表)仓单入库报表
+0Open submenu (套期保值业务)套期保值业务
+0Open submenu (大户报告表)大户报告表
+Close submenu (资产作为保证金业务)资产作为保证金业务
+Close submenu (交割结算业务)交割结算业务
+Close submenu (仓单入库报表)仓单入库报表
+Close submenu (套期保值业务)套期保值业务
+Close submenu (大户报告表)大户报告表
+Close submenu (收费标准)收费标准
+Close submenu (存管银行信息)存管银行信息
+Close submenu (境外经纪机构名单)境外经纪机构名单
+Close submenu (技术专栏)技术专栏
+0Open submenu (技术服务指引)技术服务指引
+0Open submenu (技术服务文档)技术服务文档
+0Open submenu (远程系统接口及文档)远程系统接口及文档
+Close submenu (技术服务指引)技术服务指引
+Close submenu (技术服务文档)技术服务文档
+Close submenu (远程系统接口及文档)远程系统接口及文档
+Close submenu (标准仓单信息查询)标准仓单信息查询
+Close submenu (电子函证平台)电子函证平台
+Close submenu (SPBM组合保证金)SPBM组合保证金
+0Open submenu (SPBM试算工具)SPBM试算工具
+0Open submenu (具体算法)具体算法
+0Open submenu (投教资料)投教资料
+Close submenu (SPBM试算工具)SPBM试算工具
+Close submenu (具体算法)具体算法
+Close submenu (投教资料)投教资料
+Close submenu (法律及规则)法律及规则
+5Open submenu (交易所规则)交易所规则
+4Open submenu (法律法规)法律法规
+0Open submenu (自律监管)自律监管
+0Open submenu (案例库)案例库
+0Open submenu (统计数据)统计数据
+0Open submenu (期货和衍生品法律网)期货和衍生品法律网
+Close submenu (交易所规则)交易所规则
+0Open submenu (章程及交易规则)章程及交易规则
+0Open submenu (业务办法)业务办法
+0Open submenu (品种细则)品种细则
+0Open submenu (其他相关规定)其他相关规定
+0Open submenu (历史版本)历史版本
+Close submenu (章程及交易规则)章程及交易规则
+Close submenu (业务办法)业务办法
+Close submenu (品种细则)品种细则
+Close submenu (其他相关规定)其他相关规定
+Close submenu (历史版本)历史版本
+Close submenu (法律法规)法律法规
+0Open submenu (法律)法律
+0Open submenu (行政法规)行政法规
+0Open submenu (部门规章)部门规章
+0Open submenu (司法解释)司法解释
+Close submenu (法律)法律
+Close submenu (行政法规)行政法规
+Close submenu (部门规章)部门规章
+Close submenu (司法解释)司法解释
+Close submenu (自律监管)自律监管
+Close submenu (案例库)案例库
+Close submenu (统计数据)统计数据
+Close submenu (期货和衍生品法律网)期货和衍生品法律网
+Close submenu (网站信息)网站信息
+0Open submenu (网站地图)网站地图
+0Open submenu (法律声明)法律声明
+2Open submenu (延时行情)延时行情
+0Open submenu (易盛商品指数行情)易盛商品指数行情
+Close submenu (网站地图)网站地图
+Close submenu (法律声明)法律声明
+Close submenu (延时行情)延时行情
+0Open submenu (期货延时行情)期货延时行情
+0Open submenu (期权延时行情)期权延时行情
+Close submenu (期货延时行情)期货延时行情
+Close submenu (期权延时行情)期权延时行情
+Close submenu (易盛商品指数行情)易盛商品指数行情
+Close submenu (我是会员)我是会员
+Close submenu (我是投资者)我是投资者
+0Open submenu (业务流程)业务流程
+Close submenu (业务流程)业务流程
+Close submenu (我是求职者)我是求职者
+Close submenu (专题栏目)专题栏目
+5Open submenu (丙烯期货期权上市专题)丙烯期货期权上市专题
+5Open submenu (瓶片期权上市专题)瓶片期权上市专题
+5Open submenu (瓶片期货上市专题)瓶片期货上市专题
+5Open submenu (红枣、玻璃期权上市专题)红枣、玻璃期权上市专题
+5Open submenu (期货服务县域经济发展麦盖提样本展)期货服务县域经济发展麦盖提样本展
+6Open submenu (纯碱、短纤、锰硅、硅铁、尿素及苹果期权上市专题)纯碱、短纤、锰硅、硅铁、尿素及苹果期权上市专题
+5Open submenu (菜籽油、菜籽粕、花生期货及期权引入境外交易者专题)菜籽油、菜籽粕、花生期货及期权引入境外交易者专题
+7Open submenu (菜籽油花生期权上市专题)菜籽油花生期权上市专题
+4Open submenu (花生期货上市专题)花生期货上市专题
+5Open submenu (普法专栏)普法专栏
+4Open submenu (短纤期货上市专题)短纤期货上市专题
+7Open submenu (动力煤期权上市专题)动力煤期权上市专题
+7Open submenu (菜籽粕期权上市专题)菜籽粕期权上市专题
+7Open submenu (PTA、甲醇期权上市专题)PTA、甲醇期权上市专题
+7Open submenu (纯碱期货上市专题)纯碱期货上市专题
+4Open submenu (尿素期货上市专题)尿素期货上市专题
+4Open submenu (红枣期货上市专题)红枣期货上市专题
+6Open submenu (棉花期权上市专题)棉花期权上市专题
+7Open submenu (白糖期权专题)白糖期权专题
+4Open submenu (苹果期货上市专题)苹果期货上市专题
+4Open submenu (棉纱期货专题)棉纱期货专题
+6Open submenu (铁合金专题)铁合金专题
+Close submenu (丙烯期货期权上市专题)丙烯期货期权上市专题
+0Open submenu (公告与通知)公告与通知
+0Open submenu (合约规则)合约规则
+0Open submenu (培训与视频)培训与视频
+0Open submenu (投教材料)投教材料
+0Open submenu (媒体报道)媒体报道
+Close submenu (公告与通知)公告与通知
+Close submenu (合约规则)合约规则
+Close submenu (培训与视频)培训与视频
+Close submenu (投教材料)投教材料
+Close submenu (媒体报道)媒体报道
+Close submenu (瓶片期权上市专题)瓶片期权上市专题
+0Open submenu (公告与通知)公告与通知
+0Open submenu (合约规则)合约规则
+0Open submenu (培训与视频)培训与视频
+0Open submenu (投教材料)投教材料
+0Open submenu (媒体报道)媒体报道
+Close submenu (公告与通知)公告与通知
+Close submenu (合约规则)合约规则
+Close submenu (培训与视频)培训与视频
+Close submenu (投教材料)投教材料
+Close submenu (媒体报道)媒体报道
+Close submenu (瓶片期货上市专题)瓶片期货上市专题
+0Open submenu (公告与通知)公告与通知
+0Open submenu (合约规则)合约规则
+0Open submenu (培训与视频)培训与视频
+0Open submenu (投教材料)投教材料
+0Open submenu (媒体报道)媒体报道
+Close submenu (公告与通知)公告与通知
+Close submenu (合约规则)合约规则
+Close submenu (培训与视频)培训与视频
+Close submenu (投教材料)投教材料
+Close submenu (媒体报道)媒体报道
+Close submenu (红枣、玻璃期权上市专题)红枣、玻璃期权上市专题
+0Open submenu (公告与通知)公告与通知
+0Open submenu (合约规则)合约规则
+0Open submenu (投教材料)投教材料
+0Open submenu (媒体报道)媒体报道
+0Open submenu (常见问题)常见问题
+Close submenu (公告与通知)公告与通知
+Close submenu (合约规则)合约规则
+Close submenu (投教材料)投教材料
+Close submenu (媒体报道)媒体报道
+Close submenu (常见问题)常见问题
+Close submenu (期货服务县域经济发展麦盖提样本展)期货服务县域经济发展麦盖提样本展
+0Open submenu (序厅)序厅
+4Open submenu (枣农增收)枣农增收
+3Open submenu (产业赋能)产业赋能
+4Open submenu (经济增长)经济增长
+0Open submenu (尾厅)尾厅
+Close submenu (序厅)序厅
+Close submenu (枣农增收)枣农增收
+0Open submenu (导语)导语
+0Open submenu (品质有提升)品质有提升
+0Open submenu (议价有参考)议价有参考
+0Open submenu (兜底又保障)兜底又保障
+Close submenu (导语)导语
+Close submenu (品质有提升)品质有提升
+Close submenu (议价有参考)议价有参考
+Close submenu (兜底又保障)兜底又保障
+Close submenu (产业赋能)产业赋能
+0Open submenu (导语)导语
+0Open submenu (带动产业集聚)带动产业集聚
+0Open submenu (延长产业链条)延长产业链条
+Close submenu (导语)导语
+Close submenu (带动产业集聚)带动产业集聚
+Close submenu (延长产业链条)延长产业链条
+Close submenu (经济增长)经济增长
+0Open submenu (导语)导语
+0Open submenu (带动就业增长)带动就业增长
+0Open submenu (企业效益提升)企业效益提升
+0Open submenu (打造特色品牌)打造特色品牌
+Close submenu (导语)导语
+Close submenu (带动就业增长)带动就业增长
+Close submenu (企业效益提升)企业效益提升
+Close submenu (打造特色品牌)打造特色品牌
+Close submenu (尾厅)尾厅
+Close submenu (纯碱、短纤、锰硅、硅铁、尿素及苹果期权上市专题)纯碱、短纤、锰硅、硅铁、尿素及苹果期权上市专题
+0Open submenu (公告与通知)公告与通知
+0Open submenu (合约规则)合约规则
+0Open submenu (培训与视频)培训与视频
+0Open submenu (投教材料)投教材料
+0Open submenu (媒体报道)媒体报道
+0Open submenu (常见问题)常见问题
+Close submenu (公告与通知)公告与通知
+Close submenu (合约规则)合约规则
+Close submenu (培训与视频)培训与视频
+Close submenu (投教材料)投教材料
+Close submenu (媒体报道)媒体报道
+Close submenu (常见问题)常见问题
+Close submenu (菜籽油、菜籽粕、花生期货及期权引入境外交易者专题)菜籽油、菜籽粕、花生期货及期权引入境外交易者专题
+0Open submenu (公告与通知)公告与通知
+0Open submenu (合约规则)合约规则
+0Open submenu (培训与视频)培训与视频
+0Open submenu (投教材料)投教材料
+0Open submenu (媒体报道)媒体报道
+Close submenu (公告与通知)公告与通知
+Close submenu (合约规则)合约规则
+Close submenu (培训与视频)培训与视频
+Close submenu (投教材料)投教材料
+Close submenu (媒体报道)媒体报道
+Close submenu (菜籽油花生期权上市专题)菜籽油花生期权上市专题
+0Open submenu (公告与通知)公告与通知
+0Open submenu (合约规则)合约规则
+0Open submenu (培训与视频)培训与视频
+0Open submenu (投教材料)投教材料
+0Open submenu (做市商)做市商
+0Open submenu (媒体报道)媒体报道
+0Open submenu (常见问题)常见问题
+Close submenu (公告与通知)公告与通知
+Close submenu (合约规则)合约规则
+Close submenu (培训与视频)培训与视频
+Close submenu (投教材料)投教材料
+Close submenu (做市商)做市商
+Close submenu (媒体报道)媒体报道
+Close submenu (常见问题)常见问题
+Close submenu (花生期货上市专题)花生期货上市专题
+0Open submenu (公告与通知)公告与通知
+0Open submenu (合约规则)合约规则
+0Open submenu (培训与视频)培训与视频
+0Open submenu (媒体报道)媒体报道
+Close submenu (公告与通知)公告与通知
+Close submenu (合约规则)合约规则
+Close submenu (培训与视频)培训与视频
+Close submenu (媒体报道)媒体报道
+Close submenu (普法专栏)普法专栏
+0Open submenu (媒体关注)媒体关注
+0Open submenu (“漫”话期货和衍生品法)“漫”话期货和衍生品法
+0Open submenu (普法视频)普法视频
+0Open submenu (期货和衍生品法问答)期货和衍生品法问答
+0Open submenu (普法文化)普法文化
+Close submenu (媒体关注)媒体关注
+Close submenu (“漫”话期货和衍生品法)“漫”话期货和衍生品法
+Close submenu (普法视频)普法视频
+Close submenu (期货和衍生品法问答)期货和衍生品法问答
+Close submenu (普法文化)普法文化
+Close submenu (短纤期货上市专题)短纤期货上市专题
+0Open submenu (公告与通知)公告与通知
+0Open submenu (合约规则)合约规则
+0Open submenu (培训与视频)培训与视频
+0Open submenu (媒体报道)媒体报道
+Close submenu (公告与通知)公告与通知
+Close submenu (合约规则)合约规则
+Close submenu (培训与视频)培训与视频
+Close submenu (媒体报道)媒体报道
+Close submenu (动力煤期权上市专题)动力煤期权上市专题
+0Open submenu (公告与通知)公告与通知
+0Open submenu (合约规则)合约规则
+0Open submenu (培训与视频)培训与视频
+0Open submenu (投教材料)投教材料
+0Open submenu (做市商)做市商
+0Open submenu (媒体报道)媒体报道
+0Open submenu (常见问题)常见问题
+Close submenu (公告与通知)公告与通知
+Close submenu (合约规则)合约规则
+Close submenu (培训与视频)培训与视频
+Close submenu (投教材料)投教材料
+Close submenu (做市商)做市商
+Close submenu (媒体报道)媒体报道
+Close submenu (常见问题)常见问题
+Close submenu (菜籽粕期权上市专题)菜籽粕期权上市专题
+0Open submenu (公告与通知)公告与通知
+0Open submenu (合约规则)合约规则
+0Open submenu (培训与视频)培训与视频
+0Open submenu (投教材料)投教材料
+0Open submenu (做市商)做市商
+0Open submenu (媒体报道)媒体报道
+0Open submenu (常见问题)常见问题
+Close submenu (公告与通知)公告与通知
+Close submenu (合约规则)合约规则
+Close submenu (培训与视频)培训与视频
+Close submenu (投教材料)投教材料
+Close submenu (做市商)做市商
+Close submenu (媒体报道)媒体报道
+Close submenu (常见问题)常见问题
+Close submenu (PTA、甲醇期权上市专题)PTA、甲醇期权上市专题
+0Open submenu (公告与通知)公告与通知
+0Open submenu (合约规则)合约规则
+0Open submenu (培训与视频)培训与视频
+0Open submenu (做市商)做市商
+0Open submenu (媒体报道)媒体报道
+0Open submenu (常见问题)常见问题
+0Open submenu (投教材料)投教材料
+Close submenu (公告与通知)公告与通知
+Close submenu (合约规则)合约规则
+Close submenu (培训与视频)培训与视频
+Close submenu (做市商)做市商
+Close submenu (媒体报道)媒体报道
+Close submenu (常见问题)常见问题
+Close submenu (投教材料)投教材料
+Close submenu (纯碱期货上市专题)纯碱期货上市专题
+0Open submenu (公告与通知)公告与通知
+0Open submenu (业务规则)业务规则
+0Open submenu (媒体报道)媒体报道
+0Open submenu (培训材料)培训材料
+0Open submenu (会议议程)会议议程
+0Open submenu (嘉宾介绍)嘉宾介绍
+0Open submenu (图片切换)图片切换
+Close submenu (公告与通知)公告与通知
+Close submenu (业务规则)业务规则
+Close submenu (媒体报道)媒体报道
+Close submenu (培训材料)培训材料
+Close submenu (会议议程)会议议程
+Close submenu (嘉宾介绍)嘉宾介绍
+Close submenu (图片切换)图片切换
+Close submenu (尿素期货上市专题)尿素期货上市专题
+0Open submenu (培训与视频)培训与视频
+0Open submenu (媒体报道)媒体报道
+0Open submenu (公告与通知)公告与通知
+0Open submenu (合约规则)合约规则
+Close submenu (培训与视频)培训与视频
+Close submenu (媒体报道)媒体报道
+Close submenu (公告与通知)公告与通知
+Close submenu (合约规则)合约规则
+Close submenu (红枣期货上市专题)红枣期货上市专题
+0Open submenu (公告与通知)公告与通知
+0Open submenu (合约规则)合约规则
+0Open submenu (培训与视频)培训与视频
+0Open submenu (媒体报道)媒体报道
+Close submenu (公告与通知)公告与通知
+Close submenu (合约规则)合约规则
+Close submenu (培训与视频)培训与视频
+Close submenu (媒体报道)媒体报道
+Close submenu (棉花期权上市专题)棉花期权上市专题
+0Open submenu (公告与通知)公告与通知
+0Open submenu (合约规则)合约规则
+0Open submenu (培训与视频)培训与视频
+0Open submenu (做市商)做市商
+0Open submenu (媒体报道)媒体报道
+0Open submenu (常见问题)常见问题
+Close submenu (公告与通知)公告与通知
+Close submenu (合约规则)合约规则
+Close submenu (培训与视频)培训与视频
+Close submenu (做市商)做市商
+Close submenu (媒体报道)媒体报道
+Close submenu (常见问题)常见问题
+Close submenu (白糖期权专题)白糖期权专题
+0Open submenu (公告与通知)公告与通知
+0Open submenu (合约规则)合约规则
+0Open submenu (培训与视频)培训与视频
+0Open submenu (做市商)做市商
+0Open submenu (仿真交易)仿真交易
+0Open submenu (媒体报道)媒体报道
+0Open submenu (常见问题)常见问题
+Close submenu (公告与通知)公告与通知
+Close submenu (合约规则)合约规则
+Close submenu (培训与视频)培训与视频
+Close submenu (做市商)做市商
+Close submenu (仿真交易)仿真交易
+Close submenu (媒体报道)媒体报道
+Close submenu (常见问题)常见问题
+Close submenu (苹果期货上市专题)苹果期货上市专题
+0Open submenu (公告与通知)公告与通知
+0Open submenu (合约规则)合约规则
+0Open submenu (培训与视频)培训与视频
+0Open submenu (媒体报道)媒体报道
+Close submenu (公告与通知)公告与通知
+Close submenu (合约规则)合约规则
+Close submenu (培训与视频)培训与视频
+Close submenu (媒体报道)媒体报道
+Close submenu (棉纱期货专题)棉纱期货专题
+0Open submenu (公告与通知)公告与通知
+0Open submenu (合约规则)合约规则
+0Open submenu (培训与视频)培训与视频
+0Open submenu (媒体报道)媒体报道
+Close submenu (公告与通知)公告与通知
+Close submenu (合约规则)合约规则
+Close submenu (培训与视频)培训与视频
+Close submenu (媒体报道)媒体报道
+Close submenu (铁合金专题)铁合金专题
+0Open submenu (上市资讯)上市资讯
+0Open submenu (上市活动)上市活动
+2Open submenu (合约规则)合约规则
+0Open submenu (宣传资料)宣传资料
+0Open submenu (基础知识)基础知识
+0Open submenu (推介会日程安排)推介会日程安排
+Close submenu (上市资讯)上市资讯
+Close submenu (上市活动)上市活动
+Close submenu (合约规则)合约规则
+0Open submenu (合约规则)合约规则
+0Open submenu (合约规则表单)合约规则表单
+Close submenu (合约规则)合约规则
+Close submenu (合约规则表单)合约规则表单
+Close submenu (宣传资料)宣传资料
+Close submenu (基础知识)基础知识
+Close submenu (推介会日程安排)推介会日程安排
+Close submenu (衍生品学苑)衍生品学苑
+Close submenu (综合业务平台)综合业务平台
+Close submenu (新版首页banner图片)新版首页banner图片
+Close submenu (首页上传视频)首页上传视频
+Close submenu (个人信息保护告知书)个人信息保护告知书
+Close submenu (个人信息保护告知书(历史版本))个人信息保护告知书(历史版本)
+我是会员 |
+ 我是投资者 |
+ 我是求职者 |
+ 设为首页 |
+ 收藏本站 |
+繁體中文
+ |
+ EN |
+ 期权网
+首页
+上市品种
+交易数据
+交易所服务
+法律及规则
+衍生品学苑
+综合业务平台
+关于交易所
+农产品
+强麦期货
+普麦期货
+棉花期货/期权
+白糖期货/期权
+菜籽油期货/期权
+早籼稻期货
+油菜籽期货
+菜籽粕期货/期权
+粳稻期货
+晚籼稻期货
+棉纱期货
+苹果期货/期权
+红枣期货/期权
+花生期货/期权
+非农产品
+PTA期货/期权
+甲醇期货/期权
+玻璃期货/期权
+动力煤期货/期权
+硅铁期货/期权
+锰硅期货/期权
+尿素期货/期权
+纯碱期货/期权
+短纤期货/期权
+对二甲苯期货/期权
+烧碱期货/期权
+瓶片期货/期权
+丙烯期货/期权
+交易数据
+每日行情/每周行情
+合约基准价
+结算参数
+盘中期权结算价发布
+参考数据
+持仓排名
+成交排名
+阶段成交排名
+交割升贴水
+交割配对
+保税交割结算价
+仓单日报
+期转现统计
+交易月历
+每月行情
+月度交易汇总
+月度交割查询
+月度行权查询
+月度市场报告
+历史行情下载
+月均结算价
+动态升贴水
+交易参数
+交易月度市场报告
+月度市场报告2025122026-01-09
+月度市场报告2025112025-12-04
+月度市场报告2025102025-11-07
+月度市场报告2025092025-10-17
+月度市场报告2025082025-09-05
+月度市场报告2025072025-08-07
+会员服务
+会籍管理
+数字证书
+交易业务指引
+交割业务指引
+结算业务指引
+套期保值业务指引
+套利业务指引
+实际控制关系报备
+提示信息
+会员常用表格
+收费标准
+存管银行信息
+境外经纪机构名单
+技术专栏
+标准仓单信息查询
+电子函证平台
+SPBM组合保证金
+市场服务
+三业活动
+报名系统
+投教专项工作
+产融基地
+专题栏目
+做市商专栏
+“保险+期货”视频展
+会议与活动
+2016年PTA期货论坛
+2015年白糖期货论坛
+2015年30人论坛
+2014年棉花期货论坛
+白糖期权专题
+棉纱期货专题
+夜盘专题
+PFMI
+会员常用表格
+交割担保金及仓储费退款申请表
+苹果期货交收常用表格
+标准仓单质押登记授权委托书
+郑州商品交易所套期保值业务常用表格
+红枣期货入库明细表
+进口对二甲苯单证合法、真实、有效保证书
+郑州商品交易所客户资产作为保证金专项授权...
+交易所规则
+章程及交易规则
+业务办法
+品种细则
+其他相关规定
+历史版本
+法律法规
+法律
+行政法规
+部门规章
+司法解释
+自律监管
+关于对部分客户采取暂停开仓...
+关于对部分客户采取暂停开仓...
+关于对部分客户采取暂停开仓...
+关于对部分客户采取暂停开仓...
+关于对部分客户采取暂停开仓...
+关于对部分客户采取暂停开仓...
+关于对部分客户采取暂停开仓...
+案例库
+期货市场典型违规案例（二）
+期货市场典型违规案例（一）
+关于虚假材料申请套期保值案...
+对一起利用自成交手段扰乱市...
+关于集合竞价阶段涨跌停板双...
+统计数据
+2025年12月自律监管统计信...
+2025年11月自律监管统计信...
+2025年10月自律监管统计信...
+2025年9月自律监管统计信息
+2025年8月自律监管统计信息
+2025年7月自律监管统计信息
+2025年6月自律监管统计信息
+本所介绍
+企业文化
+组织机构
+党的建设
+交易所动态
+大事记
+历年年报
+招贤纳士
+期货市场研究丛书
+博士后工作站
+采购信息
+交易所会员
+联系我们
+本所介绍
+郑州商品交易所（以下简称郑商所）成立于1990年10月，是国务院批准成立的首家期货市场试点单位，由中国证监会管理。
+ 【更多内容>>】
+大事记
+2025年8月20日，郑商所举办中国（郑...
+2025年7月22日，郑商所丙烯期货及期...
+2025年4月24日，郑商所在郑州举办第...
+2024年12月27日，郑商所瓶片期权成...
+2024年10月8日，郑商所六期交易系统...
+2024年8月30日，郑商所瓶片期货成功...
+2024年6月21日，郑商所红枣、玻璃期...
+频道页导航下留白
+EN
+首页 >> 交易数据 >> 持仓排名
+持仓排名
+数据展开
+交易数据
+当前日期为:
+ « 九月 2026 »
+ 一 二 三 四 五 六 日 
+ 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30
+选择品种： --品种代码--棉花CF白糖SRPTA菜油OI早籼RI强麦WH玻璃FG普麦PM油菜籽RS菜籽粕RM动力煤ZC粳稻JR甲醇MA晚籼LR硅铁SF锰硅SM棉纱CY苹果AP红枣CJ尿素UR纯碱SA短纤PF花生PK对二甲苯PX烧碱SH瓶片PR丙烯PL--历史代码--早籼ER菜油RO强麦WS硬麦WT甲醇ME动力煤TC--品种代码--棉花CF甲醇MA菜籽粕RM白糖SRPTA动力煤ZC菜油OI花生PK对二甲苯PX烧碱SH纯碱SA短纤PF锰硅SM硅铁SF尿素UR苹果AP红枣CJ玻璃FG瓶片PR丙烯PL
+期权期货
+本表其它日期查询，请选择日期后点击"查询"，当日数据需在收市结算完成后生成。
+每日行情
+合约基准价
+结算参数
+盘中期权结算价发布
+参考数据
+持仓排名
+成交排名
+阶段成交排名
+交割升贴水
+交割配对
+保税交割结算价
+仓单日报
+期转现统计
+每周行情
+交易月历
+每月行情
+月度交易汇总
+月度交割查询
+月度行权查询
+月度市场报告
+历史行情下载
+行情转发商
+行情信息授权
+月均结算价
+动态升贴水
+交易参数
+法律声明 | 个人信息保护告知书 | 联系我们 | 网站地图 | English
+我是会员 |  我是投资者 |  我是求职者
+豫ICP备05018130号 地址：郑州市郑东新区商务外环路30号 邮编：450018
+本网站支持IPV6访问
+微信
+官方微信
+微博
+官方微博
+官方App
+官方APP
+分享到
+联系我们
+联系我们
+网站地图
+网站地图
+业务系统
+业务系统
+返回顶部
+返回顶部IhRYzW4La_ti

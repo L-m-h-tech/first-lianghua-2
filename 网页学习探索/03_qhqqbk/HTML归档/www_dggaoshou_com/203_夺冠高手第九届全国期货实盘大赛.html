@@ -1,0 +1,1181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>夺冠高手全国期货实盘大赛</title>
+  <meta name="keywords" content="夺冠高手、夺冠、实盘大赛、量化组比赛、轻量组、重量组、主观交易" />
+  <meta name="description" content="夺冠高手全国期货实盘大赛" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+  <link rel="stylesheet" href="plug-in/weui/weui.min.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/pc.css?1205" />
+  <link rel="stylesheet" href="css/pc2.min.css" />
+  <link rel="stylesheet" href="/css/jquery-confirm.css" />
+  <link rel="stylesheet" href="plug-in/swiper/swiper.min.css" />
+  <link rel="stylesheet" type="text/css" href="/css/element-ui.css">
+  <link rel="stylesheet" href="css/coverage.min.css" />
+  <script type="text/javascript" src="plug-in/jquery/jquery.min.js"></script>
+  <script src="plug-in/weui/jquery-weui.min.js"></script>
+  <script>
+    var navid = "home";
+  </script>
+  <style>
+    .table-ranking-all tr th {
+      width: 33.3%;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app" v-cloak class="appbg">
+    <!-- 屏幕右侧悬浮导航 -->
+    <div class="right-sidebar">
+      <div class="sidebar" @click="goEnroll">
+        <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+          <path
+            d="m256 143.75 56.277344 29.589844-10.75-62.667969 45.558594-44.398437-62.945313-9.140626-28.140625-57.132812-28.140625 57.132812-62.945313 9.140626 45.558594 44.398437-10.75 62.667969zm0 0" />
+          <path
+            d="m446.136719 159.128906-28.140625-57.023437-28.140625 57.023437-62.914063 9.140625 45.527344 44.386719-10.75 62.679688 56.277344-29.589844 56.308594 29.589844-10.78125-62.679688 48.476562-44.386719zm0 0" />
+          <path
+            d="m48.476562 212.65625-10.78125 62.679688 56.308594-29.589844 56.277344 29.589844-10.75-62.679688 45.527344-44.386719-62.914063-9.140625-28.140625-57.023437-28.140625 57.023437-65.863281 9.140625zm0 0" />
+          <path
+            d="m331 286c0-41.351562-33.648438-75-75-75s-75 33.648438-75 75 33.648438 75 75 75 75-33.648438 75-75zm0 0" />
+          <path d="m151 466v46h210v-46c0-57.890625-47.109375-105-105-105s-105 47.109375-105 105zm0 0" />
+          <path
+            d="m481 496c0-41.351562-33.648438-75-75-75-7.757812 0-15.09375 1.523438-22.136719 3.71875 4.246094 13.09375 7.136719 26.792969 7.136719 41.28125v46h90zm0 0" />
+          <path
+            d="m466 361c0-33.089844-26.910156-60-60-60s-60 26.910156-60 60c0 1.910156.386719 3.714844.5625 5.578125 14.792969 13.484375 26.722656 29.941406 34.386719 48.765625 7.648437 3.542969 16.082031 5.65625 25.050781 5.65625 33.089844 0 60-26.910156 60-60zm0 0" />
+          <path
+            d="m165.4375 366.578125c.175781-1.863281.5625-3.667969.5625-5.578125 0-33.089844-26.910156-60-60-60s-60 26.910156-60 60 26.910156 60 60 60c8.96875 0 17.402344-2.113281 25.050781-5.652344 7.664063-18.828125 19.59375-35.285156 34.386719-48.769531zm0 0" />
+          <path
+            d="m31 496v16h90v-46c0-14.488281 2.890625-28.1875 7.136719-41.28125-7.042969-2.195312-14.378907-3.71875-22.136719-3.71875-41.351562 0-75 33.648438-75 75zm0 0" />
+        </svg>
+        <div class="popup-wx bm">
+          <div>报名参赛</div>
+        </div>
+      </div>
+      <div class="sidebar">
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px" y="0px" viewBox="0 0 512 512" style="enable-background: new 0 0 512 512" xml:space="preserve"
+          fill="currentColor">
+          <path
+            d="M192,32C85.952,32,0,103.648,0,192c0,50.944,28.736,96.128,73.312,125.376L48,368l68.96-29.536
+            c14.784,5.248,30.144,9.568,46.56,11.584c-2.24-9.76-3.52-19.776-3.52-30.048c0-88.224,86.112-160,192-160
+            c9.696,0,19.168,0.8,28.512,1.952C363.616,87.968,285.696,32,192,32z M128,152c-13.248,0-24-10.752-24-24s10.752-24,24-24
+            s24,10.752,24,24S141.248,152,128,152z M256,152c-13.248,0-24-10.752-24-24s10.752-24,24-24s24,10.752,24,24S269.248,152,256,152z" />
+          <path
+            d="M512,320c0-70.688-71.648-128-160-128s-160,57.312-160,128s71.648,128,160,128c14.528,0,28.352-2.048,41.76-4.96L480,480
+            l-29.824-59.616C487.552,396.96,512,360.928,512,320z M304,312c-13.248,0-24-10.752-24-24s10.752-24,24-24s24,10.752,24,24
+            S317.248,312,304,312z M400,312c-13.248,0-24-10.752-24-24s10.752-24,24-24s24,10.752,24,24S413.248,312,400,312z" />
+        </svg>
+        <div class="popup-wx">
+          <div>扫一扫</div>
+          <div>关注夺冠高手</div>
+          <div>微信公众号</div>
+          <img class="mt" src="./images/qWEIXIN.png" alt="" />
+        </div>
+      </div>
+      <div class="sidebar">
+        <svg id="glip" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+          <path
+            d="m58.83776 21.9966a2.13211 2.13211 0 0 0 -2.2189.19018l-12.46792 9.351v-6.60378a3.1791 3.1791 0 0 0 -3.16981-3.16981h-33.81132a3.1791 3.1791 0 0 0 -3.16981 3.16981v27.4717a3.17232 3.17232 0 0 0 3.16981 3.1698h33.81132a3.17232 3.17232 0 0 0 3.16981-3.16981v-6.60377l12.46792 9.36149a2.16175 2.16175 0 0 0 1.26793.41209 2.19708 2.19708 0 0 0 .951-.22191 2.1034 2.1034 0 0 0 1.16221-1.8913v-29.5849a2.09956 2.09956 0 0 0 -1.16224-1.88079zm-23.88986 17.59248-16.46184 9.50944a1.06691 1.06691 0 0 1 -.5283.13736 1.01213 1.01213 0 0 1 -.5283-.13736 1.06033 1.06033 0 0 1 -.5283-.91924v-19.01887a1.05662 1.05662 0 0 1 1.5849-.90867l16.46184 9.50944a1.0547 1.0547 0 0 1 0 1.8279z" />
+          <path d="m19.014 46.351 13.292-7.681-13.292-7.671z" />
+          <path
+            d="m33.51061 19.73565h3.83226a1.05661 1.05661 0 0 0 0-2.11321h-3.83226a1.24359 1.24359 0 0 1 -1.24233-1.24233v-1.24285h5.07459a1.05661 1.05661 0 0 0 0-2.11321h-5.07459v-1.24285a1.2436 1.2436 0 0 1 1.24233-1.24234h3.83226a1.05661 1.05661 0 0 0 0-2.11321h-3.83226a3.35956 3.35956 0 0 0 -3.35554 3.35555v4.59891a3.35955 3.35955 0 0 0 3.35554 3.35554z" />
+          <path
+            d="m18.94826 19.73565a1.05632 1.05632 0 0 0 1.0566-1.0566v-9.19679a1.0566 1.0566 0 1 0 -2.1132 0v9.19679a1.05632 1.05632 0 0 0 1.0566 1.0566z" />
+          <path
+            d="m9.75147 19.73565h6.1312a1.05661 1.05661 0 0 0 0-2.11321h-5.07459v-8.14018a1.05661 1.05661 0 1 0 -2.11321 0v9.19679a1.05632 1.05632 0 0 0 1.0566 1.0566z" />
+          <path
+            d="m24.07857 19.01336a1.056 1.056 0 0 0 2.00383 0l3.0656-9.19679a1.05622 1.05622 0 1 0 -2.00384-.66863l-2.06368 6.19052-2.06471-6.19052a1.05622 1.05622 0 1 0 -2.00383.66863z" />
+        </svg>
+        <div class="popup-wx zb">
+          <div>哲哲的七七和火火</div>
+          <div>快手号4106181099</div>
+          <img class="mt" src="./images/kszb.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="mainW">
+      <my-header :is-index="true"></my-header>
+
+      <!-- banner轮播 -->
+      <div class="focus">
+        <div class="swiper-container swiper1">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" v-for="item in focusArrList" :key="item.title">
+              <img style="cursor: pointer" :src="getCmsPicUrl(item.imgReUrl)" width="100%" @load="loadImage"
+                @click="goWebUrl(item.url)" />
+            </div>
+          </div>
+          <div class="swiper-pagination swp1"></div>
+        </div>
+      </div>
+
+      <div class="nav-box-2">
+        <div class="nav" @click="goEnroll">
+          <div class="bmcs"></div>
+          <div class="txt">报名参赛</div>
+        </div>
+        <div class="nav" @click="goPage('https://appy430dejp3211.h5.xet.citv.cn/')">
+          <div class="xet"></div>
+          <div class="txt">高手直播</div>
+        </div>
+        <div class="nav" @click="goPage('news_list.html?classId=63')">
+          <div class="tjbxt"></div>
+          <div class="txt">天机变系统</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="height: 80px;"></div>
+
+    <div class="main-bgs">
+      <div class="ranking-box">
+        <!-- 排行榜 -->
+        <div class="title-box">
+          <img class="txt-icon" src="./images/index/ranking_txt.png?v=20260105" alt="" />
+          <img class="title-icon" src="./images/index/title.png" alt="" />
+        </div>
+        <div class="ranking-categroy-bg">
+          <div class="ranking-categroy">
+            <div class="categroy-box">
+              <div class="categroy-item" :class="{on: item.isSelect}" v-for="item in rankingTabs" :key="item.title"
+                @click="selectRanking(item)">
+                {{item.title}}
+              </div>
+            </div>
+            <div class="input-box">
+              <input type="text" v-model="nickName" placeholder="请输入选择昵称" />
+              <img src="./images/index/search.png" alt="" @click="searchRanking()" />
+            </div>
+          </div>
+          <div class="ranking-categroy pdt15">
+            <div class="categroy-box">
+              <div class="categroy-item" :class="{on: item.isSelect}" v-for="item in listGroup" :key="item.groupCode"
+                @click="selectGroup(item)">
+                {{item.groupName}}
+              </div>
+            </div>
+          </div>
+          <div class="bisaiList">
+            <template v-if="isListGroup">
+              <table cellpadding="0" cellspacing="0">
+                <tr>
+                  <th>排名</th>
+                  <th>选手昵称</th>
+                  <th>
+                    <div class="order-box">
+                      行业综合分值
+                      <div class="order-img">
+                        <img @click="setGroupOrder('cts', 'asc')" class="top"
+                          :src="listGroupParams.orderField === 'cts' && listGroupParams.order === 'asc' ? './images/order_top_on.png' : './images/order_top.png'"
+                          alt="" />
+                        <img @click="setGroupOrder('cts', 'desc')" class="bottom"
+                          :src="listGroupParams.orderField === 'cts' && listGroupParams.order === 'desc' ? './images/order_bottom_on.png' : './images/order_bottom.png'"
+                          alt="" />
+                      </div>
+                    </div>
+                  </th>
+                  <th>
+                    <div class="order-box">
+                      日均权益
+                      <div class="order-img">
+                        <img @click="setGroupOrder('cmds', 'asc')" class="top"
+                          :src="listGroupParams.orderField === 'cmds' && listGroupParams.order === 'asc' ? './images/order_top_on.png' : './images/order_top.png'"
+                          alt="" />
+                        <img @click="setGroupOrder('cmds', 'desc')" class="bottom"
+                          :src="listGroupParams.orderField === 'cmds' && listGroupParams.order === 'desc' ? './images/order_bottom_on.png' : './images/order_bottom.png'"
+                          alt="" />
+                      </div>
+                    </div>
+                  </th>
+                  <th>指定交易商</th>
+                  <th>交易日期</th>
+                </tr>
+                <tr v-for="item in listGroupData">
+                  <td>
+                    <span v-if="item.ranking==1"><img src="images/index/no1.png" /></span>
+                    <span v-if="item.ranking==2"><img src="images/index/no2.png" /></span>
+                    <span v-if="item.ranking==3"><img src="images/index/no3.png" /></span>
+                    <span v-if="item.ranking>3">{{item.ranking}}</span>
+                  </td>
+                  <td @click="goFutures(item)">
+                    <a>{{item.nickName}}</a>
+                  </td>
+                  <td>{{item.totalScore | keepDecimal(2)}}</td>
+                  <td>{{unitConvert(item.meanDaySettlement)}}</td>
+                  <td>
+                    <span style="cursor: pointer;" @click="goFuturesWeb(item.futuresCompanyCode)">
+                      {{item.companyName}}
+                    </span>
+                  </td>
+                  <td>{{item.tradingDate}}</td>
+                </tr>
+              </table>
+            </template>
+            <template v-else>
+              <table v-if="groupId === ''" cellpadding="0" cellspacing="0" class="table-ranking-all">
+                <tr>
+                  <th>选手昵称</th>
+                  <th>组别</th>
+                  <th>交易日期</th>
+                </tr>
+                <tr v-for="item in arrRankList">
+                  <td>
+                    <a target="_blank" :href="`futures_detail.html?capitalAccount=${item.capitalAccount}`">
+                      {{item.nickName}}
+                    </a>
+                  </td>
+                  <td>{{ item.groupName }}</td>
+                  <td>{{ item.tradingDate }}</td>
+                </tr>
+              </table>
+
+              <table v-else-if="groupId === 0 " cellpadding="0" cellspacing="0">
+                <tr>
+                  <th>排名</th>
+                  <th>选手昵称</th>
+                  <th>收益</th>
+                  <th>交易日期</th>
+                </tr>
+                <tr v-for="item in arrRankList">
+                  <td>
+                    <span v-if="item.ranking==1"><i><img src="images/index/no1.png" /></i></span>
+                    <span v-if="item.ranking==2"><i><img src="images/index/no2.png" /></i></span>
+                    <span v-if="item.ranking==3"><i><img src="images/index/no3.png" /></i></span>
+                    <span v-if="item.ranking>3">{{item.ranking}}</span>
+                  </td>
+                  <td>
+                    <a target="_blank" :href="'futures_detail.html?capitalAccount='+item.capitalAccount">
+                      {{item.nickName}}
+                    </a>
+                  </td>
+                  <td>{{ unitConvert(item.totalIncome) }}</td>
+                  <td>{{ item.tradingDate }}</td>
+                </tr>
+              </table>
+
+              <table v-else cellpadding="0" cellspacing="0">
+                <tr>
+                  <th>排名</th>
+                  <th>选手昵称</th>
+                  <th>
+                    <div class="order-box">
+                      综合积分
+                      <div class="order-img">
+                        <img @click="setOrder('cs', 'asc')" class="top"
+                          :src="orderField === 'cs' && order === 'asc' ? './images/order_top_on.png' : './images/order_top.png'"
+                          alt="" />
+                        <img @click="setOrder('cs', 'desc')" class="bottom"
+                          :src="orderField === 'cs' && order === 'desc' ? './images/order_bottom_on.png' : './images/order_bottom.png'"
+                          alt="" />
+                      </div>
+                    </div>
+                  </th>
+                  <th>
+                    <div class="order-box">
+                      累计收益额
+                      <div class="order-img">
+                        <img @click="setOrder('cti', 'asc')" class="top"
+                          :src="orderField === 'cti' && order === 'asc' ? './images/order_top_on.png' : './images/order_top.png'"
+                          alt="" />
+                        <img @click="setOrder('cti', 'desc')" class="bottom"
+                          :src="orderField === 'cti' && order === 'desc' ? './images/order_bottom_on.png' : './images/order_bottom.png'"
+                          alt="" />
+                      </div>
+                    </div>
+                  </th>
+                  <th>
+                    <div class="order-box">
+                      累计收益率
+                      <div class="order-img">
+                        <img @click="setOrder('ctir', 'asc')" class="top"
+                          :src="orderField === 'ctir' && order === 'asc' ? './images/order_top_on.png' : './images/order_top.png'"
+                          alt="" />
+                        <img @click="setOrder('ctir', 'desc')" class="bottom"
+                          :src="orderField === 'ctir' && order === 'desc' ? './images/order_bottom_on.png' : './images/order_bottom.png'"
+                          alt="" />
+                      </div>
+                    </div>
+                  </th>
+                  <th>
+                    <div class="order-box">
+                      最大回撤率
+                      <div class="order-img">
+                        <img @click="setOrder('cmrr', 'asc')" class="top"
+                          :src="orderField === 'cmrr' && order === 'asc' ? './images/order_top_on.png' : './images/order_top.png'"
+                          alt="" />
+                        <img @click="setOrder('cmrr', 'desc')" class="bottom"
+                          :src="orderField === 'cmrr' && order === 'desc' ? './images/order_bottom_on.png' : './images/order_bottom.png'"
+                          alt="" />
+                      </div>
+                    </div>
+                  </th>
+                  <th>指定交易商</th>
+                  <th>期初权益</th>
+                  <th>交易日期</th>
+                </tr>
+                <tr v-for="item in arrRankList">
+                  <td>
+                    <span v-if="item.ranking==1"><img src="images/index/no1.png" /></span>
+                    <span v-if="item.ranking==2"><img src="images/index/no2.png" /></span>
+                    <span v-if="item.ranking==3"><img src="images/index/no3.png" /></span>
+                    <span v-if="item.ranking>3">{{item.ranking}}</span>
+                  </td>
+                  <td @click="goFutures(item)">
+                    <a>{{item.nickName}}</a>
+                  </td>
+                  <td>{{item.score | keepDecimal(4)}}</td>
+                  <td>{{unitConvert(item.totalIncome)}}</td>
+                  <td :class="{'red':item.totalIncomeRate>0,'green':item.totalIncomeRate<0}">
+                    {{item.totalIncomeRate | toPercent}}
+                  </td>
+                  <td class="green">{{item.maxRetracementRate | toPercent}}</td>
+                  <td>
+                    <span style="cursor: pointer;" @click="goFuturesWeb(item.futuresCompanyCode)">
+                      {{item.futuresCompanyName}}
+                    </span>
+                  </td>
+                  <td>{{item.preDaySettlement}}</td>
+                  <td>{{item.tradingDate}}</td>
+                </tr>
+              </table>
+            </template>
+          </div>
+          <div class="more-box">
+            <div class="btn" @click="goPage('futures.html')">
+              查看更多排名
+            </div>
+          </div>
+        </div>
+        <div class="dsgk-box">
+          <div class="title-box">
+            <img class="txt-icon" src="./images/index/dsgk_txt.png" alt="" />
+            <img class="title-icon" src="./images/index/title.png" alt="" />
+          </div>
+          <div class="dsgk-list">
+            <div class="dsgk-item">
+              <div class="num-box">
+                <div class="num">3</div>
+                <div class="txt">万人+</div>
+              </div>
+              <div class="tit">参赛总人数</div>
+            </div>
+            <div class="dsgk-item">
+              <div class="num-box qygm">
+                <div class="num">{{unitConvert(totalMoeny, 1)}}</div>
+                <div class="txt">{{unitConvert(totalMoeny, 2)}}元+</div>
+              </div>
+              <div class="tit">权益规模</div>
+            </div>
+            <div class="dsgk-item">
+              <div class="num-box drjyk">
+                <div class="num">{{unitConvert(offsetGainAndLoss, 1)}}</div>
+                <div class="txt">{{unitConvert(offsetGainAndLoss, 2)}}元</div>
+              </div>
+              <div class="tit">当日净盈亏</div>
+            </div>
+            <div class="dsgk-item">
+              <div class="num-box ljsy">
+                <div class="num">{{unitConvert(totalIncome, 1)}}</div>
+                <div class="txt">{{unitConvert(totalIncome, 2)}}元</div>
+              </div>
+              <div class="tit">累计盈亏</div>
+            </div>
+          </div>
+        </div>
+        <!-- 大赛数据 -->
+        <div class="dsgk-box">
+          <div class="title-box">
+            <img class="txt-icon" src="./images/index/dssj_txt.png" alt="" />
+            <img class="title-icon" src="./images/index/title.png" alt="" />
+          </div>
+          <div class="dssj-list">
+            <el-select class="mt20" v-model="contract" filterable placeholder="合约" @change="changeEcharts">
+              <el-option v-for="item in listContract" :key="item.value" :label="item.label" :value="item.value">
+              </el-option>
+            </el-select>
+            <div class="dssj-echarts">
+              <div class="echarts-box">
+                <div class="echarts-content" id="contractHeatIndexCurveEchart" style="height: 500px"></div>
+              </div>
+              <div class="echarts-box">
+                <div class="echarts-content" id="holdingContractEchart" style="height: 500px"></div>
+              </div>
+            </div>
+          </div>
+          <div class="more-box">
+            <div class="btn" @click="goPage('/module/contest/index.html')">
+              查看更多
+            </div>
+          </div>
+        </div>
+        <div class="csxs-box">
+          <div class="title-box">
+            <img class="txt-icon" src="./images/index/csxs_txt.png" alt="" />
+            <img class="title-icon" src="./images/index/title.png" alt="" />
+          </div>
+          <div class="xuanshou-list">
+            <div class="xuanshou-box" v-for="(item,index) in arrXuanShouList" :key="index">
+              <div class="per-pp">
+                <div class="per-name">{{item.jt_dg_ds_title}}</div>
+                <div class="per-r">
+                  <a :href="replaceUrl(item.jt_dg_ds_url)" target="_blank">
+                    <img :src="getCmsPicUrl(item.jt_dg_ds_picCmsSysReUrl)" />
+                  </a>
+                  <div class="per-info">{{item.jt_dg_ds_title2}}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="rmzb-box">
+          <div class="title-box">
+            <img class="txt-icon" src="./images/index/rmzb_txt.png" alt="" />
+            <img class="title-icon" src="./images/index/title.png" alt="" />
+          </div>
+          <div class="news1-list">
+            <div class="news1-item" v-for="item in zhiBoList" :key="item.contentId">
+              <div class="pic">
+                <a :href="item.outLink==''?'video_detail.html?id='+ item.contentId:item.outLink" target="_blank">
+                  <img :src="getCmsPicUrl(item.contentImageCmsSysReUrl)" width="100%" height="160" />
+                </a>
+              </div>
+              <div class="tit">{{item.title}}</div>
+            </div>
+          </div>
+          <div class="more-box">
+            <div class="btn" @click="goPage('video_list.html?classId=61')">
+              查看更多
+            </div>
+          </div>
+        </div>
+        <!-- 最新动态 -->
+        <div class="rmzb-box">
+          <div class="title-box">
+            <img class="txt-icon" src="./images/index/zxdt.png" alt="" />
+            <img class="title-icon" src="./images/index/title.png" alt="" />
+          </div>
+          <div class="zxdt-box">
+            <div class="dt" v-for="item in dynamicList" :key="item.contentId"
+              @click="goPage(`news_detail.html?id=${item.contentId}`, item)">
+              <div class="dt-img" v-if="item.contentImageCmsSysReUrl">
+                <img :src="getCmsPicUrl(item.contentImageCmsSysReUrl)" alt="" />
+              </div>
+              <div class="dt-info">
+                <div class="f1">{{item.title}}</div>
+                <div class="f2">
+                  <div>{{item.addTime | formatTime}}</div>
+                  <div class="more">
+                    更多 >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="more-box">
+            <div class="btn" @click="goPage('news_list.html?classId=74')">
+              查看更多
+            </div>
+          </div>
+        </div>
+        <div class="hzhb-box">
+          <div class="title-box">
+            <img class="txt-icon" src="./images/index/hzhb_txt.png" alt="" />
+            <img class="title-icon" src="./images/index/title.png" alt="" />
+          </div>
+          <div class="friend-list">
+            <div class="friend-item">
+              <div class="friend-img">
+                <img src="./images/index/friend_1.png" alt="">
+              </div>
+              <ul>
+                <li v-for="(item,index) in friendArrList1" :key="index">
+                  <a :href="item.siteLink" target="_blank"><img :src="getCmsFridnLogo(item.siteLogo)" height="45" /></a>
+                </li>
+              </ul>
+            </div>
+            <div class="friend-item">
+              <div class="friend-img">
+                <img src="./images/index/friend_2.png" alt="">
+              </div>
+              <ul>
+                <li v-for="(item,index) in friendArrList2" :key="index">
+                  <a :href="item.siteLink" target="_blank"><img :src="getCmsFridnLogo(item.siteLogo)" height="45" /></a>
+                </li>
+              </ul>
+            </div>
+            <div class="friend-item-flex">
+              <!-- <div class="friend-item">
+                <div class="friend-img">
+                  <img src="./images/index/friend_zlhzhb.png" alt="">
+                </div>
+                <ul>
+                  <li v-for="(item,index) in friendArrList3" :key="index">
+                    <a :href="item.siteLink" target="_blank"><img :src="getCmsFridnLogo(item.siteLogo)"
+                        height="45" /></a>
+                  </li>
+                </ul>
+              </div> -->
+              <div class="friend-item">
+                <div class="friend-img">
+                  <img src="./images/index/friend_hzmt.png" alt="">
+                </div>
+                <ul>
+                  <li v-for="(item,index) in friendArrList4" :key="index">
+                    <a :href="item.siteLink" target="_blank"><img :src="getCmsFridnLogo(item.siteLogo)"
+                        height="45" /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="friend-item">
+              <div class="friend-img">
+                <img src="./images/index/friend_zdjyrj.png" alt="">
+              </div>
+              <ul>
+                <li v-for="(item,index) in friendArrList7" :key="index">
+                  <a :href="item.siteLink" target="_blank"><img :src="getCmsFridnLogo(item.siteLogo)" height="45" /></a>
+                </li>
+              </ul>
+            </div>
+            <div class="friend-item">
+              <div class="friend-img">
+                <img src="./images/index/friend_zdjys.png" alt="">
+              </div>
+              <ul>
+                <li v-for="(item,index) in friendArrList5" :key="index">
+                  <a :href="item.siteLink" target="_blank"><img :src="getCmsFridnLogo(item.siteLogo)" height="45" /></a>
+                </li>
+              </ul>
+            </div>
+            <div class="friend-item">
+              <div class="friend-img">
+                <img src="./images/index/friend_zcdw.png" alt="">
+              </div>
+              <ul class="ul-text">
+                <li v-for="(item,index) in friendArrList6" :key="index" class="li-text">
+                  <a :href="item.siteLink" target="_blank">
+                    {{item.siteName}}
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <my-footer></my-footer>
+  </div>
+  <script type="text/javascript" src="js/formatDate.js"></script>
+  <script type="text/javascript" src="js/dataformat.js"></script>
+  <script type="text/javascript" src="js/common.js??v=20260107"></script>
+  <script type="text/javascript" src="js/storageUtil.js"></script>
+  <script type="text/javascript" src="js/chart.js"></script>
+  <script type="text/javascript" src="js/formatMoney.js"></script>
+  <script type="text/javascript" src="plug-in/jquery-md5/jquery.md5.js"></script>
+  <script type="text/javascript" src="plug-in/vue/Vue.js"></script>
+  <script type="text/javascript" src="plug-in/swiper/swiper.min.js"></script>
+  <script type="text/javascript" src="plug-in/echarts/echarts.min.js"></script>
+  <script type="text/javascript" src="plug-in/layer-v3.1.1/layer/layer.js"></script>
+  <script src="/js/element-ui.js"></script>
+  <script src="/js/jquery-confirm.js"></script>
+  <script src="/js/request.js"></script>
+  <script src="./module/components/header.js?v=20260306"></script>
+  <script src="./module/components/footer.js"></script>
+
+  <script type="text/javascript">
+    $(function () {
+      var app = new Vue({
+        el: "#app",
+        data: function () {
+          return {
+            stage: mainStage,
+            token: getStorage("token"),
+            newsArrList: [],
+            isFocusLoad: false,
+            focusArrList: [],
+            totalMoeny: 0, //总保证金
+            offsetGainAndLoss: 0, //当日净盈亏
+            commission: 0, //累计手续费
+            totalIncome: 0, //当日累计收益
+            nickName: "",
+            arrXuanShouList: [],
+            dynamicList: [], // 最新动态
+            zhiBoList: [], // 热门直播
+            shipinList: [], // 视频回顾
+            groupId: 15,
+            rankingTabs: [
+              { title: "专业组", groupId: 15, isSelect: true },
+              { title: "重量组", groupId: 14, isSelect: false },
+              { title: "轻量组", groupId: 13, isSelect: false },
+              { title: "期权组", groupId: 0, isSelect: false },
+              // { title: "全部", groupId: '', isSelect: false },
+            ],
+            arrRankList: [],
+            order: '', //正序asc 倒序desc
+            orderField: '', //积分 sc 累计收益额 cti 累计收益率 ctir 最大回撤率 cmrr
+            listFuturesCompany: [],
+
+            // 大赛数据
+            contract: '',
+            listContract: [],
+
+            // 排行榜
+            listGroup: [],
+            listGroupData: [],
+            listGroupParams: {
+              page: 1,
+              limit: 10,
+              groupCode: '',
+              orderField: '',
+              order: '',
+              stageValue: mainStage,
+            },
+            isListGroup: false,
+
+            // 合作伙伴
+            friendArrList1: [],
+            friendArrList2: [],
+            friendArrList3: [],
+            friendArrList4: [],
+            friendArrList5: [],
+            friendArrList6: [],
+            friendArrList7: [],
+          };
+        },
+        filters: {
+          formatTime(time) {
+            var date = new Date(time);
+            return formatDate(date, "yyyy-MM-dd");
+          },
+          toPercent(num) {
+            // 百分比，保留小数点后两位
+            return Math.round(num * 10000) / 100 + "%";
+          },
+          keepDecimal(numstr, num) {
+            //保留num位小数
+            var result = parseFloat(numstr)
+            if (isNaN(result)) {
+              return
+            }
+            return result.toFixed(num)
+          },
+        },
+        created() {
+          this.getDynamic();
+          this.getfuturesCompany()
+          this.getZhiBo();
+
+          this.getGroupList()
+        },
+        mounted() {
+          this.getTotal();
+          this.getFocusList();
+          this.getFriendList();
+          this.getCmsNews();
+          this.getNewsShipinList();
+          this.getContractList()
+        },
+        methods: {
+          /****** start 排行榜 产业组 分组列表   ******/
+          goFutures(item) {
+            const url = `/futures_detail.html?capitalAccount=${item.capitalAccountAes || item.capitalAccount}`
+            window.open(url, '_blank')
+          },
+          selectGroup({ groupCode }) {
+            this.isListGroup = true
+            this.listGroup.forEach(item => {
+              item.isSelect = item.groupCode === groupCode
+            })
+            this.rankingTabs.forEach((tab) => {
+              tab.isSelect = false
+            });
+            this.nickName = ''
+            this.listGroupParams.groupCode = groupCode
+            this.getGroupPage()
+          },
+          getGroupList() {
+            requestGet(`/api/groupRanking/groupList`, {}, (res) => {
+              if (res.code === 0) {
+                res.data.forEach(item => item.isSelect = false)
+                this.listGroup = res.data
+              }
+            })
+          },
+          setGroupOrder(orderField, order) {
+            this.listGroupParams.orderField = orderField;
+            this.listGroupParams.order = order;
+            this.getGroupPage()
+          },
+          getGroupPage() {
+            requestGet(`/api/groupRanking/page`, this.listGroupParams, (res) => {
+              if (res.code === 0) {
+                this.listGroupData = res.data.list
+              }
+            })
+          },
+          /****** end 排行榜 产业组 分组列表   ******/
+
+          changeEcharts() {
+            this.getContractHeatIndexCurveInfo()
+            this.getHoldingContractInfo()
+          },
+          // 获取合约列表信息
+          getContractList() {
+            requestGet(`/api/competition/index/getContractList/${mainStage}`, {}, (res) => {
+              if (res.code == 0 && res.data) {
+                this.listContract = res.data.map(item => {
+                  return {
+                    label: item,
+                    value: item,
+                  }
+                })
+                if (this.listContract.length) {
+                  this.contract = this.listContract[0].value
+                  this.getContractHeatIndexCurveInfo()
+                  this.getHoldingContractInfo()
+                }
+              }
+            })
+          },
+          // 获取品种热度指数曲线信息
+          getContractHeatIndexCurveInfo() {
+            const startTradingDate = '""'
+            const endTradingDate = formatDate(new Date(), 'yyyy-MM-dd')
+            requestGet(`/api/competition/index/getContractHeatIndexCurveInfo/${mainStage}/${this.contract}/${startTradingDate}/${endTradingDate}`, {}, (res) => {
+              if (res.code == 0 && res.data) {
+                const xAxisData = res.data.map(item => item.tradingDate)
+                const currentContractHeatIndexData = res.data.map(item => item.currentContractHeatIndex)
+                const cumulativeContractHeatIndexData = res.data.map(item => item.cumulativeContractHeatIndex)
+                const dom = document.getElementById('contractHeatIndexCurveEchart')
+                var myChart = echarts.init(dom)
+                option = {
+                  title: {
+                    text: '品种热度指数曲线'
+                  },
+                  tooltip: {
+                    trigger: 'axis'
+                  },
+                  legend: {
+                    top: '6%'
+                  },
+                  grid: {
+                    left: '3%',
+                    right: '4%',
+                    bottom: '10%',
+                    top: '15%',
+                    containLabel: true
+                  },
+                  dataZoom: [
+                    {
+                      start: 0,
+                      end: 100
+                    }
+                  ],
+                  xAxis: {
+                    type: 'category',
+                    boundaryGap: false,
+                    data: xAxisData
+                  },
+                  yAxis: [{
+                    type: 'value',
+                    name: '',
+                    axisLine: { show: false },
+                    axisTick: { show: false }
+                  }],
+                  series: [
+                    {
+                      name: '当日品种热度指数',
+                      type: 'line',
+                      data: currentContractHeatIndexData,
+                    },
+                    {
+                      name: '累计品种热度指数',
+                      type: 'line',
+                      data: cumulativeContractHeatIndexData,
+                    },
+                  ]
+                }
+                myChart.setOption(option, true)
+              }
+            })
+          },
+          // 获取品种持仓统计信息
+          getHoldingContractInfo() {
+            const startTradingDate = '""'
+            const endTradingDate = formatDate(new Date(), 'yyyy-MM-dd')
+            requestGet(`/api/contract/statistics/getHoldingContractInfo/${mainStage}/${this.contract}/${startTradingDate}/${endTradingDate}`, {}, (res) => {
+              if (res.code == 0 && res.data) {
+                const xAxisData = res.data.map(item => item.holdingDate)
+                const goLangAndShortUserRatioData = res.data.map(item => (item.goLangAndShortUserRatio * 100).toFixed(2))
+                const goLangAndShortNoRatioData = res.data.map(item => (item.goLangAndShortNoRatio * 100).toFixed(2))
+                const holdingGoLongUserNoData = res.data.map(item => item.holdingGoLongUserNo)
+                const holdingGoShortUserNoData = res.data.map(item => item.holdingGoShortUserNo)
+                const holdingGoLongNoData = res.data.map(item => item.holdingGoLongNo)
+                const holdingGoShortNoData = res.data.map(item => item.holdingGoShortNo)
+                const dom = document.getElementById('holdingContractEchart')
+                var myChart = echarts.init(dom)
+                option = {
+                  title: {
+                    text: '品种持仓统计'
+                  },
+                  tooltip: {
+                    trigger: 'axis',
+                  },
+                  legend: {
+                    top: '6%'
+                  },
+                  grid: {
+                    left: '3%',
+                    right: '4%',
+                    bottom: '10%',
+                    top: '22%',
+                    containLabel: true
+                  },
+                  dataZoom: [
+                    {
+                      start: 0,
+                      end: 100
+                    }
+                  ],
+                  xAxis: {
+                    type: 'category',
+                    boundaryGap: false,
+                    data: xAxisData
+                  },
+                  yAxis: [{
+                    type: 'value',
+                    name: '手数',
+                    axisLine: { show: false },
+                    axisTick: { show: false },
+                  },
+                  {
+                    type: 'value',
+                    name: '比例',
+                    axisLine: { show: false },
+                    axisTick: { show: false },
+                  }, {
+                    position: 'left',
+                    offset: 60,
+                    type: 'value',
+                    name: '人数',
+                    axisLine: { show: false },
+                    axisTick: { show: false }
+                  }],
+
+                  series: [
+                    {
+                      name: '持仓做多人数/持仓做空人数',
+                      type: 'line',
+                      data: goLangAndShortUserRatioData,
+                      yAxisIndex: 1
+                    },
+                    {
+                      name: '持仓做多手数/持仓做空手数',
+                      type: 'line',
+                      data: goLangAndShortNoRatioData,
+                      yAxisIndex: 1
+                    },
+                    {
+                      name: '持仓做多人数',
+                      type: 'line',
+                      data: holdingGoLongUserNoData,
+                      yAxisIndex: 2
+                    },
+                    {
+                      name: '持仓做空人数',
+                      type: 'line',
+                      data: holdingGoShortUserNoData,
+                      yAxisIndex: 2
+                    },
+                    {
+                      name: '持仓做多手数',
+                      type: 'line',
+                      data: holdingGoLongNoData,
+                    },
+                    {
+                      name: '持仓做空手数',
+                      type: 'line',
+                      data: holdingGoShortNoData,
+                    }
+                  ]
+                }
+                if (option && typeof option === 'object') {
+                  myChart.setOption(option, true)
+                }
+              }
+            })
+          },
+          // 获取合作期货公司
+          getfuturesCompany() {
+            var url = apiCms + 'japi/getContentList.cmd?classId=37&pageSize=20&order=default-down'
+            _queryCms(url, (res) => {
+              for (var i = 0; i < res.allContent.length; i++) {
+                var v = {
+                  id: res.allContent[i].jt_menu_futures_brokerId,
+                  text: res.allContent[i].jt_menu_futures_name + ' - ' + res.allContent[i].jt_menu_futures_brokerId,
+                  urlPc: res.allContent[i].jt_menu_futures_pc || ''
+                }
+                this.listFuturesCompany.push(v)
+              }
+
+              this.getRankList(15);
+            })
+          },
+          getZhiBo() {
+            const url =
+              apiCms +
+              "japi/getContentList.cmd?classId=allChild:61&pageSize=8&order=addDate-down&filter=contentImg";
+            _queryCms(url, (data) => {
+              this.zhiBoList = data.allContent;
+            });
+          },
+
+          searchRanking() {
+            if (this.nickName == "") {
+              layer.msg("请输入选手昵称");
+            } else {
+              const url =
+                "futures.html?nickName=" +
+                encodeURIComponent(encodeURIComponent(this.nickName)) +
+                "&groupId=" + this.groupId;
+              window.open(url, '_blank');
+            }
+          },
+
+          selectRanking(item) {
+            this.isListGroup = false
+            this.rankingTabs.forEach((tab) => {
+              if (tab.groupId === item.groupId) {
+                tab.isSelect = true;
+                this.getRankList(tab.groupId);
+              } else tab.isSelect = false;
+            });
+            this.listGroup.forEach(item => item.isSelect = false)
+          },
+
+          setOrder(orderField, order) {
+            this.orderField = orderField;
+            this.order = order;
+            this.getRankList(this.groupId)
+          },
+
+          getRankList(groupId) {
+            this.groupId = groupId;
+            // 全部
+            if (groupId === '') {
+              requestGet(`/api/ranking/nickNameSearch`, { stage: this.stage, page: 1, limit: 10 }, (res) => {
+                if (res.code === 0) {
+                  this.arrRankList = res.data.list;
+                }
+              })
+              return
+            }
+
+            let url = "";
+            let paras = {};
+            //期权比赛
+            if (groupId === 0) {
+              paras = { stage: this.stage, limit: 10 };
+              url = apiDg + "ranking/opt/page";
+            } else {
+              paras = {
+                stage: this.stage, page: 1, limit: 10, groupId: groupId,
+                orderField: this.orderField,
+                order: this.order,
+              };
+              url = apiDg + "ranking/page";
+            }
+            _queryGet(url, paras, true, "", (res) => {
+              if (res.code == 0) {
+                res.data.list.forEach(item => {
+                  const index = this.listFuturesCompany.findIndex(target => target.id === item.futuresCompanyCode)
+                  if (index === -1) item.futuresCompanyName = ''
+                })
+
+                this.arrRankList = res.data.list;
+              } else {
+                this.arrRankList = [];
+              }
+            });
+          },
+
+          getDynamic() {
+            var url =
+              apiCms +
+              "japi/getContentList.cmd?classId=74&pageSize=3&order=addDate-down";
+            _queryCms(url, (res) => {
+              this.dynamicList = res.allContent.slice(0, 3);
+            });
+          },
+
+          goFuturesWeb(futuresCompanyCode) {
+            const item = this.listFuturesCompany.find(target => target.id === futuresCompanyCode)
+            if (item && item.urlPc) window.open(item.urlPc, "_blank");
+          },
+
+          goPage(url, item) {
+            if (item) {
+              if (item.shortTitle === "公告")
+                return (window.location.href = "futures_rules.html");
+              else if (item.outLink)
+                return (window.location.href = item.outLink);
+            }
+            window.open(url, "_blank");
+          },
+
+          goEnroll() {
+            const token = getStorage("token");
+            if (!token) window.location.href = "login.html";
+            else window.location.href = "baoming.html";
+          },
+
+          goWebUrl(url) {
+            if (url != "" && url != apiCms) {
+              window.open(url, "_blank");
+            }
+          },
+
+          getNewsShipinList() {
+            var url =
+              apiCms +
+              "japi/getContentList.cmd?classId=53&pageSize=4&order=addDate-down";
+            _queryCms(url, (data) => {
+              this.shipinList = data.allContent;
+            });
+          },
+
+          goRule() {
+            location.href = "/futures_rules.html";
+          },
+
+          goMoreVideo(classId) {
+            location.href = `/huizhan_news.html?classId=${classId}`;
+          },
+
+          swiperInit() {
+            var swiper1 = new Swiper(".swiper1", {
+              loop: false,
+              autoplay: {
+                delay: 10000, //10秒自动切换一次
+              },
+              pagination: {
+                el: ".swp1",
+              },
+            });
+
+            var swiper2 = new Swiper(".swiper2", {
+              loop: true,
+              direction: "vertical",
+              autoplay: {
+                delay: 5000, //5秒自动切换一次
+              },
+            });
+          },
+
+          getTotal() {
+            //获取总保证金、参赛总人数
+            var paras = {
+              stage: this.stage,
+              page: 1,
+              limit: 1,
+            };
+            url = apiDg + "day/summary/page";
+            _queryGet(url, paras, false, "", (res) => {
+              if (res.code == 0) {
+                this.offsetGainAndLoss = res.data.list[0].offsetGainAndLoss; //当日净盈亏
+                this.commission = res.data.list[0].commission; //累计手续费
+                this.totalIncome = res.data.list[0].totalIncome; //当日累计收益
+                this.totalMoeny = res.data.list[0].daySettlement; //获取总保证金
+              }
+            });
+          },
+
+          goMy() {
+            windowHref("my.html", "");
+          },
+
+          goLogin() {
+            windowHref("login.html", "");
+          },
+
+          getRankDetail(item) {
+            //显示比赛详情
+            window.location =
+              "futures_detail.html?capitalAccount=" +
+              item.capitalAccount +
+              "&nickName=" +
+              item.nickName +
+              "&ranking=" +
+              item.ranking +
+              "&groupId=" +
+              item.groupId;
+          },
+
+          selectItem(itemIndex) {
+            window.location =
+              "info_detail.html?article_id=" +
+              this.newsArrList[itemIndex].newsId;
+          },
+
+          getCmsNews() {
+            var url =
+              apiCms +
+              "japi/getContentList.cmd?classId=24&pageSize=99&order=addDate-down";
+            _queryCms(url, (data) => {
+              this.arrXuanShouList = data.allContent;
+            });
+          },
+          getFocusList() {
+            var url = apiCms + "japi/getCommend.cmd?flag=dg_pc_index";
+            _queryCms(url, (data) => {
+              this.focusArrList = data.CommInfo;
+            });
+          },
+          loadImage() {
+            if (!this.isFocusLoad) {
+              this.swiperInit();
+              this.isFocusLoad = true;
+            }
+          },
+          getFriendList() {
+            var url = apiCms + "japi/getFLink.cmd?type=dg_jpzzs";
+            _queryCms(url, (data) => {
+              this.friendArrList1 = data;
+            });
+            var url = apiCms + "japi/getFLink.cmd?type=dg_ypzzs";
+            _queryCms(url, (data) => {
+              this.friendArrList2 = data;
+            });
+            var url = apiCms + "japi/getFLink.cmd?type=dg_zlhzhb";
+            _queryCms(url, (data) => {
+              this.friendArrList3 = data;
+            });
+            var url = apiCms + "japi/getFLink.cmd?type=dg_hzmt";
+            _queryCms(url, (data) => {
+              this.friendArrList4 = data;
+            });
+            var url = apiCms + "japi/getFLink.cmd?type=dg_zdjys";
+            _queryCms(url, (data) => {
+              this.friendArrList5 = data;
+            });
+            var url = apiCms + "japi/getFLink.cmd?type=dg_jys";
+            _queryCms(url, (data) => {
+              this.friendArrList6 = data;
+            });
+            var url = apiCms + "japi/getFLink.cmd?type=dg_zdjyrj";
+            _queryCms(url, (data) => {
+              this.friendArrList7 = data;
+            });
+          },
+        },
+      });
+    });
+  </script>
+</body>
+
+</html>

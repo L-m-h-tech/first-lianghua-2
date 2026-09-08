@@ -1,0 +1,4 @@
+# 天然气库存
+# URL: https://www.eia.gov/naturalgas/storage/
+# fetched: 20260908_113836
+

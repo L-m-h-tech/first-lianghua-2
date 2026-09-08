@@ -1,0 +1,52 @@
+ï»¿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>PSD Online</title>
+    <link rel="icon" href="/PSDOnline/favicon.ico" type="image/vnd.microsoft.icon" />
+    <link rel="shortcut icon" href="/PSDOnline/favicon.ico" />
+    <link href="./SiteCss?v=05132016" rel="stylesheet" />
+    <script src="./vendorJs?v=05132016"></script>
+    <script src="./UtilsJs?v=05132016"></script>
+    <script src="./applicationJs?v=05132016"></script>
+    <script src="./applicationServicesJs?v=05132016"></script>
+    <script src="./applicationVisualizationJs?v=05132016"></script>
+    <script src="/psdonline/scripts/highcharts.min.js"></script>
+    <script src="/psdonline/scripts/highcharts-exporting.min.js"></script>
+    <script src="/psdonline/scripts/highcharts-nodatadisplay.min.js"></script>
+    <script src="/psdonline/scripts/highcharts-offline-exporting.min.js"></script>  
+    <script src="https://touchpoints.app.cloud.gov/touchpoints/f9de0bb4/js" async></script>  
+    <!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-9Z8L75KP02"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-9Z8L75KP02');
+	</script>	
+	 <script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+   </script>
+   
+</head>
+
+<body ng-app="app" class="app">
+
+    <toaster-container toaster-options="{'time-out': 6000, 'close-button':true, 'position-class': 'toast-top-right'}"></toaster-container>
+    <div class="container appContainer">
+        <page-header></page-header>
+        <nav-bar></nav-bar>
+        <div class="breadcrumb">
+            <bread-crumb></bread-crumb>
+        </div>
+        <div ui-view></div>
+        <page-footer></page-footer>
+    </div>
+</body>
+</html>

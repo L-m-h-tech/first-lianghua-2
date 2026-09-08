@@ -1,0 +1,104 @@
+# 预报总览
+# URL: https://www.ecmwf.int/en/forecasts
+# fetched: 20260908_113943
+
+Skip to main content
+menuhelp_outline
+Search
+ help_outline Help
+login Log in
+searchaccount_circle
+Main navigation
+Home
+About
+Forecasts
+Computing
+Research
+Learning
+Publications
+Main navigation
+Charts
+Datasets
+Quality of our forecasts
+About our forecasts
+Access to forecasts
+Forecast charts and data
+We provide global forecasts, climate reanalyses and specific datasets, designed to meet different user requirements. These are available via the web, point-to-point dissemination, data servers and broadcasting.
+ECMWF’s operational forecasts aim to show how the weather is most likely to evolve. To do this, the Centre produces an ensemble of predictions. Individually they are full descriptions of the evolution of the weather. Collectively they indicate the likelihood of a range of future weather scenarios.
+Access and licences
+Charts
+Our Integrated Forecasting System (IFS) provides forecasts and associated verification at different resolutions and for multiple time ranges. The verification provides essential feedback on the quality of the forecasting system.
+Medium range
+Sub-seasonal range
+Seasonal range
+Quick access:
+ecCharts 🔒chevron_right
+Datasets
+Real-time and archive forecasts, analyses, climate re-analyses, reforecasts and multi-model datasets.
+Real-time datasets
+Archive datasets
+Open data
+Quick access:
+Public Datasetschevron_rightData in the MARS Catalogue 🔒chevron_right
+Monitoring of the observing system
+We continually monitor the quality and availability of the different components of the global observing system used at ECMWF.
+Availability
+Satellite data monitoring
+Conventional data monitoring
+Ocean observation monitoring
+Data automatic checking
+Monitoring of GUAN stations
+Observation Monitoring Dashboardchevron_right
+About our forecasts
+Key characteristics of the Integrated Forecasting System (IFS) and a description of our forecasts.
+Integrated Forecasting System (IFS)
+Medium range overview
+Sub-seasonal range overview
+Seasonal range overview
+IFS documentation
+Product news
+Model changes
+Forecasting issues
+Past severe events
+expand_lessexpand_more
+About
+Who we are
+What we do
+Jobs
+Media centre
+Suppliers
+Grants
+Location
+Forecasts
+Charts
+Datasets
+Quality of our forecasts
+About our forecasts
+Access to forecasts
+Computing
+Our facilities
+Access to computing facilities
+Software
+Service status
+Research
+Data assimilation
+Modelling and Prediction
+Climate reanalysis
+Projects
+EMI R&D Projects
+Learning
+Training
+Workshops
+Seminars
+Publications
+Newsletter
+Technical memoranda
+Reports
+IFS documentation
+ © European Centre for Medium-Range Weather Forecasts
+ © ECMWF
+Footer link 
+Accessibility
+Privacy
+Terms of use
+Contact

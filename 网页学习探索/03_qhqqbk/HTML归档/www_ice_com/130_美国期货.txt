@@ -1,0 +1,118 @@
+# 美国期货
+# URL: https://www.ice.com/futures-us
+# fetched: 20260908_114041
+
+Your browser is unsupported
+ Please visit this URL to
+ review a list of supported browsers.
+ICENYSELOGINWEBICE
+Solutions
+Resources
+Insights
+About Us
+Markets/ICE Futures U.S.
+ICE Futures U.S.
+At ICE Futures U.S., we’re supporting efficient markets that enable risk management across the global economy. Designed to be flexible and keep our customers ahead of the curve, our trading and risk management solutions include a diverse range of futures contracts including benchmarks in globally traded soft commodities, North American natural gas and power, equity indexes and FX.
+Markets: ICE Futures U.S. 
+Resources
+Regulation
+Notices
+Membership
+Products
+Agriculture
+With a vast product selection, our soft commodity markets offer leading producers in the agriculture industry a way to manage the price risk associated with crop production, weather patterns and changes in supply and demand.
+Energy
+With the broadest range of North American natural gas and power futures and options, our energy complex includes hundreds of contracts, such as Henry Hub natural gas and ERCOT and PJM power hubs.
+Equity derivatives
+Providing market participants with exposure to price movements of benchmark indices through liquid futures contracts.
+FX
+ICE Futures U.S. offers nearly 60 cross-currency futures contracts, including contracts on several emerging market currencies, and is home to the most widely recognized benchmark for the value of the U.S. dollar.
+Metals
+Our U.S. futures market for precious metals markets have been developed based on customer feedback to provide effective hedging solutions for bankers, jewelers, miners and retail traders.
+Environmental
+Environmental risk is an increasingly important component of business operations for energy intensive industries, and the trading of derivatives based on pollution reduction programs is a growing market.
+The role of U.S. futures markets
+Futures exchanges (referred to as Designated Contract Markets or “DCMs”) are regulated entities that may list for trading futures or option contracts based on all types of commodities. ICE Futures U.S. (“ICE”) is a registered DCM
+The terms of each futures contract listed for trading on ICE and the rules governing trading and all other business conducted on ICE are set forth in the Exchange’s Rulebook which is published on the ICE website
+All of the substantive rules contained in the ICE Rulebook must be submitted to the CFTC for review before they can become effective.
+The Exchange Rules are designed to foster an open, competitive, and financially sound futures marketplace
+DCMs are subject to comprehensive regulation by the CFTC and subject to the requirements of the Commodity Exchange Act, as amended (the “CEA”) and the regulations issued by the CFTC pursuant to the CEA
+These requirements include conducting business in accordance with 23 core principles and the CFTC regulations that implement those core principles. CFTC staff perform regular reviews of each DCM's ongoing compliance with the core principlesTypes of users in the futures market
+DCMs may allow access to their trading facilities by many types of traders, including retail customers
+Most participants in the futures markets are commercial or institutional commodities producers or consumers. A breakdown in markets can be found here
+Most participants are commercial firms, such as producers or consumers of a commodity, hedging their exposure to commodity prices rising or falling. In this way “hedgers” use futures to manage their risk and reduce the risk of financial losses from price changes
+Other participants include financial firms who use futures to hedge as well as profit from price changes in futures contracts. These firms play a critical role in providing liquidity to futures markets and two-way prices to allow commercial firms to offload riskInterval price limits
+The Exchange introduced Interval Price Limits (“IPLs”) to its markets over a decade ago to prevent short term price spikes by stopping markets from moving too far in one direction too quickly. This functionality implements dynamic, intraday price ranges outside of which trading in a particular expiration of an Exchange Futures Contract may not take place for a brief period. If an order crosses the IPL level applicable to that particular futures contract (either the upper end of the price band or the lower end of the price band), it triggers a market hold for a pre-set period. The market is prevented from trading outside of the IPL level until the end of the hold period (which generally ranges between 5 and 30 seconds, depending on the product). During the hold period, trading may occur at or within the IPL level in the direction of the move as well as in the opposite price direction. Once the hold period ends, a new IPL is calculated and the market can continue in either direction. Sequential hold periods can be triggered during times of extreme price volatility. All metrics associated with IPLs--such as the price bands and duration of the hold periods--may be adjusted in connection with prevailing market conditions. In this manner, IPLs act as a circuit breaker that slows the rate at which the price of a contract can move in a particular direction.Speculative position limits
+To protect futures markets from excessive speculation that can cause unreasonable or unwarranted price fluctuations, the CEA authorizes the CFTC to impose limits on the size of speculative positions in futures markets. The Exchange also has established such limits along with Rules that require positions in different contracts to be aggregated and positions under common ownership or control to be aggregated for purposes of applying the limits. The Exchange has a comprehensive market surveillance program that monitors the positions of large traders, futures and physical market prices, relevant supply and demand data, and the trading activity of large market participants to foster orderly expirations and to support the hedging and price discovery functions of its markets.
+Clearing house
+ICE Clear U.S.
+Established in 1915 as the New York Cotton Exchange Association, ICE Clear U.S. continues to build on more than a century of providing secure, capital-efficient counterparty risk management and post-trade services for ICE Futures U.S. agricultural, metals, currency, credit and equity index futures and options contracts.
+ICE Clear Europe (Energy)
+ICE Clear Europe was established in 2008 to provide central counterparty clearing services for ICE’s global energy markets. Today ICE Clear Europe provides secure, capital efficient clearing, risk management and physical delivery services for ICE markets across interest rate, equity index, agricultural and energy derivatives.
+NYSE Liffe U.S. historical resources
+CFTC filings
+Info memos
+Notices
+Publications
+Resources
+Equity derivatives: growth, diversification & scale
+With new volume records and all-time high open interest levels, ICE markets continue to lead across the equity derivatives space.
+View now
+White paper: time traveling the natural gas market
+North American natural gas is one of the most volatile publicly traded commodities in the world. This paper provides an overview of the physical gas market. 
+Read now
+Market innovation: ERIS Credit Futures
+Using the ERIS methodology, we launched cash-settled futures contracts that replicate the economics of credit default swaps.
+Learn more
+End of day reports
+See daily market data including closing price, total volume traded and open interest for U.S. contracts on agriculture commodities, equity indexes, currencies, and North American natural gas and power.
+View now
+Equity derivatives: growth, diversification & scale
+With new volume records and all-time high open interest levels, ICE markets continue to lead across the equity derivatives space.
+View now
+White paper: time traveling the natural gas market
+North American natural gas is one of the most volatile publicly traded commodities in the world. This paper provides an overview of the physical gas market. 
+Read now
+Market innovation: ERIS Credit Futures
+Using the ERIS methodology, we launched cash-settled futures contracts that replicate the economics of credit default swaps.
+Learn more
+End of day reports
+See daily market data including closing price, total volume traded and open interest for U.S. contracts on agriculture commodities, equity indexes, currencies, and North American natural gas and power.
+View now
+Solutions
+Exchanges and Clearing
+Fixed Income and Data Services
+Mortgage Technology
+Benchmark Administration
+Tools and Sources
+Markets
+Clearing
+Product guide
+Market reports
+Expiry calendars
+Margins
+Fees
+Support
+Trade and Clearing helpdesk
+ICE Data Services support
+ICE Education
+ICE developer portal
+Subscriptions
+ICE Status Center
+About
+Media center
+Investor Relations
+Contact
+Careers
+Sustainability
+Insights
+Climate risk
+Energy markets
+Fixed Income and Data
+Mortgage
+Privacy and Security Center
+Your Privacy Choices
+Terms of Use
+Modern Slavery Statement
+Do Not Sell or Share My Personal Information
+© 2026Intercontinental Exchange, Inc.

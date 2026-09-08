@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>大宗商品信息服务商</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="verification-page">
+      <div class="container leading-none">
+        <div class="title">百川盈孚-大宗商品信息服务商</div>
+
+        <div class="welcome">欢迎使用</div>
+
+        <div class="tips">为保障系统安全，请完成滑块验证</div>
+
+        <div class="sub-tips">（确认您是真人）</div>
+
+        <!-- 滑块验证区域 -->
+        <div class="slider-container">
+          <div class="slider-track">
+            <div class="slider-bg"></div>
+            <div class="slider-text">请按住滑块，拖动到最右边</div>
+            <div class="slider-btn" id="slider-btn">
+              <span>→</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn-tips" id="status">
+          <span id="msg">请拖动滑块完成验证</span>
+        </div>
+
+        <!-- 验证成功后的按钮 -->
+        <button id="success-btn" class="success-btn" style="display: none">
+          点击此处前往访问
+        </button>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

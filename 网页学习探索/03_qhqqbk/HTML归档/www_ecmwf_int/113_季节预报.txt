@@ -1,0 +1,102 @@
+# 季节预报
+# URL: https://www.ecmwf.int/en/forecasts/documentation-and-support/seasonal
+# fetched: 20260908_113945
+
+Skip to main content
+menuhelp_outline
+Search
+ help_outline Help
+login Log in
+searchaccount_circle
+Main navigation
+Home
+About
+Forecasts
+Computing
+Research
+Learning
+Publications
+Main navigation
+Charts
+Datasets
+Quality of our forecasts
+About our forecasts
+Access to forecasts
+Seasonal forecasts
+Looking one or more months into the future
+Our seasonal forecasts (previously known as long-range forecasts) provide information about atmospheric and oceanic conditions up to seven months into the future. They are produced every month with a 51-member ensemble at a horizontal resolution of around 36 km.
+Annual forecasts are produced with the same system every three months and extend 13 months into the future.
+Seasonal charts include differences (or anomalies) from a long-term (model-based) climatology and probabilities of above normal, normal or below normal conditions.
+Find out more about how our seasonal forecasts are produced.
+Our seasonal forecasting system (SEAS5)
+Like the medium- and sub-seasonal-range forecasts, our seasonal forecasts are produced using the ECMWF Integrated Forecasting System (IFS) which uses an Earth system model to represent interactions between the atmosphere, ocean, land and other Earth-system components.
+Our seasonal forecasting system uses modelling and initialisation methods which are very similar to ECMWF’s other ensemble forecasts, but the SEAS system is updated less frequently.
+El Niño/La Niña forecasts and predictability in the seasonal range
+Seasonal predictions rely on aspects of Earth system variability which have long timescales (months to years) and which are, to a certain extent, predictable. The most important of these is the El Niño/La Niña phenomenon.
+El Niño refers to periods of anomalous warming in the tropical eastern Pacific (anomalous cooling periods are known as La Niña). El Niño/La Niña events have a strong impact on the weather locally, but also influence global weather patterns. The term Southern Oscillation refers to changes in the tropical atmosphere which tend to accompany El Niño/La Niña events.
+Specialised El Niño/La Niña forecast products are provided for our users. See:
+seasonal El Nino/La Nina charts
+annual El Nino/La Nina charts
+Many other potential sources of predictability are also represented in the forecast system.
+Forecasts
+Medium range
+Sub-seasonal range
+Seasonal range
+Integrated Forecasting System
+Browse our products
+Seasonal-range charts
+Seasonal-range data
+More information
+SEAS5 user guide
+SEAS5 uses IFS cycle 43r1
+Forecast user guide
+Information for forecast users (forecast issues, severe event catalogue etc.)
+Forecast schedule
+Changes to the Integrated Forecasting System
+Fact sheets
+Ensemble weather forecasting
+Data assimilation
+Earth system modelling
+Sub-seasonal and seasonal predictions
+Ocean wave forecastingexpand_lessexpand_more
+About
+Who we are
+What we do
+Jobs
+Media centre
+Suppliers
+Grants
+Location
+Forecasts
+Charts
+Datasets
+Quality of our forecasts
+About our forecasts
+Access to forecasts
+Computing
+Our facilities
+Access to computing facilities
+Software
+Service status
+Research
+Data assimilation
+Modelling and Prediction
+Climate reanalysis
+Projects
+EMI R&D Projects
+Learning
+Training
+Workshops
+Seminars
+Publications
+Newsletter
+Technical memoranda
+Reports
+IFS documentation
+ © European Centre for Medium-Range Weather Forecasts
+ © ECMWF
+Footer link 
+Accessibility
+Privacy
+Terms of use
+Contact

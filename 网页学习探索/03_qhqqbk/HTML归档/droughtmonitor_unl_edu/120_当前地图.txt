@@ -1,0 +1,190 @@
+# 当前地图
+# URL: https://droughtmonitor.unl.edu/CurrentMap.aspx
+# fetched: 20260908_114003
+
+U.S. Drought Monitor
+Current
+Maps
+Compare Two Weeks
+Comparison Slider
+Map Archive
+Map Areas
+Map Types
+Map Viewer
+Change Maps
+Animations
+Export Animated GIF
+Custom Map Request
+Map Export Tool
+Data
+Time Series
+OCONUS Time Series
+Data Tables
+Data Graphs
+OCONUS Drought Status
+Bar Chart
+Data Download
+Drought Severity and Coverage Index
+Comprehensive Statistics
+Statistics by Threshold
+Weeks in Drought
+Web Service Info
+AOI Values
+GIS Data
+Metadata
+FSA Eligibility Tool
+State Impacts
+About
+Data Archive
+Summary
+About
+What is the USDM?
+Permission
+Contact Us
+About the Data
+Drought Classification
+Drought Severity and Coverage Index
+Statistics Explanation
+Population Statistics
+Drought Alert Request
+Tutorials
+Other Resources
+Media Kit
+Conditions & Outlooks
+Current Conditions
+Outlooks
+Weekly Drought Indices
+USDM Inputs
+Ag in Drought
+En Español
+NADM
+Map released: September 3, 2026
+Data valid: September 1, 2026
+View grayscale version of the map
+United States and Puerto Rico Author(s):
+Curtis Riganti, National Drought Mitigation Center
+Pacific Islands and Virgin Islands Author(s):
+Tsegaye Tadesse, National Drought Mitigation Center
+More maps and statistics:U.S. States and Puerto RicoContinental U.S.Regions
+High Plains
+Midwest
+Northeast
+South
+Southeast
+West
+Caribbean
+Pacific
+The data cutoff for Drought Monitor maps is each Tuesday at 8 a.m. EDT. The maps, which are based on analysis of the data, are released each Thursday at 8:30 a.m. Eastern Time.
+Intensity and Impacts
+None
+D0 (Abnormally Dry)
+D1 (Moderate Drought)
+D2 (Severe Drought)
+D3 (Extreme Drought)
+D4 (Exceptional Drought)
+No Data
+ - Delineates dominant impacts
+S - Short-term impacts, typically less than 6 months (agriculture, grasslands)
+L - Long-term impacts, typically greater than 6 months (hydrology, ecology)
+SL - Short- and long-term impacts
+For local details and impacts, please contact your State Climatologist or Regional Climate Center.
+Map Download
+United States and Puerto Rico (Page 1)
+Current Map
+PNG
+PDF
+TIF
+AI
+Previous Map
+PNG
+PDF
+TIF
+AI
+U.S. Affiliated Pacific Islands and Virgin Islands (Page 2)
+Current Map
+PNG
+PDF
+Previous Map
+PNG
+PDF
+How is drought affecting you?
+You can submit a Condition Monitoring Observer Report (CMOR), including photos. Reporting regularly can help people see what normal, wet and dry conditions look like in your part of the country.
+Submit report
+This Week's Drought Summary
+Dry weather continued this week across much of the central U.S., especially from the southern Great Plains to the Mississippi River Valley and Corn Belt. Flash drought conditions were occurring across a large area spanning from Texas northeastward to Oklahoma and southern Kansas, southern Missouri, Arkansas, northern Mississippi and portions of far western Tennessee. Due to the drier- and warmer-than-normal weather in most of these areas, drought and abnormal dryness expanded and intensified in many areas, as widespread adverse impacts to agriculture continued and fire danger continued to grow in some areas. Widespread showers and thunderstorms, some locally heavy, dotted parts of the Northeast and Southeast regions, leading to localized improvements to ongoing drought or abnormal dryness. Some areas that missed out on the rains saw conditions worsen. Hot and dry weather continued near the borders of the Dakotas with Minnesota, leading to worsening drought conditions. Widespread improvements occurred in some areas from Wyoming and the plains of eastern Colorado northeast into the Nebraska Sandhills and southern South Dakota, where either heavy rainfall this week improved conditions or conditions were reassessed following recent heavier rains. Recent hot and dry weather, combined with a lack of winter snowpack, led to the expansion of moderate drought in northern California. Heavy rainfall associated with the remnants of Tropical Storm Dolly in eastern Puerto Rico led to a few improvements there, though widespread severe and extreme drought continued across much of Puerto Rico. Recent rainfall led to the removal of short-term moderate drought from Alaska’s Central Interior.
+ Northeast
+Weather this week was largely drier in the Northeast, except for parts of New Jersey and southeast Pennsylvania (in the Lehigh Valley and Philadelphia area), where heavy rain amounts (locally over 2 inches) boosted streamflows and alleviated long-term precipitation deficits. Recent rainfall also led to a few localized improvements in southern New England, though groundwater shortages and long-term precipitation deficits kept some of the lingering drought and abnormal dryness going. In northern New England, drier weather prevailed, leading to growth and worsening of drought areas amidst very low streamflows. Despite temperatures of 2-4 degrees below normal in central New York, abnormal dryness expanded there as short-term precipitation deficits grew and soil moisture and streamflow declined. Temperatures across the rest of the region were mostly within 2-4 degrees of normal.
+ Southeast
+Scattered heavy rains, locally 2-5 inches, fell from parts of southern North Carolina through the Florida Peninsula. Scattered improvements to ongoing long-term drought occurred in the Florida Peninsula, southeast Georgia, coastal South Carolina and southern North Carolina, where lingering long-term precipitation deficits were balanced against short-term gains and improving soil moisture and streamflow. Localized short-term dryness enveloped parts of northeast North Carolina, leading to locally worsening drought conditions where long-term precipitation deficits are still hefty. Drought and abnormal dryness expanded across much of southern Alabama and a few portions of central Georgia, as soil moisture declined and streamflows lowered with ongoing short-term rainfall deficits. Temperatures in Alabama and northwest Georgia were generally warmer than normal, with some areas finishing the week 2-4 degrees above normal. Elsewhere, with local exceptions, temperatures remained within a couple degrees of normal.
+ South
+Widespread expansion or worsening of ongoing drought or abnormal dryness occurred across the South, especially in parts of Mississippi, Texas, eastern Oklahoma and portions of Arkansas. Heavier rains, locally over 2 inches, fell in southeast Louisiana and southwest Mississippi. Otherwise, weather conditions were mostly drier, with many areas receiving less than a half inch of rainfall and some receiving none at all. Temperatures were warmer than normal across most of the region, especially in Oklahoma and the northern half of Texas, where temperatures were 6-10 degrees hotter than normal. This continued a very hot August across much of Oklahoma. Degradations in drought conditions were especially prevalent in southwestern and northern Texas, deep south Texas, northern Mississippi and eastern Oklahoma, as ongoing hot and dry weather worsened conditions in areas already suffering a myriad of drought impacts. Burn bans were enacted across much of western Oklahoma, while Oxford, Miss., residents were asked to conserve water due to high water demand and recent extreme heat. Streamflow across much of central and western Oklahoma and northern Texas was quite low, along with low soil moisture and intense short-term precipitation deficits.
+ Midwest
+Dry weather occurred across much of the southern half of the Midwest region this week. This led to localized development or expansion of abnormal dryness in Illinois and Kentucky, and widespread degradation of conditions in Missouri, especially in south-central and southwest Missouri. Fire danger and drought impacts to agriculture and other vegetation continued to worsen in southwest Missouri and neighboring Arkansas, leading to degrading conditions across much of this area. Drought conditions also worsened in west-central Minnesota, where short- and long-term precipitation deficits mounted. Temperatures in the eastern half of the region were generally within 2-4 degrees of normal, while much of Minnesota, Iowa and western Missouri were 2-6 degrees warmer than normal. Scattered rains fell across parts of the Upper Midwest, locally exceeding 2 inches but mostly depositing a half inch or less of rain.
+ High Plains
+A swath of 0.5-2 inches of rain fell from parts of western Nebraska and western Kansas into portions of Colorado and Wyoming. Scattered similar rain amounts also fell in portions of east-central and northern South Dakota, as well as in parts of central and western North Dakota. The impacts of recent rainfall in southern South Dakota and the Nebraska Sandhills were re-evaluated this week, and widespread improvements were made as soil moisture and streamflow locally improved, while short-term rainfall deficits were alleviated. Long-term precipitation deficits and their impacts continued across much of this region, and abnormal dryness and long-term moderate drought remained. Scattered improvements to drought also occurred from southern and eastern Wyoming into the western Dakotas and much of eastern Colorado. Short-term precipitation deficits improved in these areas, with some improvement in soil moisture and streamflow, leading to improvements in drought conditions. Streamflow still remains low across portions of the western High Plains region given the poor high elevation snows and warm temperatures during the water year. Temperatures across the region were hotter than normal, especially in Kansas, where temperatures ranged mostly from 6-10 degrees above normal, resulting in high atmospheric demand for moisture in southeast Kansas.
+ West
+Locally heavy rains from the North American Monsoon fell in parts of Arizona, Utah and the Rocky Mountains in Colorado. Parts of Colorado to the west of the Front Range saw conditions improve given recent rainfall, though widespread short- and long-term drought remained across central and western Colorado. In a few areas in south-central and southwest Colorado that missed out on heavier rains, long-term precipitation deficits grew even worse. Temperatures from 4–6 degrees above normal also kept atmospheric thirst high, and extreme and exceptional drought locally expanded. Short-term precipitation deficits and poor streamflow in some areas led to drought degradation in parts of the Idaho Panhandle, the Spokane, Wash., area, and nearby northwest Montana. Short-term dryness and warmth in northern California led to the expansion of moderate drought there. Moderate drought locally expanded in north-central Montana where short-term rainfall deficits grew and soil moisture declined in a few areas. Recent precipitation in southwest Montana led to improvements in mid- to long-term precipitation deficits and overall conditions, and moderate drought coverage decreased. Recent precipitation in western Utah helped to lessen long-term precipitation deficits, and extreme drought coverage lessened slightly. Temperatures were warmer than normal across much of the West, excluding areas from western Nevada and far northern California through Oregon and Washington. In the rest of the region, temperatures were mostly at least 2-4 degrees above normal, with many areas 4-10 degrees warmer than normal.
+ Caribbean
+This week, over 6 inches of rain fell in parts of southeast Puerto Rico as the remnants of former Tropical Storm Dolly passed through the area. At least 2-3 inches of rain fell across much of eastern Puerto Rico. Extreme short-term drought improved to severe short-term drought in parts of northeast and southeast Puerto Rico, while a small area of southeast Puerto Rico saw conditions improve from severe to moderate short-term drought.
+This week, increased tropical moisture from the remnants of Dolly created conditions conducive to showers across some areas of the U.S. Virgin Islands (USVI). However, local factors and island-scale variability significantly influenced the resulting precipitation. As a result, while the overall weather pattern brought beneficial rainfall, it was not uniform across the islands—St. Croix received considerably more rain, whereas St. Thomas and parts of St. John remained relatively dry. Despite these recent rainfall amounts, groundwater levels on all three islands are still much lower than they were a year ago, indicating that the recent precipitation has not yet led to significant recovery of groundwater supplies.
+St. Croix experienced the highest and most widespread rainfall among the three islands this week. East Hill recorded 1.45 inches, while the CoCoRaHS stations reported various amounts: 1.61 inches at VI-SC-10 (Christiansted 1.6 E), 1.96 inches at VI-SC-20 (Frederiksted 1.7 ESE), 1.61 inches at VI-SC-23 (Christiansted 6.5 W), 1.30 inches at VI-SC-30 (Christiansted 1.7 SW), 1.92 inches at VI-SC-34 (Frederiksted 1.9 NE), and 1.94 inches at VI-SC-35 (Frederiksted 1.3 ENE). Overall, the rainfall across St. Croix was moderate and fairly widespread, with amounts ranging from 1.30 to 1.96 inches among the CoCoRaHS stations. However, despite this recent rainfall, groundwater remains severely depleted. The Adventure 28 Well measured a depth of 24.64 feet below the land surface on September 1, compared to 18.38 feet on the same date in 2025. This indicates that groundwater levels are substantially lower than they were a year ago. As a result, St. Croix continues to experience extreme drought conditions.
+This week, St. John received significantly less rainfall compared to St. Croix. Rafe Boulon (VI-SJ-3, Windswept Beach) recorded 0.48 inches, while the CoCoRaHS VI-SJ-5 station (Cruz Bay 1.6 E) recorded only 0.03 inches. These observations indicate limited and uneven rainfall, with no evidence of widespread substantial precipitation across the island. Groundwater conditions remain very dry. At the Susannaberg DPW 3 Well, the water level was measured at 18.50 feet below the land surface on September 1. This level has increased in depth from the previous week and is significantly deeper than the 12.67 feet recorded on September 1, 2025. The combination of minimal rainfall and declining groundwater levels indicates that St. John is currently experiencing extreme drought conditions.
+St. Thomas observed the least rainfall of the three islands this week. Cyril E. King Airport recorded just 0.01 inches. CoCoRaHS stations reported varying amounts: 0.34 inches at VI-ST-5 (Charlotte Amalie West 4.2 WNW), 0.06 inches at VI-ST-14 (Nadir 0.3 E/Tropical Marine), and 0.29 inches at VI-ST-15 (Charlotte Amalie West 1.3 N). The VI-ST-13 station (Charlotte Amalie 1.2 NNW) reported missing data instead of an observed rainfall amount. As a result, recorded rainfall ranged from 0.01 to 0.34 inches, indicating generally light rainfall that varied across St. Thomas. In addition, groundwater conditions remain very poor. The Grade School 3 Well reached a depth of 9.88 feet below the land surface on September 1, compared to 7.38 feet on the same date in 2025. Furthermore, groundwater depth has been increasing since April 20, 2026. These conditions suggest that St. Thomas continues to experience extreme drought conditions despite some recent rainfall.
+ Pacific
+Above-normal rain amounts fell in much of central and northern portions of Alaska, along with temperatures that were near-normal or 3-9 degrees below normal in these areas. A small area of short-term moderate drought in the Central Interior was removed, while abnormal dryness locally expanded in the Eastern Interior, where locally dry recent weather continued.
+Precipitation amounts in Hawaii this week were mostly below normal, with the highest amounts of 1-2 inches falling in parts of Kauai, Maui, Oahu and the Big Island. Temperatures were mostly within a couple degrees of normal this week. Hawaii remained free of drought, though abnormal dryness remained in parts of Kauai, Oahu, Molokai, central Maui and the western reaches of the Big Island.
+The Marshall Islands have been affected by the western Pacific monsoon trough, bringing scattered showers and thunderstorms to Majuro. By September 1, the National Weather Service noted that monsoon activity was weakening, and a drier pattern was expected around Majuro. Rainfall this week was adequate, with all reporting stations free from drought conditions. Weekly totals included 3.31 inches at Ailinglapalap, 0.40 inches at Jaluit, 1.83 inches at Kwajalein, 1.90 inches at Majuro, 2.45 inches at Mili, 0.54 inches at Utirik, and 1.04 inches at Wotje. Jaluit was the driest location but had received 1.9 inches on August 24, providing some moisture to remain drought-free. Overall, the Marshall Islands are currently drought-free.
+This week, an active monsoon trough and surge affected eastern and central Federated States of Micronesia (FSM), especially Pohnpei, where a weak tropical disturbance, Invest 95W, was located. The National Weather Service reported that while the surge enhanced convection around Pohnpei, it was expected to weaken as the disturbance moved north-northwest. Western FSM, including Yap and Chuuk, also experienced the effects of a monsoonal convergence zone. Rainfall varied across FSM, with most stations receiving at least 1 inch. Notable weekly totals included 2.84 inches at Chuuk Lagoon, 0.00 inches at Kapingamarangi, 1.12 inches at Kosrae, 1.46 inches at Lukunor, 0.86 inches at Nukuoro, 1.58 inches at Ulithi, 6.28 inches at Pohnpei, 1.59 inches at Woleai, and 1.73 inches at Yap. Pohnpei recorded particularly heavy rainfall, reaching 6.28 inches, including 4.16 inches on August 30. In contrast, Kapingamarangi remained dry with no rainfall and continued to maintain a D0-S (abnormally dry) status. Overall, recent rainfall has kept drought-free conditions across most of FSM, except for Kapingamarangi.
+American Samoa continues to experience persistent short-term dryness among the USAPI regions. This week, Pago Pago recorded 0.29 inches of rain, while Siufaga Ridge received 0.76 inches, and Toa Ridge received 0.57 inches. Despite these amounts, all three locations remain in moderate drought conditions (D1-S), as the localized rainfall was insufficient to provide meaningful relief from the dryness. The limited rainfall is due to a synoptic pattern in which the main western Pacific monsoon trough and associated tropical disturbances are positioned well north of American Samoa. This situation has left the territory outside the core area of enhanced Micronesian convection. As a result, rainfall this week has been intermittent and localized, rather than widespread enough to improve the moderate drought conditions significantly.
+Palau experienced no rainfall this week, recording 0.00 inches at Koror and only 0.10 inches at WSO Palau/Airai. Both weather stations remain in abnormally dry conditions (D0-S) due to ongoing dryness, raising the risk of deteriorating into moderate drought if these conditions persist. Weather patterns have been less favorable for rainfall than in central and eastern Micronesia. Palau has been situated beneath or near a relatively dry tropical ridge, while the main monsoonal convergence and convective activity have shifted towards Yap and the Marianas. The National Weather Service (NWS) indicated that this ridge would continue to promote mostly dry conditions over Palau. Consequently, the lack of significant rainfall this week, combined with the prevailing dry weather patterns, supports the continuation of abnormally dry conditions (D0-S). Drought conditions may worsen to moderate drought next week if the dry spell continues.
+This week, the Mariana Islands experienced locally heavy and highly variable rainfall. The totals of rainfall were as follows: Guam received 4.64 inches, Rota had 2.32 inches, Saipan recorded 0.82 inches (with two days of data missing), and Tinian observed 1.44 inches (with five days of data missing). As a result, all stations remained drought-free. This rainfall pattern was linked to an active monsoon trough and the nearby tropical disturbance, Invest 95W, which increased moisture and convection in the region. Overall, the rainfall was sufficient to maintain drought-free conditions throughout the Mariana Islands.
+Looking Ahead
+Through the evening of Monday, Sept. 7, the National Weather Service Weather Prediction Center is forecasting dry weather to continue across much of the central and south-central U.S., especially from southeast Nebraska through Oklahoma, Arkansas and western north Texas into southwest Texas and eastern New Mexico and Colorado. Heavier precipitation amounts through Monday evening will likely be confined to parts of the southeastern and northern Lower 48. Heavy rain is forecasted, or occurring on Wednesday afternoon, in east-central and southeast Texas, while the remnants of Tropical Storm Edouard pass through. Heavier rain is also forecast across the central and eastern Gulf Coast and Florida Peninsula. Rain amounts from southern Louisiana to near Panama City may approach 1-2 inches, while heavier rain amounts, locally 2-3 inches or more, are forecast in the Florida Peninsula. Heavier precipitation amounts, mostly in the 0.75-2 inch range, are also forecast in parts of the Pacific Northwest, northern Idaho, northern parts of Montana and North Dakota, and from Minnesota southeastward across Wisconsin and the lower Great Lakes into Pennsylvania and New York.
+The National Weather Service Climate Prediction Center’s 6-10 day outlooks, covering Sept. 8-12, favors warmer-than-normal temperatures across much of the central and eastern U.S. The highest confidence for above-normal temperatures is centered around Kansas City and the mid-lower Missouri River Valley southward to the central and western Gulf Coast. Near-normal temperatures are favored in the western half of the West, with below-normal temperatures slightly favored in western Nevada and adjacent parts of California and Oregon. Near- or below-normal temperatures are also favored in central and northern New England. Above-normal precipitation is favored across much of the Great Plains and western U.S., especially from the Continental Divide into the Great Basin and in northern Minnesota and environs. Above-normal precipitation is also slightly favored in east-central Florida. The forecast favors drier-than-normal weather in the Tennessee and Ohio River Valleys and from Lake Erie to southern parts of the Northeast.
+In Hawaii, both precipitation and temperatures are expected to be above normal for Sept. 8–12. Above-normal precipitation is also favored across large parts of Alaska, except for the northwest portion of the state and the central Aleutian Islands. Above-normal temperatures are favored in southeast and central Alaska and in the central Aleutian Islands, while near-normal temperatures are favored in northeast and southwest Alaska and the eastern Aleutian Islands.
+Download
+PDF
+XML
+HTML
+Maps
+Download maps for selected areas, compare maps from two different weeks, and request a custom map and more.
+Data
+View tabular data, see a time series, download datasets, and get data in GIS formats.
+Drought Summary
+Read the drought summary for the current week or revisit a summary from a prior week.
+About USDM
+Get contact information for the authors, read the history of the U.S. Drought Monitor, and learn about how drought is classified.
+Current Conditions and Outlooks
+See some of the products and tools that are used as part of weekly process.
+Drought Classification
+The Drought Monitor summary map identifies general areas of drought and labels them by intensity. D1 is the least intense level and D4 the most intense. Drought is defined as a moisture deficit bad enough to have social, environmental or economic effects.
+D0 areas are not in drought, but are experiencing abnormally dry conditions that could turn into drought or are recovering from drought but are not yet back to normal.
+We generally include a description on the map of what the primary physical effects are for short- and long-term drought.
+S = Short-term, typically less than 6 months (agriculture, grasslands)
+L = Long-term, typically more than 6 months (hydrology, ecology)
+SL = Area contains both short- and long-term impacts
+Learn more
+Climate Literacy and Energy Awareness Network (CLEAN)
+The U.S. Drought Monitor website has been selected for inclusion in the CLEAN collection.
+Learn more
+The U.S. Drought Monitor is produced through a partnership between the National Drought Mitigation Center at the University of Nebraska-Lincoln, the United States Department of Agriculture, the National Oceanic and Atmospheric Administration and the National Aeronautics and Space Administration.
+Contact Us
+National Drought Mitigation Center
+ University of Nebraska-Lincoln
+ 3310 Holdrege Street
+ P.O. Box 830988
+ Lincoln, NE 68583–0988
+DroughtMonitor@unl.edu
+(402) 472–6707
+ (402) 472–2946
+©2026 - National Drought Mitigation CenterMastodon
+National Drought Mitigation Center
+The National Drought Mitigation Center’s mission is to reduce the effects of drought on people, the environment and the economy by researching the science of drought monitoring and the practice of drought planning. We collaborate with and learn from decision-makers at all levels – individual ranchers, communities, regions, watersheds, tribes, states, countries – across the US and around the world. We organize and present workshops, writeshops and other capacity-building activities, in close cooperation with local partners.Go to the NDMC
+United States Department of Agriculture
+The United States Department of Agriculture (USDA) provides leadership on food, agriculture, natural resources, rural development, nutrition, and related issues based on public policy, the best available science, and effective management.Go to the USDA
+U.S. Department of Commerce
+The Department of Commerce’s mission is to create the conditions for economic growth and opportunity for all communities. Through its 13 bureaus, the Department works to drive U.S. economic competitiveness, strengthen domestic industry, and spur the growth of quality jobs in all communities across the country. Go to the U.S. Department of Commerce
+National Oceanic and Atmospheric Administration
+NOAA is an agency that enriches life through science. Our reach goes from the surface of the sun to the depths of the ocean floor as we work to keep the public informed of the changing environment around them.Go to NOAA
+National Aeronautics and Space Administration
+The National Aeronautics and Space Administration (NASA) is America’s civil space program and the global leader in space exploration. The agency has a diverse workforce of just under 18,000 civil servants, and works with many more U.S. contractors, academia, and international and commercial partners to explore, discover, and expand knowledge for the benefit of humanity. With an annual budget of $23.2 billion in Fiscal Year 2021, which is less than 0.5% of the overall U.S. federal budget, NASA supports more than 312,000 jobs across the United States, generating more than $64.3 billion in total economic output (Fiscal Year 2019).Go to NASA

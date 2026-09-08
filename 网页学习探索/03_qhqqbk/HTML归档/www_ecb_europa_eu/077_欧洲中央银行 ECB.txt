@@ -1,0 +1,1026 @@
+# 欧洲中央银行 ECB
+# URL: https://www.ecb.europa.eu/
+# fetched: 20260908_113750
+
+Skip to:Skip to navigationSkip to contentSkip to footer
+EN
+БългарскиČeštinaDanskDeutschEλληνικάEnglishEspañolEesti keelSuomiFrançaisGaeilgeHrvatskiMagyarItalianoLietuviųLatviešuMaltiNederlandsPolskiPortuguêsRomânăSlovenčinaSlovenščinaSvenska
+ Menu
+Monetary policy & markets
+Monetary policy & markets
+Our monetary policy strategy, the tools we use and the impact they haveOverview of monetary policy and markets
+Quick links
+What is monetary policy?
+Strategy review
+Asset purchase programmes
+Latest monetary policy press conference
+10 September 2026
+Introduction
+Benefits of price stability
+Scope of monetary policy
+Transmission mechanism
+Decisions, statements & accounts
+Monetary policy strategy
+Strategy review
+Medium-term orientation
+Two per cent inflation target
+Economic, monetary and financial analysis
+Economic analysis
+Monetary and financial analysis
+Monetary policy operations
+Open market operations
+TLTROs
+Asset purchase programmes
+Securities lending
+Pandemic emergency purchase programme
+Standing facilities
+Minimum reserves
+Two-tier system
+Euro central bank liquidity lines
+Swap lines
+EUREP
+Chronology of Eurosystem liquidity lines
+Emergency liquidity assistance (ELA)
+Liquidity analysis
+Collateral
+Eligibility criteria and assessment
+Marketable assets
+Non-marketable assets
+List of eligible marketable assets
+User guide
+Collateral management
+Eligible SSSs
+Eligible links
+Eligible triparty agents
+Risk mitigation
+ECAF
+Risk control
+Haircut categories
+Valuation
+Loan-level requirements
+Contacts
+Structure of the euro area economy
+Economic policy
+Fiscal policies
+External trade
+Effective exchange rates
+Financial structure
+Financial markets
+Financial intermediaries
+Economic diversity
+Labour market
+Market contact groups
+Bond market (BMCG)
+Money market (MMCG)
+Debt Issuance Market Contact Group (DIMCG)
+ECB Operations managers group (ECB OMG)
+Foreign exchange (FXCG)
+Institutional Investor Dialogue (IID)
+Monetary Analysis Contact Group (MACG)
+Payments & financial stability
+Payments & financial stability
+Insights into our work on financial stability and payments and market infrastructuresOverview of payments and financial stability
+Quick links
+Digital euro
+Payments news & events
+Market contact groups
+TARGET professional use documents and links
+Latest Financial Stability Review
+5 June 2025
+Payments
+TARGET Services
+Shared features
+T2
+Facts and figures
+Governance
+T2S
+Governance
+Facts and figures
+Pricing
+TIPS
+Cross-border payments
+Governance
+Facts and figures
+Onboarding
+ECMS
+Governance
+Pontes
+Governance
+TARGET professional use documents & links
+Shared features documents & links
+T2 documents & links
+T2S documents & links
+TIPS documents & links
+ECMS documents & links
+Pontes documents & links
+Tokenisation and DLT
+Appia
+Exploratory work
+Retail payments
+Retail payments strategy
+ECB as a catalyst
+SEPA
+Instant payments
+Market contact groups
+Collateral management harmonisation
+SCoRE
+Implementation
+FAQ
+AMI-SeCo
+Cyber resilience
+Financial market infrastructures
+TIBER-EU
+Euro Cyber Resilience Board
+Oversight
+Payment systems
+TARGET2-Securities
+Electronic payments
+Securities settlement systems and central counterparties
+Critical service providers
+Correspondent and custodian banks
+SecuRe Pay forum
+Reserve management services
+Key aspects
+Range of services
+Cash professionals
+Cash handling
+Authentication devices
+Recirculation of banknotes
+Common detector interface specifications
+Banknote manufacturer accreditation
+Financial stability
+Introduction to financial stability
+Macroprudential Measures
+Financial stability contact groups
+Statistics
+Statistics
+Access to all ECB statistics and background informationOverview of ECB statistics
+Quick links
+Key figures
+ECB Data Portal
+Statistical releases
+PRESS RELEASE - ECB launches pilot project for research access to confidential statistical data
+13 March 2025
+Frequently accessed
+Euro exchange rates
+Key ECB interest rates
+Euro short-term rate (€STR)
+Interest rate benchmarks
+Working group on euro risk-free rates
+Inflation
+Euro area yield curves
+All statistics & background
+All key statistics
+All data services
+Data reporting & standards
+Governance and quality framework
+Co-operation and standards
+Banks’ data reporting
+DPM Alliance
+IReF
+JBRC
+BIRD
+AnaCredit
+AnaCredit Q&A
+Public consultations
+Banking industry dialogue on ESCB statistics and integrated reporting
+SDMX – statistical data exchange model
+INEXDA - granular data network
+The euro
+The euro
+All you need to know about our common currencyOverview of the euro
+Quick links
+Cash professionals
+Banknote and coins
+ statistics
+Euro exchange
+ rates
+Redesign process of our future banknotes
+Digital euro
+What it is
+Digital euro and privacy
+How it works
+Why we need it
+Innovation platform
+Pilot
+Timeline and progress
+In-depth information
+Governance and stakeholder engagement
+Technical documents and research
+Scheme rulebook
+Frequently asked questions
+Cash
+The Eurosystem cash strategy
+The role of cash
+Issuance and circulation
+Access to and acceptance of cash
+Frequently asked questions
+Banknotes
+Future banknotes
+Current banknotes
+Denominations
+Design elements
+Security features
+Anti-counterfeiting
+Banknote production and stocks
+Damaged and inked-stained banknotes
+Environment, health and safety
+Product environmental footprint
+Research and development
+Images and reproduction rules
+Information and training materials
+Coins
+€2
+€1
+50 cent
+20 cent
+10 cent
+5 cent
+2 cent
+1 cent
+Common sides
+€2 commemorative coins
+Security features
+Collector coins
+Joining the euro area
+Bulgaria (2026)
+Croatia (2023)
+Lithuania (2015)
+Latvia (2014)
+Estonia (2011)
+Slovakia (2009)
+Cyprus (2008)
+Malta (2008)
+Slovenia (2007)
+Initial changeover (2002)
+Exchanging national cash
+Austria
+Belgium
+Bulgaria
+Croatia
+Cyprus
+Estonia
+Finland
+France
+Germany
+Greece
+Ireland
+Latvia
+Italy
+Lithuania
+Luxembourg
+Malta
+The Netherlands
+Portugal
+Slovakia
+Slovenia
+Spain
+Visually impaired people
+Research
+Research
+In-depth studies and expert analyses covering diverse topics and fieldsOverview of ECB research
+Quick links
+Conferences & seminars
+Opportunities for researchers
+Research Bulletin
+Economic research
+Research agenda
+Monetary policy, strategy and implementation
+Fiscal policy and governance within EMU
+International macro and finance
+Real sector and microeconomic analysis
+Forecasting and business cycle analysis
+Macro-finance, systemic risk and macroprudential policy
+Financial institutions, microprudential policy, financial markets and payments
+Opportunities for researchers
+Wim Duisenberg Fellowship
+Regular Research Visitors
+Lamfalussy Fellowship
+Summer Research Graduate Programme
+Student Research Traineeship Programme
+Legal Research
+Legal conferences and seminars
+Legal Research Programme
+Research papers
+Papers by authors
+ECB researchers
+Research networks
+News & publications
+News & PublicationsBrowse all news & publications
+News
+Press releases
+Statistical releases
+Speeches
+Interviews
+The ECB Blog
+Podcasts & webcasts
+Payments news & events
+Press hub
+Publications
+Governing Council decisions
+Monetary policy decisions
+Other decisions
+Monetary policy accounts
+Economic Bulletin
+Articles
+Focus
+Monthly Bulletin
+Macroeconomic projections
+Annual reports & financial statements
+Annual Report
+Annual Accounts
+Eurosystem balance sheet
+Weekly financial statements
+Disaggregated data
+Financial stability publications
+Financial Stability Review
+Special features & boxes
+Macroprudential Bulletin
+Research publications
+Research Bulletin
+Working papers
+Discussion papers
+Occasional papers
+Legal working papers
+Statistics papers
+Other publications
+Letters to MEPs
+Convergence Report
+International Role of the Euro
+Events & calendars
+Monetary policy press conference
+Monetary policy statements
+Monetary policy statements at a glance
+Conferences & seminars
+Forum on Central Banking
+Young Economist Prize
+Past editions
+Civil society engagement
+Calendars
+Weekly schedule
+Meetings of the Governing Council and the General Council
+Statistical calendars
+Money, banking and financial markets
+Euro area economic and financial developments by institutional sector
+External transactions and positions
+Prices, output, demand and labour
+Government finance
+Supervisory and prudential statistics
+Eurosystem's tender operations
+Reserve maintenance period
+ECB banking supervision
+About us
+About us
+All about us
+Our leadership
+Executive Board
+Governing Council
+General Council
+Supervisory Board
+Our organisation
+ECB, ESCB and the Eurosystem
+ECB mission
+Eurosystem mission
+Strategic intents
+Organisational principles
+Our tasks and responsibilities
+Monetary policy
+Statistics
+Financial stability and macroprudential policy
+Our tasks
+Strategy
+Institutional framework
+Banknotes
+Payments & securities
+European relations
+European cooperation
+EMU economic governance
+International affairs
+International relations and analysis
+International central bank cooperation
+Foreign reserves and own funds
+Foreign exchange operations
+Organisation chart of the ECB
+Capital subscription
+Corporate governance
+Eurosystem financial literacy network
+Our values
+Independence
+Transparency
+Integrity
+Ethics Network of Multilateral Organizations (ENMO)
+Accountability
+Our history, arts and culture
+Our history
+25 years of the ECB
+Economic and Monetary Union
+EU enlargement
+European Union
+Archives
+Committee of Governors
+European Monetary Cooperation Fund
+Delors Committee
+European Monetary Institute
+European Central Bank
+Arts and culture
+Our legal framework
+EUR-Lex - Frequently asked questions
+Institutional framework
+Climate change and the ECB
+Our climate and nature plan
+Climate-related financial disclosures
+Managing climate-related risks
+Supporting the green transition
+Fostering wider action
+Our approach
+Environmental protection
+Climate Insurance Protection Gap
+Sanctions imposed by the ECB
+Procurement
+Tenders
+Archive
+Electronic tendering system
+Access to documents
+Public Register of Documents
+Contacts
+Address
+ECB public holidays
+ECB & You
+ECB & You
+All about ECB & You
+Explainers
+Key things to know about the ECB
+ECB and beyond
+Our currency, the euro
+Making payments
+Monetary policy
+Unconventional monetary policy instruments
+Banking supervision
+Climate change and the ECB
+Test your knowledge
+Youth initiatives
+Girls' IT Bootcamp
+Financial literacy in Europe
+The gender gap in financial literacy
+Everyone needs stability
+ECB & You broadcasts
+ECB in Frankfurt
+Ask us
+Visit us
+Main building
+Careers
+Careers
+All about careers
+Vacancies
+Who we are
+About the ECB
+Meet our people
+Life in Frankfurt
+Why we value diversity
+Women@ECB
+Diversity networks
+What we offer
+Benefits & rewards
+Contract types
+Fixed-term
+Short-term
+ESCB/IO
+Other
+Traineeship
+Graduate programme
+ECB Scholarship for Women
+ECB Scholarship for Ukrainian graduates
+How you can join us
+How to apply
+How we hire
+You have been selected, what next?
+Fixed-term employee
+Short-term employee
+Trainee
+Cost-free secondee
+FAQs
+SearchMenu
+ANYTIME 
+PAST MONTH 
+PAST YEAR 
+Search Options
+Image Preview
+Sort by
+ANYTIME PAST MONTH PAST YEAR 
+Suggestions
+HomeMediaExplainersResearch & PublicationsStatisticsMonetary PolicyThe €uroPayments & MarketsCareers
+Suggestions
+Sort by
+Relevance
+ Date
+MONETARY POLICY
+Press conference this Thursday
+President Christine Lagarde and Vice-President Boris Vujčić explain the Governing Council’s monetary policy decisions and answer questions from journalists. The press conference in Berlin, Germany, starts at 14:45 CET.Find out more
+In focus
+BANKNOTES23 July 2026
+ Euro banknotes design proposals 
+Ten shortlisted design proposals for the next series of euro banknotes have been unveiled. Explore the proposals and tell us which ones you prefer.Have your say
+THE ECB BLOG2 September 2026
+ Can securitisation support growth? 
+Synthetic securitisation can free up bank capital, but does this result in more lending to firms? This ECB Blog post explores the effects of loan securitisation, finding that banks that issue synthetic securitisations lend marginally more, but also tend to pay more dividends.Read The ECB Blog
+PODCAST1 September 2026
+ Is my money safe? 
+We rely on banks to handle our savings, salaries and spending. But how do we know we can trust them to act responsibly? In our latest What the Euro?! episode, François Peyratout talks to our host Catherine Steer about how European banking supervision keeps your bank – and your money – safe.Listen to the Euro Matters podcastPress releases
+2 September 2026
+MFI INTEREST RATE STATISTICS
+Euro area bank interest rate statistics: July 2026
+English
+Deutsch
+OTHER LANGUAGES(2)+
+Select your language
+EspañolESFrançaisFR
+1 September 2026
+WEEKLY FINANCIAL STATEMENT
+Consolidated financial statement of the Eurosystem as at 28 August 2026
+English
+OTHER LANGUAGES(22)+
+Select your language
+БългарскиBGČeštinaCSDanskDADeutschDEEλληνικάELEspañolESEesti keelETSuomiFIFrançaisFRHrvatskiHRMagyarHUItalianoITLietuviųLTLatviešuLVMaltiMTNederlandsNLPolskiPLPortuguêsPTRomânăROSlovenčinaSKSlovenščinaSLSvenskaSV
+Annexes
+1 September 2026
+WEEKLY FINANCIAL STATEMENT - COMMENTARY
+Commentary
+English
+27 August 2026
+MONETARY POLICY ACCOUNT
+Meeting of 22-23 July 2026
+English
+Related
+23 July 2026
+MONETARY POLICY DECISION
+Monetary policy decisions
+English
+OTHER LANGUAGES(23)+
+Select your language
+БългарскиBGČeštinaCSDanskDADeutschDEEλληνικάELEspañolESEesti keelETSuomiFIFrançaisFRGaeilgeGAHrvatskiHRMagyarHUItalianoITLietuviųLTLatviešuLVMaltiMTNederlandsNLPolskiPLPortuguêsPTRomânăROSlovenčinaSKSlovenščinaSLSvenskaSV
+27 August 2026
+MONETARY DEVELOPMENTS IN THE EURO AREA
+Monetary developments in the euro area: July 2026
+English
+Deutsch
+OTHER LANGUAGES(2)+
+Select your language
+EspañolESFrançaisFR
+Annexes
+27 August 2026
+MONETARY DEVELOPMENTS IN THE EURO AREA
+Table: Annex to the press release on monetary developments in the euro area
+English
+25 August 2026
+WEEKLY FINANCIAL STATEMENT
+Consolidated financial statement of the Eurosystem as at 21 August 2026
+English
+OTHER LANGUAGES(22)+
+Select your language
+БългарскиBGČeštinaCSDanskDADeutschDEEλληνικάELEspañolESEesti keelETSuomiFIFrançaisFRHrvatskiHRMagyarHUItalianoITLietuviųLTLatviešuLVMaltiMTNederlandsNLPolskiPLPortuguêsPTRomânăROSlovenčinaSKSlovenščinaSLSvenskaSV
+Annexes
+25 August 2026
+WEEKLY FINANCIAL STATEMENT - COMMENTARY
+Commentary
+English
+ALL PRESS RELEASESSpeeches
+4 September 2026
+Philip R. Lane: Diversity at the European Central Bank
+Slides by Philip R. Lane, Member of the Executive Board of the ECB, at Irish Society for Women in Economics (ISWE) Conference in Dublin, Ireland
+English
+1 September 2026
+Boris Vujčić: Listening to households: expectations, behaviour and monetary policy
+Speech by Boris Vujčić, Vice-President of the ECB, at the inauguration of the Alexander von Humboldt Professorship awarded to Professor Michael Weber at the European School of Management and Technology (ESMT) Berlin
+English
+28 August 2026
+Isabel Schnabel: Central banks on-chain
+Speech by Isabel Schnabel, Member of the Executive Board of the ECB, at the Jackson Hole Economic Policy Symposium on “Financial Innovation: Implications for Payments and Policy”
+English
+Annexes
+28 August 2026
+Presentation slides: Central banks on-chain
+Slides by Isabel Schnabel, Member of the Executive Board of the European Central Bank, at the 2026 Federal Reserve Bank of Kansas City Economic Policy Symposium on "Financial Innovation: Implications for Payments and Policy" in Jackson Hole, USA
+English
+26 August 2026
+Piero Cipollone: From vision to delivery: building Europe’s tokenised financial market
+Speech by Piero Cipollone, Member of the Executive Board of the ECB, at the Deutsche Bundesbank’s Symposium on “Future of payments: trends and innovations in Germany and Europe”[1]
+English
+OTHER LANGUAGES(1)+
+Select your language
+DeutschDE
+19 August 2026
+Christine Lagarde: Panel remarks about the European economy during a discussion on the global economic outlook at the World Economic Forum
+Panel remarks by Christine Lagarde, President of the ECB, at the International Business Council of the World Economic Forum
+English
+ALL SPEECHESInterviews
+24 August 2026
+Piero Cipollone: Interview with ilsussidiario.net
+Interview with Piero Cipollone, Member of the Executive Board of the ECB, conducted by Lorenzo Torrisi on 10 August 2026
+English
+OTHER LANGUAGES(1)+
+Select your language
+ItalianoIT
+15 July 2026
+Piero Cipollone: Interview with Ouest-France
+Interview with Piero Cipollone, Member of the Executive Board of the ECB, conducted by Élisabeth Montaufray-Bureau on 10 July 2026
+English
+OTHER LANGUAGES(1)+
+Select your language
+FrançaisFR
+13 July 2026
+Piero Cipollone: Interview with Jornal de Negocios
+Interview with Piero Cipollone, Member of the Executive Board of the ECB, conducted by Ricardo Jesus Silva on 29 June 2026
+English
+OTHER LANGUAGES(1)+
+Select your language
+PortuguêsPT
+2 July 2026
+Christine Lagarde: Interview with Les Échos
+Interview with Christine Lagarde, President of the ECB, conducted by Guillaume Benoit and Christophe Jakubyszyn on 24 June 2026
+English
+OTHER LANGUAGES(1)+
+Select your language
+FrançaisFR
+25 June 2026
+Isabel Schnabel: Interview with Die Zeit
+Interview with Isabel Schnabel, Member of the Executive Board of the ECB, conducted by Mark Schieritz and Kolja Rudzio on 19 June 2026
+English
+OTHER LANGUAGES(1)+
+Select your language
+DeutschDE
+ALL INTERVIEWSThe ECB Blog
+2 September 2026
+Can synthetic securitisation support economic growth? 
+Synthetic securitisation can free up bank capital. But does that mean banks lend more to firms? This ECB Blog post explores the effects of loan securitisation. We find that banks that issue synthetic securitisations lend marginally more, but also tend to pay more dividends.
+Johanne Evrard
+Wagner Eduardo Schuster
+Fabian Waßmann
+Michael Wedow
+English
+Details
+JEL CodeG00 : Financial Economics→General→General
+1 September 2026
+Why the drivers of inflation matter for monetary policy
+The drivers of the recent rise in inflation are different from those of the pandemic-era surge. This time the energy supply shock dominates, while demand and public policy stimulus have minor roles. These differences are key to explaining why monetary policy responses differ.
+Kristina Barauskaitė Griškevičienė
+Claus Brand
+English
+Details
+JEL CodeE30 : Macroeconomics and Monetary Economics→Prices, Business Fluctuations, and Cycles→General
+31 August 2026
+Big tech, big debt: when US tech giants tap the euro area bond market
+US tech giants are increasingly tapping the euro area bond market to fund their investments. The ECB Blog investigates the consequences for this market and the potential for these developments to reshape it.
+Oana Furtuna
+Anne Duquerroy
+Imène Rahmouni-Rousseau
+Lia Vaz Cruz
+English
+Details
+JEL CodeO16 : Economic Development, Technological Change, and Growth→Economic Development→Financial Markets, Saving and Capital Investment, Corporate Finance and Governance
+26 August 2026
+AI adoption and the productivity promise: what workers report
+Use of artificial intelligence at work has doubled over the last two years and people report significant time-savings. But an ECB survey shows that perceived productivity gains vary widely and there are still barriers preventing many from adopting this new technology.
+António Dias Da Silva
+Laura Lebastard
+David Sondermann
+English
+Details
+JEL CodeJ01 : Labor and Demographic Economics→General→Labor Economics: General
+O33 : Economic Development, Technological Change, and Growth→Technological Change, Research and Development, Intellectual Property Rights→Technological Change: Choices and Consequences, Diffusion Processes
+17 August 2026
+The AI boom: rational enthusiasm or the next dot-com bubble?
+The rise of AI has driven a blistering rally in the tech sector, bringing stock market valuations to levels last seen during the dot-com bubble. Although AI is reshaping the economy, do today’s high valuations bear the risk of an abrupt and painful setback in the euro area? 
+Malin Andersson
+Johannes Breckenfelder
+Stefano Corradin
+Kalin Nikolov
+Maria Antonietta Viola
+English
+Details
+JEL CodeG10 : Financial Economics→General Financial Markets→General
+G15 : Financial Economics→General Financial Markets→International Financial Markets
+O30 : Economic Development, Technological Change, and Growth→Technological Change, Research and Development, Intellectual Property Rights→General
+E44 : Macroeconomics and Monetary Economics→Money and Interest Rates→Financial Markets and the Macroeconomy
+ALL BLOG POSTSPublications
+31 August 2026
+WORKING PAPER SERIES - No. 3278
+Environmental policy uncertainty and cleantech FDI
+Laura Nowzohour
+Joëlle Noailly
+English
+Details
+AbstractThis paper examines whether environmental policy uncertainty undermines clean-technology investment in the United States by weakening policy-induced investment incentives. Using quarterly project-level data on U.S. greenfield investments from 2007Q1 to 2019Q1, combined with novel news-based indices that separately measure environmental policy salience and environmental policy uncertainty, we find that policy uncertainty substantially offsets the positive investment effects of environmental policy. At the aggregate level, a one-standard-deviation increase in environmental policy uncertainty eliminates roughly 75% of the policy-induced increase in the number of cleantech projects and around 50% of the increase in capital expenditure. The deterrence effect is substantially stronger for foreign than for domestic investors, consistent with greater informational frictions facing cross-border capital. These effects persist for at least two years following an uncertainty shock and are corroborated by country- and firm-level analyses, though results for capital expenditure are less robust at disaggregated levels. The findings imply that policy credibility is a first-order determinant of clean investment: an environmental policy framework that is ambitious but perceived as unstable may fail to mobilize the capital it is designed to attract.JEL CodeQ58 : Agricultural and Natural Resource Economics, Environmental and Ecological Economics→Environmental Economics→Government Policy
+F21 : International Economics→International Factor Movements and International Business→International Investment, Long-Term Capital Movements
+F23 : International Economics→International Factor Movements and International Business→Multinational Firms, International Business
+E22 : Macroeconomics and Monetary Economics→Consumption, Saving, Production, Investment, Labor Markets, and Informal Economy→Capital, Investment, Capacity
+24 August 2026
+WORKING PAPER SERIES - No. 3277
+Learning probability of default and stress testing
+Luca Nocciola
+Samuele Scaglioni
+English
+Details
+AbstractWe analyze the Probability of Default (PD) of non-financial corporations in Europe using Random Forests (RF) and assess implications for stress testing the banking sector. To this end, we exploit data on firms’ financial statements (Orbis) and banks’ credit registry (Anacredit). We show that RF displays stronger risk sensitivity than logistic regression in stress testing, shedding new light on the non-linear effect of scenario severity on PD. Moreover, we show how RF-based PD can be used in a network of banks and firms to stress test the banking sector through loan exposures as a key transmission channel of adverse scenarios. A granular inspection of banks’ riskiness indices derived from this network sheds light also on RF’s superior ability in capturing non-linearity thanks to its capability in identifying “tail banks”. Our work is relevant for central banks and banking supervisors alike.JEL CodeC53 : Mathematical and Quantitative Methods→Econometric Modeling→Forecasting and Prediction Methods, Simulation Methods
+C55 : Mathematical and Quantitative Methods→Econometric Modeling→Modeling with Large Data Sets?
+C58 : Mathematical and Quantitative Methods→Econometric Modeling→Financial Econometrics
+G17 : Financial Economics→General Financial Markets→Financial Forecasting and Simulation
+G21 : Financial Economics→Financial Institutions and Services→Banks, Depository Institutions, Micro Finance Institutions, Mortgages
+24 August 2026
+WORKING PAPER SERIES - No. 3276
+When the Crowd Speaks: AI-based retail investor sentiment indicator with Reddit data
+Fabian Wagner
+Julian Metzler
+English
+Details
+AbstractRetail investors increasingly discuss markets in real time on social media, yet these discussions remain difficult to measure systematically. This paper introduces the Reddit Retail Investor Sentiment Indicator (R-RISI), a high-frequency measure of retail investor sentiment based on Reddit posts from major investing and crypto-related subreddits between 2015 and April 2026. Using ChatGPT 5.1, we classify posts by sentiment and topic and show that large language models provide more accurate labels for informal social media language than widely used finance-specific models such as FinBERT, which tends to over-assign neutral sentiment. R-RISI is constructed by aggregating daily positive and negative posts, weighting them by user engagement and standardising the resulting series using a rolling one-year z-score methodology. The indicator can be flexibly built for broad asset classes, portfolios, individual securities or thematic groups, allowing sentiment to be tracked at a much higher granularity than traditional retail investor indicators. We show how sentiment and dominant discussion topics evolve over time within each of the extracted subreddits. R-RISI closely reflects major market developments and aligns with established sentiment indicators while providing higher frequency and more timely signals. Empirically, changes in R-RISI contain statistically significant short-term information for market prices. This relationship is particularly relevant during periods of market stress: changes in R-RISI matter more for next-day S&P 500 returns when markets are in decline. The indicator therefore offers a timely and granular tool for analysing retail investor behaviour and monitoring sentiment-driven market dynamics in an environment of growing retail investor participation. A regularly updated version of the indicator is available through an accompanying R-RISI online dashboard.JEL CodeF1 : International Economics→Trade
+G1 : Financial Economics→General Financial Markets
+G4 : Financial Economics
+G5 : Financial Economics
+24 August 2026
+SURVEY OF MONETARY ANALYSTS
+ECB Survey of Monetary Analysts (SMA), September 2026
+English
+20 August 2026
+WORKING PAPER SERIES - No. 3275
+Hidden in the aggregate: the cyclicality of EU labour force participation
+David Sondermann
+Corinne Petrakis
+English
+Details
+AbstractWe estimate the cyclical response of labour force participation to growth shocks across EU regions. We use a shift-share instrumental variable approach and local projections on EU Labour Force Survey microdata covering 15 countries and 114 regions over 2000–2020. The aggregate labour force participation rate is remarkably resilient, a clear contrast to the highly cyclical participation rate documented for the U.S. However, this resilience masks pronounced demographic heterogeneity. Men’s participation declines significantly while women’s remains stable, reflecting sectoral segregation and the added worker effect. Young workers exhibit the most persistent responses, with effects lasting up to eight years, consistent with hysteresis through human capital erosion. Less-educated and non-native workers bear disproportionate employment costs. The findings imply that aggregate slack measures may miss important distributional dimensions relevant for monetary, fiscal, and structural policy.JEL CodeJ21 : Labor and Demographic Economics→Demand and Supply of Labor→Labor Force and Employment, Size, and Structure
+E24 : Macroeconomics and Monetary Economics→Consumption, Saving, Production, Investment, Labor Markets, and Informal Economy→Employment, Unemployment, Wages, Intergenerational Income Distribution, Aggregate Human Capital
+E32 : Macroeconomics and Monetary Economics→Prices, Business Fluctuations, and Cycles→Business Fluctuations, Cycles
+R23 : Urban, Rural, Regional, Real Estate, and Transportation Economics→Household Analysis→Regional Migration, Regional Labor Markets, Population, Neighborhood Characteristics
+20 August 2026
+WORKING PAPER SERIES - No. 3274
+Banks’ funding structures and pass-through in the euro area
+Guido Spanò
+Juan Manuel Figueres
+English
+Details
+AbstractThis paper investigates the interest rate pass-through of monetary policy in the euro area by focusing on the role of banks’ funding structures. We estimate the interest rate pass-through for loans to non-financial corporations using bank-level balance sheet data. In doing so, we interact the response of lending rates with characteristics of the funding structure, and show that banks that rely more on bond issuance than on the money market tend to be less responsive to policy changes. Finally, we test the presence of the asset-liability-management channel, and find that banks combining longer-term liabilities (higher bond shares) with longer rate fixation periods for loans (higher share of loans with fixed rates) exhibit the most muted lending rate response to policy shocks.JEL CodeC23 : Mathematical and Quantitative Methods→Single Equation Models, Single Variables→Panel Data Models, Spatio-temporal Models
+E44 : Macroeconomics and Monetary Economics→Money and Interest Rates→Financial Markets and the Macroeconomy
+E52 : Macroeconomics and Monetary Economics→Monetary Policy, Central Banking, and the Supply of Money and Credit→Monetary Policy
+G21 : Financial Economics→Financial Institutions and Services→Banks, Depository Institutions, Micro Finance Institutions, Mortgages
+NetworkChallenges for Monetary Policy Transmission in a Changing World Network (ChaMP)
+20 August 2026
+STATISTICS PAPER SERIES - No. 54
+Domestic and cyclical inflation in the euro area
+Katalin Bodnár
+Bruno Fagandini
+Peter Healy
+Christian Höynck
+Flavie Rousseau
+English
+Details
+AbstractThe ECB’s inflation target is formulated in terms of headline inflation. However, domestically determined inflation features prominently in the monetary policy transmission mechanism and in gauging underlying inflation, making it important to assess it regularly. The ECB monitors various proxies for domestically determined inflation, including: (i) “domestic inflation”, which aggregates inflation items with a low import share; and (ii) “Supercore” inflation, which aggregates inflation items found to be sensitive to the aggregate business cycle. This paper provides a detailed overview of the methodologies used to derive both these indicators and updates the relevant input data. It suggests refinements to the methodologies that would also make these measures more robust in future updates. In addition, it explains the changes in these indicators due to the introduction of a new classification of consumer goods and services (European Classification of Individual Consumption according to Purpose (ECOICOP) version 2) for the compilation of the Harmonised Index of Consumer Prices (HICP). First, on domestic inflation, the paper explains the new underlying data on the import share of inflation items made available since the publication of its methodology, and provides an update, combined with a few methodological changes (for example, moving to a constant composition of the included items). Second, with regard to Supercore inflation, the paper explains the challenges of identifying a cyclical inflation indicator for the euro area, especially in the light of the recent large shocks, and explores modelling approaches. It proposes some refinements to the previous methodology, while keeping a Phillips curve approach as a focal point in the analysis. For both indicators, the paper presents the updated indicators and some key properties.JEL CodeE31 : Macroeconomics and Monetary Economics→Prices, Business Fluctuations, and Cycles→Price Level, Inflation, Deflation
+E32 : Macroeconomics and Monetary Economics→Prices, Business Fluctuations, and Cycles→Business Fluctuations, Cycles
+E52 : Macroeconomics and Monetary Economics→Monetary Policy, Central Banking, and the Supply of Money and Credit→Monetary Policy
+12 August 2026
+OCCASIONAL PAPER SERIES - No. 398
+The use of the Eurosystem’s monetary policy instruments and its monetary policy implementation framework in 2024 and 2025
+Tomás Carrera de Souza
+Koen Oosterhek
+Soizic Weber
+English
+Details
+AbstractThe Eurosystem implements its monetary policy through a set of monetary policy instruments (MPIs). This report reviews the main changes in the use of MPIs and the associated developments in the Eurosystem’s monetary policy implementation framework over 2024-25. Inflation returned to the ECB’s medium-term target of 2%, supported by the smooth transmission of monetary policy. After completing the hiking cycle of 2022 and 2023, the ECB began reducing its key interest rates in June 2024. This easing phase occurred alongside further balance sheet normalisation. Holdings in the monetary policy bond portfolios continued to run-off, and funds lent under the third series of targeted longer-term refinancing operations (TLTRO III) were fully repaid by December 2024. In March 2024, the ECB announced several changes to its operational framework for implementing monetary policy following a review process. Finally, the collateral framework remained broad, while temporary crisis-related measures were phased out and climate-related considerations were further integrated.JEL CodeD02 : Microeconomics→General→Institutions: Design, Formation, and Operations
+E43 : Macroeconomics and Monetary Economics→Money and Interest Rates→Interest Rates: Determination, Term Structure, and Effects
+E58 : Macroeconomics and Monetary Economics→Monetary Policy, Central Banking, and the Supply of Money and Credit→Central Banks and Their Policies
+E65 : Macroeconomics and Monetary Economics→Macroeconomic Policy, Macroeconomic Aspects of Public Finance, and General Outlook→Studies of Particular Policy Episodes
+G01 : Financial Economics→General→Financial Crises
+11 August 2026
+WORKING PAPER SERIES - No. 3273
+Can structural reforms unleash private investment?
+Christos Mavrogiannis
+Nico Zorell
+Christoph Zwick
+English
+Details
+AbstractThis paper examines the impact of labour and product market reforms on private investment across 26 advanced economies from 1975 to 2020. To this end, we combine a narrative database on major structural reforms with local projections and augmented inverse probability weighting. We find that a major labour market reform typically increases the level of real private investment by 5% cumulatively within six years, while a major product market reform yields an impact of 3%. Structural reforms are particularly effective in stimulating private investment when the private sector has access to ample external finance and the rule of law is strong. Overall, our findings point to an important role for structural reforms in boosting private investment and thus long-term growth prospects in advanced economies.JEL CodeE22 : Macroeconomics and Monetary Economics→Consumption, Saving, Production, Investment, Labor Markets, and Informal Economy→Capital, Investment, Capacity
+O43 : Economic Development, Technological Change, and Growth→Economic Growth and Aggregate Productivity→Institutions and Growth
+L51 : Industrial Organization→Regulation and Industrial Policy→Economics of Regulation
+10 August 2026
+WORKING PAPER SERIES - No. 3272
+Monetary policy and the rigidity of firm employment expectations
+Martin Groiss
+David Sondermann
+English
+Details
+AbstractThis paper examines how monetary policy announcements affect firms’ employment expectations. Using German survey data, we combine high-frequency monetary policy surprises with survey response dates to identify the immediate and dynamic effects of monetary policy on firm-level expectations and subsequent employment. Contractionary shocks lead firms to revise employment plans downward immediately and persistently, eventually reducing employment growth. Initially, hiring plans are reduced, while layoffs increase later. Production expectations adjust twice as often but revert faster, consistent with greater labour market rigidity. Labour market institutions shape these responses: firms subject to the minimum wage or with lower collective bargaining coverage revise employment expectations more strongly. Financially constrained firms exhibit disproportionately larger downward revisions, indicating that the financial accelerator operates already at the expectation formation stage. Because firms adjust plans well before effects appear in aggregate data, employment expectations provide an early measure of monetary policy transmission to the labour market.JEL CodeE24 : Macroeconomics and Monetary Economics→Consumption, Saving, Production, Investment, Labor Markets, and Informal Economy→Employment, Unemployment, Wages, Intergenerational Income Distribution, Aggregate Human Capital
+E52 : Macroeconomics and Monetary Economics→Monetary Policy, Central Banking, and the Supply of Money and Credit→Monetary Policy
+J20 : Labor and Demographic Economics→Demand and Supply of Labor→General
+J63 : Labor and Demographic Economics→Mobility, Unemployment, Vacancies, and Immigrant Workers→Turnover, Vacancies, Layoffs
+10 August 2026
+OCCASIONAL PAPER SERIES - No. 397
+Prohibition of monetary financing: an economic perspective
+Guido Wolswijk
+English
+Details
+AbstractThis paper analyses the European prohibition of monetary financing from an economic perspective. The prohibition seeks to safeguard central bank independence in setting monetary policy to maintain price stability, and to preserve fiscal discipline, thereby preventing monetary policy from becoming constrained or hindered by fiscal policies. Imposing a prohibition on financing public deficits helps to ensure a clear separation of responsibilities between monetary policy and fiscal policy and is consistent with a range of macroeconomic theories, including monetarism and the fiscal theory of the price level. The current EU-wide ban is more stringent than those in place in Europe before the start of Economic and Monetary Union and also than those prevailing in other major currency areas of the world. Tasked with monitoring compliance with the prohibition among European national central banks, the European Central Bank (ECB) has developed certain standards over time, informed by definitions contained in EU regulations and by cases that have arisen over the years. Over the three decades since its introduction, the prohibition in general has been well respected, although a few actual or potential conflicts with the prohibition have required national central banks to take corrective action. Recent economic crises in Europe have given rise to academic proposals to reinterpret or circumvent the ban, notably during the COVID-19 pandemic. These suggestions have included central banks handing out “helicopter money” to the public and cancelling part of the government debt held by European central banks. In general, these proposals would seem to jeopardise the prohibition of monetary financing and ultimately weaken price stability and sound public finances.JEL CodeE58 : Macroeconomics and Monetary Economics→Monetary Policy, Central Banking, and the Supply of Money and Credit→Central Banks and Their Policies
+E61 : Macroeconomics and Monetary Economics→Macroeconomic Policy, Macroeconomic Aspects of Public Finance, and General Outlook→Policy Objectives, Policy Designs and Consistency, Policy Coordination
+E62 : Macroeconomics and Monetary Economics→Macroeconomic Policy, Macroeconomic Aspects of Public Finance, and General Outlook→Fiscal Policy
+F45 : International Economics→Macroeconomic Aspects of International Trade and Finance
+K33 : Law and Economics→Other Substantive Areas of Law→International Law
+7 August 2026
+LETTERS TO MEPS
+Letter from the ECB President to Mr Gerald Hauser, MEP, on digital euro
+English
+OTHER LANGUAGES(1)+
+Select your language
+DeutschDE
+6 August 2026
+WORKING PAPER SERIES - No. 3271
+Financial frictions across the production network and the transmission of monetary policy
+Alessandro De Sanctis
+Stefan Gebauer
+Fédéric Holm-Hadulla
+Matteo Sirani
+English
+Details
+AbstractWe show that monetary policy transmission is shaped not only by a sector’s own financial frictions but also by those prevailing in the broader production network. The latter, indirect frictions amplify the output and price effects of monetary policy and empirically dominate the direct ones. The amplification results from a downstream demand channel, as customers respond to tighter policy by purchasing fewer inputs. This is partly offset by an upstream cost channel, reflecting that suppliers raise prices to protect margins when financing costs rise. We inspect the mechanism in a multi-sector general equilibrium model with input-output linkages and working-capital constraints.JEL CodeC32 : Mathematical and Quantitative Methods→Multiple or Simultaneous Equation Models, Multiple Variables→Time-Series Models, Dynamic Quantile Regressions, Dynamic Treatment Effect Models, Diffusion Processes
+C67 : Mathematical and Quantitative Methods→Mathematical Methods, Programming Models, Mathematical and Simulation Modeling→Input?Output Models
+E31 : Macroeconomics and Monetary Economics→Prices, Business Fluctuations, and Cycles→Price Level, Inflation, Deflation
+E32 : Macroeconomics and Monetary Economics→Prices, Business Fluctuations, and Cycles→Business Fluctuations, Cycles
+E52 : Macroeconomics and Monetary Economics→Monetary Policy, Central Banking, and the Supply of Money and Credit→Monetary Policy
+6 August 2026
+OCCASIONAL PAPER SERIES - No. 396
+Macro-at-Risk in the euro area Expert Group on Macro-at-Risk Time-Series Workstream
+Mohammed Chahad
+Matteo Mogliani
+Marta Bańbura
+Dmitry Kulikov
+Carlos Montes-Galdón
+Bettina Landau
+Baptiste Meunier
+Florens Odendahl
+Joan Paredes
+Antoine Sigwalt
+Anastasia Theofilakou
+Chryso Aristidou
+Claudia Pacella
+Paulo Rodrigues
+Markus Roth
+English
+Details
+AbstractThis paper introduces reduced-form macroeconometric tools, emphasising quantile regression models, to identify key risk drivers for the euro area economy and assess risks around the baseline ECB/Eurosystem staff macroeconomic projections for the euro area inflation and growth. The analysis uses a large number of risk factors, going beyond the usual financial factors, employing a sequential selection approach with robustness checks. To support the analysis a MATLAB toolbox (M@RX) was developed, incorporating several quantile regression-based model classes with a novel parametric tilting methodology and a copula approach for transforming predictive densities across frequencies. This paper contributes to the literature on the treatment of the COVID-era data in quantile regression models. Results indicate that the predictive content of risk factors is horizon, time and objective-dependent. For example, labour market indicators are particularly relevant for assessing upside inflation risks, but to a time-varying extent and with limited predictive power for downside risks. Conversely, uncertainty, money and credit indicators perform better for downside inflation risks. As regards risks to growth, the results confirm the established role of financial conditions, while also highlighting the relevance of monetary indicators, particularly for downside risks. Combined risk factor frameworks – with several different risk indicators – tend to systematically outperform single-factor specifications for density forecasting, due to complementarities across risk indicator groups. An empirical application highlights the policy relevance of these tools, as they provide timely signals and accurately track the direction of realised outcomes. Given the time-varying and state-dependent nature of their predictive performance, a regular performance assessment of the specifications is recommended to maintain reliability.JEL CodeC22 : Mathematical and Quantitative Methods→Single Equation Models, Single Variables→Time-Series Models, Dynamic Quantile Regressions, Dynamic Treatment Effect Models &bull Diffusion Processes
+C53 : Mathematical and Quantitative Methods→Econometric Modeling→Forecasting and Prediction Methods, Simulation Methods
+E27 : Macroeconomics and Monetary Economics→Consumption, Saving, Production, Investment, Labor Markets, and Informal Economy→Forecasting and Simulation: Models and Applications
+E37 : Macroeconomics and Monetary Economics→Prices, Business Fluctuations, and Cycles→Forecasting and Simulation: Models and Applications
+6 August 2026
+ECONOMIC BULLETIN
+Economic Bulletin Issue 5, 2026
+English
+English
+OTHER LANGUAGES(7)+
+Select your language
+DeutschDEEspañolESEesti keelETFrançaisFRItalianoITLietuviųLTLatviešuLV
+6 August 2026
+ECONOMIC BULLETIN - BOX
+Assessing the scope for compensatory fiscal measures in response to the recent energy shock
+Othman Bouabdallah
+Cristina Checherita-Westphal
+Philip Muggenthaler-Gerathewohl
+Economic Bulletin Issue 5, 2026
+English
+Details
+AbstractThis box assesses the scope for euro area governments to adopt compensatory fiscal measures against the backdrop of the recent energy shock. It examines the available fiscal space, reviews the discretionary fiscal support provided so far, and assesses whether the current inflation environment has generated additional revenues that could partially finance current and future measures. The box concludes that, since fiscal space is more constrained than it was during the 2022 energy crisis and there is only modest scope for self-financing through inflation-driven revenues, it is all the more important for fiscal support to be temporary, targeted and tailored.JEL CodeE32 : Macroeconomics and Monetary Economics→Prices, Business Fluctuations, and Cycles→Business Fluctuations, Cycles
+C32 : Mathematical and Quantitative Methods→Multiple or Simultaneous Equation Models, Multiple Variables→Time-Series Models, Dynamic Quantile Regressions, Dynamic Treatment Effect Models, Diffusion Processes
+C5 : Mathematical and Quantitative Methods→Econometric Modeling
+6 August 2026
+ECONOMIC BULLETIN - BOX
+The ECB-BIG index: tracking credit conditions in the euro area
+Anastasia Allayioti
+Paola Di Casola
+Giacomo Magistretti
+Economic Bulletin Issue 5, 2026
+English
+Details
+AbstractThis box introduces the European Central Bank Broad Intermediation Gauge (ECB-BIG) index, a new indicator designed to provide a timely assessment of intermediation conditions in the euro area. The ECB-BIG index summarises information from a large set of variables covering bank and non-bank credit conditions, and complements indicators of more narrowly defined financial conditions. It also provides insights into the transmission of monetary policy to the real economy by measuring the impact of credit shocks on investment. Currently, the index is signalling a moderate tightening of credit conditions after the start of the war in the Middle East.JEL CodeC32 : Mathematical and Quantitative Methods→Multiple or Simultaneous Equation Models, Multiple Variables→Time-Series Models, Dynamic Quantile Regressions, Dynamic Treatment Effect Models, Diffusion Processes
+E44 : Macroeconomics and Monetary Economics→Money and Interest Rates→Financial Markets and the Macroeconomy
+G20 : Financial Economics→Financial Institutions and Services→General
+6 August 2026
+ECONOMIC BULLETIN - BOX
+Capturing inflation expectations (de-)anchoring and what survey-based metrics are telling us
+Colm Bates
+Aidan Meyler
+Giovanni Trebbi
+Zivile Zekaite
+Economic Bulletin Issue 5, 2026
+English
+Details
+AbstractThis box assesses the anchoring of longer-term inflation expectations following the recent energy price shock using level, higher-moment and shock-sensitivity measures from surveys of consumers, firms and professional forecasters. A holistic approach reflecting the structurally different expectation patterns, uncertainty levels and biases of these different agents yields three main findings. First, level anchoring broadly holds, as the longer-term expectations of professional forecasters remain at 2%, while firms and consumers have revised their expectations upwards only modestly and still largely view the recent increase in inflation as temporary. Second, disagreement and high inflation tail risks remain contained relative to 2022-2023 peaks, although signals are weaker for consumers and firms than for professional forecasters. Third, while consumers (unlike professional forecasters) tend to revise longer-term expectations alongside short-term ones, longer-term expectations have not become more sensitive to short-term expectations since the outbreak of the war in the Middle East. Overall, longer-term inflation expectations appear to be broadly anchored but warrant continued close monitoring.JEL CodeE31 : Macroeconomics and Monetary Economics→Prices, Business Fluctuations, and Cycles→Price Level, Inflation, Deflation
+E52 : Macroeconomics and Monetary Economics→Monetary Policy, Central Banking, and the Supply of Money and Credit→Monetary Policy
+E66 : Macroeconomics and Monetary Economics→Macroeconomic Policy, Macroeconomic Aspects of Public Finance, and General Outlook→General Outlook and Conditions
+D84 : Microeconomics→Information, Knowledge, and Uncertainty→Expectations, Speculations
+6 August 2026
+ECONOMIC BULLETIN - BOX
+Youth employment amidst cooling labour demand
+David Chaloupka
+António Dias Da Silva
+Economic Bulletin Issue 5, 2026
+English
+Details
+AbstractHave labour market prospects deteriorated more for young workers than for the aggregate labour market? This box analyses labour market developments across age and skill groups in relation to economic activity. It shows that in recent quarters young workers have indeed faced a more difficult job market. However, taking the relation with developments in real GDP into account, Okun's law residuals suggest that this weakness remains broadly in line with normal cyclical dynamics, also reflecting the higher sensitivity of young workers to the economic cycle and strong employment growth during the post-pandemic recovery.JEL CodeE24 : Macroeconomics and Monetary Economics→Consumption, Saving, Production, Investment, Labor Markets, and Informal Economy→Employment, Unemployment, Wages, Intergenerational Income Distribution, Aggregate Human Capital
+J23 : Labor and Demographic Economics→Demand and Supply of Labor→Labor Demand
+5 August 2026
+ECONOMIC BULLETIN - ARTICLE
+The cost of not knowing: how uncertainty weighs on the euro area economy
+Malin Andersson
+Alina Bobasu
+Lorena Saiz
+Stefania Scrofani
+Economic Bulletin Issue 5, 2026
+English
+Details
+AbstractEconomic uncertainty – the extent to which households, firms, investors and policymakers find it difficult to assess the economic outlook – has increased markedly in recent years with successive geopolitical and trade policy shocks. This article reviews recent developments in various proxies for uncertainty and shows that metrics capturing geopolitical and trade policy uncertainty have remained persistently elevated. The adverse impact of uncertainty shocks on business investment is typically larger and more persistent than the effect on private consumption. These results hold for different types of uncertainty measures, even when alternative empirical methods that employ external instruments are used. At the same time, a more granular assessment shows some differences across types of investment, with intangible investment generally being less sensitive to short-term uncertainty than tangible investment. Moreover, spending on durable goods and services is most strongly affected immediately after a rise in uncertainty, while the recovery in services spending is more protracted.JEL CodeD81 : Microeconomics→Information, Knowledge, and Uncertainty→Criteria for Decision-Making under Risk and Uncertainty
+E21 : Macroeconomics and Monetary Economics→Consumption, Saving, Production, Investment, Labor Markets, and Informal Economy→Consumption, Saving, Wealth
+E22 : Macroeconomics and Monetary Economics→Consumption, Saving, Production, Investment, Labor Markets, and Informal Economy→Capital, Investment, Capacity
+E32 : Macroeconomics and Monetary Economics→Prices, Business Fluctuations, and Cycles→Business Fluctuations, Cycles
+ALL PUBLICATIONS
+Digital euro
+The Eurosystem is preparing for the potential issuance of a digital euro to complement physical cash.
+Future banknotes
+Euro banknotes are being redesigned. Explore the shortlisted design proposals for the next series.
+Interest rates
+Deposit facility2.25 %
+Main refinancing operations (fixed rate)2.40 %
+Marginal lending facility2.65 %17 June 2026Past key ECB interest rates
+Inflation rate
+More on inflation
+Exchange rates
+USDUS dollar1.1622
+JPYJapanese yen179.85
+GBPPound sterling0.85894
+CHFSwiss franc0.9405Last update: 7 September 2026Euro foreign exchange rates
+Financial stabilityOur tasksInstitutional frameworkFinancial Stability ReviewMacroprudential policy measures
+Market operationsOpen market operationsAsset purchase programmesLendings of holdings under PSPP
+NOT AN EXPERT? CHECK OUT OUR EXPLAINERS
+LEARN MOREWhat is the European Central Bank?
+Curious for more?
+EVENT
+21 August 2026 
+Europa Open Air 2026
+FINANCIAL LITERACY
+5 August 2026
+Closing the gender gap in financial literacy
+PODCAST
+4 August 2026
+Keeping your money safe
+30 July 2026
+Euro banknotes shortlisted design proposals
+THE ECB BLOG
+29 July 2026
+How firms currently view inflation
+PODCAST
+23 July 2026
+Tune in to our latest decisions
+EVENT
+23 July 2026
+ECB banknotes new design event
+Are you happy with this page?YesNo
+What made you unhappy?Page not workingInformation not usefulDesign not attractiveSomething else
+Thank you for letting us know!
+Useful links
+About us
+Work with us
+Explainers
+Press photos
+Contacts
+Where to find us
+Using our site
+Disclaimer & Copyright
+Technical updates
+Responsible disclosure
+Corporate Policies
+Data Protection
+Privacy statement for the website
+Cookies policy
+Accessibility statement
+Language policy
+Site directory
+Copyright 2026, European Central Bank
+Follow us
+Our website uses cookies
+We use functional cookies to store user preferences; analytics cookies to improve website performance; third-party cookies set by third-party services integrated into the website. You have the choice to accept or reject them. For more information or to review your preference on the cookies and server logs we use, we invite you to:
+Read our privacy statement Learn more about how we use cookies
+I understand and I accept the use of
+ cookiesI do not accept the use of
+ cookies
+Thank you!
+Thank you!
+We have updated our privacy policy
+We are always working to improve this website for our users. To do this, we use the anonymous data provided
+ by cookies.
+See what has changed in our privacy policy
+I understand and I accept the use of
+ cookiesI do not accept the use of
+ cookies
+Your cookie preference has expired
+We are always working to improve this website for our users. To do this, we use the anonymous data provided
+ by cookies.
+Learn more about how we use cookies
+I understand and I accept the use of
+ cookiesI do not accept the use of
+ cookies
+This feature requires cookies.Modify

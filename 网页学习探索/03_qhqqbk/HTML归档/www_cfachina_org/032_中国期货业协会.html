@@ -1,0 +1,4035 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width"> 
+<title>中国期货业协会</title>
+
+<link href="/resources/css/reset.css" rel="stylesheet" type="text/css">
+<link href="/resources/css/font.css" rel="stylesheet" type="text/css">
+<link href="/resources/css/common.css" rel="stylesheet" type="text/css">
+<link href="/resources/css/phone.css" rel="stylesheet">
+<link href="/resources/css/idangerous.swiper.css" rel="stylesheet">
+<link href="/resources/css/paging.css" rel="stylesheet" type="text/css">
+<link href="/resources/images/favicon.ico" rel="shortcut icon" type="image/x-icon"> 
+<script src="/resources/js/jquery-3.7.1.min.js"></script>
+<script src="/resources/js/jquery-migrate-3.4.0.min.js"></script>
+<script src="/resources/js/idangerous.swiper.min.js"></script>
+<script src="/resources/js/paging.js" type="text/javascript"></script>
+<script src="/resources/js/countdown.js" type="text/javascript"></script>
+<script src="/resources/js/MSClass.js" type="text/javascript"></script>
+<script src="/resources/js/jquery-ui.js" type="text/javascript"></script>
+<script src="/resources/js/select-widget-min.js" type="text/javascript"></script>
+<script src="/resources/laydate/laydate.js"></script>
+<script src="/resources/js/echarts.min.js" type="text/javascript"></script>
+<script src="/resources/js/china.js" type="text/javascript"></script>
+<script src="/resources/js/common.js" type="text/javascript"></script>
+
+<style>
+    .mod-indexbanner img{ margin: 0 auto; }
+    .mode-banner{ display: none; }
+    .just{ color: red !important; }
+    .lose{ color: #29b74f !important; }
+    .ash{ color: #999 !important; }
+    .mod-table-9.mod-table-10 thead th{ white-space: nowrap; }
+    .table-title1 th{
+      background: #f5f5f5;
+      padding: 10px 10px;
+      border: 1px solid #eee;
+      text-align: center;
+      font-size: 16px;
+      color: #333;
+      font-weight: bold;
+    }
+    #loading{
+        width: 100%;
+        font-size: 20px;
+        text-align: center;
+    }
+    .noData{
+        display: none!important;
+    }
+    .dateText1{ margin: 10px 0;  }
+    .more{ float: right; font-size: 16px; }
+    .mod-indexnews .industry-swiper-container-pic{ -height:493px; }
+    .wrap-layer #market-chart ul li a:hover{ cursor: default !important; }
+    .wrap-layer #ser-tabs  ul li a:hover{ cursor: default !important; }
+    .wrap-layer #pubtab  ul li a:hover{ cursor: default !important; }
+    .wrap-layer .layer-8 .news-tab span:hover{ cursor: default !important; }
+    .mtkqs ul li i{ opacity: 0; }
+    .news-cell .news-box ul li i{ 
+        display: none; 
+        width:38px;height: 20px;
+        background: url("/resources/images/new.png") 0 0 no-repeat;
+        position: absolute;
+        top:28px;right: 102px; overflow: hidden;
+    }
+    .news-cell .news-box .mod-news-2 ul li{ padding-right: 150px;position: relative; }
+    .mod-indexnews{ background: #fff; }   
+    .mod-indexnews .com-tit15 span , .mod-indexnews .news-tab span{ color:#0f4c81; }
+    .mod-indexnews .com-tit15 a , .mod-indexnews .news-tab .tab-more a { background: url("/resources/images/mores_r1.png") right 0 no-repeat; }
+    .mod-indexnews .news-tab span.active:after{ border-bottom: 4px solid #0f4c81; }
+    .mod-indexnews .industry-swiper-container-pic{ box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.1);-webkit-box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.1);
+      -moz-box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.1);-ms-box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.1); }
+    .mod-indexnews .jfyl .news-cell{ box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.1);-webkit-box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.1);
+      -moz-box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.1);-ms-box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.1); }
+    .bk2{ background: url("/resources/images/qsbg.jpg") center 0 no-repeat!important; }
+    .bk2 .ser-tab li a{ color: #fff; }
+    .bk2 .ser-info .mdbox-l, .bk2 .ser-info .mdbox-r{ background: #fff; }
+    .bk2 .ser-tab ul{ background: url("/resources/images/com-tit-bg2.png") repeat-x left bottom; }
+    /*.s-link a{width: 100%;}*/
+
+
+    /* 境内外监管动态 */
+    .mod-publish {
+        display: flex;
+        justify-content: center;
+        margin-right: -20px;
+    }
+    .mod-publish .item-cell-mid {
+        float: none !important;
+        /* margin:0 auto !important; */
+    }
+    .cur-more{
+        position: absolute;
+        margin: 0 auto;
+        border: 2px solid #0f4c81;;
+        color: #0f4c81;
+        left: 50%;
+        margin-left: -49.3px;
+        padding: 6px;
+    }
+
+    .sjcon{
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+      bottom: 45%;
+    }
+    .newcon{
+      /* display: flex;
+      justify-content: center;
+      align-items: center; */
+      padding-top: 580px;
+    }
+    .newtit{
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+      bottom: 600px;
+      font-size: 20px;
+      /* font-weight: ; */
+    }
+    .market-prowrap .item-cell:nth-child(1),
+    .market-prowrap .item-cell:nth-child(2),
+    .market-prowrap .item-cell:nth-child(3),
+    .market-prowrap .item-cell:nth-child(1) img,
+    .market-prowrap .item-cell:nth-child(2) img,
+    .market-prowrap .item-cell:nth-child(3) img
+    {
+      height: 270px !important;
+    }
+    .market-prowrap .item-cell:nth-child(4),
+    .market-prowrap .item-cell:nth-child(5),
+    .market-prowrap .item-cell:nth-child(6),
+    .market-prowrap .item-cell:nth-child(7){
+        width: 310px !important;
+        float: left;
+        margin-bottom: 20px;
+        margin-right: 20px;
+        position: relative;
+        height: 260px !important;
+    }
+    .market-prowrap .item-cell:nth-child(4)  img,
+    .market-prowrap .item-cell:nth-child(5)  img,
+    .market-prowrap .item-cell:nth-child(6)  img,
+    .market-prowrap .item-cell:nth-child(7)  img{
+      height: 260px !important;
+    }
+    .market-prowrap .item-cell:nth-child(1):hover .item-cnt .item-tit a,
+    .market-prowrap .item-cell:nth-child(2):hover .item-cnt .item-tit a,
+    .market-prowrap .item-cell:nth-child(3):hover .item-cnt .item-tit a{
+      height: 270px !important;
+      line-height: 270px !important;
+    }
+
+    .market-prowrap .item-cell:nth-child(4):hover .item-cnt .item-tit a,
+    .market-prowrap .item-cell:nth-child(5):hover .item-cnt .item-tit a,
+    .market-prowrap .item-cell:nth-child(6):hover .item-cnt .item-tit a,
+    .market-prowrap .item-cell:nth-child(7):hover .item-cnt .item-tit a{
+      height: 260px !important;
+      line-height: 260px !important;
+    }
+
+
+    /* .market-prowrap .item-cell:hover .item-cnt .item-tit a {
+    height: 277px;
+    line-height: 277px;
+} */
+</style>
+</head>
+<body>
+<style>
+    .wrap-nav .mod-en {
+        position: absolute;
+        right: 100px;
+        top: 0;
+    }
+    .accessible {
+        position: absolute;
+        right: 4px;
+        top: 0;
+        height: 48px;
+        line-height: 48px;
+    }
+    .accessible-img{
+        float: right;
+        margin-top: 11px;
+    }
+    .accessible-img img{
+        width: 26px;
+        height: 26px;
+    } 
+    .sub-menus{
+      display: none;
+    }
+    .menucr:hover .sub-menus{
+      display: block;
+    }
+  /* 调整无障碍 */
+    @media screen and (max-width: 480px){
+      .mobile-headerwrap {
+          height: 90px !important;
+          position: relative;
+          z-index: 99990;
+      }
+      .mobile-header {
+      background: #fff;
+      height: 90px !important;
+      position: fixed;
+      width: 100%;
+      left: 0;
+      z-index: 990;
+    }
+    .header-shower {
+      top: 40px;
+      line-height: 50px;
+      height: 50px;
+      box-shadow: inherit!important;
+      position: relative;
+      z-index: 66;
+      text-align: center;
+  }
+  
+  /* 搜索框 */
+  .mobile-search {
+      height: 90px !important;
+      background: #fff;
+      padding: 0 20px 0 50px;
+      position: fixed;
+      width: 100%;
+      box-sizing: border-box;
+      z-index: 6666;
+      top: 0;
+      left: 0;
+      display: none;
+  }
+  }
+  </style>
+  <!-- 手机移动端导航开始-->
+  <div class="mobile-headerwrap">
+    <div class="mobile-header">
+      
+      <div class="accessible">
+        <a id="toolbarCtrl" href="javascript:void(0);" onclick="openToolbar();" title="无障碍">无障碍</a>
+          <div class="accessible-img">
+              <img src="http://www.cfachina.org/resources/images/no_barriers-bule.png" alt="" />
+          </div>
+        </a>
+      </div>
+  
+  
+  
+      <div class="header-shower"><a class="menus-mobiles"><span></span><span></span></a>
+        <img src="/resources/images/logo.png" />
+        <div class="head-icons"> 
+          <a class="search-mobile iconfont icon-sousuo2"></a>
+          <!-- <a class="lang"><span>EN</span></a>  -->
+        </div>
+        <div class="mobile-search">
+          <span class="s-close"></span>
+          <input type="text" placeholder="请输入关键字" />
+          <a href="javascript:;" class="s-searchs indexSearch"></a>
+        </div>
+      </div>
+      <div class="mobile-menucss">
+        <ul>
+          <li><a href="./index/">首页</a></li>
+          <li><a href="./governmentrules/">政策法规</a>
+            <ul>
+              
+                
+                  <li><a href="./governmentrules/lawsandregulations/">法律法规</a></li>
+                
+              
+                
+                  <li><a href="./governmentrules/administrativeregulation/">行政法规</a></li>
+                
+              
+                
+                  <li><a href="./governmentrules/sfjs/">司法解释</a></li>
+                
+              
+                
+                  <li><a href="./governmentrules/departmentregulations/">部门规章和规范性文件</a></li>
+                
+              
+                
+                  <li><a href="./governmentrules/selfdisciplinerules/">自律规则</a></li>
+                
+              
+                
+                  <li><a href="./governmentrules/nationalstandard/">国家标准</a></li>
+                
+              
+                
+                  <li><a href="./governmentrules/industrystandard/">行业标准</a></li>
+                
+              
+                
+                  <li><a href="./governmentrules/groupstandards/">团体标准</a></li>
+                
+              
+              <!-- <li><a href="./governmentrules/lawsandregulations/">法律法规</a></li>
+              <li><a href="./governmentrules/administrativeregulation/">行政法规</a></li>
+              <li><a href="">部门规章</a></li>
+              <li><a href="./governmentrules/selfdisciplinerules/">自律规则</a></li> -->
+            </ul>
+          </li>
+          <li><a href="./businessprocess/">业务办理</a> 
+            <ul>
+              
+                
+                  <li><a href="./businessprocess/membermanagement/">会员管理</a></li>
+                
+              
+                
+                  <li><a href="./businessprocess/qualificationmanagement/">资格管理</a></li>
+                
+              
+                
+                  <li><a href="./businessprocess/riskmanagementbusiness/">风险管理业务</a></li>
+                
+              
+                
+                  <li><a href="./businessprocess/assetmanagementbusiness/">资产管理业务</a></li>
+                
+              
+              <!-- <li><a href="./businessprocess/qualificationmanagement/">资格管理</a></li> -->
+            </ul>
+          </li>
+          <li><a href="./servicesupport/">服务支持</a>
+            <ul>
+              <li><a href="./servicesupport/examination/">考试测试</a>
+                <ul>
+                  
+                    
+                      <li><a href="./servicesupport/examination/qualificationexamination/">资格考试</a></li>
+                    
+                  
+                    
+                      <li><a href="./servicesupport/examination/executivetest/">高管测试</a></li>
+                    
+                  
+                    
+                      <li><a href="./servicesupport/examination/suitabilitytest/">适当性测试</a></li>
+                    
+                  
+                    
+                      <li><a href="./servicesupport/examination/zssb/">郑商所杯</a></li>
+                    
+                  
+                    
+                      <li><a href="./servicesupport/examination/cicccup/">中金所杯</a></li>
+                    
+                  
+                </ul>
+              </li>
+              <li><a href="http://mooc.cfachina.org/">培训学苑</a></li>
+              <li><a href="http://edu.cfachina.org/">投资者园地</a></li>
+              <li><a href="./servicesupport/sspz/">上市品种</a></li>
+              <!-- <li><a href="./servicesupport/analygarden/">分析师园地</a></li> -->
+              <li><a href="./servicesupport/researchandpublishin/">研究与出版</a>
+                <ul>
+                  
+                    
+                      <li><a href="./servicesupport/researchandpublishin/scientificresearchmanagement/">科研管理</a></li>
+                    
+                  
+                    
+                      <li><a href="./servicesupport/researchandpublishin/publication/">出版物</a></li>
+                    
+                  
+                    
+                      <li><a href="./servicesupport/researchandpublishin/statisticalsdata/">统计数据</a></li>
+                    
+                  
+                </ul>
+              </li>
+              <li><a href="./servicesupport/industrycomplaints/">行业投诉</a></li>
+            </ul>
+          </li>
+          
+          <li><a href="./informationpublicity/">信息公示</a> 
+            <ul>
+              <li><a href="./informationpublicity/hygs/">会员公示</a></li>
+              <li><a href="./informationpublicity/futurescompanyinformantionpublicity/">期货公司信息公示</a>
+                <ul>
+                  
+                    
+                      <li><a href="./informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/">期货公司基本情况</a></li>
+                    
+                  
+                    
+                      <li><a href="./informationpublicity/futurescompanyinformantionpublicity/qhgslsqk/">期货公司历史情况</a></li>
+                    
+                  
+                    
+                      <li><a href="./informationpublicity/futurescompanyinformantionpublicity/qhgsggryxx/">期货公司高管人员信息</a></li>
+                    
+                  
+                    
+                      <li><a href="./informationpublicity/futurescompanyinformantionpublicity/qhgsfzjgqk/">期货公司分支机构情况</a></li>
+                    
+                  
+                    
+                      <li><a href="./informationpublicity/futurescompanyinformantionpublicity/qhgscyryxx/">期货公司从业人员信息</a></li>
+                    
+                  
+                    
+                      <li><a href="./informationpublicity/futurescompanyinformantionpublicity/qhgsgdxx/">期货公司股东信息</a></li>
+                    
+                  
+                    
+                      <li><a href="./informationpublicity/futurescompanyinformantionpublicity/qhgscxjlxx/">期货公司诚信记录信息</a></li>
+                    
+                  
+                    
+                      <li><a href="./informationpublicity/futurescompanyinformantionpublicity/qhgscjzxx/">期货公司次级债信息</a></li>
+                    
+                  
+                </ul>
+              </li>
+              <li><a href="./informationpublicity/publicityofemployees/">从业人员公示</a></li>
+               <li><a href="./informationpublicity/jjrgs/">居间人公示</a></li>
+              <li><a href="./informationpublicity/discipline/">纪律处分</a></li>
+              <!-- <li><a href="./informationpublicity/qhjyjgcxxx/">期货经营机构诚信信息</a></li> -->
+              
+              <li><a href="./servicesupport/researchandpublishin/statisticalsdata/">期货市场月度成交情况</a></li>
+              <li><a href="./informationpublicity/qhgsydjysj/">期货公司月度经营数据</a></li>
+              <li><a href="./informationpublicity/qhhyfwstjjsj/">期货行业服务实体经济数据</a></li>
+              <li><a href="https://neris.csrc.gov.cn/pubrecord-front/#/cfachina">期货公司移动应用软件备案公示</a></li>
+  
+            </ul>
+          </li>
+          <li><a href="./industrydynamics/">行业动态</a>
+            <ul>
+              <!-- <li><a href="./industrydynamics/membernews/">会员动态</a>
+                <ul>
+                  
+                    
+                      <li><a href="./industrydynamics/membernews/membernotice/">会员通告</a></li>
+                    
+                  
+                    
+                      <li><a href="./industrydynamics/membernews/newsofmembers/">会员要闻</a></li>
+                    
+                  
+                </ul>
+              </li>
+              <li><a href="./industrydynamics/geosynchronism/">地协动态</a></li>
+              <li><a href="./industrydynamics/scrumcommunication/">会议交流</a>
+                <ul>
+                  
+                    
+                      <li><a href="http://nanhua.net/forum/2022/index.html">中国期货分析师暨场外衍生品论坛</a></li>
+                    
+                  
+                    
+                      <li><a href="https://www.eventnet.cn/cidf2024/#/">国际期货大会</a></li>
+                    
+                  
+                    
+                      <li><a href="./industrydynamics/scrumcommunication/syhhgxycrjhbmfh/">石油和化工行业产融结合闭门峰会</a></li>
+                    
+                  
+                    
+                      <li><a href="./industrydynamics/scrumcommunication/ysjscrjhyth/">2022有色金属产融结合研讨会</a></li>
+                    
+                  
+                    
+                      <li><a href="./industrydynamics/scrumcommunication/wzqjfwcylgzlfzxsyth/">稳中求进，服务产业链高质量发展线上研讨会</a></li>
+                    
+                  
+                </ul>
+              </li>
+              <li><a href="./industrydynamics/internationalexchange/">国际交流</a>
+                <ul>
+                  
+                    
+                      <li><a href="./industrydynamics/internationalexchange/internationalexchangecooperation/">国际交流合作</a></li>
+                    
+                  
+                    
+                      <li><a href="./industrydynamics/internationalexchange/internationalorganization/">相关国际组织</a></li>
+                    
+                  
+                    
+                      <li><a href="./industrydynamics/internationalexchange/internationalconferenceinformation/">国际会议信息</a></li>
+                    
+                  
+                </ul>
+              </li>
+              <li><a href="./industrydynamics/tabloid/">图片新闻</a></li>
+              <li><a href="./industrydynamics/industrynews/">行业要闻</a></li>
+              <li><a href="./industrydynamics/mediaviewoffuturesmarket/">媒体看期市</a></li> -->
+              
+                
+                  <li><a href="./industrydynamics/hydj/">行业党建</a></li>
+                
+              
+                
+                  <li><a href="./industrydynamics/gjqhdhhz/">国际期货大会</a></li>
+                
+              
+                
+                  <li><a href="./industrydynamics/hydh/">会员大会</a></li>
+                
+              
+                
+                  <li><a href="./industrydynamics/membernews/">会员动态</a></li>
+                
+              
+                
+                  <li><a href="./industrydynamics/culturalconstruction/">文化建设</a></li>
+                
+              
+                
+                  <li><a href="./industrydynamics/pfxc/">普法宣传</a></li>
+                
+              
+                
+                  <li><a href="./industrydynamics/jnwjgdt/">境内外监管动态</a></li>
+                
+              
+                
+                  <li><a href="./industrydynamics/scrumcommunication/">会议交流</a></li>
+                
+              
+                
+                  <li><a href="./industrydynamics/internationalexchange/">国际交流</a></li>
+                
+              
+                
+                  <li><a href="./industrydynamics/industrynews/">行业要闻</a></li>
+                
+              
+                
+                  <li><a href="./industrydynamics/tabloid/">图片新闻</a></li>
+                
+              
+                
+                  <li><a href="./industrydynamics/mediaviewoffuturesmarket/">媒体看期市</a></li>
+                
+              
+  
+            </ul>
+          </li>
+          <!-- <li><a href="./industrydynamics/culturalconstruction/">文化建设</a>
+            <ul>
+              
+                
+                  <li><a href="./industrydynamics/culturalconstruction/whjsdybf/">文化建设第一部分</a></li>
+                
+              
+                
+                  <li><a href="./industrydynamics/culturalconstruction/mediacoverage/">媒体报道</a></li>
+                
+              
+                
+                  <li><a href="./industrydynamics/culturalconstruction/djyy/">党建引领</a></li>
+                
+              
+                
+                  <li><a href="./industrydynamics/culturalconstruction/hydt/">行业动态</a></li>
+                
+              
+                
+                  <li><a href="./industrydynamics/culturalconstruction/zbscwhjs/">资本市场文化建设</a></li>
+                
+              
+                
+                  <li><a href="./industrydynamics/culturalconstruction/yjcg/">研究成果</a></li>
+                
+              
+            </ul>
+          </li> -->
+          <li><a href="./aboutassociation/">关于协会</a>
+            <ul>
+              <li><a href="./aboutassociation/associationintroduction/">协会介绍</a>
+                <ul>
+                  
+                    
+                      <li><a href="./aboutassociation/associationintroduction/associationintroduction/">协会简介</a></li>
+                    
+                  
+                    
+                      <li><a href="./aboutassociation/associationintroduction/associationconstitution/">协会章程</a></li>
+                    
+                  
+                    
+                      <li><a href="./aboutassociation/associationintroduction/feeannouncement/">收费公示</a></li>
+                    
+                  
+                </ul>
+              </li>
+              <li><a href="./aboutassociation/associationgovernance/">协会治理</a>
+                <ul>
+                  
+                    
+                      <li><a href="./aboutassociation/associationgovernance/organizationalstruture/">组织架构</a></li>
+                    
+                  
+                    
+                      <li><a href="./aboutassociation/associationgovernance/associationleaders/">协会领导</a></li>
+                    
+                  
+                    
+                      <li><a href="./aboutassociation/associationgovernance/professionalcommittee/">专业委员会</a></li>
+                    
+                  
+                </ul>
+              </li>
+              <li><a href="./aboutassociation/associationannouncement/">协会公告</a></li>
+              <li><a href="./aboutassociation/industrypovertyalleviation/">乡村振兴</a>
+                <!-- <ul>
+                  
+                </ul> -->
+              </li>
+              <li><a href="./aboutassociation/contactus/">联系我们</a></li>
+              <!-- <li><a href="">友情链接</a></li> -->
+              <li><a href="./aboutassociation/associationrecruitment/">招聘信息</a>
+                <!-- <ul>
+                  
+                </ul> -->
+              </li>
+              <li><a href="./aboutassociation/associationprocurement/">协会采购</a></li>
+              <li><a href="./aboutassociation/reportincorruptgovernment/">廉政举报</a></li>
+            </ul>
+          </li>
+          <!-- <li><a href="http://mail.cfachina.org/">协会邮箱</a></li> -->
+        </ul>
+      </div>
+      </div>
+      </div>
+      <!-- 手机移动端导航结束-->
+      
+      <!--顶部开始-->
+      <div class="mod-headers innerheaders">
+      <div class="wrap-layer">
+        <div class="wrap-search">
+          <div class="logos">
+            <a href="./index/"><img src="/resources/images/logo.png" alt="" /></a>
+          </div>
+          <div class="searchs"><input type="text" placeholder="输入搜索内容" /><a href="javascript:;" class="indexSearch">搜索</a></div>
+        </div>
+        <div class="wrap-nav">
+          <ul class="navMenu">
+          
+            <li class="menucr"><a href="./index/">首页</a></li>
+            <li class="menucr"><a href="./governmentrules/">政策法规</a>
+              <div class="sub-menus">
+                <ul>
+              
+                
+                  <li><a href="./governmentrules/lawsandregulations/">法律法规</a></li>
+                
+              
+                
+                  <li><a href="./governmentrules/administrativeregulation/">行政法规</a></li>
+                
+              
+                
+                  <li><a href="./governmentrules/sfjs/">司法解释</a></li>
+                
+              
+                
+                  <li><a href="./governmentrules/departmentregulations/">部门规章和规范性文件</a></li>
+                
+              
+                
+                  <li><a href="./governmentrules/selfdisciplinerules/">自律规则</a></li>
+                
+              
+                
+                  <li><a href="./governmentrules/nationalstandard/">国家标准</a></li>
+                
+              
+                
+                  <li><a href="./governmentrules/industrystandard/">行业标准</a></li>
+                
+              
+                
+                  <li><a href="./governmentrules/groupstandards/">团体标准</a></li>
+                
+              
+                </ul>
+              </div>
+            </li>
+            <li class="menucr"><a href="./businessprocess/">业务办理</a>
+              <div class="sub-menus">
+                <ul>
+                  
+                    
+                      <li><a href="./businessprocess/membermanagement/">会员管理</a></li>
+                    
+                  
+                    
+                      <li><a href="./businessprocess/qualificationmanagement/">资格管理</a></li>
+                    
+                  
+                    
+                      <li><a href="./businessprocess/riskmanagementbusiness/">风险管理业务</a></li>
+                    
+                  
+                    
+                      <li><a href="./businessprocess/assetmanagementbusiness/">资产管理业务</a></li>
+                    
+                  
+                </ul>
+              </div>
+            </li>
+            <li class="menucr"><a href="./servicesupport/">服务支持</a>
+              <div class="sub-menus">
+                <ul>
+                  <li><a href="./servicesupport/examination/">考试测试</a>
+                    <ul>
+                      
+                        
+                          <li><a href="./servicesupport/examination/qualificationexamination/">资格考试</a></li>
+                        
+                      
+                        
+                          <li><a href="./servicesupport/examination/executivetest/">高管测试</a></li>
+                        
+                      
+                        
+                          <li><a href="./servicesupport/examination/suitabilitytest/">适当性测试</a></li>
+                        
+                      
+                        
+                          <li><a href="./servicesupport/examination/zssb/">郑商所杯</a></li>
+                        
+                      
+                        
+                          <li><a href="./servicesupport/examination/cicccup/">中金所杯</a></li>
+                        
+                      
+                    </ul>
+                  </li>
+                  <li><a href="http://mooc.cfachina.org/">培训学苑</a></li>
+                  <li><a href="http://edu.cfachina.org/">投资者园地</a></li>
+                  <li><a href="./servicesupport/sspz/">上市品种</a></li>
+                  <!-- <li><a href="./servicesupport/analygarden/">分析师园地</a></li> -->
+                  <li><a href="./servicesupport/researchandpublishin/">研究与出版</a>
+                    <ul>
+                      
+                        
+                          <li><a href="./servicesupport/researchandpublishin/scientificresearchmanagement/">科研管理</a></li>
+                        
+                      
+                        
+                          <li><a href="./servicesupport/researchandpublishin/publication/">出版物</a></li>
+                        
+                      
+                        
+                          <li><a href="./servicesupport/researchandpublishin/statisticalsdata/">统计数据</a></li>
+                        
+                      
+                    </ul>
+                  </li>
+                  <li><a href="./servicesupport/industrycomplaints/">行业投诉</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="menucr"><a href="./informationpublicity/">信息公示</a>
+              <div class="sub-menus">
+                <ul>
+                  <li><a href="./informationpublicity/hygs/">会员公示</a></li>
+                  <li><a href="./informationpublicity/futurescompanyinformantionpublicity/">期货公司信息公示</a>
+                    <ul>
+                      
+                        
+                          <li><a href="./informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/">期货公司基本情况</a></li>
+                        
+                      
+                        
+                          <li><a href="./informationpublicity/futurescompanyinformantionpublicity/qhgslsqk/">期货公司历史情况</a></li>
+                        
+                      
+                        
+                          <li><a href="./informationpublicity/futurescompanyinformantionpublicity/qhgsggryxx/">期货公司高管人员信息</a></li>
+                        
+                      
+                        
+                          <li><a href="./informationpublicity/futurescompanyinformantionpublicity/qhgsfzjgqk/">期货公司分支机构情况</a></li>
+                        
+                      
+                        
+                          <li><a href="./informationpublicity/futurescompanyinformantionpublicity/qhgscyryxx/">期货公司从业人员信息</a></li>
+                        
+                      
+                        
+                          <li><a href="./informationpublicity/futurescompanyinformantionpublicity/qhgsgdxx/">期货公司股东信息</a></li>
+                        
+                      
+                        
+                          <li><a href="./informationpublicity/futurescompanyinformantionpublicity/qhgscxjlxx/">期货公司诚信记录信息</a></li>
+                        
+                      
+                        
+                          <li><a href="./informationpublicity/futurescompanyinformantionpublicity/qhgscjzxx/">期货公司次级债信息</a></li>
+                        
+                      
+                    </ul>
+                  </li>
+                  <li><a href="./informationpublicity/publicityofemployees/">从业人员公示</a></li>
+                  <li><a href="./informationpublicity/jjrgs/">居间人公示</a></li>
+                  <li><a href="./informationpublicity/discipline/">纪律处分</a></li>
+                  <!-- <li><a href="./informationpublicity/qhjyjgcxxx/">期货经营机构诚信信息</a></li> -->
+                  <li><a href="./servicesupport/researchandpublishin/statisticalsdata/">期货市场月度成交情况</a></li>
+                  <li><a href="./informationpublicity/qhgsydjysj/">期货公司月度经营数据</a></li>
+                  <li><a href="./informationpublicity/qhhyfwstjjsj/">期货行业服务实体经济数据</a></li>
+                  <li><a href="https://neris.csrc.gov.cn/pubrecord-front/#/cfachina">期货公司移动应用软件备案公示</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="menucr"><a href="./industrydynamics/">行业动态</a>
+              <div class="sub-menus">
+                <ul>
+                  <!-- <li><a href="./industrydynamics/membernews/">会员动态</a>
+                    <ul>
+                      
+                        
+                          <li><a href="./industrydynamics/membernews/membernotice/">会员通告</a></li>
+                        
+                      
+                        
+                          <li><a href="./industrydynamics/membernews/newsofmembers/">会员要闻</a></li>
+                        
+                      
+                    </ul>
+                  </li>
+                  <li><a href="./industrydynamics/geosynchronism/">地协动态</a></li>
+                  <li><a href="./industrydynamics/scrumcommunication/">会议交流</a>
+                    <ul>
+                      
+                        
+                          <li><a href="http://nanhua.net/forum/2022/index.html">中国期货分析师暨场外衍生品论坛</a></li>
+                        
+                      
+                        
+                          <li><a href="https://www.eventnet.cn/cidf2024/#/">国际期货大会</a></li>
+                        
+                      
+                        
+                          <li><a href="./industrydynamics/scrumcommunication/syhhgxycrjhbmfh/">石油和化工行业产融结合闭门峰会</a></li>
+                        
+                      
+                        
+                          <li><a href="./industrydynamics/scrumcommunication/ysjscrjhyth/">2022有色金属产融结合研讨会</a></li>
+                        
+                      
+                        
+                          <li><a href="./industrydynamics/scrumcommunication/wzqjfwcylgzlfzxsyth/">稳中求进，服务产业链高质量发展线上研讨会</a></li>
+                        
+                      
+                    </ul>
+                  </li>
+                  <li><a href="./industrydynamics/internationalexchange/">国际交流</a>
+                    <ul>
+                      
+                        
+                          <li><a href="./industrydynamics/internationalexchange/internationalexchangecooperation/">国际交流合作</a></li>
+                        
+                      
+                        
+                          <li><a href="./industrydynamics/internationalexchange/internationalorganization/">相关国际组织</a></li>
+                        
+                      
+                        
+                          <li><a href="./industrydynamics/internationalexchange/internationalconferenceinformation/">国际会议信息</a></li>
+                        
+                      
+                    </ul>
+                  </li>
+                  <li><a href="./industrydynamics/tabloid/">图片新闻</a></li>
+                  <li><a href="./industrydynamics/industrynews/">行业要闻</a></li>
+                  <li><a href="./industrydynamics/mediaviewoffuturesmarket/">媒体看期市</a></li> -->
+                  
+                    
+                      <li><a href="./industrydynamics/hydj/">行业党建</a></li>
+                    
+                  
+                    
+                      <li><a href="./industrydynamics/gjqhdhhz/">国际期货大会</a></li>
+                    
+                  
+                    
+                      <li><a href="./industrydynamics/hydh/">会员大会</a></li>
+                    
+                  
+                    
+                      <li><a href="./industrydynamics/membernews/">会员动态</a></li>
+                    
+                  
+                    
+                      <li><a href="./industrydynamics/culturalconstruction/">文化建设</a></li>
+                    
+                  
+                    
+                      <li><a href="./industrydynamics/pfxc/">普法宣传</a></li>
+                    
+                  
+                    
+                      <li><a href="./industrydynamics/jnwjgdt/">境内外监管动态</a></li>
+                    
+                  
+                    
+                      <li><a href="./industrydynamics/scrumcommunication/">会议交流</a></li>
+                    
+                  
+                    
+                      <li><a href="./industrydynamics/internationalexchange/">国际交流</a></li>
+                    
+                  
+                    
+                      <li><a href="./industrydynamics/industrynews/">行业要闻</a></li>
+                    
+                  
+                    
+                      <li><a href="./industrydynamics/tabloid/">图片新闻</a></li>
+                    
+                  
+                    
+                      <li><a href="./industrydynamics/mediaviewoffuturesmarket/">媒体看期市</a></li>
+                    
+                  
+  
+                </ul>
+              </div>
+            </li>
+            <!-- <li><a href="./industrydynamics/culturalconstruction/">文化建设</a>
+              <div class="sub-menus">
+                <ul>
+                  
+                    
+                      <li><a href="./industrydynamics/culturalconstruction/whjsdybf/">文化建设第一部分</a></li>
+                    
+                  
+                    
+                      <li><a href="./industrydynamics/culturalconstruction/mediacoverage/">媒体报道</a></li>
+                    
+                  
+                    
+                      <li><a href="./industrydynamics/culturalconstruction/djyy/">党建引领</a></li>
+                    
+                  
+                    
+                      <li><a href="./industrydynamics/culturalconstruction/hydt/">行业动态</a></li>
+                    
+                  
+                    
+                      <li><a href="./industrydynamics/culturalconstruction/zbscwhjs/">资本市场文化建设</a></li>
+                    
+                  
+                    
+                      <li><a href="./industrydynamics/culturalconstruction/yjcg/">研究成果</a></li>
+                    
+                  
+                </ul>
+              </div>
+            </li> -->
+            <li class="menucr"><a href="./aboutassociation/">关于协会</a>
+              <div class="sub-menus">
+                <ul>
+                  <li><a href="./aboutassociation/associationintroduction/">协会介绍</a>
+                    <ul>
+                      
+                        
+                          <li><a href="./aboutassociation/associationintroduction/associationintroduction/">协会简介</a></li>
+                        
+                      
+                        
+                          <li><a href="./aboutassociation/associationintroduction/associationconstitution/">协会章程</a></li>
+                        
+                      
+                        
+                          <li><a href="./aboutassociation/associationintroduction/feeannouncement/">收费公示</a></li>
+                        
+                      
+                    </ul>
+                  </li>
+                  <li><a href="./aboutassociation/associationgovernance/">协会治理</a>
+                    <ul>
+                      
+                        
+                          <li><a href="./aboutassociation/associationgovernance/organizationalstruture/">组织架构</a></li>
+                        
+                      
+                        
+                          <li><a href="./aboutassociation/associationgovernance/associationleaders/">协会领导</a></li>
+                        
+                      
+                        
+                          <li><a href="./aboutassociation/associationgovernance/professionalcommittee/">专业委员会</a></li>
+                        
+                      
+                    </ul>
+                  </li>
+                  <li><a href="./aboutassociation/associationannouncement/">协会公告</a></li>
+                  <li><a href="./aboutassociation/industrypovertyalleviation/">乡村振兴</a>
+                    <!-- <ul>
+                      
+                    </ul> -->
+                  </li>
+                  <li><a href="./aboutassociation/contactus/">联系我们</a></li>
+                  <!-- <li><a href="">友情链接</a></li> -->
+                  <li><a href="./aboutassociation/associationrecruitment/">招聘信息</a>
+                    <!-- <ul>
+                      
+                    </ul> -->
+                  </li>
+                  <li><a href="./aboutassociation/associationprocurement/">协会采购</a></li>
+                  <li><a href="./aboutassociation/reportincorruptgovernment/">廉政举报</a></li>
+                  <!-- <li><a href="../about/complaint.html">廉政举报</a></li> -->
+                </ul>
+              </div>
+            </li>
+            <!-- <li class="menucr"><a target="_blank" href="http://mail.cfachina.org/">协会邮箱</a></li> -->
+          </ul>
+      
+          <div class="mod-en"><span>中文</span>
+            <ul>
+              <li><a href="javascript:;">中文</a></li>
+              <li><a href="http://eng.cfachina.org/">英文</a></li>
+            </ul>
+          </div>
+          <div class="accessible">
+            <a id="toolbarCtrl" href="javascript:void(0);" onclick="openToolbar();" title="无障碍">无障碍</a>
+              <div class="accessible-img">
+                  <img src="http://www.cfachina.org/resources/images/no_barriers-bule.png" alt="" />
+              </div>
+            </a>
+        </div>
+  
+        </div>
+        <div class="clear"></div>
+      </div>
+      </div>
+      <!--顶部结束-->
+      
+      
+      
+      <div class="mode-banner">
+      <div class="mode-inner">
+      <div class="banner-cnt">
+        <img src="/resources/images/hydt-banner.jpg" />
+        <div class="banner-text">
+          <div class="layer-wrapper">
+            <div class="mod-table">
+              <div class="mod-td">
+                <div class="curmenu">
+                  <div class="cur">  </div>
+                  <div class="crumb">
+                    <a href="./" target="_blank" title="期货业协会" class="CurrChnlCls">期货业协会</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+      
+      <script>
+       var videourl = window.URL
+      $('.wrap-nav .navMenu>li>a:contains(首页)').attr('href',$('.mode-banner .curmenu .crumb a').eq(0).attr('href'));
+      $('.mod-en ul li a:contains(中文)').attr('href',$('.mode-banner .curmenu .crumb a').eq(0).attr('href')); 
+      $('.mod-headers .wrap-search .logos a').attr('href',$('.mode-banner .curmenu .crumb a').eq(0).attr('href')); 
+      $('.indexSearch').on('click',function(){
+        window.location.href = './index/qzjs/?key='+$(this).siblings('input').val().replace(/^\s*|\s*$/g,'');;
+      });
+  
+      //version: 2.0
+      //time: 20180928
+      
+      function createPageHTML(_nPageCount, _nCurrIndex, _sPageName, _sPageExt){
+      if(_nPageCount == null || _nPageCount<=1 || _nCurrIndex>=_nPageCount){
+        return;
+      }
+      var nCurrIndex = _nCurrIndex || 0;
+      
+      //前一页
+      var pre_page = "<a href=\""+_sPageName+"_"+(nCurrIndex-1)+"."+_sPageExt+"\" class=s1 target=_self>&nbsp;上一页&nbsp;</a>&nbsp;";
+      //后一页
+      var next_Page = "<a href=\""+_sPageName+"_"+(nCurrIndex+1)+"."+_sPageExt+"\" class=s1 target=_self>&nbsp;下一页&nbsp;</a>&nbsp;";
+      //首页
+      var index_page = "<a href=\""+_sPageName+"."+_sPageExt+"\" class=s1 target=_self>&nbsp;首页&nbsp;</a>&nbsp;";
+      //尾页
+      var end_page = "<a href=\""+_sPageName+"_"+ (_nPageCount - 1) +"."+_sPageExt+"\" class=s1 target=_self>&nbsp;尾页&nbsp;</a>&nbsp;";
+      //倒数第二页按钮
+      var not_last_index_page = "<a href=\""+_sPageName+"_"+ (_nPageCount - 2) +"."+_sPageExt+"\" id=\""+"a"+(_nPageCount - 2)+"\" >"+(_nPageCount - 1)+"</a>";
+      //最后一页按钮
+      var last_index_page = "<a href=\""+_sPageName+"_"+ (_nPageCount - 1) +"."+_sPageExt+"\" id=\""+"a"+(_nPageCount - 1)+"\" >"+_nPageCount+"</a>";	
+      
+      
+      //判断总页数
+      
+      //如果总页数等于1，上一页按钮用(首页)，中间按钮展示全部页码，下一页按钮用(尾页)
+      //如果总页数小于8
+      ////如果当前页为1，上一页按钮用（首页），中间按钮展示全部页码，下一页按钮用（后一页）
+      ////如果当前页为中间页，上一页按钮用(前一页)，中间按钮展示全部页码，下一页按钮用(后一页)
+      ////如果当前页为尾页，上一页按钮用（前一页），中间按钮展示全部页码，下一页按钮用（尾页）
+      
+      //如果总页数为 x，x大于等于8
+      ////如果当前页为1，上一页按钮用(首页)，中间按钮展示1~5的页码，中间加上... ，,后面加上 （x-1）、x的页码，下一页按钮用（后一页）
+      ////如果当前页为尾页，上一页用按钮（前一页），中间按钮展示（固定），下一页按钮用（尾页）
+      ////如果当前页为中间页(计算可前半段可变更的量)
+      //////如果
+      
+      
+      if (_nPageCount == 1){
+        document.write(index_page);
+        document.write("<a href=\""+_sPageName +"."+_sPageExt+"\" id=\""+"a"+1+"\" >"+1+"</a>");
+        document.write(end_page);
+      
+      }else if (_nPageCount < 8){
+        if(nCurrIndex == 0) {			
+        document.write(index_page);
+        for (i=1;i<=_nPageCount;i++) {
+          if (i == 1) {
+          document.write("<a href=\""+_sPageName +"."+_sPageExt+"\" id=\""+"a"+1+"\" >"+1+"</a>");
+          continue;
+          }
+          document.write("<a href=\""+_sPageName+"_"+ (i-1) +"."+_sPageExt+"\"  >"+i+"</a>");
+        }
+        document.write(next_Page);					
+        } else if (nCurrIndex == (_nPageCount - 1)){					
+        
+        if(nCurrIndex == 1) {
+          document.write(index_page);
+        } else {
+          document.write(pre_page);
+        }
+        for (i=1;i<=_nPageCount;i++) {
+          if (i == 1) {
+          document.write("<a href=\""+_sPageName +"."+_sPageExt+"\" id=\""+"a"+1+"\" >"+1+"</a>");
+          continue;
+          }
+          document.write("<a href=\""+_sPageName+"_"+ (i-1) +"."+_sPageExt+"\"  >"+i+"</a>");
+        }
+        document.write(end_page);						
+        } else {					
+        if(nCurrIndex == 1) {
+          document.write(index_page);
+        } else {
+          document.write(pre_page);
+        }
+        for (i=1;i<=_nPageCount;i++) {
+          if (i == 1) {
+          document.write("<a href=\""+_sPageName +"."+_sPageExt+"\" id=\""+"a"+1+"\" >"+1+"</a>");
+          continue;
+          }
+          document.write("<a href=\""+_sPageName+"_"+ (i-1) +"."+_sPageExt+"\"  >"+i+"</a>");
+        }
+        document.write(next_Page);										
+        }
+            
+      } else if (_nPageCount >= 8){
+      
+        if(nCurrIndex == 0) {					
+        document.write(index_page);
+        for (i=1;i<=5;i++) {
+          if (i == 1) {
+          document.write("<a href=\""+_sPageName +"."+_sPageExt+"\" id=\""+"a"+1+"\" >"+1+"</a>");
+          continue;
+          }
+          document.write("<a href=\""+_sPageName+"_"+ (i-1) +"."+_sPageExt+"\"  >"+i+"</a>");
+        }
+        document.write("...");
+        document.write(not_last_index_page);
+        document.write(last_index_page);					
+        document.write(next_Page);					
+        } else if (nCurrIndex == (_nPageCount - 1)){					
+        document.write(pre_page);
+        for (i=1;i<=5;i++) {
+          if (i == 1) {
+          document.write("<a href=\""+_sPageName +"."+_sPageExt+"\" id=\""+"a"+1+"\" >"+1+"</a>");
+          continue;
+          }
+          document.write("<a href=\""+_sPageName+"_"+ (i-1) +"."+_sPageExt+"\"  >"+i+"</a>");
+        }
+        document.write("...");
+        document.write(not_last_index_page);
+        document.write(last_index_page);	
+        document.write(end_page);						
+        } else {
+        var active_num = parseInt(_nPageCount - 6);
+                  
+        if (nCurrIndex <= active_num) { 
+          if(nCurrIndex == 1) {
+          document.write(index_page);
+          } else {
+          document.write(pre_page);
+          }
+          for (i=1;i<=5;i++) {
+          // if (i == 1) {
+          // document.write("<a href=\""+_sPageName +"."+_sPageExt+"\" id=\""+"a"+1+"\" >"+1+"</a>");
+          // 	continue;
+          // }
+          // if(nCurrIndex >2){
+          // 	document.write("<a href=\""+_sPageName+"_"+ (nCurrIndex + (i-1)) +"."+_sPageExt+"\" id=\""+"a"+(nCurrIndex + (i-1))+"\" >"+(nCurrIndex + i)+"</a>");
+          // }esle{
+      
+          // }
+          if((nCurrIndex + (i-1)) < _nPageCount-2){
+            document.write("<a href=\""+_sPageName+"_"+ (nCurrIndex + (i-1)) +"."+_sPageExt+"\" id=\""+"a"+(nCurrIndex + (i-1))+"\" >"+(nCurrIndex + i)+"</a>");
+          }
+          }
+          document.write("...");
+          document.write(not_last_index_page);
+          document.write(last_index_page);					
+          document.write(next_Page);
+        } else {	
+          if(nCurrIndex == 1) {
+          document.write(index_page);
+          } else {
+          document.write(pre_page);
+          }
+          for (i=1;i<=5;i++) {
+          // if (i == 1) {
+          // 	document.write("<a href=\""+_sPageName +"."+_sPageExt+"\" id=\""+"a"+1+"\" >"+1+"</a>");
+          // 	continue;
+          // }
+          if((nCurrIndex + (i-1)) < _nPageCount-2){
+            document.write("<a href=\""+_sPageName+"_"+ (active_num + (i-1)) +"."+_sPageExt+"\" id=\""+"a"+(active_num + (i-1))+"\" >"+(nCurrIndex + i)+"</a>");
+          }
+          }
+          document.write("...");
+          document.write(not_last_index_page);
+          document.write(last_index_page);					
+          document.write(next_Page);
+        }																	
+        }	
+      }
+      
+      // document.write("Jump to");
+      document.write("<span> to </span>");
+      document.write("<select class=\"page_num\" name=\"select\" style=\"margin-bottom:-3px;\" onchange=\"location.replace(this.value)\">");
+      for(var i=1; i<_nPageCount; i++){
+        if(i==1) {
+        document.write("<option value=\""+_sPageName+"."+_sPageExt+"\">1</option>");
+        document.write("<option value=\""+_sPageName+"_" + i + "."+_sPageExt+"\">"+(i+1)+"</option>");
+        }else{
+        document.write("<option value=\""+_sPageName+"_" + i + "."+_sPageExt+"\">"+(i+1)+"</option>");
+        }
+      }
+      document.write("</select>");
+      
+      if (nCurrIndex == 0) {
+        $(".page_num").val(_sPageName+"."+_sPageExt);				
+      } else {
+        $(".page_num").val(_sPageName+"_" + nCurrIndex + "."+_sPageExt);				
+      }
+      
+      }
+      
+
+      var fronthtmlUrl = '';
+      // 安全版本：只判断本地环境，生产自动使用当前域名
+      if (location.href.indexOf('//localhost') != -1) {
+        // 本地开发可以保留，上线后这里不会执行
+        fronthtmlUrl = '';
+      } else {
+        // 生产环境：自动获取当前域名，最安全
+        var http = document.location.protocol + "//";
+        var host = window.location.host;
+        fronthtmlUrl = http + host;
+      }
+
+      function ieEncode(str){
+              var ua = navigator.userAgent.toLocaleLowerCase();
+              if(ua.match(/msie/) != null || ua.match(/trident/) != null){
+                  return encodeURI(str);
+              }else{
+                  return str;
+              }
+          }
+          function isIE(){
+              var ua = navigator.userAgent.toLocaleLowerCase();
+              if(ua.match(/msie/) != null || ua.match(/trident/) != null){
+                  return true;
+              }else{
+                  return false;
+              }
+          }
+  
+  $('.mod-en').keydown(function(e){
+            if((e.keyCode || e.which )== 13){
+                $('.mod-en ul').toggle()
+            }
+            
+        })
+  
+        /*打开无障碍辅助工具*/
+        function openToolbar(){ 
+          if(window.location==top.location){
+            var str_location = window.location.href;
+            window.location.href = "/wca.html?wcaUrl=" +  str_location;
+          }
+        }
+  
+  
+      </script>
+
+<!--首页轮播开始-->
+<div class="mod-indexbanner">
+  <div class="roll-btn">
+    <div class="arrow-l"></div>
+    <div class="arrow-r"></div>
+  </div>
+  <div class="swiper-container-1">
+    <div class="swiper-wrapper">
+        
+            <div class="item-cell swiper-slide"> 
+                <a href="http://www.cfachina.org/industrydynamics/esdzt/">
+                    <img src="./index/sylbt/202210/W020221104619922568639.jpg" />
+                </a>
+            </div>
+        
+            <div class="item-cell swiper-slide"> 
+                <a href="https://www.cfachina.org/industrydynamics/hydj/tbtj/srxxgcddesjszqhjs/">
+                    <img src="./index/sylbt/202512/W020251205614930589083.jpg" />
+                </a>
+            </div>
+        
+            <div class="item-cell swiper-slide"> 
+                <a href="https://www.cfachina.org/industrydynamics/hydj/tbtj/srgczybxgdjsxxjy/">
+                    <img src="./index/sylbt/202506/W020250617600588089053.jpg" />
+                </a>
+            </div>
+        
+            <div class="item-cell swiper-slide"> 
+                <a href="http://www.cfachina.org/industrydynamics/industrynews/202204/t20220421_26912.html">
+                    <img src="./index/sylbt/202204/W020220421498548758523.jpg" />
+                </a>
+            </div>
+        
+            <div class="item-cell swiper-slide"> 
+                <a href="http://www.cfachina.org/industrydynamics/zyjrgzhy/">
+                    <img src="./index/sylbt/202311/W020231123358810337471.jpg" />
+                </a>
+            </div>
+        
+            <div class="item-cell swiper-slide"> 
+                <a href="JavaScript:;">
+                    <img src="./index/sylbt/202609/W020260904534653694899.jpg" />
+                </a>
+            </div>
+        
+            <div class="item-cell swiper-slide"> 
+                <a href="servicesupport/researchandpublishin/statisticalsdata/tradebriefing/202608/P020260812533399445605.pdf">
+                    <img src="./index/sylbt/202101/W020210118600397810000.jpg" />
+                </a>
+            </div>
+        
+        <!-- <div class="item-cell swiper-slide"> 
+            <img src="/resources/images/indexbanner.jpg" width="1920" height="800" alt="..." /> 
+        </div> -->
+    </div>
+  </div>
+</div>
+<!--首页轮播结束-->
+
+<div class="wrap-layer"> 
+  <!--通知公告开始-->
+  <div class="roll">
+    <div class="roll-tits"><span>重要更新：</span></div>
+    <div id="scroll_div">
+      <ul id="scroll_begin1">
+        
+            <li> <a href="./index/zygx/202606/t20260625_89009.html">关于举办2026年“期货行业合规护航月” 系列直播培训的通知</a> </li>
+        
+            <li> <a href="./index/zygx/202606/t20260625_89005.html">关于举办“2026年期货公司首席风险官培训班”暨“期货行业合规护航月”启动仪式的通知</a> </li>
+        
+            <li> <a href="./index/zygx/202606/t20260625_89007.html">中期协联合研究计划（第十九期）启动公告</a> </li>
+        
+            <li> <a href="./index/zygx/202606/P020260625554691611286.pdf">2026年5月全国期货市场交易情况简报</a> </li>
+        
+            <li> <a href="./index/zygx/202605/P020260527411175261024.pdf">期货行业乡村振兴工作信息（2026年第1期）</a> </li>
+        
+        <!-- <li> <a href="javascript:;">关于发布《集合资产管理计划资产管理合同内容与格式指引（试行）》等自律规则的通知</a> </li> -->
+      </ul>
+    </div>
+ 
+  </div>
+  <!--通知公告结束--> 
+  
+</div>
+<div class="white-bg">
+  <div class="H50"></div>
+  <!--快速入口开始-->
+  <div class="wrap-layer">
+    <div class="mod-servicelinks">
+        <ul>
+            <li class="servicelinks-tits"><span>快速入口</span></li>
+            <li><a target="_blank" href="./businessprocess/membermanagement/">
+                <img src="/resources/images/m-icon1.png" alt="登记备案" /><span>登记备案</span></a></li>
+
+            <li><a target="_blank" href="./index/xxbs/">
+                <img src="/resources/images/m-icon2.png?var=111" alt="信息报送" /><span>信息报送</span></a></li>
+
+            <li><a target="_blank" href="./informationpublicity/">
+                <img src="/resources/images/m-icon3.png" alt="信息公示" /><span>信息公示</span></a></li>
+
+            <li><a target="_blank" href="./servicesupport/examination/qualificationexamination/">
+                <img src="/resources/images/m-icon4.png" alt="资格考试" /><span>资格考试</span></a></li>
+
+            <li><a target="_blank" href="http://mooc.cfachina.org/">
+                <img src="/resources/images/m-icon5.png" alt="培训学苑" /><span>培训学苑</span></a></li>
+
+            <!-- <li><a target="_blank" href="./servicesupport/analygarden/">
+                <img src="/resources/images/m-icon6.png" alt="分析师园地" /><span>分析师园地</span></a></li> -->
+
+            <li><a target="_blank" href="./servicesupport/examination/suitabilitytest/">
+                <img src="/resources/images/m-icon7.png" alt="适当性测试" /><span>适当性测试</span></a></li>
+
+            <li><a target="_blank" href="./servicesupport/sspz/">
+                <img src="/resources/images/m-icon8.png" alt="上市品种" /><span>上市品种</span></a></li>
+
+            <li><a target="_blank" href="http://edu.cfachina.org/">
+                <img src="/resources/images/m-icon9.png" alt="投资者园地" /><span>投资者园地</span></a></li>
+
+            <li><a target="_blank" href="./industrydynamics/scrumcommunication/">
+                <img src="/resources/images/m-icon10.png" alt="重要会议" /><span>重要会议</span></a></li>
+
+            <li><a target="_blank" href="./aboutassociation/industrypovertyalleviation/">
+                <img src="/resources/images/m-icon11.png" alt="乡村振兴" /><span>乡村振兴</span></a></li>
+
+            <li><a target="_blank" href="http://yanjiu.cfachina.org/">
+                <img src="/resources/images/m-icon12.png" alt="研究管理系统" /><span>研究管理系统</span></a></li>
+
+        </ul>
+        <div class="clear"></div>
+    </div>
+  </div>
+  <!--快速入口结束-->
+</div>
+<div class="mod-indexnews">
+  <div class="H50"></div>
+  <div class="wrap-layer">
+    <div class="layer-7">
+      <div class="com-tit15"><span>图片新闻</span><a target="_blank" href="./industrydynamics/tabloid/">更多</a></div>
+      <div class="industry-swiper-container-pic">
+        <div class="swiper-wrapper">
+            
+                <div class="swiper-slide"  style="width:650px"> 
+                    <a class="news" href="./industrydynamics/tabloid/202410/t20241018_76368.html">
+                        <div class="pic"> <img src="./industrydynamics/tabloid/202410/W020241018509126969019.jpg" /> </div>
+                        <div class="content">
+                            <div class="title">期货行业提升产业客户参与度，服务实体经济高质量发展倡议书</div>
+                            <div class="time">2024-10-18</div>
+                        </div>
+                    </a> 
+                </div>
+            
+                <div class="swiper-slide"  style="width:650px"> 
+                    <a class="news" href="http://www.cfachina.org/aboutassociation/associationannouncement/202205/t20220519_27418.html">
+                        <div class="pic"> <img src="./industrydynamics/tabloid/202207/W020220815556970512755.jpg" /> </div>
+                        <div class="content">
+                            <div class="title">期货经营机构全面深化党建引领，促进高质量发展倡议书</div>
+                            <div class="time">2022-05-19</div>
+                        </div>
+                    </a> 
+                </div>
+            
+                <div class="swiper-slide"  style="width:650px"> 
+                    <a class="news" href="http://www.cfachina.org/aboutassociation/associationannouncement/202201/t20220121_25171.html">
+                        <div class="pic"> <img src="./industrydynamics/tabloid/202208/W020220818489843349459.jpg" /> </div>
+                        <div class="content">
+                            <div class="title">期货行业全面推进乡村振兴助力实现共同富裕倡议书</div>
+                            <div class="time">2022-01-21</div>
+                        </div>
+                    </a> 
+                </div>
+            
+                <div class="swiper-slide"  style="width:650px"> 
+                    <a class="news" href="./industrydynamics/tabloid/202208/t20220817_29641.html">
+                        <div class="pic"> <img src="./industrydynamics/tabloid/202208/W020220817618799700695.jpg" /> </div>
+                        <div class="content">
+                            <div class="title">期货行业文化建设倡议书</div>
+                            <div class="time">2021-09-30</div>
+                        </div>
+                    </a> 
+                </div>
+            
+            <!-- <div class="swiper-slide"> 
+                <a class="news" href="javascript:;">
+                    <div class="pic"> <img src="/resources/images/newspic1.jpg" class="aspectFill" /> </div>
+                    <div class="content">
+                        <div class="title">方星海副主席在第15届中国(深圳)国际期货大会上的讲话</div>
+                        <div class="time">2019-11-31</div>
+                    </div>
+                </a> 
+            </div> -->
+        </div>
+        <div class="mark">
+          <div style="display: none;">NEW</div>
+          <div class="pagination"></div>
+        </div>
+      </div>
+    </div>
+    <div class="layer-8 jfyl">
+        <div class="news-tab">
+            <span class="active"><a>协会公告</a></span>
+            <span><a>行业要闻</a></span>
+            <span><a>媒体看期市</a></span>
+            <div class="tab-more">
+                <a target="_blank" href="./aboutassociation/associationannouncement/">协会公告更多</a>
+                <a target="_blank" href="./industrydynamics/industrynews/" style="display: none;">行业要闻更多</a>
+                <a target="_blank" href="./industrydynamics/mediaviewoffuturesmarket/" style="display: none;">媒体看期市</a>
+            </div>
+        </div>
+      
+      <!--协会公告，行业要闻，媒体看期内容开始-->
+      <div class="news-cell">
+        <div class="news-box">
+          <div class="mod-news-2 mod-news-3">
+            <ul>
+                
+                    <li>
+                        <a target="_blank" href="./aboutassociation/associationannouncement/202608/P020260824618407428689.pdf">
+                            期货行业乡村振兴工作信息（2026年第2期）
+                            <span> 2026-08-24 </span>
+                        </a>
+                        <i> 2026-08-24 17:10:00 </i>
+                    </li>
+                
+                    <li>
+                        <a target="_blank" href="./aboutassociation/associationannouncement/202608/t20260820_90028.html">
+                            关于举办“期联训”品种投研与市场分析培训班（第2期）的通知
+                            <span> 2026-08-20 </span>
+                        </a>
+                        <i> 2026-08-20 16:38:00 </i>
+                    </li>
+                
+                    <li>
+                        <a target="_blank" href="./aboutassociation/associationannouncement/202608/t20260817_89986.html">
+                            关于举办“期联训”经营管理与综合业务培训班（第2期）的通知
+                            <span> 2026-08-17 </span>
+                        </a>
+                        <i> 2026-08-17 17:42:00 </i>
+                    </li>
+                
+                    <li>
+                        <a target="_blank" href="./aboutassociation/associationannouncement/202608/P020260812504594328438.pdf">
+                            2026年7月全国期货市场交易情况简报
+                            <span> 2026-08-12 </span>
+                        </a>
+                        <i> 2026-08-12 14:00:00 </i>
+                    </li>
+                
+                    <li>
+                        <a target="_blank" href="./aboutassociation/associationannouncement/202608/t20260806_89726.html">
+                            2025年度期货经营机构服务实体经济优秀案例入围名单
+                            <span> 2026-08-06 </span>
+                        </a>
+                        <i> 2026-08-06 17:26:00 </i>
+                    </li>
+                
+                    <li>
+                        <a target="_blank" href="./aboutassociation/associationannouncement/202608/t20260806_89723.html">
+                            关于举办“期联训”产业服务与风险管理培训班（第1期）的通知
+                            <span> 2026-08-06 </span>
+                        </a>
+                        <i> 2026-08-06 14:31:00 </i>
+                    </li>
+                
+              <!-- <li><a href="javascript:;">【期货日报】产业企业积极利用菜系期货期权规避风险 <span>2020-07-23</span></a></li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="news-cell"  style="display: none;">
+        <div class="news-box">
+          <div class="mod-news-2 mod-news-3">
+            <ul>
+                
+                    <li>
+                        <a target="_blank" href="./industrydynamics/industrynews/202609/t20260908_90539.html">
+                            《习近平生态文明思想概论》出版发行
+                            <span> 2026-09-08 </span>
+                        </a>
+                        <i> 2026-09-08 09:59:00 </i>
+                    </li>
+                
+                    <li>
+                        <a target="_blank" href="./industrydynamics/industrynews/202609/t20260908_90538.html">
+                            共绘上海合作组织更高质量发展新图景——国际社会高度评价习近平主席出席2026年上海合作组织峰会
+                            <span> 2026-09-08 </span>
+                        </a>
+                        <i> 2026-09-08 09:57:00 </i>
+                    </li>
+                
+                    <li>
+                        <a target="_blank" href="./industrydynamics/industrynews/202609/t20260908_90537.html">
+                            携手各国发展振兴，改革完善全球治理——习近平主席出席二〇二六年上海合作组织峰会并对吉尔吉斯斯坦、埃及进行国事访问取得圆满成功
+                            <span> 2026-09-08 </span>
+                        </a>
+                        <i> 2026-09-08 09:24:00 </i>
+                    </li>
+                
+                    <li>
+                        <a target="_blank" href="./industrydynamics/industrynews/202609/t20260908_90536.html">
+                            习近平主席的“比什凯克时间”：主动引领历史航向的大国担当
+                            <span> 2026-09-08 </span>
+                        </a>
+                        <i> 2026-09-08 09:16:00 </i>
+                    </li>
+                
+                    <li>
+                        <a target="_blank" href="./industrydynamics/industrynews/202609/t20260907_90524.html">
+                            “党性教育是共产党人修身养性的必修课”
+                            <span> 2026-09-07 </span>
+                        </a>
+                        <i> 2026-09-07 17:59:00 </i>
+                    </li>
+                
+                    <li>
+                        <a target="_blank" href="./industrydynamics/industrynews/202609/t20260907_90499.html">
+                            总书记的人民情怀 | “推动未来产业同新兴产业、传统产业相得益彰”
+                            <span> 2026-09-07 </span>
+                        </a>
+                        <i> 2026-09-07 10:21:00 </i>
+                    </li>
+                
+              <!-- <li><a href="javascript:;">【期货日报】产业企业积极利用菜系期货期权规避风险 <span>2020-07-23</span></a></li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="news-cell mtkqs"  style="display: none;">
+        <div class="news-box">
+          <div class="mod-news-2 mod-news-3">
+            <ul>
+                
+                    <li>
+                        <a target="_blank" href="./industrydynamics/mediaviewoffuturesmarket/202609/t20260908_90535.html">
+                            [期货日报]以智能化打通风险管理供需“最后一公里”
+                            <span> 2026-09-08 </span>
+                        </a>
+                        <i> 2026-09-08 09:02:00 </i>
+                    </li>
+                
+                    <li>
+                        <a target="_blank" href="./industrydynamics/mediaviewoffuturesmarket/202609/t20260908_90534.html">
+                            [期货日报]应对成本压力 油脂企业“尝鲜”期权
+                            <span> 2026-09-08 </span>
+                        </a>
+                        <i> 2026-09-08 08:58:00 </i>
+                    </li>
+                
+                    <li>
+                        <a target="_blank" href="./industrydynamics/mediaviewoffuturesmarket/202609/t20260908_90533.html">
+                            [期货日报]风险管理服务下沉 护航中小企业“乘风破浪”
+                            <span> 2026-09-08 </span>
+                        </a>
+                        <i> 2026-09-08 08:54:00 </i>
+                    </li>
+                
+                    <li>
+                        <a target="_blank" href="./industrydynamics/mediaviewoffuturesmarket/202609/t20260908_90532.html">
+                            [期货日报]郑商所8月处理异常交易行为10起
+                            <span> 2026-09-08 </span>
+                        </a>
+                        <i> 2026-09-08 08:49:00 </i>
+                    </li>
+                
+                    <li>
+                        <a target="_blank" href="./industrydynamics/mediaviewoffuturesmarket/202609/t20260908_90531.html">
+                            [期货日报]六部门部署完善乡村振兴投入机制
+                            <span> 2026-09-08 </span>
+                        </a>
+                        <i> 2026-09-08 08:48:00 </i>
+                    </li>
+                
+                    <li>
+                        <a target="_blank" href="./industrydynamics/mediaviewoffuturesmarket/202609/t20260908_90530.html">
+                            [期货日报]财政部支持有关中央金融企业补充核心一级资本
+                            <span> 2026-09-08 </span>
+                        </a>
+                        <i> 2026-09-08 08:43:00 </i>
+                    </li>
+                
+              <!-- <li><a href="javascript:;">【期货日报】产业企业积极利用菜系期货期权规避风险 <span>2020-07-23</span></a></li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <!--协会公告，行业要闻，媒体看期内容结束--> 
+      
+    </div>
+    <div class="clear"></div>
+  </div>
+  <div class="H50"></div>
+</div>
+
+<div class="white-bg bk2">
+  <div class="H50"></div>
+  <div class="wrap-layer">
+    <div class="ser-tab" id="ser-tabs">
+        <ul>
+            <li class="cr"><a href="javascript:;">业务办理</a></li>
+            <li><a href="javascript:;">考试培训</a></li>
+            <li><a href="javascript:;">自律措施</a></li>
+        </ul>
+    </div>
+    <div class="H50"></div>
+    
+    <!--业务办理开始-->
+    <div class="ser-info" >
+      <div  class="mod-indexservice" >
+        <div class="mdbox-l">
+          <div class="qulick-links">
+            <div class="link-img"><a href="javascript:;"><img src="/resources/images/qulick_links2.jpg" alt="" /></a></div>
+            <div class="s-link">
+              
+                <a target="_blank" href="http://fw.cfachina.org" class="s-ico2">
+                    <img src="/resources/images/m-icon14.png" alt="" /><span>从业人员信息管理</span>
+                </a>
+            </div>
+          </div>
+        </div>
+        <div class="mdbox-r">
+          <div class="cur-tits2"><a target="_blank" href="http://fw.cfachina.org/user/login">中国期货业协会自律服务系统</a></div>
+          <div class="mod-news-15">
+            <ul>
+                
+                    <li>
+                        <a  target="_blank" href="./businessprocess/riskmanagementbusiness/recordinformationpublicity/slbn/202605/t20260508_88117.html">
+                            <cite>
+                                <span>08</span>
+                                <i>/31</i>
+                            </cite>
+                            关于期货公司风险管理公司备案信息的公示
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a  target="_blank" href="./businessprocess/riskmanagementbusiness/recordinformationpublicity/gsywba/202111/t20211109_24185.html">
+                            <cite>
+                                <span>08</span>
+                                <i>/31</i>
+                            </cite>
+                            关于期货公司风险管理公司备案信息的公示
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a  target="_blank" href="./businessprocess/riskmanagementbusiness/recordinformationpublicity/gsywba/202309/t20230927_54227.html">
+                            <cite>
+                                <span>09</span>
+                                <i>/26</i>
+                            </cite>
+                            关于国贸启润资本管理有限公司试点业务予以备案的通知
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a  target="_blank" href="./businessprocess/riskmanagementbusiness/recordinformationpublicity/gsywba/202309/t20230911_52466.html">
+                            <cite>
+                                <span>09</span>
+                                <i>/08</i>
+                            </cite>
+                            关于华期创一成都投资有限公司试点业务予以备案的通知
+                        </a>
+                    </li>
+                
+                <!-- <li><a href="javascript:;"><cite><span>07</span><i>/20</i></cite>关于华能宝城物华有限公司试点业务予以予以备案的通知</a></li> -->
+            </ul>
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <!--业务办理结束--> 
+    
+    <!--考试培训开始-->
+    <div class="ser-info" style="display: none">
+      <div  class="mod-exams">
+        <div class="mdbox-l">
+          <div class="qulick-links">
+            <div class="link-img"><a href="javascript:;"><img src="/resources/images/qulink2.jpg" alt="" /></a></div>
+            <div class="s-link s-link2">
+                <a target="_blank" href="./servicesupport/examination/qualificationexamination/zgksbm/" class="s-ico1">
+                    <img src="/resources/images/m-icon16.png" alt="" /><span>资格考试报名</span></a> 
+                <a target="_blank" href="http://exam.cfachina.org" class="s-ico2">
+                    <img src="/resources/images/m-icon17.png" alt="" /><span>资格考试成绩查询</span></a> 
+                <a target="_blank" href="http://cfa-senior.ata.net.cn/Group/#/default/login" class="s-ico3">
+                    <img src="/resources/images/m-icon18.png" alt="" /><span>高管测试报名及查询</span></a> 
+                <a target="_blank" href="http://mooc.cfachina.org/" class="s-ico4">
+                    <img src="/resources/images/m-icon19.png" alt="" /><span>培训学苑</span></a> </div>
+          </div>
+        </div>
+        <div class="mdbox-r">
+          <div class="notice-tab">
+            <span class="active">考试公告</span><span>培训通知</span>
+            <a class="more" target="_blank" style="float:right;font-size:16px;margin-top: 8px;" href="./servicesupport/examination/qualificationexamination/examinationannouncement/">更多</a>
+          </div>
+          <!--考试公告与培训通知开始-->
+          <div class="notice-info">
+            <div class="mod-news-2 mod-news-3">
+                <ul>
+                    
+                        <li>
+                            <a target="_blank" href="./servicesupport/examination/qualificationexamination/examinationannouncement/202606/t20260626_89031.html">
+                                关于期货从业人员资格考试、期货公司高管人员专业能力水平评价测试新增考核内容的公告
+                                <span> 2026-06-26 </span>
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a target="_blank" href="./servicesupport/examination/qualificationexamination/examinationannouncement/202603/t20260331_87408.html">
+                                2026年5月期货从业人员资格统一考试公告
+                                <span> 2026-03-31 </span>
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a target="_blank" href="./servicesupport/examination/qualificationexamination/examinationannouncement/202601/t20260126_86254.html">
+                                2026年度期货从业人员资格考试计划公告
+                                <span> 2026-01-05 </span>
+                            </a>
+                        </li>
+                    
+                        <li>
+                            <a target="_blank" href="./servicesupport/examination/qualificationexamination/examinationannouncement/202508/t20250822_83168.html">
+                                2025年9月期货从业人员资格统一考试公告
+                                <span> 2025-08-22 </span>
+                            </a>
+                        </li>
+                    
+                    <!-- <li><a href="javascript:;">2020年期货从业人员资格考试公告（7号） <span>2020-07-21</span></a></li> -->
+                </ul>
+            </div>
+          </div>
+          <div class="notice-info" style="display: none">
+            <div class="mod-news-2 mod-news-3">
+              <ul>
+                  
+                      <li>
+                          <a target="_blank" href="./index/indexpxtz/202608/t20260820_90026.html">
+                              关于举办“期联训”品种投研与市场分析 培训班（第2期）的通知
+                              <span> 2026-08-20 </span>
+                          </a>
+                      </li>
+                  
+                      <li>
+                          <a target="_blank" href="./index/indexpxtz/202608/t20260818_89996.html">
+                              关于举办“期联训”经营管理与综合业务 培训班（第2期）的通知
+                              <span> 2026-08-18 </span>
+                          </a>
+                      </li>
+                  
+                      <li>
+                          <a target="_blank" href="./index/indexpxtz/202608/t20260805_89706.html">
+                              关于举办“期联训”产业服务与风险管理 培训班（第1期）的通知
+                              <span> 2026-08-05 </span>
+                          </a>
+                      </li>
+                  
+                      <li>
+                          <a target="_blank" href="./index/indexpxtz/202607/t20260730_89610.html">
+                              关于举办“期联训”品种投研与市场分析 培训班（第1期）的通知
+                              <span> 2026-07-30 </span>
+                          </a>
+                      </li>
+                  
+              </ul>
+            </div>
+          </div>
+          
+          <!--考试公告与培训通知结束--> 
+          
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <!--考试培训结束--> 
+    
+    <!--自律措施开始-->
+    <div class="ser-info" style="display: none">
+      <div  class="mod-selflist" >
+        <div class="mdbox-l">
+          <div class="cur-tits2 cur-tits3">自律规则
+            <a class="more" target="_blank" style="float:right;font-size:16px;" href="./governmentrules/selfdisciplinerules/">更多</a>
+          </div>
+          
+          <div class="mod-news-2 mod-news-3">
+            <ul>
+               
+                <li>
+                  <a target="_blank" href="./governmentrules/selfdisciplinerules/xhzzyzl/202607/t20260715_89420.html">
+                      中国期货业协会自律规则制定办法
+                      <span> 2026-07-10 </span>
+                  </a>
+                </li>
+               
+                <li>
+                  <a target="_blank" href="./governmentrules/selfdisciplinerules/businessspecificationclass/202603/t20260330_87368.html">
+                      期货公司接入外部信息系统管理规则
+                      <span> 2026-03-27 </span>
+                  </a>
+                </li>
+               
+                <li>
+                  <a target="_blank" href="./governmentrules/selfdisciplinerules/employeemanagement/202601/t20260107_85961.html">
+                      期货风险管理公司人员管理规则
+                      <span> 2025-11-28 </span>
+                  </a>
+                </li>
+               
+                <li>
+                  <a target="_blank" href="./governmentrules/selfdisciplinerules/businessspecificationclass/202511/t20251125_84866.html">
+                      期货做市交易业务管理规则
+                      <span> 2025-10-31 </span>
+                  </a>
+                </li>
+               
+              <!-- <li><a href="javascript:;">2020年期货从业人员资格考试公告（7号）<span>2020-07-23</span></a></li> -->
+            </ul>
+          </div>
+        </div>
+        <div class="mdbox-r">
+          <div class="cur-tits2 cur-tits4">纪律处分
+            <a class="more" target="_blank" style="float:right;font-size:16px;" href="./informationpublicity/discipline/">更多</a>
+          </div>
+
+          <div class="mod-news-2 mod-news-3">
+            <ul>
+                
+                    <li>
+                        <a  target="_blank" href="./informationpublicity/discipline/202609/t20260904_90486.html">
+                            关于对曹婷作出纪律处分的决定</P><P>中期协字〔2026〕186号</P>
+                            <span> 2026-09-04 </span>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a  target="_blank" href="./informationpublicity/discipline/202608/t20260821_90046.html">
+                            关于对陈维波作出纪律处分的决定</P><P>中期协字〔2026〕171号</P>
+                            <span> 2026-08-21 </span>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a  target="_blank" href="./informationpublicity/discipline/202608/t20260814_89969.html">
+                            关于对陈成武作出纪律处分的决定</P><P>中期协字〔2026〕166号</P>
+                            <span> 2026-08-14 </span>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a  target="_blank" href="./informationpublicity/discipline/202608/t20260814_89968.html">
+                            关于林玉昂的审议决定书</P><P>中期协字〔2026〕185号</P>
+                            <span> 2026-08-14 </span>
+                        </a>
+                    </li>
+                
+                <!-- <li><a href="javascript:;">2020年期货从业人员资格考试公告（7号）<span>2020-07-23</span></a></li> -->
+            </ul>
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <!--自律措施结束--> 
+    
+  </div>
+  <div class="H50"></div>
+</div>
+
+<div class="mod-market">
+  <div class="H50"></div>
+  <div class="wrap-layer">
+    <div class="ser-tab"  id="pubtab">
+      <ul>
+        <li class="cr"><a href="javascript:;">上市品种</a></li>
+        <li><a href="javascript:;">研究与出版</a></li>
+        <li><a href="javascript:;">境内外监管动态</a></li>
+      </ul>
+    </div>
+    <div class="H50"></div>
+    <!--上市品种与研究出版内容开始-->
+    <div class="pubinfo">
+      <div class="market-prowrap" >
+        <div class="item-cell">
+          <div class="item-pic"><a target="_blank" href="./servicesupport/sspz/?type=1">
+            <img src="/resources/images/market_pro1.jpg" width="420" height="277" /></a>
+          </div>
+          <div class="item-cnt">
+            <div class="item-tit"><a target="_blank" href="./servicesupport/sspz/?type=1">有色金属</a></div>
+          </div>
+        </div>
+        <div class="item-cell">
+          <div class="item-pic"><a target="_blank" href="./servicesupport/sspz/?type=2">
+            <img src="/resources/images/market_pro2.jpg" width="420" height="277" /></a>
+          </div>
+          <div class="item-cnt">
+            <div class="item-tit"><a target="_blank" href="./servicesupport/sspz/?type=2">黑色金属</a></div>
+          </div>
+        </div>
+        <div class="item-cell">
+          <div class="item-pic"><a target="_blank" href="./servicesupport/sspz/?type=3">
+            <img src="/resources/images/market_pro3.jpg" width="420" height="277" /></a>
+          </div>
+          <div class="item-cnt">
+            <div class="item-tit"><a target="_blank" href="./servicesupport/sspz/?type=3">贵金属</a></div>
+          </div>
+        </div>
+        <div class="item-cell">
+          <div class="item-pic"><a target="_blank" href="./servicesupport/sspz/?type=4">
+            <img src="/resources/images/market_pro4.jpg" width="420" height="277" /></a>
+          </div>
+          <div class="item-cnt">
+            <div class="item-tit"><a target="_blank" href="./servicesupport/sspz/?type=4">能源化工</a></div>
+          </div>
+        </div>
+        <div class="item-cell">
+          <div class="item-pic"><a target="_blank" href="./servicesupport/sspz/?type=5">
+            <img src="/resources/images/market_pro5.jpg" width="420" height="277" /></a>
+          </div>
+          <div class="item-cnt">
+            <div class="item-tit"><a target="_blank" href="./servicesupport/sspz/?type=5">农产品</a></div>
+          </div>
+        </div>
+        <div class="item-cell">
+          <div class="item-pic"><a target="_blank" href="./servicesupport/sspz/?type=6">
+            <img src="/resources/images/market_pro6.jpg" width="420" height="277" /></a>
+          </div>
+          <div class="item-cnt">
+            <div class="item-tit"><a target="_blank" href="./servicesupport/sspz/?type=6">金融</a></div>
+          </div>
+        </div>
+        <div class="item-cell">
+            <div class="item-pic"><a target="_blank" href="./servicesupport/sspz/?type=7">
+              <img src="/resources/images/market_pro7.jpg" width="420" height="277" /></a>
+            </div>
+            <div class="item-cnt">
+              <div class="item-tit"><a target="_blank" href="./servicesupport/sspz/?type=7">指数</a></div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="pubinfo" style="display: none;">
+        
+      <div class="mod-publish">
+          <!-- 
+            <div class="item-cell">
+              <div class="item-pic"><a  target="_blank" href="./servicesupport/researchandpublishin/publication/chinafutures/2022/zgqh_6_90/202302/t20230206_35865.html">
+                <img src="./servicesupport/researchandpublishin/publication/chinafutures/2022/zgqh_6_90/202302/W020230206673943276672.jpg" /></a>
+              </div>
+              <div class="item-cnt">
+                <div class="item-tit"> 2022年第6期《中国期货》（总第90期） </div>
+              </div>
+            </div>
+           -->
+          
+            <div class="item-cell">
+              <div class="item-pic"><a  target="_blank"  item-cell href="./servicesupport/researchandpublishin/publication/zgqhscnj/2024nianjian/202510/P020251020340000353148.png">
+                <img src="./servicesupport/researchandpublishin/publication/zgqhscnj/2024nianjian/202510/W020251020340001999762.png" /></a>
+              </div>
+              <div class="item-cnt">
+                <div class="item-tit"> 《中国期货市场年鉴（2024）》中文版 </div>
+              </div>
+            </div>
+          
+          
+            <div class="item-cell">
+              <div class="item-pic"><a   target="_blank" item-cell href="./servicesupport/researchandpublishin/publication/lhyjjhktj/202205_4371/202505/P020250507587558833669.pdf">
+                <img src="./servicesupport/researchandpublishin/publication/lhyjjhktj/202205_4371/202505/W020250507587560826905.jpg" /></a>
+              </div>
+              <div class="item-cnt">
+                <div class="item-tit"> 中期协联合研究计划（第十六期） </div>
+              </div>
+            </div>
+          
+
+          <!--<div class="item-cell">
+            <div class="item-pic"><a href="javascript:;">
+              <img src="/resources/images/book3.jpg" /></a>
+            </div>
+            <div class="item-cnt">
+              <div class="item-tit"><a href="javascript:;">《中国期货业发展创新与风险管理研究(10)》</a></div>
+            </div>
+          </div> -->
+      </div>
+        <div class="cur-more">
+        <a class="more" target="_blank" style="float:right;font-size:16px;" href="./servicesupport/researchandpublishin/publication/">更多出版物 ></a>
+        </div>
+    </div>
+    <!--上市品种与研究出版内容结束-->
+        <!-- 境内外监管动态开始 -->
+        <div class="pubinfo" style="display: none;">
+          <div class="mod-publish">
+            
+              
+                <div class="item-cell item-cell-mid ">
+                  <div class="item-pic"><a  target="_blank"  item-cell href="http://www.cfachina.org/dzss/202603131337099504/index.html">
+                    <img src="./industrydynamics/jnwjgdt/qhhysphyjgdt/202603/W020260313493421357045.jpg" /></a>
+                  </div>
+                  <div class="item-cnt">
+                    <div class="item-tit"> 期货和衍生品行业监管动态（2026年2月） </div>
+                  </div>
+                </div>
+              
+                <div class="item-cell item-cell-mid ">
+                  <div class="item-pic"><a  target="_blank"  item-cell href="http://www.cfachina.org/dzss/202602121342064685/index.html">
+                    <img src="./industrydynamics/jnwjgdt/qhhysphyjgdt/202602/W020260212494497637585.jpg" /></a>
+                  </div>
+                  <div class="item-cnt">
+                    <div class="item-tit"> 期货和衍生品行业监管动态（2026年1月） </div>
+                  </div>
+                </div>
+              
+                <div class="item-cell item-cell-mid ">
+                  <div class="item-pic"><a  target="_blank"  item-cell href="http://www.cfachina.org/dzss/202601190918405997/index.html">
+                    <img src="./industrydynamics/jnwjgdt/qhhysphyjgdt/202601/W020260119336757280985.jpg" /></a>
+                  </div>
+                  <div class="item-cnt">
+                    <div class="item-tit"> 期货和衍生品行业监管动态（2025年12月） </div>
+                  </div>
+                </div>
+              
+          </div>
+        </div>
+        <!-- 境内外监管动态结束 -->
+
+    <div class="clear"></div>
+  </div>
+  <div class="H50"></div>
+</div>
+<div class="white-bg">
+  <div class="H50"></div>
+  <div class="wrap-layer">
+    <div class="ser-tab" id="market-chart">
+      <ul>
+        <li class="cr"><a href="javascript:;">市场行情</a></li>
+        <li><a href="javascript:;">数据统计</a></li>
+      </ul>
+    </div>
+    <div class="H50"></div>
+    <!--市场行情开始-->
+    <div class="data-info" >
+      <div class="layer-7">
+        <div class="market-tab">
+          <ul>
+            <li class="active"><a href="javascript:;">有色金属</a></li>
+            <li><a href="javascript:;">黑色金属</a></li>
+            <li><a href="javascript:;">贵金属</a></li>
+            <li><a href="javascript:;">能源化工</a></li>
+            <li><a href="javascript:;">农产品</a></li>
+            <li><a href="javascript:;">金融</a></li>
+          </ul>
+        </div>
+        
+        <!--产品分类数据表格开始-->
+        <div class="market-cell marketQuotation">
+          <table class="table-title1" width="100%">
+            <colgroup>
+              <col  width="102">
+              <col  width="102">
+              <col  width="102">
+              <col  width="125">
+              <col  width="102">
+              <col  width="102">
+            </colgroup>
+            <thead>
+              <tr>
+                <th>合约名称</th>
+                <th>昨日收盘价</th>
+                <th>昨日结算价</th>
+                <th>涨跌幅（%）</th>
+                <th>昨日成交量</th>
+                <th>昨日持仓量</th>
+              </tr>
+            </thead>
+          </table>
+          <div class="mod-table-9 mod-table-10">
+            <table width="100%" border="0">
+              <colgroup>
+                <col  width="102">
+                <col  width="102">
+                <col  width="102">
+                <col  width="125">
+                <col  width="102">
+                <col  width="102">
+              </colgroup>
+              <tbody>
+                  <!-- <tr> <td>zn2009</td> <td>20620</td> <td>160</td> <td>38965</td> <td>11777</td> <td>11777</td> </tr>
+                  <tr> <td>pb2009</td> <td>50560</td> <td>260</td> <td>48965</td> <td>11777</td> <td>11777</td> </tr>
+                  <tr> <td>ap2009</td> <td>50560</td> <td>260</td> <td>48965</td> <td>11777</td> <td>11777</td> </tr> -->
+              </tbody>
+            </table>
+<div id="loading">
+    数据加载中。请稍候......
+</div>
+<p class="noData" style="width: 100%;line-height: 40px;text-align: center;font-size: 30px;color: #ccc;" id="noData">暂无数据</p>
+          </div>
+          <div class="dateText1">更新于：<span>--</span> <i style="float: right;">来源：iFinD </i></div>
+        </div>
+
+        <!--产品分类数据表格结束--> 
+        
+      </div>
+      <div class="layer-8">
+        <div class="qh-trend"><span>期货价格</span>
+          <div class="trend-sel">
+            <div class="sel-1">
+              <div class="long-selects">
+                <span>
+                <div class="select-main">
+                  <div class="select-arrow"></div>
+                  <div class="select-set"> 有色金属 </div>
+                  <div class="select-block" style="display: none;">
+                  <ul class="select-list">
+                    <li class="select-items active"> 有色金属 </li>
+                    <li class="select-items"> 黑色金属 </li>
+                    <li class="select-items"> 贵金属 </li>
+                    <li class="select-items"> 能源化工  </li>
+                    <li class="select-items">  农产品   </li>
+                    <li class="select-items">  金融   </li>
+                    <li class="select-items">  指数   </li>
+                   </ul>
+                  </div>
+                </div>
+                <!-- <select class="ui-select shortselect">
+                  
+                      
+                        <option> 有色金属 </option>
+                      
+                    
+                      
+                        <option> 黑色金属 </option>
+                      
+                    
+                      
+                        <option> 贵金属 </option>
+                      
+                    
+                      
+                        <option> 能源化工 </option>
+                      
+                    
+                      
+                        <option> 农产品 </option>
+                      
+                    
+                      
+                        <option> 金融 </option>
+                      
+                    
+                      
+                        <option> 指数 </option>
+                      
+                    
+                  </select> -->
+                </span> </div>
+            </div>
+            <div class="sel-2">
+              <div class="long-selects"> <span>
+                <select class="ui-select shortselect">
+                  <option>粳米</option>
+                  <option>玉米</option>
+                  <option>玉米淀粉</option>
+                  <option>黄大豆</option>
+                  <option>豆粕</option>
+                  <option>豆油</option>
+                </select>
+                </span> </div>
+            </div>
+          </div>
+          <div class="qh-more"><a href="./servicesupport/sspz/"></a></div>
+        </div>
+        <div class="clear"></div>
+        <!--趋势图开始-->
+        <div class="trend-chart" id="mytrend-2"></div>
+        <!--趋势图结束--> 
+        <div>说明：以上为该品种自上市以来主力连续合约长期走势图。</div>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <!--市场行情结束--> 
+    
+    <!--数据统计开始-->
+    <div class="data-info" style="display: none;">
+      <div class="layer-7" style="height: 570px;">
+        <div class="data-totaltit">期货市场月度成交数据</div>
+        <div id="smtrend" class="strend-total"></div>
+      </div>
+      <div class="layer-8">
+        <div class="data-totaltit" style="margin-bottom: 22px;">期货公司月度经营数据</div>
+        <div class="month-days qh-trend">
+            <div class="qh-more" style="top: 23px;"><a href="./informationpublicity/qhgsydjysj/"></a></div>
+          <div class="endTime" style="text-align: right;margin-right: 50px;"><span>--</span></div>
+          <ul>
+            <li class="mon-icon1"> <span><img src="/resources/images/total_ico1.png" alt="" /></span>
+              <h3>资产总额(亿元)</h3> <i>--</i>
+            </li>
+            <li class="mon-icon2"> <span><img src="/resources/images/total_ico2.png" alt="" /></span>
+              <h3>净资本(亿元）</h3> <i>--</i>
+            </li>
+            <li class="mon-icon3"> <span><img src="/resources/images/total_ico3.png" alt="" /></span>
+              <h3>客户权益(亿元)</h3> <i>--</i>
+            </li>
+            <li class="mon-icon4"> <span><img src="/resources/images/total_ico4.png" alt="" /></span>
+              <h3>营业收入(亿元)</h3> <i>--</i>
+            </li>
+            <li class="mon-icon5"> <span><img src="/resources/images/total_ico5.png" alt="" /></span>
+              <h3>手续费收入(亿元）</h3> <i>--</i>
+            </li>
+            <li class="mon-icon6"> <span><img src="/resources/images/total_ico6.png" alt="" /></span>
+              <h3>净利润(亿元)</h3> <i>--</i>
+            </li>
+          </ul>
+          <div class="clear"></div>
+        </div>
+      </div>
+      <div class="newcharts"> 
+        <div  class="newtit">期货行业服务实体经济数据</div>
+        <div class="newcon">
+          <div class="layer-9" style="width:630px; padding-top: 100px;float: left;">
+              <div class="data-totaltit" style="text-align:inherit; font-size: 16px; width:630px;">风险管理公司场外衍生品业务服务中小微/上市公司情况</div>
+              <div id="smtrend9" class="strend-total"></div>
+          </div>
+          <div class="layer-10" style="width:630px;padding-top: 100px;float: right;">
+              <div class="data-totaltit" style="text-align:inherit; font-size: 16px; width:630px;" >期货资管投向期货及衍生品资金规模</div>
+              <div id="smtrend10" class="strend-total"></div>
+          </div>
+        </div>
+      </div>  
+      <div class="clear"></div>
+    </div>
+    <!--数据统计结束--> 
+    
+  </div>
+  <div class="H125"></div>
+</div>
+
+<!--底部开始-->
+<!--底部开始-->
+<div class="footer">
+    <div class="wrap-layer">
+      <div class="bom-logo-wrap">
+        <div class="bom-logo"><a href="javascript:;"><img src="/resources/images/bom_logo.png" alt="" /></a></div>
+        <div class="fot-r">
+          <div class="code-icon">
+            <div class="focus">
+              <span><img src="/resources/images/wx_ico1.png" alt="" /></span>
+              <i><img src="/resources/images/mcode.jpg" alt="" /></i>
+            </div>
+            <!--<div class="focus">
+            <span><img src="/resources/images/sina_ico1.png" alt="" /></span>
+            <i><img src="/resources/images/mcode.jpg" alt="" /></i>
+            </div>-->
+          </div>
+          <div class="links-t">
+            <!-- <a target="_blank" href="">友情链接:</a> -->
+            <a href="javascript:void(0)" style="opacity: 1;cursor: default;">友情链接:</a>
+        </div>
+          <div class="bom-links">
+            <div class="bom-linkstit"><span>相关链接</span></div>
+            <ul style="height: inherit;">
+              <li><a target="_blank" href="http://www.csrc.gov.cn/">中国证券监督管理委员会</a></li>
+              <li><a target="_blank" href="http://www.mca.gov.cn/">中华人民共和国民政部</a></li>
+              <li><a target="_blank" href="https://www.samr.gov.cn/">国家市场监督管理总局</a></li>
+              <!-- <li><a target="_blank" href="http://www.shfe.com.cn/">上海期货交易所</a></li>
+              <li><a target="_blank" href="http://www.czce.com.cn/">郑州商品交易所</a></li>
+              <li><a target="_blank" href="http://www.dce.com.cn/">大连商品交易所</a></li>
+              <li><a target="_blank" href="http://www.cffex.com.cn/">中国金融期货交易所</a></li>
+              <li><a target="_blank" href="http://www.gfex.com.cn/">广州期货交易所</a></li>
+              <li><a target="_blank" href="http://www.cfmmc.com/main/views/index.html?r=0.47918297462422843">中国期货市场监控中心</a></li>
+              <li><a target="_blank" href="https://www.sac.net.cn/">中国证券业协会</a></li>
+              <li><a target="_blank" href="http://www.capco.org.cn/">中国上市公司协会</a></li>
+              <li><a target="_blank" href="https://www.amac.org.cn/">中国证券投资基金业协会</a></li> -->
+            </ul>
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="clear"></div>
+  
+      <div class="bom-contacts">
+        <span class="bom-tel complaint-ico"><a target="_blank" href="./servicesupport/industrycomplaints/">网上投诉</a></span>
+        <span class="bom-tel"><a target="_blank" href="./aboutassociation/reportincorruptgovernment/">廉政举报</a></span>
+        <span class="bom-tel bomsites"><a href="javascript:;">机构地图</a></span>
+        <span class="bom-addr">北京市西城区金融大街33号通泰大厦C座八层中国期货业协会</span>
+      </div>
+  
+      <div class="clear"></div>
+      <div class="map-site"><span>网站地图</span></div>
+      <div class="site-nav">
+        <div class="site-nav-inner">
+          <div class="bom-nav">
+            <div class="bom-navtits"><a target="_blank" href="./governmentrules/">政策法规</a></div>
+            <ul>
+              
+                
+                  <li><a href="./governmentrules/lawsandregulations/" target="_blank">法律法规</a></li>
+                
+              
+                
+                  <li><a href="./governmentrules/administrativeregulation/" target="_blank">行政法规</a></li>
+                
+              
+                
+                  <li><a href="./governmentrules/sfjs/" target="_blank">司法解释</a></li>
+                
+              
+                
+                  <li><a href="./governmentrules/departmentregulations/" target="_blank">部门规章和规范性文件</a></li>
+                
+              
+                
+                  <li><a href="./governmentrules/selfdisciplinerules/" target="_blank">自律规则</a></li>
+                
+              
+                
+                  <li><a href="./governmentrules/nationalstandard/" target="_blank">国家标准</a></li>
+                
+              
+                
+                  <li><a href="./governmentrules/industrystandard/" target="_blank">行业标准</a></li>
+                
+              
+                
+                  <li><a href="./governmentrules/groupstandards/" target="_blank">团体标准</a></li>
+                
+              
+            </ul>
+          </div>
+          <div class="bom-nav">
+            <div class="bom-navtits"><a target="_blank" href="./businessprocess/">业务办理</a></div>
+            <ul>
+              
+                
+                  <li><a href="./businessprocess/membermanagement/" target="_blank">会员管理</a></li>
+                
+              
+                
+                  <li><a href="./businessprocess/qualificationmanagement/" target="_blank">资格管理</a></li>
+                
+              
+                
+                  <li><a href="./businessprocess/riskmanagementbusiness/" target="_blank">风险管理业务</a></li>
+                
+              
+                
+                  <li><a href="./businessprocess/assetmanagementbusiness/" target="_blank">资产管理业务</a></li>
+                
+              
+            </ul>
+          </div>
+          <div class="bom-nav">
+            <div class="bom-navtits"><a target="_blank" href="./servicesupport/">服务支持</a></div>
+            <ul>
+              
+                
+                  <li><a href="./servicesupport/examination/" target="_blank">考试测试</a></li>
+                
+              
+                
+                  <li><a href="http://mooc.cfachina.org/" target="_blank">培训学苑</a></li>
+                
+              
+                
+                  <li><a href="http://edu.cfachina.org/" target="_blank">投资者园地</a></li>
+                
+              
+                
+                  <li><a href="./servicesupport/sspz/" target="_blank">上市品种</a></li>
+                
+              
+                
+                  <li><a href="./servicesupport/researchandpublishin/" target="_blank">研究与出版</a></li>
+                
+              
+                
+                  <li><a href="./servicesupport/industrycomplaints/" target="_blank">行业投诉</a></li>
+                
+              
+              <!-- <li><a href="javascript:;"><span>行业投诉</span></a></li> -->
+            </ul>
+          </div>
+          <div class="bom-nav">
+            <div class="bom-navtits"><a target="_blank" href="./informationpublicity/">信息公示</a></div>
+            <ul>
+              <!-- 
+                
+                  <li><a href="./informationpublicity/hygs/" target="_blank">会员公示</a></li>
+                
+              
+                
+                  <li><a href="./informationpublicity/futurescompanyinformantionpublicity/" target="_blank">期货公司信息公示</a></li>
+                
+              
+                
+                  <li><a href="./informationpublicity/publicityofemployees/" target="_blank">从业人员公示</a></li>
+                
+              
+                
+                  <li><a href="./informationpublicity/jjrgs/" target="_blank">居间人公示</a></li>
+                
+              
+                
+                  <li><a href="https://neris.csrc.gov.cn/pubrecord-front/#/cfachina" target="_blank">期货公司移动应用软件备案公示</a></li>
+                
+              
+                
+                  <li><a href="./informationpublicity/discipline/" target="_blank">纪律处分</a></li>
+                
+              
+                
+                  <li><a href="./informationpublicity/qhgsydcjqk/" target="_blank">期货市场月度成交情况</a></li>
+                
+              
+                
+                  <li><a href="./informationpublicity/qhgsydjysj/" target="_blank">期货公司月度经营数据</a></li>
+                
+              
+                
+                  <li><a href="./informationpublicity/qhhyfwstjjsj/" target="_blank">期货行业服务实体经济数据</a></li>
+                
+               -->
+  
+              <li><a href="./informationpublicity/hygs/">会员公示</a></li>
+              <li><a href="./informationpublicity/futurescompanyinformantionpublicity/">期货公司信息公示</a>
+                <ul>
+                  
+                    
+                      <li><a href="./informationpublicity/futurescompanyinformantionpublicity/qhgsjbqk/">期货公司基本情况</a></li>
+                    
+                  
+                    
+                      <li><a href="./informationpublicity/futurescompanyinformantionpublicity/qhgslsqk/">期货公司历史情况</a></li>
+                    
+                  
+                    
+                      <li><a href="./informationpublicity/futurescompanyinformantionpublicity/qhgsggryxx/">期货公司高管人员信息</a></li>
+                    
+                  
+                    
+                      <li><a href="./informationpublicity/futurescompanyinformantionpublicity/qhgsfzjgqk/">期货公司分支机构情况</a></li>
+                    
+                  
+                    
+                      <li><a href="./informationpublicity/futurescompanyinformantionpublicity/qhgscyryxx/">期货公司从业人员信息</a></li>
+                    
+                  
+                    
+                      <li><a href="./informationpublicity/futurescompanyinformantionpublicity/qhgsgdxx/">期货公司股东信息</a></li>
+                    
+                  
+                    
+                      <li><a href="./informationpublicity/futurescompanyinformantionpublicity/qhgscxjlxx/">期货公司诚信记录信息</a></li>
+                    
+                  
+                    
+                      <li><a href="./informationpublicity/futurescompanyinformantionpublicity/qhgscjzxx/">期货公司次级债信息</a></li>
+                    
+                  
+                </ul>
+              </li>
+              <li><a href="./informationpublicity/publicityofemployees/">从业人员公示</a></li>
+              <li><a href="./informationpublicity/discipline/">纪律处分</a></li>
+              <!-- <li><a href="./informationpublicity/qhjyjgcxxx/">期货经营机构诚信信息</a></li> -->
+              
+              <li><a href="./servicesupport/researchandpublishin/statisticalsdata/">期货市场月度成交情况</a></li>
+              <li><a href="./informationpublicity/qhgsydjysj/">期货公司月度经营数据</a></li>
+            </ul>
+          </div>
+          <div class="bom-nav">
+            <div class="bom-navtits"><a target="_blank" href="./industrydynamics/">行业动态</a></div>
+            <ul>
+              
+                
+                  <li><a href="./industrydynamics/hydj/" target="_blank">行业党建</a></li>
+                
+              
+                
+                  <li><a href="./industrydynamics/gjqhdhhz/" target="_blank">国际期货大会</a></li>
+                
+              
+                
+                  <li><a href="./industrydynamics/hydh/" target="_blank">会员大会</a></li>
+                
+              
+                
+                  <li><a href="./industrydynamics/membernews/" target="_blank">会员动态</a></li>
+                
+              
+                
+                  <li><a href="./industrydynamics/culturalconstruction/" target="_blank">文化建设</a></li>
+                
+              
+                
+                  <li><a href="./industrydynamics/pfxc/" target="_blank">普法宣传</a></li>
+                
+              
+                
+                  <li><a href="./industrydynamics/jnwjgdt/" target="_blank">境内外监管动态</a></li>
+                
+              
+                
+                  <li><a href="./industrydynamics/scrumcommunication/" target="_blank">会议交流</a></li>
+                
+              
+                
+                  <li><a href="./industrydynamics/internationalexchange/" target="_blank">国际交流</a></li>
+                
+              
+                
+                  <li><a href="./industrydynamics/industrynews/" target="_blank">行业要闻</a></li>
+                
+              
+                
+                  <li><a href="./industrydynamics/tabloid/" target="_blank">图片新闻</a></li>
+                
+              
+                
+                  <li><a href="./industrydynamics/mediaviewoffuturesmarket/" target="_blank">媒体看期市</a></li>
+                
+              
+            </ul>
+          </div>
+          <!-- <div class="bom-nav">
+            <div class="bom-navtits"><a target="_blank" href="./industrydynamics/culturalconstruction/">文化建设</a></div>
+            <ul>
+              
+                
+                  <li><a href="./industrydynamics/culturalconstruction/whjsdybf/" target="_blank">文化建设第一部分</a></li>
+                
+              
+                
+                  <li><a href="./industrydynamics/culturalconstruction/mediacoverage/" target="_blank">媒体报道</a></li>
+                
+              
+                
+                  <li><a href="./industrydynamics/culturalconstruction/djyy/" target="_blank">党建引领</a></li>
+                
+              
+                
+                  <li><a href="./industrydynamics/culturalconstruction/hydt/" target="_blank">行业动态</a></li>
+                
+              
+                
+                  <li><a href="./industrydynamics/culturalconstruction/zbscwhjs/" target="_blank">资本市场文化建设</a></li>
+                
+              
+                
+                  <li><a href="./industrydynamics/culturalconstruction/yjcg/" target="_blank">研究成果</a></li>
+                
+              
+            </ul>
+          </div> -->
+          <div class="bom-nav">
+            <div class="bom-navtits"><a target="_blank" href="./aboutassociation/">关于协会</a></div>
+            <ul>
+              
+                
+                  <li><a href="./aboutassociation/associationintroduction/" target="_blank">协会介绍</a></li>
+                
+              
+                
+                  <li><a href="./aboutassociation/associationgovernance/" target="_blank">协会治理</a></li>
+                
+              
+                
+                  <li><a href="./aboutassociation/associationannouncement/" target="_blank">协会公告</a></li>
+                
+              
+                
+                  <li><a href="./aboutassociation/industrypovertyalleviation/" target="_blank">乡村振兴</a></li>
+                
+              
+                
+                  <li><a href="./aboutassociation/contactus/" target="_blank">联系我们</a></li>
+                
+              
+                
+                  <li><a href="./aboutassociation/associationrecruitment/" target="_blank">招聘信息</a></li>
+                
+              
+                
+                  <li><a href="./aboutassociation/associationprocurement/" target="_blank">协会采购</a></li>
+                
+              
+                
+                  <li><a href="./aboutassociation/reportincorruptgovernment/" target="_blank">廉政举报</a></li>
+                
+              
+            </ul>
+          </div>
+
+           <!--<div class="bom-nav">
+            <div class="bom-navtits"><a target="_blank" href="http://mail.cfachina.org/">协会邮箱</a></div>
+          </div>-->
+
+        </div>
+      </div>
+  
+      <div class="clear"></div>
+    </div>
+  
+    <div class="mod-copy">
+      <div class="wrap-layer">
+        <div class="copys">
+          <i>版权所有：&copy;2001-2006中国期货业协会 CFA ALL Rights Reserved </i>
+          <i style="margin-left: 160px;">本网站支持IPv6访问</i>
+          <!-- <span>京公网安备 110102001604号</span> -->
+          <span style="opacity: 1;">
+            <div style="width: auto;margin: 0 auto;opacity: 1;">
+              <span style="float: none;margin-right: 10px;"><a href="https://beian.miit.gov.cn" target="_blank">京ICP备05047118号-1</a></span>
+              <a href="https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010202009161" style="display: inline-block;text-decoration: none;height: 20px;line-height: 20px;opacity: 1;cursor:pointer;">
+                <img src="/resources/images/beian.png" style="float: left;opacity: 1;margin-top: 3px;" />
+                <p style="float: left;height: 20px;line-height: 28px;margin: 0 0 0 5px;">
+                  京公网安备 11010202009161 号
+                </p>
+              </a>
+            </div>
+          </span>
+  
+        </div>
+      </div>
+    </div>
+  
+  </div>
+  <!--底部结束-->
+  
+  <script>
+    $(document).ready(function(){
+      //设置cookie
+      function setCookie(key,value,t){
+        var oDate=new Date();
+        oDate.setDate(oDate.getDate()+t);
+        document.cookie=key+"="+value+"; expires="+oDate.toDateString();
+      }
+      //获取cookie
+      function getCookie(key){
+        var arr1=document.cookie.split("; ");//由于cookie是通过一个分号+空格的形式串联起来的，所以这里需要先按分号空格截断,变成[name=Jack,pwd=123456,age=22]数组类型；
+        for(var i=0;i<arr1.length;i++){
+          var arr2=arr1[i].split("=");//通过=截断，把name=Jack截断成[name,Jack]数组；
+          if(arr2[0]==key){
+            return decodeURI(arr2[1]);
+          }
+        }
+      }
+      //移除cookie  
+      function removeCookie(key){
+        setCookie(key,"",-1); // 把cookie设置为过期
+      };
+    
+      $('.leftMenuBox ul li a').each(function(index,domEle){
+        if($(domEle).text().replace(/^\s*|\s*$/g,'') == $('.mode-banner .crumb a').eq($('.mode-banner .crumb a').length-1).text().replace(/^\s*|\s*$/g,'')){
+          $(domEle).parent().addClass('fw');
+          $(domEle).parent().parent().siblings('a').find('i').parent().parent().addClass('active'); 
+        }
+      });
+      var curNumber = NaN;
+      // localStorage.setItem('init','true');
+      setCookie('init','true',0.5)
+      $('.leftMenuBox ul li').click(function  (e){
+        if($(this).parent().parent().is('.leftMenuBox')){
+          if(curNumber != $(this).index()){
+            $('.leftMenuBox ul li').find('i').parent().parent().removeClass('active');
+          }
+          curNumber = $(this).index();
+        } 
+        if($(this).children('a').find('i').length != 0){
+          $(this).siblings('li').removeClass('active');
+          if(getCookie('init')){  // console.log(2);
+            $(this).children('a').find('i').parent().parent().removeClass('active'); 
+            removeCookie('init'); 
+          }else{
+            if($(this).is('.active')){ // console.log(3);
+              $(this).children('a').find('i').parent().parent().removeClass('active');  
+            }else{
+              $(this).children('a').find('i').parent().parent().addClass('active');   
+              $(this).parent('.leftMenuBox');
+            }
+          }
+          if(!$('.leftMenuBox>ul>li').is('.active')){ // console.log(5);
+            $('.leftMenuBox ul li').removeClass('active');
+          }
+        }else{
+          $('.leftMenuBox ul li').removeClass('fw');
+          $(this).addClass('fw');
+        }
+        e.stopPropagation();
+      });
+      // 导航选中
+      $('.wrap-nav .navMenu>li').removeClass('cr');
+      $('.wrap-nav .navMenu>li>a').each(function(index,el){
+        if($(el).text() == $('.mode-banner .curmenu .crumb a').eq(1).text()){
+          $(el).parent().addClass('cr');
+        }
+      });
+      if($('.mode-banner .curmenu .crumb a').length < 2){
+        $('.wrap-nav .navMenu>li').eq(0).addClass('cr');
+      }
+  
+      if(window.location.href.split('/').reverse()[0].split('.html')[0] == '' || window.location.href.split('/').reverse()[0].split('.html')[0] == 'index'){
+        $('.moreBox a').removeClass('cr');
+        $('.moreBox a').each(function(index,el){
+          if($(el).text() == 1){
+            $(el).addClass('cr');
+          }
+        });
+      }else{
+        $('.moreBox a').removeClass('cr');
+        $('.moreBox a').each(function(index,el){
+          if($(el).text()-1 == window.location.href.split('/').reverse()[0].split('.html')[0].split('_')[1]){
+            $(el).addClass('cr');
+          }
+        });
+      }
+  
+      var bannerImg = [ 
+        'news-banner.jpg',
+        'business-banner.jpg',
+        'service-banner.jpg',
+        'banner_pub.jpg',
+        'hydt-banner.jpg',
+        'about-banner.jpg',
+      ];
+      console.log($('.navMenu>li.cr').index());
+      if($('.navMenu>li.cr').index() != -1){  
+        if(bannerImg[($('.navMenu>li.cr').index())-1] != undefined){  
+          var imgDataArr = $('.mode-banner .banner-cnt img').attr('src').split('/');
+          imgDataArr[imgDataArr.length-1] = bannerImg[($('.navMenu>li.cr').index())-1];
+          $('.mode-banner .banner-cnt img').attr('src',imgDataArr.join('/'));
+        }
+      }
+      
+  
+    });
+  </script>
+  
+  
+  <!--机构地图弹出层开始-->
+  <div class="modlayer-ageny">
+  <div class="ageny-inner">
+    <div class="layer-agenytit">机构地图</div>
+    <div class="ageny-close"></div>
+    <div class="ageny-l">
+      <div class="agenytit-1">全国34个省市自治区</div>
+      <div class="layer-map">
+        <div id="agenyChinaMap" style="height:100%;"></div>
+      </div>
+    </div>
+    <div class="ageny-r" id="agenyContent">
+      <div class="agenyContent">
+        <div class="agenytit-2" id="sf">北京市</div>
+        <div class="ageny-tabs">
+          <ul>
+            <li class="active" onclick="agenyChange(0,this)"><span></span>
+              <h3>期货公司</h3>
+            </li>
+            <li onclick="agenyChange(1,this)"><span></span>
+              <h3>风险管理公司</h3>
+            </li>
+            <li onclick="agenyChange(2,this)"><span></span>
+              <h3>资产管理公司</h3>
+            </li>
+          </ul>
+        </div>
+        <div class="mdmap-tables">
+          <table width="100%" border="0">
+      <tbody id="tbody1">
+    <!-- <tr id="tr1">
+      <td width="50%"><a>期货公司</a></td>
+      <td width="50%"><a>期货公司</a></td>
+    </tr> -->
+            </tbody>
+          </table>
+        </div>
+        <div class="mdmap-tables" style="display: none;">
+          <table width="100%" border="0">
+            <tbody id="tbody2">
+    <!-- <tr>
+      <td width="50%"><a>风险管理公司</a></td>
+      <td width="50%"><a>风险管理公司</a></td>
+    </tr> -->
+            </tbody>
+          </table>
+        </div>
+        <div class="mdmap-tables" style="display: none;">
+          <table width="100%" border="0">
+            <tbody id="tbody3">
+    <!-- <tr>
+      <td width="50%"><a>资产管理公司</a></td>
+      <td width="50%"><a>资产管理公司</a></td>
+    </tr> -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+  <p style=" width: 100%;line-height: 40px;text-align: center;font-size: 30px;color: #ccc;display: none;" id="noDataText">暂无数据</p>
+    </div>
+    <a target="_blank" href="./servicesupport/industrycomplaints/" class="initArrow">
+  期货公司投诉受理渠道 <img src="./images/arr1.png" alt="" />
+    </a>
+    <div class="clear"></div>
+  </div>
+  </div>
+  <!--<script type="text/javascript" src="/resources/js/agency_map.js"></script>--> 
+  <script type="text/javascript" src="/resources/js/agency_map3.js?var=1"></script>
+  <!--机构地图弹出层结束-->
+    <div style="display: none;">
+  <script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?caecf5079fb62c832f3100bf931e1e84";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+  })();
+  </script>
+      <script type="text/javascript" src="https://s4.cnzz.com/z_stat.php?id=1279548260&web_id=1279548260"></script>
+    </div>
+<!--底部结束--> 
+
+<script type="text/javascript">
+  var timeDate = function (dd) {
+      var date = new Date(dd);
+      var Y = date.getFullYear() + '-';
+      var M = (date.getMonth() + 1 < 10 ? '0' + (date.getMonth() + 1) : date.getMonth() + 1) + '-';
+      var D = (date.getDate() < 10 ? '0' + (date.getDate()) : date.getDate()) + '';
+      return Y + M + D;
+  };
+  var isTimes = function(newDate , startDate , endDate){
+      var newdate =  new Date(newDate);
+      var startdate =  new Date(startDate);
+      // console.log( timeDate(newdate) );
+      // console.log( timeDate(startdate) );
+      var enddate = new Date(endDate);
+      var a = newdate.getTime() - startdate.getTime();
+      var b = newdate.getTime() - enddate.getTime();
+      // console.log(a);
+      // console.log(b);
+      if(a < 0 || b > 0){
+        return false;  /* 不在当前时间段内 */
+      }else{
+        return true; /* 在当前时间段内 */
+      }
+  }
+  // URL = URL+ 'report/api';
+  /*期货市场月度成交数据开始*/
+  // var colors = ['#0f4c81','#a81d2c'];
+  var colors = ['#014d81','#2585bf','#b27925','#b5141e'];//控制几个柱子颜色
+  $('.mod-headers').removeClass('innerheaders')
+  var myChart = echarts.init(document.getElementById('smtrend'));	
+  var trendChart2 = echarts.init(document.getElementById('mytrend-2'));		
+  var myChart9 = echarts.init(document.getElementById('smtrend9'));
+  var myChart10 = echarts.init(document.getElementById('smtrend10'));	
+   // 期货市场月度成交数据
+  option = {
+
+      color: colors,
+      tooltip: {
+          trigger: 'axis',
+          axisPointer: {
+              type: 'cross'
+          }
+      },
+      grid: {
+          right:75,
+          left:50,
+          top:95,
+          bottom:25
+      },
+      toolbox: {
+          feature: {
+            // dataView: {show: true, readOnly: false},
+              //restore: {show: true},
+              //saveAsImage: {show: true}
+          }
+      },
+      legend: {
+          data:['当月成交量(百万手)','当月成交额(亿)'],
+          top:0,
+          left:10,
+          textStyle: { "fontSize": 14 }
+      },
+      xAxis: [
+          {
+              type: 'category',
+              axisTick: { alignWithLabel: true },
+              data: ['19/04','19/05','19/06','19/07','19/08','19/09','19/10','19/11'],
+              axisLine: {
+                  lineStyle: {
+                      color: '#e0e0e0'
+                  }
+              },
+              axisLabel: {
+                  textStyle: {
+                      fontSize : 16,
+                      color: '#666'//更改坐标轴文字大小
+                  }
+              }
+          }
+      ],
+      yAxis: [
+          {
+              type: 'value',
+              show: false,
+              min: 0,
+              max: 0,
+              interval:0,
+              splitLine:{ lineStyle:{ type:'solid'} },
+              position: 'left',
+              offset: 0,
+              axisLine: {
+                  lineStyle: {
+                      color: '#e0e0e0'
+                  }
+              },
+              axisLabel: {
+                  formatter: '{value}'
+              }
+          },
+
+            /*百万手*/
+          {
+              type: 'value',
+              name:'单位：(百万手)',
+              min: 0,
+              splitLine:{ lineStyle:{ type:'solid' } },
+              nameTextStyle : {
+                  color: "#666666",
+                  padding : [5, 0, 10, 20],
+                  fontSize : 14
+              },
+              position: 'left',
+              axisLine: {
+                  lineStyle: {
+                      color: '#dcdcdc'
+                  }
+              },
+              axisLabel: {
+                  formatter: '{value}',
+                  textStyle: {
+                      fontSize : 16,
+                      color: '#666'//更改坐标轴文字大小
+                  }
+              }
+          },
+
+          /*当月成交额(亿)*/
+          {
+              type: 'value',
+              name:'单位：(亿)',
+              nameTextStyle : {
+                  color: "#666666",
+                  padding : [5, 0, 10, 80],
+                  fontSize : 14
+              },
+              min: 0,
+              // interval:50000,
+              splitLine:{show:false,type:'solid'},
+              position: 'right',
+              axisLine: {
+                  lineStyle: {
+                    color: '#dcdcdc'
+                  }
+              },
+              axisLabel: {
+                  formatter: '{value}' ,
+                  textStyle: {
+                      fontSize : 16,
+                      color: '#666'	//更改坐标轴文字大小
+                  }
+              }
+          }
+      ],
+      series: [
+          {
+              name:'当月成交量(百万手)',
+              type:'bar',
+              yAxisIndex: 1,
+              barWidth :(window.innerWidth >= 480 || document.documentElement.clientWidth >= 480) ? '31' : '20%',
+              label: {
+                  normal: {
+                      show:(window.innerWidth >= 480 || document.documentElement.clientWidth >= 480) ? false : false,
+                      position: 'top',
+                      formatter: '{a|{c}}',
+                      rich: {
+                          a: {
+                              color: '#666',
+                              fontSize: 12,
+                              lineHeight: 20,
+                              align: 'center'
+                          }
+
+                      }
+                      
+
+                  }
+              },
+              data:[200, 300, 100, 500, 300, 400, 350, 200]
+          },
+          {
+              name:'当月成交额(亿)',
+              type:'line',
+              yAxisIndex: 2,
+              label: {
+                        normal: {
+                        show:(window.innerWidth >= 480 || document.documentElement.clientWidth >= 480) ? false : false,
+                        position: 'top',
+                        formatter: '{a|{c}}',
+                        rich: {
+                            a: {
+                                color: '#666',
+                                fontSize: 11,
+                                lineHeight: 20,
+                                align: 'center',
+                                zlevel:99
+                            }
+                      }
+                  },
+              },
+
+              data:[50000, 60000, 80000, 120000, 55000, 55000, 55000, 120000]
+          }
+      ]
+  };
+  option9 = {
+      color: colors,
+      tooltip: {
+          trigger: 'axis',
+          axisPointer: {
+              type: 'cross'
+          }
+      },
+    //整个图上下调整
+      grid: {
+          right:75,
+          left:50,
+          top:95,
+          bottom:65
+      },
+    //   缩放功能
+      dataZoom:{
+            show:true,
+            realtime:true,
+            // start:0,
+            // end:70,
+            height:20,
+      },
+      
+      toolbox: {
+          feature: {
+            // dataView: {show: true, readOnly: false},
+              //restore: {show: true},
+              //saveAsImage: {show: true}
+          }
+      },
+
+    //   小图标控制显示隐藏
+      legend: {
+          data:['中小微企业(亿元)','上市公司(亿元)','中小微企业占比(百分比)','上市公司占比(百分比)' ],
+          top:0,
+          left:0,
+          textStyle: { "fontSize": 12 }
+      },
+
+      xAxis: [
+          {
+              type: 'category',
+              axisTick: { alignWithLabel: true },
+              data: ['19/04','19/05','19/06','19/07','19/08','19/09','19/10','19/11'],
+              axisLine: {
+                  lineStyle: {
+                      color: '#e0e0e0'
+                  }
+              },
+              axisLabel: {
+                  textStyle: {
+                      fontSize : 16,
+                      color: '#666'//更改坐标轴文字大小
+                  }
+              }
+          }
+      ],
+      yAxis: [
+          {
+              type: 'value',
+              show: false,
+              min: 0,
+              max: 0,
+              interval:0,
+              splitLine:{ lineStyle:{ type:'solid'} },
+              position: 'left',
+              offset: 0,
+              axisLine: {
+                  lineStyle: {
+                      color: '#e0e0e0'
+                  }
+              },
+              axisLabel: {
+                  formatter: '{value}'
+              }
+          },
+          {
+              type: 'value',
+              name:'单位：(亿元)',
+              min: 0,
+              splitLine:{ lineStyle:{ type:'solid' } },
+              nameTextStyle : {
+                  color: "#666666",
+                  padding : [5, 0, 10, 0],
+                  fontSize : 14
+              },
+              position: 'left',
+              axisLine: {
+                  lineStyle: {
+                      color: '#dcdcdc'
+                  }
+              },
+              axisLabel: {
+                  formatter: '{value}',
+                  textStyle: {
+                      fontSize : 16,
+                      color: '#666'//更改坐标轴文字大小
+                  }
+              }
+          },
+          {
+              type: 'value',
+              name:'单位：百分比',
+              nameTextStyle : {
+                  color: "#666666",
+                  padding : [5, 0, 10, 0],
+                  fontSize : 14
+              },
+              min: 0,
+              // interval:50000,
+              splitLine:{show:false,type:'solid'},
+              position: 'right',
+              axisLine: {
+                  lineStyle: {
+                    color: '#dcdcdc'
+                  }
+              },
+              axisLabel: {
+                  formatter: '{value}%' ,
+                  textStyle: {
+                      fontSize : 16,
+                      color: '#666'	//更改坐标轴文字大小
+                  }
+              }
+          }
+      ],
+      graphic:{
+        type:"text",
+        left:"center",
+        top:"58",
+        style:{
+          text:"当年累计成交名义本金规模及占比",
+          tectAlign:"center",
+          fill:'#333',
+          fontSize:14
+        }
+      },
+      series: [
+          {
+              name:'中小微企业(亿元)',
+            //   柱状图
+              type:'bar',
+              barGap:'0',
+              barCategoryGap:'40%',
+              yAxisIndex: 1,
+              barWidth :(window.innerWidth >= 480 || document.documentElement.clientWidth >= 480) ? '31' : '20%',
+              label: {
+                  normal: {
+                      show:(window.innerWidth >= 480 || document.documentElement.clientWidth >= 480) ? false : false,
+                      position: 'top',
+                      formatter: '{a|{c}}',
+                      rich: {
+                          a: {
+                              color: '#666',
+                              fontSize: 12,
+                              lineHeight: 20,
+                              align: 'center'
+                          }
+                      }
+                  }
+              },
+              data:[200, 300, 100, 500, 300, 400, 350, 200]
+          },
+          {
+              name:'上市公司(亿元)',
+              type:'bar',
+              yAxisIndex: 1,
+              barWidth :(window.innerWidth >= 480 || document.documentElement.clientWidth >= 480) ? '31' : '20%',
+              label: {
+                  normal: {
+                      show:(window.innerWidth >= 480 || document.documentElement.clientWidth >= 480) ? false : false,
+                      position: 'top',
+                      formatter: '{a|{c}}',
+                      rich: {
+                          a: {
+                              color: '#333',
+                              fontSize: 12,
+                              lineHeight: 20,
+                              align: 'center'
+                          }
+                      }
+                  }
+              },
+              data:[
+                  6000,6000,8000,6000,5000,
+                ]
+          },    
+          {
+              name:'中小微企业占比(百分比)',
+            //   折线图
+              type:'line',
+              yAxisIndex: 2,
+              label: {
+                        normal: {
+                        show:(window.innerWidth >= 480 || document.documentElement.clientWidth >= 480) ? false : false,
+                        position: 'top',
+                        formatter: '{a|{c}}',
+                        rich: {
+                            a: {
+                                color: '#666',
+                                fontSize: 11,
+                                lineHeight: 20,
+                                align: 'center',
+                                zlevel:99
+                            }
+                        }
+                  },
+              },
+
+              data:[50000, 60000, 80000, 120000, 55000, 55000, 55000, 120000]
+          },
+          {
+              name:'上市公司占比(百分比)',
+            //   折线图
+              type:'line',
+              yAxisIndex: 2,
+              label: {
+                        normal: {
+                        show:(window.innerWidth >= 480 || document.documentElement.clientWidth >= 480) ? false : false,
+                        position: 'top',
+                        formatter: '{a|{c}}',
+                        rich: {
+                            a: {
+                                color: '#666',
+                                fontSize: 11,
+                                lineHeight: 20,
+                                align: 'center',
+                                zlevel:99
+                            }
+                        }
+                  },
+              },
+              data:[10000, 20000, 30000, 40000, 50000, 60000, 55000, 120000]
+          },
+          
+      ]
+  };
+  // 场外衍生品业务服务中小微/上市公司情况结束
+  // 期货资管投向期货及衍生品资金规模开始
+  option10 = {
+        color: colors,
+        tooltip: {
+            trigger: 'axis',
+            axisPointer: {
+                type: 'cross'
+            }
+        },
+      //整个图上下调整
+        grid: {
+            right:75,
+            left:50,
+            top:95,
+            bottom:65
+        },
+      //   缩放功能
+        dataZoom:{
+              show:true,
+              realtime:true,
+              // start:0,
+              // end:70,
+              height:20,
+        },
+        toolbox: {
+            feature: {
+              // dataView: {show: true, readOnly: false},
+                //restore: {show: true},
+                //saveAsImage: {show: true}
+            }
+        },
+        //   小图标控制显示隐藏
+        legend: {
+            data:['当月期货及衍生品投向(亿元)'],
+            top:0,
+            left:0,
+            textStyle: { "fontSize": 12 }
+        },
+        xAxis: [
+            {
+                type: 'category',
+                axisTick: { alignWithLabel: true },
+                data: ['19/04','19/05','19/06','19/07','19/08','19/09','19/10','19/11'],
+                axisLine: {
+                    lineStyle: {
+                        color: '#e0e0e0'
+                    }
+                },
+                axisLabel: {
+                    textStyle: {
+                        fontSize : 16,
+                        color: '#666'//更改坐标轴文字大小
+                    }
+                }
+            }
+        ],
+        yAxis: [
+            {
+                type: 'value',
+                show: false,
+                min: 0,
+                max: 0,
+                interval:0,
+                splitLine:{ lineStyle:{ type:'solid'} },
+                position: 'left',
+                offset: 0,
+                axisLine: {
+                    lineStyle: {
+                        color: '#e0e0e0'
+                    }
+                },
+                axisLabel: {
+                    formatter: '{value}'
+                }
+            },
+            {
+                type: 'value',
+                name:'单位：(亿元)',
+                nameTextStyle : {
+                    color: "#666666",
+                    padding : [5, 0, 10, 0],
+                    fontSize : 14
+                },
+                min: 0,
+                // interval:50000,
+                splitLine:{show:false,type:'solid'},
+                position: 'left',
+                axisLine: {
+                    lineStyle: {
+                      color: '#dcdcdc'
+                    }
+                },
+                axisLabel: {
+                    formatter: '{value}' ,
+                    textStyle: {
+                        fontSize : 16,
+                        color: '#666'	//更改坐标轴文字大小
+                    }
+                }
+            }
+        ],
+        series: [
+              {
+                name:'当月期货及衍生品投向(亿元)',
+                type:'bar',
+                barGap:'0',
+                barCategoryGap:'40%',
+                yAxisIndex: 1,
+                barWidth :(window.innerWidth >= 480 || document.documentElement.clientWidth >= 480) ? '31' : '20%',
+                label: {
+                    normal: {
+                        show:(window.innerWidth >= 480 || document.documentElement.clientWidth >= 480) ? false : false,
+                        position: 'top',
+                        formatter: '{a|{c}}',
+                        rich: {
+                            a: {
+                                color: '#666',
+                                fontSize: 12,
+                                lineHeight: 20,
+                                align: 'center'
+                            }
+                        }
+                    }
+                },
+                data:[200, 300, 100, 500, 300, 400, 350, 200]
+            },
+        ]
+    };
+  // 期货资管投向期货及衍生品资金规模结束
+
+  /*期货产品走势图开始*/	
+  data = [
+    ["8:00",2116],
+    ["8:08",3129],
+    ["8:30",5135],
+    ["8:24",6586],
+    ["9:00",1273],
+    ["9:20",4285],
+    ["9:30",3273],
+    ["9:40",2285],
+    ["10:00",2273],
+    ["10:20",1668],
+    ["10:30",1192],
+    ["11:20",2130],
+    ["11:30",1245],
+    ["11:10",1139],
+    ["11:20",3115],
+    ["11:20",1111],
+    ["11:30",1309],
+    ["11:20",1206],
+    ["12:00",1137],
+    ["12:24",1128]
+  ];	
+    
+  var dateList = data.map(function (item) {
+      return item[0];
+  });
+  var valueList = data.map(function (item) {
+      return item[1];
+  });
+
+  trendoption2 = {
+    visualMap: [{
+        show: false,
+        type: 'continuous',
+        seriesIndex: 0,
+        min: 0,
+        max: 7000
+    }],
+    tooltip: { trigger: 'axis' },
+    xAxis: [{
+       data: dateList,
+	   axisLabel: {
+       show: true,
+        textStyle: {
+         // color: '#c3dbff',  //更改坐标轴文字颜色
+          fontSize : 16      //更改坐标轴文字大小
+        }
+     }
+    }],
+      yAxis: [
+        {
+          splitLine: {show: false},
+          min:0,
+          axisLabel: {
+            show: true,
+            textStyle: {
+              // color: '#c3dbff',  //更改坐标轴文字颜色
+              fontSize : 16      //更改坐标轴文字大小
+            }
+          }
+        }
+      ],
+    grid: [
+      {
+        left:60,
+        right:10,
+        top:10,
+        bottom: 30
+      }
+    ],
+    series: [
+      {
+        type: 'line',
+        showSymbol: false,
+        data: valueList,
+        itemStyle: {
+          normal: {
+            color: '#d21111', //改变折线点的颜色
+            lineStyle: {
+              color: '#d21111' //改变折线颜色
+            }
+          }
+        }
+      }			
+	  ]
+  };	
+  /*走势图结束*/
+
+  /*期货市场月度成交数据结束*/
+
+  // 首页-市场行情
+  /*市场行情表格数据切换开始*/		
+  $('.sel-1 .select-arrow').click(function(){
+    $(".sel-1 .select-block").css('display','block')
+  })
+  $('.sel-1 .select-set').click(function(){
+    $(".sel-1 .select-block").css('display','block')
+  })
+  $(".market-tab li").click(function(){
+    $(".market-tab li").removeClass("active");	
+    $(this).addClass("active");
+    getList($(this).text());
+  });	
+  /*市场行情表格数据切换结束*/
+  
+  $('.sel-1 .select-list li').on('click',function(){
+     $(".sel-1 .select-set").html($(this).text().replace(/^\s*|\s*$/g,''))
+     $(".sel-1 .select-block").css('display','none')
+    getTree($(this).text().replace(/^\s*|\s*$/g,''),function(){
+      getEachartData2($('.sel-2 .select-list li').eq(0).text().replace(/^\s*|\s*$/g,''));
+    });
+  });
+  $('.sel-2').on('click','.select-list li',function(){
+    $('.sel-2 .select-set').html($(this).text().replace(/^\s*|\s*$/g,''));
+    getEachartData2($(this).text().replace(/^\s*|\s*$/g,''));
+  });
+
+  // 获取栏目树
+  getTree('有色金属',function(){
+    getEachartData2($('.sel-2 .select-list li').eq(0).text().replace(/^\s*|\s*$/g,''));
+  });
+  function getTree(val,fn){
+    $('#loading').show()
+    $.ajax({
+      url: URL+'/qx-search/api/wcmSearch/searchChannelTree',
+      type: 'get',
+      data:{ programName: val},
+      dataType: 'json',
+      success: function (res) {
+    $('#loading').hide()
+        var result = res.data; 
+        var arr = result[0].subChannels;
+        // console.log(result,arr);
+        var box = '';
+        var box2 = '';
+        if(arr.length != 0){
+    $('#noData').addClass("noData")
+          $('.sel-2 .shortselect').html('');
+          $('.sel-2 .select-list').html('');
+          for(var i=0; i<arr.length; i++){
+            box += '<option>'+arr[i].chnlName+'</option>';
+            box2 += '<li class="select-items">'+arr[i].chnlName+'</li>';
+          }
+        }else{
+    $('#noData').removeClass("noData")
+    $('#noData').attr("style","width: 100%;line-height: 40px;text-align: center;font-size: 30px;color: #ccc;display:block;")
+
+}
+        $(box).appendTo($('.sel-2 .shortselect'));
+        $(box2).appendTo($('.sel-2 .select-list'));
+        $('.sel-2 .select-set').html(arr[0].chnlName);
+        setTimeout(function() {
+          fn && fn();
+        }, 200);
+            }
+    });
+  }
+  var timeDate = function (dd) {
+      var date = new Date(dd);
+      var Y = date.getFullYear() + '-';
+      var M = (date.getMonth() + 1 < 10 ? '0' + (date.getMonth() + 1) : date.getMonth() + 1) + '-';
+      var D = (date.getDate() < 10 ? '0' + (date.getDate()) : date.getDate()) + '';
+      return Y + M + D;
+  };
+  
+  var setDataHtml = function (arr) {
+      for (var i = 0; i < arr.length; i++) {
+          for (var key in arr[i]) {
+              if (arr[i][key] == null || arr[i][key] === '') {
+                  // arr[i][key] = '<span style="color:tomato;font-weight:bold;">暂无数据</span>';
+                  arr[i][key] = '--';
+              }else{
+                  if(arr[i][key] != parseInt(arr[i][key]) && !isNaN(arr[i][key])){ 
+                      arr[i][key] = (arr[i][key].toFixed(2));
+                  }
+              }
+          }
+      }
+  }
+  getList('有色金属');
+  function getList(tName){
+    $.ajax({
+      url: URL+'report/api/variety/marketQuotation',
+      type: 'get',
+      data:{ typeName: tName },
+      dataType: 'json',
+      success: function (res) {
+        var result = res.data;
+        // console.log(result); 
+        var arr = res.data.dataList;
+        var docBox = '';
+        var lsDom = '';
+        $('.marketQuotation table tbody').html('');
+        if(arr.length != 0){
+          $('.marketQuotation .dataNull').hide();
+          // setDataHtml(arr);
+          for(var i=0; i<arr.length; i++){
+            if(arr[i].tradeCode.indexOf('线材') == 0){
+                lsDom += '<tr>'+ 
+                          '<td>'+arr[i].tradeCode+'</td>'+  
+                          '<td>'+arr[i].close+'</td>'+  
+                          '<td>'+arr[i].settle+'</td>'+  
+                          // '<td>'+arr[i].pctChg+'</td>'+  
+                          '<td class="'+((arr[i].pctChg != 0)?((0 < arr[i].pctChg)?'just':'lose'):'ash')+'">'+(arr[i].pctChg?(+arr[i].pctChg).toFixed(2):'')+'</td>'+ 
+                          '<td>'+arr[i].volume+'</td>'+  
+                          '<td>'+arr[i].oi+'</td> </tr>';
+            }else{
+                docBox += '<tr>'+ 
+                          '<td>'+arr[i].tradeCode+'</td>'+  
+                          '<td>'+arr[i].close+'</td>'+  
+                          '<td>'+arr[i].settle+'</td>'+  
+                          // '<td>'+arr[i].pctChg+'</td>'+  
+                          '<td class="'+((arr[i].pctChg != 0)?((0 < arr[i].pctChg)?'just':'lose'):'ash')+'">'+(arr[i].pctChg?(+arr[i].pctChg).toFixed(2):'')+'</td>'+ 
+                          '<td>'+arr[i].volume+'</td>'+  
+                          '<td>'+arr[i].oi+'</td> </tr>';
+            }
+          }
+          docBox = docBox + lsDom;
+        }else{
+          $('.marketQuotation .dataNull').show();
+        }
+        $(docBox).appendTo($('.marketQuotation table tbody'));
+        // $('.dateText1 span').html(timeDate(result.date));
+        var datestr1 = [];
+        if(result.date){
+            var arr = result.date.split('-');
+            arr[2] = ((+arr[2]) + 1)+'';
+            datestr1 = arr.join('-');
+        }
+        $('.dateText1 span').html(result.date?result.date:'');
+      }
+    });
+  }
+
+  // getEachartData('铜');
+  function getEachartData(name){
+    $.ajax({
+      url: URL+'report/api/variety/marketChart',
+      type: 'get',
+      data:{ kind: name },
+      dataType: 'json',
+      success: function (res) {
+        var result = res.data;
+        var arr = res.data.dataList;
+        console.log(result); 
+        trendoption2.xAxis[0].data  = [];
+        trendoption2.series[0].data = [];
+        var maxArr = [];
+        for(var i=0; i<arr.length; i++){
+          trendoption2.xAxis[0].data.push(arr[i].dateTime);
+          trendoption2.series[0].data.push(arr[i].close);
+          if(arr[i].close != null){
+            maxArr.push(arr[i].close);
+          }
+        }
+        maxArr.sort(function(a,b){ return a - b });
+        trendoption2.yAxis[0].min = (maxArr[0] - maxArr[0]*0.01).toFixed();
+        trendChart2.setOption(trendoption2);
+      }
+    });
+  }
+  // getEachartData2('铜');
+  function getEachartData2(name){
+    $.ajax({
+      url: URL+'report/api/variety/tranData',
+      type: 'get',
+      data:{  kind: name  },
+      dataType: 'json',
+      success: function (res) {
+        var result = res.data;
+        var arr = result.historyTrendList;
+        // console.log(result); 
+        trendoption2.xAxis[0].data  = [];
+        trendoption2.series[0].data = [];
+        var maxArr = [];
+        if(arr !=null && arr.length != 0){
+          for(var i=0; i<arr.length; i++){
+            trendoption2.xAxis[0].data.push(arr[i].dateTime);
+            trendoption2.series[0].data.push(arr[i].varietyValue);
+            if(arr[i].varietyValue != null){
+              maxArr.push(+arr[i].varietyValue);
+            }
+          }
+          maxArr.sort(function(a,b){ return a - b });
+          trendoption2.yAxis[0].min = (maxArr[0] - maxArr[0]*0.01).toFixed();
+        }
+        trendChart2.setOption(trendoption2);
+      }
+    });
+  }
+
+  // 首页-数据统计
+  $.ajax({
+    url: URL+'report/api/home/findFutureCompaniesMonthlyOperateDetail',
+    type: 'get',
+    data:{  },
+    dataType: 'json',
+    success: function (res) {
+      var result = res.data; 
+      // console.log(res);
+      $('.month-days ul li:eq(0) i').html(result.tradeAmount?(+result.tradeAmount).toFixed(2):'--');
+      $('.month-days ul li:eq(1) i').html(result.tradeVolume?(+result.tradeVolume).toFixed(2):'--');
+      $('.month-days ul li:eq(2) i').html(result.netCapital?(+result.netCapital).toFixed(2):'--');
+      $('.month-days ul li:eq(3) i').html(result.totalAsset?(+result.totalAsset).toFixed(2):'--');
+      $('.month-days ul li:eq(4) i').html(result.operatingIncome?(+result.operatingIncome).toFixed(2):'--');
+      $('.month-days ul li:eq(5) i').html(result.netProfit?(+result.netProfit).toFixed(2):'--');
+      $('.month-days .endTime span').html(result.deadline?(result.deadline.split('-')[0]+'年'+result.deadline.split('-')[1]+'月'):'--');
+      // $('.month-days .endTime span').html(result.deadline?result.deadline:'--');
+    }
+  });
+   // 期货市场月度成交数据
+  $.ajax({
+    url: URL+'report/api/home/findFuturesMarketMonthDealDatas',
+    type: 'get',
+    data:{  },
+    dataType: 'json',
+    success: function (res) {
+      var result = res.data; // console.log(result);
+      option.xAxis[0].data = [];
+      option.series[0].data = [];
+      option.series[1].data = [];
+      var colBox = [];
+      var lineBox = [];
+      for(var i=0; i<result.length; i++){
+        option.xAxis[0].data.push(result[i].excelDate);
+        option.series[0].data.push(result[i].monthDeal?+result[i].monthDeal:'--');
+        option.series[1].data.push(result[i].monthDealMoney?+result[i].monthDealMoney:'--');
+        colBox.push(result[i].monthDeal);
+        lineBox.push(result[i].monthDealMoney);
+      }
+      colBox.sort(function(a,b){ return a - b });
+      lineBox.sort(function(a,b){ return a - b });
+      option.yAxis[1].min = (Math.floor(colBox[0]/100)*100)-100;
+      option.yAxis[1].max = (Math.floor(colBox[colBox.length-1]/100)*100)+100;
+      myChart.setOption(option);	
+    }
+  });
+   // 场外衍生品业务服务中小微/上市公司情况
+   $.ajax({
+    url: URL+'report/api/home/findFuturesOtcDerivativeBusinessService',
+    type: 'get',
+    data:{  },
+    dataType: 'json',
+    success: function (res) {
+      var result = res.data;
+       console.log("表一",result);
+      option9.xAxis[0].data = [];
+      option9.series[0].data = [];
+      option9.series[1].data = [];
+      option9.series[2].data = [];
+      option9.series[3].data = [];
+      var colBox1 = [];
+      var colBox2 = [];
+      var colBox3 = [];
+      var lineBox = [];
+      for(var i=0; i<result.length; i++){
+        option9.xAxis[0].data.push(result[i].excelDate);
+        option9.series[0].data.push(result[i].accumulateUmkm+"亿元"?+result[i].accumulateUmkm:'--');
+        option9.series[1].data.push(result[i].accumulateQuotedComppany?+result[i].accumulateQuotedComppany:'--');
+        option9.series[3].data.push(result[i].accumulateQuotedComppanyAccounted?+result[i].accumulateQuotedComppanyAccounted:'--');
+        option9.series[2].data.push(result[i].accumulateUmkmAccounted?+result[i].accumulateUmkmAccounted:'--');
+        colBox1.push(result[i].accumulateUmkm);
+        colBox2.push(result[i].accumulateQuotedComppany);
+        colBox3 =  colBox1.concat(colBox2)
+        // lineBox.push(result[i].accumulateQuotedComppanyAccounted);
+      }
+      colBox3.sort(function(a,b){ return a - b });
+      // lineBox.sort(function(a,b){ return a - b });
+      option9.yAxis[1].min = (Math.floor(colBox3[0]/100)*100)-100;
+      option9.yAxis[1].max = (Math.floor(colBox3[colBox3.length-1]/100)*100)+100;
+      myChart9.setOption(option9);	
+
+    }
+  });
+  // 期货资管投向期货及衍生品资金规模
+  $.ajax({
+    url: URL+'report/api/home/findFuturesDerivativeCapitalScaleData',
+    type: 'get',
+    data:{  },
+    dataType: 'json',
+    success: function (res) {
+      var result = res.data;
+      console.log('表2',result);
+      option10.xAxis[0].data = [];
+      option10.series[0].data = [];
+    //   option10.series[1].data = [];
+      var colBox = [];
+      var lineBox = [];
+      for(var i=0; i<result.length; i++){
+        option10.xAxis[0].data.push(result[i].excelDate);  //日期
+        option10.series[0].data.push(result[i].derivativeInvest);   //数据
+        // option10.series[1].data.push(result[i].monthDealMoney?+result[i].monthDealMoney:'--');
+        // colBox.push(result[i].monthDeal);
+        // lineBox.push(result[i].monthDealMoney);
+      }
+    //   colBox.sort(function(a,b){ return a - b });
+    //   lineBox.sort(function(a,b){ return a - b });
+    //   option10.yAxis[1].min = (Math.floor(colBox[0]/100)*100)-100;
+    //   option10.yAxis[1].max = (Math.floor(colBox[colBox.length-1]/100)*100)+100;
+    //   请求数据之后绑对应charts表格上
+      myChart10.setOption(option10);	
+
+    }
+  });
+
+
+
+  /*业务办理内容切换开始*/	
+  $("#ser-tabs li").hover(function(){
+    $("#ser-tabs li").removeClass("cr");	
+    $(this).addClass("cr");	
+    $(".ser-info").hide();
+    $(".ser-info:eq("+$(this).index()+")").show();	
+  });	
+      
+  /*业务办理内容切换结束*/
+      
+  /*培训公告与培训通知切换开始*/
+    
+  $(".notice-tab span").hover(function(){
+    $(".notice-tab span").removeClass("active");	
+    $(this).addClass("active");	
+    $(".notice-info").hide();
+    $(".notice-info:eq("+$(this).index()+")").show();	
+    if($(this).index() == 0){
+      $(this).siblings('a').attr('href','./servicesupport/examination/qualificationexamination/examinationannouncement/')
+    }else{
+      $(this).siblings('a').attr('href','./index/indexpxtz/')
+    }
+  });		
+    
+  /*培训公告与培训通知切换结束*/	
+    
+    
+  /*协会公告，行业要闻切换开始*/		
+
+  var curDay = timeDate(new Date());
+  $('.jfyl .news-cell ul li a span').each(function(index,el){
+      // if($(el).text().replace(/^\s*|\s*$/g,'') == curDay){
+        var lsDate = (new Date() - new Date($(el).parent().siblings('i').text().replace(/^\s*|\s*$/g,'').replace(/-/g, '/')) )/(1000*60*60*24);
+      // if( isTimes(new Date($(el).text().replace(/^\s*|\s*$/g,'')), (new Date()-(1000*60*60*24)*1), new Date() ) ){
+      if( lsDate > 0 && lsDate <= 1){
+        $(el).parent().siblings('i').show();
+        $(el).parent().siblings('i').addClass('cr');
+      }
+  });
+  var isOk = true;
+  var dateNum = 0;
+  for(var i=0; i<3; i++){
+    $('.jfyl .news-cell').eq(i).find('ul li i').each(function(index,el){
+        if($(el).is('.cr') && isOk){
+          $(".news-tab span").removeClass("active");	
+          $(".news-tab span").eq(dateNum).addClass("active");
+          $(".tab-more a").hide();
+          $(".tab-more a:eq("+dateNum+")").show();		
+          $(".news-cell").hide();
+          $(".news-cell:eq("+dateNum+")").show();	
+          isOk = false;
+        }
+        // console.log($(el).is('.cr'));
+    });
+    dateNum++;
+  }	
+    
+  $(".news-tab span").hover(function(){
+    $(".news-tab span").removeClass("active");	
+    $(this).addClass("active");
+    $(".tab-more a").hide();
+    $(".tab-more a:eq("+$(this).index()+")").show();		
+    $(".news-cell").hide();
+    $(".news-cell:eq("+$(this).index()+")").show();	
+  });		
+    
+  /*协会公告，行业要闻切换结束*/		
+    
+    
+  /*上市品种与研究出版切换开始*/			
+  $("#pubtab li").hover(function(){
+    $("#pubtab li").removeClass("cr");	
+    $(this).addClass("cr");
+    $(".pubinfo").hide();
+    $(".pubinfo:eq("+$(this).index()+")").show();	
+  });		
+  /*上市品种与研究出版切换结束*/		
+    
+    
+  /*市场行情与数据统计切换开始*/	
+  $("#market-chart li").hover(function(){
+    $("#market-chart li").removeClass("cr");	
+    $(this).addClass("cr");
+    $(".data-info").hide();
+    $(".data-info:eq("+$(this).index()+")").show();	
+  });	
+  /*市场行情与数据统计切换结束*/
+
+
+  /*首页banner图轮播切换*/
+  var swiper1 = new Swiper('.swiper-container-1', {
+       autoplay: 4000,
+      slidesPerView: (window.innerWidth >= 480 || document.documentElement.clientWidth >= 480) ? 1 : 1,
+      //slidesPerGroup : (window.innerWidth >= 480 || document.documentElement.clientWidth >= 480) ? 5 : 2,
+      //slidesPerGroup:(window.innerWidth >= 480 || document.documentElement.clientWidth >= 480) ? 3 : 1,
+      autoplayDisableOnInteraction: false,
+      // pagination: '.swiper-container-10 .swiper-pagination',
+      loop: true,
+      grabCursor: true,
+      spaceBetween: 0,
+      paginationClickable: true
+  });
+
+	$('.arrow-l').on('click', function (e) {
+		e.preventDefault();
+		swiper1.swipePrev();
+	});
+	$('.arrow-r').on('click', function (e) {
+		e.preventDefault();
+		swiper1.swipeNext();
+	});	
+	
+/*图片新闻切换*/	
+var mySwiper2 = new Swiper(".industry-swiper-container-pic",{
+    loop:true,
+    autoplay:4000,
+    autoplayDisableOnInteraction:false,
+    paginationClickable:true,
+    calculateHeight:true,
+    pagination:".pagination"
+});			
+	
+</script>
+<script type="text/javascript">
+    new Marquee(["scroll_div", "scroll_begin1"], 2, 2, 1130, 75, 100, 0, 0);
+ //   var marquee=new Marquee(["parentScroll1","childrenScroll1"],2,2,730,28,100,0,0);
+</script> 
+
+</body>
+</html>

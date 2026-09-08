@@ -1,0 +1,1 @@
+{"code":0,"result":[{"sector":"EQ","sector_alias":"股指"},{"sector":"MT","sector_alias":"金属"},{"sector":"EN","sector_alias":"能化"},{"sector":"AG","sector_alias":"农副"},{"sector":"OS","sector_alias":"油脂"},{"sector":"BK","sector_alias":"黑色"}],"message":"ok"}

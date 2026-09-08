@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>夺冠高手全国期货实盘大赛</title>
+  <meta name="keywords" content="夺冠高手,期货大赛,实盘大赛,期货实盘" />
+  <meta name="description" content="夺冠高手全国期货实盘大赛" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+  <link rel="stylesheet" type="text/css" href="css/base.css" />
+  <link rel="stylesheet" type="text/css" href="css/pc.css" />
+  <link rel="stylesheet" type="text/css" href="css/pc2.min.css" />
+  <script type="text/javascript" src="plug-in/jquery/jquery.min.js"></script>
+  <script>
+    var navid = 'futures_rules'
+  </script>
+  <style>
+    .sj {
+      text-indent: 1em;
+    }
+
+    .sj2 {
+      text-indent: 2em;
+    }
+
+    .header-nav-img {
+      width: 1200px;
+      margin: 10px auto 30px;
+      position: relative;
+    }
+
+    .header-nav-img img {
+      width: 100%;
+      object-fit: contain;
+    }
+
+    .header-nav-img .left {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 56px;
+      width: 600px;
+      cursor: pointer;
+    }
+
+    .header-nav-img .right {
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 56px;
+      width: 600px;
+      cursor: pointer;
+    }
+
+    .tips {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app" v-cloak class="futures-rules">
+    <div class="mainW">
+      <my-header></my-header>
+    </div>
+    <div class="mbox1 bgbox2">
+      <div class="blank2"></div>
+
+      <!-- <div class="header-nav-img">
+        <div class="left" @click="changeNav(0)"></div>
+        <div class="right" @click="changeNav(1)"></div>
+        <img :src="curHeaderIndex === 0 ? './images/rule_1.png' : './images/rule_2.png'" alt="">
+      </div> -->
+      <!-- <template v-if="curHeaderIndex === 0">
+        <div class="mbox2 paddingBox paihangBox" style="margin-bottom: 20px">
+          <div class="mbox">
+            <div class="mbox3">
+              <div class="mmbox1-title">
+                <h2>报名方式</h2>
+              </div>
+              <div class="mmbox1-content">
+                比赛时间为2025年6月10日--2025年10月31日，参赛者在2025年10月31日之前的任意时间均可报名参赛。已报名夺冠高手全国期货实盘大赛的选手，在满足日均权益大于1000万的基础上，默认参加福布斯中国产融先锋评选卓越交易员评比，无需重新报名。符合条件的选手将在产业组榜单中带有
+                <img class="fu" src="./images/fu.png" alt="">
+                字logo，以示区分。
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mbox2 paddingBox paihangBox" style="margin-bottom: 20px">
+          <div class="mbox">
+            <div class="mbox3">
+              <div class="mmbox1-title">
+                <h2>颁奖说明</h2>
+              </div>
+              <div class="mmbox1-content">
+                每组各产生一位卓越交易员，在满足日均权益大于1000万的基础上，取行业综合积分排名最高的选手，可获得“2025福布斯中国产融先锋评选卓越交易员”，证书编号可在福布斯中国官网查询。
+              </div>
+              <div class="mmbox1-content">
+                预计比赛结束后一周内公布最终排名名单，最终排名结果以11月上旬公布的结算数据为准。
+              </div>
+              <div class="mmbox1-content">
+                本活动最终解释权归大赛组委会所有，包括但不限于对参赛资格认定、奖项发放条件的补充说明及特殊情况的裁量权。如发现参赛者提供虚假信息、冒用身份或存在其他欺诈行为，组委会有权追回奖项、奖金等荣誉，并取消参赛者评选资格。
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mbox2 paddingBox paihangBox" style="margin-bottom: 20px">
+          <div class="mbox">
+            <div class="mbox3">
+              <div class="mmbox1-title">
+                <h2>入选规则</h2>
+              </div>
+              <div class="mmbox1-content">产业组编入规则：相关品种的累计盈利大于账户盈利的60%。</div>
+              <div class="mmbox1-content">
+                <table cellspacing="0">
+                  <tr>
+                    <td width="200px">组别</td>
+                    <td>相关品种</td>
+                  </tr>
+                  <tr>
+                    <td>有色组</td>
+                    <td>铜、锌、铝、铅、镍、锡、国际铜、氧化铝、铝合金</td>
+                  </tr>
+                  <tr>
+                    <td>黑色组</td>
+                    <td>螺纹钢、线材、热卷、不锈钢、铁矿石、焦炭、焦煤、硅铁、锰硅</td>
+                  </tr>
+                  <tr>
+                    <td>工业组</td>
+                    <td>纸浆、纤维板、胶合板、工业硅、碳酸锂、原木、多晶硅</td>
+                  </tr>
+                  <tr>
+                    <td>贵金属组</td>
+                    <td>黄金、白银</td>
+                  </tr>
+                  <tr>
+                    <td>农副组</td>
+                    <td>强麦、普麦、棉花、早籼稻、晚籼稻、白糖、油菜籽、菜籽油、菜籽粕、粳稻、棉纱、苹果、红枣、黄大豆1号、黄大豆2号、玉米、豆粕、豆油、棕榈油、鸡蛋、玉米淀粉、粳米、花生、生猪</td>
+                  </tr>
+                  <tr>
+                    <td>能化组</td>
+                    <td>
+                      原油、天胶、20号胶、燃料油、低硫燃料油、沥青、PTA、甲醇、动力煤、聚氯乙烯、聚乙烯、聚丙烯、乙二醇、苯乙烯、液化石油气、短纤、尿素、纯碱、玻璃、烧碱、丁二烯橡胶、对二甲苯、瓶片、集运指数（欧线）
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div class="mmbox1-content">注：各组包含品种将根据交易所上市品种实时更新。</div>
+            </div>
+          </div>
+        </div>
+        <div class="mbox2 paddingBox paihangBox" style="margin-bottom: 20px">
+          <div class="mbox">
+            <div class="mbox3">
+              <div class="mmbox1-title">
+                <h2>排名计算规则</h2>
+              </div>
+              <div class="mmbox1-content">
+                产业组排名根据选手的行业综合积分从高到低排序，行业综合积分由行业累计净利润基础分及最大回撤扣分组成：
+              </div>
+              <div class="mmbox1-content">
+                1.行业累计净利润基础分
+              </div>
+              <div class="mmbox1-content">
+                (选手行业累计净利润/该组所有账户的最大行业累计净利润*100)*30%+((n+1-名次)/n*100)*70%，n=计算日的该组的总账户数量，名次=计算日该账户累计净利润在该组的排名。净利润小于等于0，累计净利润得分为0。
+              </div>
+              <div class="mmbox1-content">
+                2.最大回撤率扣分
+              </div>
+              <div class="mmbox1-content">
+                选手总账户的最大回撤率在20%以内不扣分。超过20%后，每满1%，扣除1分，封顶扣除40分。
+              </div>
+            </div>
+          </div>
+        </div>
+      </template> -->
+      <template v-if="curHeaderIndex === 1">
+        <div class="mbox2 paddingBox paihangBox" style="margin-bottom: 20px">
+          <div class="mbox">
+            <div class="mbox3">
+              <div class="mmbox1-title">
+                <h2>比赛规则</h2>
+              </div>
+              <div class="mmbox1-content">
+                夺冠高手全国期货实盘大赛以自然年度为单位，每年举办一届。大赛为实盘交易比赛，参赛者自行交易，自负盈亏，一切交易均需遵守《中华人民共和国期货和衍生品法》、《期货交易管理条例》和相关法律法规、期货交易所交易规则、期货业协会自律规则及交易经纪商（期货公司）的管理规定。
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mbox2 paddingBox paihangBox" style="margin-bottom: 20px">
+          <div class="mbox">
+            <div class="mbox3">
+              <div class="mmbox1-title">
+                <h2>报名方式</h2>
+              </div>
+              <div class="mmbox1-content">
+                夺冠高手第九届全国期货实盘大赛比赛时间为2025年12月29日--2026年10月31日；产业组比赛时间为2025年12月29日--2026年10月31日。参赛者在2026年10月31日之前的任意时间均可报名参赛。参赛者只需在全国任意期货公司开户，在夺冠高手官网用手机号码注册后绑定期货交易账号即可完成报名，并授权大赛举办方使用客户的交易数据，用于大赛排名数据分析。
+              </div>
+              <div class="mmbox1-content">夺冠高手全国期货实盘大赛将自动循环，每一届选手将默认自动进入下届比赛。</div>
+            </div>
+          </div>
+        </div>
+        <div class="mbox2 paddingBox paihangBox" style="margin-bottom: 20px">
+          <div class="mbox">
+            <div class="mbox3">
+              <div class="mmbox1-title">
+                <h2>大赛组委会</h2>
+              </div>
+              <div class="mmbox1-content">
+                本次大赛组委会由推荐交易经纪商等单位的有关负责人、期货交易所有关业务部门应邀组成本次大赛的“公平、公正、公开”审核委员会。
+              </div>
+              <div class="mmbox1-content">大赛组委会确定参赛选手有舞弊行为的，将取消其参赛资格。</div>
+            </div>
+          </div>
+        </div>
+        <div class="mbox2 paddingBox paihangBox" style="margin-bottom: 20px">
+          <div class="mbox">
+            <div class="mbox3">
+              <div class="mmbox1-title">
+                <h2>交易规则</h2>
+              </div>
+              <div class="mmbox1-content">本次大赛不额外收取交易手续费，不设置参赛最低保证金要求。</div>
+              <div class="mmbox1-content">
+                本次大赛允许参赛选手在郑州商品交易所（简称郑商所）、大连期货交易所（简称大商所）、上海期货交易所（简称上期所）、上海国际能源交易中心（简称上能源）、中国金融期货交易所（简称中金所）和广州期货交易所（简称广期所）的所有期货期权品种及所有期货期权合约上进行交易。
+              </div>
+              <div class="mmbox1-content">
+                大赛不限制出入金，所有参赛选手均可自由出入金。
+              </div>
+              <div class="mmbox1-content">
+                参赛选手如有发生异常交易等情况，大赛主办方有权按照各期货交易所的公告为准则，取消其参赛资格。
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mbox2 paddingBox paihangBox" style="margin-bottom: 20px">
+          <div class="mbox">
+            <div class="mbox3">
+              <div class="mmbox1-title">
+                <h2>赛段规则</h2>
+              </div>
+              <div class="mmbox1-content">（一）所有选手按参赛日初始权益编入相应组别：</div>
+              <div class="mmbox1-content">
+                <table cellspacing="0">
+                  <tr>
+                    <td width="200px">组别</td>
+                    <td>参赛日初始权益</td>
+                  </tr>
+                  <tr>
+                    <td>轻量组</td>
+                    <td>小于100万元</td>
+                  </tr>
+                  <tr>
+                    <td>重量组</td>
+                    <td>100万元（含）-500万元（含）</td>
+                  </tr>
+                  <tr>
+                    <td>专业组</td>
+                    <td>大于500万元</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="mmbox1-content">（二）比赛期间，参赛选手的账户权益若因入金或交易盈利等原因发生变化导致达到更高组别标准的，将于每个自然月的最后一个交易日收盘后,根据当日结算权益统一进行组别调整。调整后的组别自次一交易日起生效。若因出金或亏损导致权益低于原组别，则组别不变仍保留在原组别。</div>
+              <div class="mmbox1-content">（三）符合以下条件的，额外编入产业组：</div>
+              <div class="mmbox1-content">相关品种的累计盈利大于账户盈利的60%。</div>
+              <div class="mmbox1-content">
+                <table cellspacing="0">
+                  <tr>
+                    <td width="200px">组别</td>
+                    <td>相关品种</td>
+                  </tr>
+                  <tr>
+                    <td>有色组</td>
+                    <td>铜、锌、铝、铅、镍、锡、国际铜、氧化铝、铝合金</td>
+                  </tr>
+                  <tr>
+                    <td>黑色组</td>
+                    <td>螺纹钢、线材、热卷、不锈钢、铁矿石、焦炭、焦煤、硅铁、锰硅</td>
+                  </tr>
+                  <tr>
+                    <td>工业组</td>
+                    <td>纸浆、纤维板、胶合板、工业硅、碳酸锂、原木、多晶硅</td>
+                  </tr>
+                  <tr>
+                    <td>贵金属组</td>
+                    <td>贵金属</td>
+                  </tr>
+                  <tr>
+                    <td>农副组</td>
+                    <td>强麦、普麦、棉花、早籼稻、晚籼稻、白糖、油菜籽、菜籽油、菜籽粕、粳稻、棉纱、苹果、红枣、黄大豆1号、黄大豆2号、玉米、豆粕、豆油、棕榈油、鸡蛋、玉米淀粉、粳米、花生、生猪</td>
+                  </tr>
+                  <tr>
+                    <td>能化组</td>
+                    <td>
+                      原油、天胶、20号胶、燃料油、低硫燃料油、沥青、PTA、甲醇、动力煤、聚氯乙烯、聚乙烯、聚丙烯、乙二醇、苯乙烯、液化石油气、短纤、尿素、纯碱、玻璃、烧碱、丁二烯橡胶、对二甲苯、瓶片、集运指数（欧线）、丙烯
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div class="mmbox1-content">注：各组包含品种将根据交易所上市品种实时更新。</div>
+            </div>
+          </div>
+        </div>
+        <div class="mbox2 paddingBox paihangBox" style="margin-bottom: 20px">
+          <div class="mbox">
+            <div class="mbox3">
+              <div class="mmbox1-title">
+                <h2>比赛排名计算规则</h2>
+              </div>
+              <div class="mmbox1-content">（一）轻量组、重量组、专业组比赛排名计算规则</div>
+              <div class="mmbox1-content">
+                <img
+                  src="https://www.dggaoshou.com:2443/dggaoshou/upload/2024-01-02/17041568307482c9386288c100057284018cc7a99c1c4f7a.png"
+                  alt="" />
+              </div>
+              <div class="mmbox1-content">
+                实盘大赛根据选手权益，出入金、收益率、最大回撤等情况采取综合积分计算成绩，并于次日进行发布。当届比赛内连续计算，每届比赛结束后清零重新计算。
+              </div>
+              <div class="mmbox1-content">（二）期权组排名计算规则</div>
+              <div class="mmbox1-content">期权组参赛选手以期权总收益作为排名的依据。</div>
+              <div class="mmbox1-content">
+                主办方次日对选手成绩进行计算和发布,选手期初权益按前一交易日的期末权益+参赛当日入金计算;如中途报名参赛或因其他原因导致重新计算，期初权益按前一交易日的期末权益+参赛当日入金计算;比赛过程中按结算价计算,每届比赛末按最后一个交易日结算价计算权益。
+              </div>
+              <div class="mmbox1-content">
+                比赛各周期收益率、收益额奖项以及各项收益率记录的认定，均以周期起始日前一个交易日和周期期末日结算价确认账户权益。
+              </div>
+              <div class="mmbox1-content">
+                为真实反映选手交易能力，保证大赛公平，每个比赛周期末组委会将按照排名计算规则对账户成绩进行核实，最终获奖情况以大赛官网正式公告为准。
+              </div>
+              <div class="mmbox1-content">
+                本活动最终解释权归主办方所有。
+              </div>
+              <div class="mmbox1-content">
+                （三）产业组排名计算规则
+              </div>
+              <div class="mmbox1-content">
+                产业组排名根据选手的行业综合积分从高到低排序，行业综合积分由行业累计净利润基础分及最大回撤扣分组成：
+              </div>
+              <div class="mmbox1-content">
+                1.行业累计净利润基础分
+              </div>
+              <div class="mmbox1-content">
+                (选手行业累计净利润/该组所有账户的最大行业累计净利润*100)*30%+((n+1-名次)/n*100)*70%，n=计算日的该组的总账户数量，名次=计算日该账户累计净利润在该组的排名。净利润小于等于0，累计净利润得分为0。
+              </div>
+              <div class="mmbox1-content">
+                2.最大回撤率扣分
+              </div>
+              <div class="mmbox1-content">
+                选手总账户的最大回撤率在20%以内不扣分。超过20%后，每满1%，扣除1分，封顶扣除40分。
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mbox2 paddingBox paihangBox" style="margin-bottom: 20px">
+          <div class="mbox">
+            <div class="mbox3">
+              <div class="mmbox1-title">
+                <h2>颁奖说明</h2>
+              </div>
+              <div class="mmbox1-content">（一）轻量组、重量组、专业组</div>
+              <div class="mmbox1-content sj">1.轻量组、重量组、专业组每组排名前十名的选手，同时满足以下条件的，可获得24K纯金奖牌：</div>
+              <div class="mmbox1-content sj2">1）通过金牌赞助商参赛；</div>
+              <div class="mmbox1-content sj2">2）至少连续参赛三届（含）及以上；</div>
+              <div class="mmbox1-content sj2">3）领取奖牌时于现场凭个人身份证明，经实名认证为本人领奖的。</div>
+              <div class="mmbox1-content sj">2.未满足任一前款规定条件的，依据当届大赛比赛排名，颁发相应排名等级的银镀金奖牌(前三名选手)及纯银奖牌(第四至第十名选手)。</div>
+              <div class="mmbox1-content sj">3.当届大赛所颁发奖牌规格、质量（克数）、制式，根据不同排名等级有所区分，大赛主办方对此享有最终解释权。</div>
+              <div class="mmbox1-content">（二）期权组</div>
+              <div class="mmbox1-content">期权组每组排名前十名的选手，可获得奖杯及荣誉证书。</div>
+              <div class="mmbox1-content">（三）产业组（有色组、黑色组、工业组、贵金属组、农副组、能化组）</div>
+              <div class="mmbox1-content">产业组每组排名前三名的选手，可获得荣誉证书。</div>
+              <div class="blank2"></div>
+              <div class="mmbox1-content">
+                本活动最终解释权归大赛组委会及本公司所有，包括但不限于对参赛资格认定、奖项发放条件的补充说明及特殊情况的裁量权。如发现参赛者提供虚假信息、冒用身份或存在其他欺诈行为，组委会有权追回奖项、奖金等荣誉，并取消参赛者评选资格。
+              </div>
+            </div>
+          </div>
+        </div>
+      </template>
+    </div>
+    <div id="div-footer"></div>
+    <my-footer></my-footer>
+  </div>
+
+  <script type="text/javascript" src="js/formatDate.js"></script>
+  <script type="text/javascript" src="js/dataformat.js"></script>
+  <script type="text/javascript" src="js/common.js"></script>
+  <script type="text/javascript" src="plug-in/vue/Vue.js"></script>
+  <script type="text/javascript" src="js/storageUtil.js"></script>
+  <script src="./module/components/header.js?v=20260306"></script>
+  <script src="./module/components/footer.js"></script>
+
+  <script type="text/javascript">
+    $(function () {
+      var app = new Vue({
+        el: '#app',
+        data: function () {
+          return {
+            arrRankList: [],
+            token: getStorage('token'),
+            phone: getStorage('phone'),
+            newsArrList: [],
+            showArrList: [],
+            curHeaderIndex: 1,
+            listHeaderNav: [
+              { index: 0, title: '2025福布斯中国产融先锋评选卓越交易员', },
+              { index: 1, title: '夺冠高手第八届全国期货实盘大赛', },
+            ],
+          }
+        },
+        created() { },
+        methods: {
+          getGZ() {
+            var url = apiCms + 'japi/getContentList.cmd?classId=38&pageSize=20&order=default-down'
+            _queryCms(url, (data) => {
+              // console.log(data)
+              this.newsArrList = data.allContent
+            })
+          },
+
+          changeNav(index) {
+            this.curHeaderIndex = index
+          },
+        },
+      })
+    })
+  </script>
+</body>
+
+</html>

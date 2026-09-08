@@ -1,0 +1,140 @@
+# AKShare
+# URL: https://akshare.akfamily.xyz/
+# fetched: 20260908_114115
+
+AKShare
+Table of contents:
+AKShare 项目概览
+AKShare 安装指导
+AKShare 接口检索
+AKShare 数据字典
+AKShare 指标计算
+AKShare 数据说明
+AKShare 实盘交易
+AKShare 答疑专栏
+AKShare 快速入门
+AKShare 相关文章
+AKShare 环境配置
+AKShare 量化专题
+AKShare 策略示例
+AKShare 版本更新
+AKShare 贡献源码
+AKShare 依赖说明
+AKShare HTTP 部署
+AKShare Docker 部署
+AKShare 特别说明
+AKShare
+欢迎访问 AKShare 在线文档！
+ 查看页面源码
+欢迎访问 AKShare 在线文档！
+备注
+推荐高性能量化投研框架 AKQuant，欢迎使用：https://github.com/akfamily/akquant
+推荐关注微信公众号【数据科学实战】获取更多财经数据与量化投研知识
+Table of contents:
+AKShare 项目概览
+引用
+AKShare 的介绍
+AKShare 的特色
+AKShare 的初衷
+AKShare 安装指导
+重要提示
+安装 AKShare
+升级 AKShare
+M 系列芯片支持
+树莓派支持
+R 语言调用支持
+MATLAB 调用支持
+安装报错解决方案
+AKShare 接口检索
+检索接口
+接口元数据
+类目列表
+能力边界
+AKShare 数据字典
+AKShare 股票数据
+AKShare 期货数据
+AKShare 债券数据
+AKShare 期权数据
+AKShare 外汇数据
+AKShare 货币数据
+AKShare 现货数据
+AKShare 利率数据
+AKShare 私募基金数据
+AKShare 公募基金数据
+AKShare 指数数据
+AKShare 宏观数据
+AKShare 加密货币数据
+AKShare 银行数据
+AKShare 论文数据
+AKShare 能源数据
+AKShare 迁徙数据
+AKShare 高频数据
+AKShare 自然语言处理
+AKShare QDII 数据
+AKShare 另类数据
+AKShare 奇货可查
+AKShare 工具箱
+AKShare 指标计算
+已实现波动率指标
+AKShare 数据说明
+专栏介绍
+股票数据
+AKShare 实盘交易
+证券实盘
+期货实盘
+AKShare 答疑专栏
+专栏介绍
+常见问题
+AKShare 快速入门
+查找接口
+查看数据
+案例演示
+AKShare 相关文章
+AKShare 的评价
+公众号文章
+博客文章
+AKShare 环境配置
+Anaconda 安装说明
+Anaconda 安装演示
+AKShare 量化专题
+开源平台
+网页端
+量化策略
+AKShare 策略示例
+AKQuant 介绍（强烈推荐）
+AKQuant 安装
+AKQuant 教程
+AKQuant 策略示例
+PyBroker 介绍
+PyBroker 安装
+PyBroker 系列教程
+PyBroker 策略示例
+Backtrader 介绍
+Backtrader 系列教程
+Backtrader 策略教程
+AKShare 版本更新
+接口更名一览表
+更新说明详情
+版本更新说明
+AKShare 贡献源码
+贡献指南
+声明
+AKShare 依赖说明
+Python 依赖
+AKShare HTTP 部署
+说明
+快速启动
+版本说明
+更多详情
+AKShare Docker 部署
+安装 Docker
+AKDocker 镜像使用
+使用案例
+AKShare 特别说明
+致谢
+声明
+下一页 
+© 版权所有 2019–2026, AKShare Developers。
+ 利用 Sphinx 构建，使用的 
+ 主题
+ 由 Read the Docs 开发.

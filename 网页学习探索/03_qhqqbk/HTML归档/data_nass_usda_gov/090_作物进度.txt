@@ -1,0 +1,281 @@
+# 作物进度
+# URL: https://data.nass.usda.gov/Publications/National_Crop_Progress/index.php
+# fetched: 20260908_113901
+
+Skip to Main Content
+United States Department of Agriculture
+National Agricultural Statistics Service
+ Subscriptions:    National | News
+Home
+Data & Statistics
+Publications
+Research, Science and Technology
+Newsroom (current)
+Surveys
+Census
+NASS Information 
+About NASS
+Regional Offices
+Careers
+Contact Us
+Subscriptions 
+National
+State
+News
+Data & Statistics  
+Access Quick Stats (searchable database)  
+The Quick Stats Database is the most comprehensive tool for accessing agricultural data published by NASS. It allows you to customize your query by commodity, location, or time period.
+Quick Stats System Updates
+Download Quick Stats data files
+Access Quick Stats Lite   
+Quick Stats Lite provides a more structured approach to get commonly requested statistics from our online database.
+Explore Statistics
+By State
+By Subject
+Crops and Plants
+Demographics
+Economic and Prices
+Environmental
+Livestock and Animals
+Research, Science, and Technology
+Charts and Maps
+Data Visualization
+Pre-Defined Queries
+Special Tabulations and Restricted Microdata
+County Level Information
+County Maps
+County and District Geographic Boundaries
+County and District Codes
+Commodity Codes
+Livestock County Estimates
+Geospatial Data & Interactive Maps
+CroplandCROS
+Cropland Data Layer
+VegScape
+Crop Condition and Soil Moisture Analytics
+Crop Sequence Boundaries 
+Crop Progress & Condition Gridded Layers
+Disaster Analysis
+Land Use Strata for Selected States
+Publications  
+Today's Reports  
+Browse NASS Reports
+by Subject
+by Date (Reports Calendar)
+by Title/Release Day
+by Keyword
+Guide to Products and Services
+Additional Reports
+Highlights
+2022 Census of Agriculture
+Surveys and Programs
+Methodology & Quality Measures
+Agricultural Statistics Board Corrections
+Research Reports
+Historical Publications
+Archived Ag Census Reports (2002 and prior - published every 5 years)
+Annual Agricultural Statistics
+Statistical Bulletins (final estimates, 1987 to 2012
+Track Records: (crops, livestock, grain stocks)
+Trends 20th century
+Price Reactions (after crop or livestock reports)
+Receive Reports by Email:
+National Reports
+NASS News Releases
+Newsroom  
+News Releases
+08/12/26  USDA unlocks the power of producer insights in latest August Crop Production report Data is vital to ag industry’s decision-making 
+08/12/26  Producers Are Being Called to Help Build Their County Crop Estimates 
+07/24/26  United States Cattle Inventory Up Slightly 
+06/30/26  Corn planted acreage down 3% from 2025, soybean acreage up 5% from last year 
+06/25/26  United States Hog Inventory Down Slightly 
+Read More News
+ASB Notices
+06/22/26  NASS Adds Additional Counties to the 2025 Cotton County-level Estimates
+12/22/25  USDA NASS reschedules reports due to December 24 & 26 government closure
+11/19/25  USDA Reschedules Reports Affected by Lapse in Federal Funding
+10/31/25  USDA’s National Agricultural Statistics Service (NASS) will release key data in November
+08/28/25  NASS discontinues select data collection programs and reports
+Read More Notices
+Videos
+02/13/24  2022 Census of Agriculture Data Highlights
+02/13/24  How to Find 2022 Census of Agriculture Data
+02/13/24  2022 Census of Agriculture Data Release Event
+07/16/21  What is a Farm?
+08/05/20  The NASS Mission: We do it for you
+View More Videos
+ASB Briefings
+08/12/26  Crop Production (August 2026)
+07/24/26  Cattle (July 2026)
+07/10/26  Crop Production (July 2026)
+06/30/26  Acreage and Grain Stocks (June 2026)
+06/25/26  Quarterly Hogs and Pigs (June 2026)
+View More Briefings
+Surveys  
+Respond to Surveys Online  
+Guide to NASS Surveys and Programs
+Understanding Agricultural Statistics
+Make Sure I'm Counted
+Statistical Programs and Review
+Census
+About NASS  
+Structure and Organization
+Agency Overview
+NASS Biographies
+Organizational Chart
+Assistance to Other Organizations
+International Programs
+Talking About NASS - A guide for partners and stakeholders
+NASS Strategic Plan for FY 2022-2026
+USDA Strategic Goals
+Guiding Principles
+Mission and Core Values
+Keeping Data Safe
+Confidentiality Pledge
+Security Pledge
+Security Statement
+Statement of Commitment to Scientific Integrity
+Regulations Guiding NASS
+Information Quality
+Learning Agenda, Fiscal Year 2024 -2026
+Civil Rights
+Anti-Harassment Policy | USDA
+Civil Rights Accountability Policy and Procedures
+No FEAR Act Notice
+No FEAR Act - NASS Data
+REE Reasonable Accommodations and Personal Assistance Services
+How to File an EEO Complaint
+Accessibility Statement
+Architectural Barriers Act
+And Justice for All posters
+Work at NASS
+Career Opportunities
+Education and Outreach
+Understanding Ag Statistics
+Data Users' Meetings
+Morris Hansen Lecture
+International Conference on Agricultural Statistics
+History and Procedures
+Agricultural Statistics Board and Lockup
+Agricultural Statistics: A Historical Timeline
+The Story of U.S. Agricultural Estimates
+As We Recall: The Growth of Agricultural Estimates, 1933-1961
+Safeguarding America's Agricultural Statistics Report and Video
+History of Ag Statistics
+Report Procedures
+An Evolving Statistical Service
+Fact Finders for Agriculture
+Agriculture Counts - The Founding and Evolution of the National Agricultural Statistics Service   1957-2007
+Hall of Fame
+Contact Us  
+Mailing Address:
+ USDA-NASS
+ 1400 Independence Ave., SW
+ Washington, DC 20250
+Survey FAQs and Contact Us:
+ Access FAQs or submit a question.
+Data Inquiries:
+Hours: 8:00 a.m. - 5:00 p.m. Central Standard Time
+ Monday - Friday, except federal holidays
+ Toll-Free: (800) 727-9540
+Media Inquiries:
+Email: NASS-Media@usda.gov 
+Other USDA Inquiries:
+Hours: Monday to Friday 8 a.m. - 5 p.m. EST
+Toll-Free: (833) One-USDA
+ Email: askusda@usda.gov 
+ Website: https://ask.usda.gov/s/
+Translation Services:
+Email: NASSLanguages@usda.gov 
+Regional and State Field Offices:
+ Find contact information for Regional and State Field Offices
+Ask a Specialist:
+ Have a specific question for one of our subject experts? Contact a specialist.  
+Web Content Publishing Schedule:
+Section 207(f)(2) of the E-Government Act of 2002 requires federal agencies to develop an inventory of information to be published on their Web sites, establish a schedule for publishing information, make those schedules available for public comment, and post the schedules and priorities on the Web site.
+Help  
+Technical Issues
+RSS Feed
+Contact Us 
+Search Tips
+Search Tips
+For Developers and Data Users
+Application Programming Interfaces (APIs)
+Statistics by StateRegional OfficesAlabamaAlaskaArizonaArkansasCaliforniaColoradoConnecticutDelawareFloridaGeorgiaHawaiiIdahoIllinoisIndianaIowaKansasKentuckyLouisianaMaineMarylandMassachusettsMichiganMinnesotaMississippiMissouriMontanaNebraskaNevadaNew EnglandNew HampshireNew JerseyNew MexicoNew YorkNorth CarolinaNorth DakotaOhioOklahomaOregonPennsylvaniaPuerto RicoPuerto Rico (Spanish)Rhode IslandSouth CarolinaSouth DakotaTennesseeTexasUtahVermontVirginiaWashingtonWest VirginiaWisconsinWyoming
+Publications
+Menu 
+Find NASS Publications by:
+Statistics by State
+Date
+Subject
+Keyword
+Title/Release Day
+Reports by Year
+Guide to Products and Services
+About NASS Estimates
+Understanding Agricultural Estimates
+Methodology and Quality Measures
+Advanced Topics
+Special Tabulations and Restricted Microdata
+Citation Request
+Also See
+2026 ASB Livestream Schedule
+2026 X Stat Chat Calendar 
+Highlights
+Research Reports
+Schedule of Release Dates for Principal Federal Economic Indicators: 2025 | 2026
+Publications
+National Crop Progress
+U.S. Reports and Data
+Historical Data
+Crop Progress Reports
+Weekly Weather & Crop Bulletin (WAOB)
+Graphics for current week:
+Charts of Crop Progress & Condition
+Days Suitable for Fieldwork and Soil Moisture, by State
+General Information
+Timetables
+Corn, Cotton, and Sorghum
+Soybeans, Rice, and Spring Wheat
+Peanuts, Barley, Oats, and Winter Wheat
+Conditions
+Terms and Definitions
+Usual Planting & Harvesting Dates
+Also See
+Crop Progress & Condition - State
+USDA Weather and Drought Monitor
+USDA Plant Hardiness Zone Map 
+ Last Modified:
+ 08/03/2020
+~ Providing Timely, Accurate and Useful Statistics in Service to U.S. Agriculture ~
+NASS Home
+ | 
+USDA.gov
+ | 
+Data.gov
+ | 
+USA.gov
+ | 
+WhiteHouse.gov
+ | 
+Economics, Statistics and Market Information System (ESMIS)
+ | 
+No Fear Act - NASS Data
+ | 
+Accessibility Statement
+ | 
+FOIA
+Privacy Policy and Assessments
+ | 
+Security Statement
+ | 
+Information Quality
+ | 
+Non-Discrimination Statement
+ | 
+Guidance Documents
+ | 
+USDA Policies and Links
+ | 
+AskUSDA
+ Feedback

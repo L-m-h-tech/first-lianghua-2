@@ -1,0 +1,602 @@
+<html lang="zh-CN" class="light" style="height: 100%"><head>
+    <script>
+      document.documentElement.className =
+        localStorage.getItem('openvlab-legend-theme') || 'dark';
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+    <meta name="application-name" content="OpenVlab">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <title>BR | OpenVlab</title>
+    <style>
+      /* 冷启动首屏：不依赖 JS bundle，避免 ready-to-show 后黑屏空窗 */
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        background: var(--background, #0c1220);
+        color: var(--foreground, #e8eef8);
+        font-family:
+          system-ui,
+          -apple-system,
+          'Segoe UI',
+          sans-serif;
+      }
+
+      html {
+        color-scheme: dark;
+      }
+
+      #boot-splash {
+        position: fixed;
+        inset: 0;
+        z-index: 99999;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        background: var(--background, #0c1220);
+        transition: opacity 0.22s ease;
+      }
+
+      #boot-splash.boot-splash-hide {
+        opacity: 0;
+        pointer-events: none;
+      }
+
+      #boot-splash .boot-logo {
+        width: 48px;
+        height: 48px;
+        object-fit: contain;
+      }
+
+      #boot-splash .boot-title {
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: -0.02em;
+      }
+
+      #boot-splash .boot-row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 12px;
+        color: var(--muted-foreground, rgba(232, 238, 248, 0.55));
+        font-size: 18px;
+      }
+
+      #boot-splash .boot-spinner {
+        width: 32px;
+        height: 32px;
+        background: var(--primary, rgba(180, 255, 80, 0.9));
+        animation: smooth-morph 3s ease-in-out infinite;
+      }
+
+      @keyframes smooth-morph {
+        0% {
+          transform: scale(1) rotate(0deg);
+          border-radius: 50%;
+        }
+        20% {
+          transform: scale(0.9) rotate(72deg);
+          border-radius: 35%;
+        }
+        40% {
+          transform: scale(1.1) rotate(144deg);
+          border-radius: 15%;
+        }
+        60% {
+          transform: scale(0.85) rotate(216deg);
+          border-radius: 8%;
+        }
+        80% {
+          transform: scale(1.05) rotate(288deg);
+          border-radius: 25%;
+        }
+        100% {
+          transform: scale(1) rotate(360deg);
+          border-radius: 50%;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        #boot-splash .boot-spinner {
+          animation: none;
+        }
+      }
+
+      #root {
+        height: 100%;
+      }
+    </style>
+    <script type="module" crossorigin="" src="./assets/index-DQP7e0LF.js"></script>
+    <link rel="stylesheet" crossorigin="" href="./assets/index-CWgUg_U6.css">
+  <style type="text/css">[data-sonner-toaster][dir=ltr],html[dir=ltr]{--toast-icon-margin-start:-3px;--toast-icon-margin-end:4px;--toast-svg-margin-start:-1px;--toast-svg-margin-end:0px;--toast-button-margin-start:auto;--toast-button-margin-end:0;--toast-close-button-start:0;--toast-close-button-end:unset;--toast-close-button-transform:translate(-35%, -35%)}[data-sonner-toaster][dir=rtl],html[dir=rtl]{--toast-icon-margin-start:4px;--toast-icon-margin-end:-3px;--toast-svg-margin-start:0px;--toast-svg-margin-end:-1px;--toast-button-margin-start:0;--toast-button-margin-end:auto;--toast-close-button-start:unset;--toast-close-button-end:0;--toast-close-button-transform:translate(35%, -35%)}[data-sonner-toaster]{position:fixed;width:var(--width);font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;--gray1:hsl(0, 0%, 99%);--gray2:hsl(0, 0%, 97.3%);--gray3:hsl(0, 0%, 95.1%);--gray4:hsl(0, 0%, 93%);--gray5:hsl(0, 0%, 90.9%);--gray6:hsl(0, 0%, 88.7%);--gray7:hsl(0, 0%, 85.8%);--gray8:hsl(0, 0%, 78%);--gray9:hsl(0, 0%, 56.1%);--gray10:hsl(0, 0%, 52.3%);--gray11:hsl(0, 0%, 43.5%);--gray12:hsl(0, 0%, 9%);--border-radius:8px;box-sizing:border-box;padding:0;margin:0;list-style:none;outline:0;z-index:999999999;transition:transform .4s ease}@media (hover:none) and (pointer:coarse){[data-sonner-toaster][data-lifted=true]{transform:none}}[data-sonner-toaster][data-x-position=right]{right:var(--offset-right)}[data-sonner-toaster][data-x-position=left]{left:var(--offset-left)}[data-sonner-toaster][data-x-position=center]{left:50%;transform:translateX(-50%)}[data-sonner-toaster][data-y-position=top]{top:var(--offset-top)}[data-sonner-toaster][data-y-position=bottom]{bottom:var(--offset-bottom)}[data-sonner-toast]{--y:translateY(100%);--lift-amount:calc(var(--lift) * var(--gap));z-index:var(--z-index);position:absolute;opacity:0;transform:var(--y);touch-action:none;transition:transform .4s,opacity .4s,height .4s,box-shadow .2s;box-sizing:border-box;outline:0;overflow-wrap:anywhere}[data-sonner-toast][data-styled=true]{padding:16px;background:var(--normal-bg);border:1px solid var(--normal-border);color:var(--normal-text);border-radius:var(--border-radius);box-shadow:0 4px 12px rgba(0,0,0,.1);width:var(--width);font-size:13px;display:flex;align-items:center;gap:6px}[data-sonner-toast]:focus-visible{box-shadow:0 4px 12px rgba(0,0,0,.1),0 0 0 2px rgba(0,0,0,.2)}[data-sonner-toast][data-y-position=top]{top:0;--y:translateY(-100%);--lift:1;--lift-amount:calc(1 * var(--gap))}[data-sonner-toast][data-y-position=bottom]{bottom:0;--y:translateY(100%);--lift:-1;--lift-amount:calc(var(--lift) * var(--gap))}[data-sonner-toast][data-styled=true] [data-description]{font-weight:400;line-height:1.4;color:#3f3f3f}[data-rich-colors=true][data-sonner-toast][data-styled=true] [data-description]{color:inherit}[data-sonner-toaster][data-sonner-theme=dark] [data-description]{color:#e8e8e8}[data-sonner-toast][data-styled=true] [data-title]{font-weight:500;line-height:1.5;color:inherit}[data-sonner-toast][data-styled=true] [data-icon]{display:flex;height:16px;width:16px;position:relative;justify-content:flex-start;align-items:center;flex-shrink:0;margin-left:var(--toast-icon-margin-start);margin-right:var(--toast-icon-margin-end)}[data-sonner-toast][data-promise=true] [data-icon]>svg{opacity:0;transform:scale(.8);transform-origin:center;animation:sonner-fade-in .3s ease forwards}[data-sonner-toast][data-styled=true] [data-icon]>*{flex-shrink:0}[data-sonner-toast][data-styled=true] [data-icon] svg{margin-left:var(--toast-svg-margin-start);margin-right:var(--toast-svg-margin-end)}[data-sonner-toast][data-styled=true] [data-content]{display:flex;flex-direction:column;gap:2px}[data-sonner-toast][data-styled=true] [data-button]{border-radius:4px;padding-left:8px;padding-right:8px;height:24px;font-size:12px;color:var(--normal-bg);background:var(--normal-text);margin-left:var(--toast-button-margin-start);margin-right:var(--toast-button-margin-end);border:none;font-weight:500;cursor:pointer;outline:0;display:flex;align-items:center;flex-shrink:0;transition:opacity .4s,box-shadow .2s}[data-sonner-toast][data-styled=true] [data-button]:focus-visible{box-shadow:0 0 0 2px rgba(0,0,0,.4)}[data-sonner-toast][data-styled=true] [data-button]:first-of-type{margin-left:var(--toast-button-margin-start);margin-right:var(--toast-button-margin-end)}[data-sonner-toast][data-styled=true] [data-cancel]{color:var(--normal-text);background:rgba(0,0,0,.08)}[data-sonner-toaster][data-sonner-theme=dark] [data-sonner-toast][data-styled=true] [data-cancel]{background:rgba(255,255,255,.3)}[data-sonner-toast][data-styled=true] [data-close-button]{position:absolute;left:var(--toast-close-button-start);right:var(--toast-close-button-end);top:0;height:20px;width:20px;display:flex;justify-content:center;align-items:center;padding:0;color:var(--gray12);background:var(--normal-bg);border:1px solid var(--gray4);transform:var(--toast-close-button-transform);border-radius:50%;cursor:pointer;z-index:1;transition:opacity .1s,background .2s,border-color .2s}[data-sonner-toast][data-styled=true] [data-close-button]:focus-visible{box-shadow:0 4px 12px rgba(0,0,0,.1),0 0 0 2px rgba(0,0,0,.2)}[data-sonner-toast][data-styled=true] [data-disabled=true]{cursor:not-allowed}[data-sonner-toast][data-styled=true]:hover [data-close-button]:hover{background:var(--gray2);border-color:var(--gray5)}[data-sonner-toast][data-swiping=true]::before{content:'';position:absolute;left:-100%;right:-100%;height:100%;z-index:-1}[data-sonner-toast][data-y-position=top][data-swiping=true]::before{bottom:50%;transform:scaleY(3) translateY(50%)}[data-sonner-toast][data-y-position=bottom][data-swiping=true]::before{top:50%;transform:scaleY(3) translateY(-50%)}[data-sonner-toast][data-swiping=false][data-removed=true]::before{content:'';position:absolute;inset:0;transform:scaleY(2)}[data-sonner-toast][data-expanded=true]::after{content:'';position:absolute;left:0;height:calc(var(--gap) + 1px);bottom:100%;width:100%}[data-sonner-toast][data-mounted=true]{--y:translateY(0);opacity:1}[data-sonner-toast][data-expanded=false][data-front=false]{--scale:var(--toasts-before) * 0.05 + 1;--y:translateY(calc(var(--lift-amount) * var(--toasts-before))) scale(calc(-1 * var(--scale)));height:var(--front-toast-height)}[data-sonner-toast]>*{transition:opacity .4s}[data-sonner-toast][data-x-position=right]{right:0}[data-sonner-toast][data-x-position=left]{left:0}[data-sonner-toast][data-expanded=false][data-front=false][data-styled=true]>*{opacity:0}[data-sonner-toast][data-visible=false]{opacity:0;pointer-events:none}[data-sonner-toast][data-mounted=true][data-expanded=true]{--y:translateY(calc(var(--lift) * var(--offset)));height:var(--initial-height)}[data-sonner-toast][data-removed=true][data-front=true][data-swipe-out=false]{--y:translateY(calc(var(--lift) * -100%));opacity:0}[data-sonner-toast][data-removed=true][data-front=false][data-swipe-out=false][data-expanded=true]{--y:translateY(calc(var(--lift) * var(--offset) + var(--lift) * -100%));opacity:0}[data-sonner-toast][data-removed=true][data-front=false][data-swipe-out=false][data-expanded=false]{--y:translateY(40%);opacity:0;transition:transform .5s,opacity .2s}[data-sonner-toast][data-removed=true][data-front=false]::before{height:calc(var(--initial-height) + 20%)}[data-sonner-toast][data-swiping=true]{transform:var(--y) translateY(var(--swipe-amount-y,0)) translateX(var(--swipe-amount-x,0));transition:none}[data-sonner-toast][data-swiped=true]{user-select:none}[data-sonner-toast][data-swipe-out=true][data-y-position=bottom],[data-sonner-toast][data-swipe-out=true][data-y-position=top]{animation-duration:.2s;animation-timing-function:ease-out;animation-fill-mode:forwards}[data-sonner-toast][data-swipe-out=true][data-swipe-direction=left]{animation-name:swipe-out-left}[data-sonner-toast][data-swipe-out=true][data-swipe-direction=right]{animation-name:swipe-out-right}[data-sonner-toast][data-swipe-out=true][data-swipe-direction=up]{animation-name:swipe-out-up}[data-sonner-toast][data-swipe-out=true][data-swipe-direction=down]{animation-name:swipe-out-down}@keyframes swipe-out-left{from{transform:var(--y) translateX(var(--swipe-amount-x));opacity:1}to{transform:var(--y) translateX(calc(var(--swipe-amount-x) - 100%));opacity:0}}@keyframes swipe-out-right{from{transform:var(--y) translateX(var(--swipe-amount-x));opacity:1}to{transform:var(--y) translateX(calc(var(--swipe-amount-x) + 100%));opacity:0}}@keyframes swipe-out-up{from{transform:var(--y) translateY(var(--swipe-amount-y));opacity:1}to{transform:var(--y) translateY(calc(var(--swipe-amount-y) - 100%));opacity:0}}@keyframes swipe-out-down{from{transform:var(--y) translateY(var(--swipe-amount-y));opacity:1}to{transform:var(--y) translateY(calc(var(--swipe-amount-y) + 100%));opacity:0}}@media (max-width:600px){[data-sonner-toaster]{position:fixed;right:var(--mobile-offset-right);left:var(--mobile-offset-left);width:100%}[data-sonner-toaster][dir=rtl]{left:calc(var(--mobile-offset-left) * -1)}[data-sonner-toaster] [data-sonner-toast]{left:0;right:0;width:calc(100% - var(--mobile-offset-left) * 2)}[data-sonner-toaster][data-x-position=left]{left:var(--mobile-offset-left)}[data-sonner-toaster][data-y-position=bottom]{bottom:var(--mobile-offset-bottom)}[data-sonner-toaster][data-y-position=top]{top:var(--mobile-offset-top)}[data-sonner-toaster][data-x-position=center]{left:var(--mobile-offset-left);right:var(--mobile-offset-right);transform:none}}[data-sonner-toaster][data-sonner-theme=light]{--normal-bg:#fff;--normal-border:var(--gray4);--normal-text:var(--gray12);--success-bg:hsl(143, 85%, 96%);--success-border:hsl(145, 92%, 87%);--success-text:hsl(140, 100%, 27%);--info-bg:hsl(208, 100%, 97%);--info-border:hsl(221, 91%, 93%);--info-text:hsl(210, 92%, 45%);--warning-bg:hsl(49, 100%, 97%);--warning-border:hsl(49, 91%, 84%);--warning-text:hsl(31, 92%, 45%);--error-bg:hsl(359, 100%, 97%);--error-border:hsl(359, 100%, 94%);--error-text:hsl(360, 100%, 45%)}[data-sonner-toaster][data-sonner-theme=light] [data-sonner-toast][data-invert=true]{--normal-bg:#000;--normal-border:hsl(0, 0%, 20%);--normal-text:var(--gray1)}[data-sonner-toaster][data-sonner-theme=dark] [data-sonner-toast][data-invert=true]{--normal-bg:#fff;--normal-border:var(--gray3);--normal-text:var(--gray12)}[data-sonner-toaster][data-sonner-theme=dark]{--normal-bg:#000;--normal-bg-hover:hsl(0, 0%, 12%);--normal-border:hsl(0, 0%, 20%);--normal-border-hover:hsl(0, 0%, 25%);--normal-text:var(--gray1);--success-bg:hsl(150, 100%, 6%);--success-border:hsl(147, 100%, 12%);--success-text:hsl(150, 86%, 65%);--info-bg:hsl(215, 100%, 6%);--info-border:hsl(223, 43%, 17%);--info-text:hsl(216, 87%, 65%);--warning-bg:hsl(64, 100%, 6%);--warning-border:hsl(60, 100%, 9%);--warning-text:hsl(46, 87%, 65%);--error-bg:hsl(358, 76%, 10%);--error-border:hsl(357, 89%, 16%);--error-text:hsl(358, 100%, 81%)}[data-sonner-toaster][data-sonner-theme=dark] [data-sonner-toast] [data-close-button]{background:var(--normal-bg);border-color:var(--normal-border);color:var(--normal-text)}[data-sonner-toaster][data-sonner-theme=dark] [data-sonner-toast] [data-close-button]:hover{background:var(--normal-bg-hover);border-color:var(--normal-border-hover)}[data-rich-colors=true][data-sonner-toast][data-type=success]{background:var(--success-bg);border-color:var(--success-border);color:var(--success-text)}[data-rich-colors=true][data-sonner-toast][data-type=success] [data-close-button]{background:var(--success-bg);border-color:var(--success-border);color:var(--success-text)}[data-rich-colors=true][data-sonner-toast][data-type=info]{background:var(--info-bg);border-color:var(--info-border);color:var(--info-text)}[data-rich-colors=true][data-sonner-toast][data-type=info] [data-close-button]{background:var(--info-bg);border-color:var(--info-border);color:var(--info-text)}[data-rich-colors=true][data-sonner-toast][data-type=warning]{background:var(--warning-bg);border-color:var(--warning-border);color:var(--warning-text)}[data-rich-colors=true][data-sonner-toast][data-type=warning] [data-close-button]{background:var(--warning-bg);border-color:var(--warning-border);color:var(--warning-text)}[data-rich-colors=true][data-sonner-toast][data-type=error]{background:var(--error-bg);border-color:var(--error-border);color:var(--error-text)}[data-rich-colors=true][data-sonner-toast][data-type=error] [data-close-button]{background:var(--error-bg);border-color:var(--error-border);color:var(--error-text)}.sonner-loading-wrapper{--size:16px;height:var(--size);width:var(--size);position:absolute;inset:0;z-index:10}.sonner-loading-wrapper[data-visible=false]{transform-origin:center;animation:sonner-fade-out .2s ease forwards}.sonner-spinner{position:relative;top:50%;left:50%;height:var(--size);width:var(--size)}.sonner-loading-bar{animation:sonner-spin 1.2s linear infinite;background:var(--gray11);border-radius:6px;height:8%;left:-10%;position:absolute;top:-3.9%;width:24%}.sonner-loading-bar:first-child{animation-delay:-1.2s;transform:rotate(.0001deg) translate(146%)}.sonner-loading-bar:nth-child(2){animation-delay:-1.1s;transform:rotate(30deg) translate(146%)}.sonner-loading-bar:nth-child(3){animation-delay:-1s;transform:rotate(60deg) translate(146%)}.sonner-loading-bar:nth-child(4){animation-delay:-.9s;transform:rotate(90deg) translate(146%)}.sonner-loading-bar:nth-child(5){animation-delay:-.8s;transform:rotate(120deg) translate(146%)}.sonner-loading-bar:nth-child(6){animation-delay:-.7s;transform:rotate(150deg) translate(146%)}.sonner-loading-bar:nth-child(7){animation-delay:-.6s;transform:rotate(180deg) translate(146%)}.sonner-loading-bar:nth-child(8){animation-delay:-.5s;transform:rotate(210deg) translate(146%)}.sonner-loading-bar:nth-child(9){animation-delay:-.4s;transform:rotate(240deg) translate(146%)}.sonner-loading-bar:nth-child(10){animation-delay:-.3s;transform:rotate(270deg) translate(146%)}.sonner-loading-bar:nth-child(11){animation-delay:-.2s;transform:rotate(300deg) translate(146%)}.sonner-loading-bar:nth-child(12){animation-delay:-.1s;transform:rotate(330deg) translate(146%)}@keyframes sonner-fade-in{0%{opacity:0;transform:scale(.8)}100%{opacity:1;transform:scale(1)}}@keyframes sonner-fade-out{0%{opacity:1;transform:scale(1)}100%{opacity:0;transform:scale(.8)}}@keyframes sonner-spin{0%{opacity:1}100%{opacity:.15}}@media (prefers-reduced-motion){.sonner-loading-bar,[data-sonner-toast],[data-sonner-toast]>*{transition:none!important;animation:none!important}}.sonner-loader{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);transform-origin:center;transition:opacity .2s,transform .2s}.sonner-loader[data-visible=false]{opacity:0;transform:scale(.8) translate(-50%,-50%)}</style><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/realtime-provider-W9ja0IEd.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/utils-BYCHNghs.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/page-Dd7tg5Pi.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/sheet-Bs5cyWXZ.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/AccountSheetContent-34yawrEV.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/table-D2oMwEUs.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/WidgetGrid-DbI1FEkk.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/CtpOrderConfirmHost-DalmEhTq.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/order-margin-preview-u6CWwQzQ.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/order-config-BfadRauJ.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/order-ticket-volume-limits-DGec6UHU.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/VolatilityOptionChainWidget-SHu2XCU_.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/useLegendOptionStrategyOrder-BW-X0faI.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/slider-DEvV_PPD.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/index-DhhowgW1.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/number-utils-BwlPv08b.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/arrow-up-narrow-wide-D8pcLNoL.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/StrategyChart-BbwwS4EN.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/strategy-dto-utils-Cj08rG3a.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/arrow-left-CvsBIc_r.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/linear-V9A3BeuF.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/validation-DH4qxW12.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/use-order-ticket-strategy-session-CFYa461W.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/useCtpMarketDataBatch-DTVNGVox.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/useSubscribe-BijgzG4m.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/chart.queries-BSTg_MaE.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/option-series-CFFs3Qwi.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/market-close-Dl_5vZcn.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/api-B8gQ5Zhd.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/option-symbol-82PoB7_s.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/use-workspace-option-strategy-D7P9Daqv.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/volatility.queries-djJdU19Q.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/chart-options-2I3uuA_C.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/option-chain-chart-model-Dfq6jbo6.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/color-CfSo_nga.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/styles-BEeuc_Us.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/useEcharts-D2bMg_IT.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/WatchlistWidget-MVsXP7oz.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/use-widget-table-config-BpRlyq9A.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/OptionChainWidget-DhvJW8OE.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/AccountSummaryWidget-D8Tri5__.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/OrdersWidget-X0KbpsXw.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/exec-order-feedback-BlvVPRXz.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/orders-BgIXdz3o.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/use-linked-instrument-selection-sTlZE_AP.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/PositionsWidget-BmQCHuzt.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/page-DZlvDYJS.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/watchlist-filter-options-Zzi7pFnU.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/index-DWm7aBsw.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/MarketFilterTabs-D_PK1T41.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/skeleton-CoKjO9Jz.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/landmark-byWYY8yA.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/bookmark-B479GdGu.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/index-BEKXcNF3.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/loading-JO7zAmYO.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/useLegendProTrial-Ce0lh0DW.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/ProFeatureLockPopover-COS6Cbph.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/LineSvg-ButsoLQr.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/use-reduced-motion-BjZbkuhR.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/switch-CL93Qa6J.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/separator-Dj9LKMdT.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/NightTradingFilter-RrU2DCw_.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/GaugeChart-AxsLx0Af.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/MultiSelect--WmYTuBk.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/layers-BoO0g8jL.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/AutoResizeText-B8IGVGwK.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/page-BGbGkhVx.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/LightChartWatchlist-B0TUgdsu.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/TermStructurePanel-D7s_v0O8.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/TermStructureUtils-DmUUdcFV.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/term-structure-MIalwR_2.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/useTermStructureChartAdapter-Dt65JIpu.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/UnderlyingSeriesDialog-C09JM98U.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/UnderlyingSeriesContent-M8HftgbV.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/CartesianChart-C2jJGo34.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/VolatilityChartCard-Dxs4AepD.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/TimeSeriesDialog-CMSxn89K.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/OptionSeriesContent-CldfyD5P.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/permissions-BRnu8ysi.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/Bar-BxY_ER7x.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/WatchlistActions-51rme8kE.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/use-symbol-filter-data-DLun_VaR.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/dnd.esm-DObualPf.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/user-BG3TEdBM.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/MobileSymbolSelector-Dnp06ABq.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/star-DUxORC2r.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/code-validation-HSkuasF7.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/use-code-validation-CJ69AZaY.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/DocumentTitle-Cnt7LNT5.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/use-refresh-control-CKDXNfiU.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/DocsLink-CawfIubl.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/arrow-up-right-DOg4Bjpd.js"><link rel="modulepreload" as="script" crossorigin="" href="file:///E:/OpendVlab%20Legend/openvlab-legend/resources/app.asar/dist/assets/MoreMenuContainer-B0fTzjkM.js"><style type="text/css">[data-vaul-drawer]{touch-action:none;will-change:transform;transition:transform .5s cubic-bezier(.32, .72, 0, 1);animation-duration:.5s;animation-timing-function:cubic-bezier(0.32,0.72,0,1)}[data-vaul-drawer][data-vaul-snap-points=false][data-vaul-drawer-direction=bottom][data-state=open]{animation-name:slideFromBottom}[data-vaul-drawer][data-vaul-snap-points=false][data-vaul-drawer-direction=bottom][data-state=closed]{animation-name:slideToBottom}[data-vaul-drawer][data-vaul-snap-points=false][data-vaul-drawer-direction=top][data-state=open]{animation-name:slideFromTop}[data-vaul-drawer][data-vaul-snap-points=false][data-vaul-drawer-direction=top][data-state=closed]{animation-name:slideToTop}[data-vaul-drawer][data-vaul-snap-points=false][data-vaul-drawer-direction=left][data-state=open]{animation-name:slideFromLeft}[data-vaul-drawer][data-vaul-snap-points=false][data-vaul-drawer-direction=left][data-state=closed]{animation-name:slideToLeft}[data-vaul-drawer][data-vaul-snap-points=false][data-vaul-drawer-direction=right][data-state=open]{animation-name:slideFromRight}[data-vaul-drawer][data-vaul-snap-points=false][data-vaul-drawer-direction=right][data-state=closed]{animation-name:slideToRight}[data-vaul-drawer][data-vaul-snap-points=true][data-vaul-drawer-direction=bottom]{transform:translate3d(0,var(--initial-transform,100%),0)}[data-vaul-drawer][data-vaul-snap-points=true][data-vaul-drawer-direction=top]{transform:translate3d(0,calc(var(--initial-transform,100%) * -1),0)}[data-vaul-drawer][data-vaul-snap-points=true][data-vaul-drawer-direction=left]{transform:translate3d(calc(var(--initial-transform,100%) * -1),0,0)}[data-vaul-drawer][data-vaul-snap-points=true][data-vaul-drawer-direction=right]{transform:translate3d(var(--initial-transform,100%),0,0)}[data-vaul-drawer][data-vaul-delayed-snap-points=true][data-vaul-drawer-direction=top]{transform:translate3d(0,var(--snap-point-height,0),0)}[data-vaul-drawer][data-vaul-delayed-snap-points=true][data-vaul-drawer-direction=bottom]{transform:translate3d(0,var(--snap-point-height,0),0)}[data-vaul-drawer][data-vaul-delayed-snap-points=true][data-vaul-drawer-direction=left]{transform:translate3d(var(--snap-point-height,0),0,0)}[data-vaul-drawer][data-vaul-delayed-snap-points=true][data-vaul-drawer-direction=right]{transform:translate3d(var(--snap-point-height,0),0,0)}[data-vaul-overlay][data-vaul-snap-points=false]{animation-duration:.5s;animation-timing-function:cubic-bezier(0.32,0.72,0,1)}[data-vaul-overlay][data-vaul-snap-points=false][data-state=open]{animation-name:fadeIn}[data-vaul-overlay][data-state=closed]{animation-name:fadeOut}[data-vaul-animate=false]{animation:none!important}[data-vaul-overlay][data-vaul-snap-points=true]{opacity:0;transition:opacity .5s cubic-bezier(.32, .72, 0, 1)}[data-vaul-overlay][data-vaul-snap-points=true]{opacity:1}[data-vaul-drawer]:not([data-vaul-custom-container=true])::after{content:'';position:absolute;background:inherit;background-color:inherit}[data-vaul-drawer][data-vaul-drawer-direction=top]::after{top:initial;bottom:100%;left:0;right:0;height:200%}[data-vaul-drawer][data-vaul-drawer-direction=bottom]::after{top:100%;bottom:initial;left:0;right:0;height:200%}[data-vaul-drawer][data-vaul-drawer-direction=left]::after{left:initial;right:100%;top:0;bottom:0;width:200%}[data-vaul-drawer][data-vaul-drawer-direction=right]::after{left:100%;right:initial;top:0;bottom:0;width:200%}[data-vaul-overlay][data-vaul-snap-points=true]:not([data-vaul-snap-points-overlay=true]):not(
+[data-state=closed]
+){opacity:0}[data-vaul-overlay][data-vaul-snap-points-overlay=true]{opacity:1}[data-vaul-handle]{display:block;position:relative;opacity:.7;background:#e2e2e4;margin-left:auto;margin-right:auto;height:5px;width:32px;border-radius:1rem;touch-action:pan-y}[data-vaul-handle]:active,[data-vaul-handle]:hover{opacity:1}[data-vaul-handle-hitarea]{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:max(100%,2.75rem);height:max(100%,2.75rem);touch-action:inherit}@media (hover:hover) and (pointer:fine){[data-vaul-drawer]{user-select:none}}@media (pointer:fine){[data-vaul-handle-hitarea]:{width:100%;height:100%}}@keyframes fadeIn{from{opacity:0}to{opacity:1}}@keyframes fadeOut{to{opacity:0}}@keyframes slideFromBottom{from{transform:translate3d(0,var(--initial-transform,100%),0)}to{transform:translate3d(0,0,0)}}@keyframes slideToBottom{to{transform:translate3d(0,var(--initial-transform,100%),0)}}@keyframes slideFromTop{from{transform:translate3d(0,calc(var(--initial-transform,100%) * -1),0)}to{transform:translate3d(0,0,0)}}@keyframes slideToTop{to{transform:translate3d(0,calc(var(--initial-transform,100%) * -1),0)}}@keyframes slideFromLeft{from{transform:translate3d(calc(var(--initial-transform,100%) * -1),0,0)}to{transform:translate3d(0,0,0)}}@keyframes slideToLeft{to{transform:translate3d(calc(var(--initial-transform,100%) * -1),0,0)}}@keyframes slideFromRight{from{transform:translate3d(var(--initial-transform,100%),0,0)}to{transform:translate3d(0,0,0)}}@keyframes slideToRight{to{transform:translate3d(var(--initial-transform,100%),0,0)}}</style></head>
+
+  <body style="">
+    
+    <div id="root"><script nonce="">((e2, i28, s6, u4, m2, a5, l6, h3) => {
+  let d4 = document.documentElement, w2 = ["light", "dark"];
+  function p3(n2) {
+    (Array.isArray(e2) ? e2 : [e2]).forEach((y2) => {
+      let k2 = y2 === "class", S2 = k2 && a5 ? m2.map((f4) => a5[f4] || f4) : m2;
+      k2 ? (d4.classList.remove(...S2), d4.classList.add(a5 && a5[n2] ? a5[n2] : n2)) : d4.setAttribute(y2, n2);
+    }), R2(n2);
+  }
+  function R2(n2) {
+    h3 && w2.includes(n2) && (d4.style.colorScheme = n2);
+  }
+  function c4() {
+    return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  }
+  if (u4) p3(u4);
+  else try {
+    let n2 = localStorage.getItem(i28) || s6, y2 = l6 && n2 === "system" ? c4() : n2;
+    p3(y2);
+  } catch (n2) {
+  }
+})("class","openvlab-legend-theme","dark",null,["light","claude","dark"],null,false,false)</script><div class="bg-background relative h-screen overflow-hidden"><div class="relative z-10 flex h-full flex-col overflow-hidden"><header class="border-border h-9.5 flex shrink-0 items-center border-b transition-colors duration-200 ease-out motion-reduce:transition-none"><div class="flex min-w-0 flex-1 items-center"><div class="flex h-full w-10 shrink-0 items-center justify-center"><img alt="OpenVlab Legend" class="size-7.5" src="./openvlab_logo.svg"></div><div class="flex w-0 min-w-0 flex-1 items-stretch"><div class="flex min-w-0 flex-1 items-center py-0.5"><span class="mr-2 inline-flex h-7 shrink-0 items-center gap-1.5 text-sm font-semibold text-[#ff9478]"><span class="size-1.5 rounded-full animate-pulse bg-[#ff9478] shadow-[0_0_0_3px_rgb(255_148_120/0.12)] motion-reduce:animate-none" aria-hidden="true"></span><span>交易台</span></span><div class="flex min-w-0 flex-1 items-stretch" data-state="closed" data-slot="context-menu-trigger"><div class="flex min-w-0 shrink items-stretch overflow-hidden rounded-lg py-0.5" style="app-region: no-drag; width: min(100%, 7rem);"><div role="tablist" aria-label="工作区标签页" class="flex w-full min-w-0 items-stretch gap-1"><div data-workspace-tab-id="db59145e-7c1b-4d36-aaf1-cb65799ff214" role="tab" tabindex="0" aria-selected="false" title="模拟账号" class="group/tab focus-visible:ring-ring relative flex h-full min-w-0 select-none items-center rounded-[5px] text-xs outline-none transition-none focus-visible:ring-2 focus-visible:ring-inset" style="width: min(7rem, 100% + 0rem); min-width: 0px; flex: 0 0 auto; margin-left: 0px; margin-right: 0px; padding: 0px; overflow: hidden; opacity: 1;"><div class="relative flex h-7 min-w-0 flex-1 items-center gap-0.5 rounded-lg px-1 transition-colors duration-150 motion-reduce:transition-none text-foreground hover:bg-primary/20"><span role="button" tabindex="0" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-9" aria-label="拖拽排序 模拟账号" class="flex size-4 shrink-0 cursor-grab touch-none items-center justify-center rounded-[3px] active:cursor-grabbing"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-grip-vertical size-3" aria-hidden="true"><circle cx="9" cy="12" r="1"></circle><circle cx="9" cy="5" r="1"></circle><circle cx="9" cy="19" r="1"></circle><circle cx="15" cy="12" r="1"></circle><circle cx="15" cy="5" r="1"></circle><circle cx="15" cy="19" r="1"></circle></svg></span><div class="w-0 min-w-0 flex-1 overflow-hidden"><span class="block w-full truncate leading-none">模拟账号</span></div><button data-slot="button" data-variant="ghost" data-size="default" class="group/button inline-flex shrink-0 items-center justify-center border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*='size-'])]:size-4 hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50 gap-1.5 px-2.5 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 hover:bg-primary-foreground/15 size-4 rounded-[3px] text-muted-foreground opacity-0 group-hover/tab:opacity-100"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x size-3" aria-hidden="true"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></button></div></div></div><div id="DndDescribedBy-9" style="display: none;">
+    To pick up a draggable item, press the space bar.
+    While dragging, use the arrow keys to move the item.
+    Press space again to drop the item in its new position, or press escape to cancel.
+  </div><div id="DndLiveRegion-9" role="status" aria-live="assertive" aria-atomic="true" style="position: fixed; top: 0px; left: 0px; width: 1px; height: 1px; margin: -1px; border: 0px; padding: 0px; overflow: hidden; clip: rect(0px, 0px, 0px, 0px); clip-path: inset(100%); white-space: nowrap;"></div></div><div class="ml-2 flex shrink-0 self-center items-center justify-center [-webkit-app-region:no-drag]"><button data-slot="popover-trigger" data-variant="outline" data-size="icon-xs" class="group/button inline-flex shrink-0 items-center justify-center border bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 border-border bg-background hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:border-input dark:bg-input dark:hover:bg-input/50 size-6 in-data-[slot=button-group]:rounded-lg [&amp;_svg:not([class*='size-'])]:size-3 rounded-full" aria-label="新建标签" type="button" aria-haspopup="dialog" aria-expanded="false" data-state="closed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus" aria-hidden="true"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg></button></div><div class="window-drag-region min-w-0 flex-1" aria-hidden="true"></div></div></div></div><div class="h-full w-4 shrink-0" aria-hidden="true"></div></div><div class="flex shrink-0 items-center justify-end gap-2"><div class="flex h-9.5 items-center" style="app-region: no-drag;"><button type="button" class="text-muted-foreground hover:text-foreground flex h-full w-11 items-center justify-center transition-colors duration-150 ease-out motion-reduce:transition-none hover:bg-muted" aria-label="缩小" title="缩小"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-minus size-3.5" aria-hidden="true"><path d="M5 12h14"></path></svg></button><button type="button" class="text-muted-foreground flex h-full w-11 items-center justify-center transition-colors duration-150 ease-out hover:text-[var(--foreground)] motion-reduce:transition-none hover:bg-muted" aria-label="放大" title="放大"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-square size-3.5" aria-hidden="true"><rect width="18" height="18" x="3" y="3" rx="2"></rect></svg></button><button type="button" class="text-muted-foreground flex h-full w-11 items-center justify-center transition-colors duration-150 ease-out hover:bg-[#d94040] hover:text-white motion-reduce:transition-none" aria-label="关闭" title="关闭"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x size-4.5" aria-hidden="true"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></button></div></div></header><div class="flex min-h-0 flex-1 overflow-hidden"><aside class="border-border bg-background relative z-40 flex h-full w-12 shrink-0 flex-col border-r"><nav aria-label="产品页面" class="flex min-h-0 flex-1 flex-col items-center gap-2  py-3"><div class="relative" draggable="true" data-state="closed" data-slot="context-menu-trigger"><button type="button" aria-label="市场" class="focus-visible:ring-ring relative flex size-10 select-none items-center justify-center rounded-lg outline-none focus-visible:ring-2 focus-visible:ring-inset text-foreground" data-state="closed" data-slot="tooltip-trigger"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-layout-grid relative z-10" aria-hidden="true"><rect width="7" height="7" x="3" y="3" rx="1"></rect><rect width="7" height="7" x="14" y="3" rx="1"></rect><rect width="7" height="7" x="14" y="14" rx="1"></rect><rect width="7" height="7" x="3" y="14" rx="1"></rect></svg></button></div><div class="relative" draggable="true" data-state="closed" data-slot="context-menu-trigger"><button type="button" aria-label="行情" class="focus-visible:ring-ring relative flex size-10 select-none items-center justify-center rounded-lg outline-none focus-visible:ring-2 focus-visible:ring-inset text-foreground"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chart-candlestick relative z-10" aria-hidden="true"><path d="M9 5v4"></path><rect width="4" height="6" x="7" y="9" rx="1"></rect><path d="M9 15v2"></path><path d="M17 3v2"></path><rect width="4" height="8" x="15" y="5" rx="1"></rect><path d="M17 13v3"></path><path d="M3 3v16a2 2 0 0 0 2 2h16"></path></svg></button><div data-no-tab-drag="true"></div></div><div class="relative" draggable="true" data-state="closed" data-slot="context-menu-trigger"><button type="button" aria-label="波动率" class="focus-visible:ring-ring relative flex size-10 select-none items-center justify-center rounded-lg outline-none focus-visible:ring-2 focus-visible:ring-inset text-white" aria-current="page"><span class="bg-(--vlab-brand) absolute inset-0 rounded-lg" style="transform: none; transform-origin: 50% 50% 0px;"></span><svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="relative z-10" style="min-width: 22px; min-height: 22px;"><path d="M4 2V20H22V22H2V2H4ZM20 2.9999V3.9999C20 6.04787 19.7484 8.71079 18.7929 10.899C18.3112 12.0022 17.6301 13.0324 16.6662 13.7895C15.6874 14.5584 14.4675 15.0048 12.9992 15.0037C11.5315 15.0025 10.3122 14.5554 9.33379 13.7869C8.37017 13.03 7.68902 12.0009 7.20724 10.8987C6.25166 8.71248 6 6.05278 6 4.00557V3.00557H8V4.00557C8 5.94502 8.24639 8.28241 9.03983 10.0976C9.43256 10.9961 9.93867 11.7188 10.5692 12.214C11.1848 12.6976 11.9665 13.0029 13.0008 13.0037C14.0345 13.0045 14.8156 12.7 15.4308 12.2167C16.0611 11.7216 16.5672 10.9984 16.96 10.0987C17.7536 8.28117 18 5.94026 18 3.9999V2.9999H20ZM5.99805 15.998H8.00195V18.002H5.99805V15.998ZM8.99805 15.998H11.002V18.002H8.99805V15.998ZM11.998 15.998H14.002V18.002H11.998V15.998ZM14.998 15.998H17.002V18.002H14.998V15.998ZM17.998 15.998H20.002V18.002H17.998V15.998Z" fill="currentColor"></path></svg></button><div data-no-tab-drag="true"></div></div><div class="relative" draggable="true" data-state="closed" data-slot="context-menu-trigger"><button type="button" aria-label="策略" class="focus-visible:ring-ring relative flex size-10 select-none items-center justify-center rounded-lg outline-none focus-visible:ring-2 focus-visible:ring-inset text-foreground" data-state="closed" data-slot="tooltip-trigger"><svg aria-hidden="true" class="relative z-10" width="22" height="22" viewBox="0 0 23 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g fill="currentColor"><path d="M22 31.5a.5.5 0 0 0-.5-.5h-18a.5.5 0 0 0 0 1h18a.5.5 0 0 0 .5-.5M1.274 9.354C.856 9.632.222 10.478.823 11.68c.499.997 1.54 2.217 2.647 2.539a1.96 1.96 0 0 0 1.605-.196c1.099-.658 2.397-1.548 2.947-1.93c.694.351 1.57.424 2.46.195l.012-.004c-.052 1.651-.611 2.682-3.344 5.22c-2.436 2.261-3.881 5.231-3.867 7.946c.01 1.781.659 3.31 1.88 4.419A.5.5 0 0 0 5.5 30h14a.5.5 0 0 0 0-1H5.699c-.919-.905-1.407-2.13-1.415-3.555c-.013-2.402 1.347-5.165 3.547-7.208C10.746 15.531 11.5 14.249 11.5 12c0-.041-.014-.077-.023-.115c.547-.295 1.02-.685 1.343-1.157c.405-.59 1.277-2.105.63-3.446a.5.5 0 1 0-.9.436c.291.603.084 1.517-.554 2.445c-.368.536-1.026.969-1.761 1.157c-.747.191-1.457.107-1.952-.232a.5.5 0 0 0-.571.004c-.018.012-1.777 1.251-3.149 2.074a.97.97 0 0 1-.812.094c-.774-.226-1.625-1.212-2.032-2.026c-.329-.658.008-.972.161-1.084c3.447-2.977 5.177-6.07 5.248-6.201a.5.5 0 0 0 .036-.399a20 20 0 0 1-.54-2.033c1.046.63 2.845 1.51 4.718 1.51c2.604 0 8.658.972 8.658 9.976c0 .049-.009 4.944-1.97 10.327a.5.5 0 1 0 .94.341C20.991 18.123 21.001 13.205 21 13c0-10.183-7.393-10.974-9.658-10.974C8.833 2.026 6.33.123 6.306.103a.51.51 0 0 0-.527-.051A.5.5 0 0 0 5.5.5c0 .981.465 2.568.646 3.147c-.418.698-2.066 3.281-4.872 5.707"></path><path d="M17.485 1.54C15.884.461 14.094 0 11.5 0a.5.5 0 0 0 0 1c2.38 0 4.003.409 5.427 1.369C19.241 3.931 22 7.043 22 13c0 1.451 0 3.438-.985 7.379a.5.5 0 0 0 .97.242C23 16.562 23 14.503 23 13c0-6.396-2.999-9.763-5.515-11.46"></path></g></svg></button></div><div class="relative" draggable="true" data-state="closed" data-slot="context-menu-trigger"><button type="button" aria-label="期货" class="focus-visible:ring-ring relative flex size-10 select-none items-center justify-center rounded-lg outline-none focus-visible:ring-2 focus-visible:ring-inset text-foreground"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-boxes relative z-10" aria-hidden="true"><path d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z"></path><path d="m7 16.5-4.74-2.85"></path><path d="m7 16.5 5-3"></path><path d="M7 16.5v5.17"></path><path d="M12 13.5V19l3.97 2.38a2 2 0 0 0 2.06 0l3-1.8a2 2 0 0 0 .97-1.71v-3.24a2 2 0 0 0-.97-1.71L17 10.5l-5 3Z"></path><path d="m17 16.5-5-3"></path><path d="m17 16.5 4.74-2.85"></path><path d="M17 16.5v5.17"></path><path d="M7.97 4.42A2 2 0 0 0 7 6.13v4.37l5 3 5-3V6.13a2 2 0 0 0-.97-1.71l-3-1.8a2 2 0 0 0-2.06 0l-3 1.8Z"></path><path d="M12 8 7.26 5.15"></path><path d="m12 8 4.74-2.85"></path><path d="M12 13.5V8"></path></svg></button><div data-no-tab-drag="true"></div></div><div class="relative" draggable="true" data-state="closed" data-slot="context-menu-trigger"><button type="button" aria-label="异动" class="focus-visible:ring-ring relative flex size-10 select-none items-center justify-center rounded-lg outline-none focus-visible:ring-2 focus-visible:ring-inset text-foreground"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-radar relative z-10" aria-hidden="true"><path d="M19.07 4.93A10 10 0 0 0 6.99 3.34"></path><path d="M4 6h.01"></path><path d="M2.29 9.62A10 10 0 1 0 21.31 8.35"></path><path d="M16.24 7.76A6 6 0 1 0 8.23 16.67"></path><path d="M12 18h.01"></path><path d="M17.99 11.66A6 6 0 0 1 15.77 16.67"></path><circle cx="12" cy="12" r="2"></circle><path d="m13.41 10.59 5.66-5.66"></path></svg></button><div data-no-tab-drag="true"></div></div></nav><div class="border-border flex flex-col items-center gap-1.5 border-t px-2 py-2"><button type="button" aria-label="打开期权到期日历" title="期权到期日历" class="hover:bg-foreground/8 text-muted-foreground hover:text-foreground focus-visible:ring-ring flex size-10 cursor-pointer items-center justify-center rounded-lg transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset" aria-haspopup="dialog" aria-expanded="false" data-state="closed" data-slot="dialog-trigger"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-days size-6" aria-hidden="true"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path><path d="M8 14h.01"></path><path d="M12 14h.01"></path><path d="M16 14h.01"></path><path d="M8 18h.01"></path><path d="M12 18h.01"></path><path d="M16 18h.01"></path></svg></button><button data-slot="popover-trigger" data-variant="ghost" data-size="icon" class="group/button inline-flex shrink-0 items-center justify-center border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*='size-'])]:size-4 aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50 hover:bg-foreground/8 text-muted-foreground hover:text-foreground size-10 rounded-lg" type="button" aria-label="打开帮助菜单" title="帮助" aria-haspopup="dialog" aria-expanded="false" data-state="closed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-question-mark size-6" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><path d="M12 17h.01"></path></svg></button><button data-slot="popover-trigger" data-variant="ghost" data-size="icon" class="group/button inline-flex shrink-0 items-center justify-center border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*='size-'])]:size-4 hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50 hover:bg-foreground/8 size-10 overflow-visible rounded-full p-0" type="button" aria-label="打开用户菜单" aria-haspopup="dialog" aria-expanded="false" data-state="closed"><div class="relative inline-flex shrink-0"><div class="relative z-10 rounded-full"><span data-slot="avatar" class="relative flex shrink-0 overflow-hidden rounded-full size-5.5"><span data-slot="avatar-fallback" class="bg-muted flex size-full items-center justify-center rounded-full"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-round size-6.5" aria-hidden="true"><circle cx="12" cy="8" r="5"></circle><path d="M20 21a8 8 0 0 0-16 0"></path></svg></span></span></div></div></button></div></aside><main class="relative min-h-0 min-w-0 flex-1 overflow-hidden"><div class="h-full" style="width: 100%; height: 100%; transform: scale(1); transform-origin: left top;"><div class="flex h-full w-full"><div class="flex h-full min-w-0 flex-shrink-0"><div class="flex h-full w-[44px] flex-shrink-0 flex-col items-center gap-0.5 py-1.5 border-r border-border"><button type="button" title="行情" class="group relative flex h-[44px] w-[44px] cursor-pointer items-center justify-center transition-colors hover:text-sidebar-foreground focus-visible:ring-ring focus-visible:outline-none focus-visible:ring-1 text-sidebar-foreground/50"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bookmark h-7 w-7" aria-hidden="true"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"></path></svg></button></div></div><div class="flex min-w-0 flex-1 flex-col"><div class="flex min-w-0 flex-1 flex-col p-2 md:h-full"><div class="flex w-full items-center gap-2"><div class="grid w-full grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] items-center gap-2"><div class="flex min-w-0 flex-1 items-center gap-4"><div class="flex min-w-0 items-center gap-3"><div class="group relative flex min-w-0 cursor-pointer items-center rounded-md transition-colors duration-200" type="button" aria-haspopup="dialog" aria-expanded="false" data-state="closed" data-slot="popover-trigger"><img alt="EN" width="16" height="16" class="mr-1.5 flex-shrink-0 transition-all" src="/shared-static/icons/sector/chemical.svg"><div class="flex max-w-[200px] min-w-0 items-center gap-1.5 hover:underline"><span class="truncate text-base font-semibold tracking-tight transition-colors duration-200">丁二烯橡胶</span><span class="text-muted-foreground truncate text-sm whitespace-nowrap transition-colors duration-200">BR</span></div><div class="ml-0.5 flex flex-shrink-0 items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down text-muted-foreground group-hover:text-primary size-4 transition-colors duration-200" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></div></div><div class="flex min-w-0 items-center"><div class="flex shrink-0 items-center"><span class="inline-flex items-center justify-center gap-1" data-state="closed" data-slot="tooltip-trigger" aria-label="Toggle tooltip"><div class="flex h-3.5 w-3.5 cursor-pointer items-center justify-center rounded-full p-0 shadow-none transition-all duration-200 text-amber-500 hover:bg-amber-50"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star h-3.5 w-3.5 transition-transform duration-200" aria-hidden="true"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg></div></span></div></div></div></div><div class="flex shrink-0 items-center justify-center"><div class="bg-background/90 border-border/60 supports-[backdrop-filter]:bg-background/70 inline-flex items-center gap-2 rounded-xl border px-2 py-1 shadow-sm backdrop-blur"><span class="text-foreground/80 px-1 text-xs font-medium">视图模式</span><style>
+.pro-feature-lock-marquee {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  /* 四层动态边线 + 一层静态底色，用来保留按钮原本的浅金色表面。 */
+  background-image:
+    linear-gradient(90deg, transparent 0%, rgba(251, 191, 36, 0.95) 50%, transparent 100%),
+    linear-gradient(180deg, transparent 0%, rgba(251, 191, 36, 0.95) 50%, transparent 100%),
+    linear-gradient(270deg, transparent 0%, rgba(251, 191, 36, 0.95) 50%, transparent 100%),
+    linear-gradient(0deg, transparent 0%, rgba(251, 191, 36, 0.95) 50%, transparent 100%),
+    linear-gradient(#fffbeb, #fffbeb);
+  background-repeat: no-repeat;
+  /* 横向光段覆盖部分边框长度，纵向光段覆盖部分侧边高度。 */
+  background-size:
+    42% 1px,
+    1px 58%,
+    42% 1px,
+    1px 58%,
+    100% 100%;
+  background-position:
+    -42% 0,
+    100% -58%,
+    142% 100%,
+    0 158%,
+    0 0;
+}
+
+.pro-feature-lock-marquee:hover {
+  background-image:
+    linear-gradient(90deg, transparent 0%, rgba(251, 191, 36, 0.95) 50%, transparent 100%),
+    linear-gradient(180deg, transparent 0%, rgba(251, 191, 36, 0.95) 50%, transparent 100%),
+    linear-gradient(270deg, transparent 0%, rgba(251, 191, 36, 0.95) 50%, transparent 100%),
+    linear-gradient(0deg, transparent 0%, rgba(251, 191, 36, 0.95) 50%, transparent 100%),
+    linear-gradient(#fef3c7, #fef3c7);
+}
+
+.dark .pro-feature-lock-marquee {
+  background-image:
+    linear-gradient(90deg, transparent 0%, rgba(251, 191, 36, 0.95) 50%, transparent 100%),
+    linear-gradient(180deg, transparent 0%, rgba(251, 191, 36, 0.95) 50%, transparent 100%),
+    linear-gradient(270deg, transparent 0%, rgba(251, 191, 36, 0.95) 50%, transparent 100%),
+    linear-gradient(0deg, transparent 0%, rgba(251, 191, 36, 0.95) 50%, transparent 100%),
+    linear-gradient(rgba(252, 211, 77, 0.1), rgba(252, 211, 77, 0.1));
+}
+
+.dark .pro-feature-lock-marquee:hover {
+  background-image:
+    linear-gradient(90deg, transparent 0%, rgba(251, 191, 36, 0.95) 50%, transparent 100%),
+    linear-gradient(180deg, transparent 0%, rgba(251, 191, 36, 0.95) 50%, transparent 100%),
+    linear-gradient(270deg, transparent 0%, rgba(251, 191, 36, 0.95) 50%, transparent 100%),
+    linear-gradient(0deg, transparent 0%, rgba(251, 191, 36, 0.95) 50%, transparent 100%),
+    linear-gradient(rgba(252, 211, 77, 0.15), rgba(252, 211, 77, 0.15));
+}
+
+.pro-feature-lock-marquee > * {
+  position: relative;
+  z-index: 1;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .pro-feature-lock-marquee {
+    animation: pro-feature-lock-marquee 3.6s linear infinite;
+  }
+}
+
+@keyframes pro-feature-lock-marquee {
+  /* 顶部：横线从左到右。 */
+  0% {
+    background-position:
+      -42% 0,
+      100% -58%,
+      142% 100%,
+      0 158%,
+      0 0;
+  }
+  /* 右侧：竖线从上到下。 */
+  25% {
+    background-position:
+      142% 0,
+      100% -58%,
+      142% 100%,
+      0 158%,
+      0 0;
+  }
+  /* 底部：横线从右到左。 */
+  50% {
+    background-position:
+      142% 0,
+      100% 158%,
+      142% 100%,
+      0 158%,
+      0 0;
+  }
+  /* 左侧：竖线从下到上开始移动。 */
+  75% {
+    background-position:
+      142% 0,
+      100% 158%,
+      -42% 100%,
+      0 158%,
+      0 0;
+  }
+  /* 左侧：竖线完成从下到上的移动，闭环回到起点。 */
+  100% {
+    background-position:
+      142% 0,
+      100% 158%,
+      -42% 100%,
+      0 -58%,
+      0 0;
+  }
+}
+</style><div data-slot="popover-anchor" class="inline-flex"><div class="gap-0.5 bg-muted/60 border-border text-muted-foreground inline-flex h-8 items-center rounded-2xl border p-0.5"><button type="button" data-state="active" class="focus-visible:ring-ring/50 relative inline-flex items-center gap-1.5 text-sm font-medium whitespace-nowrap transition-colors focus-visible:ring-2 focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50 sm:px-3 h-6 rounded-2xl px-3 hover:bg-accent text-primary-foreground"><span class="relative z-10 inline-flex items-center gap-1.5"><span class="hidden flex-shrink-0 items-center sm:inline-flex [&amp;>*]:block"><span aria-hidden="true" class="h-3.5 w-3.5 shrink-0 bg-current" style="mask-image: url(&quot;/shared-static/volatility/icons/icon-2d.svg&quot;); mask-repeat: no-repeat; mask-position: center center; mask-size: contain;"></span></span><span>2D</span></span><span class="bg-primary absolute inset-0 z-0 rounded-md shadow-xs" style="opacity: 1;"></span></button><button type="button" data-state="inactive" class="relative inline-flex items-center gap-1.5 text-sm font-medium whitespace-nowrap focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50 sm:px-3 h-6 rounded-2xl px-3 hover:bg-accent cursor-pointer bg-(--vlab-pro) hover:brightness-95 pro-feature-lock-marquee border border-amber-200/80 text-amber-700 shadow-[inset_0_0_0_1px_rgba(245,158,11,0.08),0_0_12px_rgba(245,158,11,0.18)] transition-[background-color,border-color,box-shadow,color] duration-200 hover:text-amber-800 hover:shadow-[inset_0_0_0_1px_rgba(245,158,11,0.12),0_0_18px_rgba(245,158,11,0.32)] focus-visible:ring-2 focus-visible:ring-amber-300/60 dark:border-amber-300/25 dark:text-amber-200 dark:shadow-[inset_0_0_0_1px_rgba(251,191,36,0.10),0_0_16px_rgba(251,191,36,0.22)]"><span class="relative z-10 inline-flex items-center gap-1.5"><span class="hidden flex-shrink-0 items-center sm:inline-flex [&amp;>*]:block"><span aria-hidden="true" class="h-3.5 w-3.5 shrink-0 bg-current" style="mask-image: url(&quot;/shared-static/volatility/icons/icon-3d.svg&quot;); mask-repeat: no-repeat; mask-position: center center; mask-size: contain;"></span></span><span>3D</span></span></button></div></div></div></div><div class="ml-auto flex min-w-0 items-center gap-2 justify-self-end"><a target="_self" href="/teaching?section=doc-2" class="border-border bg-background text-foreground hover:border-primary/30 hover:bg-accent/60 hover:text-primary focus-visible:ring-ring/60 group inline-flex h-8 items-center gap-1.5 rounded-full border p-0.5 px-2.5 text-xs font-medium transition-colors duration-200 focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:outline-none w-full max-w-40 justify-between"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text h-3.5 w-3.5 shrink-0 transition-transform duration-200 group-hover:scale-105" aria-hidden="true"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"></path><path d="M14 2v5a1 1 0 0 0 1 1h5"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path></svg>波动率曲面文档</a><div class="bg-card inline-flex items-center rounded-full border p-0.5 shadow-sm"><div class="flex shrink-0 items-center"><style>
+.pro-feature-lock-marquee {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  /* 四层动态边线 + 一层静态底色，用来保留按钮原本的浅金色表面。 */
+  background-image:
+    linear-gradient(90deg, transparent 0%, rgba(251, 191, 36, 0.95) 50%, transparent 100%),
+    linear-gradient(180deg, transparent 0%, rgba(251, 191, 36, 0.95) 50%, transparent 100%),
+    linear-gradient(270deg, transparent 0%, rgba(251, 191, 36, 0.95) 50%, transparent 100%),
+    linear-gradient(0deg, transparent 0%, rgba(251, 191, 36, 0.95) 50%, transparent 100%),
+    linear-gradient(#fffbeb, #fffbeb);
+  background-repeat: no-repeat;
+  /* 横向光段覆盖部分边框长度，纵向光段覆盖部分侧边高度。 */
+  background-size:
+    42% 1px,
+    1px 58%,
+    42% 1px,
+    1px 58%,
+    100% 100%;
+  background-position:
+    -42% 0,
+    100% -58%,
+    142% 100%,
+    0 158%,
+    0 0;
+}
+
+.pro-feature-lock-marquee:hover {
+  background-image:
+    linear-gradient(90deg, transparent 0%, rgba(251, 191, 36, 0.95) 50%, transparent 100%),
+    linear-gradient(180deg, transparent 0%, rgba(251, 191, 36, 0.95) 50%, transparent 100%),
+    linear-gradient(270deg, transparent 0%, rgba(251, 191, 36, 0.95) 50%, transparent 100%),
+    linear-gradient(0deg, transparent 0%, rgba(251, 191, 36, 0.95) 50%, transparent 100%),
+    linear-gradient(#fef3c7, #fef3c7);
+}
+
+.dark .pro-feature-lock-marquee {
+  background-image:
+    linear-gradient(90deg, transparent 0%, rgba(251, 191, 36, 0.95) 50%, transparent 100%),
+    linear-gradient(180deg, transparent 0%, rgba(251, 191, 36, 0.95) 50%, transparent 100%),
+    linear-gradient(270deg, transparent 0%, rgba(251, 191, 36, 0.95) 50%, transparent 100%),
+    linear-gradient(0deg, transparent 0%, rgba(251, 191, 36, 0.95) 50%, transparent 100%),
+    linear-gradient(rgba(252, 211, 77, 0.1), rgba(252, 211, 77, 0.1));
+}
+
+.dark .pro-feature-lock-marquee:hover {
+  background-image:
+    linear-gradient(90deg, transparent 0%, rgba(251, 191, 36, 0.95) 50%, transparent 100%),
+    linear-gradient(180deg, transparent 0%, rgba(251, 191, 36, 0.95) 50%, transparent 100%),
+    linear-gradient(270deg, transparent 0%, rgba(251, 191, 36, 0.95) 50%, transparent 100%),
+    linear-gradient(0deg, transparent 0%, rgba(251, 191, 36, 0.95) 50%, transparent 100%),
+    linear-gradient(rgba(252, 211, 77, 0.15), rgba(252, 211, 77, 0.15));
+}
+
+.pro-feature-lock-marquee > * {
+  position: relative;
+  z-index: 1;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .pro-feature-lock-marquee {
+    animation: pro-feature-lock-marquee 3.6s linear infinite;
+  }
+}
+
+@keyframes pro-feature-lock-marquee {
+  /* 顶部：横线从左到右。 */
+  0% {
+    background-position:
+      -42% 0,
+      100% -58%,
+      142% 100%,
+      0 158%,
+      0 0;
+  }
+  /* 右侧：竖线从上到下。 */
+  25% {
+    background-position:
+      142% 0,
+      100% -58%,
+      142% 100%,
+      0 158%,
+      0 0;
+  }
+  /* 底部：横线从右到左。 */
+  50% {
+    background-position:
+      142% 0,
+      100% 158%,
+      142% 100%,
+      0 158%,
+      0 0;
+  }
+  /* 左侧：竖线从下到上开始移动。 */
+  75% {
+    background-position:
+      142% 0,
+      100% 158%,
+      -42% 100%,
+      0 158%,
+      0 0;
+  }
+  /* 左侧：竖线完成从下到上的移动，闭环回到起点。 */
+  100% {
+    background-position:
+      142% 0,
+      100% 158%,
+      -42% 100%,
+      0 -58%,
+      0 0;
+  }
+}
+</style><div data-slot="popover-anchor" class="inline-flex"><button data-slot="button" data-variant="ghost" data-size="default" class="group/button inline-flex shrink-0 items-center justify-center bg-clip-padding text-sm font-medium whitespace-nowrap outline-none select-none focus-visible:border-ring active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*='size-'])]:size-4 hover:bg-muted aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50 gap-1.5 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 h-7 rounded-2xl px-3 bg-(--vlab-pro) hover:brightness-95 pro-feature-lock-marquee border border-amber-200/80 text-amber-700 shadow-[inset_0_0_0_1px_rgba(245,158,11,0.08),0_0_12px_rgba(245,158,11,0.18)] transition-[background-color,border-color,box-shadow,color] duration-200 hover:text-amber-800 hover:shadow-[inset_0_0_0_1px_rgba(245,158,11,0.12),0_0_18px_rgba(245,158,11,0.32)] focus-visible:ring-2 focus-visible:ring-amber-300/60 dark:border-amber-300/25 dark:text-amber-200 dark:shadow-[inset_0_0_0_1px_rgba(251,191,36,0.10),0_0_16px_rgba(251,191,36,0.22)]" type="button"><span class="text-sm font-medium"><span class="hidden sm:inline">叠加历史隐波</span><span class="sm:hidden">历史叠加</span></span></button></div></div></div></div></div></div><div class="mt-2 md:min-h-0 md:flex-1"><div class="flex flex-col gap-2 md:h-full md:min-h-0 md:flex-row md:overflow-hidden"><aside class="scrollbar-thin flex shrink-0 flex-col justify-between md:h-full md:w-[350px] md:overflow-y-auto"><div class="flex flex-1 flex-col justify-between gap-2"><div data-slot="card" class="bg-card text-card-foreground rounded-xl border flex flex-col gap-2 py-2 shadow-sm"><div data-slot="card-header" class="@container/card-header auto-rows-min grid-rows-[auto_auto] gap-2 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6 flex flex-row items-center px-2"><div data-slot="card-title" class="leading-none flex items-center font-semibold md:text-base"><span class="inline-flex items-center justify-center gap-1" data-state="closed" data-slot="tooltip-trigger" aria-label="Toggle tooltip"><span>期货</span><span class="inline-flex flex-shrink-0 items-center justify-center h-4 w-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-question-mark h-4 w-4" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><path d="M12 17h.01"></path></svg></span></span></div></div><div data-slot="card-content" class="flex flex-col px-2"><div class="mb-1"><div class="bg-card flex w-full min-w-0 flex-col min-h-[50px] [&amp;>div]:overscroll-y-auto!"><div data-slot="table-container" class="scrollbar-thin relative min-h-0 min-w-0 flex-1 overflow-auto" style="overscroll-behavior: none;"><table style="width: 100%; min-width: 100%; contain: paint; border-collapse: separate; border-spacing: 0px; table-layout: auto;"><thead><tr><th colspan="1" class="text-muted-foreground p-2 font-semibold bg-card px-1 py-1 text-center text-xs" style="width: 150px; min-width: 50px; max-width: 9.0072e+15px; position: sticky; left: 0px; z-index: 30; text-align: left;"><div class="min-w-0 pt-1.5"><div class="flex items-center gap-1">指标</div></div></th><th colspan="1" class="bg-card text-muted-foreground p-2 font-semibold px-1 py-1 text-center text-xs" style="width: 150px; min-width: 60px; max-width: 9.0072e+15px; text-align: left;"><div class="min-w-0 pt-1.5"><div class="flex items-center gap-1">2609</div></div></th><th colspan="1" class="bg-card text-muted-foreground p-2 font-semibold px-1 py-1 text-center text-xs" style="width: 150px; min-width: 60px; max-width: 9.0072e+15px; text-align: left;"><div class="min-w-0 pt-1.5"><div class="flex items-center gap-1">2610</div></div></th><th colspan="1" class="bg-card text-muted-foreground p-2 font-semibold px-1 py-1 text-center text-xs" style="width: 150px; min-width: 60px; max-width: 9.0072e+15px; text-align: left;"><div class="min-w-0 pt-1.5"><div class="flex items-center gap-1">2611</div></div></th><th colspan="1" class="bg-card text-muted-foreground p-2 font-semibold px-1 py-1 text-center text-xs" style="width: 150px; min-width: 60px; max-width: 9.0072e+15px; text-align: left;"><div class="min-w-0 pt-1.5"><div class="flex items-center gap-1">2612</div></div></th><th colspan="1" class="bg-card text-muted-foreground p-2 font-semibold px-1 py-1 text-center text-xs" style="width: 150px; min-width: 60px; max-width: 9.0072e+15px; text-align: left;"><div class="min-w-0 pt-1.5"><div class="flex items-center gap-1">2701</div></div></th><th colspan="1" class="bg-card text-muted-foreground p-2 font-semibold px-1 py-1 text-center text-xs" style="width: 150px; min-width: 60px; max-width: 9.0072e+15px; text-align: left;"><div class="min-w-0 pt-1.5"><div class="flex items-center gap-1">2702</div></div></th><th colspan="1" class="bg-card text-muted-foreground p-2 font-semibold px-1 py-1 text-center text-xs" style="width: 150px; min-width: 60px; max-width: 9.0072e+15px; text-align: left;"><div class="min-w-0 pt-1.5"><div class="flex items-center gap-1">2703</div></div></th><th colspan="1" class="bg-card text-muted-foreground p-2 font-semibold px-1 py-1 text-center text-xs" style="width: 150px; min-width: 60px; max-width: 9.0072e+15px; text-align: left;"><div class="min-w-0 pt-1.5"><div class="flex items-center gap-1">2704</div></div></th><th colspan="1" class="bg-card text-muted-foreground p-2 font-semibold px-1 py-1 text-center text-xs" style="width: 150px; min-width: 60px; max-width: 9.0072e+15px; text-align: left;"><div class="min-w-0 pt-1.5"><div class="flex items-center gap-1">2705</div></div></th><th colspan="1" class="bg-card text-muted-foreground p-2 font-semibold px-1 py-1 text-center text-xs" style="width: 150px; min-width: 60px; max-width: 9.0072e+15px; text-align: left;"><div class="min-w-0 pt-1.5"><div class="flex items-center gap-1">2706</div></div></th></tr></thead><tbody><tr data-index="0" class="group"><td class="p-2 transition-colors duration-150 ease-out motion-reduce:transition-none bg-card group-hover:bg-[color-mix(in_oklch,var(--accent)_80%,var(--card))] px-1 py-1 text-center text-xs" style="width: 150px; min-width: 50px; max-width: 9.0072e+15px; position: sticky; left: 0px; z-index: 10; text-align: left;">现值</td><td class="p-2 transition-colors duration-150 ease-out motion-reduce:transition-none bg-card group-hover:bg-[color-mix(in_oklch,var(--accent)_80%,var(--card))] px-1 py-1 text-center text-xs" style="width: 150px; min-width: 60px; max-width: 9.0072e+15px; text-align: left;"><span>16022.5</span></td><td class="p-2 transition-colors duration-150 ease-out motion-reduce:transition-none bg-card group-hover:bg-[color-mix(in_oklch,var(--accent)_80%,var(--card))] px-1 py-1 text-center text-xs" style="width: 150px; min-width: 60px; max-width: 9.0072e+15px; text-align: left;"><span>15570</span></td><td class="p-2 transition-colors duration-150 ease-out motion-reduce:transition-none bg-card group-hover:bg-[color-mix(in_oklch,var(--accent)_80%,var(--card))] px-1 py-1 text-center text-xs" style="width: 150px; min-width: 60px; max-width: 9.0072e+15px; text-align: left;"><span>15442.5</span></td><td class="p-2 transition-colors duration-150 ease-out motion-reduce:transition-none bg-card group-hover:bg-[color-mix(in_oklch,var(--accent)_80%,var(--card))] px-1 py-1 text-center text-xs" style="width: 150px; min-width: 60px; max-width: 9.0072e+15px; text-align: left;"><span>15257.5</span></td><td class="p-2 transition-colors duration-150 ease-out motion-reduce:transition-none bg-card group-hover:bg-[color-mix(in_oklch,var(--accent)_80%,var(--card))] px-1 py-1 text-center text-xs" style="width: 150px; min-width: 60px; max-width: 9.0072e+15px; text-align: left;"><span>15140</span></td><td class="p-2 transition-colors duration-150 ease-out motion-reduce:transition-none bg-card group-hover:bg-[color-mix(in_oklch,var(--accent)_80%,var(--card))] px-1 py-1 text-center text-xs" style="width: 150px; min-width: 60px; max-width: 9.0072e+15px; text-align: left;"><span>15035</span></td><td class="p-2 transition-colors duration-150 ease-out motion-reduce:transition-none bg-card group-hover:bg-[color-mix(in_oklch,var(--accent)_80%,var(--card))] px-1 py-1 text-center text-xs" style="width: 150px; min-width: 60px; max-width: 9.0072e+15px; text-align: left;"><span>14845</span></td><td class="p-2 transition-colors duration-150 ease-out motion-reduce:transition-none bg-card group-hover:bg-[color-mix(in_oklch,var(--accent)_80%,var(--card))] px-1 py-1 text-center text-xs" style="width: 150px; min-width: 60px; max-width: 9.0072e+15px; text-align: left;"><span>14717.5</span></td><td class="p-2 transition-colors duration-150 ease-out motion-reduce:transition-none bg-card group-hover:bg-[color-mix(in_oklch,var(--accent)_80%,var(--card))] px-1 py-1 text-center text-xs" style="width: 150px; min-width: 60px; max-width: 9.0072e+15px; text-align: left;"><span>14922.5</span></td><td class="p-2 transition-colors duration-150 ease-out motion-reduce:transition-none bg-card group-hover:bg-[color-mix(in_oklch,var(--accent)_80%,var(--card))] px-1 py-1 text-center text-xs" style="width: 150px; min-width: 60px; max-width: 9.0072e+15px; text-align: left;"><span>14652.5</span></td></tr><tr data-index="1" class="group"><td class="p-2 transition-colors duration-150 ease-out motion-reduce:transition-none bg-card group-hover:bg-[color-mix(in_oklch,var(--accent)_80%,var(--card))] px-1 py-1 text-center text-xs" style="width: 150px; min-width: 50px; max-width: 9.0072e+15px; position: sticky; left: 0px; z-index: 10; text-align: left;">涨幅</td><td class="p-2 transition-colors duration-150 ease-out motion-reduce:transition-none bg-card group-hover:bg-[color-mix(in_oklch,var(--accent)_80%,var(--card))] px-1 py-1 text-center text-xs" style="width: 150px; min-width: 60px; max-width: 9.0072e+15px; text-align: left;"><span style="color: var(--vlab-red);">+1.41%</span></td><td class="p-2 transition-colors duration-150 ease-out motion-reduce:transition-none bg-card group-hover:bg-[color-mix(in_oklch,var(--accent)_80%,var(--card))] px-1 py-1 text-center text-xs" style="width: 150px; min-width: 60px; max-width: 9.0072e+15px; text-align: left;"><span style="color: var(--vlab-green);">-0.22%</span></td><td class="p-2 transition-colors duration-150 ease-out motion-reduce:transition-none bg-card group-hover:bg-[color-mix(in_oklch,var(--accent)_80%,var(--card))] px-1 py-1 text-center text-xs" style="width: 150px; min-width: 60px; max-width: 9.0072e+15px; text-align: left;"><span style="color: var(--vlab-green);">-0.08%</span></td><td class="p-2 transition-colors duration-150 ease-out motion-reduce:transition-none bg-card group-hover:bg-[color-mix(in_oklch,var(--accent)_80%,var(--card))] px-1 py-1 text-center text-xs" style="width: 150px; min-width: 60px; max-width: 9.0072e+15px; text-align: left;"><span style="color: var(--vlab-red);">+0.18%</span></td><td class="p-2 transition-colors duration-150 ease-out motion-reduce:transition-none bg-card group-hover:bg-[color-mix(in_oklch,var(--accent)_80%,var(--card))] px-1 py-1 text-center text-xs" style="width: 150px; min-width: 60px; max-width: 9.0072e+15px; text-align: left;"><span style="color: var(--vlab-red);">+0.17%</span></td><td class="p-2 transition-colors duration-150 ease-out motion-reduce:transition-none bg-card group-hover:bg-[color-mix(in_oklch,var(--accent)_80%,var(--card))] px-1 py-1 text-center text-xs" style="width: 150px; min-width: 60px; max-width: 9.0072e+15px; text-align: left;"><span style="color: var(--vlab-red);">+0.43%</span></td><td class="p-2 transition-colors duration-150 ease-out motion-reduce:transition-none bg-card group-hover:bg-[color-mix(in_oklch,var(--accent)_80%,var(--card))] px-1 py-1 text-center text-xs" style="width: 150px; min-width: 60px; max-width: 9.0072e+15px; text-align: left;"><span style="color: var(--vlab-red);">+0.41%</span></td><td class="p-2 transition-colors duration-150 ease-out motion-reduce:transition-none bg-card group-hover:bg-[color-mix(in_oklch,var(--accent)_80%,var(--card))] px-1 py-1 text-center text-xs" style="width: 150px; min-width: 60px; max-width: 9.0072e+15px; text-align: left;"><span style="color: var(--vlab-green);">-0.56%</span></td><td class="p-2 transition-colors duration-150 ease-out motion-reduce:transition-none bg-card group-hover:bg-[color-mix(in_oklch,var(--accent)_80%,var(--card))] px-1 py-1 text-center text-xs" style="width: 150px; min-width: 60px; max-width: 9.0072e+15px; text-align: left;"><span style="color: var(--vlab-red);">+1.34%</span></td><td class="p-2 transition-colors duration-150 ease-out motion-reduce:transition-none bg-card group-hover:bg-[color-mix(in_oklch,var(--accent)_80%,var(--card))] px-1 py-1 text-center text-xs" style="width: 150px; min-width: 60px; max-width: 9.0072e+15px; text-align: left;"><span style="color: var(--vlab-green);">-0.22%</span></td></tr></tbody></table></div></div></div><div class="flex min-h-[150px] flex-1"><div _echarts_instance_="ec_1788839662224" style="width: 100%; height: 100%; min-height: 150px; position: relative; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><div style="position: relative; width: 321px; height: 150px; padding: 0px; margin: 0px; border-width: 0px;"><canvas data-zr-dom-id="zr_0.0" width="481" height="225" style="position: absolute; left: 0px; top: 0px; width: 321px; height: 150px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas><div style="position: absolute !important; visibility: hidden !important; padding: 0px !important; margin: 0px !important; border-width: 0px !important; user-select: none !important; width: 0px !important; height: 0px !important; inset: 0px auto auto 0px !important;"></div><div style="position: absolute !important; visibility: hidden !important; padding: 0px !important; margin: 0px !important; border-width: 0px !important; user-select: none !important; width: 0px !important; height: 0px !important; inset: 0px 0px auto auto !important;"></div><div style="position: absolute !important; visibility: hidden !important; padding: 0px !important; margin: 0px !important; border-width: 0px !important; user-select: none !important; width: 0px !important; height: 0px !important; inset: auto auto 0px 0px !important;"></div><div style="position: absolute !important; visibility: hidden !important; padding: 0px !important; margin: 0px !important; border-width: 0px !important; user-select: none !important; width: 0px !important; height: 0px !important; inset: auto 0px 0px auto !important;"></div></div></div></div></div></div><div data-slot="card" class="bg-card text-card-foreground rounded-xl border flex flex-col gap-2 py-2 shadow-sm"><div data-slot="card-header" class="@container/card-header auto-rows-min grid-rows-[auto_auto] gap-2 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6 flex flex-row items-center px-2"><div data-slot="card-title" class="leading-none flex items-center font-semibold md:text-base"><span class="inline-flex items-center justify-center gap-1" data-state="closed" data-slot="tooltip-trigger" aria-label="Toggle tooltip"><span>平值隐波</span><span class="inline-flex flex-shrink-0 items-center justify-center h-4 w-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-question-mark h-4 w-4" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><path d="M12 17h.01"></path></svg></span></span></div></div><div data-slot="card-content" class="flex flex-col px-2"><div class="mb-1"><div class="bg-card flex w-full min-w-0 flex-col min-h-[50px] [&amp;>div]:overscroll-y-auto!"><div data-slot="table-container" class="scrollbar-thin relative min-h-0 min-w-0 flex-1 overflow-auto" style="overscroll-behavior: none;"><table style="width: 100%; min-width: 100%; contain: paint; border-collapse: separate; border-spacing: 0px; table-layout: auto;"><thead><tr><th colspan="1" class="text-muted-foreground p-2 font-semibold bg-card px-1 py-1 text-center text-xs" style="width: 150px; min-width: 50px; max-width: 9.0072e+15px; position: sticky; left: 0px; z-index: 30; text-align: left;"><div class="min-w-0 pt-1.5"><div class="flex items-center gap-1">指标</div></div></th><th colspan="1" class="bg-card text-muted-foreground p-2 font-semibold px-1 py-1 text-center text-xs" style="width: 150px; min-width: 60px; max-width: 9.0072e+15px; text-align: left;"><div class="min-w-0 pt-1.5"><div class="flex items-center gap-1">2610</div></div></th><th colspan="1" class="bg-card text-muted-foreground p-2 font-semibold px-1 py-1 text-center text-xs" style="width: 150px; min-width: 60px; max-width: 9.0072e+15px; text-align: left;"><div class="min-w-0 pt-1.5"><div class="flex items-center gap-1">2611</div></div></th></tr></thead><tbody><tr data-index="0" class="group"><td class="p-2 transition-colors duration-150 ease-out motion-reduce:transition-none bg-card group-hover:bg-[color-mix(in_oklch,var(--accent)_80%,var(--card))] px-1 py-1 text-center text-xs" style="width: 150px; min-width: 50px; max-width: 9.0072e+15px; position: sticky; left: 0px; z-index: 10; text-align: left;">现值</td><td class="p-2 transition-colors duration-150 ease-out motion-reduce:transition-none bg-card group-hover:bg-[color-mix(in_oklch,var(--accent)_80%,var(--card))] px-1 py-1 text-center text-xs" style="width: 150px; min-width: 60px; max-width: 9.0072e+15px; text-align: left;"><span>44.91</span></td><td class="p-2 transition-colors duration-150 ease-out motion-reduce:transition-none bg-card group-hover:bg-[color-mix(in_oklch,var(--accent)_80%,var(--card))] px-1 py-1 text-center text-xs" style="width: 150px; min-width: 60px; max-width: 9.0072e+15px; text-align: left;"><span>40.72</span></td></tr><tr data-index="1" class="group"><td class="p-2 transition-colors duration-150 ease-out motion-reduce:transition-none bg-card group-hover:bg-[color-mix(in_oklch,var(--accent)_80%,var(--card))] px-1 py-1 text-center text-xs" style="width: 150px; min-width: 50px; max-width: 9.0072e+15px; position: sticky; left: 0px; z-index: 10; text-align: left;">日差</td><td class="p-2 transition-colors duration-150 ease-out motion-reduce:transition-none bg-card group-hover:bg-[color-mix(in_oklch,var(--accent)_80%,var(--card))] px-1 py-1 text-center text-xs" style="width: 150px; min-width: 60px; max-width: 9.0072e+15px; text-align: left;"><span style="color: var(--vlab-green);">-3.19</span></td><td class="p-2 transition-colors duration-150 ease-out motion-reduce:transition-none bg-card group-hover:bg-[color-mix(in_oklch,var(--accent)_80%,var(--card))] px-1 py-1 text-center text-xs" style="width: 150px; min-width: 60px; max-width: 9.0072e+15px; text-align: left;"><span style="color: var(--vlab-green);">-1.7</span></td></tr></tbody></table></div></div></div><div class="flex min-h-[150px] flex-1"><div _echarts_instance_="ec_1788839662225" style="width: 100%; height: 100%; min-height: 150px; position: relative; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><div style="position: relative; width: 321px; height: 150px; padding: 0px; margin: 0px; border-width: 0px;"><canvas data-zr-dom-id="zr_0.0" width="481" height="225" style="position: absolute; left: 0px; top: 0px; width: 321px; height: 150px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas><div style="position: absolute !important; visibility: hidden !important; padding: 0px !important; margin: 0px !important; border-width: 0px !important; user-select: none !important; width: 0px !important; height: 0px !important; inset: 0px auto auto 0px !important;"></div><div style="position: absolute !important; visibility: hidden !important; padding: 0px !important; margin: 0px !important; border-width: 0px !important; user-select: none !important; width: 0px !important; height: 0px !important; inset: 0px 0px auto auto !important;"></div><div style="position: absolute !important; visibility: hidden !important; padding: 0px !important; margin: 0px !important; border-width: 0px !important; user-select: none !important; width: 0px !important; height: 0px !important; inset: auto auto 0px 0px !important;"></div><div style="position: absolute !important; visibility: hidden !important; padding: 0px !important; margin: 0px !important; border-width: 0px !important; user-select: none !important; width: 0px !important; height: 0px !important; inset: auto 0px 0px auto !important;"></div></div></div></div></div></div><div data-slot="card" class="bg-card text-card-foreground rounded-xl border flex flex-col gap-2 py-2 shadow-sm"><div data-slot="card-header" class="@container/card-header auto-rows-min grid-rows-[auto_auto] gap-2 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6 flex flex-row items-center px-2"><div data-slot="card-title" class="leading-none flex items-center font-semibold md:text-base"><span class="inline-flex items-center justify-center gap-1" data-state="closed" data-slot="tooltip-trigger" aria-label="Toggle tooltip"><span>偏度</span><span class="inline-flex flex-shrink-0 items-center justify-center h-4 w-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-question-mark h-4 w-4" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><path d="M12 17h.01"></path></svg></span></span></div></div><div data-slot="card-content" class="flex flex-col px-2"><div class="mb-1"><div class="bg-card flex w-full min-w-0 flex-col min-h-[50px] [&amp;>div]:overscroll-y-auto!"><div data-slot="table-container" class="scrollbar-thin relative min-h-0 min-w-0 flex-1 overflow-auto" style="overscroll-behavior: none;"><table style="width: 100%; min-width: 100%; contain: paint; border-collapse: separate; border-spacing: 0px; table-layout: auto;"><thead><tr><th colspan="1" class="text-muted-foreground p-2 font-semibold bg-card px-1 py-1 text-center text-xs" style="width: 150px; min-width: 50px; max-width: 9.0072e+15px; position: sticky; left: 0px; z-index: 30; text-align: left;"><div class="min-w-0 pt-1.5"><div class="flex items-center gap-1">指标</div></div></th><th colspan="1" class="bg-card text-muted-foreground p-2 font-semibold px-1 py-1 text-center text-xs" style="width: 150px; min-width: 60px; max-width: 9.0072e+15px; text-align: left;"><div class="min-w-0 pt-1.5"><div class="flex items-center gap-1">2610</div></div></th><th colspan="1" class="bg-card text-muted-foreground p-2 font-semibold px-1 py-1 text-center text-xs" style="width: 150px; min-width: 60px; max-width: 9.0072e+15px; text-align: left;"><div class="min-w-0 pt-1.5"><div class="flex items-center gap-1">2611</div></div></th></tr></thead><tbody><tr data-index="0" class="group"><td class="p-2 transition-colors duration-150 ease-out motion-reduce:transition-none bg-card group-hover:bg-[color-mix(in_oklch,var(--accent)_80%,var(--card))] px-1 py-1 text-center text-xs" style="width: 150px; min-width: 50px; max-width: 9.0072e+15px; position: sticky; left: 0px; z-index: 10; text-align: left;">现值</td><td class="p-2 transition-colors duration-150 ease-out motion-reduce:transition-none bg-card group-hover:bg-[color-mix(in_oklch,var(--accent)_80%,var(--card))] px-1 py-1 text-center text-xs" style="width: 150px; min-width: 60px; max-width: 9.0072e+15px; text-align: left;"><span>2.22</span></td><td class="p-2 transition-colors duration-150 ease-out motion-reduce:transition-none bg-card group-hover:bg-[color-mix(in_oklch,var(--accent)_80%,var(--card))] px-1 py-1 text-center text-xs" style="width: 150px; min-width: 60px; max-width: 9.0072e+15px; text-align: left;"><span>0.35</span></td></tr><tr data-index="1" class="group"><td class="p-2 transition-colors duration-150 ease-out motion-reduce:transition-none bg-card group-hover:bg-[color-mix(in_oklch,var(--accent)_80%,var(--card))] px-1 py-1 text-center text-xs" style="width: 150px; min-width: 50px; max-width: 9.0072e+15px; position: sticky; left: 0px; z-index: 10; text-align: left;">日差</td><td class="p-2 transition-colors duration-150 ease-out motion-reduce:transition-none bg-card group-hover:bg-[color-mix(in_oklch,var(--accent)_80%,var(--card))] px-1 py-1 text-center text-xs" style="width: 150px; min-width: 60px; max-width: 9.0072e+15px; text-align: left;"><span style="color: var(--vlab-red);">0.77</span></td><td class="p-2 transition-colors duration-150 ease-out motion-reduce:transition-none bg-card group-hover:bg-[color-mix(in_oklch,var(--accent)_80%,var(--card))] px-1 py-1 text-center text-xs" style="width: 150px; min-width: 60px; max-width: 9.0072e+15px; text-align: left;"><span style="color: var(--vlab-green);">-0.16</span></td></tr></tbody></table></div></div></div><div class="flex min-h-[150px] flex-1"><div _echarts_instance_="ec_1788839662226" style="width: 100%; height: 100%; min-height: 150px; position: relative; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><div style="position: relative; width: 321px; height: 150px; padding: 0px; margin: 0px; border-width: 0px;"><canvas data-zr-dom-id="zr_0.0" width="481" height="225" style="position: absolute; left: 0px; top: 0px; width: 321px; height: 150px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas><div style="position: absolute !important; visibility: hidden !important; padding: 0px !important; margin: 0px !important; border-width: 0px !important; user-select: none !important; width: 0px !important; height: 0px !important; inset: 0px auto auto 0px !important;"></div><div style="position: absolute !important; visibility: hidden !important; padding: 0px !important; margin: 0px !important; border-width: 0px !important; user-select: none !important; width: 0px !important; height: 0px !important; inset: 0px 0px auto auto !important;"></div><div style="position: absolute !important; visibility: hidden !important; padding: 0px !important; margin: 0px !important; border-width: 0px !important; user-select: none !important; width: 0px !important; height: 0px !important; inset: auto auto 0px 0px !important;"></div><div style="position: absolute !important; visibility: hidden !important; padding: 0px !important; margin: 0px !important; border-width: 0px !important; user-select: none !important; width: 0px !important; height: 0px !important; inset: auto 0px 0px auto !important;"></div></div></div></div></div></div></div></aside><div class="w-full md:h-full md:min-h-0 md:flex-1"><main class="grid h-full w-full flex-1 grid-cols-1 gap-2 md:min-h-[500px] md:grid-rows-2 md:grid-cols-2"><style>
+.pro-feature-lock-marquee {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  /* 四层动态边线 + 一层静态底色，用来保留按钮原本的浅金色表面。 */
+  background-image:
+    linear-gradient(90deg, transparent 0%, rgba(251, 191, 36, 0.95) 50%, transparent 100%),
+    linear-gradient(180deg, transparent 0%, rgba(251, 191, 36, 0.95) 50%, transparent 100%),
+    linear-gradient(270deg, transparent 0%, rgba(251, 191, 36, 0.95) 50%, transparent 100%),
+    linear-gradient(0deg, transparent 0%, rgba(251, 191, 36, 0.95) 50%, transparent 100%),
+    linear-gradient(#fffbeb, #fffbeb);
+  background-repeat: no-repeat;
+  /* 横向光段覆盖部分边框长度，纵向光段覆盖部分侧边高度。 */
+  background-size:
+    42% 1px,
+    1px 58%,
+    42% 1px,
+    1px 58%,
+    100% 100%;
+  background-position:
+    -42% 0,
+    100% -58%,
+    142% 100%,
+    0 158%,
+    0 0;
+}
+
+.pro-feature-lock-marquee:hover {
+  background-image:
+    linear-gradient(90deg, transparent 0%, rgba(251, 191, 36, 0.95) 50%, transparent 100%),
+    linear-gradient(180deg, transparent 0%, rgba(251, 191, 36, 0.95) 50%, transparent 100%),
+    linear-gradient(270deg, transparent 0%, rgba(251, 191, 36, 0.95) 50%, transparent 100%),
+    linear-gradient(0deg, transparent 0%, rgba(251, 191, 36, 0.95) 50%, transparent 100%),
+    linear-gradient(#fef3c7, #fef3c7);
+}
+
+.dark .pro-feature-lock-marquee {
+  background-image:
+    linear-gradient(90deg, transparent 0%, rgba(251, 191, 36, 0.95) 50%, transparent 100%),
+    linear-gradient(180deg, transparent 0%, rgba(251, 191, 36, 0.95) 50%, transparent 100%),
+    linear-gradient(270deg, transparent 0%, rgba(251, 191, 36, 0.95) 50%, transparent 100%),
+    linear-gradient(0deg, transparent 0%, rgba(251, 191, 36, 0.95) 50%, transparent 100%),
+    linear-gradient(rgba(252, 211, 77, 0.1), rgba(252, 211, 77, 0.1));
+}
+
+.dark .pro-feature-lock-marquee:hover {
+  background-image:
+    linear-gradient(90deg, transparent 0%, rgba(251, 191, 36, 0.95) 50%, transparent 100%),
+    linear-gradient(180deg, transparent 0%, rgba(251, 191, 36, 0.95) 50%, transparent 100%),
+    linear-gradient(270deg, transparent 0%, rgba(251, 191, 36, 0.95) 50%, transparent 100%),
+    linear-gradient(0deg, transparent 0%, rgba(251, 191, 36, 0.95) 50%, transparent 100%),
+    linear-gradient(rgba(252, 211, 77, 0.15), rgba(252, 211, 77, 0.15));
+}
+
+.pro-feature-lock-marquee > * {
+  position: relative;
+  z-index: 1;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .pro-feature-lock-marquee {
+    animation: pro-feature-lock-marquee 3.6s linear infinite;
+  }
+}
+
+@keyframes pro-feature-lock-marquee {
+  /* 顶部：横线从左到右。 */
+  0% {
+    background-position:
+      -42% 0,
+      100% -58%,
+      142% 100%,
+      0 158%,
+      0 0;
+  }
+  /* 右侧：竖线从上到下。 */
+  25% {
+    background-position:
+      142% 0,
+      100% -58%,
+      142% 100%,
+      0 158%,
+      0 0;
+  }
+  /* 底部：横线从右到左。 */
+  50% {
+    background-position:
+      142% 0,
+      100% 158%,
+      142% 100%,
+      0 158%,
+      0 0;
+  }
+  /* 左侧：竖线从下到上开始移动。 */
+  75% {
+    background-position:
+      142% 0,
+      100% 158%,
+      -42% 100%,
+      0 158%,
+      0 0;
+  }
+  /* 左侧：竖线完成从下到上的移动，闭环回到起点。 */
+  100% {
+    background-position:
+      142% 0,
+      100% 158%,
+      -42% 100%,
+      0 -58%,
+      0 0;
+  }
+}
+</style><div class="relative flex h-full w-full min-w-0 flex-col transition-all duration-200 border border-transparent bg-card rounded-lg p-2 font-medium shadow-sm md:rounded-2xl md:p-3"><div class="grid w-full min-w-0 grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] items-center gap-0.5 md:p-1"><div class="flex min-w-0 flex-1 overflow-hidden text-xs"><div class="flex flex-col"><a href="/chart/light/BR202610" title="点击跳转行情页面"><p class="truncate">2610</p></a><span class="text-muted-foreground block text-xs">15天</span></div></div><div class="flex shrink-0 flex-col items-center" title="合成标的"><span class="text-xs font-medium text-(--vlab-future)">15576.4</span><span class="ml-1 text-xs" style="color: var(--vlab-green);">(-0.13%)</span></div><div class="flex shrink-0 items-center justify-self-end"><div class="flex flex-col items-center text-xs" title="今日波动率"><span class="text-[var(--vlab-iv)]">44.91</span><span class="ml-1" style="color: var(--vlab-green);">(-3.18)</span></div><div class="flex items-center"><button data-slot="button" data-variant="ghost" data-size="sm" class="group/button inline-flex shrink-0 items-center justify-center border border-transparent bg-clip-padding font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50 gap-1 rounded-[min(var(--radius-md),12px)] text-[0.8rem] in-data-[slot=button-group]:rounded-lg has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 [&amp;_svg:not([class*='size-'])]:size-3.5 h-6 w-6 p-0" title="展开图表"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--lucide inline-block text-muted-foreground hover:text-foreground h-3 w-3 transition-colors" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 15l6 6M15 9l6-6m0 13v5h-5m5-13V3h-5M3 16v5h5m-5 0l6-6M3 8V3h5m1 6L3 3"></path></svg></button></div></div></div><div class="min-h-0 min-w-0 flex-1"><div class="relative h-full min-h-0 w-full min-w-0"><div class="min-h-0 min-w-0 h-full w-full" _echarts_instance_="ec_1788839662227" style="min-height: 180px; position: relative; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><div style="position: relative; width: 472px; height: 307px; padding: 0px; margin: 0px; border-width: 0px;"><canvas data-zr-dom-id="zr_0.0" width="708" height="460" style="position: absolute; left: 0px; top: 0px; width: 472px; height: 307px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas><div style="position: absolute !important; visibility: hidden !important; padding: 0px !important; margin: 0px !important; border-width: 0px !important; user-select: none !important; width: 0px !important; height: 0px !important; inset: 0px auto auto 0px !important;"></div><div style="position: absolute !important; visibility: hidden !important; padding: 0px !important; margin: 0px !important; border-width: 0px !important; user-select: none !important; width: 0px !important; height: 0px !important; inset: 0px 0px auto auto !important;"></div><div style="position: absolute !important; visibility: hidden !important; padding: 0px !important; margin: 0px !important; border-width: 0px !important; user-select: none !important; width: 0px !important; height: 0px !important; inset: auto auto 0px 0px !important;"></div><div style="position: absolute !important; visibility: hidden !important; padding: 0px !important; margin: 0px !important; border-width: 0px !important; user-select: none !important; width: 0px !important; height: 0px !important; inset: auto 0px 0px auto !important;"></div></div></div></div></div></div><div class="relative rounded-lg border border-amber-200/80 bg-amber-50/45 p-px shadow-[inset_0_0_0_1px_rgba(245,158,11,0.06),0_8px_24px_rgba(245,158,11,0.10)] transition-[border-color,background-color,box-shadow] duration-200 hover:border-amber-300/80 hover:bg-amber-50/60 hover:shadow-[inset_0_0_0_1px_rgba(245,158,11,0.08),0_10px_28px_rgba(245,158,11,0.14)] focus-visible:ring-2 focus-visible:ring-amber-300/60 md:rounded-2xl dark:border-amber-300/20 dark:bg-amber-300/8 dark:shadow-[inset_0_0_0_1px_rgba(251,191,36,0.08),0_0_12px_rgba(251,191,36,0.12)] dark:hover:bg-amber-300/12 min-h-[260px] font-medium md:min-h-0"><div class="bg-card relative h-full overflow-hidden rounded-[calc(0.5rem-1px)] md:rounded-[calc(1rem-1px)] min-h-[258px] md:min-h-0"><div class="pointer-events-none absolute inset-0 opacity-55 blur-[5px] saturate-50"><div class="relative flex w-full min-w-0 flex-col transition-all duration-200 border border-transparent bg-card h-full rounded-lg p-2 md:rounded-2xl md:p-3"><div class="grid w-full min-w-0 grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] items-center gap-0.5 md:p-1"><div class="flex min-w-0 flex-1 overflow-hidden text-xs"><div class="flex items-center mr-2" data-state="closed" data-slot="tooltip-trigger"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--emojione-v1 inline-block h-3.5 w-3.5 text-amber-400" width="24" height="24" viewBox="0 0 64 64"><path fill="#ffdd15" d="M63.37 53.52Q49.287 27.795 35.2 2.07a3.687 3.687 0 0 0-6.522 0C19.289 19.22 9.892 36.37.508 53.52c-1.453 2.649.399 6.083 3.258 6.083h56.35c1.584 0 2.648-.853 3.203-2.01c.698-1.102.885-2.565.055-4.075"></path><path fill="#1f2e35" d="m28.917 34.477l-.889-13.262q-.247-3.875-.246-5.565c0-1.534.4-2.727 1.202-3.588q1.207-1.285 3.175-1.286c1.583 0 2.646.551 3.178 1.646q.807 1.652.809 4.751q0 1.824-.198 3.708l-1.19 13.649q-.193 2.439-.827 3.739c-.426.871-1.128 1.301-2.109 1.301c-.992 0-1.69-.419-2.072-1.257c-.393-.841-.668-2.12-.833-3.836m3.072 18.217q-1.687.002-2.947-1.093q-1.26-1.093-1.26-3.058c0-1.143.4-2.12 1.202-2.921c.805-.806 1.786-1.206 2.951-1.206s2.153.4 2.977 1.206c.815.801 1.234 1.778 1.234 2.921c0 1.29-.419 2.308-1.246 3.044a4.25 4.25 0 0 1-2.911 1.107"></path></svg></div><div class="flex flex-col"><a href="/chart/light/BR202611" title="点击跳转行情页面"><p class="truncate">2611</p></a><span class="text-muted-foreground block text-xs">48天</span></div></div><div class="flex shrink-0 flex-col items-center" title="合成标的"><span class="text-xs font-medium text-(--vlab-future)">15434</span><span class="ml-1 text-xs" style="color: var(--vlab-green);">(-0.06%)</span></div><div class="flex shrink-0 items-center justify-self-end"><div class="flex flex-col items-center text-xs" title="今日波动率"><span class="text-[var(--vlab-iv)]">40.72</span><span class="ml-1" style="color: var(--vlab-green);">(-1.7)</span></div></div></div><div class="min-h-0 min-w-0 flex-1"><div class="relative h-full min-h-0 w-full min-w-0"><div class="min-h-0 min-w-0 h-full w-full" _echarts_instance_="ec_1788839662228" style="min-height: 180px; position: relative; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><div style="position: relative; width: 468px; height: 304px; padding: 0px; margin: 0px; border-width: 0px;"><canvas data-zr-dom-id="zr_0.0" width="702" height="456" style="position: absolute; left: 0px; top: 0px; width: 468px; height: 304px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; border-width: 0px;"></canvas><div style="position: absolute !important; visibility: hidden !important; padding: 0px !important; margin: 0px !important; border-width: 0px !important; user-select: none !important; width: 0px !important; height: 0px !important; inset: 0px auto auto 0px !important;"></div><div style="position: absolute !important; visibility: hidden !important; padding: 0px !important; margin: 0px !important; border-width: 0px !important; user-select: none !important; width: 0px !important; height: 0px !important; inset: 0px 0px auto auto !important;"></div><div style="position: absolute !important; visibility: hidden !important; padding: 0px !important; margin: 0px !important; border-width: 0px !important; user-select: none !important; width: 0px !important; height: 0px !important; inset: auto auto 0px 0px !important;"></div><div style="position: absolute !important; visibility: hidden !important; padding: 0px !important; margin: 0px !important; border-width: 0px !important; user-select: none !important; width: 0px !important; height: 0px !important; inset: auto 0px 0px auto !important;"></div></div></div></div></div></div></div><div class="from-background/12 via-background/5 to-background/18 absolute inset-0 bg-gradient-to-b backdrop-blur-[0.75px]"></div><style>
+.pro-feature-lock-marquee {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  /* 四层动态边线 + 一层静态底色，用来保留按钮原本的浅金色表面。 */
+  background-image:
+    linear-gradient(90deg, transparent 0%, rgba(251, 191, 36, 0.95) 50%, transparent 100%),
+    linear-gradient(180deg, transparent 0%, rgba(251, 191, 36, 0.95) 50%, transparent 100%),
+    linear-gradient(270deg, transparent 0%, rgba(251, 191, 36, 0.95) 50%, transparent 100%),
+    linear-gradient(0deg, transparent 0%, rgba(251, 191, 36, 0.95) 50%, transparent 100%),
+    linear-gradient(#fffbeb, #fffbeb);
+  background-repeat: no-repeat;
+  /* 横向光段覆盖部分边框长度，纵向光段覆盖部分侧边高度。 */
+  background-size:
+    42% 1px,
+    1px 58%,
+    42% 1px,
+    1px 58%,
+    100% 100%;
+  background-position:
+    -42% 0,
+    100% -58%,
+    142% 100%,
+    0 158%,
+    0 0;
+}
+
+.pro-feature-lock-marquee:hover {
+  background-image:
+    linear-gradient(90deg, transparent 0%, rgba(251, 191, 36, 0.95) 50%, transparent 100%),
+    linear-gradient(180deg, transparent 0%, rgba(251, 191, 36, 0.95) 50%, transparent 100%),
+    linear-gradient(270deg, transparent 0%, rgba(251, 191, 36, 0.95) 50%, transparent 100%),
+    linear-gradient(0deg, transparent 0%, rgba(251, 191, 36, 0.95) 50%, transparent 100%),
+    linear-gradient(#fef3c7, #fef3c7);
+}
+
+.dark .pro-feature-lock-marquee {
+  background-image:
+    linear-gradient(90deg, transparent 0%, rgba(251, 191, 36, 0.95) 50%, transparent 100%),
+    linear-gradient(180deg, transparent 0%, rgba(251, 191, 36, 0.95) 50%, transparent 100%),
+    linear-gradient(270deg, transparent 0%, rgba(251, 191, 36, 0.95) 50%, transparent 100%),
+    linear-gradient(0deg, transparent 0%, rgba(251, 191, 36, 0.95) 50%, transparent 100%),
+    linear-gradient(rgba(252, 211, 77, 0.1), rgba(252, 211, 77, 0.1));
+}
+
+.dark .pro-feature-lock-marquee:hover {
+  background-image:
+    linear-gradient(90deg, transparent 0%, rgba(251, 191, 36, 0.95) 50%, transparent 100%),
+    linear-gradient(180deg, transparent 0%, rgba(251, 191, 36, 0.95) 50%, transparent 100%),
+    linear-gradient(270deg, transparent 0%, rgba(251, 191, 36, 0.95) 50%, transparent 100%),
+    linear-gradient(0deg, transparent 0%, rgba(251, 191, 36, 0.95) 50%, transparent 100%),
+    linear-gradient(rgba(252, 211, 77, 0.15), rgba(252, 211, 77, 0.15));
+}
+
+.pro-feature-lock-marquee > * {
+  position: relative;
+  z-index: 1;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .pro-feature-lock-marquee {
+    animation: pro-feature-lock-marquee 3.6s linear infinite;
+  }
+}
+
+@keyframes pro-feature-lock-marquee {
+  /* 顶部：横线从左到右。 */
+  0% {
+    background-position:
+      -42% 0,
+      100% -58%,
+      142% 100%,
+      0 158%,
+      0 0;
+  }
+  /* 右侧：竖线从上到下。 */
+  25% {
+    background-position:
+      142% 0,
+      100% -58%,
+      142% 100%,
+      0 158%,
+      0 0;
+  }
+  /* 底部：横线从右到左。 */
+  50% {
+    background-position:
+      142% 0,
+      100% 158%,
+      142% 100%,
+      0 158%,
+      0 0;
+  }
+  /* 左侧：竖线从下到上开始移动。 */
+  75% {
+    background-position:
+      142% 0,
+      100% 158%,
+      -42% 100%,
+      0 158%,
+      0 0;
+  }
+  /* 左侧：竖线完成从下到上的移动，闭环回到起点。 */
+  100% {
+    background-position:
+      142% 0,
+      100% 158%,
+      -42% 100%,
+      0 -58%,
+      0 0;
+  }
+}
+</style><div data-slot="popover-anchor" class="inline-flex absolute top-2 right-2 z-20"><button data-slot="button" data-variant="ghost" data-size="sm" class="group/button shrink-0 bg-clip-padding font-medium whitespace-nowrap outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50 gap-1 text-[0.8rem] in-data-[slot=button-group]:rounded-lg has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 [&amp;_svg:not([class*='size-'])]:size-3.5 inline-flex h-8 w-8 items-center justify-center rounded-full border border-amber-200/80 bg-amber-50/90 text-amber-700 shadow-sm backdrop-blur-sm transition-colors group-hover:bg-amber-100 group-hover:text-amber-800 dark:border-amber-300/25 dark:bg-amber-300/10 dark:text-amber-100 dark:group-hover:bg-amber-300/15 p-0" type="button" aria-label="Pro 功能：完整期限图表，查看说明"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--lucide inline-block h-4 w-4" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.734H5.81a1 1 0 0 1-.957-.734L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294zM5 21h14"></path></svg></button></div></div></div></main></div></div></div></div></div></div></div></main></div></div></div><section aria-label="Notifications alt+T" tabindex="-1" aria-live="polite" aria-relevant="additions text" aria-atomic="false"></section></div>
+  
+
+<div style="position: absolute !important; visibility: hidden !important; padding: 0px !important; margin: 0px !important; border-width: 0px !important; user-select: none !important; width: 0px !important; height: 0px !important; inset: 0px auto auto 0px !important;"></div><div style="position: absolute !important; visibility: hidden !important; padding: 0px !important; margin: 0px !important; border-width: 0px !important; user-select: none !important; width: 0px !important; height: 0px !important; inset: 0px 0px auto auto !important;"></div><div style="position: absolute !important; visibility: hidden !important; padding: 0px !important; margin: 0px !important; border-width: 0px !important; user-select: none !important; width: 0px !important; height: 0px !important; inset: auto auto 0px 0px !important;"></div><div style="position: absolute !important; visibility: hidden !important; padding: 0px !important; margin: 0px !important; border-width: 0px !important; user-select: none !important; width: 0px !important; height: 0px !important; inset: auto 0px 0px auto !important;"></div><div class=""></div><div class=""></div><div class=""></div><div class=""></div><div class=""></div></body></html>

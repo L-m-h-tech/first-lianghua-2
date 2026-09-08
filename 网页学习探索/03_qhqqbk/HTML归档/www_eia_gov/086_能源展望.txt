@@ -1,0 +1,270 @@
+# 能源展望
+# URL: https://www.eia.gov/outlooks/steo/
+# fetched: 20260908_113846
+
+Skip to sub-navigation
+U.S. Energy Information Administration - EIA - Independent Statistics and Analysis
+Menu
+Statistics
+Analysis
+Tools
+Education
+News
+Search
+‹ Analysis & Projections
+Short-Term Energy Outlook 
+Release Date: August 11, 2026  | 
+ Forecast Completed: August 6, 2026  | 
+ Next Release Date: September 9, 2026 
+  | 
+ Full Report
+    |  
+ Text Only
+   |  
+ All Tables
+   |  
+ All Figures
+Glossary ›FAQS ›
+Forecasts
+Overview
+Global oil markets
+Petroleum products
+Natural gas
+Electricity, coal, and renewables
+Economy, weather, and CO2
+Data
+Figures
+Tables
+STEO Data browser
+Real Prices Viewer
+Data series changes
+Global Energy Security Data
+Supplements
+ Forecast overview
+Global oil market assumptions. We have increased our estimates of Middle East shut-in crude oil production in the coming months compared with our July forecast due to continued severe constraints on Strait of Hormuz transits, which we assume persist through August. We expect most crude oil production in the region to return to near pre-conflict averages in early 2027; however, we expect ongoing disruptions of about 0.6 million barrels per day to continue through the end of next year.
+Global oil prices. Based on our updated assumption, reduced oil shipments through the Strait of Hormuz lower global oil inventories further in the coming months and keep crude oil prices near levels from the first week of August. We now forecast the Brent crude oil spot price to average around $85 per barrel (b) in the third quarter of 2026 (3Q26). As inventories rebuild, with most production expected to recover by early 2027, we expect the Brent spot price to gradually fall to an average of $69/b in 2027. 
+Crude oil inventories. We expect U.S. commercial crude oil inventories to remain below the five-year (2021–2025) low through the end of 2026. Increased crude oil exports, reduced imports, and high refinery runs since mid-April have led to consistent weekly declines in crude oil stocks. Net imports are forecast to remain below average through 2027 due to strong international demand for U.S. crude oil exports. 
+LNG exports. U.S. liquefied natural gas (LNG) exports in 3Q26 average 16.5 billion cubic feet per day in our forecast, slightly lower than in last month’s STEO, because of ongoing maintenance at Freeport LNG. Maintenance at export terminals has decreased feedgas demand, resulting in storage levels above the five-year average in the South Central region at the end of July. Mexico’s new Energia Costa Azul LNG terminal and increased use of U.S. natural gas for power generation are driving pipeline exports higher, with total U.S. natural gas exports expected to rise through 2027.
+Natural gas prices. The Henry Hub spot price is forecast to average $2.87 per million British thermal units (MMBtu) in 3Q26, down 50 cents/MMBtu compared with the July STEO. The price decline is driven by reduced LNG feedgas demand and robust natural gas production. Our forecast assumes prices will remain below $3.00/MMBtu in the coming months, driven by near record-high storage levels heading into October.
+Electricity demand. U.S. electricity generation has been rising to meet growing demand from data centers. On August 3, the Texas governor announced a pause on new data center development, and as a result, we have lowered our forecast for electricity demand in Texas. We expect electricity load in Texas will grow by 6% in 2027, in contrast to our forecast of 14% growth in the previous STEO.
+Electricity generation. New solar projects and increased use of natural gas-fired power plants are leading sources of generation growth in 2026. Solar, hydropower, and wind generation grew by 21%, 9%, and 6%, respectively, in the first half of 2026 (1H26) compared with 1H25. We expect continued growth in renewable energy capacity additions to sustain this trend through 2027. Natural gas-fired electricity generation, which increased by 2% in 1H26, is forecast to increase in 2027 as natural gas prices remain relatively low, while coal generation continues to decline due to the shift toward lower-cost natural gas.
+Coal exports. U.S. coal exports rose sharply in April and May, resulting in an upward revision of our 2026 coal exports forecast to 102 million short tons. Metallurgical coal exports increased throughout 1H26, supported by new and reopened mines, while steam coal exports fell in 1Q26 before rising in 2Q26 as global market conditions, including natural gas-to-coal switching in Europe and Asia, favored U.S. coal exporters.
+Notable Forecast Changes20262027
+The current STEO forecast was released August 11.
+ The previous STEO forecast was released July 7.
+Wholesale diesel price (dollars per gallon)$3.37$2.62
+Previous forecast$3.10$2.47
+Percentage change8.5%6.3%
+Wholesale gasoline price (dollars per gallon)$2.91$2.32
+Previous forecast$2.75$2.13
+Percentage change5.9%9.0%
+U.S. crude oil inventories (million barrels)396432
+Previous forecast433432
+Percentage change-8.6%0.0%
+Henry Hub spot price (dollars per million British thermal units)$3.44$3.31
+Previous forecast$3.67$3.49
+Percentage change-6.2%-5.1%
+You can find more information in the detailed table of forecast changes.
+ Overview 
+202420252026projected2027projected
+Brent crude oil
+(dollars per barrel)81698769
+Gasoline retail price
+(dollars per gallon)3.313.103.783.29
+U.S. crude oil production
+(million barrels per day)13.213.613.814.2
+Natural gas spot price
+(dollars per million BTU)2.193.533.443.31
+U.S. LNG exports
+(billion cubic feet per day)11.915.117.418.6
+Shares of U.S. electricity generation
+(percentage)
+Natural gas42404040
+Coal16171615
+Nuclear19181818
+Conventional hydropower6666
+Wind11111112
+Solar5789
+Other energy sources1111
+U.S. GDP
+(percentage change)2.82.12.02.4
+U.S. CO2 emissions
+(million metric tons)4,7894,9044,8184,843
+Interactive Data Viewers
+Provides custom data views of historical and forecast data
+STEO Data browser ›
+Real Prices Viewer ›
+Global Energy Security Data Tables
+August 2026
+About the Short-Term Energy Outlook
+STEO Release Schedule
+Contact STEO Experts
+Model Documentation
+Sign up for email updates
+Previous STEO Forecasts:
+Changes in Forecast from Last Month
+STEO Archives
+July 2026June 2026May 2026April 2026March 2026prior issues
+Other EIA Outlooks:
+Annual Energy Outlook
+International Energy Outlook
+About EIA
+Open Data
+Legacy
+Contact Us
+U.S. Energy Information Administration
+1000 Independence Ave., SW
+Washington, DC 20585
+Policies
+Privacy/Security
+Copyright & Reuse
+Accessibility
+Information Quality
+Freedom of Information Act (FOIA)
+Related Sites
+usa.gov
+U.S. Department of Energy
+Stay Connected
+Facebook
+X
+Youtube
+LinkedIn
+Email Updates
+RSS Feeds
+Statistics
+Analysis
+Tools
+Education
+News
+Petroleum & Other Liquids
+Crude oil, gasoline, heating oil, diesel, propane, and other liquids including biofuels and natural gas liquids.
+Natural Gas
+Exploration and reserves, storage, imports and exports, production, prices, sales.
+Electricity
+Sales, revenue and prices, power plants, fuel use, stocks, generation, trade, demand & emissions.
+Coal
+Reserves, production, prices, employment and productivity, distribution, stocks, imports and exports.
+Nuclear & Uranium
+Uranium fuel, nuclear reactors, generation, spent fuel.
+Renewable & Alternative Fuels
+Includes hydropower, solar, wind, geothermal, biomass and ethanol.
+EIA Survey Forms
+Forms EIA uses to collect energy data including descriptions, links to survey instructions, and additional information.
+Total Energy
+Comprehensive data summaries, comparisons, analysis, and projections integrated across all energy sources.
+Monthly Energy Review
+Consumption & Efficiency
+Energy use in homes, commercial buildings, manufacturing, and transportation.
+Residential Energy Consumption Survey (RECS)
+Commercial Buildings Energy Consumption Survey (CBECS)
+Manufacturing Energy Consumption Survey (MECS)
+U.S. States
+State energy information, including overviews, rankings, data, and analyses.
+International
+International energy information, including overviews, rankings, data, and analyses.
+Environment
+Greenhouse gas data, voluntary reporting, electric power plant emissions.
+U.S. Energy-Related Carbon Dioxide Emissions
+Energy-Related Carbon Dioxide Emissions at the State Level
+Analysis and Projections
+Monthly and yearly energy forecasts, analysis of energy topics, financial analysis, congressional reports.
+Short-Term Energy Outlook
+Annual Energy Outlook
+Special Reports
+Special market analysis and/or data requests.
+EIA-112 Residential Utility Disconnections
+SHIP Act
+Energy & Financial Markets: What Drives Crude Oil Prices?
+International
+International energy analyses.
+Regional Analysis Briefs
+Country Analysis Briefs
+World Oil Transit Chokepoints
+OPEC Revenue
+Global Energy Security Data
+Data Tools, Apps, & Maps
+Tools to customize searches, view specific data sets, study detailed documentation, and access time-series data.
+Open Data
+EIA's free and open data available as API, Excel add-in, bulk files, and widgets
+EIA Beta
+Come test out some of the products still in development and let us know what you think!
+Open Source Code
+EIA's open source code, available on GitHub.
+All Reports & Products
+Email Updates
+Sign up for email subscriptions to receive messages about specific EIA products
+RSS Feeds
+Subscribe to feeds for updates on EIA products including Today in Energy and What's New.
+Follow us. . .
+A-Z Index
+A |
+ B |
+ C |
+ D |
+ E |
+ F |
+ G |
+ H |
+ I |
+ J |
+ K |
+ L |
+ M |
+ N |
+ O |
+ P |
+ Q |
+ R |
+ S |
+ T |
+ U |
+ V |
+ W |
+ XYZ
+Energy Explained
+What is Energy?
+Units & Calculators
+U.S. Energy Facts
+Use of Energy
+Energy & Environment
+Petroleum
+Hydrocarbon Gas Liquids
+Natural Gas
+Coal
+Nuclear
+Electricity
+Hydrogen
+Hydropower
+Biofuels
+Biomass
+Wind
+Geothermal
+Solar
+For Teachers
+Lesson plans, science fair experiments, field trips, teacher guide, and career corner.
+Glossary
+FAQs
+Coal
+Conversion & Equivalents
+Oil/Petroleum
+Diesel
+Electricity
+Environment
+Gasoline
+General Energy
+Natural Gas
+Nuclear
+Prices
+Renewables
+What's New?
+Wholesale Electricity Market Data
+Sep 03, 2026
+Petroleum Supply Monthly
+Sep 01, 2026
+Petroleum Supply Annual
+Sep 01, 2026
+Press Room
+Press Releases
+Congressional Testimony
+Presentations
+Events

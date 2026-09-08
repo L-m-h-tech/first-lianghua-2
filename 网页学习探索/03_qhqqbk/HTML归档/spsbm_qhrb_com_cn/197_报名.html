@@ -1,0 +1,1084 @@
+<!doctype html>
+<html lang="zh">
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="Content-Language" content="zh-cn" />
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+	<!-- mobile start -->
+	<!-- <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="msapplication-tap-highlight" content="no" />
+<meta content="telephone=no" name="format-detection" /> -->
+	<!-- mobile end -->
+	<title>参赛报名</title>
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="public.css?v=20260617" />
+</head>
+
+<body>
+	<div class="bg"></div>
+	<div class="page-btn-box">
+		<input type="button" class="page-btn btn-click" id="in" onclick="clickBtnMatchType(1)" value="全国赛报名" />
+		<input type="button" class="page-btn" id="out" onclick="clickBtnMatchType(2)" value="全球赛报名" />
+		<input type="button" class="page-btn" id="qhxx" onclick="clickBtnMatchType(3)" value="期货寻星报名" />
+		<!-- <input type="button" class="page-btn" id="jmb" onclick="clickBtnMatchType(5)" value="金马杯报名" /> -->
+		<input type="button" class="page-btn" id="nzg" onclick="clickBtnMatchType(6)" value="期友会期货大赛" />
+		<!-- <input type="button" class="page-btn" id="mns" onclick="clickBtnMatchType(4)" value="模拟赛报名" /> -->
+
+	</div>
+	<!-- 全国 -->
+	<div class="content" id="in-box">
+		<form id="upForm" action="" class="form">
+			<div class="title">参赛报名</div>
+			<!-- <p class="des first-des">举办时间：2022年11月26日。因疫情防控要求，请参会者备好48小时内核酸检测证明，敬请理解！欢迎报名！</p>
+			<p class="des last-des">咨询电话：0371-65613869</p> -->
+
+			<div style="position: relative;" class="item1">
+				<p class="item-name">交易商*:</p>
+				<input type="text" id="jys-in" placeholder="" class="input1" readonly="readonly" />
+				<p class="valid-des" id="valid-jys-in" style="display:none;">请选择交易商</p>
+				<select class="jys-select" id="jys-select-in" onchange="inCompanyClick()">
+					<option value="">请选择交易商</option>
+				</select>
+			</div>
+			<div style="position: relative;" class="item1">
+				<p class="item-name">期货交易账号*:</p>
+				<input type="text" id="zjzh-in" placeholder="请输入期货交易账号" class="input1" maxlength="23"
+					onblur="zjzhInBlur()" />
+				<p class="valid-des" id="valid-zjzh-in" style="display:none;">请输入期货交易账号</p>
+			</div>
+			<div style="position: relative;" class="item1">
+				<p class="item-name">真实姓名*:</p>
+				<input type="text" id="name-in" placeholder="请输入真实姓名" class="input1" onblur="nameInBlur()" />
+				<p class="valid-des" id="valid-name-in" style="display:none;">请输入真实姓名</p>
+			</div>
+			<!-- <div style="position: relative;" class="item1">
+				<p class="item-name">证书抬头:</p>
+				<input type="text" id="zstt-in" placeholder="获得证书后证书上体现的参赛客户名字" class="input1" maxlength="50"
+					onblur="zsttInBlur()" />
+				<p class="valid-des" id="valid-zstt-in" style="display:none;">请输入证书抬头</p>
+			</div> -->
+			<div style="position: relative;" class="item1">
+				<p class="item-name">昵称*:</p>
+				<input type="text" id="nc-in" placeholder="请输入昵称(小于7位)" class="input1" maxlength="7"
+					onblur="ncInBlur()" />
+				<p class="valid-des" id="valid-nc-in" style="display:none;">请输入昵称(小于7位)</p>
+			</div>
+			<div style="position: relative;" class="item1">
+				<p class="item-name">操作指导:</p>
+				<input type="text" id="czzd-in" placeholder="请输入操作指导(可不填)" class="input1" />
+				<p class="valid-des" id="valid-czzd-in" style="display:none;">请输入操作指导</p>
+			</div>
+			<div style="position: relative;" class="item3">
+				<div class="item3-title1">是否量化*</div>
+				<label class="radio"><input type="radio" checked="true" name="sflh-in" id="sflh-in"
+						class="radio-content" value="0" onclick="$('#cxsfba-in-box').hide();" />主观交易</label>
+				<label class="radio"><input type="radio" name="sflh-in" class="radio-content" value="1"
+						onclick="$('#cxsfba-in-box').show();" />量化交易</label>
+			</div>
+			<div style="position: relative;display:none;" class="item3" id="cxsfba-in-box">
+				<div class="item3-title1">程序是否备案*</div>
+				<label class="radio"><input type="radio" name="cxsfba-in" class="radio-content" value="1" />是</label>
+				<label class="radio"><input type="radio" checked="true" name="cxsfba-in" class="radio-content"
+						value="0" />否</label>
+			</div>
+			<div style="position: relative;" class="item3">
+				<div class="item3-title1">对冲套利*</div>
+				<label class="radio"><input type="radio" name="dctl-in" class="radio-content" value="1" />是</label>
+				<label class="radio"><input type="radio" checked="true" name="dctl-in" class="radio-content"
+						value="0" />否</label>
+			</div>
+			<!-- <div style="position: relative;" class="item3">
+				<div class="item3-title1">是否有交易团队*</div>
+				<label class="radio"><input type="radio" name="jytd-in" class="radio-content" value="1" />是</label>
+				<label class="radio"><input type="radio" name="jytd-in" checked="true" class="radio-content"
+						value="0" />否</label>
+			</div>
+			<div style="position: relative;" class="item3">
+				<div class="item3-title1">是否发展资管业务*</div>
+				<label class="radio"><input type="radio" name="fzzgyw-in" class="radio-content" value="1" />是</label>
+				<label class="radio"><input type="radio" checked="true" name="fzzgyw-in" class="radio-content"
+						value="0" />否</label>
+			</div> -->
+			<div style="position: relative;" class="item3">
+				<div class="item3-title1">是否资管产品*</div>
+				<label class="radio"><input type="radio" name="zgcp-in" class="radio-content" value="1"
+						onclick="$('#cpbam-in-box').show();" />是</label>
+				<label class="radio"><input type="radio" checked="true" name="zgcp-in" class="radio-content" value="0"
+						onclick="$('#cpbam-in-box').hide();" />否</label>
+			</div>
+			<div style="position: relative;display:none;" class="item1" id="cpbam-in-box">
+				<p class="item-name">产品备案码:</p>
+				<input type="text" id="cpbam-in" placeholder="请输入产品备案码" class="input1" />
+				<p class="valid-des" id="valid-cpbam-in" style="display:none;">请输入产品备案码</p>
+			</div>
+			<div style="position: relative;" class="item3">
+				<div class="item3-title1">是否参加产业组*</div>
+				<label class="radio"><input type="radio" name="sfzcyz-in" class="radio-content" value="1" />是</label>
+				<label class="radio"><input type="radio" checked="true" name="sfzcyz-in" class="radio-content"
+						value="0" />否</label>
+			</div>
+			<!-- <div style="position: relative;" class="item3">
+				<div class="item3-title1">是否参加"最牛资管风控奖"(规则、奖项另行发布)*</div>
+				<label class="radio"><input type="radio" name="sfnzg-in" class="radio-content" value="1" />是</label>
+				<label class="radio"><input type="radio" checked="true" name="sfnzg-in" class="radio-content" value="0" />否</label>
+				<p class="valid-des" id="valid-sfnzg-in" style="display:none;">请选择是否参加</p>
+			</div> -->
+			<div style="position: relative;" class="item3">
+				<div class="item3-title1">是否默认长期参赛*</div>
+				<label class="radio"><input type="radio" name="sfmrcqcs-in" class="radio-content" value="1" />是</label>
+				<label class="radio"><input type="radio" checked="true" name="sfmrcqcs-in" class="radio-content"
+						value="0" />否</label>
+			</div>
+			<div style="position: relative;" class="item1">
+				<p class="item-name">手机号*:</p>
+				<input type="text" id="mobile-in" placeholder="请输入手机号" class="input1" onblur="mobileInBlur()" />
+				<p class="valid-des" id="valid-mobile-in" style="display:none;">请输入手机号</p>
+				<p class="valid-des" id="valid-mobile2-in" style="display:none;">手机号格式有误</p>
+			</div>
+			<div style="position: relative;" class="item1">
+				<p class="item-name">所在地区*:</p>
+				<input type="text" id="picker" placeholder="请选择所在地区" class="input1" readonly="readonly" />
+				<p class="valid-des" id="valid-picker" style="display:none;">请选择所在地区</p>
+			</div>
+			<!-- <div style="position: relative;" class="item1">
+				<p class="item-name">期货交易年限:</p>
+				<input type="text" id="qhjynx-in" placeholder="期货交易年限" class="input1" onblur="qhjynxInBlur()"
+					onblur="zdzjInBlur()" onkeyup="value=value.replace(/^(0+)|[^\d]+/g,'')" />
+				<p class="valid-des" id="valid-qhjynx-in" style="display:none;">请输入期货交易年限</p>
+			</div>
+			<div style="position: relative;" class="item1">
+				<p class="item-name">可动用最大资金:</p>
+				<input type="text" id="zdzj-in" placeholder="请输入可动用最大资金" class="input1"
+					onkeyup="value=value.match(/\d+\.?\d{0,2}/,'')" />
+				<p class="valid-des" id="valid-zdzj-in" style="display:none;">请输入可动用最大资金</p>
+			</div>
+			<div style="position: relative;" class="item1">
+				<p class="item-name">擅长的交易品种或模式:</p>
+				<input type="text" id="jyly-in" placeholder="请输入擅长的交易品种或模式" class="input1" onblur="jylyInBlur()" />
+				<p class="valid-des" id="valid-jyly-in" style="display:none;">请输入擅长的交易品种或模式</p>
+			</div> -->
+			<div style="position: relative;display: flex;align-items: center;" class="item1">
+				<input type="checkbox" name="inAgree" id="inAgree" value="1" style="margin: 0 3px;">我已阅读并同意<a
+					href="https://app.qhrb.com.cn/#/appPrivacyByName?str=本届全国赛大赛规则及相关协议" target="_blank"
+					style="color: #007EFF">《本届大赛规则及相关协议》</a>
+			</div>
+			<div style="position: relative;display: flex;align-items: center;margin: -13px 0 0 0;" class="item1">
+				<input type="checkbox" name="inAgree2" id="inAgree2" value="1" style="margin: 0 3px;">参加二级赛事“期货寻星赛”
+			</div>
+			<input type="button" class="submit-btn" value="点击提交" onclick="postInData()" />
+			<div style="display: flex;justify-content: center;">
+				<img src="./img/qrcode-bottom.png" alt="" class="qrcode-bottom">
+			</div>
+		</form>
+	</div>
+	<!-- 全球 -->
+	<div class="content" id="out-box">
+		<form id="upForm-out" action="" class="form">
+			<div class="title">参赛报名</div>
+			<!-- <p class="des first-des">举办时间：2022年11月26日。因疫情防控要求，请参会者备好48小时内核酸检测证明，敬请理解！欢迎报名！</p>
+			<p class="des last-des">咨询电话：0371-65613869</p> -->
+
+			<div style="position: relative;" class="item1">
+				<p class="item-name">交易商*:</p>
+				<input type="text" id="jys-out" placeholder="" class="input1" readonly="readonly" />
+				<p class="valid-des" id="valid-jys-out" style="display:none;">请选择交易商</p>
+				<select class="jys-select" id="jys-select-out" onchange="outCompany()">
+					<option value="">请选择交易商</option>
+				</select>
+			</div>
+			<div style="position: relative;" class="item1">
+				<p class="item-name">期货交易账号*:</p>
+				<input type="text" id="zjzh-out" placeholder="请输入期货交易账号" class="input1" maxlength="23"
+					onblur="zjzhOutBlur()" />
+				<p class="valid-des" id="valid-zjzh-out" style="display:none;">请输入期货交易账号</p>
+			</div>
+			<div style="position: relative;" class="item1">
+				<p class="item-name">真实姓名*:</p>
+				<input type="text" id="name-out" placeholder="请输入真实姓名" class="input1" onblur="nameOutBlur()" />
+				<p class="valid-des" id="valid-name-out" style="display:none;">请输入真实姓名</p>
+			</div>
+			<div style="position: relative;" class="item1">
+				<p class="item-name">昵称*:</p>
+				<input type="text" id="nc-out" placeholder="请输入昵称(小于7位)" class="input1" maxlength="7"
+					onblur="ncOutBlur()" />
+				<p class="valid-des" id="valid-nc-out" style="display:none;">请输入昵称</p>
+			</div>
+
+			<div style="position: relative;" class="item1">
+				<p class="item-name">操作指导:</p>
+				<input type="text" id="czzd-out" placeholder="请输入操作指导(可不填)" class="input1" onblur="czzdOutBlur()" />
+				<p class="valid-des" id="valid-czzd-out" style="display:none;">请输入操作指导</p>
+			</div>
+			<div style="position: relative;" class="item1">
+				<p class="item-name">手机号*:</p>
+				<input type="text" id="mobile-out" placeholder="请输入手机号" class="input1" onblur="mobileOutBlur()" />
+				<p class="valid-des" id="valid-mobile-out" style="display:none;">请输入手机号</p>
+				<p class="valid-des" id="valid-mobile2-out" style="display:none;">手机号格式有误</p>
+			</div>
+			<div style="position: relative;display: none;" class="item1" id="email-out-box">
+				<p class="item-name" id="email-out-p">电子邮箱*:</p>
+				<input type="text" id="email-out" placeholder="请输入电子邮箱" class="input1" onblur="emailOutBlur()" />
+				<p class="valid-des" id="valid-email-out" style="display:none;">请输入电子邮箱</p>
+			</div>
+			<div style="position: relative;" class="item1">
+				<input type="checkbox" name="outAgree" id="outAgree" value="1">我已阅读并同意<a
+					href="https://app.qhrb.com.cn/#/appPrivacyByName?str=本届全球赛大赛规则及相关协议" target="_blank"
+					style="color: #007EFF">《本届大赛规则及相关协议》</a>
+			</div>
+			<input type="button" class="submit-btn" value="点击提交" onclick="postOutData()" />
+			<div style="display: flex;justify-content: center;">
+				<img src="./img/qrcode-bottom.png" alt="" class="qrcode-bottom">
+			</div>
+		</form>
+	</div>
+	<!-- 期货寻星 -->
+	<div class="content" id="qhxx-box">
+		<iframe src="https://v2.touguwang.cn/paipai3/match/win/player!input2.action" frameborder="0"
+			class="qhxx-iframe" scrolling="no"></iframe>
+	</div>
+	<!-- 模拟赛报名 -->
+	<div class="content" id="mns-box">
+		<iframe src="https://sim.wenhua.com.cn/m/?isbm=1&isqhrb=1#/Home" frameborder="0" style="width: 530px;
+		 height: 700px;
+		 background: #ffffff;
+		 border-radius: 10px;
+		 /* margin-top: 25px; */
+		 margin-bottom: 25px;
+		 margin-left:  .8rem;
+		 margin-right:  .8rem;
+		 padding: 0;"></iframe>
+	</div>
+	<!-- 金马杯报名 -->
+	<div class="content" id="jmb-box" style="border: unset;">
+		<iframe id="jmb-iframe" src="https://qhbs.jinmabei.cn/qhxx/match/win/player!input2.action" frameborder="0"
+			style="width: 530px;
+		 height: 852px;
+		 background: #d3ccff;
+		 /* border-radius: unset; */
+		 border: unset !important;
+		 border-color: #d3ccff;
+		 margin-top: 15.4px;
+		 margin-bottom: 25px;
+		 margin-left:  .8rem;
+		 margin-right:  .8rem;
+		 padding: 0;
+		 overflow: hidden;"></iframe>
+	</div>
+	<!-- 牛资管报名 -->
+	<div class="content" id="nzg-box">
+		<iframe id="nzg-iframe" src="https://www.qyh.net/trader/applyRb" frameborder="0" style="width: 530px;
+		 height: 862px;
+		 background: #ffffff;
+		 border-radius: 10px;
+		 margin-top: 22.4px;
+		 margin-bottom: 25px;
+		 margin-left:  .8rem;
+		 margin-right:  .8rem;
+		 padding: 0;"></iframe>
+	</div>
+	<div class="advertising-pop-up" id="advertising-pop-up"><a href="https://www.quheqihuo.com/pc/download/qhrb-zjy.html"
+			target="_blank">
+
+		</a>
+		<p onclick="closeAdvertising()">X</p>
+	</div>
+	<div class="mask" id="mask"></div>
+
+
+
+
+	<script src="jquery-1.11.3.min.js"></script>
+	<script src="scripts/picker.min.js"></script>
+	<script type="text/javascript" src="scripts/city.js"></script>
+	<script type="text/javascript" src="scripts/index.js"></script>
+	<!-- 全国 -->
+	<script>
+		var inCompany = []
+		var wpCompany = []
+		window.onload = function () {
+			// $('#advertising-pop-up').show(); 
+			// $('#mask').show();
+			// 禁用双指放大
+			document.addEventListener('touchstart', function (event) {
+				if (event.touches.length > 1) {
+					event.preventDefault()
+				}
+			});
+			document.addEventListener('gesturestart', function (event) {
+				event.preventDefault()
+			})
+			// 禁用双击放大
+			var lastTouchEnd = 0;
+			document.documentElement.addEventListener('touchend', function (event) {
+				var now = Date.now();
+				if (now - lastTouchEnd <= 300) {
+					event.preventDefault();
+				}
+				lastTouchEnd = now;
+			}, {
+				passive: false
+			});
+			$('#in-box').show();
+			$('#out-box').hide();
+			$('#qhxx-box').hide();
+			$('#mns-box').hide();
+			$('#jmb-box').hide();
+			$('#nzg-box').hide();
+			getInCompany();
+			getOutCompany();
+
+
+			var url = window.location.href;
+
+			var querys = url.substring(url.indexOf('?') + 1).split('&');
+			var result = [];
+			for (var i = 0; i < querys.length; i++) {
+				var temp = querys[i].split('=');
+				if (temp.length < 2) {
+					result[temp[0]] = '';
+				} else {
+					result[temp[0]] = temp[1];
+				}
+			}
+			console.log(result);
+			var type = result['type'];
+			console.log('type', type);
+			if (type) {
+				clickBtnMatchType(type)
+			}
+		}
+		function getInCompany() {
+			//https://app.qhrb.com.cn/api
+			$.ajax({
+				// url: 'http://testdsbm2026.qhrb.com.cn:10010/api/sps2026/company/getAllCompanyList',//请求的地址
+				url: 'https://app.qhrb.com.cn/api/sps2026/company/getAllCompanyList',//请求的地址
+				type: 'GET',//请求的方式
+				data: '',//携带到后端的参数
+				dataType: 'json',//期望后端返回的数据类型
+				success: function (res) {
+					inCompany = res.dataPoints
+					res.dataPoints.forEach(item => {
+						if (item.appointDealer == 1) {
+							$("#jys-select-in").append("<option value=" + item.companyCode + ">" + item.companyName + "⭐</option>");
+						} else {
+							$("#jys-select-in").append("<option value=" + item.companyCode + ">" + item.companyName + "</option>");
+						}
+
+					});
+				},//成功的回调函数 res就是后端响应回来的数据
+				error: function (res) {
+					console.log(res);
+				},//失败的回调函数 res就是后端响应回来的数据
+
+			})
+		}
+		function inCompanyClick() {
+			var code = $("#jys-select-in").val()
+			inCompany.forEach((item, index) => {
+				if (item.companyCode == code) {
+					if (item.appointDealer != 1) {
+						alert('如选择非指定交易商可能会报名失败')
+					}
+				}
+			})
+		}
+		function getOutCompany() {
+			//https://app.qhrb.com.cn/api
+			$.ajax({
+				// url: 'http://testdsbm2026.qhrb.com.cn:10010/api/spsout2026/company/getAllCompanyList',//请求的地址
+				url: 'https://app.qhrb.com.cn/api/spsout2026/company/getAllCompanyList',//请求的地址
+				type: 'GET',//请求的方式
+				data: '',//携带到后端的参数
+				dataType: 'json',//期望后端返回的数据类型
+				success: function (res) {
+					wpCompany = res.dataPoints
+					res.dataPoints.forEach(item => {
+						if (item.appointDealer == 1) {
+							$("#jys-select-out").append("<option value=" + item.companyCode + ">" + item.companyName + "⭐</option>");
+						} else {
+							$("#jys-select-out").append("<option value=" + item.companyCode + ">" + item.companyName + "</option>");
+						}
+
+					});
+				},//成功的回调函数 res就是后端响应回来的数据
+				error: function (res) {
+					console.log(res);
+				},//失败的回调函数 res就是后端响应回来的数据
+
+			})
+		}
+
+		function outCompany() {
+			var code = $("#jys-select-out").val()
+			wpCompany.forEach((item, index) => {
+				if (item.companyCode == code) {
+					if (item.appointDealer != 1) {
+						alert('如选择非指定交易商可能会报名失败')
+					}
+				}
+			})
+			if ($("#jys-select-out").val() == '0001') {
+				$('#email-out').val('');
+				$('#email-out-box').show();
+				$("#email-out").attr("placeholder", "电子邮箱");
+				$("#email-out-p").text("电子邮箱*:");
+				$("#zjzh-out").attr("placeholder", "请输入U开头的期货交易账号");
+				// $("#valid-zjzh-out").text("请输入U开头的期货交易账号");
+
+			} else if ($("#jys-select-out").val() == '0080') {
+				$('#email-out').val('');
+				$('#email-out-box').show();
+				$("#email-out").attr("placeholder", "只读密码");
+				$("#email-out-p").text("只读密码*:");
+				$("#zjzh-out").attr("placeholder", "请输入期货交易账号");
+				// $("#valid-zjzh-out").text("请输入期货交易账号");
+
+			} else {
+				$('#email-out-box').hide();
+				$("#zjzh-out").attr("placeholder", "请输入期货交易账号");
+				// $("#valid-zjzh-out").text("请输入期货交易账号");
+			}
+		}
+		var zhc = 1; // 1主会场参加 2主会场不参加
+		var sxh = 1; // 1私享会参加 2私享会不参加
+		$(document).ready(function () {
+			resizeRem()
+		});
+		window.onresize = function () {
+			resizeRem()
+		}
+		function resizeRem() {
+			var fsr = document.documentElement.clientWidth;
+			if (fsr > 768) return;
+			// if (fsr > 400) {
+			// 	fsr = 400;
+			// }
+			document.getElementsByTagName("html")[0].style.fontSize = 10 * (fsr / 375) + 'px'
+			console.log(document.documentElement.clientWidth)
+		}
+		function zjzhInBlur() {
+			var name = $('#zjzh-in').val();
+			if (!name) {
+				// $('#valid-zjzh-in').show();
+			} else {
+				$('#valid-zjzh-in').hide();
+			}
+		}
+		function nameInBlur() {
+			var name = $('#name-in').val();
+			if (!name) {
+				// $('#valid-name-in').show();
+			} else {
+				$('#valid-name-in').hide();
+			}
+		}
+		function zsttInBlur() {
+			// var name = $('#zstt-in').val();
+			// if (!name) {
+			// 	// $('#valid-zstt-in').show();
+			// } else {
+			// 	$('#valid-zstt-in').hide();
+			// }
+		}
+		function ncInBlur() {
+			var name = $('#nc-in').val();
+			if (!name) {
+				// $('#valid-nc-in').show();
+			} else {
+				$('#valid-nc-in').hide();
+			}
+		}
+		// function qhjynxInBlur() {
+		// 	var name = $('#qhjynx-in').val();
+		// 	if (!name) {
+		// 		// $('#valid-qhjynx-in').show();
+		// 	} else {
+		// 		$('#valid-qhjynx-in').hide();
+		// 	}
+		// }
+		// function zdzjInBlur() {
+		// 	var name = $('#zdzj-in').val();
+		// 	if (!name) {
+		// 		// $('#valid-zdzj-in').show();
+		// 	} else {
+		// 		$('#valid-zdzj-in').hide();
+		// 	}
+		// }
+		// function jylyInBlur() {
+		// 	var name = $('#jyly-in').val();
+		// 	if (!name) {
+		// 		// $('#valid-jyly-in').show();
+		// 	} else {
+		// 		$('#valid-jyly-in').hide();
+		// 	}
+		// }
+		function czzdInBlur() {
+			var name = $('#czzd-in').val();
+			if (!name) {
+				// $('#valid-czzd-in').show();
+			} else {
+				$('#valid-czzd-in').hide();
+			}
+		}
+		function mobileInBlur() {
+			var mobile = $('#mobile-in').val();
+			if (!mobile) {
+				// $('#valid-mobile-in').show();
+				// $('#valid-mobile2-in').hide();
+			} else if (!/^1[3456789]\d{9}$/.test(mobile)) {
+				// $('#valid-mobile-in').hide();
+				// $('#valid-mobile2-in').show();
+			} else {
+				$('#valid-mobile-in').hide();
+				$('#valid-mobile2-in').hide();
+			}
+		}
+		function pickerBlur() {
+			setTimeout(function () {
+				var name = $('#picker').val();
+				$('#valid-picker').hide();
+				if (!name) {
+					// $('#valid-picker').show();
+				} else {
+					$('#valid-picker').hide();
+				}
+			}, 100)
+		}
+		// 内盘提交数据
+		function postInData() {
+			var _this = this
+			// console.log($("#jys-select-in").val())
+			var jys = $("#jys-select-in").val(); // 必填
+			var zjzh = $("#zjzh-in").val(); // 必填
+			var name = $('#name-in').val(); // 必填
+			// var zstt = $('#zstt-in').val(); // 必填 隐藏
+			var nc = $('#nc-in').val(); // 必填
+			var qhjynx = $('#qhjynx-in').val(); // 必填
+			var zdzj = $('#zdzj-in').val(); // 必填
+			var jyly = $('#jyly-in').val(); // 必填
+			var czzd = $('#czzd-in').val();
+			var sflh = $('input[name="sflh-in"]:checked').val(); // 必填
+			var cxsfba = $('input[name="cxsfba-in"]:checked').val(); // 必填
+			var dctl = $('input[name="dctl-in"]:checked').val(); // 必填
+			// var jytd = $('input[name="jytd-in"]:checked').val(); // 必填
+			// var fzzgyw = $('input[name="fzzgyw-in"]:checked').val(); // 必填
+			var zgcp = $('input[name="zgcp-in"]:checked').val(); // 必填
+			var cpbam = $('#cpbam-in').val();
+			var sfzcyz = $('input[name="sfzcyz-in"]:checked').val(); // 必填
+			// var sfnzg = $('input[name="sfnzg-in"]:checked').val(); // 必填
+			var sfmrcqcs = $('input[name="sfmrcqcs-in"]:checked').val(); // 必填
+			var mobile = $('#mobile-in').val(); // 必填
+			var picker = $('#picker').val(); // 必填
+			if (!jys) {
+				// $('#valid-jys-in').show();
+				$('#jys-in').focus();
+				return;
+			} else {
+				$('#valid-jys-in').hide();
+			}
+
+			if (!zjzh) {
+				// $('#valid-zjzh-in').show();
+				$('#zjzh-in').focus();
+				return;
+			} else {
+				$('#valid-zjzh-in').hide();
+			}
+
+			if (!name) {
+				// $('#valid-name-in').show();
+				$('#name-in').focus();
+				return;
+			} else {
+				$('#valid-name-in').hide();
+			}
+			// if (!zstt) {
+			// 	// $('#valid-zstt-in').show();
+			// 	$('#zstt-in').focus();
+			// 	return;
+			// } else {
+			// 	$('#valid-zstt-in').hide();
+			// }
+
+			if (!nc) {
+				// $('#valid-nc-in').show();
+				$('#nc-in').focus();
+				return;
+			} else {
+				$('#valid-nc-in').hide();
+			}
+			// if (!qhjynx) {
+			// 	// $('#valid-qhjynx-in').show();
+			// 	$('#qhjynx-in').focus();
+			// 	return;
+			// } else {
+			// 	$('#valid-qhjynx-in').hide();
+			// }
+			// if (!zdzj) {
+			// 	// $('#valid-zdzj-in').show();
+			// 	$('#zdzj-in').focus();
+			// 	return;
+			// } else {
+			// 	$('#valid-zdzj-in').hide();
+			// }
+			// if (!jyly) {
+			// 	// $('#valid-jyly-in').show();
+			// 	$('#jyly-in').focus();
+			// 	return;
+			// } else {
+			// 	$('#valid-jyly-in').hide();
+			// }
+
+			// if (!sfnzg) {
+			// 	// console.log(sfnzg)
+			// 	// $('#valid-sfnzg-in').show();
+			// 	alert('请选择是否参加"最牛资管风控奖"(规则、奖项另行发布)')
+			// 	// $('#sfnzg-in').focus();
+			// 	return;
+			// } else {
+			// 	$('#valid-sfnzg-in').hide();
+			// 	// console.log('2',sfnzg)
+			// }
+
+			if (!mobile) {
+				$('#mobile-in').focus();
+				// $('#valid-mobile-in').show();
+				// $('#valid-mobile2-in').hide();
+				return;
+			} else if (!/^1[3456789]\d{9}$/.test(mobile)) {
+				$('#mobile-in').focus();
+				// $('#valid-mobile-in').hide();
+				// $('#valid-mobile2-in').show();
+				return;
+			} else {
+				$('#valid-mobile-in').hide();
+				$('#valid-mobile2-in').hide();
+			}
+			if (!picker) {
+				// $('#valid-picker').show();
+				$('#picker').focus();
+				return;
+			} else {
+				$('#valid-picker').hide();
+			}
+			if (!($('#inAgree').is(":checked"))) {
+				return alert('请阅读并同意《本届大赛规则及相关协议》')
+			}
+
+			var url = window.location.href;
+			var querys = url.substring(url.indexOf('?') + 1).split('&');
+			var result = [];
+			for (var i = 0; i < querys.length; i++) {
+				var temp = querys[i].split('=');
+				if (temp.length < 2) {
+					result[temp[0]] = '';
+				} else {
+					result[temp[0]] = temp[1];
+				}
+			}
+			console.log(result);
+			var source = result['source'];
+			console.log('source', source);
+			var data = {
+				"address": picker,
+				"assetManagement": zgcp,
+				// "business": fzzgyw,
+				"companyCode": jys,
+				"hedge": dctl,
+				"internalAccount": zjzh,
+				"mobilePhone": mobile,
+				"nickName": nc,
+				"operateGuide": czzd,
+				"productNo": zgcp == 1 ? cpbam : '',
+				"quantitative": sflh,
+				"projectFiling": cxsfba,
+				"realName": name,
+				// "crebName": zstt,
+				"source": source ? Number(source) : 5,
+				// "team": jytd,
+				"companyId": '',
+				"companyName": '',
+
+				"tradeYear": qhjynx || '',
+				"maxFund": zdzj || '',
+				"goodAtArea": jyly || '',
+				"property": sfzcyz,
+				// "nzg": sfnzg,
+				"nzg": 0,
+				"continuousApply": sfmrcqcs
+			}
+			inCompany.forEach((item, index) => {
+				if (item.companyCode == data.companyCode) {
+					data.companyId = item.id
+					data.companyName = item.companyName
+				}
+
+			})
+			console.log('data', data)
+			// 校验通过 提交data
+			//https://app.qhrb.com.cn/api
+			// return
+			$.ajax({
+				headers: {
+					'Accept': 'application/json',
+					'Content-Type': 'application/json'
+				},
+				// url: 'http://testdsbm2026.qhrb.com.cn:10010/api/sps2026/apply/playerApply',//请求的地址
+				url: 'https://spsbm.qhrb.com.cn/api/sps2026/apply/playerApply',//请求的地址
+				// url: 'https://app.qhrb.com.cn/api/sps/company/getAllCompanyList',//请求的地址
+				type: 'POST',//请求的方式
+				data: JSON.stringify(data),//携带到后端的参数
+				dataType: 'json',//期望后端返回的数据类型
+				success: function (res) {
+					alert(res.statusMessage)
+					if (res.resultCode == '1') {
+						if ($('#inAgree2').is(":checked")) {
+							_this.clickBtnMatchType(3)
+							window.scrollTo({
+								top: 0,
+								behavior: 'auto'
+							});
+							// 监控中心账号，手机号，昵称，
+							var tempData = {
+								"mcaccount": jys + zjzh,
+								"phonenumber": mobile,
+								"nickname": nc,
+								"realname": name
+							}
+							$.ajax({
+								headers: {
+									'Accept': 'application/json',
+									'Content-Type': 'application/json'
+								},
+								// url: 'http://testdsbm2026.qhrb.com.cn:10010/api/common/plate/sendApplyInfo',//请求的地址
+								url: 'https://spsbm.qhrb.com.cn/api/common/plate/sendApplyInfo',//请求的地址
+								type: 'POST',//请求的方式
+								data: JSON.stringify(tempData),//携带到后端的参数
+								dataType: 'json',//期望后端返回的数据类型
+								success: function (res) {
+									// alert(res.statusMessage)
+									// if (res.resultCode == '1') {
+									// } else {
+									// 	window.location.reload()
+									// }
+								},
+								error: function (res) {
+									// alert(res.statusMessage)
+									// console.log(res);
+								},
+
+							})
+						}
+						setTimeout(() => {
+							$('#advertising-pop-up').show();
+							$('#mask').show();
+						}, 10);
+					} else {
+						window.location.reload()
+					}
+				},//成功的回调函数 res就是后端响应回来的数据
+				error: function (res) {
+					alert(res.statusMessage)
+					console.log(res);
+				},//失败的回调函数 res就是后端响应回来的数据
+
+			})
+
+		}
+		function zjzhOutBlur() {
+			var name = $('#zjzh-out').val();
+			if (!name) {
+				// $('#valid-zjzh-out').show();
+			} else {
+				$('#valid-zjzh-out').hide();
+			}
+		}
+		function nameOutBlur() {
+			var name = $('#name-out').val();
+			if (!name) {
+				// $('#valid-name-out').show();
+			} else {
+				$('#valid-name-out').hide();
+			}
+		}
+		function ncOutBlur() {
+			var name = $('#nc-out').val();
+			if (!name) {
+				// $('#valid-nc-out').show();
+			} else {
+				$('#valid-nc-out').hide();
+			}
+		}
+		function czzdOutBlur() {
+			var name = $('#czzd-out').val();
+			if (!name) {
+				// $('#valid-czzd-out').show();
+			} else {
+				$('#valid-czzd-out').hide();
+			}
+		}
+		function mobileOutBlur() {
+			var mobile = $('#mobile-out').val();
+			if (!mobile) {
+				// $('#valid-mobile-out').show();
+				// $('#valid-mobile2-out').hide();
+			} else if (!/^1[3456789]\d{9}$/.test(mobile)) {
+				// $('#valid-mobile-out').hide();
+				// $('#valid-mobile2-out').show();
+			} else {
+				$('#valid-mobile-out').hide();
+				$('#valid-mobile2-out').hide();
+			}
+		}
+		function emailOutBlur() {
+			var name = $('#email-out').val();
+			if (!name) {
+				// $('#valid-email-out').show();
+			} else {
+				$('#valid-email-out').hide();
+			}
+		}
+		// 外盘提交数据
+		function postOutData() {
+			// console.log($("#jys-select-in").val())
+			var jys = $("#jys-select-out").val(); // 必填
+			var zjzh = $("#zjzh-out").val(); // 必填
+			var name = $('#name-out').val(); // 必填
+			var nc = $('#nc-out').val(); // 必填
+			var czzd = $('#czzd-out').val();
+
+			var email = $('#email-out').val();
+			var mobile = $('#mobile-out').val(); // 必填
+			if (!jys) {
+				// $('#valid-jys-out').show();
+				$('#jys-out').focus();
+				return;
+			} else {
+				$('#valid-jys-out').hide();
+			}
+
+			if (!zjzh) {
+				// $('#valid-zjzh-out').show();
+				$('#zjzh-out').focus();
+				return;
+			} else {
+				$('#valid-zjzh-out').hide();
+			}
+
+			if (!name) {
+				// $('#valid-name-out').show();
+				$('#name-out').focus();
+				return;
+			} else {
+				$('#valid-name-out').hide();
+			}
+
+			if (!nc) {
+				// $('#valid-nc-out').show();
+				$('#nc-out').focus();
+				return;
+			} else {
+				$('#valid-nc-out').hide();
+			}
+
+			if (!mobile) {
+				$('#mobile-out').focus();
+				// $('#valid-mobile-out').show();
+				// $('#valid-mobile2-out').hide();
+				return;
+			} else if (!/^1[3456789]\d{9}$/.test(mobile)) {
+				$('#mobile-out').focus();
+				// $('#valid-mobile-out').hide();
+				// $('#valid-mobile2-out').show();
+				return;
+			} else {
+				$('#valid-mobile-out').hide();
+				$('#valid-mobile2-out').hide();
+			}
+			if ($("#jys-select-out").val() == '0001' || $("#jys-select-out").val() == '0080') {
+				if (!email) {
+					// $('#valid-email-out').show();
+					$('#email-out').focus();
+					return;
+				} else {
+					$('#valid-email-out').hide();
+				}
+			} else {
+				$('#valid-email-out').hide();
+			}
+			if (!($('#outAgree').is(":checked"))) {
+				return alert('请阅读并同意《本届大赛规则及相关协议》')
+			}
+			var jys = $("#jys-select-out").val(); // 必填
+			var zjzh = $("#zjzh-out").val(); // 必填
+			var name = $('#name-out').val(); // 必填
+			var nc = $('#nc-out').val(); // 必填
+			var czzd = $('#czzd-out').val();
+
+			var email = $('#email-out').val();
+			var mobile = $('#mobile-out').val(); // 必填
+
+			var url = window.location.href;
+			var querys = url.substring(url.indexOf('?') + 1).split('&');
+			var result = [];
+			for (var i = 0; i < querys.length; i++) {
+				var temp = querys[i].split('=');
+				if (temp.length < 2) {
+					result[temp[0]] = '';
+				} else {
+					result[temp[0]] = temp[1];
+				}
+			}
+			console.log(result);
+			var source = result['source'];
+			console.log('source', source);
+			var data = {
+				"companyCode": jys,
+				"internalAccount": zjzh,
+				"mobilePhone": mobile,
+				"nickName": nc,
+				"operateGuide": czzd,
+				"realName": name,
+				"source": source ? Number(source) : 5,
+				"companyId": '',
+				"email": (jys == '0001' || jys == '0080') ? email : '',
+			}
+			wpCompany.forEach((item, index) => {
+				if (item.companyCode == data.companyCode) {
+					data.companyId = item.id
+					// data.companyName = item.companyName
+				}
+
+			})
+			console.log('data', data)
+			// 校验通过 提交data
+			//https://app.qhrb.com.cn/api
+			$.ajax({
+				headers: {
+					'Accept': 'application/json',
+					'Content-Type': 'application/json'
+				},
+				// url: 'http://testdsbm2026.qhrb.com.cn:10010/api/spsout2026/PlayerApply/addPlayer',//请求的地址
+				url: 'https://spsbm.qhrb.com.cn/api/spsout2026/PlayerApply/addPlayer',//请求的地址
+				// url: 'https://app.qhrb.com.cn/api/sps/company/getAllCompanyList',//请求的地址
+				type: 'POST',//请求的方式
+				data: JSON.stringify(data),//携带到后端的参数
+				dataType: 'json',//期望后端返回的数据类型
+				success: function (res) {
+					alert(res.statusMessage)
+					if (res.resultCode == '1') {
+						setTimeout(() => {
+							$('#advertising-pop-up').show();
+							$('#mask').show();
+						}, 10);
+					} else {
+						window.location.reload()
+					}
+				},//成功的回调函数 res就是后端响应回来的数据
+				error: function (res) {
+					alert(res.statusMessage)
+					console.log(res);
+				},//失败的回调函数 res就是后端响应回来的数据
+
+			})
+
+		}
+		// 选项卡切换
+		function clickBtnMatchType(value) {
+			if (value == 1) {
+				$('#in').attr('class', 'page-btn btn-click');
+				$('#out').attr('class', 'page-btn');
+				$('#qhxx').attr('class', 'page-btn');
+				$('#mns').attr('class', 'page-btn');
+				$('#jmb').attr('class', 'page-btn');
+				$('#nzg').attr('class', 'page-btn');
+				$('#in-box').show();
+				$('#out-box').hide();
+				$('#qhxx-box').hide();
+				$('#mns-box').hide();
+				$('#jmb-box').hide();
+				$('#nzg-box').hide();
+			} else if (value == 2) {
+				$('#out').attr('class', 'page-btn btn-click');
+				$('#in').attr('class', 'page-btn');
+				$('#qhxx').attr('class', 'page-btn');
+				$('#mns').attr('class', 'page-btn');
+				$('#jmb').attr('class', 'page-btn');
+				$('#nzg').attr('class', 'page-btn');
+				$('#in-box').hide();
+				$('#out-box').show();
+				$('#qhxx-box').hide();
+				$('#mns-box').hide();
+				$('#jmb-box').hide();
+				$('#nzg-box').hide();
+			} else if (value == 3) {
+				$('#in').attr('class', 'page-btn');
+				$('#out').attr('class', 'page-btn');
+				$('#qhxx').attr('class', 'page-btn btn-click');
+				$('#mns').attr('class', 'page-btn');
+				$('#jmb').attr('class', 'page-btn');
+				$('#nzg').attr('class', 'page-btn');
+				$('#in-box').hide();
+				$('#out-box').hide();
+				$('#qhxx-box').show();
+				$('#mns-box').hide();
+				$('#jmb-box').hide();
+				$('#nzg-box').hide();
+			} else if (value == 4) {
+				$('#in').attr('class', 'page-btn');
+				$('#out').attr('class', 'page-btn');
+				$('#qhxx').attr('class', 'page-btn');
+				$('#mns').attr('class', 'page-btn btn-click');
+				$('#jmb').attr('class', 'page-btn');
+				$('#nzg').attr('class', 'page-btn');
+				$('#in-box').hide();
+				$('#out-box').hide();
+				$('#qhxx-box').hide();
+				$('#mns-box').show();
+				$('#jmb-box').hide();
+				$('#nzg-box').hide();
+			} else if (value == 6) {
+				$('#in').attr('class', 'page-btn');
+				$('#out').attr('class', 'page-btn');
+				$('#qhxx').attr('class', 'page-btn');
+				$('#mns').attr('class', 'page-btn');
+				$('#jmb').attr('class', 'page-btn');
+				$('#nzg').attr('class', 'page-btn btn-click');
+				$('#in-box').hide();
+				$('#out-box').hide();
+				$('#qhxx-box').hide();
+				$('#mns-box').hide();
+				$('#jmb-box').hide();
+				$('#nzg-box').show();
+			} else {
+				$('#in').attr('class', 'page-btn');
+				$('#out').attr('class', 'page-btn');
+				$('#qhxx').attr('class', 'page-btn');
+				$('#mns').attr('class', 'page-btn');
+				$('#jmb').attr('class', 'page-btn btn-click');
+				$('#nzg').attr('class', 'page-btn');
+				$('#in-box').hide();
+				$('#out-box').hide();
+				$('#qhxx-box').hide();
+				$('#mns-box').hide();
+				$('#jmb-box').show();
+				$('#nzg-box').hide();
+			}
+			sxh = value;
+		}
+		function closeAdvertising() {
+			$('#advertising-pop-up').hide();
+			$('#mask').hide();
+			if (!($('#inAgree2').is(":checked"))) {
+				window.location.reload()
+			}
+		}
+	</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+# 夺冠高手第九届全国期货实盘大赛
+# URL: https://www.dggaoshou.com/
+# fetched: 20260908_114240
+
+报名参赛
+扫一扫
+关注夺冠高手
+微信公众号
+哲哲的七七和火火
+快手号4106181099
+报名参赛
+高手直播
+天机变系统
+ {{item.title}}
+ {{item.groupName}}
+ 查看更多排名
+3
+万人+
+参赛总人数
+{{unitConvert(totalMoeny, 1)}}
+{{unitConvert(totalMoeny, 2)}}元+
+权益规模
+{{unitConvert(offsetGainAndLoss, 1)}}
+{{unitConvert(offsetGainAndLoss, 2)}}元
+当日净盈亏
+{{unitConvert(totalIncome, 1)}}
+{{unitConvert(totalIncome, 2)}}元
+累计盈亏
+ 查看更多
+{{item.jt_dg_ds_title}}
+{{item.jt_dg_ds_title2}}
+{{item.title}}
+ 查看更多
+{{item.title}}
+{{item.addTime | formatTime}}
+ 更多 >
+ 查看更多
+ {{item.siteName}}

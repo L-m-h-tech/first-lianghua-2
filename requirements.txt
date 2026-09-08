@@ -1,0 +1,11 @@
+# 界面操作收集装置 —— 生产运行依赖
+# 本项目核心使用标准库 urllib，仅测试需要额外依赖
+
+# 测试框架
+pytest>=7.0.0
+
+# 本项目核心模块使用标准库（urllib, json, sqlite3, logging, threading 等）
+# 无需安装额外的生产依赖
+
+# 与量化项目协同时，量化项目自身的依赖见：
+# C:\Users\Lenovo\Desktop\量化\futures_monitor\requirements.txt

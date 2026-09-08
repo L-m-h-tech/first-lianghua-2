@@ -1,0 +1,453 @@
+{
+ "ts": "2026-09-08 10:07:44",
+ "endpoint": "all_varieties.php",
+ "desc": "全部品种",
+ "n": 89,
+ "rows": [
+  {
+   "market": "上期所",
+   "name": "螺纹钢",
+   "symbol": "RB"
+  },
+  {
+   "market": "上期所",
+   "name": "热卷",
+   "symbol": "HC"
+  },
+  {
+   "market": "上期所",
+   "name": "沪铜",
+   "symbol": "CU"
+  },
+  {
+   "market": "上期所",
+   "name": "沪铝",
+   "symbol": "AL"
+  },
+  {
+   "market": "上期所",
+   "name": "沪锌",
+   "symbol": "ZN"
+  },
+  {
+   "market": "上期所",
+   "name": "沪铅",
+   "symbol": "PB"
+  },
+  {
+   "market": "上期所",
+   "name": "沪镍",
+   "symbol": "NI"
+  },
+  {
+   "market": "上期所",
+   "name": "沪锡",
+   "symbol": "SN"
+  },
+  {
+   "market": "上期所",
+   "name": "沪金",
+   "symbol": "AU"
+  },
+  {
+   "market": "上期所",
+   "name": "沪银",
+   "symbol": "AG"
+  },
+  {
+   "market": "上期所",
+   "name": "燃料油",
+   "symbol": "FU"
+  },
+  {
+   "market": "上期所",
+   "name": "沥青",
+   "symbol": "BU"
+  },
+  {
+   "market": "上期所",
+   "name": "天然橡胶",
+   "symbol": "RU"
+  },
+  {
+   "market": "上期所",
+   "name": "线材",
+   "symbol": "WR"
+  },
+  {
+   "market": "上期所",
+   "name": "原油",
+   "symbol": "SC"
+  },
+  {
+   "market": "上期所",
+   "name": "纸浆",
+   "symbol": "SP"
+  },
+  {
+   "market": "上期所",
+   "name": "20号胶",
+   "symbol": "NR"
+  },
+  {
+   "market": "上期所",
+   "name": "不锈钢",
+   "symbol": "SS"
+  },
+  {
+   "market": "上期所",
+   "name": "低硫油",
+   "symbol": "LU"
+  },
+  {
+   "market": "上期所",
+   "name": "国际铜",
+   "symbol": "BC"
+  },
+  {
+   "market": "上期所",
+   "name": "氧化铝",
+   "symbol": "AO"
+  },
+  {
+   "market": "上期所",
+   "name": "合成橡胶",
+   "symbol": "BR"
+  },
+  {
+   "market": "上期所",
+   "name": "集运欧线",
+   "symbol": "EC"
+  },
+  {
+   "market": "上期所",
+   "name": "铝合金",
+   "symbol": "AD"
+  },
+  {
+   "market": "上期所",
+   "name": "双胶纸",
+   "symbol": "OP"
+  },
+  {
+   "market": "中金所",
+   "name": "300沪深",
+   "symbol": "IF"
+  },
+  {
+   "market": "中金所",
+   "name": "500中证",
+   "symbol": "IC"
+  },
+  {
+   "market": "中金所",
+   "name": "50上证",
+   "symbol": "IH"
+  },
+  {
+   "market": "中金所",
+   "name": "二债",
+   "symbol": "TS"
+  },
+  {
+   "market": "中金所",
+   "name": "五债",
+   "symbol": "TF"
+  },
+  {
+   "market": "中金所",
+   "name": "十债",
+   "symbol": "T"
+  },
+  {
+   "market": "中金所",
+   "name": "1000中证",
+   "symbol": "IM"
+  },
+  {
+   "market": "中金所",
+   "name": "三十债",
+   "symbol": "TL"
+  },
+  {
+   "market": "大商所",
+   "name": "铁矿石",
+   "symbol": "I"
+  },
+  {
+   "market": "大商所",
+   "name": "焦煤",
+   "symbol": "JM"
+  },
+  {
+   "market": "大商所",
+   "name": "焦炭",
+   "symbol": "J"
+  },
+  {
+   "market": "大商所",
+   "name": "豆一",
+   "symbol": "A"
+  },
+  {
+   "market": "大商所",
+   "name": "豆二",
+   "symbol": "B"
+  },
+  {
+   "market": "大商所",
+   "name": "玉米",
+   "symbol": "C"
+  },
+  {
+   "market": "大商所",
+   "name": "淀粉",
+   "symbol": "CS"
+  },
+  {
+   "market": "大商所",
+   "name": "鸡蛋",
+   "symbol": "JD"
+  },
+  {
+   "market": "大商所",
+   "name": "塑料",
+   "symbol": "L"
+  },
+  {
+   "market": "大商所",
+   "name": "豆粕",
+   "symbol": "M"
+  },
+  {
+   "market": "大商所",
+   "name": "棕榈油",
+   "symbol": "P"
+  },
+  {
+   "market": "大商所",
+   "name": "PP",
+   "symbol": "PP"
+  },
+  {
+   "market": "大商所",
+   "name": "PVC",
+   "symbol": "V"
+  },
+  {
+   "market": "大商所",
+   "name": "豆油",
+   "symbol": "Y"
+  },
+  {
+   "market": "大商所",
+   "name": "胶合板",
+   "symbol": "BB"
+  },
+  {
+   "market": "大商所",
+   "name": "纤维板",
+   "symbol": "FB"
+  },
+  {
+   "market": "大商所",
+   "name": "乙二醇",
+   "symbol": "EG"
+  },
+  {
+   "market": "大商所",
+   "name": "粳米",
+   "symbol": "RR"
+  },
+  {
+   "market": "大商所",
+   "name": "苯乙烯",
+   "symbol": "EB"
+  },
+  {
+   "market": "大商所",
+   "name": "液化气",
+   "symbol": "PG"
+  },
+  {
+   "market": "大商所",
+   "name": "生猪",
+   "symbol": "LH"
+  },
+  {
+   "market": "大商所",
+   "name": "原木",
+   "symbol": "LG"
+  },
+  {
+   "market": "大商所",
+   "name": "纯苯",
+   "symbol": "BZ"
+  },
+  {
+   "market": "广期所",
+   "name": "工业硅",
+   "symbol": "SI"
+  },
+  {
+   "market": "广期所",
+   "name": "碳酸锂",
+   "symbol": "LC"
+  },
+  {
+   "market": "广期所",
+   "name": "商品指数",
+   "symbol": "CI"
+  },
+  {
+   "market": "广期所",
+   "name": "多晶硅",
+   "symbol": "PS"
+  },
+  {
+   "market": "广期所",
+   "name": "钯",
+   "symbol": "PD"
+  },
+  {
+   "market": "广期所",
+   "name": "铂",
+   "symbol": "PT"
+  },
+  {
+   "market": "郑商所",
+   "name": "棉纱",
+   "symbol": "CY"
+  },
+  {
+   "market": "郑商所",
+   "name": "苹果",
+   "symbol": "AP"
+  },
+  {
+   "market": "郑商所",
+   "name": "棉花",
+   "symbol": "CF"
+  },
+  {
+   "market": "郑商所",
+   "name": "玻璃",
+   "symbol": "FG"
+  },
+  {
+   "market": "郑商所",
+   "name": "甲醇",
+   "symbol": "MA"
+  },
+  {
+   "market": "郑商所",
+   "name": "菜油",
+   "symbol": "OI"
+  },
+  {
+   "market": "郑商所",
+   "name": "菜粕",
+   "symbol": "RM"
+  },
+  {
+   "market": "郑商所",
+   "name": "硅铁",
+   "symbol": "SF"
+  },
+  {
+   "market": "郑商所",
+   "name": "锰硅",
+   "symbol": "SM"
+  },
+  {
+   "market": "郑商所",
+   "name": "白糖",
+   "symbol": "SR"
+  },
+  {
+   "market": "郑商所",
+   "name": "PTA",
+   "symbol": "TA"
+  },
+  {
+   "market": "郑商所",
+   "name": "动力煤",
+   "symbol": "ZC"
+  },
+  {
+   "market": "郑商所",
+   "name": "强麦",
+   "symbol": "WH"
+  },
+  {
+   "market": "郑商所",
+   "name": "早籼稻",
+   "symbol": "RI"
+  },
+  {
+   "market": "郑商所",
+   "name": "油菜籽",
+   "symbol": "RS"
+  },
+  {
+   "market": "郑商所",
+   "name": "粳稻",
+   "symbol": "JR"
+  },
+  {
+   "market": "郑商所",
+   "name": "晚籼稻",
+   "symbol": "LR"
+  },
+  {
+   "market": "郑商所",
+   "name": "普麦",
+   "symbol": "PM"
+  },
+  {
+   "market": "郑商所",
+   "name": "红枣",
+   "symbol": "CJ"
+  },
+  {
+   "market": "郑商所",
+   "name": "尿素",
+   "symbol": "UR"
+  },
+  {
+   "market": "郑商所",
+   "name": "纯碱",
+   "symbol": "SA"
+  },
+  {
+   "market": "郑商所",
+   "name": "短纤",
+   "symbol": "PF"
+  },
+  {
+   "market": "郑商所",
+   "name": "花生",
+   "symbol": "PK"
+  },
+  {
+   "market": "郑商所",
+   "name": "对二甲苯",
+   "symbol": "PX"
+  },
+  {
+   "market": "郑商所",
+   "name": "烧碱",
+   "symbol": "SH"
+  },
+  {
+   "market": "郑商所",
+   "name": "瓶片",
+   "symbol": "PR"
+  },
+  {
+   "market": "郑商所",
+   "name": "丙烯",
+   "symbol": "PL"
+  }
+ ]
+}
