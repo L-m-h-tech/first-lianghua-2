@@ -4,11 +4,15 @@
     "exe": "E:\\OpendVlab Legend\\openvlab-legend\\openvlab-legend.exe",
     "cdp_port": 9225,
     "data_dir": "E:\\OpendVlab Legend\\openvlab-legend\\openvlab-legend-data",
-    "appdata_dir": "C:\\Users\\Lenovo\\AppData\\Roaming\\openvlab-legend"
+    "appdata_dir": "C:\\Users\\Lenovo\\AppData\\Roaming\\openvlab-legend",
+    "restart_debug": true
   },
   "ths": {
     "exe": "E:\\同花顺期货通\\bin\\happ.exe",
-    "notice_xml": "E:\\同花顺期货通\\bin\\FutureData\\Notice.xml"
+    "notice_xml": "E:\\同花顺期货通\\bin\\FutureData\\Notice.xml",
+    "data_center_xml": "E:\\同花顺期货通\\bin\\workspace\\DataCenter.xml",
+    "debug_mode": true,
+    "restart_debug": true
   },
   "openvlab": {
     "enabled": true,
@@ -16,7 +20,7 @@
     "timeout": 15,
     "sleep": 0.3,
     "surface_limit": 12,
-    "dto_limit": 30
+    "dto_limit": 83
   },
   "jiaoyikecha": {
     "enabled": true,

@@ -54,7 +54,7 @@ def detect(status):
         detail = "CDP:%d 页面%d个" % (cdps.port, len(pages))
         status.software("legend", True, detail)
         return "cdp", detail, cdps
-    uia = UiaAdapter(name_re="Legend")
+    uia = UiaAdapter(name_re=("Legend", "OpenVlab"))
     if uia.connect(poll_sec=3):
         status.software("legend", True, "UIA窗口可用(普通模式)")
         return "uia", "UIA窗口可用(普通模式，建议用调试bat以启用CDP)", uia
@@ -222,6 +222,16 @@ class MinuteAggregator:
             self.bars[code] = {"minute": minute, **bar}
         return bar, flush
 
+    def flush_all(self):
+        """冲刷所有未跨分钟的当前 bar（--once 手动轮结束时调用）。
+        返回 [bar, ...] 并清空内部状态；UNIQUE(contract,period,bar_dt)
+        保证与跨分钟 flush 的先到先得去重一致。"""
+        out = []
+        for code, cur in list(self.bars.items()):
+            out.append({k: cur[k] for k in cur if k != "minute"})
+        self.bars.clear()
+        return out
+
 
 # ---------------------------------------------------------------- 期权链解析（复用 option_chain）
 
@@ -260,6 +270,18 @@ def build_chain_rows(leg_rows):
         return None
 
 
+# A5: 期权链 cycle 约定——openvlab 固定 cycle=0，Legend 用 cycle=98，
+# 避免两端同日链互相覆盖破坏 option_chains 的 PCR 历史分位。
+LEGEND_CHAIN_CYCLE = 98
+
+
+def ingest_legend_chains(chain_rows, ts=None):
+    """Legend 期权链写库入口（cycle=98）。chain_rows 为 build_chain_rows 产出。"""
+    if not chain_rows:
+        return 0
+    return fusion.ingest_option_chains(chain_rows, cycle=LEGEND_CHAIN_CYCLE, ts=ts)
+
+
 # ---------------------------------------------------------------- 采集周期
 
 def collect_cycle(status, agg=None, conn=None):
@@ -269,7 +291,14 @@ def collect_cycle(status, agg=None, conn=None):
     else:
         mode = "cdp"  # caller 已探测过
     if mode == "cdp":
-        return _collect_cdp(status, conn, agg)
+        r = _collect_cdp(status, conn, agg)
+        # A4: --once 手动轮结束强制冲刷当前分钟 bar（跨分钟 flush 的补充）
+        if agg is not None:
+            orphan = agg.flush_all()
+            if orphan:
+                nb = fusion.ingest_minute_bars(orphan, "legend_ui")
+                r["bars"] = r.get("bars", 0) + nb
+        return r
     if mode == "uia":
         fusion.registry_record("legend_uia", True)
         return _collect_uia(status, conn)
@@ -282,7 +311,7 @@ def _collect_cdp(status, conn, agg):
         fusion.registry_record("legend_cdp", False, "登录态异常")
         return {"quotes": 0, "bars": 0}
     sel = device_config.SELECTORS.get("legend_cdp") or {}
-    url_kw = sel.get("quote_page_url_kw") or "market"
+    url_kw = sel.get("page_url_kw") or sel.get("quote_page_url_kw") or "market"
     mapping = sel.get("column_map")
     conn.find_page(url_kw) or conn.open_url("https://www.openvlab.cn/market")
     table = conn.read_table(pick=sel.get("quote_table_pick", 0))
@@ -305,6 +334,9 @@ def _collect_cdp(status, conn, agg):
         if fl:
             bars.append(fl)
     nq = len(quotes)
+    # A2: Legend 行情落 quotes 表（cycle=99 装置侧），供量化跨源校验
+    if nq:
+        fusion.ingest_quotes_batch(quotes, cycle=99, source="legend_ui")
     nb = fusion.ingest_minute_bars(bars, "legend_ui") if bars else 0
     status.update(quotes=quotes[:80])
     fusion.registry_record("legend_cdp", nq > 0, "quotes=%d" % nq)

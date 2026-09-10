@@ -74,6 +74,16 @@ def test_parse_dto_quote_invalid():
     assert O.parse_dto_quote({"context": {"i": {"i": [{"l": 0}]}}}, code="SA") is None
 
 
+def test_parse_dto_quote_wrapped_result():
+    """dto 响应加了 result 包装层后仍能正确解析（2026-09-10 接口变更后实测）。"""
+    wrapped = {"code": 0, "result": _DTO}
+    q = O.parse_dto_quote(wrapped, code="SA")
+    assert q is not None
+    assert q["variety"] == "纯碱2611"
+    assert q["price"] == 1078.0
+    assert q["bid"] == 1077.0
+
+
 # ---------------- parse_surface_legs ----------------
 
 _SURFACE = {

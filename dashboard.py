@@ -47,6 +47,36 @@ async function refresh(){
     const d = await r.json(); render(d);
   }catch(e){ document.getElementById('err').textContent = '状态读取失败: '+e; }
 }
+// C2（协同）：读取量化项目 reports/latest_report.txt + signals.csv（独立 fetch，失败静默）
+async function refreshQuant(){
+  try{
+    const qs = document.getElementById('quant-html'); if(!qs) return;
+    const sig = await fetch(QUANT_SIGNALS); 
+    let rows = sig.ok ? await sig.json() : [];
+    if(!Array.isArray(rows)) rows = [];
+    document.getElementById('quant-signals').textContent = rows.length;
+    if(rows.length){
+      const last = rows[rows.length-1];
+      document.getElementById('quant-sigtime').textContent = last&&last.time?last.time:'--';
+    }
+    const rep = await fetch(QUANT_REPORT);
+    let txt = rep.ok ? await rep.text() : '';
+    let cycle = '--';
+    if(txt){
+      const m = txt.match(/第\s*(\d+)\s*轮/);
+      if(m) cycle = '第'+m[1]+'轮';
+      document.getElementById('quant-cycle').textContent = cycle;
+      // 截取分析总表区段（前 40 行内找【期货分析】到【基本面速览】）
+      let seg = txt;
+      const i0 = seg.indexOf('【期货分析】');
+      const i1 = seg.indexOf('基本面速览');
+      if(i0>=0) seg = seg.slice(i0, (i1>i0? i1 : i0+2200));
+      qs.innerHTML = '<pre style="font-size:12px;white-space:pre-wrap;word-break:break-all">'+esc(seg)+'</pre>';
+    } else {
+      qs.innerHTML = '<div class="empty">量化报告未生成（先运行量化 start_monitor.bat）</div>';
+    }
+  }catch(e){ /* 量化未启动时静默 */ }
+}
 function esc(s){ return String(s==null?'':s).replace(/[&<>"]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
 function rowHtml(cells, cls){ return '<tr'+(cls||'')+'>'+cells.map(c=>'<td>'+esc(c)+'</td>').join('')+'</tr>'; }
 function render(d){
@@ -205,6 +235,7 @@ async function drillChain(code,exp){
   document.getElementById('chain-body').innerHTML=h;
 }
 setInterval(refresh, 5000); refresh();
+setInterval(refreshQuant, 30000); refreshQuant();
 """
 
 _PAGE_TEMPLATE = """
@@ -239,11 +270,21 @@ _PAGE_TEMPLATE = """
   <div class="card"><div class="k">支撑压力位</div><div class="v" id="jykc-hg">--</div></div>
 </div>
 <div id="jykc-detail" class="card" style="margin-top:8px"></div>
+<h2>量化分析信号（futures_monitor reports）</h2>
+<div class="sub" id="quant-sub">读取量化项目 reports/latest_report.txt + signals.csv（每30秒刷新）</div>
+<div class="grid">
+  <div class="card"><div class="k">最新报告轮次</div><div class="v" id="quant-cycle">--</div></div>
+  <div class="card"><div class="k">信号条数</div><div class="v" id="quant-signals">0</div></div>
+  <div class="card"><div class="k">最近信号时间</div><div class="v" id="quant-sigtime">--</div></div>
+</div>
+<div id="quant-html" class="card" style="margin-top:8px;max-height:420px;overflow-y:auto"></div>
 <h2>融合质量告警</h2><div id="alerts"></div>
 <h2>公告流</h2><div id="news"></div>
 <h2>数据覆盖（minute_bars / option_chains）</h2>
 <table><thead><tr><th>周期</th><th>bar 数</th><th>合约数</th><th>最早</th><th>最近</th></tr></thead><tbody id="cov-body"></tbody></table>
-<script>const STATUS_FILE = '{status_file}';{js}</script>
+<script>const STATUS_FILE = '{status_file}';
+const QUANT_REPORT = 'quant/latest_report.txt';
+const QUANT_SIGNALS = 'quant/signals.csv';{js}</script>
 </body></html>
 """
 

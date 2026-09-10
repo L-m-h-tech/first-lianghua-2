@@ -102,11 +102,12 @@ def parse_ctamap_rows(rows):
 def parse_dto_quote(data, code=""):
     """dto/{code} 响应 -> 单条行情 dict（取 instruments 列表首条），失败返回 None。
 
-    预期结构：{"context": {"r": {"1d": 涨跌幅}, "i": {"s": [...], "i": [标的...]}}}
+    预期结构：{"result": {"context": {"r": {"1d": 涨跌幅}, "i": {"s": [...], "i": [标的...]}}}}
+    （兼容旧结构：context 直接挂在顶层时同样可解）
     标的字段：n(名称)、s(代码)、l(最新价)、p(昨收)、b(买价)、a(卖价)、v(成交量)、o(持仓量)
     """
     try:
-        ctx = data.get("context") or {}
+        ctx = (data.get("result") or data).get("context") or {}
         instruments = (ctx.get("i") or {}).get("i") or []
         if not instruments:
             return None
@@ -483,6 +484,11 @@ def collect_cycle(status):
     if quotes:
         result["quotes"] = len(quotes)
         status.merge_quotes(quotes)
+        # A2: openvlab 行情落 quotes 表（cycle=99 装置侧），供量化跨源校验
+        try:
+            fusion.ingest_quotes_batch(quotes, cycle=99, source="openvlab")
+        except Exception as e:
+            LOG.debug("openvlab quotes 落库失败: %s", e)
 
     # 写入期权链（cycle=0 覆盖式写入：先清再插）
     chain_rows = []

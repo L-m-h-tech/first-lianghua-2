@@ -132,6 +132,8 @@ class CdpAdapter:
                 self.port = p
                 self._tabs = [t for t in tabs if t.get("type") == "page"]
                 self.connected = bool(self._tabs) or True
+                # 默认选中第一个页面；业务方可用 find_page 按 URL 关键字切换
+                self._page = self._tabs[0] if self._tabs else None
                 return True
             except Exception as e:
                 self.last_error = str(e)
@@ -267,10 +269,12 @@ class UiaAdapter:
     def connect(self, poll_sec=10):
         import uiautomation as auto
         deadline = time.time() + poll_sec
+        # name_re 支持单个子串或 (子串, ...) 列表（任一命中即匹配，如 "OpenVlab" 窗口）
+        keys = self.name_re if isinstance(self.name_re, (list, tuple)) else [self.name_re]
         while time.time() < deadline:
             try:
                 wins = [w for w in auto.GetRootControl().GetChildren()
-                        if self.name_re in (w.Name or "")][:1]
+                        if any(k in (w.Name or "") for k in keys)][:1]
                 if wins:
                     self.window = wins[0]
                     self.connected = True

@@ -224,18 +224,11 @@ def parse_quote_ocr_row(row):
 
 
 def detect(status):
-    """检测同花顺窗口/进程；返回 ("uia"|"offline", detail, adapter)。"""
+    """检测同花顺窗口/进程；返回 ("uia"|"offline", detail, adapter)。
+    不激活、不置前窗口——避免采集轮动打扰用户使用其他软件。"""
     uia = UiaAdapter(name_re="期货通")
     if uia.connect(poll_sec=3):
         title = (uia.window.Name or "")[:40]
-        # 窗口最小化/off-screen 时先恢复，否则截图与点击无效
-        rect = uia.window.BoundingRectangle
-        if rect.left < -1000 or rect.right - rect.left < 400:
-            uia.window.SetActive()
-            uia.window.SetTopmost(True)
-            time.sleep(0.3)
-            uia.window.SetTopmost(False)
-            time.sleep(0.3)
         status.software("ths", True, title)
         return "uia", "窗口在线: %s" % title, uia
     status.software("ths", False, "未检测到同花顺期货通窗口")
@@ -244,19 +237,13 @@ def detect(status):
 
 def _navigate_to_quote_tab(conn):
     """尝试切到"行情"Tab（AutomationId: Product.FuturePro.QuotationPage）。
-
-    THS 窗口若最小化则先恢复（SetTopmost），再按 Name 找 TabItem 点击。
-    """
+    不激活/不置前窗口；窗口最小化或不可见时直接跳过。"""
     import uiautomation as auto
     try:
-        # 确保窗口可见（非最小化/非 off-screen）
+        # 窗口最小化/off-screen 时无法点击，跳过本轮（不恢复前台）
         rect = conn.window.BoundingRectangle
         if rect.right - rect.left < 400 or rect.left < -1000:
-            conn.window.SetActive()
-            conn.window.SetTopmost(True)
-            time.sleep(0.3)
-            conn.window.SetTopmost(False)
-            time.sleep(0.3)
+            return False
         # 直接遍历窗口子树找 TabItem
         for child1 in conn.window.GetChildren():
             for child2 in child1.GetChildren():
@@ -360,6 +347,11 @@ def collect_cycle(status, mapping=None):
     if quotes:
         status.update(quotes=list(status.snapshot()["quotes"])[:20] +
                       [q for q in quotes[:20] if q.get("price")])
+        # A2: 同花顺行情落 quotes 表（cycle=99 装置侧），供量化跨源校验
+        try:
+            fusion.ingest_quotes_batch(quotes[:100], cycle=99, source="ths_ui")
+        except Exception as e:
+            LOG.debug("ths quotes 落库失败: %s", e)
     fusion.registry_record("ths_ui", result["quotes"] > 0 or level == "ocr",
                            "level=%s quotes=%d" % (level, result["quotes"]))
     return result

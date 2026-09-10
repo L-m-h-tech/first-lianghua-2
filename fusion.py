@@ -145,6 +145,66 @@ def upsert_ctp_instruments(instruments, source="legend_cache"):
     return n
 
 
+def seed_ctp_instruments():
+    """从量化 data/futures_margins.csv + futures_fees.csv 初始化 ctp_instruments。
+
+    每品种写入一条 product 级元数据（volume_multiple 乘数 + exchange），
+    instrument_id = 品种代码大写（如 RB），供 portfolio/paper_broker
+    手数换算与保证金校准。幂等 seed，可重复调用。
+    """
+    try:
+        q = ensure_quant()
+        rows = []
+        # margins: sym;name;exchange;broker_margin;exchange_margin;limit_basic;multiplier
+        margin_csv = Path(q["config"].DATA_DIR) / "futures_margins.csv"
+        if margin_csv.exists():
+            for line in margin_csv.read_text(encoding="utf-8-sig").splitlines()[1:]:
+                parts = line.split(",")
+                if len(parts) < 7:
+                    continue
+                sym = (parts[0] or "").strip().upper()
+                name = parts[1].strip()
+                exch = parts[2].strip()
+                try:
+                    mult = float(parts[6])
+                except (TypeError, ValueError):
+                    mult = 0.0
+                if sym and not rows or not any(r["instrument_id"] == sym for r in rows):
+                    rows.append({"instrument_id": sym, "product_id": sym,
+                                 "exchange_id": exch, "product_class": "future",
+                                 "options_type": "", "volume_multiple": mult,
+                                 "price_tick": 0.0, "instrument_name": name,
+                                 "trading_day": "", "source": "seed_margins"})
+        # fees: sym;name;exchange;account_flag;multiplier;...
+        fee_csv = Path(q["config"].DATA_DIR) / "futures_fees.csv"
+        if fee_csv.exists():
+            for line in fee_csv.read_text(encoding="utf-8-sig").splitlines()[1:]:
+                parts = line.split(",")
+                if len(parts) < 5:
+                    continue
+                sym = (parts[0] or "").strip().upper()
+                try:
+                    mult = float(parts[4])
+                except (TypeError, ValueError):
+                    mult = 0.0
+                r = next((x for x in rows if x["instrument_id"] == sym), None)
+                if r:
+                    if not r["volume_multiple"]:
+                        r["volume_multiple"] = mult
+                else:
+                    rows.append({"instrument_id": sym, "product_id": sym,
+                                 "exchange_id": "", "product_class": "future",
+                                 "options_type": "", "volume_multiple": mult,
+                                 "price_tick": 0.0, "instrument_name": sym,
+                                 "trading_day": "", "source": "seed_fees"})
+        if rows:
+            return upsert_ctp_instruments(rows, source="seed")
+        return 0
+    except Exception as e:
+        LOG.debug("ctp_instruments seed 失败: %s", e)
+        return 0
+
+
 def ingest_minute_bars(bars, source):
     """分钟线先到先得竞争写入（UNIQUE(contract,period,bar_dt) 由库保证）。返回新增行数。"""
     try:
@@ -192,9 +252,10 @@ VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
 """
 
 
-def ingest_quotes_batch(quotes, cycle=99, ts=None):
-    """行情批量写 quotes 表（供 openvlab 等补充源入库，cycle=99 区分装置侧行情）。
-    仅写入有有效价格的行；失败降级不阻塞。"""
+def ingest_quotes_batch(quotes, cycle=99, ts=None, source=None):
+    """行情批量写 quotes 表（cycle=99 区分装置侧行情）。
+    仅写入有有效价格的行；失败降级不阻塞。
+    source: 数据源打标（legend_ui/ths_ui/openvlab），写入 cat 字段。"""
     if not quotes:
         return 0
     ts = ts or time.strftime("%Y-%m-%d %H:%M:%S")
@@ -212,7 +273,7 @@ def ingest_quotes_batch(quotes, cycle=99, ts=None):
             continue
         rows.append((ts, int(cycle), str(q.get("variety") or code), code,
                      str(q.get("sym") or ""), str(q.get("exchange") or ""),
-                     str(q.get("cat") or "openvlab"),
+                     str(source or q.get("cat") or "openvlab"),
                      price,
                      _safe_float(q.get("chg_pct")),
                      _safe_float(q.get("open")), _safe_float(q.get("high")),
@@ -230,6 +291,21 @@ def ingest_quotes_batch(quotes, cycle=99, ts=None):
     except Exception as e:
         LOG.warning("quotes 批量写入失败: %s", e)
         return 0
+
+
+def alert_hub(status, code, reason):
+    """采集器质量告警入口：包装 StatusHub.alert()，status 为空时静默降级。
+
+    原 legend_ui_collector 直接调用本函数；init 时 status 可能尚未就绪，
+    因此这里做防御。返回 True 表示告警已记录。
+    """
+    try:
+        if status is not None:
+            status.alert(code, reason)
+            return True
+    except Exception as e:
+        LOG.debug("alert_hub 记录失败: %s", e)
+    return False
 
 
 def _safe_float(v):

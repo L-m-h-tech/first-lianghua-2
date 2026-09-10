@@ -14,8 +14,11 @@
 """
 import argparse
 import json
+import os
+import re
 import threading
 import time
+from pathlib import Path
 
 import device_config
 import fusion
@@ -65,6 +68,11 @@ def cmd_once(args):
     import ths_ui_collector as T
     status = StatusHub()
     fusion.ensure_quant()
+    # A3: 每次手动采集前 seed 合约元数据（幂等，从量化保证金/手续费CSV）
+    try:
+        fusion.seed_ctp_instruments()
+    except Exception:
+        pass
     r1 = L.collect_cycle(status, L.MinuteAggregator())
     r2 = T.collect_cycle(status)
     r3 = _collect_openvlab(status)
@@ -118,6 +126,9 @@ def _status_writer(status):
                         status.alert("STALE", "数据已 %.0f 秒未更新（阈值 %ds）" % (stale, max_stale))
                         last_alert = now_ts
                 status.save()
+                # 同步写量化侧可读文件（report_device.json + reports/device_status.txt），
+                # 供量化看板"数据采集装置 / 装置健康详情"页签实时读取。
+                status.save_report()
             except Exception as e:
                 fusion.LOG.warning("状态写入失败: %s", e)
             stop.wait(intervals["status_write"])
@@ -133,10 +144,185 @@ def _quant_ok():
         return False
 
 
+def _cdp_listening(port):
+    """探测本地 CDP 端口是否在监听（Legend 调试模式生效的标志）。"""
+    import socket
+    try:
+        s = socket.create_connection(("127.0.0.1", port), timeout=1)
+        s.close()
+        return True
+    except OSError:
+        return False
+
+
+_CREATE_NO_WINDOW = 0x08000000
+
+# _launch_software 亲手拉起的进程 PID（退出时联动关闭；已在运行的软件不记录）
+_launched_pids = []
+
+
+def _record_launched(p):
+    """记录由本装置拉起的进程（装置退出时联动关闭）。"""
+    if p is not None and getattr(p, "pid", None):
+        _launched_pids.append(p.pid)
+
+
+def _shutdown_started():
+    """装置退出时关闭本轮拉起的 Legend/同花顺（只杀自己拉起的实例）。"""
+    import subprocess as _subprocess
+    global _launched_pids
+    if not _launched_pids:
+        return
+    for pid in list(_launched_pids):
+        try:
+            r = _subprocess.run(["taskkill", "/PID", str(pid), "/F", "/T"],
+                                creationflags=_CREATE_NO_WINDOW, capture_output=True, timeout=15)
+            fusion.LOG.info("装置退出，已关闭由本装置拉起的进程(pid=%d) rc=%s", pid, r.returncode)
+        except Exception as e:
+            fusion.LOG.warning("关闭装置拉起进程(pid=%d)失败: %s", pid, e)
+    _launched_pids = []
+
+
+def _ensure_ths_debug_mode():
+    """确保同花顺期货通 DataCenter.xml 开启 Cef Console 调试开关（幂等、改前备份 .bak）。
+    开启后重启 happ.exe 即弹出独立 DevTools 窗口（调试模式）。"""
+    cfg = device_config.CONFIG.get("ths", {})
+    if not cfg.get("debug_mode", True):
+        return
+    path = cfg.get("data_center_xml")
+    if not path or not os.path.exists(path):
+        return
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            text = f.read()
+    except OSError:
+        return
+    if re.search(r'<Console\b[^>]*\benable="true"', text):
+        return  # 已开启，无需写回
+    patched = None
+    # Console enable=false → true
+    patched, n = re.subn(r'(<Console\b[^>]*\benable=")false(")', r'\1true\2', text)
+    if not n:
+        patched = None
+    # 无 Console → 在 <Cef> 块内首部插入
+    if not patched:
+        m = re.search(r"(<Cef\b[^>]*>)(.*?)(</Cef>)", text, re.S)
+        if m:
+            lead = '\n      ' if '\n' in m.group(2) else ' '
+            patched = m.group(1) + lead + '<Console enable="true"/>' + m.group(2) + m.group(3)
+    if not patched:
+        fusion.LOG.warning("同花顺 DataCenter.xml 结构异常，未修改调试开关")
+        return
+    try:
+        bak = path + ".bak"
+        if not os.path.exists(bak):
+            import shutil
+            shutil.copy2(path, bak)
+        nl = "\r\n" if "\r\n" in text else "\n"
+        with open(path, "w", encoding="utf-8", newline=nl) as f:
+            f.write(patched)
+        fusion.LOG.info("已开启同花顺调试模式（DataCenter.xml Cef Console=true，原文件备份 %s）", bak)
+    except OSError as e:
+        fusion.LOG.warning("写入同花顺 DataCenter.xml 失败: %s", e)
+
+
+def _launch_software():
+    """daemon 启动前检查并拉起 Legend（调试模式）与同花顺期货通（调试模式）。
+    Legend 以 CDP 9225 是否监听为准、同花顺以调试开关+重启为准：进程在跑但未开启
+    调试都结束并重启；用 SW_SHOWNOACTIVATE 避免窗口抢焦点。"""
+    import subprocess, ctypes
+
+    SW_SHOWNOACTIVATE = 4
+    CREATE_NO_WINDOW = 0x08000000
+    si = subprocess.STARTUPINFO()
+    si.dwFlags = subprocess.STARTF_USESHOWWINDOW
+    si.wShowWindow = SW_SHOWNOACTIVATE
+
+    def _is_running(name_part):
+        """简单判断进程是否存在（tasklist 按名称片段匹配）。"""
+        try:
+            out = subprocess.check_output(
+                ["tasklist", "/FI", "IMAGENAME eq %s" % name_part],
+                creationflags=CREATE_NO_WINDOW, text=True)
+            return name_part.lower() in out.lower()
+        except Exception:
+            return False
+
+    # Legend（调试模式，CDP 9225）—— 幂等以端口为准，而非进程
+    legend_exe = device_config.CONFIG["legend"]["exe"]
+    if _cdp_listening(9225):
+        fusion.LOG.info("Legend CDP 9225 已就绪，跳过启动")
+    elif Path(legend_exe).exists():
+        need_restart = _is_running("openvlab-legend.exe")
+        restart_debug = device_config.CONFIG.get("legend", {}).get("restart_debug", True)
+        if need_restart and restart_debug:
+            try:
+                subprocess.run(["taskkill", "/IM", "openvlab-legend.exe", "/F"],
+                               creationflags=CREATE_NO_WINDOW, capture_output=True, timeout=30)
+                fusion.LOG.info("Legend 已运行但无调试口，已结束旧实例")
+                time.sleep(2)
+                need_restart = False
+            except Exception as e:
+                fusion.LOG.warning("结束 Legend 旧实例失败（保持现状）: %s", e)
+                restart_debug = False
+        if not need_restart:
+            try:
+                p = subprocess.Popen(
+                    [legend_exe, "--remote-debugging-port=9225", "--remote-allow-origins=*"],
+                    startupinfo=si)
+                _record_launched(p)
+                fusion.LOG.info("自动拉起 Legend 调试模式")
+            except Exception as e:
+                fusion.LOG.warning("Legend 启动失败: %s", e)
+        else:
+            fusion.LOG.info("Legend 无调试口且开关关闭或结束失败，保持现状")
+    else:
+        fusion.LOG.warning("Legend exe 未找到: %s", legend_exe)
+
+    # 同花顺期货通（调试模式）：先确保 DataCenter.xml 调试开关，进程在跑则重启应用
+    ths_exe = device_config.CONFIG["ths"]["exe"]
+    if Path(ths_exe).exists():
+        _ensure_ths_debug_mode()
+        need_restart = _is_running("happ.exe")
+        restart_debug = device_config.CONFIG.get("ths", {}).get("restart_debug", True)
+        if need_restart and restart_debug:
+            # 进程在跑（可能为普通模式）→ 重启以应用调试开关
+            try:
+                subprocess.run(["taskkill", "/IM", "happ.exe", "/F"],
+                               creationflags=CREATE_NO_WINDOW, capture_output=True, timeout=30)
+                fusion.LOG.info("同花顺期货通已运行，已结束旧实例准备以调试模式重启")
+                time.sleep(2)
+                need_restart = False
+            except Exception as e:
+                fusion.LOG.warning("结束同花顺旧实例失败（保持现状）: %s", e)
+                restart_debug = False
+        if not need_restart:
+            try:
+                p = subprocess.Popen([ths_exe], startupinfo=si)
+                _record_launched(p)
+                fusion.LOG.info("自动拉起同花顺期货通调试模式")
+            except Exception as e:
+                fusion.LOG.warning("同花顺启动失败: %s", e)
+        else:
+            fusion.LOG.info("同花顺期货通已运行（重启开关关闭或结束失败），保持现状")
+    else:
+        fusion.LOG.warning("同花顺 exe 未找到: %s", ths_exe)
+
+
 def cmd_daemon(args):
     import legend_ui_collector as L
     import ths_ui_collector as T
     fusion.ensure_quant()
+    # A3: 常驻启动前 seed 合约元数据（幂等，从量化保证金/手续费CSV）
+    try:
+        fusion.seed_ctp_instruments()
+    except Exception:
+        pass
+    # 自动拉起 Legend（调试模式）与同花顺期货通（调试模式，已有进程则跳过/重启，不抢焦点）
+    try:
+        _launch_software()
+    except Exception as e:
+        fusion.LOG.debug("自动拉起软件失败: %s", e)
     status = StatusHub()
     stop = threading.Event()
     agg = L.MinuteAggregator()
@@ -166,6 +352,7 @@ def cmd_daemon(args):
         pass
     finally:
         stop.set()
+        _shutdown_started()   # 联动关闭本装置拉起的 Legend/同花顺
 
 
 def cmd_serve(args):
@@ -173,13 +360,34 @@ def cmd_serve(args):
     import http.server
     import urllib.parse
     data_path = device_config.data_dir()
-    handler_cls = functools.partial(
-        http.server.SimpleHTTPRequestHandler, directory=str(data_path))
+    # C2（协同）：把量化 reports 目录挂载为 /quant/ 前缀，供 dashboard 读取
+    # 量化报告（latest_report.txt / signals.csv）。
+    try:
+        quant_report_dir = str(
+            Path(device_config.quant_dir()) / "reports")
+    except Exception:
+        quant_report_dir = ""
+
+    class DeviceHandler(http.server.SimpleHTTPRequestHandler):
+        def __init__(self, *a, **kw):
+            super().__init__(*a, directory=str(data_path), **kw)
+
+        def translate_path(self, path):
+            if quant_report_dir and path.startswith("/quant/"):
+                rel = urllib.parse.unquote(path[len("/quant/"):])
+                return str(Path(quant_report_dir) / rel)
+            return super().translate_path(path)
+
+        def log_message(self, fmt, *args):
+            fusion.LOG.debug("serve %s", fmt % args)
+
     host, port = CONFIG["http"]["serve_host"], CONFIG["http"].get("serve_port", 8790)
-    srv = http.server.ThreadingHTTPServer((host, port), handler_cls)
+    srv = http.server.ThreadingHTTPServer((host, port), DeviceHandler)
     fusion.LOG.info("显示页服务启动: http://%s:%d/dashboard.html", host, port)
     print("显示页: http://%s:%d/dashboard.html" % (host, port))
     print("状态JSON: http://%s:%d/collector_status.json" % (host, port))
+    if quant_report_dir:
+        print("量化报告: http://%s:%d/quant/latest_report.txt" % (host, port))
     try:
         srv.serve_forever()
     except KeyboardInterrupt:
@@ -297,8 +505,8 @@ def main():
         return cmd_serve(args)
     if args.selftest:
         return cmd_selftest(args)
-    ap.print_help()
-    return 0
+    # PyCharm 直接点运行不传参数：默认进入 daemon 模式（Ctrl+C 或停止按钮退出）
+    return cmd_daemon(args)
 
 
 if __name__ == "__main__":
