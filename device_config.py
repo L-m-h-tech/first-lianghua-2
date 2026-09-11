@@ -19,7 +19,7 @@ ENV_FILE = BASE_DIR / ".env"
 _DEFAULTS = {
     "quant_dir": r"E:\LHsystem\量化\futures_monitor",
     "legend": {
-        "exe": r"E:\OpendVlab Legend\openvlab-legend\openvlab-legend.exe",
+        "exe": r"E:\OpendVlab Legend\openvlab-legend\OpenVlab Legend.exe",
         "cdp_port": 9225,
         "data_dir": r"E:\OpendVlab Legend\openvlab-legend\openvlab-legend-data",
         "appdata_dir": r"C:\Users\Lenovo\AppData\Roaming\openvlab-legend",

@@ -250,14 +250,15 @@ def _launch_software():
 
     # Legend（调试模式，CDP 9225）—— 幂等以端口为准，而非进程
     legend_exe = device_config.CONFIG["legend"]["exe"]
+    legend_name = os.path.basename(legend_exe) or "OpenVlab Legend.exe"
     if _cdp_listening(9225):
         fusion.LOG.info("Legend CDP 9225 已就绪，跳过启动")
     elif Path(legend_exe).exists():
-        need_restart = _is_running("openvlab-legend.exe")
+        need_restart = _is_running(legend_name)
         restart_debug = device_config.CONFIG.get("legend", {}).get("restart_debug", True)
         if need_restart and restart_debug:
             try:
-                subprocess.run(["taskkill", "/IM", "openvlab-legend.exe", "/F"],
+                subprocess.run(["taskkill", "/IM", legend_name, "/F"],
                                creationflags=CREATE_NO_WINDOW, capture_output=True, timeout=30)
                 fusion.LOG.info("Legend 已运行但无调试口，已结束旧实例")
                 time.sleep(2)

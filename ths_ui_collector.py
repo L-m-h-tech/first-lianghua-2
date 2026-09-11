@@ -251,7 +251,14 @@ def _navigate_to_quote_tab(conn):
                     for child3 in child2.GetChildren():
                         name = child3.Name or ""
                         if "Quotation" in name:
-                            child3.Click()
+                            # 控件矩形无效(0,0,0,0)时 Click 会让 uiautomation 打"Can not move
+                            # cursor"噪音并可能误点他处——矩形有效才点（无效=自绘界面未就绪，跳过本轮）
+                            try:
+                                r = child3.BoundingRectangle
+                                if r and (r.right - r.left) > 0 and (r.bottom - r.top) > 0:
+                                    child3.Click()
+                            except Exception:
+                                pass
                             time.sleep(0.5)
                             return True
                         if "Favourite" in name:

@@ -1,7 +1,7 @@
 {
   "quant_dir": "E:\\LHsystem\\量化\\futures_monitor",
   "legend": {
-    "exe": "E:\\OpendVlab Legend\\openvlab-legend\\openvlab-legend.exe",
+    "exe": "E:\\OpendVlab Legend\\openvlab-legend\\OpenVlab Legend.exe",
     "cdp_port": 9225,
     "data_dir": "E:\\OpendVlab Legend\\openvlab-legend\\openvlab-legend-data",
     "appdata_dir": "C:\\Users\\Lenovo\\AppData\\Roaming\\openvlab-legend",
