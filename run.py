@@ -342,10 +342,17 @@ def cmd_daemon(args):
     for t in threads:
         t.start()
     dashboard.write_dashboard(dashboard.collect_dashboard_data(status))
+    # 第23轮：显示页服务随 daemon 内置启动（量化看板 iframe 依赖 8790，无需再手动 --serve）
+    if CONFIG.get("http", {}).get("serve_with_daemon", True):
+        srv = _make_device_server()
+        if srv is not None:
+            threading.Thread(target=srv.serve_forever, daemon=True).start()
+            host, port = CONFIG["http"]["serve_host"], CONFIG["http"].get("serve_port", 8790)
+            fusion.LOG.info("显示页服务已随 daemon 启动: http://%s:%d/dashboard.html", host, port)
     fusion.LOG.info("装置常驻启动（Ctrl+C 结束）")
-    print("装置常驻运行中。HTML 页: http://%s:%d/dashboard.html" %
-          (CONFIG["http"]["serve_host"], CONFIG["http"]["serve_port"]))
-    print("如需启动显示页服务，另开窗口运行: D:\\Python\\python.exe run.py --serve")
+    host, port = CONFIG["http"]["serve_host"], CONFIG["http"].get("serve_port", 8790)
+    print("装置常驻运行中。HTML 页: http://%s:%d/dashboard.html" % (host, port))
+    print("（显示页服务已随 daemon 自动启动，无需另开 --serve）")
     try:
         while True:
             time.sleep(1)
@@ -356,13 +363,14 @@ def cmd_daemon(args):
         _shutdown_started()   # 联动关闭本装置拉起的 Legend/同花顺
 
 
-def cmd_serve(args):
-    import functools
+def _make_device_server():
+    """构建显示页 HTTP 服务（/dashboard.html + collector_status.json + /quant/ 量化报告路由）。
+
+    --serve 与 --daemon 内置线程（第23轮：daemon 自动带 serve，量化看板 iframe 无需手动开）共用；
+    端口被占（已有实例在跑）返回 None，调用方静默跳过。"""
     import http.server
     import urllib.parse
     data_path = device_config.data_dir()
-    # C2（协同）：把量化 reports 目录挂载为 /quant/ 前缀，供 dashboard 读取
-    # 量化报告（latest_report.txt / signals.csv）。
     try:
         quant_report_dir = str(
             Path(device_config.quant_dir()) / "reports")
@@ -383,16 +391,39 @@ def cmd_serve(args):
             fusion.LOG.debug("serve %s", fmt % args)
 
     host, port = CONFIG["http"]["serve_host"], CONFIG["http"].get("serve_port", 8790)
-    srv = http.server.ThreadingHTTPServer((host, port), DeviceHandler)
+    # 先连接探测（Windows SO_REUSEADDR 下重复 bind 会成功，bind 失败检测不可靠）：
+    # 端口有监听者 = 已有实例在跑 → 跳过
+    import socket
+    try:
+        s = socket.create_connection((host, port), timeout=0.5)
+        s.close()
+        fusion.LOG.info("显示页服务端口 %s:%d 已有实例在跑，跳过", host, port)
+        return None
+    except OSError:
+        pass
+    try:
+        srv = http.server.ThreadingHTTPServer((host, port), DeviceHandler)
+    except OSError as e:
+        fusion.LOG.info("显示页服务端口 %s:%d 绑定失败，跳过：%s", host, port, e)
+        return None
+    return srv
+
+
+def cmd_serve(args):
+    srv = _make_device_server()
+    if srv is None:
+        print("显示页服务端口被占（可能已有实例在跑），退出")
+        return 1
+    host, port = CONFIG["http"]["serve_host"], CONFIG["http"].get("serve_port", 8790)
     fusion.LOG.info("显示页服务启动: http://%s:%d/dashboard.html", host, port)
     print("显示页: http://%s:%d/dashboard.html" % (host, port))
     print("状态JSON: http://%s:%d/collector_status.json" % (host, port))
-    if quant_report_dir:
-        print("量化报告: http://%s:%d/quant/latest_report.txt" % (host, port))
+    print("量化报告: http://%s:%d/quant/latest_report.txt" % (host, port))
     try:
         srv.serve_forever()
     except KeyboardInterrupt:
         srv.shutdown()
+    return 0
 
 
 def cmd_selftest(args):
