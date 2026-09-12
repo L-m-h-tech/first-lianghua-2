@@ -180,6 +180,9 @@ def parse_surface_legs(data, exp=None, code=""):
             "oi": int(oi or 0),
             "code": "%s%sC%s" % (code.lower(), yymm, _fmt_strike(strike)),
             "cp": "C",
+            # 第24轮：补齐量化 option_chain.build_summary 必需的腿字段（此前 KeyError 'bid_vol'
+            # 被 DEBUG 吞掉 → cycle=0 链从未写入）。openvlab 无买卖量/报价，置 0/None。
+            "bid_vol": 0, "bid": None, "last": None, "ask": None, "ask_vol": 0,
         })
 
     # 按行权价遍历 put 持仓
@@ -192,6 +195,7 @@ def parse_surface_legs(data, exp=None, code=""):
             "oi": int(oi or 0),
             "code": "%s%sP%s" % (code.lower(), yymm, _fmt_strike(strike)),
             "cp": "P",
+            "bid_vol": 0, "bid": None, "last": None, "ask": None, "ask_vol": 0,
         })
 
     calls.sort(key=lambda x: x["strike"])
@@ -516,6 +520,10 @@ def collect_cycle(status):
     if chain_rows:
         fusion.ingest_option_chains(chain_rows, cycle=0, ts=ts)
         LOG.info("openvlab 期权链写入 %d 条", len(chain_rows))
+    elif surfaces_data:
+        # 第24轮：有曲面却组装不出链 = 解析兼容性断流（此前 DEBUG 级静默，09-08 起断流无人知晓）
+        LOG.warning("openvlab 期权链组装为空（曲面 %d 个但 0 条链）——解析兼容性告警，请排查 parse_surface_legs/_chain_legs_to_rows",
+                    len(surfaces_data))
 
     # 曲面快照落盘（供 dashboard 下钻）
     for code_key, surf_data in surfaces_data.items():
