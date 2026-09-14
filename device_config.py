@@ -42,6 +42,9 @@ _DEFAULTS = {
         "conflict_diff_pct": 1.0,       # 与新浪/东财同品种价差告警阈值(%)
         "pcr_lookback_days": 90,
     },
+    "ocr": {
+        "line_tolerance": 15,  # OCR 文字按Y坐标聚类成行的容差（像素）；分辨率/缩放变化时可调
+    },
     "http": {
         "serve_host": "127.0.0.1",
         "serve_port": 8790,            # HTML 显示页本地服务端口

@@ -46,5 +46,8 @@
     "serve_host": "127.0.0.1",
     "serve_port": 8790,
     "serve_with_daemon": true
+  },
+  "ocr": {
+    "line_tolerance": 15
   }
 }

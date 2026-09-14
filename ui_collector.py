@@ -429,6 +429,11 @@ class OcrEngine:
     def __init__(self):
         self._ocr = None
         self._err = None
+        # 第150轮：OCR 行聚类容差从配置读（默认15px，分辨率/缩放变化时可在 config.json ocr.line_tolerance 调）
+        try:
+            self._line_tol = int(device_config.CONFIG.get("ocr", {}).get("line_tolerance", 15) or 15)
+        except (TypeError, ValueError):
+            self._line_tol = 15
 
     def _ensure(self):
         if self._ocr is None and self._err is None:
@@ -458,13 +463,14 @@ class OcrEngine:
             boxes = [r[0] for r in result]
             texts = [str(r[1]) for r in result]
             rows = []
+            tol = self._line_tol
             for b, t in sorted(zip(boxes, texts),
-                               key=lambda x: (round(min(p[1] for p in x[0]) / 15), min(p[0] for p in x[0]))):
+                               key=lambda x: (round(min(p[1] for p in x[0]) / tol), min(p[0] for p in x[0]))):
                 rows.append({"y": min(p[1] for p in b), "x": min(p[0] for p in b), "text": t})
-            # 按行聚类（y 容差 15px）
+            # 按行聚类（y 容差 = config ocr.line_tolerance，默认15px）
             clustered = []
             for r in rows:
-                line = next((ln for ln in clustered if abs(ln["y"] - r["y"]) <= 15), None)
+                line = next((ln for ln in clustered if abs(ln["y"] - r["y"]) <= tol), None)
                 if line is None:
                     clustered.append({"y": r["y"], "cells": [r["text"]]})
                 else:
