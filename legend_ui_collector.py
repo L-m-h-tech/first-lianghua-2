@@ -289,7 +289,9 @@ def collect_cycle(status, agg=None, conn=None):
     if conn is None:
         mode, detail, conn = detect(status)
     else:
-        mode = "cdp"  # caller 已探测过
+        # 第150轮：caller 已探测过时按 conn 类型判断 mode（原硬编码 "cdp" 导致
+        # UIA 窗口模式下 conn 是 UiaAdapter，走 _collect_cdp 调 find_page 崩溃）
+        mode = "cdp" if hasattr(conn, "find_page") else "uia"
     if mode == "cdp":
         r = _collect_cdp(status, conn, agg)
         # A4: --once 手动轮结束强制冲刷当前分钟 bar（跨分钟 flush 的补充）

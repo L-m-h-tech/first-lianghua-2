@@ -1,0 +1,733 @@
+{
+ "main_contracts": {
+  "ad2611": "65",
+  "ag2610": "65",
+  "al2610": "65",
+  "ao2701": "65",
+  "au2610": "65",
+  "bc2610": "65",
+  "br2610": "65",
+  "bu2610": "65",
+  "cu2610": "65",
+  "ec2610": "65",
+  "fu2611": "65",
+  "hc2701": "65",
+  "lu2611": "65",
+  "ni2610": "65",
+  "nr2611": "65",
+  "op2611": "65",
+  "pb2610": "65",
+  "rb2701": "65",
+  "ru2701": "65",
+  "sc2610": "65",
+  "sn2610": "65",
+  "sp2611": "65",
+  "ss2610": "65",
+  "wr2701": "65",
+  "zn2610": "65",
+  "a2611": "66",
+  "b2611": "66",
+  "bb2611": "66",
+  "bz2610": "66",
+  "c2611": "66",
+  "cs2611": "66",
+  "eb2610": "66",
+  "eg2610": "66",
+  "fb2611": "66",
+  "i2701": "66",
+  "j2701": "66",
+  "jd2611": "66",
+  "jm2701": "66",
+  "l2701": "66",
+  "lg2611": "66",
+  "lh2611": "66",
+  "m2701": "66",
+  "p2701": "66",
+  "pg2610": "66",
+  "pp2701": "66",
+  "rr2610": "66",
+  "v2701": "66",
+  "y2701": "66",
+  "AP2701": "67",
+  "CF2701": "67",
+  "CJ2701": "67",
+  "CY2611": "67",
+  "FG2701": "67",
+  "JR2611": "67",
+  "MA2610": "67",
+  "OI2701": "67",
+  "PF2611": "67",
+  "PK2611": "67",
+  "PL2611": "67",
+  "PM2611": "67",
+  "PR2611": "67",
+  "PX2611": "67",
+  "RI2611": "67",
+  "RM2611": "67",
+  "RS2611": "67",
+  "SA2701": "67",
+  "SF2611": "67",
+  "SH2611": "67",
+  "SM2611": "67",
+  "SR2701": "67",
+  "TA2701": "67",
+  "UR2701": "67",
+  "WH2611": "67",
+  "ZC2610": "67",
+  "IC2609": "-127",
+  "IF2609": "-127",
+  "IH2609": "-127",
+  "IM2609": "-127",
+  "T2612": "-127",
+  "TF2612": "-127",
+  "TL2612": "-127",
+  "TS2612": "-127",
+  "lc2701": "UGFF",
+  "pd2610": "UGFF",
+  "ps2611": "UGFF",
+  "pt2610": "UGFF",
+  "si2611": "UGFF"
+ },
+ "option_mapping": [
+  {
+   "display_name": "50ETF",
+   "link_name": "",
+   "link_code": "510050",
+   "is_futures": "0",
+   "market_code": "USHJ",
+   "futures_code": ""
+  },
+  {
+   "display_name": "沪300ETF",
+   "link_name": "",
+   "link_code": "510300",
+   "is_futures": "0",
+   "market_code": "USHJ",
+   "futures_code": ""
+  },
+  {
+   "display_name": "深300ETF",
+   "link_name": "",
+   "link_code": "159919",
+   "is_futures": "0",
+   "market_code": "USZJ",
+   "futures_code": ""
+  },
+  {
+   "display_name": "沪深300",
+   "link_name": "IO",
+   "link_code": "1B0300",
+   "is_futures": "0",
+   "market_code": "USHI",
+   "futures_code": ""
+  },
+  {
+   "display_name": "橡胶",
+   "link_name": "橡胶",
+   "link_code": "",
+   "is_futures": "1",
+   "market_code": "UCFS",
+   "futures_code": "ru"
+  },
+  {
+   "display_name": "沪金",
+   "link_name": "沪金",
+   "link_code": "",
+   "is_futures": "1",
+   "market_code": "UCFS",
+   "futures_code": "au"
+  },
+  {
+   "display_name": "沪铜",
+   "link_name": "沪铜",
+   "link_code": "",
+   "is_futures": "1",
+   "market_code": "UCFS",
+   "futures_code": "cu"
+  },
+  {
+   "display_name": "豆粕",
+   "link_name": "豆粕",
+   "link_code": "",
+   "is_futures": "1",
+   "market_code": "UCFD",
+   "futures_code": "m"
+  },
+  {
+   "display_name": "玉米",
+   "link_name": "玉米",
+   "link_code": "",
+   "is_futures": "1",
+   "market_code": "UCFD",
+   "futures_code": "c"
+  },
+  {
+   "display_name": "铁矿石",
+   "link_name": "铁矿石",
+   "link_code": "",
+   "is_futures": "1",
+   "market_code": "UCFD",
+   "futures_code": "i"
+  },
+  {
+   "display_name": "白糖",
+   "link_name": "白糖",
+   "link_code": "",
+   "is_futures": "1",
+   "market_code": "UCFZ",
+   "futures_code": "SR"
+  },
+  {
+   "display_name": "棉花",
+   "link_name": "棉花",
+   "link_code": "",
+   "is_futures": "1",
+   "market_code": "UCFZ",
+   "futures_code": "CF"
+  },
+  {
+   "display_name": "甲醇",
+   "link_name": "甲醇",
+   "link_code": "",
+   "is_futures": "1",
+   "market_code": "UCFZ",
+   "futures_code": "MA"
+  },
+  {
+   "display_name": "PTA",
+   "link_name": "PT",
+   "link_code": "",
+   "is_futures": "1",
+   "market_code": "UCFZ",
+   "futures_code": "TA"
+  },
+  {
+   "display_name": "菜籽粕",
+   "link_name": "菜粕",
+   "link_code": "",
+   "is_futures": "1",
+   "market_code": "UCFZ",
+   "futures_code": "RM"
+  },
+  {
+   "display_name": "液化石油气",
+   "link_name": "LP",
+   "link_code": "",
+   "is_futures": "1",
+   "market_code": "UCFD",
+   "futures_code": "pg"
+  },
+  {
+   "display_name": "动力煤",
+   "link_name": "动力煤",
+   "link_code": "",
+   "is_futures": "1",
+   "market_code": "UCFZ",
+   "futures_code": "ZC"
+  },
+  {
+   "display_name": "聚丙烯",
+   "link_name": "聚丙烯",
+   "link_code": "",
+   "is_futures": "1",
+   "market_code": "UCFD",
+   "futures_code": "pp"
+  },
+  {
+   "display_name": "PVC",
+   "link_name": "PV",
+   "link_code": "",
+   "is_futures": "1",
+   "market_code": "UCFD",
+   "futures_code": "v"
+  },
+  {
+   "display_name": "塑料",
+   "link_name": "塑料",
+   "link_code": "",
+   "is_futures": "1",
+   "market_code": "UCFD",
+   "futures_code": "l"
+  },
+  {
+   "display_name": "沪铝",
+   "link_name": "沪铝",
+   "link_code": "",
+   "is_futures": "1",
+   "market_code": "UCFS",
+   "futures_code": "al"
+  },
+  {
+   "display_name": "沪锌",
+   "link_name": "沪锌",
+   "link_code": "",
+   "is_futures": "1",
+   "market_code": "UCFS",
+   "futures_code": "zn"
+  },
+  {
+   "display_name": "棕榈油",
+   "link_name": "棕榈油",
+   "link_code": "",
+   "is_futures": "1",
+   "market_code": "UCFD",
+   "futures_code": "p"
+  },
+  {
+   "display_name": "原油",
+   "link_name": "原油",
+   "link_code": "",
+   "is_futures": "1",
+   "market_code": "ShangNengYuan_XuNi",
+   "futures_code": "sc"
+  },
+  {
+   "display_name": "中证1000",
+   "link_name": "MO",
+   "link_code": "1B0852",
+   "is_futures": "0",
+   "market_code": "USHI",
+   "futures_code": ""
+  },
+  {
+   "display_name": "豆一",
+   "link_name": "豆一",
+   "link_code": "",
+   "is_futures": "1",
+   "market_code": "UCFD",
+   "futures_code": "a"
+  },
+  {
+   "display_name": "豆二",
+   "link_name": "豆二",
+   "link_code": "",
+   "is_futures": "1",
+   "market_code": "UCFD",
+   "futures_code": "b"
+  },
+  {
+   "display_name": "豆油",
+   "link_name": "豆油",
+   "link_code": "",
+   "is_futures": "1",
+   "market_code": "UCFD",
+   "futures_code": "y"
+  },
+  {
+   "display_name": "菜油",
+   "link_name": "菜油",
+   "link_code": "",
+   "is_futures": "1",
+   "market_code": "UCFZ",
+   "futures_code": "OI"
+  },
+  {
+   "display_name": "花生",
+   "link_name": "花生",
+   "link_code": "",
+   "is_futures": "1",
+   "market_code": "UCFZ",
+   "futures_code": "PK"
+  },
+  {
+   "display_name": "深中证500ETF",
+   "link_name": "",
+   "link_code": "159922",
+   "is_futures": "0",
+   "market_code": "USZJ",
+   "futures_code": ""
+  },
+  {
+   "display_name": "沪中证500ETF",
+   "link_name": "",
+   "link_code": "510500",
+   "is_futures": "0",
+   "market_code": "USHJ",
+   "futures_code": ""
+  },
+  {
+   "display_name": "创业板ETF",
+   "link_name": "",
+   "link_code": "159915",
+   "is_futures": "0",
+   "market_code": "USZJ",
+   "futures_code": ""
+  },
+  {
+   "display_name": "工业硅",
+   "link_name": "工业硅",
+   "link_code": "",
+   "is_futures": "1",
+   "market_code": "UGFF",
+   "futures_code": "si"
+  },
+  {
+   "display_name": "深100ETF",
+   "link_name": "",
+   "link_code": "159901",
+   "is_futures": "0",
+   "market_code": "USZJ",
+   "futures_code": ""
+  },
+  {
+   "display_name": "上证50",
+   "link_name": "HO",
+   "link_code": "1B0016",
+   "is_futures": "0",
+   "market_code": "USHI",
+   "futures_code": ""
+  },
+  {
+   "display_name": "螺纹钢",
+   "link_name": "螺纹钢",
+   "link_code": "",
+   "is_futures": "1",
+   "market_code": "UCFS",
+   "futures_code": "rb"
+  },
+  {
+   "display_name": "沪银",
+   "link_name": "沪银",
+   "link_code": "",
+   "is_futures": "1",
+   "market_code": "UCFS",
+   "futures_code": "ag"
+  },
+  {
+   "display_name": "乙二醇",
+   "link_name": "乙二醇",
+   "link_code": "",
+   "is_futures": "1",
+   "market_code": "UCFD",
+   "futures_code": "eg"
+  },
+  {
+   "display_name": "苯乙烯",
+   "link_name": "苯乙烯",
+   "link_code": "",
+   "is_futures": "1",
+   "market_code": "UCFD",
+   "futures_code": "eb"
+  },
+  {
+   "display_name": "科创50ETF易方达",
+   "link_name": "",
+   "link_code": "588080",
+   "is_futures": "0",
+   "market_code": "USHJ",
+   "futures_code": ""
+  },
+  {
+   "display_name": "科创50ETF",
+   "link_name": "",
+   "link_code": "588000",
+   "is_futures": "0",
+   "market_code": "USHJ",
+   "futures_code": ""
+  },
+  {
+   "display_name": "碳酸锂",
+   "link_name": "碳酸锂",
+   "link_code": "",
+   "is_futures": "1",
+   "market_code": "UGFF",
+   "futures_code": "lc"
+  },
+  {
+   "display_name": "合成橡胶",
+   "link_name": "合成橡胶",
+   "link_code": "",
+   "is_futures": "1",
+   "market_code": "UCFS",
+   "futures_code": "br"
+  },
+  {
+   "display_name": "烧碱",
+   "link_name": "烧碱",
+   "link_code": "",
+   "is_futures": "1",
+   "market_code": "UCFZ",
+   "futures_code": "SH"
+  },
+  {
+   "display_name": "对二甲苯",
+   "link_name": "对二甲苯",
+   "link_code": "",
+   "is_futures": "1",
+   "market_code": "UCFZ",
+   "futures_code": "PX"
+  },
+  {
+   "display_name": "硅铁",
+   "link_name": "硅铁",
+   "link_code": "",
+   "is_futures": "1",
+   "market_code": "UCFZ",
+   "futures_code": "SF"
+  },
+  {
+   "display_name": "锰硅",
+   "link_name": "锰硅",
+   "link_code": "",
+   "is_futures": "1",
+   "market_code": "UCFZ",
+   "futures_code": "SM"
+  },
+  {
+   "display_name": "纯碱",
+   "link_name": "纯碱",
+   "link_code": "",
+   "is_futures": "1",
+   "market_code": "UCFZ",
+   "futures_code": "SA"
+  },
+  {
+   "display_name": "苹果",
+   "link_name": "苹果",
+   "link_code": "",
+   "is_futures": "1",
+   "market_code": "UCFZ",
+   "futures_code": "AP"
+  },
+  {
+   "display_name": "短纤",
+   "link_name": "短纤",
+   "link_code": "",
+   "is_futures": "1",
+   "market_code": "UCFZ",
+   "futures_code": "PF"
+  },
+  {
+   "display_name": "尿素",
+   "link_name": "尿素",
+   "link_code": "",
+   "is_futures": "1",
+   "market_code": "UCFZ",
+   "futures_code": "UR"
+  },
+  {
+   "display_name": "玻璃",
+   "link_name": "玻璃",
+   "link_code": "",
+   "is_futures": "1",
+   "market_code": "UCFZ",
+   "futures_code": "FG"
+  },
+  {
+   "display_name": "红枣",
+   "link_name": "红枣",
+   "link_code": "",
+   "is_futures": "1",
+   "market_code": "UCFZ",
+   "futures_code": "CJ"
+  },
+  {
+   "display_name": "鸡蛋",
+   "link_name": "鸡蛋",
+   "link_code": "",
+   "is_futures": "1",
+   "market_code": "UCFD",
+   "futures_code": "jd"
+  },
+  {
+   "display_name": "玉米淀粉",
+   "link_name": "玉米淀粉",
+   "link_code": "",
+   "is_futures": "1",
+   "market_code": "UCFD",
+   "futures_code": "cs"
+  },
+  {
+   "display_name": "生猪",
+   "link_name": "生猪",
+   "link_code": "",
+   "is_futures": "1",
+   "market_code": "UCFD",
+   "futures_code": "lh"
+  },
+  {
+   "display_name": "沪铅",
+   "link_name": "沪铅",
+   "link_code": "",
+   "is_futures": "1",
+   "market_code": "UCFS",
+   "futures_code": "pb"
+  },
+  {
+   "display_name": "沪镍",
+   "link_name": "沪镍",
+   "link_code": "",
+   "is_futures": "1",
+   "market_code": "UCFS",
+   "futures_code": "ni"
+  },
+  {
+   "display_name": "沪锡",
+   "link_name": "沪锡",
+   "link_code": "",
+   "is_futures": "1",
+   "market_code": "UCFS",
+   "futures_code": "sn"
+  },
+  {
+   "display_name": "氧化铝",
+   "link_name": "氧化铝",
+   "link_code": "",
+   "is_futures": "1",
+   "market_code": "UCFS",
+   "futures_code": "ao"
+  },
+  {
+   "display_name": "原木",
+   "link_name": "原木",
+   "link_code": "",
+   "is_futures": "1",
+   "market_code": "UCFD",
+   "futures_code": "lg"
+  },
+  {
+   "display_name": "多晶硅",
+   "link_name": "多晶硅",
+   "link_code": "",
+   "is_futures": "1",
+   "market_code": "UGFF",
+   "futures_code": "ps"
+  },
+  {
+   "display_name": "瓶片",
+   "link_name": "瓶片",
+   "link_code": "",
+   "is_futures": "1",
+   "market_code": "UCFZ",
+   "futures_code": "PR"
+  },
+  {
+   "display_name": "铝合金",
+   "link_name": "铝合金",
+   "link_code": null,
+   "is_futures": "1",
+   "market_code": "UCFS",
+   "futures_code": "ad"
+  },
+  {
+   "display_name": "纯苯",
+   "link_name": "纯苯",
+   "link_code": "",
+   "is_futures": "1",
+   "market_code": "UCFD",
+   "futures_code": "bz"
+  },
+  {
+   "display_name": "丙烯",
+   "link_name": "丙烯",
+   "link_code": null,
+   "is_futures": "1",
+   "market_code": "UCFZ",
+   "futures_code": "PL"
+  },
+  {
+   "display_name": "双胶纸",
+   "link_name": "双胶纸",
+   "link_code": null,
+   "is_futures": "1",
+   "market_code": "UCFS",
+   "futures_code": "op"
+  },
+  {
+   "display_name": "燃油",
+   "link_name": "燃油",
+   "link_code": null,
+   "is_futures": "1",
+   "market_code": "UCFS",
+   "futures_code": "fu"
+  },
+  {
+   "display_name": "沥青",
+   "link_name": "沥青",
+   "link_code": null,
+   "is_futures": "1",
+   "market_code": "UCFS",
+   "futures_code": "bu"
+  },
+  {
+   "display_name": "纸浆",
+   "link_name": "纸浆",
+   "link_code": null,
+   "is_futures": "1",
+   "market_code": "UCFS",
+   "futures_code": "sp"
+  },
+  {
+   "display_name": "钯",
+   "link_name": "钯",
+   "link_code": null,
+   "is_futures": "1",
+   "market_code": "UGFF",
+   "futures_code": "pd"
+  },
+  {
+   "display_name": "铂",
+   "link_name": "铂",
+   "link_code": null,
+   "is_futures": "1",
+   "market_code": "UGFF",
+   "futures_code": "pt"
+  },
+  {
+   "display_name": "焦煤",
+   "link_name": "焦煤",
+   "link_code": null,
+   "is_futures": "1",
+   "market_code": "UCFD",
+   "futures_code": "jm"
+  },
+  {
+   "display_name": "20号胶",
+   "link_name": "20号胶",
+   "link_code": null,
+   "is_futures": "1",
+   "market_code": "ShangNengYuan_XuNi",
+   "futures_code": "nr"
+  },
+  {
+   "display_name": "国际铜",
+   "link_name": "国际铜",
+   "link_code": null,
+   "is_futures": "1",
+   "market_code": "ShangNengYuan_XuNi",
+   "futures_code": "bc"
+  },
+  {
+   "display_name": "焦炭",
+   "link_name": "焦炭",
+   "link_code": null,
+   "is_futures": "1",
+   "market_code": "UCFD",
+   "futures_code": "j"
+  },
+  {
+   "display_name": "低硫燃料油",
+   "link_name": "低硫燃料油",
+   "link_code": null,
+   "is_futures": "1",
+   "market_code": "ShangNengYuan_XuNi",
+   "futures_code": "lu"
+  },
+  {
+   "display_name": "不锈钢",
+   "link_name": "不锈钢",
+   "link_code": null,
+   "is_futures": "1",
+   "market_code": "UCFS",
+   "futures_code": "ss"
+  },
+  {
+   "display_name": "热卷",
+   "link_name": "热卷",
+   "link_code": null,
+   "is_futures": "1",
+   "market_code": "UCFS",
+   "futures_code": "hc"
+  }
+ ]
+}
